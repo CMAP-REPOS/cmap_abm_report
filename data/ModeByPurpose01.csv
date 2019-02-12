@@ -1,0 +1,11 @@
+Index,Model 01,Survey 01,PUMA 01,Category
+0 - vehicles,10,10,10,veh
+1 - vehicle,20,0,20,veh
+2 - vehicles,10,10,10,veh
+3 - vehicles,20,0,20,veh
+4 or more vehicles,10,10,10,veh
+1 - household,20,0,20,hh
+2 - person household,10,10,10,hh
+3 - person household,20,0,20,hh
+4 - person household,10,10,10,hh
+5- person household,20,0,20,hh

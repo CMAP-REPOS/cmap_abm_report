@@ -1,0 +1,15 @@
+Index,Model 01,Survey 01,PUMA 01,Category,Description,Title
+1 Person HH,1101471,951578,1075934,size,Number of Households by size,Size
+2 Person HH,1140295,1078315,1173104,size,Number of Households by size,Size
+3 Person HH,625110,594378,607813,size,Number of Households by size,Size
+4 Person HH,609070,557790,554243,size,Number of Households by size,Size
+5+ Person HH,369435,505495,458689,size,Number of Households by size,Size
+0 - vehicles,351389,359997,434552,veh,Number of Households by vehicles in household,Vehicles
+1 - vehicle,1287104,1192956,1362074,veh,Number of Households by vehicles in household,Vehicles
+2 - vehicles,1476870,1509074,1424204,veh,Number of Households by vehicles in household,Vehicles
+3 - vehicles,538067,462777,466352,veh,Number of Households by vehicles in household,Vehicles
+4 or more vehicles,191951,162752,182601,veh,Number of Households by vehicles in household,Vehicles
+0-30K,894383,1106402,998137,income,Number of Households by household income (median?),Income
+30K-60K,1093581,828599,1009578,income,Number of Households by household income (median?),Income
+60K-100K,1034862,859770,922951,income,Number of Households by household income (median?),Income
+100K+,822555,597686,939117,income,Number of Households by household income (median?),Income

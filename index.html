@@ -1,0 +1,421 @@
+<!-- Required meta tags -->
+
+<meta charset="utf-8"></meta>
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</meta>
+<style>
+
+
+}
+#main {
+  width: 960px;
+}
+.axis .domain {
+  display: none;
+}
+</style>
+
+<!-- Bootstrap CSS -->
+
+<!-- Latest compiled and minified CSS -->
+
+<link
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+  rel="stylesheet">
+</link>
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+  crossorigin=""/>
+<link
+  href="css/chordStyles.css"
+  rel="stylesheet">
+</link>
+
+<title>CMAP ABM</title>
+
+<div class="container">
+  <h2>
+    <a href="https://www.cmap.illinois.gov/data/transportation/modeling?doAsUserId=fH2a30wm7Fk%3D%2F-%2Fasset_publisher%2FQ4En%2Fcontent%2Fid%2F322604">
+      CMAP-ABM
+    </a>
+  </h2>
+
+  <br/>
+
+  <br/>
+
+  <ul class="nav nav-tabs">
+    <li>
+      <a
+        href="#1"
+        role="tab"
+        data-toggle="tab">
+        Introduction
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="#2"
+        role="tab"
+        data-toggle="tab">
+        Population Synthesis
+      </a>
+    </li>
+
+    <li class="active">
+      <a
+        href="#3"
+        role="tab"
+        data-toggle="tab">
+        Auto Ownership
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="#4"
+        role="tab"
+        data-toggle="tab">
+        Work Flows
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="#5"
+        role="tab"
+        data-toggle="tab">
+        Trip Mode
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="#6"
+        role="tab"
+        data-toggle="tab">
+        Trip Activities
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="#7"
+        role="tab"
+        data-toggle="tab">
+        Transit
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="tab-content ">
+  <div
+    id="1"
+    class="tab-pane container">
+    <div class="col-md-12">
+      <br/>
+
+      <br/>
+
+      <h3>INTRODUCTION/DESCRIPTION</h3>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+        improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+        sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+        factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+        qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+        formarum quam civis excellen
+      </p>
+
+      Map of Region/Network Placeholder
+
+      <br/>
+
+      <br/>
+
+      Place Holder Model Step Description
+    </div>
+  </div>
+
+  <div
+    id="2"
+    class="tab-pane container">
+    <div class="row">
+      <div class="col-md-12">
+        <br/>
+
+        <br/>
+
+        <h3>INTRODUCTION/DESCRIPTION</h3>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis. Nullam scelerisque lorem at felis placerat, vel cursus neque imperdiet. Donec interdum elementum metus, et convallis est cursus ut. Nulla finibus lorem a imperdiet fringilla. Donec pharetra tristique ultrices. Pellentesque at arcu quis turpis blandit dictum. Fusce dignissim ut elit sed blandit. Nulla volutpat posuere sapien. Donec quis consectetur eros. Pellentesque sodales semper fermentum.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis. Nullam scelerisque lorem at felis placerat, vel cursus neque imperdiet. Donec interdum elementum metus, et convallis est cursus ut. Nulla finibus lorem a imperdiet fringilla. Donec pharetra tristique ultrices. Pellentesque at arcu quis turpis blandit dictum. Fusce dignissim ut elit sed blandit. Nulla volutpat posuere sapien. Donec quis consectetur eros. Pellentesque sodales semper fermentum.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <br/>
+      <br/>
+      <div class="col col-md-2">
+        <h5><b>Residential Households  by <div id= "hhtitle"></div></b></h5>
+        <div class="small">
+          Select data type for comparison from dropdown
+          </div>
+        <br>
+        <select id="catPopSyn">
+          <option value="size">Household Size</option>
+          <option value="veh">Vehicles</option>
+          <option value="age">Age</option>
+          <option value="income">Household Income</option>
+          <option value="workers">Household Workers</option>
+          <option value="pertype">Person Type</option>
+        </select>
+      </div>
+
+      <div class="col col-md-10">
+        <div id="PurposeChartpums"></div>
+        <div class="small">
+          <div id="popsynDesc" ></div>
+          PUMA - source: <br>
+          Census- source: <br>
+          Modeled- description <br>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <br/>
+
+        <br/>
+
+        <h3>PLACE HOLDER</h3>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis. Nullam scelerisque lorem at felis placerat, vel cursus neque imperdiet. Donec interdum elementum metus, et convallis est cursus ut. Nulla finibus lorem a imperdiet fringilla. Donec pharetra tristique ultrices. Pellentesque at arcu quis turpis blandit dictum. Fusce dignissim ut elit sed blandit. Nulla volutpat posuere sapien. Donec quis consectetur eros. Pellentesque sodales semper fermentum.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div
+    id="3"
+    class="tab-pane container">
+    <div class="row">
+      <div class="col-md-12">
+        <br/>
+
+        <br/>
+
+        <h3>INTRODUCTION/DESCRIPTION</h3>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis. Nullam scelerisque lorem at felis placerat, vel cursus neque imperdiet. Donec interdum elementum metus, et convallis est cursus ut. Nulla finibus lorem a imperdiet fringilla. Donec pharetra tristique ultrices. Pellentesque at arcu quis turpis blandit dictum. Fusce dignissim ut elit sed blandit. Nulla volutpat posuere sapien. Donec quis consectetur eros. Pellentesque sodales semper fermentum.
+        </p>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <br/>
+      <br/>
+      <div class="col col-md-4">
+      <h5><b>Distribution of Auto Ownership</b></h5>
+        <br>
+        <div id="auto_counts" style="width : 50%" align="center"></div>
+        <div class="small">
+          <div id="popsynDesc"></div>
+          Census - source: <br>
+          Survey- source: <br>
+          Modeled- description <br>
+        </div>
+      </div>
+      <div class = "col col-md-8">
+        <br>
+        <br>
+        <br>
+        <br>
+        <svg id="aoCountBar" width="700" height="300"
+              preserveAspectRatio="xMidYMid meet"></svg>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <br/>
+        <br/>
+        <h3>PLACE HOLDER</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis. Nullam scelerisque lorem at felis placerat, vel cursus neque imperdiet. Donec interdum elementum metus, et convallis est cursus ut. Nulla finibus lorem a imperdiet fringilla. Donec pharetra tristique ultrices. Pellentesque at arcu quis turpis blandit dictum. Fusce dignissim ut elit sed blandit. Nulla volutpat posuere sapien. Donec quis consectetur eros. Pellentesque sodales semper fermentum.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <br>
+      <div class="col col-md-4">
+        <h5><b>Distribution of Auto Ownership by <div id= "dtitle"></div></b></h5>
+        <div class="small">
+          Select data type for comparison from dropdown
+          </div>
+        <br>
+        <select id="aoCat">
+          <option value="size">Household Size</option>
+          <option value="income">Household Income</option>
+          <option value="workers">Household Workers</option>
+        </select>
+      </div>
+      <div class="col col-md-8">
+          <div id="stackedbar"></div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <br/>
+        <br/>
+        <h3>PLACE HOLDER</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis. Nullam scelerisque lorem at felis placerat, vel cursus neque imperdiet. Donec interdum elementum metus, et convallis est cursus ut. Nulla finibus lorem a imperdiet fringilla. Donec pharetra tristique ultrices. Pellentesque at arcu quis turpis blandit dictum. Fusce dignissim ut elit sed blandit. Nulla volutpat posuere sapien. Donec quis consectetur eros. Pellentesque sodales semper fermentum.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    id="4"
+    class="tab-pane container">
+    <div class="row">
+      <div class="col-md-12">
+        <br/>
+        <br/>
+        <h3>INTRODUCTION/DESCRIPTION</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis. Nullam scelerisque lorem at felis placerat, vel cursus neque imperdiet. Donec interdum elementum metus, et convallis est cursus ut. Nulla finibus lorem a imperdiet fringilla. Donec pharetra tristique ultrices. Pellentesque at arcu quis turpis blandit dictum. Fusce dignissim ut elit sed blandit. Nulla volutpat posuere sapien. Donec quis consectetur eros. Pellentesque sodales semper fermentum.
+        </p>
+      </div>
+    </div>
+  <div class="row">
+      <div class="col col-md-1" align = "center">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h5><b>Observed Work Flows</b></h5>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h5><b>Modeled Work Flows</b></h5>
+      </div>
+      <div class="col col-md-4">
+        <div id="obsChord"></div>
+        <div id="modelChord"></div>
+      </div>
+      <div class="col col-md-2">
+      </div>
+      <div class="col col-md-5">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      <div id="map" style="width: 500px; height: 800px"></div>
+      </div>
+      </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <!-- jQuery library -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- D3 scripts -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+
+  <script src="http://underscorejs.org/underscore-min.js"></script>
+    <script src="https://rawgit.com/sghall/7859113/raw/422da4401f7d4fc0352a7c49961d24f03716be7a/gistfile1.js"></script>
+
+  <script
+    src="scripts/barchart_dropdownv2.js"
+    type="text/javascript">
+  </script>
+  <script
+    src="scripts/barchart_dropdown_stacked.js"
+    type="text/javascript">
+  </script>
+  <script
+    src="scripts/barchart.js"
+    type="text/javascript">
+  </script>
+  <script
+    src="scripts/chord2.js"
+    type="text/javascript">
+  </script>
+  <script>makeGroupChartv2("data/_1_pop_syn.csv","#PurposeChartpums","#catPopSyn",3, "popsynDesc","hhtitle");</script>
+
+  <script type="text/javascript" src='scripts/table.js'></script>
+  <script>
+  d3.csv("data/aoCounts_tbl.csv", function(d, i, columns) {
+    for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+    return d;
+  }, function(error, data) {
+    if (error) throw error;
+    tabulate(data, ['# Veh', 'Census','Survey','Model'],"#auto_counts"); // 2 column table
+  });
+  d3.csv("data/aoCounts.csv", function(d, i, columns) {
+    for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+    return d;
+  }, function(error, data) {
+    if (error) throw error;
+    BarChart(data,"#aoCountBar","")
+  });
+
+
+  </script>
+  <script>makeStackedChart("data/_3_aocrosstab_counts.csv","#aoCat","dtitle","stackedbar");</script>
+  <script>makeChords('data/chorddata.csv', "modelChord", "obsChord");</script>
+</div>

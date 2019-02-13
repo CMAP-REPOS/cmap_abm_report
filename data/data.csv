@@ -44,48 +44,48 @@ Census,3 Vehicles,2 Workers,2478909,size
 Census,4 or More Vehicles,0 Workers,5355235,size
 Census,4 or More Vehicles,1 Worker,5622997,size
 Census,4 or More Vehicles,2 Workers,6158520,size
-Model,0 Vehicles,0 Workers,10,income
-Model,0 Vehicles,1 Worker,10,income
-Model,0 Vehicles,2 Workers,10,income
-Model,1 Vehicle,0 Workers,10,income
-Model,1 Vehicle,1 Worker,10,income
-Model,1 Vehicle,2 Workers,10,income
-Model,2 Vehicles,0 Workers,10,income
-Model,2 Vehicles,1 Worker,10,income
-Model,2 Vehicles,2 Workers,10,income
-Model,3 Vehicles,0 Workers,10,income
-Model,3 Vehicles,1 Worker,10,income
-Model,3 Vehicles,2 Workers,10,income
-Model,4 or More Vehicles,0 Workers,10,income
-Model,4 or More Vehicles,1 Worker,10,income
-Model,4 or More Vehicles,2 Workers,10,income
-Survey,0 Vehicles,0 Workers,10,income
-Survey,0 Vehicles,1 Worker,10,income
-Survey,0 Vehicles,2 Workers,10,income
-Survey,1 Vehicle,0 Workers,10,income
-Survey,1 Vehicle,1 Worker,10,income
-Survey,1 Vehicle,2 Workers,10,income
-Survey,2 Vehicles,0 Workers,10,income
-Survey,2 Vehicles,1 Worker,10,income
-Survey,2 Vehicles,2 Workers,10,income
-Survey,3 Vehicles,0 Workers,10,income
-Survey,3 Vehicles,1 Worker,10,income
-Survey,3 Vehicles,2 Workers,10,income
-Survey,4 or More Vehicles,0 Workers,10,income
-Survey,4 or More Vehicles,1 Worker,10,income
-Survey,4 or More Vehicles,2 Workers,10,income
-Census,0 Vehicles,0 Workers,10,income
-Census,0 Vehicles,1 Worker,10,income
-Census,0 Vehicles,2 Workers,10,income
-Census,1 Vehicle,0 Workers,10,income
-Census,1 Vehicle,1 Worker,10,income
-Census,1 Vehicle,2 Workers,10,income
-Census,2 Vehicles,0 Workers,10,income
-Census,2 Vehicles,1 Worker,10,income
-Census,2 Vehicles,2 Workers,10,income
-Census,3 Vehicles,0 Workers,10,income
-Census,3 Vehicles,1 Worker,10,income
-Census,3 Vehicles,2 Workers,10,income
-Census,4 or More Vehicles,0 Workers,10,income
-Census,4 or More Vehicles,1 Worker,10,income
-Census,4 or More Vehicles,2 Workers,10,income
+Model,0 Vehicles,0 - 35k,10,income
+Model,0 Vehicles,35k - 65k,10,income
+Model,0 Vehicles,65k - 100k,10,income
+Model,1 Vehicle,0 - 35k,10,income
+Model,1 Vehicle,35k - 65k,10,income
+Model,1 Vehicle,65k - 100k,10,income
+Model,2 Vehicles,0 - 35k,10,income
+Model,2 Vehicles,35k - 65k,10,income
+Model,2 Vehicles,65k - 100k,10,income
+Model,3 Vehicles,0 - 35k,10,income
+Model,3 Vehicles,35k - 65k,10,income
+Model,3 Vehicles,65k - 100k,10,income
+Model,4 or More Vehicles,0 - 35k,10,income
+Model,4 or More Vehicles,35k - 65k,10,income
+Model,4 or More Vehicles,65k - 100k,10,income
+Survey,0 Vehicles,0 - 35k,10,income
+Survey,0 Vehicles,35k - 65k,10,income
+Survey,0 Vehicles,65k - 100k,10,income
+Survey,1 Vehicle,0 - 35k,10,income
+Survey,1 Vehicle,35k - 65k,10,income
+Survey,1 Vehicle,65k - 100k,10,income
+Survey,2 Vehicles,0 - 35k,10,income
+Survey,2 Vehicles,35k - 65k,10,income
+Survey,2 Vehicles,65k - 100k,10,income
+Survey,3 Vehicles,0 - 35k,10,income
+Survey,3 Vehicles,35k - 65k,10,income
+Survey,3 Vehicles,65k - 100k,10,income
+Survey,4 or More Vehicles,0 - 35k,10,income
+Survey,4 or More Vehicles,35k - 65k,10,income
+Survey,4 or More Vehicles,65k - 100k,10,income
+Census,0 Vehicles,0 - 35k,10,income
+Census,0 Vehicles,35k - 65k,10,income
+Census,0 Vehicles,65k - 100k,10,income
+Census,1 Vehicle,0 - 35k,10,income
+Census,1 Vehicle,35k - 65k,10,income
+Census,1 Vehicle,65k - 100k,10,income
+Census,2 Vehicles,0 - 35k,10,income
+Census,2 Vehicles,35k - 65k,10,income
+Census,2 Vehicles,65k - 100k,10,income
+Census,3 Vehicles,0 - 35k,10,income
+Census,3 Vehicles,35k - 65k,10,income
+Census,3 Vehicles,65k - 100k,10,income
+Census,4 or More Vehicles,0 - 35k,10,income
+Census,4 or More Vehicles,35k - 65k,10,income
+Census,4 or More Vehicles,65k - 100k,10,income

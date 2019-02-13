@@ -1,11 +1,12 @@
-function makeGroupChartv2(csv_file,chartID,catID, nogroups,dataDescription){
+function makeGroupChartv2(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
 
-  var divText = document.getElementById('dataDescription');
+  var divText = document.getElementById(dataDescription);
+  var divTitle = document.getElementById(dtitle);
   var ngroups= nogroups+1
   var formatValue = d3.format(".2s");
 
   var margin = {top: 35, right: 80, bottom: 35, left: 45},
-    width = 650 - margin.left - margin.right,
+    width = 850 - margin.left - margin.right,
     height = 200 - margin.top - margin.bottom;
 
   var g = d3.select(chartID).append("svg")
@@ -49,7 +50,8 @@ function makeGroupChartv2(csv_file,chartID,catID, nogroups,dataDescription){
     for(var i = 1, ttl = 0, n = columns.length; i < n; ++i)
           d.chartCat = d.Category;
           d.dataType = d.Type;
-          d.descr = d.Description
+          d.descr = d.Description;
+          d.title = d.Title;
           ttl += d[columns[i]] = +d[columns[i]];
           d.total = ttl;
           return d;
@@ -108,10 +110,13 @@ function makeGroupChartv2(csv_file,chartID,catID, nogroups,dataDescription){
           console.log("Group Total: ", d.totalSlice)
           console.log(d);
           divText =  "Table Description: " + d.Description;
+          divTitle =  d.Title;
         return d;
       })
       d3.select("#" + dataDescription).text(divText);
+      d3.select("#" + dtitle).text(divTitle);
       console.log(divText)
+      console.log(divTitle)
       // ======== Domain, Axis & Sort ========
 
       y.domain([0, d3.max(newdata, function(d) {

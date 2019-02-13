@@ -3,7 +3,6 @@ function makeChords(csv_file, modelDiv, obsDiv){
   var svg1;
   var svg2;
 
-
   d3.csv(csv_file, function(error, data) {
 
             var modelData = data.filter(function(d){

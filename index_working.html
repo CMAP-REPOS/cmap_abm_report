@@ -222,16 +222,31 @@
     <div class="row">
       <br/>
       <br/>
-      <div class="col col-md-12" align="center">
+      <div class="col col-md-5" align="center">
+        <br>
         <div id="auto_counts" style="width : 50%" align="center"></div>
       </div>
-      <div id="stackedtoolTip"></div>
-        <div id="stacked" width="960" height="500">
+    </div>
+    <div class="row">
+      <div class="col col-md-2">
+        <h5><b>Residential Households</b></h5>
+        <div class="small">
+          Select data type for comparison from dropdown
+          </div>
+        <br>
+        <select id="aoCat">
+          <option value="size">Household Size</option>
+          <option value="income">Household Income</option>
+          <option value="workers">Household Workers</option>
+        </select>
+      </div>
+      <div class="col col-md-10">
+          <div id="stackedbar"></div>
         </div>
     </div>
 
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-12">
         <br/>
         <br/>
         <h3>PLACE HOLDER</h3>
@@ -279,5 +294,5 @@
     tabulate(data, ['# Veh', 'Census','Survey','Model'],"#auto_counts"); // 2 column table
   });
   </script>
-  <script>makeStackedChart("data/state_data.csv");</script>
+  <script>makeStackedChart("data/data.csv","#aoCat");</script>
 </div>

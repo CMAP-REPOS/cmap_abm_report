@@ -46,7 +46,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
                       return +recs[0].count;
                   });
             drawChords(mpr.getMatrix(), mpr.getMap(), ompr.getMatrix(), ompr.getMap());
-            drawMap();
+            //drawMap();
 
         });
 
@@ -214,16 +214,6 @@ function makeChords(csv_file, modelDiv, obsDiv){
 
         }
 
-        function drawMap(){
-          var map = L.map('map',).setView([37.5, -115], 6);
-
-    var positron = L.tileLayer('https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
-    	maxZoom: 18,
-    	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-      }
-
-      var svgMap = d3.select(map.getPanes().overlayPane).append("svg"),
-    gMap = svgMap.append("g").attr("class", "leaflet-zoom-hide");
+        function drawMap(){}
 
 }

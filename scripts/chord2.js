@@ -22,8 +22,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
 
             console.log(modelData)
             var mpr = chordMpr(modelData);
-            mpr
-                .addValuesToMap('root')
+            mpr.addValuesToMap('root')
                 .addValuesToMap('node')
                 .setFilter(function(row, a, b) {
                     return (row.root === a.name && row.node === b.name)
@@ -35,8 +34,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
 
               console.log(obsData)
               var ompr = chordMpr(obsData);
-              ompr
-                  .addValuesToMap('root')
+              ompr.addValuesToMap('root')
                   .addValuesToMap('node')
                   .setFilter(function(row, a, b) {
                       return (row.root === a.name && row.node === b.name)

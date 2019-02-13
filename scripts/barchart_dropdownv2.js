@@ -1,4 +1,6 @@
-function makeGroupChartv2(csv_file,chartID,catID,checkBoxID, nogroups){
+function makeGroupChartv2(csv_file,chartID,catID, nogroups,dataDescription){
+
+  var divText = document.getElementById('dataDescription');
   var ngroups= nogroups+1
   var formatValue = d3.format(".2s");
 
@@ -47,6 +49,7 @@ function makeGroupChartv2(csv_file,chartID,catID,checkBoxID, nogroups){
     for(var i = 1, ttl = 0, n = columns.length; i < n; ++i)
           d.chartCat = d.Category;
           d.dataType = d.Type;
+          d.descr = d.Description
           ttl += d[columns[i]] = +d[columns[i]];
           d.total = ttl;
           return d;
@@ -55,7 +58,7 @@ function makeGroupChartv2(csv_file,chartID,catID,checkBoxID, nogroups){
     console.log(data);
     if (error) throw error;
     d3.select(catID).on('change', update);
-    d3.select(checkBoxID).on('change', update); // Sort checkbox
+    // d3.select(checkBoxID).on('change', update); // Sort checkbox
     catInt = d3.select(catID).property('value');
 
     init();
@@ -78,9 +81,9 @@ function makeGroupChartv2(csv_file,chartID,catID,checkBoxID, nogroups){
       var newdata = data.filter(function(d){
         return d.Category == catInt;
       });
-      console.log(newdata);
+      //console.log(newdata);
       keys = data.columns.slice(1, ngroups); //Filter columns for Group Labels
-      console.log(keys)
+      //console.log(keys)
       copy = [];
 
       keys.forEach(function(t) {
@@ -104,9 +107,11 @@ function makeGroupChartv2(csv_file,chartID,catID,checkBoxID, nogroups){
           d.totalSlice = test;
           console.log("Group Total: ", d.totalSlice)
           console.log(d);
+          divText =  "Table Description: " + d.Description;
         return d;
       })
-
+      d3.select("#" + dataDescription).text(divText);
+      console.log(divText)
       // ======== Domain, Axis & Sort ========
 
       y.domain([0, d3.max(newdata, function(d) {
@@ -128,13 +133,13 @@ function makeGroupChartv2(csv_file,chartID,catID,checkBoxID, nogroups){
 
       barGroups.exit().remove();
 
-      newdata.sort( d3.select(checkBoxID).property("checked")
-        ? function(a, b) {
-          return b.totalSlice - a.totalSlice;
-        }
-        : function(a, b) {
-          return sortIndex.indexOf(a.Index) - sortIndex.indexOf(b.Index);
-        });
+      // newdata.sort( d3.select(checkBoxID).property("checked")
+      //   ? function(a, b) {
+      //     return b.totalSlice - a.totalSlice;
+      //   }
+      //   : function(a, b) {
+      //     return sortIndex.indexOf(a.Index) - sortIndex.indexOf(b.Index);
+      //   });
 
 
       x0.domain(newdata.map(function(d) { return d.Index; }));

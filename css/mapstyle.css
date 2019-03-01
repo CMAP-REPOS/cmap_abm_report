@@ -1,0 +1,55 @@
+#map {
+    width: 700px;
+    height: 200px;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    width: 200px;
+}
+.info h6 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.legend {
+    width: 100px;
+    height: 180px;
+    line-height: 18px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+.btn-group .dropdown-menu a:active {
+    background-color: #5bc0de
+}
+
+.difflegend {
+    width: 100px;
+    height: 330px;
+    line-height: 18px;
+    color: #555;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    padding: 6px 8px;
+
+}
+.difflegend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}

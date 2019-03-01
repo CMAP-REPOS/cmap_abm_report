@@ -30,11 +30,3 @@ path.chord {
 #circle:hover path.fade {
     display: none;
 }
-#map{ height: 100% }
-
-path {
-  fill: #000;
-  fill-opacity: .2;
-  stroke: #fff;
-  stroke-width: 1.5px;
-}

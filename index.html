@@ -16,9 +16,17 @@
 }
 </style>
 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+crossorigin=""/></link>
+
+<link rel="stylesheet" href="css/mapstyle.css"/></link>
+
 <link rel="stylesheet" type="text/css"
   href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
 
 <!-- Bootstrap CSS -->
 
@@ -28,9 +36,6 @@
   rel="stylesheet">
 </link>
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
-  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
-  crossorigin=""/>
 <link
   href="css/chordStyles.css"
   rel="stylesheet">
@@ -305,67 +310,23 @@
       </div>
     </div>
   <div class="row">
-      <div class="col col-md-1" align = "center">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+      <div class="col col-md-6" align = "center">
         <h5><b>Observed Work Flows</b></h5>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h5><b>Modeled Work Flows</b></h5>
-      </div>
-      <div class="col col-md-4">
         <div id="obsChord"></div>
+      </div>
+      <div class="col col-md-6" align = "center">
+        <h5><b>Modeled Work Flows</b></h5>
         <div id="modelChord"></div>
       </div>
-      <div class="col col-md-2">
-      </div>
-      <div class="col col-md-5">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-      <div id="map" style="width: 500px; height: 800px"></div>
-      </div>
-      </div>
+    </div>
   </div>
   <div
     id="5"
     class="tab-pane container">
+    <div class="row">
     <div class="col-md-12">
       <br/>
-
       <br/>
-
       <h3>TRIP MODE/DESCRIPTION</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
@@ -375,11 +336,34 @@
         qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
         formarum quam civis excellen
       </p>
-      <h5><b>Trip Purpose - Survey</b></h5>
-      <div id="pieChart1"></div>
-      <h5><b>Trip Purpose - Model</b></h5>
-      <div id="pieChart2"></div>
     </div>
+    </div>
+    <div class="row">
+      <div class="col col-md-2" align = "center">
+        <div class="small">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          Hover over pie chart to compare trips by mode
+        </div>
+      </div>
+      <div class="col col-md-5" align = "center">
+        <h5><b>Observed Work Flows</b></h5>
+        <div id="pieChart1"></div>
+      </div>
+      <div class="col col-md-5" align = "center">
+        <h5><b>Modeled Work Flows</b></h5>
+        <div id="pieChart2"></div>
+      </div>
+  </div>
 
   </div>
   <div
@@ -425,7 +409,21 @@
         formarum quam civis excellen
       </p>
 
-      Map of Region/Network Placeholder
+      <div class="btn-group" role="group">
+      <div class="btn-group" role="group">
+      <button type="button" id="ModelSurvey" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Model
+      </button>
+      <div class="dropdown-menu" aria-labelledby="ModelSurvey">
+        <a class="dropdown-item">Model</a>
+        <a class="dropdown-item">Survey</a>
+        <a class="dropdown-item">Difference</a>
+      </div>
+      <button type="button" id="metra" class="btn btn-info">Metra</button>
+      <button type="button" id="cta" class="btn btn-light">CTA Rail</button>
+      <button type="button" id="pace" class="btn btn-light">Bus</button>
+    </div></div>
+    <div id="map"></div>
 
       <br/>
 
@@ -437,20 +435,15 @@
 
 
   <!-- Optional JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+  integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+  crossorigin=""></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-  <!-- jQuery library -->
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <!-- D3 scripts -->
   <script src="https://d3js.org/d3.v4.min.js"></script>
-
-  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
-   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
-   crossorigin=""></script>
 
   <script src="https://underscorejs.org/underscore-min.js"></script>
     <script src="https://rawgit.com/sghall/7859113/raw/422da4401f7d4fc0352a7c49961d24f03716be7a/gistfile1.js"></script>
@@ -493,4 +486,10 @@
   <script>makeStackedChart("data/csv3_aocrosstab_counts.csv","#aoCat","dtitle","stackedbar");</script>
   <script>makeChords('data/csv4_chord.csv', "modelChord", "obsChord");</script>
   <script type="text/javascript" src="scripts/linkedpies.js"></script>
+
+  <script type="text/javascript" src="scripts/counties.js"></script>
+    <script type="text/javascript" src="scripts/MetraLines.js"></script>
+    <script type="text/javascript" src="scripts/ctalines.js"></script>
+    <script type="text/javascript" src="scripts/maptest.js"></script>
+
 </div>

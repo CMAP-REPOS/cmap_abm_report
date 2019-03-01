@@ -70,15 +70,15 @@ var data2 = [{
 
     var margin = {
         top: 20,
-        right: 40,
-        bottom: 120,
-        left: 80
+        right: 0,
+        bottom: 0,
+        left: 0
       },
-      width = 700 - margin.right - margin.left,
-      height = 500 - margin.top - margin.bottom;
+      width = 400 - margin.right - margin.left,
+      height = 400 - margin.top - margin.bottom;
 
-    var radius = Math.min(width, height) / 2;
-    var donutWidth = 105;
+    var radius = Math.min(width/1.5, height/1.5) / 2;
+    var donutWidth = 55;
     var legendRectSize = 18;
     var legendSpacing = 4;
 

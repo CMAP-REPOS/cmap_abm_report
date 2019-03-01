@@ -59,10 +59,11 @@ polyline{
 }
 
 #tooltip1 {
-top: 160px;
+top: 105px;
+left: 165px;
 }
 
 #tooltip2 {
-  top: 735px;
-  left: 320px;
+  top: 140px;
+  left: 180px;
 }

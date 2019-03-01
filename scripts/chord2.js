@@ -6,14 +6,14 @@ function makeChords(csv_file, modelDiv, obsDiv){
   d3.csv(csv_file, function(error, data) {
 
             var modelData = data.filter(function(d){
-              console.log(d)
+              //console.log(d)
               if (d.Category == "Model"){
                 return data;
               };
             });
 
             var obsData = data.filter(function(d){
-              console.log(d)
+              //console.log(d)
               if (d.Category == "Survey"){
                 return data;
               };

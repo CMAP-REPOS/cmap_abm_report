@@ -17,15 +17,17 @@
 }
 </style>
 
+<link rel="stylesheet" type="text/css"
+  href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
 <!-- Bootstrap CSS -->
 
 <!-- Latest compiled and minified CSS -->
-
 <link
   href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
   rel="stylesheet">
 </link>
-
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -357,6 +359,82 @@
       </div>
       </div>
   </div>
+  <div
+    id="5"
+    class="tab-pane container">
+    <div class="col-md-12">
+      <br/>
+
+      <br/>
+
+      <h3>TRIP MODE/DESCRIPTION</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+        improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+        sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+        factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+        qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+        formarum quam civis excellen
+      </p>
+      <h5><b>Trip Purpose - Survey</b></h5>
+      <div id="pieChart1"></div>
+      <h5><b>Trip Purpose - Model</b></h5>
+      <div id="pieChart2"></div>
+    </div>
+
+  </div>
+  <div
+    id="6"
+    class="tab-pane container">
+    <div class="col-md-12">
+      <br/>
+      <br/>
+      <h3>Trip Activities/DESCRIPTION</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+        improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+        sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+        factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+        qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+        formarum quam civis excellen
+      </p>
+      Map of Region/Network Placeholder
+
+      <br/>
+
+      <br/>
+
+      Place Holder Model Step Description
+    </div>
+  </div>
+  <div
+    id="7"
+    class="tab-pane container">
+    <div class="col-md-12">
+      <br/>
+
+      <br/>
+
+      <h3>Transit/DESCRIPTION</h3>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+        improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+        sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+        factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+        qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+        formarum quam civis excellen
+      </p>
+
+      Map of Region/Network Placeholder
+
+      <br/>
+
+      <br/>
+
+      Place Holder Model Step Description
+    </div>
+  </div>
 
 
   <!-- Optional JavaScript -->
@@ -412,10 +490,8 @@
     if (error) throw error;
     BarChart(data,"#aoCountBar","")
   });
-
-
-
   </script>
   <script>makeStackedChart("data/csv3_aocrosstab_counts.csv","#aoCat","dtitle","stackedbar");</script>
-  <script>makeChords('data/chorddata.csv', "modelChord", "obsChord");</script>
+  <script>makeChords('data/csv4_chord.csv', "modelChord", "obsChord");</script>
+  <script type="text/javascript" src="scripts/linkedpies.js"></script>
 </div>

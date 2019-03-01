@@ -1,0 +1,68 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+}
+
+/* Add shadow effect to chart. If you don't like it, get rid of it. */
+svg {
+    -webkit-filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.3) );
+    filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.25) );
+}
+
+/*Styling for the lines connecting the labels to the slices*/
+polyline{
+    opacity: .3;
+    stroke: black;
+    stroke-width: 2px;
+    fill: none;
+}
+
+/* Make the percentage on the text labels bold*/
+.labelName tspan {
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* In biology we generally italicise species names. */
+.labelName {
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+  #pieChart1 {
+    height: 360px;
+    position: relative;
+    width: 360px;
+}
+
+
+.tooltip {
+  box-shadow: 0 0 5px #999999;
+  display: none;
+  font-size: 12px;
+  left: 310px;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  width: 80px;
+  z-index: 10;
+  line-height: 140%; /*Interlineado*/
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+	}
+
+.label {
+   font-weight: 600;
+}
+
+#tooltip1 {
+top: 160px;
+}
+
+#tooltip2 {
+  top: 735px;
+  left: 320px;
+}

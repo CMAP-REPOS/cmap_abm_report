@@ -364,6 +364,55 @@ crossorigin=""/></link>
         <div id="pieChart2"></div>
       </div>
   </div>
+  <div class="row">
+  <div class="col-md-12">
+    <br/>
+    <br/>
+    <h3>TRIP MODE/DESCRIPTION</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+      improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+      sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+      factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+      qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+      formarum quam civis excellen
+    </p>
+  </div>
+  </div>
+  <div class="row">
+    <br/>
+    <br/>
+    <div class="col col-md-2">
+      <h5><b><div id= "modeTitle"></div> Trips</b></h5>
+      <div class="small">
+        Select data type for comparison from dropdown
+        </div>
+      <br>
+      <select id="catModePurp">
+        <option value="All">All</option>
+        <option value="discretionary">Discretionary</option>
+        <option value="eatingout">Eating Out</option>
+        <option value="escort">Escort</option>
+        <option value="maintenance">Maintenance</option>
+        <option value="school">School</option>
+        <option value="shop">Shop</option>
+        <option value="university">University</option>
+        <option value="visiting">Visiting</option>
+        <option value="work">Work</option>
+        <option value="work-based">Work-based</option>
+      </select>
+    </div>
+
+    <div class="col col-md-10">
+      <div id="ModeByPurpose"></div>
+      <div class="small">
+        <div id="catModePurp" ></div>
+        PUMA - source: <br>
+        Census- source: <br>
+        Modeled- description <br>
+      </div>
+    </div>
+  </div>
 
   </div>
   <div
@@ -465,7 +514,7 @@ crossorigin=""/></link>
     type="text/javascript">
   </script>
   <script>makeGroupChartv2("data/csv1_pop_syn.csv","#PurposeChartpums","#catPopSyn",3, "popsynDesc","hhtitle");</script>
-
+  <script>makeGroupChartv2("data/csv5_mode_purpose.csv","#ModeByPurpose","#catModePurp",2, "modePurpDesc","modeTitle");</script>
   <script type="text/javascript" src='scripts/table.js'></script>
   <script>
   d3.csv("data/aoCounts_tbl.csv", function(d, i, columns) {
@@ -482,6 +531,7 @@ crossorigin=""/></link>
     if (error) throw error;
     BarChart(data,"#aoCountBar","")
   });
+
   </script>
   <script>makeStackedChart("data/csv3_aocrosstab_counts.csv","#aoCat","dtitle","stackedbar");</script>
   <script>makeChords('data/csv4_chord.csv', "modelChord", "obsChord");</script>

@@ -509,7 +509,86 @@ crossorigin=""/></link>
       </div>
     </div>
   </div>
-
+  <div class="row container">
+  <div class="col-md-12">
+    <br/>
+    <br/>
+    <h3>TRIPS BY MODE AND PERSON TYPE</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+      improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+      sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+      factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+      qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+      formarum quam civis excellen
+    </p>
+  </div>
+  </div>
+  <div class="row container">
+    <br/>
+    <br/>
+    <div class="col col-md-2">
+      <h5><b><div id= "modePTitle"></div> Trips</b></h5>
+      <div class="small">
+        Select data type for comparison from dropdown
+        </div>
+      <br>
+      <select id="catModePer">
+        <option value="All">All</option>
+        <option value="fulltime">Full-time Worker</option>
+        <option value="parttime">Part-time Worker</option>
+      </select>
+    </div>
+    <div class="col col-md-10">
+      <div id="ModebyPerson"></div>
+      <div class="small">
+        <div id="modePerDesc" ></div>
+        PUMA - source: <br>
+        Census- source: <br>
+        Modeled- description <br>
+      </div>
+    </div>
+  </div>
+  <div class="row container">
+  <div class="col-md-12">
+    <br/>
+    <br/>
+    <h3>TRIPS BY MODE AND HOUSEHOLD INCOME</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+      improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+      sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+      factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+      qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+      formarum quam civis excellen
+    </p>
+  </div>
+  </div>
+  <div class="row container">
+    <br/>
+    <br/>
+    <div class="col col-md-2">
+      <h5><b><div id= "modeITitle"></div> Trips</b></h5>
+      <div class="small">
+        Select data type for comparison from dropdown
+        </div>
+      <br>
+      <select id="catModeInc">
+        <option value="Bike">Bike</option>
+        <option value="Drive alone free">Drive alone free</option>
+        <option value="Drive alone pay">Drive alone pay</option>
+      </select>
+    </div>
+    <div class="col col-md-10">
+      <div id="ModebyIncome"></div>
+      <div class="small">
+        <div id="modeIncrDesc" ></div>
+        PUMA - source: <br>
+        Census- source: <br>
+        Modeled- description <br>
+      </div>
+    </div>
+  </div>
   </div>
   <div
     id="6"
@@ -620,7 +699,8 @@ crossorigin=""/></link>
   <script>makeGroupVBar("data/csv7_mode_distance.csv","#ModeByDistance","#catModeDist",2, "modeDistDesc","modeDTitle");</script>
   <script>makeGroupVBar("data/csv8_wbmode_distance.csv","#wbModeByDistance","#wbcatModeDist",2, "wbmodeDistDesc","wbmodeDTitle");</script>
   <script>makeGroupVBar("data/csv9_mode_person.csv","#ModebyPerson","#catModePer",2, "modePerDesc","modePTitle");</script>
-  
+  <script>makeGroupVBar("data/csv10_mode_income.csv","#ModebyIncome","#catModeinc",2, "modeinDesc","modeITitle");</script>
+
   <script type="text/javascript" src='scripts/table.js'></script>
   <script>
   d3.csv("data/aoCounts_tbl.csv", function(d, i, columns) {

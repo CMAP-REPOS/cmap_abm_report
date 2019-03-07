@@ -593,10 +593,52 @@ crossorigin=""/></link>
   <div
     id="6"
     class="tab-pane container">
+    <div class="row">
+      <div class="col-md-12">
+        <br/>
+        <br/>
+        <h3>TRIPS BY PURPOSE</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+          improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+          sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+          factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+          qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+          formarum quam civis excellen
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-md-2" align = "center">
+        <div class="small">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          Hover over pie chart to compare trips by purpose
+        </div>
+      </div>
+      <div class="col col-md-5" align = "center">
+        <h5><b>Observed Work Flows</b></h5>
+        <div id="piePurpose1"></div>
+      </div>
+      <div class="col col-md-5" align = "center">
+        <h5><b>Modeled Work Flows</b></h5>
+        <div id="piePurpose2"></div>
+      </div>
+  </div>
+  <div class="row">
     <div class="col-md-12">
       <br/>
       <br/>
-      <h3>Trip Activities/DESCRIPTION</h3>
+      <h3>TRIPS BY PERSONTYPE AND PURPOSE</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
         improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
@@ -605,14 +647,72 @@ crossorigin=""/></link>
         qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
         formarum quam civis excellen
       </p>
-      Map of Region/Network Placeholder
-
-      <br/>
-
-      <br/>
-
-      Place Holder Model Step Description
     </div>
+  </div>
+  <div class="row">
+    <br/>
+    <br/>
+    <div class="col col-md-2">
+      <h5><b><div id= "purpTypeTitle"></div> Trips</b></h5>
+      <div class="small">
+        Select data type for comparison from dropdown
+        </div>
+      <br>
+      <select id="catPurpType">
+        <option value="All">All</option>
+        <option value="fulltime">Full-time Worker</option>
+        <option value="parttime">Part-time Worker</option>
+      </select>
+    </div>
+    <div class="col col-md-10">
+      <div id="PurposebyType"></div>
+      <div class="small">
+        <div id="purpTypeDesc" ></div>
+        PUMA - source: <br>
+        Census- source: <br>
+        Modeled- description <br>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <br/>
+      <br/>
+      <h3>TRIPS BY DISTANCE AND PURPOSE</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+        improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+        sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+        factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+        qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+        formarum quam civis excellen
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <br/>
+    <br/>
+    <div class="col col-md-2">
+      <h5><b><div id= "purpDistTitle"></div> Trips</b></h5>
+      <div class="small">
+        Select data type for comparison from dropdown
+        </div>
+      <br>
+      <select id="catPurpDist">
+        <option value="All">All</option>
+        <option value="work">Work Trips</option>
+      </select>
+    </div>
+    <div class="col col-md-10">
+      <div id="PurposebyDist"></div>
+      <div class="small">
+        <div id="purpDistDesc" ></div>
+        PUMA - source: <br>
+        Census- source: <br>
+        Modeled- description <br>
+      </div>
+    </div>
+  </div>
   </div>
   <div
     id="7"
@@ -700,6 +800,8 @@ crossorigin=""/></link>
   <script>makeGroupVBar("data/csv8_wbmode_distance.csv","#wbModeByDistance","#wbcatModeDist",2, "wbmodeDistDesc","wbmodeDTitle");</script>
   <script>makeGroupVBar("data/csv9_mode_person.csv","#ModebyPerson","#catModePer",2, "modePerDesc","modePTitle");</script>
   <script>makeGroupVBar("data/csv10_mode_income.csv","#ModebyIncome","#catModeinc",2, "modeinDesc","modeITitle");</script>
+  <script>makeGroupVBar("data/csv11_purpose_type.csv","#PurposebyType","#catPurpType",2, "purpTypeDesc","purpTypeTitle");</script>
+  <script>makeGroupVBar("data/csv12_purpose_distance.csv","#PurposebyDist","#catPurpDist",2, "purpDistDesc","purpDistTitle");</script>
 
   <script type="text/javascript" src='scripts/table.js'></script>
   <script>
@@ -722,6 +824,7 @@ crossorigin=""/></link>
   <script>makeStackedChart("data/csv3_aocrosstab_counts.csv","#aoCat","dtitle","stackedbar");</script>
   <script>makeChords('data/csv4_chord.csv', "modelChord", "obsChord");</script>
   <script type="text/javascript" src="scripts/linkedpies.js"></script>
+  <script type="text/javascript" src="scripts/PurposePie.js"></script>
 
   <script type="text/javascript" src="data/counties.js"></script>
     <script type="text/javascript" src="data/MetraLines.js"></script>

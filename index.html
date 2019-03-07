@@ -14,6 +14,10 @@
 .axis .domain {
   display: none;
 }
+div
+{
+  display: inline-block;
+}
 </style>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>
@@ -122,8 +126,7 @@ crossorigin=""/></link>
 
 <div class="tab-content ">
   <div
-    id="1"
-    class="tab-pane tab-pane show active container">
+    id="1" class="tab-pane active container">
     <div class="col-md-12">
       <br/>
 
@@ -153,7 +156,7 @@ crossorigin=""/></link>
   <div
     id="2"
     class="tab-pane container">
-    <div class="row">
+    <div class="row container">
       <div class="col-md-12">
         <br/>
 
@@ -171,7 +174,7 @@ crossorigin=""/></link>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row container">
       <br/>
       <br/>
       <div class="col col-md-2">
@@ -201,7 +204,7 @@ crossorigin=""/></link>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row container">
       <div class="col-md-12">
         <br/>
 
@@ -219,7 +222,7 @@ crossorigin=""/></link>
   <div
     id="3"
     class="tab-pane container">
-    <div class="row">
+    <div class="row container">
       <div class="col-md-12">
         <br/>
 
@@ -234,7 +237,7 @@ crossorigin=""/></link>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row container">
       <br/>
       <br/>
       <div class="col col-md-4">
@@ -257,7 +260,7 @@ crossorigin=""/></link>
               preserveAspectRatio="xMidYMid meet"></svg>
         </div>
     </div>
-    <div class="row">
+    <div class="row container">
       <div class="col-md-12">
         <br/>
         <br/>
@@ -267,7 +270,7 @@ crossorigin=""/></link>
         </p>
       </div>
     </div>
-    <div class="row">
+    <div class="row container">
       <br>
       <div class="col col-md-4">
         <h5><b>Distribution of Auto Ownership by <div id= "dtitle"></div></b></h5>
@@ -285,7 +288,7 @@ crossorigin=""/></link>
           <div id="stackedbar"></div>
         </div>
     </div>
-    <div class="row">
+    <div class="row container">
       <div class="col-md-12">
         <br/>
         <br/>
@@ -300,7 +303,7 @@ crossorigin=""/></link>
   <div
     id="4"
     class="tab-pane container">
-    <div class="row">
+    <div class="row container">
       <div class="col-md-12">
         <br/>
         <br/>
@@ -310,7 +313,7 @@ crossorigin=""/></link>
         </p>
       </div>
     </div>
-  <div class="row">
+  <div class="row container">
       <div class="col col-md-6" align = "center">
         <h5><b>Observed Work Flows</b></h5>
         <div id="obsChord"></div>
@@ -320,45 +323,64 @@ crossorigin=""/></link>
         <div id="modelChord"></div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-4">
+    <div class="row container">
+      <div class="col-md-6">
         <br/>
         <br/>
-        <h3>Work Trips to CBD</h3>
+        <h3>Work Trips to <div id="pTitle"></div></h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis.
-      </div>
-      <div class="col col-md-2">
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <h5><b>Work Trips To <div id="pTitle"></div></b></h5>
-        <div class="small">
-          Select data type for comparison from dropdown
+          <div class="small">
+            Select data type for comparison from dropdown
           </div>
-        <br>
-        <select id="cat">
-          <option value="1">CBD</option>
-          <option value="2N">North Chicago</option>
-          <option value="3N">North Cook</option>
-        </select>
+          <br>
+          <select id="cat">
+            <option value="1">CBD</option>
+            <option value="2N">North Chicago</option>
+            <option value="3N">North Cook</option>
+          </select>
       </div>
       <div class="col-md-6">
+        <br/>
         <br/>
         <br/>
         <div id="VChart"></div>
       </div>
     </div>
-    <div class="row">
+    <div class="row container">
       <div class="col-md-12">
         <h3>Work Trips by Mode and Distance</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis. Nullam scelerisque lorem at felis placerat, vel cursus neque imperdiet. Donec interdum elementum metus, et convallis est cursus ut. Nulla finibus lorem a imperdiet fringilla. Donec pharetra tristique ultrices. Pellentesque at arcu quis turpis blandit dictum. Fusce dignissim ut elit sed blandit. Nulla volutpat posuere sapien. Donec quis consectetur eros. Pellentesque sodales semper fermentum.
         </p>
+        <!--HOLD FOR Work Trips by Mode & Distance-->
       </div>
     </div>
-    <div class="row">
+    <div class="row container">
+      <br/>
+      <br/>
+      <div class="col col-md-2">
+        <h5><b>Mean Distance To Work by <div id= "modeDTitle"></div></b></h5>
+        <div class="small">
+          Select data type for comparison from dropdown
+          </div>
+        <br>
+        <select id="catModeDist">
+          <option value="All">All Modes</option>
+          <option value="sov1">Drive Alone Free</option>
+        </select>
+      </div>
+
+      <div class="col col-md-10">
+        <div id="ModeByDistance"></div>
+        <div class="small">
+          <div id="modeDistDesc" ></div>
+          Survey - description <br>
+          Modeled- description <br>
+        </div>
+      </div>
+    </div>
+    <div class="row container">
       <div class="col-md-12">
         <br/>
         <br/>
@@ -366,17 +388,42 @@ crossorigin=""/></link>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis. Nullam scelerisque lorem at felis placerat, vel cursus neque imperdiet. Donec interdum elementum metus, et convallis est cursus ut. Nulla finibus lorem a imperdiet fringilla. Donec pharetra tristique ultrices. Pellentesque at arcu quis turpis blandit dictum. Fusce dignissim ut elit sed blandit. Nulla volutpat posuere sapien. Donec quis consectetur eros. Pellentesque sodales semper fermentum.
         </p>
+        <!--HOLD FOR Work-Based Trips by Mode & Distance-->
+      </div>
+    </div>
+    <div class="row container">
+      <br/>
+      <br/>
+      <div class="col col-md-2">
+        <h5><b>Mean Distance of Work-Based Trips by <div id= "wbmodeDTitle"></div></b></h5>
+        <div class="small">
+          Select data type for comparison from dropdown
+          </div>
+        <br>
+        <select id="wbcatModeDist">
+          <option value="All">All Modes</option>
+          <option value="sov1">Drive Alone Free</option>
+        </select>
+      </div>
+
+      <div class="col col-md-10">
+        <div id="wbModeByDistance"></div>
+        <div class="small">
+          <div id="wbmodeDistDesc" ></div>
+          Survey - description <br>
+          Modeled- description <br>
+        </div>
       </div>
     </div>
   </div>
   <div
     id="5"
     class="tab-pane container">
-    <div class="row">
+    <div class="row container">
     <div class="col-md-12">
       <br/>
       <br/>
-      <h3>TRIP MODE/DESCRIPTION</h3>
+      <h3>TRIPS BY MODE</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
         improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
@@ -387,7 +434,7 @@ crossorigin=""/></link>
       </p>
     </div>
     </div>
-    <div class="row">
+    <div class="row container">
       <div class="col col-md-2" align = "center">
         <div class="small">
           <br>
@@ -413,11 +460,11 @@ crossorigin=""/></link>
         <div id="pieChart2"></div>
       </div>
   </div>
-  <div class="row">
+  <div class="row container">
   <div class="col-md-12">
     <br/>
     <br/>
-    <h3>TRIP MODE/DESCRIPTION</h3>
+    <h3>TRIPS BY MODE AND PURPOSE</h3>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
       improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
@@ -428,7 +475,7 @@ crossorigin=""/></link>
     </p>
   </div>
   </div>
-  <div class="row">
+  <div class="row container">
     <br/>
     <br/>
     <div class="col col-md-2">
@@ -570,6 +617,10 @@ crossorigin=""/></link>
   <script>makeGroupVBar("data/csv1_pop_syn.csv","#PurposeChartpums","#catPopSyn",3, "popsynDesc","hhtitle");</script>
   <script>makeGroupVBar("data/csv5_mode_purpose.csv","#ModeByPurpose","#catModePurp",2, "modePurpDesc","modeTitle");</script>
   <script>makeGroupHBar("data/csv6_placeholder.csv","#VChart","#cat",2, "pDesc","pTitle");</script>
+  <script>makeGroupVBar("data/csv7_mode_distance.csv","#ModeByDistance","#catModeDist",2, "modeDistDesc","modeDTitle");</script>
+  <script>makeGroupVBar("data/csv8_wbmode_distance.csv","#wbModeByDistance","#wbcatModeDist",2, "wbmodeDistDesc","wbmodeDTitle");</script>
+  <script>makeGroupVBar("data/csv9_mode_person.csv","#ModebyPerson","#catModePer",2, "modePerDesc","modePTitle");</script>
+  
   <script type="text/javascript" src='scripts/table.js'></script>
   <script>
   d3.csv("data/aoCounts_tbl.csv", function(d, i, columns) {

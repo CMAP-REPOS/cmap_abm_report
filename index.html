@@ -123,7 +123,7 @@ crossorigin=""/></link>
 <div class="tab-content ">
   <div
     id="1"
-    class="tab-pane container">
+    class="tab-pane tab-pane show active container">
     <div class="col-md-12">
       <br/>
 
@@ -215,7 +215,7 @@ crossorigin=""/></link>
       </div>
     </div>
   </div>
-
+    <!-- Auto Counts -->
   <div
     id="3"
     class="tab-pane container">
@@ -240,7 +240,7 @@ crossorigin=""/></link>
       <div class="col col-md-4">
       <h5><b>Distribution of Auto Ownership</b></h5>
         <br>
-        <div id="auto_counts" style="width : 50%" align="center"></div>
+        <div id="auto_counts" style="width : 86%" align="center"></div>
         <div class="small">
           <div id="popsynDesc"></div>
           Census - source: <br>
@@ -296,6 +296,7 @@ crossorigin=""/></link>
       </div>
     </div>
   </div>
+  <!-- Work Flows -->
   <div
     id="4"
     class="tab-pane container">
@@ -317,6 +318,54 @@ crossorigin=""/></link>
       <div class="col col-md-6" align = "center">
         <h5><b>Modeled Work Flows</b></h5>
         <div id="modelChord"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <br/>
+        <br/>
+        <h3>Work Trips to CBD</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis.
+      </div>
+      <div class="col col-md-2">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h5><b>Work Trips To <div id="pTitle"></div></b></h5>
+        <div class="small">
+          Select data type for comparison from dropdown
+          </div>
+        <br>
+        <select id="cat">
+          <option value="1">CBD</option>
+          <option value="2N">North Chicago</option>
+          <option value="3N">North Cook</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <br/>
+        <br/>
+        <div id="VChart"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Work Trips by Mode and Distance</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis. Nullam scelerisque lorem at felis placerat, vel cursus neque imperdiet. Donec interdum elementum metus, et convallis est cursus ut. Nulla finibus lorem a imperdiet fringilla. Donec pharetra tristique ultrices. Pellentesque at arcu quis turpis blandit dictum. Fusce dignissim ut elit sed blandit. Nulla volutpat posuere sapien. Donec quis consectetur eros. Pellentesque sodales semper fermentum.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <br/>
+        <br/>
+        <h3>Work-Based Walk Trips by Distance</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis. Nullam scelerisque lorem at felis placerat, vel cursus neque imperdiet. Donec interdum elementum metus, et convallis est cursus ut. Nulla finibus lorem a imperdiet fringilla. Donec pharetra tristique ultrices. Pellentesque at arcu quis turpis blandit dictum. Fusce dignissim ut elit sed blandit. Nulla volutpat posuere sapien. Donec quis consectetur eros. Pellentesque sodales semper fermentum.
+        </p>
       </div>
     </div>
   </div>
@@ -488,8 +537,9 @@ crossorigin=""/></link>
   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
   crossorigin=""></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
 
   <!-- D3 scripts -->
   <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -498,7 +548,11 @@ crossorigin=""/></link>
     <script src="https://rawgit.com/sghall/7859113/raw/422da4401f7d4fc0352a7c49961d24f03716be7a/gistfile1.js"></script>
 
   <script
-    src="scripts/barchart_dropdownv2.js"
+    src="scripts/h_barchart_dropdown.js"
+    type="text/javascript">
+  </script>
+  <script
+    src="scripts/v_barchart_dropdown.js"
     type="text/javascript">
   </script>
   <script
@@ -513,8 +567,9 @@ crossorigin=""/></link>
     src="scripts/chord2.js"
     type="text/javascript">
   </script>
-  <script>makeGroupChartv2("data/csv1_pop_syn.csv","#PurposeChartpums","#catPopSyn",3, "popsynDesc","hhtitle");</script>
-  <script>makeGroupChartv2("data/csv5_mode_purpose.csv","#ModeByPurpose","#catModePurp",2, "modePurpDesc","modeTitle");</script>
+  <script>makeGroupVBar("data/csv1_pop_syn.csv","#PurposeChartpums","#catPopSyn",3, "popsynDesc","hhtitle");</script>
+  <script>makeGroupVBar("data/csv5_mode_purpose.csv","#ModeByPurpose","#catModePurp",2, "modePurpDesc","modeTitle");</script>
+  <script>makeGroupHBar("data/csv6_placeholder.csv","#VChart","#cat",2, "pDesc","pTitle");</script>
   <script type="text/javascript" src='scripts/table.js'></script>
   <script>
   d3.csv("data/aoCounts_tbl.csv", function(d, i, columns) {
@@ -537,9 +592,9 @@ crossorigin=""/></link>
   <script>makeChords('data/csv4_chord.csv', "modelChord", "obsChord");</script>
   <script type="text/javascript" src="scripts/linkedpies.js"></script>
 
-  <script type="text/javascript" src="scripts/counties.js"></script>
-    <script type="text/javascript" src="scripts/MetraLines.js"></script>
-    <script type="text/javascript" src="scripts/ctalines.js"></script>
+  <script type="text/javascript" src="data/counties.js"></script>
+    <script type="text/javascript" src="data/MetraLines.js"></script>
+    <script type="text/javascript" src="data/ctalines.js"></script>
     <script type="text/javascript" src="scripts/maptest.js"></script>
 
 </div>

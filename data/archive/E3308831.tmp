@@ -1,0 +1,144 @@
+Index,Model 01,Survey 01,Category,Description,Title
+Bike,"37,350","56,428",discretionary,discretionary Bike trips,discretionary
+Drive alone free,"993,960","1,023,730",discretionary,discretionary Drive alone free trips,discretionary
+Drive alone pay,"32,685","10,215",discretionary,discretionary Drive alone pay trips,discretionary
+Drive to transit,"1,420","7,979",discretionary,discretionary Drive to transit trips,discretionary
+School bus,0,"22,347",discretionary,discretionary School bus trips,discretionary
+Shared ride 2 free,"793,865","834,218",discretionary,discretionary Shared ride 2 free trips,discretionary
+Shared ride 2 pay,"10,220","6,856",discretionary,discretionary Shared ride 2 pay trips,discretionary
+Shared ride 3+ free,"1,010,645","865,383",discretionary,discretionary Shared ride 3+ free trips,discretionary
+Shared ride 3+ pay,"32,820","3,865",discretionary,discretionary Shared ride 3+ pay trips,discretionary
+Taxi,"6,455","7,342",discretionary,discretionary Taxi trips,discretionary
+Walk,"308,015","426,040",discretionary,discretionary Walk trips,discretionary
+Walk to transit,"113,705","88,601",discretionary,discretionary Walk to transit trips,discretionary
+All,"3,341,140","3,376,778",discretionary,discretionary All trips,discretionary
+Bike,"17,005","11,713",eatingout,eatingout Bike trips,eatingout
+Drive alone free,"780,615","876,801",eatingout,eatingout Drive alone free trips,eatingout
+Drive alone pay,"15,600","13,264",eatingout,eatingout Drive alone pay trips,eatingout
+Drive to transit,880,"2,145",eatingout,eatingout Drive to transit trips,eatingout
+School bus,0,571,eatingout,eatingout School bus trips,eatingout
+Shared ride 2 free,"624,350","665,455",eatingout,eatingout Shared ride 2 free trips,eatingout
+Shared ride 2 pay,"5,160","2,507",eatingout,eatingout Shared ride 2 pay trips,eatingout
+Shared ride 3+ free,"631,040","628,749",eatingout,eatingout Shared ride 3+ free trips,eatingout
+Shared ride 3+ pay,"13,920","3,056",eatingout,eatingout Shared ride 3+ pay trips,eatingout
+Taxi,"5,775","7,592",eatingout,eatingout Taxi trips,eatingout
+Walk,"158,015","273,748",eatingout,eatingout Walk trips,eatingout
+Walk to transit,"110,885","43,052",eatingout,eatingout Walk to transit trips,eatingout
+All,"2,363,245","2,535,581",eatingout,eatingout All trips,eatingout
+Bike,"19,285","5,767",escort,escort Bike trips,escort
+Drive alone free,"1,478,720","1,343,359",escort,escort Drive alone free trips,escort
+Drive alone pay,"26,955","16,297",escort,escort Drive alone pay trips,escort
+Drive to transit,0,"1,992",escort,escort Drive to transit trips,escort
+School bus,0,"1,893",escort,escort School bus trips,escort
+Shared ride 2 free,"498,265","1,175,271",escort,escort Shared ride 2 free trips,escort
+Shared ride 2 pay,"6,530","7,271",escort,escort Shared ride 2 pay trips,escort
+Shared ride 3+ free,"1,101,925","1,199,544",escort,escort Shared ride 3+ free trips,escort
+Shared ride 3+ pay,"14,495","4,382",escort,escort Shared ride 3+ pay trips,escort
+Taxi,"6,630","1,248",escort,escort Taxi trips,escort
+Walk,"314,145","263,474",escort,escort Walk trips,escort
+Walk to transit,"118,600","44,898",escort,escort Walk to transit trips,escort
+All,"3,585,550","4,068,983",escort,escort All trips,escort
+Bike,"35,555","30,579",maintenance,maintenance Bike trips,maintenance
+Drive alone free,"1,785,545","2,170,181",maintenance,maintenance Drive alone free trips,maintenance
+Drive alone pay,"29,405","32,546",maintenance,maintenance Drive alone pay trips,maintenance
+Drive to transit,"27,670","14,707",maintenance,maintenance Drive to transit trips,maintenance
+School bus,0,"10,304",maintenance,maintenance School bus trips,maintenance
+Shared ride 2 free,"1,033,365","1,031,332",maintenance,maintenance Shared ride 2 free trips,maintenance
+Shared ride 2 pay,"10,170","3,761",maintenance,maintenance Shared ride 2 pay trips,maintenance
+Shared ride 3+ free,"594,880","792,900",maintenance,maintenance Shared ride 3+ free trips,maintenance
+Shared ride 3+ pay,"9,660","1,416",maintenance,maintenance Shared ride 3+ pay trips,maintenance
+Taxi,"24,170","17,676",maintenance,maintenance Taxi trips,maintenance
+Walk,"412,690","370,217",maintenance,maintenance Walk trips,maintenance
+Walk to transit,"123,265","186,365",maintenance,maintenance Walk to transit trips,maintenance
+All,"4,086,375","4,689,505",maintenance,maintenance All trips,maintenance
+Bike,43455,"27,745",school,school Bike trips,school
+Drive alone free,86745,"93,236",school,school Drive alone free trips,school
+Drive alone pay,880,0,school,school Drive alone pay trips,school
+Drive to transit,8790,"3,592",school,school Drive to transit trips,school
+School bus,877930,"701,437",school,school School bus trips,school
+Shared ride 2 free,366145,"530,305",school,school Shared ride 2 free trips,school
+Shared ride 2 pay,2025,0,school,school Shared ride 2 pay trips,school
+Shared ride 3+ free,364980,"511,859",school,school Shared ride 3+ free trips,school
+Shared ride 3+ pay,2270,0,school,school Shared ride 3+ pay trips,school
+Taxi,760,"1,607",school,school Taxi trips,school
+Walk,846780,"534,471",school,school Walk trips,school
+Walk to transit,74515,"105,388",school,school Walk to transit trips,school
+All,2675275,"2,514,119",school,school All trips,school
+Bike,"28,390","26,924",shop,shop Bike trips,shop
+Drive alone free,"2,351,975","2,458,145",shop,shop Drive alone free trips,shop
+Drive alone pay,"33,325","22,889",shop,shop Drive alone pay trips,shop
+Drive to transit,"37,550","2,473",shop,shop Drive to transit trips,shop
+School bus,0,113,shop,shop School bus trips,shop
+Shared ride 2 free,"1,507,665","1,382,379",shop,shop Shared ride 2 free trips,shop
+Shared ride 2 pay,"7,195","2,112",shop,shop Shared ride 2 pay trips,shop
+Shared ride 3+ free,"1,084,720","972,954",shop,shop Shared ride 3+ free trips,shop
+Shared ride 3+ pay,"13,070","3,639",shop,shop Shared ride 3+ pay trips,shop
+Taxi,"11,910","7,118",shop,shop Taxi trips,shop
+Walk,"413,040","515,354",shop,shop Walk trips,shop
+Walk to transit,"184,050","142,438",shop,shop Walk to transit trips,shop
+All,"5,672,890","5,555,766",shop,shop All trips,shop
+Bike,"17,170","3,905",university,university Bike trips,university
+Drive alone free,"167,355","173,196",university,university Drive alone free trips,university
+Drive alone pay,"5,545","11,873",university,university Drive alone pay trips,university
+Drive to transit,"4,320","7,614",university,university Drive to transit trips,university
+School bus,0,"2,436",university,university School bus trips,university
+Shared ride 2 free,"50,845","30,371",university,university Shared ride 2 free trips,university
+Shared ride 2 pay,"2,060",23,university,university Shared ride 2 pay trips,university
+Shared ride 3+ free,"12,945","3,798",university,university Shared ride 3+ free trips,university
+Shared ride 3+ pay,930,0,university,university Shared ride 3+ pay trips,university
+Taxi,"24,295",155,university,university Taxi trips,university
+Walk,"71,000","37,919",university,university Walk trips,university
+Walk to transit,"24,675","61,314",university,university Walk to transit trips,university
+All,"381,140","333,811",university,university All trips,university
+Bike,"25,840","29,921",visiting,visiting Bike trips,visiting
+Drive alone free,"609,730","701,336",visiting,visiting Drive alone free trips,visiting
+Drive alone pay,"21,110","22,556",visiting,visiting Drive alone pay trips,visiting
+Drive to transit,780,"3,795",visiting,visiting Drive to transit trips,visiting
+School bus,0,"5,240",visiting,visiting School bus trips,visiting
+Shared ride 2 free,"490,870","473,413",visiting,visiting Shared ride 2 free trips,visiting
+Shared ride 2 pay,"6,045","5,205",visiting,visiting Shared ride 2 pay trips,visiting
+Shared ride 3+ free,"510,180","423,868",visiting,visiting Shared ride 3+ free trips,visiting
+Shared ride 3+ pay,"17,150","3,653",visiting,visiting Shared ride 3+ pay trips,visiting
+Taxi,"3,505","7,618",visiting,visiting Taxi trips,visiting
+Walk,"183,865","271,809",visiting,visiting Walk trips,visiting
+Walk to transit,"70,785","66,008",visiting,visiting Walk to transit trips,visiting
+All,"1,939,860","2,019,572",visiting,visiting All trips,visiting
+Bike,"119,215","64,542",work,work Bike trips,work
+Drive alone free,"4,146,465","3,804,364",work,work Drive alone free trips,work
+Drive alone pay,"138,090","220,216",work,work Drive alone pay trips,work
+Drive to transit,"93,130","122,633",work,work Drive to transit trips,work
+School bus,0,"6,202",work,work School bus trips,work
+Shared ride 2 free,"456,215","345,304",work,work Shared ride 2 free trips,work
+Shared ride 2 pay,"7,250","13,985",work,work Shared ride 2 pay trips,work
+Shared ride 3+ free,"99,255","77,540",work,work Shared ride 3+ free trips,work
+Shared ride 3+ pay,"4,260",547,work,work Shared ride 3+ pay trips,work
+Taxi,"19,750","12,672",work,work Taxi trips,work
+Walk,"509,580","310,484",work,work Walk trips,work
+Walk to transit,"625,545","583,886",work,work Walk to transit trips,work
+All,"6,218,755","5,585,820",work,work All trips,work
+Bike,"5,245","4,596",work-based,work-based Bike trips,work-based
+Drive alone free,"635,025","738,893",work-based,work-based Drive alone free trips,work-based
+Drive alone pay,"17,235","39,538",work-based,work-based Drive alone pay trips,work-based
+Drive to transit,0,"10,526",work-based,work-based Drive to transit trips,work-based
+School bus,0,"2,092",work-based,work-based School bus trips,work-based
+Shared ride 2 free,"55,090","57,125",work-based,work-based Shared ride 2 free trips,work-based
+Shared ride 2 pay,895,"1,268",work-based,work-based Shared ride 2 pay trips,work-based
+Shared ride 3+ free,"13,070","20,244",work-based,work-based Shared ride 3+ free trips,work-based
+Shared ride 3+ pay,365,0,work-based,work-based Shared ride 3+ pay trips,work-based
+Taxi,"7,685","6,991",work-based,work-based Taxi trips,work-based
+Walk,"173,305","50,014",work-based,work-based Walk trips,work-based
+Walk to transit,"50,320","24,219",work-based,work-based Walk to transit trips,work-based
+All,"958,235","961,958",work-based,work-based All trips,work-based
+Bike,"348,510","274,811",All,All Bike trips,All
+Drive alone free,"13,036,135","13,410,726",All,All Drive alone free trips,All
+Drive alone pay,"320,830","389,805",All,All Drive alone pay trips,All
+Drive to transit,"174,540","177,454",All,All Drive to transit trips,All
+School bus,"877,930","753,391",All,All School bus trips,All
+Shared ride 2 free,"5,876,675","6,540,903",All,All Shared ride 2 free trips,All
+Shared ride 2 pay,"57,550","42,987",All,All Shared ride 2 pay trips,All
+Shared ride 3+ free,"5,423,640","5,500,885",All,All Shared ride 3+ free trips,All
+Shared ride 3+ pay,"108,940","20,879",All,All Shared ride 3+ pay trips,All
+Taxi,"110,935","70,084",All,All Taxi trips,All
+Walk,"3,390,435","3,218,236",All,All Walk trips,All
+Walk to transit,"1,496,345","1,348,049",All,All Walk to transit trips,All
+All,"31,222,465","31,870,818",All,All All trips,All

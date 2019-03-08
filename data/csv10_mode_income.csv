@@ -1,0 +1,56 @@
+Index,Model 01,Survey 01,Category,Description,Title
+Less than $35k,37350,56428,Bike,fulltime Bike trips,Bike
+Less than $35k,17005,11713,Drive alone free,parttime Bike trips,Drive alone free
+Less than $35k,19285,5767,Drive alone pay,preschool Bike trips,Drive alone pay
+Less than $35k,35555,30579,Drive to transit,retired Bike trips,Drive to transit
+Less than $35k,43455,27745,driveagestudent bus,driveagestudent Bike trips,driveagestudent bus
+Less than $35k,28390,26924,Shared ride 2 free,shop Bike trips,Shared ride 2 free
+Less than $35k,17170,3905,Shared ride 2 pay,preschool Bike trips,Shared ride 2 pay
+Less than $35k,25840,29921,Shared ride 3+ free,nondrivingstudent Bike trips,Shared ride 3+ free
+Less than $35k,119215,64542,Shared ride 3+ pay,temp2 Bike trips,Shared ride 3+ pay
+Less than $35k,5245,4596,Taxi,temp1 Bike trips,Taxi
+Less than $35k,348510,274811,Walk,All Bike trips,Walk
+$35k to $50k,993960,1023730,Walk to transit,fulltime Drive alone free trips,Walk to transit
+$35k to $50k,780615,876801,Bike,parttime Drive alone free trips,Bike
+$35k to $50k,1478720,1343359,Drive alone free,preschool Drive alone free trips,Drive alone free
+$35k to $50k,1785545,2170181,Drive alone pay,retired Drive alone free trips,Drive alone pay
+$35k to $50k,86745,93236,Drive to transit,driveagestudent Drive alone free trips,Drive to transit
+$35k to $50k,2351975,2458145,driveagestudent bus,shop Drive alone free trips,driveagestudent bus
+$35k to $50k,167355,173196,Shared ride 2 free,preschool Drive alone free trips,Shared ride 2 free
+$35k to $50k,609730,701336,Shared ride 2 pay,nondrivingstudent Drive alone free trips,Shared ride 2 pay
+$35k to $50k,4146465,3804364,Shared ride 3+ free,temp2 Drive alone free trips,Shared ride 3+ free
+$35k to $50k,635025,738893,Shared ride 3+ pay,temp1 Drive alone free trips,Shared ride 3+ pay
+$35k to $50k,13036135,13410726,Taxi,All Drive alone free trips,Taxi
+$50k to $65k,32685,10215,Walk,fulltime Drive alone pay trips,Walk
+$50k to $65k,15600,13264,Walk to transit,parttime Drive alone pay trips,Walk to transit
+$50k to $65k,26955,16297,Bike,preschool Drive alone pay trips,Bike
+$50k to $65k,29405,32546,Drive alone free,retired Drive alone pay trips,Drive alone free
+$50k to $65k,880,0,Drive alone pay,driveagestudent Drive alone pay trips,Drive alone pay
+$50k to $65k,33325,22889,Drive to transit,shop Drive alone pay trips,Drive to transit
+$50k to $65k,5545,11873,driveagestudent bus,preschool Drive alone pay trips,driveagestudent bus
+$50k to $65k,21110,22556,Shared ride 2 free,nondrivingstudent Drive alone pay trips,Shared ride 2 free
+$50k to $65k,138090,220216,Shared ride 2 pay,temp2 Drive alone pay trips,Shared ride 2 pay
+$50k to $65k,17235,39538,Shared ride 3+ free,temp1 Drive alone pay trips,Shared ride 3+ free
+$50k to $65k,320830,389805,Shared ride 3+ pay,All Drive alone pay trips,Shared ride 3+ pay
+$65k to $100K,1420,7979,Taxi,fulltime Drive to transit trips,Taxi
+$65k to $100K,880,2145,Walk,parttime Drive to transit trips,Walk
+$65k to $100K,0,1992,Walk to transit,preschool Drive to transit trips,Walk to transit
+$65k to $100K,27670,14707,Bike,retired Drive to transit trips,Bike
+$65k to $100K,8790,3592,Drive alone free,driveagestudent Drive to transit trips,Drive alone free
+$65k to $100K,37550,2473,Drive alone pay,shop Drive to transit trips,Drive alone pay
+$65k to $100K,4320,7614,Drive to transit,preschool Drive to transit trips,Drive to transit
+$65k to $100K,780,3795,driveagestudent bus,nondrivingstudent Drive to transit trips,driveagestudent bus
+$65k to $100K,93130,122633,Shared ride 2 free,temp2 Drive to transit trips,Shared ride 2 free
+$65k to $100K,0,10526,Shared ride 2 pay,temp1 Drive to transit trips,Shared ride 2 pay
+$65k to $100K,174540,177454,Shared ride 3+ free,All Drive to transit trips,Shared ride 3+ free
+More than $100k,0,22347,Shared ride 3+ pay,fulltime driveagestudent bus trips,Shared ride 3+ pay
+More than $100k,0,571,Taxi,parttime driveagestudent bus trips,Taxi
+More than $100k,0,1893,Walk,preschool driveagestudent bus trips,Walk
+More than $100k,0,10304,Walk to transit,retired driveagestudent bus trips,Walk to transit
+More than $100k,877930,701437,Bike,driveagestudent driveagestudent bus trips,Bike
+More than $100k,0,113,Drive alone free,shop driveagestudent bus trips,Drive alone free
+More than $100k,0,2436,Drive alone pay,preschool driveagestudent bus trips,Drive alone pay
+More than $100k,0,5240,Drive to transit,nondrivingstudent driveagestudent bus trips,Drive to transit
+More than $100k,0,6202,driveagestudent bus,temp2 driveagestudent bus trips,driveagestudent bus
+More than $100k,0,2092,Shared ride 2 free,temp1 driveagestudent bus trips,Shared ride 2 free
+More than $100k,877930,753391,Shared ride 2 pay,All driveagestudent bus trips,Shared ride 2 pay

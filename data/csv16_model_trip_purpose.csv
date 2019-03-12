@@ -1,0 +1,11 @@
+Trips by purpose,trip_purpose,QUANTITY,selectorid
+Non-mandatory,discretionary,3329460,a1
+Non-mandatory,eating out,2358465,b1
+Non-mandatory,escort,3572470,c1
+Non-mandatory,maintenance,4071820,d1
+Mandatory,school,2673570,e1
+Non-mandatory,shop,5654030,f1
+Mandatory,university,380805,g1
+Non-mandatory,visiting,1936195,h1
+Mandatory,work,6223375,i1
+Non-mandatory,work-based,945640,j1

@@ -7,7 +7,7 @@
   content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </meta>
 <style>
-}
+
 #main {
   width: 960px;
 }
@@ -452,12 +452,12 @@ crossorigin=""/></link>
         </div>
       </div>
       <div class="col col-md-5" align = "center">
-        <h5><b>Observed Work Flows</b></h5>
-        <div id="pieChart1"></div>
+        <h5><b>Observed Mode Share</b></h5>
+        <div id="pieMode1"></div>
       </div>
       <div class="col col-md-5" align = "center">
-        <h5><b>Modeled Work Flows</b></h5>
-        <div id="pieChart2"></div>
+        <h5><b>Modeled Mode Share</b></h5>
+        <div id="pieMode2"></div>
       </div>
   </div>
   <div class="row">
@@ -626,11 +626,11 @@ crossorigin=""/></link>
         </div>
       </div>
       <div class="col col-md-5" align = "center">
-        <h5><b>Observed Work Flows</b></h5>
+        <h5><b>Observed Trip Purpose</b></h5>
         <div id="piePurpose1"></div>
       </div>
       <div class="col col-md-5" align = "center">
-        <h5><b>Modeled Work Flows</b></h5>
+        <h5><b>Modeled Trip Purpose</b></h5>
         <div id="piePurpose2"></div>
       </div>
   </div>
@@ -823,14 +823,12 @@ crossorigin=""/></link>
   </script>
   <script>makeStackedChart("data/csv3_aocrosstab_counts.csv","#aoCat","dtitle","stackedbar");</script>
   <script>makeChords('data/csv4_chord.csv', "modelChord", "obsChord");</script>
-  <script type="text/javascript" src="scripts/linkedpies.js"></script>
-  <script type="text/javascript" src="scripts/PurposePie.js"></script>
-
+  <script type="text/javascript" src="scripts/modepies.js"></script>
 
   <script type="text/javascript" src="data/counties.js"></script>
   <script type="text/javascript" src="data/MetraLines.js"></script>
   <script type="text/javascript" src="data/ctalines.js"></script>
-  <script type="text/javascript" src="scripts/maptest.js"></script>
+  <script type="text/javascript" src="scripts/transitboardings.js"></script>
 
 
 </div>

@@ -1,70 +1,54 @@
 // adapted from: https://stackoverflow.com/questions/35090256/mouseover-event-on-two-charts-at-the-same-time-d3-js
 
-// TODO: get data from .csvs
-var data2 = [{
-    label: 'discretionary',
-    count: 3376778
-  }, {
-    label: 'eatingout',
-    count: 2535581
-  }, {
-    label: 'escort',
-    count: 4068983
-  },{
-      label:'maintenance',
-      count: 4689505
-  },{
-      label:'school',
-      count:2514119
-  },{
-    label:'shop',
-    count:5555766
-  },{
-      label:'university',
-      count:333811
-  },{
-      label:'visiting',
-      count:2019572
-  },{
-      label:'work',
-      count:5585820
-  },{
-      label:'work-based',
-      count:961958
-  }];
+// data
+d3.csv("data/csv13_model_trip_mode.csv", function(data) {
+  var data2 = [];
 
-  var data1 = [{
-    label: 'discretionary',
-    count: 3329460
-  }, {
-    label: 'eatingout',
-    count: 2358465
-  }, {
-    label: 'escort',
-    count: 3572470
-  },{
-      label:'maintenance',
-      count: 4071820
-  },{
-      label:'school',
-      count:2673570
-  },{
-    label:'shop',
-    count:5654030
-  },{
-      label:'university',
-      count:380805
-  },{
-      label:'visiting',
-      count:1936195
-  },{
-      label:'work',
-      count:6223375
-  },{
-      label:'work-based',
-      count:945640
-  }];
+  for (var i = 0; i < data.length; i++) {
+  data2.push({selectorid: data[i].selectorid, 
+                count: parseInt(data[i].QUANTITY, 10),
+              label: data[i].trip_mode})
+}
+  drawPieChartFunction(data2, '#pieMode2', 'tooltip2');
 
+});
+
+d3.csv("data/csv14_survey_trip_mode.csv", function(data) {
+  var data1 = [];
+
+  for (var i = 0; i < data.length; i++) {
+  data1.push({selectorid: data[i].selectorid, 
+                count: parseInt(data[i].QUANTITY, 10),
+              label: data[i].trip_mode})
+}
+  drawPieChartFunction(data1, '#pieMode1', 'tooltip1');
+});
+
+d3.csv("data/csv15_survey_trip_purpose.csv", function(data) {
+  var data3 = [];
+
+  for (var i = 0; i < data.length; i++) {
+  data3.push({selectorid: data[i].selectorid, 
+                count: parseInt(data[i].QUANTITY, 10),
+              label: data[i].trip_purpose})
+}
+  drawPieChartFunction(data3, '#piePurpose1', 'tooltip3');
+
+});
+
+d3.csv("data/csv16_model_trip_purpose.csv", function(data) {
+  var data4 = [];
+
+  for (var i = 0; i < data.length; i++) {
+  data4.push({selectorid: data[i].selectorid, 
+                count: parseInt(data[i].QUANTITY, 10),
+              label: data[i].trip_purpose})
+}
+  drawPieChartFunction(data4, "#piePurpose2", 'tooltip4');
+});
+
+
+// chart
   var formatComma = d3.format(",");
   var drawPieChartFunction = function(data, chartId, tooltipName) {
 
@@ -95,7 +79,7 @@ var data2 = [{
     "#01665e",
     "#003c30"]).
     domain(d3.keys(data[0]).filter(function(key) {
-      return key === 'label';
+      return key === 'selectorid';
     }));
 
 
@@ -123,7 +107,7 @@ var data2 = [{
 
     var tooltip = d3.select(chartId)
       .append('div')
-      .attr('class', 'tooltip')
+      .attr('class', 'modepurposetooltip')
       .attr('id', tooltipName)
       .style('opacity', 1);
     tooltip.append('div')
@@ -139,15 +123,15 @@ var data2 = [{
       append('path').
       attr('d', arc).
       attr('class', function(d) {
-        return d.data.label;
+        return d.data.selectorid;
       }).
       style('fill', function(d, i) {
-        return color(d.data.label);
+        return color(d.data.selectorid);
       }).
       on('mouseover', function(d0) {
-        d3.selectAll('path')
-            .style("opacity",1);
-        d3.selectAll('path.' + d0.data.label).transition()
+        d3.selectAll('path').transition()
+            .style("opacity",0.5)
+        d3.selectAll('path.' + d0.data.selectorid).transition()
            .style("opacity",1)
           .duration(500)
           .attr("d", arcHover)
@@ -159,7 +143,7 @@ var data2 = [{
 
             // find correct tooltip
             var tooltip = d3.select(this.ownerSVGElement.parentNode.childNodes[1]);
-            tooltip.select('.label').html(d1.data.label);
+            tooltip.select('.label').html("<font color = 'black'>" + d1.data.label + "</font>");
             tooltip.select('.count').html(formatComma(d1.data.count));
             tooltip.select('.percent').html(percent + '%');
             tooltip
@@ -167,15 +151,12 @@ var data2 = [{
 
           })
     }).
-    on('mouseout', function(d) {
-        d3.selectAll('path')
-            .style("opacity",1);
-      d3.selectAll('path.' + d.data.label).transition()
-        .duration(500)
-        .attr("d", arc);
-      d3.selectAll('.tooltip').style('display', 'none');
+    on('mouseout', function(d0) {
+        d3.selectAll('path').transition()
+            .style("opacity",1)
+      d3.selectAll('path.' + d0.data.selectorid)
+        .attr('d', arc);
+      // d3.selectAll('.tooltip').style('display', 'none');
     });
     return path;
   };
-  drawPieChartFunction(data1, '#piePurpose1', 'tooltip1');
-  drawPieChartFunction(data2, '#piePurpose2', 'tooltip2');

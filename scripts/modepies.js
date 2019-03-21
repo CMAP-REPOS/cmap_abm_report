@@ -152,8 +152,8 @@ d3.csv("data/csv16_model_trip_purpose.csv", function(data) {
           })
     }).
     on('mouseout', function(d0) {
-        // d3.selectAll('path').transition()
-        //     .style("opacity",1)
+        d3.selectAll('path').transition()
+            .style("opacity",1)
       d3.selectAll('path.' + d0.data.selectorid).interrupt()
         .attr('d', arc)
         .style("opacity",1)

@@ -103,9 +103,9 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
       var newdata = data.filter(function(d){
         return d.Category == catInt;
       });
-      //console.log(newdata);
+      ////console.log(newdata);
       keys = data.columns.slice(1, ngroups); //Filter columns for Group Labels
-      //console.log(keys)
+      ////console.log(keys)
       copy = [];
       keys.forEach(function(t) {
         t = t.slice(0)    //Slice column label to select subgroup
@@ -133,7 +133,7 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
       d3.select("#" + dtitle).text(divTitle);
       // ======== Domain, Axis & Sort ========
 
-      console.log(newdata);
+      //console.log(newdata);
 
       x.domain([0, d3.max(newdata, function(d) {
         return d3.max(copy, function(key) {

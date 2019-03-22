@@ -43,7 +43,7 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
   var keysLegend = [];
 
   catInt = d3.select(catID).property('value');
-  console.log(catInt);
+  //console.log(catInt);
 
   //makeChart();
   d3.queue()
@@ -58,7 +58,7 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
           return d;
   })
   .await(function(error, data){
-    console.log(data);
+    //console.log(data);
     if (error) throw error;
     d3.select(catID).on('change', update);
     // d3.select(checkBoxID).on('change', update); // Sort checkbox
@@ -73,7 +73,7 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
         return d.Category == catInt;
       });
       sortIndex = newdata.map( function(d) {
-        console.log(d.Index);
+        //console.log(d.Index);
         return d.Index} );
     }
 
@@ -84,17 +84,17 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
       var newdata = data.filter(function(d){
         return d.Category == catInt;
       });
-      //console.log(newdata);
+      ////console.log(newdata);
       keys = data.columns.slice(1, ngroups); //Filter columns for Group Labels
-      //console.log(keys)
+      ////console.log(keys)
       copy = [];
-      console.log(keys)
+      //console.log(keys)
       keys.forEach(function(t) {
         t = t.slice(0)    //Slice column label to select subgroup
         copy.push(t)
       })
 
-      console.log(copy)
+      //console.log(copy)
       var copyKeys = keys;
 
       keysLegend = []
@@ -106,25 +106,25 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
 
       newdata.forEach(function(d, i, columns) {
         for (var i = 0, test = 0, n = keysLegend.length; i < n; ++i)
-          console.log(d[keysLegend[i]]);
+          //console.log(d[keysLegend[i]]);
           test += d[keysLegend[i]];
           d.totalSlice = test;
-          console.log("Group Total: ", d.totalSlice)
-          console.log(d);
+          //console.log("Group Total: ", d.totalSlice)
+          //console.log(d);
           divText =  "Table Description: " + d.Description;
           divTitle =  d.Title;
         return d;
       })
       d3.select("#" + dataDescription).text(divText);
       d3.select("#" + dtitle).text(divTitle);
-      console.log(divText)
-      console.log(divTitle)
+      //console.log(divText)
+      //console.log(divTitle)
       // ======== Domain, Axis & Sort ========
 
       y.domain([0, d3.max(newdata, function(d) {
-        console.log(d)
+        //console.log(d)
         return d3.max(copy, function(key) {
-          console.log(d[key])
+          //console.log(d[key])
           return +d[key];
           });
         })
@@ -198,9 +198,9 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
           else{
             yscaled = y(d["value"]);
           }
-          console.log(height);
-          console.log(yscaled);
-          console.log(height - y(d["value"]));
+          //console.log(height);
+          //console.log(yscaled);
+          //console.log(height - y(d["value"]));
           return height - y(d["value"]);});
 
       // ======== Grouped bar text ========
@@ -244,7 +244,7 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
         .attr("height", 15)
         .attr("stroke-width",2)
         .on("click",function(d) {
-          //console.log(d)
+          ////console.log(d)
           updateLegend(d)
         })
         .merge(legend)

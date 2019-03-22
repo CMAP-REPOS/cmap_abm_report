@@ -1,133 +1,68 @@
 Index,Model 01,Survey 01,Category,Description,Title
-Bike,37350,56428,fulltime,fulltime Bike trips,fulltime
-Bike,17005,11713,parttime,parttime Bike trips,parttime
-Bike,19285,5767,preschool,preschool Bike trips,preschool
-Bike,35555,30579,retired,retired Bike trips,retired
-Bike,43455,27745,driveagestudent,driveagestudent Bike trips,driveagestudent
-Bike,28390,26924,shop,shop Bike trips,shop
-Bike,17170,3905,preschool,preschool Bike trips,preschool
-Bike,25840,29921,nondrivingstudent,nondrivingstudent Bike trips,nondrivingstudent
-Bike,119215,64542,temp2,temp2 Bike trips,temp2
-Bike,5245,4596,temp1,temp1 Bike trips,temp1
-Bike,348510,274811,All,All Bike trips,All
-Drive alone free,993960,1023730,fulltime,fulltime Drive alone free trips,fulltime
-Drive alone free,780615,876801,parttime,parttime Drive alone free trips,parttime
-Drive alone free,1478720,1343359,preschool,preschool Drive alone free trips,preschool
-Drive alone free,1785545,2170181,retired,retired Drive alone free trips,retired
-Drive alone free,86745,93236,driveagestudent,driveagestudent Drive alone free trips,driveagestudent
-Drive alone free,2351975,2458145,shop,shop Drive alone free trips,shop
-Drive alone free,167355,173196,preschool,preschool Drive alone free trips,preschool
-Drive alone free,609730,701336,nondrivingstudent,nondrivingstudent Drive alone free trips,nondrivingstudent
-Drive alone free,4146465,3804364,temp2,temp2 Drive alone free trips,temp2
-Drive alone free,635025,738893,temp1,temp1 Drive alone free trips,temp1
-Drive alone free,13036135,13410726,All,All Drive alone free trips,All
-Drive alone pay,32685,10215,fulltime,fulltime Drive alone pay trips,fulltime
-Drive alone pay,15600,13264,parttime,parttime Drive alone pay trips,parttime
-Drive alone pay,26955,16297,preschool,preschool Drive alone pay trips,preschool
-Drive alone pay,29405,32546,retired,retired Drive alone pay trips,retired
-Drive alone pay,880,0,driveagestudent,driveagestudent Drive alone pay trips,driveagestudent
-Drive alone pay,33325,22889,shop,shop Drive alone pay trips,shop
-Drive alone pay,5545,11873,preschool,preschool Drive alone pay trips,preschool
-Drive alone pay,21110,22556,nondrivingstudent,nondrivingstudent Drive alone pay trips,nondrivingstudent
-Drive alone pay,138090,220216,temp2,temp2 Drive alone pay trips,temp2
-Drive alone pay,17235,39538,temp1,temp1 Drive alone pay trips,temp1
-Drive alone pay,320830,389805,All,All Drive alone pay trips,All
-Drive to transit,1420,7979,fulltime,fulltime Drive to transit trips,fulltime
-Drive to transit,880,2145,parttime,parttime Drive to transit trips,parttime
-Drive to transit,0,1992,preschool,preschool Drive to transit trips,preschool
-Drive to transit,27670,14707,retired,retired Drive to transit trips,retired
-Drive to transit,8790,3592,driveagestudent,driveagestudent Drive to transit trips,driveagestudent
-Drive to transit,37550,2473,shop,shop Drive to transit trips,shop
-Drive to transit,4320,7614,preschool,preschool Drive to transit trips,preschool
-Drive to transit,780,3795,nondrivingstudent,nondrivingstudent Drive to transit trips,nondrivingstudent
-Drive to transit,93130,122633,temp2,temp2 Drive to transit trips,temp2
-Drive to transit,0,10526,temp1,temp1 Drive to transit trips,temp1
-Drive to transit,174540,177454,All,All Drive to transit trips,All
-driveagestudent bus,0,22347,fulltime,fulltime driveagestudent bus trips,fulltime
-driveagestudent bus,0,571,parttime,parttime driveagestudent bus trips,parttime
-driveagestudent bus,0,1893,preschool,preschool driveagestudent bus trips,preschool
-driveagestudent bus,0,10304,retired,retired driveagestudent bus trips,retired
-driveagestudent bus,877930,701437,driveagestudent,driveagestudent driveagestudent bus trips,driveagestudent
-driveagestudent bus,0,113,shop,shop driveagestudent bus trips,shop
-driveagestudent bus,0,2436,preschool,preschool driveagestudent bus trips,preschool
-driveagestudent bus,0,5240,nondrivingstudent,nondrivingstudent driveagestudent bus trips,nondrivingstudent
-driveagestudent bus,0,6202,temp2,temp2 driveagestudent bus trips,temp2
-driveagestudent bus,0,2092,temp1,temp1 driveagestudent bus trips,temp1
-driveagestudent bus,877930,753391,All,All driveagestudent bus trips,All
-Shared ride 2 free,793865,834218,fulltime,fulltime Shared ride 2 free trips,fulltime
-Shared ride 2 free,624350,665455,parttime,parttime Shared ride 2 free trips,parttime
-Shared ride 2 free,498265,1175271,preschool,preschool Shared ride 2 free trips,preschool
-Shared ride 2 free,1033365,1031332,retired,retired Shared ride 2 free trips,retired
-Shared ride 2 free,366145,530305,driveagestudent,driveagestudent Shared ride 2 free trips,driveagestudent
-Shared ride 2 free,1507665,1382379,shop,shop Shared ride 2 free trips,shop
-Shared ride 2 free,50845,30371,preschool,preschool Shared ride 2 free trips,preschool
-Shared ride 2 free,490870,473413,nondrivingstudent,nondrivingstudent Shared ride 2 free trips,nondrivingstudent
-Shared ride 2 free,456215,345304,temp2,temp2 Shared ride 2 free trips,temp2
-Shared ride 2 free,55090,57125,temp1,temp1 Shared ride 2 free trips,temp1
-Shared ride 2 free,5876675,6540903,All,All Shared ride 2 free trips,All
-Shared ride 2 pay,10220,6856,fulltime,fulltime Shared ride 2 pay trips,fulltime
-Shared ride 2 pay,5160,2507,parttime,parttime Shared ride 2 pay trips,parttime
-Shared ride 2 pay,6530,7271,preschool,preschool Shared ride 2 pay trips,preschool
-Shared ride 2 pay,10170,3761,retired,retired Shared ride 2 pay trips,retired
-Shared ride 2 pay,2025,0,driveagestudent,driveagestudent Shared ride 2 pay trips,driveagestudent
-Shared ride 2 pay,7195,2112,shop,shop Shared ride 2 pay trips,shop
-Shared ride 2 pay,2060,23,preschool,preschool Shared ride 2 pay trips,preschool
-Shared ride 2 pay,6045,5205,nondrivingstudent,nondrivingstudent Shared ride 2 pay trips,nondrivingstudent
-Shared ride 2 pay,7250,13985,temp2,temp2 Shared ride 2 pay trips,temp2
-Shared ride 2 pay,895,1268,temp1,temp1 Shared ride 2 pay trips,temp1
-Shared ride 2 pay,57550,42987,All,All Shared ride 2 pay trips,All
-Shared ride 3+ free,1010645,865383,fulltime,fulltime Shared ride 3+ free trips,fulltime
-Shared ride 3+ free,631040,628749,parttime,parttime Shared ride 3+ free trips,parttime
-Shared ride 3+ free,1101925,1199544,preschool,preschool Shared ride 3+ free trips,preschool
-Shared ride 3+ free,594880,792900,retired,retired Shared ride 3+ free trips,retired
-Shared ride 3+ free,364980,511859,driveagestudent,driveagestudent Shared ride 3+ free trips,driveagestudent
-Shared ride 3+ free,1084720,972954,shop,shop Shared ride 3+ free trips,shop
-Shared ride 3+ free,12945,3798,preschool,preschool Shared ride 3+ free trips,preschool
-Shared ride 3+ free,510180,423868,nondrivingstudent,nondrivingstudent Shared ride 3+ free trips,nondrivingstudent
-Shared ride 3+ free,99255,77540,temp2,temp2 Shared ride 3+ free trips,temp2
-Shared ride 3+ free,13070,20244,temp1,temp1 Shared ride 3+ free trips,temp1
-Shared ride 3+ free,5423640,5500885,All,All Shared ride 3+ free trips,All
-Shared ride 3+ pay,32820,3865,fulltime,fulltime Shared ride 3+ pay trips,fulltime
-Shared ride 3+ pay,13920,3056,parttime,parttime Shared ride 3+ pay trips,parttime
-Shared ride 3+ pay,14495,4382,preschool,preschool Shared ride 3+ pay trips,preschool
-Shared ride 3+ pay,9660,1416,retired,retired Shared ride 3+ pay trips,retired
-Shared ride 3+ pay,2270,0,driveagestudent,driveagestudent Shared ride 3+ pay trips,driveagestudent
-Shared ride 3+ pay,13070,3639,shop,shop Shared ride 3+ pay trips,shop
-Shared ride 3+ pay,930,0,preschool,preschool Shared ride 3+ pay trips,preschool
-Shared ride 3+ pay,17150,3653,nondrivingstudent,nondrivingstudent Shared ride 3+ pay trips,nondrivingstudent
-Shared ride 3+ pay,4260,547,temp2,temp2 Shared ride 3+ pay trips,temp2
-Shared ride 3+ pay,365,0,temp1,temp1 Shared ride 3+ pay trips,temp1
-Shared ride 3+ pay,108940,20879,All,All Shared ride 3+ pay trips,All
-Taxi,6455,7342,fulltime,fulltime Taxi trips,fulltime
-Taxi,5775,7592,parttime,parttime Taxi trips,parttime
-Taxi,6630,1248,preschool,preschool Taxi trips,preschool
-Taxi,24170,17676,retired,retired Taxi trips,retired
-Taxi,760,1607,driveagestudent,driveagestudent Taxi trips,driveagestudent
-Taxi,11910,7118,shop,shop Taxi trips,shop
-Taxi,24295,155,preschool,preschool Taxi trips,preschool
-Taxi,3505,7618,nondrivingstudent,nondrivingstudent Taxi trips,nondrivingstudent
-Taxi,19750,12672,temp2,temp2 Taxi trips,temp2
-Taxi,7685,6991,temp1,temp1 Taxi trips,temp1
-Taxi,110935,70084,All,All Taxi trips,All
-Walk,308015,426040,fulltime,fulltime Walk trips,fulltime
-Walk,158015,273748,parttime,parttime Walk trips,parttime
-Walk,314145,263474,preschool,preschool Walk trips,preschool
-Walk,412690,370217,retired,retired Walk trips,retired
-Walk,846780,534471,driveagestudent,driveagestudent Walk trips,driveagestudent
-Walk,413040,515354,shop,shop Walk trips,shop
-Walk,71000,37919,preschool,preschool Walk trips,preschool
-Walk,183865,271809,nondrivingstudent,nondrivingstudent Walk trips,nondrivingstudent
-Walk,509580,310484,temp2,temp2 Walk trips,temp2
-Walk,173305,50014,temp1,temp1 Walk trips,temp1
-Walk,3390435,3218236,All,All Walk trips,All
-Walk to transit,113705,88601,fulltime,fulltime Walk to transit trips,fulltime
-Walk to transit,110885,43052,parttime,parttime Walk to transit trips,parttime
-Walk to transit,118600,44898,preschool,preschool Walk to transit trips,preschool
-Walk to transit,123265,186365,retired,retired Walk to transit trips,retired
-Walk to transit,74515,105388,driveagestudent,driveagestudent Walk to transit trips,driveagestudent
-Walk to transit,184050,142438,shop,shop Walk to transit trips,shop
-Walk to transit,24675,61314,preschool,preschool Walk to transit trips,preschool
-Walk to transit,70785,66008,nondrivingstudent,nondrivingstudent Walk to transit trips,nondrivingstudent
-Walk to transit,625545,583886,temp2,temp2 Walk to transit trips,temp2
-Walk to transit,50320,24219,temp1,temp1 Walk to transit trips,temp1
-Walk to transit,1496345,1348049,All,All Walk to transit trips,All
+Bike,16640,52,preschool,preschool Bike Trips,preschool
+Bike,121755,91812,fulltime,fulltime Bike Trips,fulltime
+Bike,34955,16569,nonworker,nonworker Bike Trips,nonworker
+Bike,32180,24550,parttime,parttime Bike Trips,parttime
+Bike,15205,10301,retired,retired Bike Trips,retired
+Bike,10300,10472,driveagestudent,driveagestudent Bike Trips,driveagestudent
+Bike,56760,51956,nondrivingstudent,nondrivingstudent Bike Trips,nondrivingstudent
+Bike,30720,20824,university,university Bike Trips,university
+Bike,318515,226536,All,All Bike Trips,All
+Drive alone free,7094180,7726655,fulltime,fulltime Drive alone free Trips,fulltime
+Drive alone free,1927600,1845422,nonworker,nonworker Drive alone free Trips,nonworker
+Drive alone free,1501365,1501522,parttime,parttime Drive alone free Trips,parttime
+Drive alone free,1546310,1461633,retired,retired Drive alone free Trips,retired
+Drive alone free,237930,322657,driveagestudent,driveagestudent Drive alone free Trips,driveagestudent
+Drive alone free,429170,552836,university,university Drive alone free Trips,university
+Drive alone free,12736555,13410725,All,All Drive alone free Trips,All
+Drive alone pay,206735,332583,fulltime,fulltime Drive alone pay Trips,fulltime
+Drive alone pay,33455,15381,nonworker,nonworker Drive alone pay Trips,nonworker
+Drive alone pay,27020,22453,parttime,parttime Drive alone pay Trips,parttime
+Drive alone pay,33195,8173,retired,retired Drive alone pay Trips,retired
+Drive alone pay,3760,689,driveagestudent,driveagestudent Drive alone pay Trips,driveagestudent
+Drive alone pay,10465,10527,university,university Drive alone pay Trips,university
+Drive alone pay,314630,389806,All,All Drive alone pay Trips,All
+Drive to transit,1140,296,preschool,preschool Drive to transit Trips,preschool
+Drive to transit,137380,129190,fulltime,fulltime Drive to transit Trips,fulltime
+Drive to transit,2740,5757,nonworker,nonworker Drive to transit Trips,nonworker
+Drive to transit,21290,9640,parttime,parttime Drive to transit Trips,parttime
+Drive to transit,1230,2050,retired,retired Drive to transit Trips,retired
+Drive to transit,4170,1523,driveagestudent,driveagestudent Drive to transit Trips,driveagestudent
+Drive to transit,6970,974,nondrivingstudent,nondrivingstudent Drive to transit Trips,nondrivingstudent
+Drive to transit,8100,5951,university,university Drive to transit Trips,university
+Drive to transit,183020,155381,All,All Drive to transit Trips,All
+School bus,35740,24967,preschool,preschool School bus Trips,preschool
+School bus,0,8440,fulltime,fulltime School bus Trips,fulltime
+School bus,0,255,parttime,parttime School bus Trips,parttime
+School bus,0,233,retired,retired School bus Trips,retired
+School bus,122870,72875,driveagestudent,driveagestudent School bus Trips,driveagestudent
+School bus,713970,430940,nondrivingstudent,nondrivingstudent School bus Trips,nondrivingstudent
+School bus,0,2912,university,university School bus Trips,university
+School bus,872580,540622,All,All School bus Trips,All
+Taxi,2075,625,preschool,preschool Taxi Trips,preschool
+Taxi,35590,30583,fulltime,fulltime Taxi Trips,fulltime
+Taxi,9040,6660,nonworker,nonworker Taxi Trips,nonworker
+Taxi,7090,1609,parttime,parttime Taxi Trips,parttime
+Taxi,6705,9095,retired,retired Taxi Trips,retired
+Taxi,740,1385,driveagestudent,driveagestudent Taxi Trips,driveagestudent
+Taxi,3050,983,nondrivingstudent,nondrivingstudent Taxi Trips,nondrivingstudent
+Taxi,34275,5677,university,university Taxi Trips,university
+Taxi,98565,56617,All,All Taxi Trips,All
+Walk,217290,22387,preschool,preschool Walk Trips,preschool
+Walk,914035,790453,fulltime,fulltime Walk Trips,fulltime
+Walk,358315,347862,nonworker,nonworker Walk Trips,nonworker
+Walk,268940,161208,parttime,parttime Walk Trips,parttime
+Walk,144575,168739,retired,retired Walk Trips,retired
+Walk,183390,100568,driveagestudent,driveagestudent Walk Trips,driveagestudent
+Walk,879730,342255,nondrivingstudent,nondrivingstudent Walk Trips,nondrivingstudent
+Walk,156215,120333,university,university Walk Trips,university
+Walk,3122490,2053805,All,All Walk Trips,All
+Walk to transit,9460,126,preschool,preschool Walk to transit Trips,preschool
+Walk to transit,1009035,632054,fulltime,fulltime Walk to transit Trips,fulltime
+Walk to transit,119090,141251,nonworker,nonworker Walk to transit Trips,nonworker
+Walk to transit,220015,125262,parttime,parttime Walk to transit Trips,parttime
+Walk to transit,15510,61978,retired,retired Walk to transit Trips,retired
+Walk to transit,64025,51480,driveagestudent,driveagestudent Walk to transit Trips,driveagestudent
+Walk to transit,87730,45267,nondrivingstudent,nondrivingstudent Walk to transit Trips,nondrivingstudent
+Walk to transit,92275,101503,university,university Walk to transit Trips,university
+Walk to transit,1617140,1158921,All,All Walk to transit Trips,All

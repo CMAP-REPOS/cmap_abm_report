@@ -1,17 +1,81 @@
 Index,Model 01,Survey 01,Category,Description,Title
-Less than 1 Mile,37350,56428,All,Temp,All Modes
-1 Mile,17005,11713,All,Temp,All Modes
-5 Miles,19285,5767,All,Temp,All Modes
-10 Miles,35555,30579,All,Temp,All Modes
-15 Miles,43455,27745,All,Temp,All Modes
-20 Miles,28390,26924,All,Temp,All Modes
-25 Miles,17170,3905,All,Temp,All Modes
-30 Miles or More,25840,29921,All,Temp,All Modes
-Less than 1 Mile,119215,64542,work,Temp,work
-1 Mile,5245,4596,work,Temp,work
-5 Miles,348510,274811,work,Temp,work
-10 Miles,993960,1023730,work,Temp,work
-15 Miles,780615,876801,work,Temp,work
-20 Miles,1478720,1343359,work,Temp,work
-25 Miles,1785545,2170181,work,Temp,work
-30 Miles or More,86745,93236,work,Temp,work
+Less than 1 Mile,,1096431,discretionary,Temp,discretionary
+Less than 1 Mile,,592768,eatingout,Temp,eatingout
+Less than 1 Mile,,1000179,escort,Temp,escort
+Less than 1 Mile,,1188098,maintenance,Temp,maintenance
+Less than 1 Mile,,876183,school,Temp,school
+Less than 1 Mile,,1327635,shop,Temp,shop
+Less than 1 Mile,,129054,university,Temp,university
+Less than 1 Mile,,610979,visiting,Temp,visiting
+Less than 1 Mile,,2268329,work,Temp,work
+Less than 1 Mile,,341333,work-based,Temp,work-based
+1-5 Mile,,1500330,discretionary,Temp,discretionary
+1-5 Mile,,1051444,eatingout,Temp,eatingout
+1-5 Mile,,1747659,escort,Temp,escort
+1-5 Mile,,1862039,maintenance,Temp,maintenance
+1-5 Mile,,1324740,school,Temp,school
+1-5 Mile,,2491729,shop,Temp,shop
+1-5 Mile,,89069,university,,university
+1-5 Mile,,802812,visiting,,visiting
+1-5 Mile,,1682803,work,,work
+1-5 Mile,,287602,work-based,,work-based
+5-10 Miles,,403643,discretionary,,discretionary
+5-10 Miles,,487818,eatingout,,eatingout
+5-10 Miles,,617302,escort,,escort
+5-10 Miles,,812775,maintenance,,maintenance
+5-10 Miles,,208904,school,,school
+5-10 Miles,,964275,shop,,shop
+5-10 Miles,,43834,university,,university
+5-10 Miles,,280365,visiting,,visiting
+5-10 Miles,,537149,work,,work
+5-10 Miles,,114493,work-based,,work-based
+10-15 Miles,,164910,discretionary,,discretionary
+10-15 Miles,,154040,eatingout,,eatingout
+10-15 Miles,,290703,escort,,escort
+10-15 Miles,,317717,maintenance,,maintenance
+10-15 Miles,,45376,school,,school
+10-15 Miles,,344065,shop,,shop
+10-15 Miles,,29549,university,,university
+10-15 Miles,,136834,visiting,,visiting
+10-15 Miles,,349698,work,,work
+10-15 Miles,,72264,work-based,,work-based
+15-20 Miles,,67872,discretionary,,discretionary
+15-20 Miles,,85278,eatingout,,eatingout
+15-20 Miles,,130557,escort,,escort
+15-20 Miles,,173869,maintenance,,maintenance
+15-20 Miles,,18517,school,,school
+15-20 Miles,,164196,shop,,shop
+15-20 Miles,,11595,university,,university
+15-20 Miles,,63175,visiting,,visiting
+15-20 Miles,,226782,work,,work
+15-20 Miles,,42371,work-based,,work-based
+20-25 Miles,,38364,discretionary,,discretionary
+20-25 Miles,,58547,eatingout,,eatingout
+20-25 Miles,,88386,escort,,escort
+20-25 Miles,,97921,maintenance,,maintenance
+20-25 Miles,,11867,school,,school
+20-25 Miles,,96247,shop,,shop
+20-25 Miles,,7429,university,,university
+20-25 Miles,,38639,visiting,,visiting
+20-25 Miles,,181361,work,,work
+20-25 Miles,,35797,work-based,,work-based
+25-30 Miles,,40167,discretionary,,discretionary
+25-30 Miles,,35718,eatingout,,eatingout
+25-30 Miles,,74406,escort,,escort
+25-30 Miles,,83963,maintenance,,maintenance
+25-30 Miles,,8205,school,,school
+25-30 Miles,,51185,shop,,shop
+25-30 Miles,,7352,university,,university
+25-30 Miles,,26362,visiting,,visiting
+25-30 Miles,,128050,work,,work
+25-30 Miles,,24838,work-based,,work-based
+30 Miles or More,,65061,discretionary,,discretionary
+30 Miles or More,,69968,eatingout,,eatingout
+30 Miles or More,,119791,escort,,escort
+30 Miles or More,,153122,maintenance,,maintenance
+30 Miles or More,,20327,school,,school
+30 Miles or More,,116435,shop,,shop
+30 Miles or More,,15929,university,,university
+30 Miles or More,,60406,visiting,,visiting
+30 Miles or More,,211648,work,,work
+30 Miles or More,,43259,work-based,,work-based

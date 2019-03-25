@@ -528,7 +528,7 @@ crossorigin=""/></link>
     <br/>
     <br/>
     <div class="col col-md-2">
-      <h5><b><div id= "modePTitle"></div> Trips</b></h5>
+      <h5><b><div id= "modePTitle"></div>Single Person Trips</b></h5>
       <div class="small">
         Select data type for comparison from dropdown
         </div>
@@ -537,6 +537,12 @@ crossorigin=""/></link>
         <option value="All">All</option>
         <option value="fulltime">Full-time Worker</option>
         <option value="parttime">Part-time Worker</option>
+        <option value="nonworker">Non worker</option>
+        <option value = "retired">Retired</option>
+        <option value="preschool">Pre-school</option>
+        <option value="driveagestudent">Student 16+</option>
+        <option value="nondrivingstudent">Student under 16 years</option>
+        <option value="university">University Student</option>
       </select>
     </div>
     <div class="col col-md-10">
@@ -577,6 +583,15 @@ crossorigin=""/></link>
         <option value="Bike">Bike</option>
         <option value="Drive alone free">Drive alone free</option>
         <option value="Drive alone pay">Drive alone pay</option>
+        <option value="Drive to transit">Drive to transit</option>
+        <option value="School bus">School bus</option>
+        <option value="Shared ride 2 free">Shared ride 2 free</option>
+        <option value="Shared ride 2 pay">Shared ride 2 pay</option>
+        <option value="Shared ride 3+ free">Shared ride 3+ free</option>
+        <option value="Shared ride 3+ pay">Shared ride 3+ pay</option>
+        <option value="Taxi">Taxi</option>
+        <option value="Walk">Walk</option>
+        <option value="Walk to transit">Walk to transit</option>
       </select>
     </div>
     <div class="col col-md-10">
@@ -638,7 +653,7 @@ crossorigin=""/></link>
     <div class="col-md-12">
       <br/>
       <br/>
-      <h3>TRIPS BY PERSONTYPE AND PURPOSE</h3>
+      <h3>TRIPS BY PERSON TYPE AND PURPOSE</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
         improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
@@ -653,7 +668,7 @@ crossorigin=""/></link>
     <br/>
     <br/>
     <div class="col col-md-2">
-      <h5><b><div id= "purpTypeTitle"></div> Trips</b></h5>
+      <h5><b><div id= "purpTypeTitle"></div>Single-Person Trips</b></h5>
       <div class="small">
         Select data type for comparison from dropdown
         </div>
@@ -662,6 +677,12 @@ crossorigin=""/></link>
         <option value="All">All</option>
         <option value="fulltime">Full-time Worker</option>
         <option value="parttime">Part-time Worker</option>
+        <option value="nonworker">Non worker</option>
+        <option value = "retired">Retired</option>
+        <option value="preschool">Pre-school</option>
+        <option value="driveage">Student 16+</option>
+        <option value="nondriveage">Student under 16 years</option>
+        <option value="university">University Student</option>
       </select>
     </div>
     <div class="col col-md-10">
@@ -700,7 +721,16 @@ crossorigin=""/></link>
       <br>
       <select id="catPurpDist">
         <option value="All">All</option>
-        <option value="work">Work Trips</option>
+        <option value="discretionary">Discretionary</option>
+        <option value="eatingout">Eating Out</option>
+        <option value="escort">Escort</option>
+        <option value="maintenance">Maintenance</option>
+        <option value="school">School</option>
+        <option value="shop">Shop</option>
+        <option value="university">University</option>
+        <option value="visiting">Visiting</option>
+        <option value="work">Work</option>
+        <option value="work-based">Work-based</option>
       </select>
     </div>
     <div class="col col-md-10">

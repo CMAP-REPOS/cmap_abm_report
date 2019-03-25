@@ -1,133 +1,133 @@
 Index,Model 01,Survey 01,Category,Description,Title
-Bike,37350,56428,discretionary,discretionary Bike trips,discretionary
-Bike,17005,11713,eatingout,eatingout Bike trips,eatingout
-Bike,19285,5767,escort,escort Bike trips,escort
-Bike,35555,30579,maintenance,maintenance Bike trips,maintenance
-Bike,43455,27745,school,school Bike trips,school
-Bike,28390,26924,shop,shop Bike trips,shop
-Bike,17170,3905,university,university Bike trips,university
-Bike,25840,29921,visiting,visiting Bike trips,visiting
-Bike,119215,64542,work,work Bike trips,work
-Bike,5245,4596,work-based,work-based Bike trips,work-based
-Bike,348510,274811,All,All Bike trips,All
-Drive alone free,993960,1023730,discretionary,discretionary Drive alone free trips,discretionary
-Drive alone free,780615,876801,eatingout,eatingout Drive alone free trips,eatingout
-Drive alone free,1478720,1343359,escort,escort Drive alone free trips,escort
-Drive alone free,1785545,2170181,maintenance,maintenance Drive alone free trips,maintenance
-Drive alone free,86745,93236,school,school Drive alone free trips,school
-Drive alone free,2351975,2458145,shop,shop Drive alone free trips,shop
-Drive alone free,167355,173196,university,university Drive alone free trips,university
-Drive alone free,609730,701336,visiting,visiting Drive alone free trips,visiting
-Drive alone free,4146465,3804364,work,work Drive alone free trips,work
-Drive alone free,635025,738893,work-based,work-based Drive alone free trips,work-based
-Drive alone free,13036135,13410726,All,All Drive alone free trips,All
-Drive alone pay,32685,10215,discretionary,discretionary Drive alone pay trips,discretionary
-Drive alone pay,15600,13264,eatingout,eatingout Drive alone pay trips,eatingout
-Drive alone pay,26955,16297,escort,escort Drive alone pay trips,escort
-Drive alone pay,29405,32546,maintenance,maintenance Drive alone pay trips,maintenance
-Drive alone pay,880,0,school,school Drive alone pay trips,school
-Drive alone pay,33325,22889,shop,shop Drive alone pay trips,shop
-Drive alone pay,5545,11873,university,university Drive alone pay trips,university
-Drive alone pay,21110,22556,visiting,visiting Drive alone pay trips,visiting
-Drive alone pay,138090,220216,work,work Drive alone pay trips,work
-Drive alone pay,17235,39538,work-based,work-based Drive alone pay trips,work-based
-Drive alone pay,320830,389805,All,All Drive alone pay trips,All
-Drive to transit,1420,7979,discretionary,discretionary Drive to transit trips,discretionary
-Drive to transit,880,2145,eatingout,eatingout Drive to transit trips,eatingout
+Bike,37115,56428,discretionary,discretionary Bike trips,discretionary
+Bike,16730,11713,eatingout,eatingout Bike trips,eatingout
+Bike,18380,5767,escort,escort Bike trips,escort
+Bike,34750,30579,maintenance,maintenance Bike trips,maintenance
+Bike,43540,27745,school,school Bike trips,school
+Bike,27435,26924,shop,shop Bike trips,shop
+Bike,17005,3905,university,university Bike trips,university
+Bike,25460,29921,visiting,visiting Bike trips,visiting
+Bike,108365,64542,work,work Bike trips,work
+Bike,5325,4596,work-based,work-based Bike trips,work-based
+Bike,334105,262120,All,All Bike trips,All
+Drive alone free,978430,1023730,discretionary,discretionary Drive alone free trips,discretionary
+Drive alone free,766980,876801,eatingout,eatingout Drive alone free trips,eatingout
+Drive alone free,1447925,1343359,escort,escort Drive alone free trips,escort
+Drive alone free,1761845,2170181,maintenance,maintenance Drive alone free trips,maintenance
+Drive alone free,85515,93236,school,school Drive alone free trips,school
+Drive alone free,2316940,2458145,shop,shop Drive alone free trips,shop
+Drive alone free,164790,173196,university,university Drive alone free trips,university
+Drive alone free,602845,701336,visiting,visiting Drive alone free trips,visiting
+Drive alone free,3997275,3804364,work,work Drive alone free trips,work
+Drive alone free,614010,738893,work-based,work-based Drive alone free trips,work-based
+Drive alone free,12736555,13383241,All,All Drive alone free trips,All
+Drive alone pay,32085,10215,discretionary,discretionary Drive alone pay trips,discretionary
+Drive alone pay,15105,13264,eatingout,eatingout Drive alone pay trips,eatingout
+Drive alone pay,26235,16297,escort,escort Drive alone pay trips,escort
+Drive alone pay,29040,32546,maintenance,maintenance Drive alone pay trips,maintenance
+Drive alone pay,840,0,school,school Drive alone pay trips,school
+Drive alone pay,32720,22889,shop,shop Drive alone pay trips,shop
+Drive alone pay,5435,11873,university,university Drive alone pay trips,university
+Drive alone pay,21355,22556,visiting,visiting Drive alone pay trips,visiting
+Drive alone pay,135285,220216,work,work Drive alone pay trips,work
+Drive alone pay,16530,39538,work-based,work-based Drive alone pay trips,work-based
+Drive alone pay,314630,389394,All,All Drive alone pay trips,All
+Drive to transit,1810,7979,discretionary,discretionary Drive to transit trips,discretionary
+Drive to transit,1000,2145,eatingout,eatingout Drive to transit trips,eatingout
 Drive to transit,0,1992,escort,escort Drive to transit trips,escort
-Drive to transit,27670,14707,maintenance,maintenance Drive to transit trips,maintenance
-Drive to transit,8790,3592,school,school Drive to transit trips,school
-Drive to transit,37550,2473,shop,shop Drive to transit trips,shop
-Drive to transit,4320,7614,university,university Drive to transit trips,university
-Drive to transit,780,3795,visiting,visiting Drive to transit trips,visiting
-Drive to transit,93130,122633,work,work Drive to transit trips,work
+Drive to transit,35330,14707,maintenance,maintenance Drive to transit trips,maintenance
+Drive to transit,9350,3592,school,school Drive to transit trips,school
+Drive to transit,48960,2473,shop,shop Drive to transit trips,shop
+Drive to transit,4980,7614,university,university Drive to transit trips,university
+Drive to transit,1100,3795,visiting,visiting Drive to transit trips,visiting
+Drive to transit,158170,122633,work,work Drive to transit trips,work
 Drive to transit,0,10526,work-based,work-based Drive to transit trips,work-based
-Drive to transit,174540,177454,All,All Drive to transit trips,All
+Drive to transit,260700,177456,All,All Drive to transit trips,All
 School bus,0,22347,discretionary,discretionary School bus trips,discretionary
 School bus,0,571,eatingout,eatingout School bus trips,eatingout
 School bus,0,1893,escort,escort School bus trips,escort
 School bus,0,10304,maintenance,maintenance School bus trips,maintenance
-School bus,877930,701437,school,school School bus trips,school
+School bus,872580,701437,school,school School bus trips,school
 School bus,0,113,shop,shop School bus trips,shop
 School bus,0,2436,university,university School bus trips,university
 School bus,0,5240,visiting,visiting School bus trips,visiting
 School bus,0,6202,work,work School bus trips,work
 School bus,0,2092,work-based,work-based School bus trips,work-based
-School bus,877930,753391,All,All School bus trips,All
-Shared ride 2 free,793865,834218,discretionary,discretionary Shared ride 2 free trips,discretionary
-Shared ride 2 free,624350,665455,eatingout,eatingout Shared ride 2 free trips,eatingout
-Shared ride 2 free,498265,1175271,escort,escort Shared ride 2 free trips,escort
-Shared ride 2 free,1033365,1031332,maintenance,maintenance Shared ride 2 free trips,maintenance
-Shared ride 2 free,366145,530305,school,school Shared ride 2 free trips,school
-Shared ride 2 free,1507665,1382379,shop,shop Shared ride 2 free trips,shop
-Shared ride 2 free,50845,30371,university,university Shared ride 2 free trips,university
-Shared ride 2 free,490870,473413,visiting,visiting Shared ride 2 free trips,visiting
-Shared ride 2 free,456215,345304,work,work Shared ride 2 free trips,work
-Shared ride 2 free,55090,57125,work-based,work-based Shared ride 2 free trips,work-based
-Shared ride 2 free,5876675,6540903,All,All Shared ride 2 free trips,All
-Shared ride 2 pay,10220,6856,discretionary,discretionary Shared ride 2 pay trips,discretionary
-Shared ride 2 pay,5160,2507,eatingout,eatingout Shared ride 2 pay trips,eatingout
-Shared ride 2 pay,6530,7271,escort,escort Shared ride 2 pay trips,escort
-Shared ride 2 pay,10170,3761,maintenance,maintenance Shared ride 2 pay trips,maintenance
-Shared ride 2 pay,2025,0,school,school Shared ride 2 pay trips,school
-Shared ride 2 pay,7195,2112,shop,shop Shared ride 2 pay trips,shop
-Shared ride 2 pay,2060,23,university,university Shared ride 2 pay trips,university
-Shared ride 2 pay,6045,5205,visiting,visiting Shared ride 2 pay trips,visiting
-Shared ride 2 pay,7250,13985,work,work Shared ride 2 pay trips,work
-Shared ride 2 pay,895,1268,work-based,work-based Shared ride 2 pay trips,work-based
-Shared ride 2 pay,57550,42987,All,All Shared ride 2 pay trips,All
-Shared ride 3+ free,1010645,865383,discretionary,discretionary Shared ride 3+ free trips,discretionary
-Shared ride 3+ free,631040,628749,eatingout,eatingout Shared ride 3+ free trips,eatingout
-Shared ride 3+ free,1101925,1199544,escort,escort Shared ride 3+ free trips,escort
-Shared ride 3+ free,594880,792900,maintenance,maintenance Shared ride 3+ free trips,maintenance
-Shared ride 3+ free,364980,511859,school,school Shared ride 3+ free trips,school
-Shared ride 3+ free,1084720,972954,shop,shop Shared ride 3+ free trips,shop
-Shared ride 3+ free,12945,3798,university,university Shared ride 3+ free trips,university
-Shared ride 3+ free,510180,423868,visiting,visiting Shared ride 3+ free trips,visiting
-Shared ride 3+ free,99255,77540,work,work Shared ride 3+ free trips,work
-Shared ride 3+ free,13070,20244,work-based,work-based Shared ride 3+ free trips,work-based
-Shared ride 3+ free,5423640,5500885,All,All Shared ride 3+ free trips,All
-Shared ride 3+ pay,32820,3865,discretionary,discretionary Shared ride 3+ pay trips,discretionary
-Shared ride 3+ pay,13920,3056,eatingout,eatingout Shared ride 3+ pay trips,eatingout
-Shared ride 3+ pay,14495,4382,escort,escort Shared ride 3+ pay trips,escort
-Shared ride 3+ pay,9660,1416,maintenance,maintenance Shared ride 3+ pay trips,maintenance
-Shared ride 3+ pay,2270,0,school,school Shared ride 3+ pay trips,school
-Shared ride 3+ pay,13070,3639,shop,shop Shared ride 3+ pay trips,shop
-Shared ride 3+ pay,930,0,university,university Shared ride 3+ pay trips,university
-Shared ride 3+ pay,17150,3653,visiting,visiting Shared ride 3+ pay trips,visiting
-Shared ride 3+ pay,4260,547,work,work Shared ride 3+ pay trips,work
-Shared ride 3+ pay,365,0,work-based,work-based Shared ride 3+ pay trips,work-based
-Shared ride 3+ pay,108940,20879,All,All Shared ride 3+ pay trips,All
-Taxi,6455,7342,discretionary,discretionary Taxi trips,discretionary
-Taxi,5775,7592,eatingout,eatingout Taxi trips,eatingout
-Taxi,6630,1248,escort,escort Taxi trips,escort
-Taxi,24170,17676,maintenance,maintenance Taxi trips,maintenance
-Taxi,760,1607,school,school Taxi trips,school
-Taxi,11910,7118,shop,shop Taxi trips,shop
-Taxi,24295,155,university,university Taxi trips,university
-Taxi,3505,7618,visiting,visiting Taxi trips,visiting
-Taxi,19750,12672,work,work Taxi trips,work
-Taxi,7685,6991,work-based,work-based Taxi trips,work-based
-Taxi,110935,70084,All,All Taxi trips,All
-Walk,308015,426040,discretionary,discretionary Walk trips,discretionary
-Walk,158015,273748,eatingout,eatingout Walk trips,eatingout
-Walk,314145,263474,escort,escort Walk trips,escort
-Walk,412690,370217,maintenance,maintenance Walk trips,maintenance
-Walk,846780,534471,school,school Walk trips,school
-Walk,413040,515354,shop,shop Walk trips,shop
-Walk,71000,37919,university,university Walk trips,university
-Walk,183865,271809,visiting,visiting Walk trips,visiting
-Walk,509580,310484,work,work Walk trips,work
-Walk,173305,50014,work-based,work-based Walk trips,work-based
-Walk,3390435,3218236,All,All Walk trips,All
-Walk to transit,113705,88601,discretionary,discretionary Walk to transit trips,discretionary
-Walk to transit,110885,43052,eatingout,eatingout Walk to transit trips,eatingout
-Walk to transit,118600,44898,escort,escort Walk to transit trips,escort
-Walk to transit,123265,186365,maintenance,maintenance Walk to transit trips,maintenance
-Walk to transit,74515,105388,school,school Walk to transit trips,school
-Walk to transit,184050,142438,shop,shop Walk to transit trips,shop
-Walk to transit,24675,61314,university,university Walk to transit trips,university
-Walk to transit,70785,66008,visiting,visiting Walk to transit trips,visiting
-Walk to transit,625545,583886,work,work Walk to transit trips,work
-Walk to transit,50320,24219,work-based,work-based Walk to transit trips,work-based
-Walk to transit,1496345,1348049,All,All Walk to transit trips,All
+School bus,872580,752635,All,All School bus trips,All
+Shared ride 2 free,787890,834218,discretionary,discretionary Shared ride 2 free trips,discretionary
+Shared ride 2 free,620745,665455,eatingout,eatingout Shared ride 2 free trips,eatingout
+Shared ride 2 free,493580,1175271,escort,escort Shared ride 2 free trips,escort
+Shared ride 2 free,1021175,1031332,maintenance,maintenance Shared ride 2 free trips,maintenance
+Shared ride 2 free,364640,530305,school,school Shared ride 2 free trips,school
+Shared ride 2 free,1493720,1382379,shop,shop Shared ride 2 free trips,shop
+Shared ride 2 free,50080,30371,university,university Shared ride 2 free trips,university
+Shared ride 2 free,488430,473413,visiting,visiting Shared ride 2 free trips,visiting
+Shared ride 2 free,444660,345304,work,work Shared ride 2 free trips,work
+Shared ride 2 free,52055,57125,work-based,work-based Shared ride 2 free trips,work-based
+Shared ride 2 free,5816975,6525173,All,All Shared ride 2 free trips,All
+Shared ride 2 pay,10230,6856,discretionary,discretionary Shared ride 2 pay trips,discretionary
+Shared ride 2 pay,5475,2507,eatingout,eatingout Shared ride 2 pay trips,eatingout
+Shared ride 2 pay,6380,7271,escort,escort Shared ride 2 pay trips,escort
+Shared ride 2 pay,10065,3761,maintenance,maintenance Shared ride 2 pay trips,maintenance
+Shared ride 2 pay,1955,0,school,school Shared ride 2 pay trips,school
+Shared ride 2 pay,7385,2112,shop,shop Shared ride 2 pay trips,shop
+Shared ride 2 pay,1995,23,university,university Shared ride 2 pay trips,university
+Shared ride 2 pay,6255,5205,visiting,visiting Shared ride 2 pay trips,visiting
+Shared ride 2 pay,7645,13985,work,work Shared ride 2 pay trips,work
+Shared ride 2 pay,975,1268,work-based,work-based Shared ride 2 pay trips,work-based
+Shared ride 2 pay,58360,42988,All,All Shared ride 2 pay trips,All
+Shared ride 3+ free,1005360,865383,discretionary,discretionary Shared ride 3+ free trips,discretionary
+Shared ride 3+ free,627295,628749,eatingout,eatingout Shared ride 3+ free trips,eatingout
+Shared ride 3+ free,1094400,1199544,escort,escort Shared ride 3+ free trips,escort
+Shared ride 3+ free,587115,792900,maintenance,maintenance Shared ride 3+ free trips,maintenance
+Shared ride 3+ free,362385,511859,school,school Shared ride 3+ free trips,school
+Shared ride 3+ free,1073025,972954,shop,shop Shared ride 3+ free trips,shop
+Shared ride 3+ free,12425,3798,university,university Shared ride 3+ free trips,university
+Shared ride 3+ free,507000,423868,visiting,visiting Shared ride 3+ free trips,visiting
+Shared ride 3+ free,91135,77540,work,work Shared ride 3+ free trips,work
+Shared ride 3+ free,11885,20244,work-based,work-based Shared ride 3+ free trips,work-based
+Shared ride 3+ free,5372025,5496839,All,All Shared ride 3+ free trips,All
+Shared ride 3+ pay,32655,3865,discretionary,discretionary Shared ride 3+ pay trips,discretionary
+Shared ride 3+ pay,13820,3056,eatingout,eatingout Shared ride 3+ pay trips,eatingout
+Shared ride 3+ pay,14285,4382,escort,escort Shared ride 3+ pay trips,escort
+Shared ride 3+ pay,9565,1416,maintenance,maintenance Shared ride 3+ pay trips,maintenance
+Shared ride 3+ pay,2390,0,school,school Shared ride 3+ pay trips,school
+Shared ride 3+ pay,13195,3639,shop,shop Shared ride 3+ pay trips,shop
+Shared ride 3+ pay,885,0,university,university Shared ride 3+ pay trips,university
+Shared ride 3+ pay,17115,3653,visiting,visiting Shared ride 3+ pay trips,visiting
+Shared ride 3+ pay,3815,547,work,work Shared ride 3+ pay trips,work
+Shared ride 3+ pay,400,0,work-based,work-based Shared ride 3+ pay trips,work-based
+Shared ride 3+ pay,108125,20558,All,All Shared ride 3+ pay trips,All
+Taxi,6695,7342,discretionary,discretionary Taxi trips,discretionary
+Taxi,5960,7592,eatingout,eatingout Taxi trips,eatingout
+Taxi,6425,1248,escort,escort Taxi trips,escort
+Taxi,24175,17676,maintenance,maintenance Taxi trips,maintenance
+Taxi,815,1607,school,school Taxi trips,school
+Taxi,11400,7118,shop,shop Taxi trips,shop
+Taxi,24705,155,university,university Taxi trips,university
+Taxi,3870,7618,visiting,visiting Taxi trips,visiting
+Taxi,19450,12672,work,work Taxi trips,work
+Taxi,7265,6991,work-based,work-based Taxi trips,work-based
+Taxi,110760,70019,All,All Taxi trips,All
+Walk,305795,426040,discretionary,discretionary Walk trips,discretionary
+Walk,158775,273748,eatingout,eatingout Walk trips,eatingout
+Walk,323495,263474,escort,escort Walk trips,escort
+Walk,415060,370217,maintenance,maintenance Walk trips,maintenance
+Walk,850495,534471,school,school Walk trips,school
+Walk,416370,515354,shop,shop Walk trips,shop
+Walk,68840,37919,university,university Walk trips,university
+Walk,181170,271809,visiting,visiting Walk trips,visiting
+Walk,515940,310484,work,work Walk trips,work
+Walk,173180,50014,work-based,work-based Walk trips,work-based
+Walk,3409120,3053530,All,All Walk trips,All
+Walk to transit,131395,88601,discretionary,discretionary Walk to transit trips,discretionary
+Walk to transit,126580,43052,eatingout,eatingout Walk to transit trips,eatingout
+Walk to transit,141365,44898,escort,escort Walk to transit trips,escort
+Walk to transit,143700,186365,maintenance,maintenance Walk to transit trips,maintenance
+Walk to transit,79065,105388,school,school Walk to transit trips,school
+Walk to transit,212880,142438,shop,shop Walk to transit trips,shop
+Walk to transit,29665,61314,university,university Walk to transit trips,university
+Walk to transit,81595,66008,visiting,visiting Walk to transit trips,visiting
+Walk to transit,741635,583886,work,work Walk to transit trips,work
+Walk to transit,64015,24219,work-based,work-based Walk to transit trips,work-based
+Walk to transit,1751895,1346169,All,All Walk to transit trips,All

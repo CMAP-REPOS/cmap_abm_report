@@ -41,7 +41,7 @@ function ready(error, data) {
       for (var i = 1, test = 0, n = keysLegend.length; i < n; ++i)
         test += d[keysLegend[i]] = +d[keysLegend[i]];
         d.totalSlice = test;
-        console.log("Group Total: ", d.totalSlice)
+        //console.log("Group Total: ", d.totalSlice)
         return d;
     })
 
@@ -148,7 +148,7 @@ function ready(error, data) {
       .attr("height", 15)
       .attr("stroke-width",2)
       .on("click",function(d) {
-        console.log(d)
+        //console.log(d)
         updateLegend(d)
       })
       .merge(legend)

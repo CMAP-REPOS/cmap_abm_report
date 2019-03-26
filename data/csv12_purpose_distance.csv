@@ -1,17 +1,89 @@
-Index,Model 01,Survey 01,Category,Description,Title
-Less than 1 Mile,37350,56428,All,Temp,All Modes
-1 Mile,17005,11713,All,Temp,All Modes
-5 Miles,19285,5767,All,Temp,All Modes
-10 Miles,35555,30579,All,Temp,All Modes
-15 Miles,43455,27745,All,Temp,All Modes
-20 Miles,28390,26924,All,Temp,All Modes
-25 Miles,17170,3905,All,Temp,All Modes
-30 Miles or More,25840,29921,All,Temp,All Modes
-Less than 1 Mile,119215,64542,work,Temp,work
-1 Mile,5245,4596,work,Temp,work
-5 Miles,348510,274811,work,Temp,work
-10 Miles,993960,1023730,work,Temp,work
-15 Miles,780615,876801,work,Temp,work
-20 Miles,1478720,1343359,work,Temp,work
-25 Miles,1785545,2170181,work,Temp,work
-30 Miles or More,86745,93236,work,Temp,work
+Index,Model 01,Survey 01,Category,Description,Title,,
+Less than 1 Mile,98055,1096431,discretionary,discretionary Less than 1 Mile,discretionary,1255485,9430989
+Less than 1 Mile,79910,592768,eatingout,eatingout Less than 1 Mile,eatingout,,
+Less than 1 Mile,158190,1000179,escort,escort Less than 1 Mile,escort,,
+Less than 1 Mile,105695,1188098,maintenance,maintenance Less than 1 Mile,maintenance,,
+Less than 1 Mile,242190,876183,school,school Less than 1 Mile,school,,
+Less than 1 Mile,188060,1327635,shop,shop Less than 1 Mile,shop,,
+Less than 1 Mile,7585,129054,university,university Less than 1 Mile,university,,
+Less than 1 Mile,54675,610979,visiting,visiting Less than 1 Mile,visiting,,
+Less than 1 Mile,251025,2268329,work,work Less than 1 Mile,work,,
+Less than 1 Mile,70100,341333,work-based,work-based Less than 1 Mile,work-based,,
+1-5 Mile,1369435,1500330,discretionary,discretionary 1-5 Mile,discretionary,13132010,12840227
+1-5 Mile,930645,1051444,eatingout,eatingout 1-5 Mile,eatingout,,
+1-5 Mile,1640420,1747659,escort,escort 1-5 Mile,escort,,
+1-5 Mile,1664000,1862039,maintenance,maintenance 1-5 Mile,maintenance,,
+1-5 Mile,1891230,1324740,school,school 1-5 Mile,school,,
+1-5 Mile,2446100,2491729,shop,shop 1-5 Mile,shop,,
+1-5 Mile,106850,89069,university,university 1-5 Mile,university,,
+1-5 Mile,678085,802812,visiting,visiting 1-5 Mile,visiting,,
+1-5 Mile,2083005,1682803,work,work 1-5 Mile,work,,
+1-5 Mile,322240,287602,work-based,work-based 1-5 Mile,work-based,,
+5-10 Miles,993055,403643,discretionary,discretionary 5-10 Miles,discretionary,9055905,4470558
+5-10 Miles,744225,487818,eatingout,eatingout 5-10 Miles,eatingout,,
+5-10 Miles,1039950,617302,escort,escort 5-10 Miles,escort,,
+5-10 Miles,1447105,812775,maintenance,maintenance 5-10 Miles,maintenance,,
+5-10 Miles,377890,208904,school,school 5-10 Miles,school,,
+5-10 Miles,1898120,964275,shop,shop 5-10 Miles,shop,,
+5-10 Miles,110630,43834,university,university 5-10 Miles,university,,
+5-10 Miles,536875,280365,visiting,visiting 5-10 Miles,visiting,,
+5-10 Miles,1654130,537149,work,work 5-10 Miles,work,,
+5-10 Miles,253925,114493,work-based,work-based 5-10 Miles,work-based,,
+10-15 Miles,298230,164910,discretionary,discretionary 10-15 Miles,discretionary,3522685,1905156
+10-15 Miles,284800,154040,eatingout,eatingout 10-15 Miles,eatingout,,
+10-15 Miles,350930,290703,escort,escort 10-15 Miles,escort,,
+10-15 Miles,466100,317717,maintenance,maintenance 10-15 Miles,maintenance,,
+10-15 Miles,79480,45376,school,school 10-15 Miles,school,,
+10-15 Miles,627505,344065,shop,shop 10-15 Miles,shop,,
+10-15 Miles,63660,29549,university,university 10-15 Miles,university,,
+10-15 Miles,252415,136834,visiting,visiting 10-15 Miles,visiting,,
+10-15 Miles,949310,349698,work,work 10-15 Miles,work,,
+10-15 Miles,150255,72264,work-based,work-based 10-15 Miles,work-based,,
+15-20 Miles,138095,67872,discretionary,discretionary 15-20 Miles,discretionary,1681580,984212
+15-20 Miles,136005,85278,eatingout,eatingout 15-20 Miles,eatingout,,
+15-20 Miles,163850,130557,escort,escort 15-20 Miles,escort,,
+15-20 Miles,181690,173869,maintenance,maintenance 15-20 Miles,maintenance,,
+15-20 Miles,29430,18517,school,school 15-20 Miles,school,,
+15-20 Miles,248855,164196,shop,shop 15-20 Miles,shop,,
+15-20 Miles,36085,11595,university,university 15-20 Miles,university,,
+15-20 Miles,141710,63175,visiting,visiting 15-20 Miles,visiting,,
+15-20 Miles,534045,226782,work,work 15-20 Miles,work,,
+15-20 Miles,71815,42371,work-based,work-based 15-20 Miles,work-based,,
+20-25 Miles,89065,38364,discretionary,discretionary 20-25 Miles,discretionary,922960,654558
+20-25 Miles,73110,58547,eatingout,eatingout 20-25 Miles,eatingout,,
+20-25 Miles,87340,88386,escort,escort 20-25 Miles,escort,,
+20-25 Miles,82265,97921,maintenance,maintenance 20-25 Miles,maintenance,,
+20-25 Miles,16940,11867,school,school 20-25 Miles,school,,
+20-25 Miles,112890,96247,shop,shop 20-25 Miles,shop,,
+20-25 Miles,21660,7429,university,university 20-25 Miles,university,,
+20-25 Miles,85815,38639,visiting,visiting 20-25 Miles,visiting,,
+20-25 Miles,320230,181361,work,work 20-25 Miles,work,,
+20-25 Miles,33645,35797,work-based,work-based 20-25 Miles,work-based,,
+25-30 Miles,85290,40167,discretionary,discretionary 25-30 Miles,discretionary,564220,480246
+25-30 Miles,40125,35718,eatingout,eatingout 25-30 Miles,eatingout,,
+25-30 Miles,50665,74406,escort,escort 25-30 Miles,escort,,
+25-30 Miles,42420,83963,maintenance,maintenance 25-30 Miles,maintenance,,
+25-30 Miles,11665,8205,school,school 25-30 Miles,school,,
+25-30 Miles,54425,51185,shop,shop 25-30 Miles,shop,,
+25-30 Miles,12745,7352,university,university 25-30 Miles,university,,
+25-30 Miles,53560,26362,visiting,visiting 25-30 Miles,visiting,,
+25-30 Miles,194495,128050,work,work 25-30 Miles,work,,
+25-30 Miles,18830,24838,work-based,work-based 25-30 Miles,work-based,,
+30 Miles or More,258235,65061,discretionary,discretionary 30 Miles or More,discretionary,1010985,875946
+30 Miles or More,69645,69968,eatingout,eatingout 30 Miles or More,eatingout,,
+30 Miles or More,81125,119791,escort,escort 30 Miles or More,escort,,
+30 Miles or More,82545,153122,maintenance,maintenance 30 Miles or More,maintenance,,
+30 Miles or More,24745,20327,school,school 30 Miles or More,school,,
+30 Miles or More,78075,116435,shop,shop 30 Miles or More,shop,,
+30 Miles or More,21590,15929,university,university 30 Miles or More,university,,
+30 Miles or More,133060,60406,visiting,visiting 30 Miles or More,visiting,,
+30 Miles or More,237135,211648,work,work 30 Miles or More,work,,
+30 Miles or More,24830,43259,work-based,work-based 30 Miles or More,work-based,,
+Less than 1 Mile,1255485,9430989,All,All Less than 1 Mile,All,,
+1-5 Mile,13132010,12840227,All,All 1-5 Mile,All,,
+5-10 Miles,9055905,4470558,All,All 5-10 Miles,All,,
+10-15 Miles,3522685,1905156,All,All 10-15 Miles,All,,
+15-20 Miles,1681580,984212,All,All 15-20 Miles,All,,
+20-25 Miles,922960,654558,All,All 20-25 Miles,All,,
+25-30 Miles,564220,480246,All,All 25-30 Miles,All,,
+30 Miles or More,1010985,875946,All,All 30 Miles or More,All,,

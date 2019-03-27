@@ -28,9 +28,11 @@
       display: inline-block;
     }
 
-    table{ border:none; width:33%; display:inline-block}
-    table {font-size: 10px;float:left;margin: 10px;}
-
+    table {font-size: 11px;width:20%;
+  float:left;margin: 10px;}
+  table:nth-child(3n+1) {
+  clear:left;
+}
     td{text-align: right}
     th{text-align: center;}
     </style>
@@ -125,10 +127,6 @@
           <h3>INTRODUCTION/DESCRIPTION</h3>
 
           <p>
-            CMAP's activity-based model (ABM) platform is CT-RAMP (Coordinated Travel and Regional Activity-Based Modeling Platform), which was developed open source by a consultant under contract to CMAP.  Activity-Based Modeling is increasingly viewed as a superior method to better understand the socioeconomic determinants of travel choice and for evaluating modern transportation solutions.  CMAP's ABM has been developed to demonstrate sensitivity to highway pricing scenarios based on each traveler's individual value of time and to improve model sensitivity to a wider range of non-traditional transit attributes, i.e., attributes such as service reliability, personal safety, station and vehicle cleanliness, and crowding that do not typically inform transit Level-of-Service calculations.  Subsequent work on the ABM has focused on the calibration of selected sub-models and the overall validation of the model results.  
-This report represents the results of model calibration and validation activities completed over the last several years by CMAP staff and their consultants.
-Model calibration is defined as the adjustment of model parameters and constants so that the models better replicate observed data for a base year.  CMAP's ABM is calibrated to a base year of 2010.
-Model validation is defined as comparing the results of the calibrated models to observed data.  Modeling best practice dictates that different data sets be used to conduct calibration and validation activities; in the absence of other observed data, the sources used for model calibration may be used for validation as long as they examine different aspects of the data or rely on alternate geographic scopes.  Model validation results in this report reflect 2015 conditions.
 
           </p>
 
@@ -190,436 +188,9 @@ Model validation is defined as comparing the results of the calibrated models to
             <h3>PLACE HOLDER</h3>
             <p>
             </p>
+            {{ child_table }}
           </div>
         </div>
-          <div class="row">
-            <div class="col-md-4">
-              <br/>
-              <br/>
-              <table border="1" class="dataframe table table-striped table-responsive table-bordered table-hover" id="popsynchild">
-  <thead>
-    <tr>
-      <th></th>
-      <th colspan="2" halign="left">0 Children</th>
-      <th colspan="2" halign="left">1 Children</th>
-      <th colspan="2" halign="left">2+ Children</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th>Observed</th>
-      <th>Modeled</th>
-      <th>Observed</th>
-      <th>Modeled</th>
-      <th>Observed</th>
-      <th>Modeled</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Illinois</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>1 Adult</td>
-      <td>25.5%</td>
-      <td>25.5%</td>
-      <td>0.9%</td>
-      <td>0.5%</td>
-      <td>0.7%</td>
-      <td>3.9%</td>
-    </tr>
-    <tr>
-      <td>2 Adults</td>
-      <td>23.9%</td>
-      <td>23.9%</td>
-      <td>8.1%</td>
-      <td>10.5%</td>
-      <td>14.7%</td>
-      <td>5.7%</td>
-    </tr>
-    <tr>
-      <td>3+ Adults</td>
-      <td>10.9%</td>
-      <td>16.8%</td>
-      <td>4.4%</td>
-      <td>6.6%</td>
-      <td>3.7%</td>
-      <td>1.4%</td>
-    </tr>
-    <tr>
-      <td>Indiana</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>1 Adult</td>
-      <td>1.9%</td>
-      <td>1.6%</td>
-      <td>0.1%</td>
-      <td>0.0%</td>
-      <td>0.2%</td>
-      <td>0.3%</td>
-    </tr>
-    <tr>
-      <td>2 Adults</td>
-      <td>2.6%</td>
-      <td>1.1%</td>
-      <td>0.3%</td>
-      <td>0.5%</td>
-      <td>0.7%</td>
-      <td>0.2%</td>
-    </tr>
-    <tr>
-      <td>3+ Adults</td>
-      <td>1.1%</td>
-      <td>0.8%</td>
-      <td>0.2%</td>
-      <td>0.5%</td>
-      <td>0.2%</td>
-      <td>0.0%</td>
-    </tr>
-    <tr>
-      <td>Region</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>1 Adult</td>
-      <td>27.4%</td>
-      <td>27.2%</td>
-      <td>0.9%</td>
-      <td>0.5%</td>
-      <td>0.8%</td>
-      <td>4.2%</td>
-    </tr>
-    <tr>
-      <td>2 Adults</td>
-      <td>26.5%</td>
-      <td>25.0%</td>
-      <td>8.4%</td>
-      <td>11.0%</td>
-      <td>15.4%</td>
-      <td>5.9%</td>
-    </tr>
-    <tr>
-      <td>3+ Adults</td>
-      <td>12.0%</td>
-      <td>17.6%</td>
-      <td>4.5%</td>
-      <td>7.1%</td>
-      <td>3.9%</td>
-      <td>1.5%</td>
-    </tr>
-  </tbody>
-</table>
-            </div>
-            <div class="col-md-4">
-              <br/>
-              <br/>
-              <table border="1" class="dataframe table table-striped table-responsive table-bordered table-hover" id="popsynworker">
-  <thead>
-    <tr>
-      <th></th>
-      <th colspan="2" halign="left">0 Workers</th>
-      <th colspan="2" halign="left">1 Workers</th>
-      <th colspan="2" halign="left">2+ Workers</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th>Observed</th>
-      <th>Modeled</th>
-      <th>Observed</th>
-      <th>Modeled</th>
-      <th>Observed</th>
-      <th>Modeled</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Illinois</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>1 Adult</td>
-      <td>13.7%</td>
-      <td>6.5%</td>
-      <td>13.3%</td>
-      <td>23.5%</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-    </tr>
-    <tr>
-      <td>2 Adults</td>
-      <td>7.7%</td>
-      <td>7.1%</td>
-      <td>21.4%</td>
-      <td>12.7%</td>
-      <td>17.6%</td>
-      <td>20.3%</td>
-    </tr>
-    <tr>
-      <td>3+ Adults</td>
-      <td>2.1%</td>
-      <td>8.5%</td>
-      <td>3.8%</td>
-      <td>3.8%</td>
-      <td>11.7%</td>
-      <td>12.6%</td>
-    </tr>
-    <tr>
-      <td>Indiana</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>1 Adult</td>
-      <td>1.1%</td>
-      <td>0.4%</td>
-      <td>1.1%</td>
-      <td>1.6%</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-    </tr>
-    <tr>
-      <td>2 Adults</td>
-      <td>1.1%</td>
-      <td>0.4%</td>
-      <td>1.4%</td>
-      <td>0.6%</td>
-      <td>1.1%</td>
-      <td>0.9%</td>
-    </tr>
-    <tr>
-      <td>3+ Adults</td>
-      <td>0.2%</td>
-      <td>0.5%</td>
-      <td>0.5%</td>
-      <td>0.2%</td>
-      <td>0.8%</td>
-      <td>0.6%</td>
-    </tr>
-    <tr>
-      <td>Region</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>1 Adult</td>
-      <td>14.8%</td>
-      <td>6.8%</td>
-      <td>14.4%</td>
-      <td>25.1%</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-    </tr>
-    <tr>
-      <td>2 Adults</td>
-      <td>8.8%</td>
-      <td>7.5%</td>
-      <td>22.8%</td>
-      <td>13.3%</td>
-      <td>18.7%</td>
-      <td>21.2%</td>
-    </tr>
-    <tr>
-      <td>3+ Adults</td>
-      <td>2.2%</td>
-      <td>9.0%</td>
-      <td>4.2%</td>
-      <td>4.0%</td>
-      <td>12.5%</td>
-      <td>13.1%</td>
-    </tr>
-  </tbody>
-</table>
-            </div>
-            <div class="col-md-4">
-              <br/>
-              <br/>
-              <table border="1" class="dataframe table table-striped table-responsive table-bordered table-hover" id="popsynveh">
-  <thead>
-    <tr>
-      <th></th>
-      <th colspan="2" halign="left">0 Vehicles</th>
-      <th colspan="2" halign="left">1 Vehicle</th>
-      <th colspan="2" halign="left">2+ Vehicles</th>
-      <th colspan="2" halign="left">3+ Vehicles</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th>Observed</th>
-      <th>Modeled</th>
-      <th>Observed</th>
-      <th>Modeled</th>
-      <th>Observed</th>
-      <th>Modeled</th>
-      <th>Observed</th>
-      <th>Modeled</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Illinois</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>1 Adult</td>
-      <td>7.7%</td>
-      <td>4.3%</td>
-      <td>10.6%</td>
-      <td>8.7%</td>
-      <td>4.4%</td>
-      <td>6.5%</td>
-      <td>0.9%</td>
-      <td>2.5%</td>
-    </tr>
-    <tr>
-      <td>2 Adults</td>
-      <td>4.4%</td>
-      <td>5.8%</td>
-      <td>17.8%</td>
-      <td>21.4%</td>
-      <td>11.9%</td>
-      <td>10.2%</td>
-      <td>5.7%</td>
-      <td>2.6%</td>
-    </tr>
-    <tr>
-      <td>3+ Adults</td>
-      <td>0.5%</td>
-      <td>2.0%</td>
-      <td>3.2%</td>
-      <td>7.2%</td>
-      <td>15.8%</td>
-      <td>15.8%</td>
-      <td>9.8%</td>
-      <td>8.0%</td>
-    </tr>
-    <tr>
-      <td>Indiana</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>1 Adult</td>
-      <td>0.3%</td>
-      <td>0.2%</td>
-      <td>1.3%</td>
-      <td>0.3%</td>
-      <td>0.6%</td>
-      <td>0.4%</td>
-      <td>0.2%</td>
-      <td>0.2%</td>
-    </tr>
-    <tr>
-      <td>2 Adults</td>
-      <td>0.1%</td>
-      <td>0.1%</td>
-      <td>1.3%</td>
-      <td>1.4%</td>
-      <td>1.1%</td>
-      <td>0.7%</td>
-      <td>0.5%</td>
-      <td>0.2%</td>
-    </tr>
-    <tr>
-      <td>3+ Adults</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.1%</td>
-      <td>0.2%</td>
-      <td>1.1%</td>
-      <td>0.7%</td>
-      <td>0.8%</td>
-      <td>0.5%</td>
-    </tr>
-    <tr>
-      <td>Region</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>1 Adult</td>
-      <td>8.0%</td>
-      <td>4.5%</td>
-      <td>11.9%</td>
-      <td>9.0%</td>
-      <td>5.0%</td>
-      <td>6.9%</td>
-      <td>1.1%</td>
-      <td>2.7%</td>
-    </tr>
-    <tr>
-      <td>2 Adults</td>
-      <td>4.5%</td>
-      <td>5.9%</td>
-      <td>19.1%</td>
-      <td>22.7%</td>
-      <td>13.0%</td>
-      <td>11.0%</td>
-      <td>6.2%</td>
-      <td>2.8%</td>
-    </tr>
-    <tr>
-      <td>3+ Adults</td>
-      <td>0.5%</td>
-      <td>2.1%</td>
-      <td>3.3%</td>
-      <td>7.4%</td>
-      <td>16.9%</td>
-      <td>16.5%</td>
-      <td>10.6%</td>
-      <td>8.5%</td>
-    </tr>
-  </tbody>
-</table>
-            </div>
-          </div>
       </div>
         <!-- Auto Counts -->
       <div
@@ -628,9 +199,13 @@ Model validation is defined as comparing the results of the calibrated models to
         <div class="row">
           <div class="col-md-12">
             <br/>
+
             <br/>
+
             <h3>INTRODUCTION/DESCRIPTION</h3>
+
             <p>
+
             </p>
 
           </div>
@@ -926,7 +501,7 @@ Model validation is defined as comparing the results of the calibrated models to
         <br/>
         <br/>
         <div class="col col-md-2">
-          <h5><b><div id= "modePTitle"></div>Single Person Trips</b></h5>
+          <h5><b><div id= "modePTitle"></div> Trips</b></h5>
           <div class="small">
             Select data type for comparison from dropdown
             </div>
@@ -935,12 +510,6 @@ Model validation is defined as comparing the results of the calibrated models to
             <option value="All">All</option>
             <option value="fulltime">Full-time Worker</option>
             <option value="parttime">Part-time Worker</option>
-            <option value="nonworker">Non worker</option>
-            <option value = "retired">Retired</option>
-            <option value="preschool">Pre-school</option>
-            <option value="driveagestudent">Student 16+</option>
-            <option value="nondrivingstudent">Student under 16 years</option>
-            <option value="university">University Student</option>
           </select>
         </div>
         <div class="col col-md-10">
@@ -978,12 +547,9 @@ Model validation is defined as comparing the results of the calibrated models to
             </div>
           <br>
           <select id="catModeInc">
-            <option value="All">All</option>
-            <option value="Less than $35k">Less than $35k</option>
-            <option value="$35k to $50k">$35k to $50k</option>
-            <option value="$50k to $75k">$50k to $75k</option>
-            <option value="$75k to $100K">$75k to $100K</option>
-            <option value="More than $100k">More than $100k</option>
+            <option value="Bike">Bike</option>
+            <option value="Drive alone free">Drive alone free</option>
+            <option value="Drive alone pay">Drive alone pay</option>
           </select>
         </div>
         <div class="col col-md-10">
@@ -1069,12 +635,6 @@ Model validation is defined as comparing the results of the calibrated models to
             <option value="All">All</option>
             <option value="fulltime">Full-time Worker</option>
             <option value="parttime">Part-time Worker</option>
-            <option value="nonworker">Non worker</option>
-            <option value = "retired">Retired</option>
-            <option value="preschool">Pre-school</option>
-            <option value="driveage">Student 16+</option>
-            <option value="nondriveage">Student under 16 years</option>
-            <option value="university">University Student</option>
           </select>
         </div>
         <div class="col col-md-10">
@@ -1113,14 +673,7 @@ Model validation is defined as comparing the results of the calibrated models to
           <br>
           <select id="catPurpDist">
             <option value="All">All</option>
-            <option value="Less than 1 Mile">Less than 1 Mile</option>
-            <option value="1-5 Mile">1-5 Mile</option>
-            <option value="5-10 Miles">5-10 Miles</option>
-            <option value="10-15 Miles">10-15 Miles</option>
-            <option value="15-20 Miles">15-20 Miles</option>
-            <option value="20-25 Miles">20-25 Miles</option>
-            <option value="25-30 Miles">25-30 Miles</option>
-            <option value="30 Miles or More">30 Miles or More</option>
+            <option value="work">Work Trips</option>
           </select>
         </div>
         <div class="col col-md-10">
@@ -1217,7 +770,7 @@ Model validation is defined as comparing the results of the calibrated models to
   <script>makeGroupVBar("data/csv7_mode_distance.csv","#ModeByDistance","#catModeDist",2, "modeDistDesc","modeDTitle");</script>
   <script>makeGroupVBar("data/csv8_wbmode_distance.csv","#wbModeByDistance","#wbcatModeDist",2, "wbmodeDistDesc","wbmodeDTitle");</script>
   <script>makeGroupVBar("data/csv9_mode_person.csv","#ModebyPerson","#catModePer",2, "modePerDesc","modePTitle");</script>
-  <script>makeGroupVBar("data/csv10_mode_income.csv","#ModebyIncome","#catModeInc",2, "modeinDesc","modeITitle");</script>
+  <script>makeGroupVBar("data/csv10_mode_income.csv","#ModebyIncome","#catModeinc",2, "modeinDesc","modeITitle");</script>
   <script>makeGroupVBar("data/csv11_purpose_type.csv","#PurposebyType","#catPurpType",2, "purpTypeDesc","purpTypeTitle");</script>
   <script>makeGroupVBar("data/csv12_purpose_distance.csv","#PurposebyDist","#catPurpDist",2, "purpDistDesc","purpDistTitle");</script>
 

@@ -37,7 +37,7 @@ function makeChords(csv_file, modelDiv, obsDiv, dest_filter){
 
               function mdata(dest){
                 var modelData = data.filter(function(d){
-                  //console.log(d)
+                  ////console.log(d)
                   if (d.Category == "Model" & d.node == dest){
                     return data;
                   };
@@ -47,7 +47,7 @@ function makeChords(csv_file, modelDiv, obsDiv, dest_filter){
 
               function odata(dest){
                 var obsData = data.filter(function(d){
-                  //console.log(d)
+                  ////console.log(d)
                   if (d.Category == "Survey" & d.node == dest){
                     return data;
                   };
@@ -61,7 +61,7 @@ function makeChords(csv_file, modelDiv, obsDiv, dest_filter){
               modelData = mdata(dest);
               obsData = odata(dest);
 
-              console.log(modelData)
+              //console.log(modelData)
               var mpr = chordMpr(modelData);
               mpr.addValuesToMap('root')
                   .addValuesToMap('node')
@@ -73,7 +73,7 @@ function makeChords(csv_file, modelDiv, obsDiv, dest_filter){
                       return +recs[0].count;
                   });
 
-              console.log(obsData)
+              //console.log(obsData)
               var ompr = chordMpr(obsData);
               ompr.addValuesToMap('root')
                   .addValuesToMap('node')
@@ -95,7 +95,7 @@ function makeChords(csv_file, modelDiv, obsDiv, dest_filter){
                 modelData = mdata(dest);
                 obsData = odata(dest);
 
-                console.log(modelData)
+                //console.log(modelData)
                 var mpr = chordMpr(modelData);
                 mpr.addValuesToMap('root')
                     .addValuesToMap('node')
@@ -107,7 +107,7 @@ function makeChords(csv_file, modelDiv, obsDiv, dest_filter){
                         return +recs[0].count;
                     });
 
-                console.log(obsData)
+                //console.log(obsData)
                 var ompr = chordMpr(obsData);
                 ompr.addValuesToMap('root')
                     .addValuesToMap('node')

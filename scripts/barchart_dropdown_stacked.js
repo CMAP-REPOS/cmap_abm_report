@@ -2,7 +2,7 @@ function makeStackedChart(csv_file,catID,dataTitle,divID){
 
   var divText = document.getElementById(dataTitle);
   catInt = d3.select(catID).property('value');
-  console.log(catInt);
+  //console.log(catInt);
 
   var margin = {top: 35, right: 75, bottom: 50, left: 45},
   width = 700 - margin.left - margin.right,
@@ -50,8 +50,8 @@ function makeStackedChart(csv_file,catID,dataTitle,divID){
       d.Value = +d.Value;
     })
 
-    //console.log("data", data);
-    //console.log("data", newdata);
+    ////console.log("data", data);
+    ////console.log("data", newdata);
 
     x0.domain(newdata.map(function(d) {
       return d.MainGroup; }));
@@ -71,8 +71,8 @@ function makeStackedChart(csv_file,catID,dataTitle,divID){
             return d.SubGroup + d.MainGroup;
       })
       .rollup(function(d, i){
-        //console.log(d[0].Category)
-            //console.log(d)
+        ////console.log(d[0].Category)
+            ////console.log(d)
             if(d[0].Category == catInt){
             var d2 = {SubGroup: d[0].SubGroup, MainGroup: d[0].MainGroup}
           }
@@ -82,22 +82,22 @@ function makeStackedChart(csv_file,catID,dataTitle,divID){
               divText = d.Title;
             }
           })
-          console.log("rollup d", d, d2);
+          //console.log("rollup d", d, d2);
           return d2;
       })
       .entries(newdata)
       .map(function(d){ return d.value; });
 
-    //console.log("groupData", groupData)
+    ////console.log("groupData", groupData)
 
     var stackData = stack
       .keys(keys)(groupData)
     d3.select("#" + dataTitle).text(divText);
-    console.log("stackData", stackData)
+    //console.log("stackData", stackData)
 
     //y.domain([0, d3.max(data, function(d) { return d.Value; })]).nice();
 
-    //console.log("keys", keys)
+    ////console.log("keys", keys)
 
     var serie = g.selectAll(".serie")
       .data(stackData)
@@ -111,14 +111,14 @@ function makeStackedChart(csv_file,catID,dataTitle,divID){
         .attr("class", "serie-rect")
         .attr("transform", function(d) { return "translate(" + x0(d.data.MainGroup) + ",0)"; })
         .attr("x", function(d) {
-          //console.log(d);
+          ////console.log(d);
           return x1(d.data.SubGroup); })
         .attr("y", function(d) {
-          //console.log(d);
+          ////console.log(d);
           return y(d[1]); })
         .attr("height", function(d) { return y(d[0]) - y(d[1]); })
         .attr("width", x1.bandwidth())
-        .on("click", function(d, i){ console.log("serie-rect click d", i, d); });
+        .on("click", function(d, i){ });
 
     g.append("g")
         .attr("class", "axis")
@@ -195,8 +195,8 @@ function makeStackedChart(csv_file,catID,dataTitle,divID){
             d.Value = +d.Value;
           })
 
-          //console.log("data", data);
-          //console.log("data", newdata);
+          ////console.log("data", data);
+          ////console.log("data", newdata);
 
           x0.domain(newdata.map(function(d) {
             return d.MainGroup; }));
@@ -216,8 +216,8 @@ function makeStackedChart(csv_file,catID,dataTitle,divID){
                   return d.SubGroup + d.MainGroup;
             })
             .rollup(function(d, i){
-              console.log(d[0].Category)
-                  console.log(d)
+              //console.log(d[0].Category)
+                  //console.log(d)
                   if(d[0].Category == catInt){
                   var d2 = {SubGroup: d[0].SubGroup, MainGroup: d[0].MainGroup}
                 }
@@ -227,22 +227,22 @@ function makeStackedChart(csv_file,catID,dataTitle,divID){
                     divText = d.Title;
                   }
                 })
-                console.log("rollup d", d, d2);
+                //console.log("rollup d", d, d2);
                 return d2;
                 })
                 .entries(newdata)
                 .map(function(d){ return d.value; });
 
-                //console.log("groupData", groupData)
+                ////console.log("groupData", groupData)
 
                 var stackData = stack
                 .keys(keys)(groupData)
                 d3.select("#" + dataTitle).text(divText);
-          console.log("stackData", stackData)
+          //console.log("stackData", stackData)
 
           //y.domain([0, d3.max(data, function(d) { return d.Value; })]).nice();
 
-          console.log("keys", keys)
+          //console.log("keys", keys)
           g.selectAll(".serie").remove();
 
           var new_layer = g.selectAll(".serie")
@@ -257,14 +257,14 @@ function makeStackedChart(csv_file,catID,dataTitle,divID){
               .attr("class", "serie-rect")
               .attr("transform", function(d) { return "translate(" + x0(d.data.MainGroup) + ",0)"; })
               .attr("x", function(d) {
-                //console.log(d);
+                ////console.log(d);
                 return x1(d.data.SubGroup); })
               .attr("y", function(d) {
-                //console.log(d);
+                ////console.log(d);
                 return y(d[1]); })
               .attr("height", function(d) { return y(d[0]) - y(d[1]); })
               .attr("width", x1.bandwidth())
-              .on("click", function(d, i){ console.log("serie-rect click d", i, d); });
+              .on("click", function(d, i){ });
 
           g.selectAll(".axis").remove();
 

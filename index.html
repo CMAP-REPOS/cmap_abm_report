@@ -1045,7 +1045,7 @@ Model validation is defined as comparing the results of the calibrated models to
         <div class="col-md-12">
           <br/>
           <br/>
-          <h3>TRIPS BY PERSONTYPE AND PURPOSE</h3>
+          <h3>TRIPS BY PERSON TYPE AND PURPOSE</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
             improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
@@ -1080,10 +1080,9 @@ Model validation is defined as comparing the results of the calibrated models to
         <div class="col col-md-10">
           <div id="PurposebyType"></div>
           <div class="small">
-            <div id="purpTypeDesc" ></div>
-            PUMA - source: <br>
-            Census- source: <br>
-            Modeled- description <br>
+            Single-person trips only. <br>
+            Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
+            Modeled - CMAP ABM. <br>
           </div>
         </div>
       </div>
@@ -1126,13 +1125,56 @@ Model validation is defined as comparing the results of the calibrated models to
         <div class="col col-md-10">
           <div id="PurposebyDist"></div>
           <div class="small">
-            <div id="purpDistDesc" ></div>
-            PUMA - source: <br>
-            Census- source: <br>
-            Modeled- description <br>
+              Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
+              Modeled - CMAP ABM. <br>
           </div>
         </div>
       </div>
+      <div class="row">
+          <div class="col-md-12">
+            <br/>
+            <br/>
+            <h3>TRIPS BY PURPOSE AND DISTANCE</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+              improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+              sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+              factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+              qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+              formarum quam civis excellen
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <br/>
+          <br/>
+          <div class="col col-md-2">
+            <h5><b><div id= "DistpurpTitle"></div> Trips</b></h5>
+            <div class="small">
+              Select data type for comparison from dropdown
+              </div>
+            <br>
+            <select id="catDistPurp">
+                <option value="discretionary">Discretionary</option>
+                <option value="eatingout">Eating Out</option>
+                <option value="escort">Escort</option>
+                <option value="maintenance">Maintenance</option>
+                <option value="school">School</option>
+                <option value="shop">Shop</option>
+                <option value="university">University</option>
+                <option value="visiting">Visiting</option>
+                <option value="work">Work</option>
+                <option value="work-based">Work-based</option>
+            </select>
+          </div>
+          <div class="col col-md-10">
+            <div id="DistbyPurpose"></div>
+            <div class="small">
+                Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
+                Modeled - CMAP ABM. <br>
+            </div>
+          </div>
+        </div>
       </div>
       <div
         id="7"
@@ -1142,19 +1184,17 @@ Model validation is defined as comparing the results of the calibrated models to
 
           <br/>
 
-          <h3>Transit/DESCRIPTION</h3>
+          <h3>Transit Boardings</h3>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
-            improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
-            sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
-            factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-            qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
-            formarum quam civis excellen
-          </p>
+            For each transit mode (Metra, CTA Rail, or Bus), the map displays the distribution of boardings by ring sector.  Ring sectors sum to 100% for each transit mode. <p>
+            Choose the transit mode by clicking the Metra, CTA Rail, or Bus buttons.  Choose the data source (Model, Survey, or Difference) using the first dropdown button.  
+            Hover over each ring sector to display data, and use the layer icon in the bottom left to activate CTA Rail and Metra line layers. </p><p>
+            <b>Example:</b> In the model, 19.7% of all Metra boardings occured in ring sector 2S.  In the survey, 7.8% of Metra boardings occured in ring sector 2S.  This is a difference of 11.9%. </p>
+          </p><br>
 
           <div class="btn-group" role="group">
-          <div class="btn-group" role="group">
+          <div class="btn-group" role="group" style="margin-left: 20px">
           <button type="button" id="ModelSurvey" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Model
           </button>
@@ -1172,8 +1212,12 @@ Model validation is defined as comparing the results of the calibrated models to
           <br/>
 
           <br/>
+          <div class="small">
+              Express and local bus combined. <br>
+              Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
+              Modeled - CMAP ABM. <br>
+            </div>
 
-          Place Holder Model Step Description
         </div>
       </div>
   </body>
@@ -1220,6 +1264,8 @@ Model validation is defined as comparing the results of the calibrated models to
   <script>makeGroupVBar("data/csv10_mode_income.csv","#ModebyIncome","#catModeInc",2, "modeinDesc","modeITitle");</script>
   <script>makeGroupVBar("data/csv11_purpose_type.csv","#PurposebyType","#catPurpType",2, "purpTypeDesc","purpTypeTitle");</script>
   <script>makeGroupVBar("data/csv12_purpose_distance.csv","#PurposebyDist","#catPurpDist",2, "purpDistDesc","purpDistTitle");</script>
+  <script>makeGroupVBar("data/csv12b_purpose_distance.csv","#DistbyPurpose","#catDistPurp",2, "DistpurpDesc","DistpurpTitle");</script>
+
 
   <script type="text/javascript" src='scripts/table.js'></script>
   <script>

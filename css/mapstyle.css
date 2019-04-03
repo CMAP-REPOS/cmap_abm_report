@@ -1,6 +1,7 @@
 #map {
-    width: 900px;
     height: 500px;
+    margin-left: 20px;
+    margin-right: 20px
 }
 
 .info {

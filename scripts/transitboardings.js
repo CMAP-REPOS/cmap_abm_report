@@ -469,6 +469,6 @@ var overlayMaps = {
     "Metra lines": metra
 };
 
-var lines = L.control.layers(null, overlayMaps, {collapsed: false, position: 'bottomleft'});
+var lines = L.control.layers(null, overlayMaps, {position: 'bottomleft'});
 
 lines.addTo(map);

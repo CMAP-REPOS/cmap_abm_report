@@ -5,7 +5,7 @@ d3.csv("data/csv13_model_trip_mode.csv", function(data) {
   var data2 = [];
 
   for (var i = 0; i < data.length; i++) {
-  data2.push({selectorid: data[i].selectorid, 
+  data2.push({selectorid: data[i].selectorid,
                 count: parseInt(data[i].QUANTITY, 10),
               label: data[i].trip_mode})
 }
@@ -17,7 +17,7 @@ d3.csv("data/csv14_survey_trip_mode.csv", function(data) {
   var data1 = [];
 
   for (var i = 0; i < data.length; i++) {
-  data1.push({selectorid: data[i].selectorid, 
+  data1.push({selectorid: data[i].selectorid,
                 count: parseInt(data[i].QUANTITY, 10),
               label: data[i].trip_mode})
 }
@@ -28,7 +28,7 @@ d3.csv("data/csv15_survey_trip_purpose.csv", function(data) {
   var data3 = [];
 
   for (var i = 0; i < data.length; i++) {
-  data3.push({selectorid: data[i].selectorid, 
+  data3.push({selectorid: data[i].selectorid,
                 count: parseInt(data[i].QUANTITY, 10),
               label: data[i].trip_purpose})
 }
@@ -40,13 +40,34 @@ d3.csv("data/csv16_model_trip_purpose.csv", function(data) {
   var data4 = [];
 
   for (var i = 0; i < data.length; i++) {
-  data4.push({selectorid: data[i].selectorid, 
+  data4.push({selectorid: data[i].selectorid,
                 count: parseInt(data[i].QUANTITY, 10),
               label: data[i].trip_purpose})
 }
   drawPieChartFunction(data4, "#piePurpose2", 'tooltip4');
 });
 
+d3.csv("data/csv17_model_transit_access.csv", function(data) {
+  var data5 = [];
+
+  for (var i = 0; i < data.length; i++) {
+  data5.push({selectorid: data[i].selectorid,
+                count: parseInt(data[i].QUANTITY, 10),
+              label: data[i].trip_mode})
+}
+  drawPieChartFunction(data5, "#pieTransitModelMode", 'tooltip4');
+});
+
+d3.csv("data/csv18_survey_transit_access.csv", function(data) {
+  var data6 = [];
+
+  for (var i = 0; i < data.length; i++) {
+  data6.push({selectorid: data[i].selectorid,
+              count: parseInt(data[i].QUANTITY, 10),
+              label: data[i].trip_mode})
+}
+  drawPieChartFunction(data6, "#pieTransitSurveyMode", 'tooltip4');
+});
 
 // chart
   var formatComma = d3.format(",");
@@ -154,9 +175,8 @@ d3.csv("data/csv16_model_trip_purpose.csv", function(data) {
     on('mouseout', function(d0) {
         d3.selectAll('path').transition()
             .style("opacity",1)
-      d3.selectAll('path.' + d0.data.selectorid).interrupt()
-        .attr('d', arc)
-        .style("opacity",1)
+      d3.selectAll('path.' + d0.data.selectorid)
+        .attr('d', arc);
       // d3.selectAll('.tooltip').style('display', 'none');
     });
     return path;

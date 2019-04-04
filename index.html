@@ -125,7 +125,7 @@
           <h3>INTRODUCTION/DESCRIPTION</h3>
 
           <p>
-            CMAP's activity-based model (ABM) platform is CT-RAMP (Coordinated Travel and Regional Activity-Based Modeling Platform), which was developed open source by a consultant under contract to CMAP.  Activity-Based Modeling is increasingly viewed as a superior method to better understand the socioeconomic determinants of travel choice and for evaluating modern transportation solutions.  CMAP's ABM has been developed to demonstrate sensitivity to highway pricing scenarios based on each traveler's individual value of time and to improve model sensitivity to a wider range of non-traditional transit attributes, i.e., attributes such as service reliability, personal safety, station and vehicle cleanliness, and crowding that do not typically inform transit Level-of-Service calculations.  Subsequent work on the ABM has focused on the calibration of selected sub-models and the overall validation of the model results.  
+            CMAP's activity-based model (ABM) platform is CT-RAMP (Coordinated Travel and Regional Activity-Based Modeling Platform), which was developed open source by a consultant under contract to CMAP.  Activity-Based Modeling is increasingly viewed as a superior method to better understand the socioeconomic determinants of travel choice and for evaluating modern transportation solutions.  CMAP's ABM has been developed to demonstrate sensitivity to highway pricing scenarios based on each traveler's individual value of time and to improve model sensitivity to a wider range of non-traditional transit attributes, i.e., attributes such as service reliability, personal safety, station and vehicle cleanliness, and crowding that do not typically inform transit Level-of-Service calculations.  Subsequent work on the ABM has focused on the calibration of selected sub-models and the overall validation of the model results.
 This report represents the results of model calibration and validation activities completed over the last several years by CMAP staff and their consultants.
 Model calibration is defined as the adjustment of model parameters and constants so that the models better replicate observed data for a base year.  CMAP's ABM is calibrated to a base year of 2010.
 Model validation is defined as comparing the results of the calibrated models to observed data.  Modeling best practice dictates that different data sets be used to conduct calibration and validation activities; in the absence of other observed data, the sources used for model calibration may be used for validation as long as they examine different aspects of the data or rely on alternate geographic scopes.  Model validation results in this report reflect 2015 conditions.
@@ -732,10 +732,23 @@ Model validation is defined as comparing the results of the calibrated models to
                 Select data type for comparison from dropdown
               </div>
               <br>
-              <select id="cat">
-                <option value="1">CBD</option>
-                <option value="2N">North Chicago</option>
-                <option value="3N">North Cook</option>
+              <select id="workFlowCat">
+                <option value="CBD">CBD</option>
+                <option value="NChicago">North Chicago</option>
+                <option value="SChicago">South Chicago</option>
+                <option value="WChicago">West Chicago</option>
+                <option value="NCook">North Cook County</option>
+                <option value="SCook">South Cook County</option>
+                <option value="WCook">West Cook County</option>
+                <option value="DuPage">DuPage County</option>
+                <option value="Kane">Kane County</option>
+                <option value="Kendall">Kendall County</option>
+                <option value="Lake">Lake County</option>
+                <option value="McHenry">McHenry County</option>
+                <option value="Will">Will County</option>
+                <option value="IL">Il (External CMAP)</option>
+                <option value="IN">Indiana</option>
+                <option value="WI">Wisconsin</option>
               </select>
           </div>
           <div class="col-md-6">
@@ -1188,7 +1201,7 @@ Model validation is defined as comparing the results of the calibrated models to
 
           <p>
             For each transit mode (Metra, CTA Rail, or Bus), the map displays the distribution of boardings by ring sector.  Ring sectors sum to 100% for each transit mode. <p>
-            Choose the transit mode by clicking the Metra, CTA Rail, or Bus buttons.  Choose the data source (Model, Survey, or Difference) using the first dropdown button.  
+            Choose the transit mode by clicking the Metra, CTA Rail, or Bus buttons.  Choose the data source (Model, Survey, or Difference) using the first dropdown button.
             Hover over each ring sector to display data, and use the layer icon in the bottom left to activate CTA Rail and Metra line layers. </p><p>
             <b>Example:</b> In the model, 19.7% of all Metra boardings occured in ring sector 2S.  In the survey, 7.8% of Metra boardings occured in ring sector 2S.  This is a difference of 11.9%. </p>
           </p><br>
@@ -1211,7 +1224,7 @@ Model validation is defined as comparing the results of the calibrated models to
         <div id="map"></div>
           <br/>
           <br/>
-        
+
           <div class="small">
               Express and local bus combined. <br>
               Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
@@ -1265,7 +1278,7 @@ Model validation is defined as comparing the results of the calibrated models to
   </script>
   <script>makeGroupVBar("data/csv1_pop_syn.csv","#PurposeChartpums","#catPopSyn",3, "popsynDesc","hhtitle");</script>
   <script>makeGroupVBar("data/csv5_mode_purpose.csv","#ModeByPurpose","#catModePurp",2, "modePurpDesc","modeTitle");</script>
-  <script>makeGroupHBar("data/csv6_placeholder.csv","#VChart","#cat",2, "pDesc","pTitle");</script>
+  <script>makeGroupHBar("data/csv6_work_trips.csv","#VChart","#workFlowCat",2, "pDesc","pTitle");</script>
   <script>makeGroupVBar("data/csv7_mode_distance.csv","#ModeByDistance","#catModeDist",2, "modeDistDesc","modeDTitle");</script>
   <script>makeGroupVBar("data/csv8_wbmode_distance.csv","#wbModeByDistance","#wbcatModeDist",2, "wbmodeDistDesc","wbmodeDTitle");</script>
   <script>makeGroupVBar("data/csv9_mode_person.csv","#ModebyPerson","#catModePer",2, "modePerDesc","modePTitle");</script>

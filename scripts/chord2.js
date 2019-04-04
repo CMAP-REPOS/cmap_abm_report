@@ -203,14 +203,14 @@ function makeChords(csv_file, modelDiv, obsDiv){
                         "#bc4850"])
             var chordPaths = svg1.selectAll("path.chord")
                 .data(function(chords) {
-                  console.log(chords)
+                  //console.log(chords)
                     return chords;
                 })
                 .enter().append("svg:path")
                 .attr("class", "chord")
                 .style("stroke", "grey")
                 .style("fill", function(d, i) {
-                  console.log(d)
+                  //console.log(d)
                     return colors(d.source.index);
                 })
                 .attr("d", ribbon.radius(r0))

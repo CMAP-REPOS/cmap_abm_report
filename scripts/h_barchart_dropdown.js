@@ -16,7 +16,7 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
   var divTitle = document.getElementById(dtitle);
   var ngroups= nogroups+1
   var formatValue = d3.format(".2s");
-  var margin = {top: 35, right: 80, bottom: 100, left: 45},
+  var margin = {top: 35, right: 80, bottom: 100, left: 100},
     width = 400 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
 
@@ -73,7 +73,11 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
           d.descr = d.Description;
           d.title = d.Title;
           ttl += d[columns[i]] = +d[columns[i]];
-          d.total = ttl;
+          d.total = ttl
+          d.M = parseInt(d.Model)
+          d.S = parseInt(d.Survey)
+          d.Model = d.M
+          d.Survey = d.S
           return d;
   })
   .await(function(error, data){
@@ -101,10 +105,13 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
       catInt = d3.select(catID).property('value');
 
       var newdata = data.filter(function(d){
+        //console.log(d)
         return d.Category == catInt;
       });
-      ////console.log(newdata);
+      console.log(newdata)
+      //console.log(newdata);
       keys = data.columns.slice(1, ngroups); //Filter columns for Group Labels
+      console.log(keys)
       ////console.log(keys)
       copy = [];
       keys.forEach(function(t) {
@@ -120,6 +127,8 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
         s = s.slice(0)  //Slice column label to select subgroup
         keysLegend.push(s)
       })
+
+      console.log(keysLegend)
 
       newdata.forEach(function(d, i, columns) {
         for (var i = 0, test = 0, n = keysLegend.length; i < n; ++i)

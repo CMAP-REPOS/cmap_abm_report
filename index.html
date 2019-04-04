@@ -875,7 +875,7 @@ Model validation is defined as comparing the results of the calibrated models to
       <div class="col-md-12">
         <br/>
         <br/>
-        <h3>TRIPS BY MODE AND PURPOSE</h3>
+        <h3>TRIPS BY PURPOSE AND MODE</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
           improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
@@ -897,16 +897,16 @@ Model validation is defined as comparing the results of the calibrated models to
           <br>
           <select id="catModePurp">
             <option value="All">All</option>
-            <option value="discretionary">Discretionary</option>
-            <option value="eatingout">Eating Out</option>
-            <option value="escort">Escort</option>
-            <option value="maintenance">Maintenance</option>
-            <option value="school">School</option>
-            <option value="shop">Shop</option>
-            <option value="university">University</option>
-            <option value="visiting">Visiting</option>
-            <option value="work">Work</option>
-            <option value="work-based">Work-based</option>
+            <option value="Discretionary">Discretionary</option>
+            <option value="Eating Out">Eating Out</option>
+            <option value="Escort">Escort</option>
+            <option value="Maintenance">Maintenance</option>
+            <option value="School">School</option>
+            <option value="Shop">Shop</option>
+            <option value="University">University</option>
+            <option value="Visiting">Visiting</option>
+            <option value="Work">Work</option>
+            <option value="Work-based">Work-based</option>
           </select>
         </div>
 
@@ -914,9 +914,8 @@ Model validation is defined as comparing the results of the calibrated models to
           <div id="ModeByPurpose"></div>
           <div class="small">
             <div id="catModePurp" ></div>
-            PUMA - source: <br>
-            Census- source: <br>
-            Modeled- description <br>
+            Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
+            Modeled - CMAP ABM. <br>
           </div>
         </div>
       </div>
@@ -924,7 +923,7 @@ Model validation is defined as comparing the results of the calibrated models to
       <div class="col-md-12">
         <br/>
         <br/>
-        <h3>TRIPS BY MODE AND PERSON TYPE</h3>
+        <h3>TRIPS BY PERSON TYPE AND MODE</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
           improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
@@ -939,30 +938,29 @@ Model validation is defined as comparing the results of the calibrated models to
         <br/>
         <br/>
         <div class="col col-md-2">
-          <h5><b><div id= "modePTitle"></div>Single Person Trips</b></h5>
+          <h5><b><div id= "modePTitle"></div>Trips</b></h5>
           <div class="small">
             Select data type for comparison from dropdown
             </div>
           <br>
           <select id="catModePer">
             <option value="All">All</option>
-            <option value="fulltime">Full-time Worker</option>
-            <option value="parttime">Part-time Worker</option>
-            <option value="nonworker">Non worker</option>
-            <option value = "retired">Retired</option>
-            <option value="preschool">Pre-school</option>
-            <option value="driveagestudent">Student 16+</option>
-            <option value="nondrivingstudent">Student under 16 years</option>
-            <option value="university">University Student</option>
+            <option value="Full-time Worker">Full-time Worker</option>
+            <option value="Part-time Worker">Part-time Worker</option>
+            <option value="Non worker">Non worker</option>
+            <option value = "Retired">Retired</option>
+            <option value="Preschool">Preschool</option>
+            <option value="Student 16+">Student 16+</option>
+            <option value="Student under 16 years">Student under 16 years</option>
+            <option value="University Student">University Student</option>
           </select>
         </div>
         <div class="col col-md-10">
           <div id="ModebyPerson"></div>
           <div class="small">
-            <div id="modePerDesc" ></div>
-            PUMA - source: <br>
-            Census- source: <br>
-            Modeled- description <br>
+            Single person trips only. <br>
+            Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
+            Modeled - CMAP ABM. <br>
           </div>
         </div>
       </div>
@@ -970,7 +968,7 @@ Model validation is defined as comparing the results of the calibrated models to
       <div class="col-md-12">
         <br/>
         <br/>
-        <h3>TRIPS BY MODE AND HOUSEHOLD INCOME</h3>
+        <h3>TRIPS BY HOUSEHOLD INCOME AND MODE</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
           improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
@@ -1003,9 +1001,8 @@ Model validation is defined as comparing the results of the calibrated models to
           <div id="ModebyIncome"></div>
           <div class="small">
             <div id="modeIncrDesc" ></div>
-            PUMA - source: <br>
-            Census- source: <br>
-            Modeled- description <br>
+            Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
+            Modeled - CMAP ABM. <br>
           </div>
         </div>
       </div>
@@ -1080,14 +1077,14 @@ Model validation is defined as comparing the results of the calibrated models to
           <br>
           <select id="catPurpType">
             <option value="All">All</option>
-            <option value="fulltime">Full-time Worker</option>
-            <option value="parttime">Part-time Worker</option>
-            <option value="nonworker">Non worker</option>
-            <option value = "retired">Retired</option>
-            <option value="preschool">Pre-school</option>
-            <option value="driveage">Student 16+</option>
-            <option value="nondriveage">Student under 16 years</option>
-            <option value="university">University Student</option>
+            <option value="Full-time Worker">Full-time Worker</option>
+            <option value="Part-time Worker">Part-time Worker</option>
+            <option value="Non worker">Non worker</option>
+            <option value = "Retired">Retired</option>
+            <option value="Preschool">Preschool</option>
+            <option value="Student 16+">Student 16+</option>
+            <option value="Student under 16 years">Student under 16 years</option>
+            <option value="University Student">University Student</option>
           </select>
         </div>
         <div class="col col-md-10">
@@ -1168,16 +1165,16 @@ Model validation is defined as comparing the results of the calibrated models to
               </div>
             <br>
             <select id="catDistPurp">
-                <option value="discretionary">Discretionary</option>
-                <option value="eatingout">Eating Out</option>
-                <option value="escort">Escort</option>
-                <option value="maintenance">Maintenance</option>
-                <option value="school">School</option>
-                <option value="shop">Shop</option>
-                <option value="university">University</option>
-                <option value="visiting">Visiting</option>
-                <option value="work">Work</option>
-                <option value="work-based">Work-based</option>
+                <option value="Discretionary">Discretionary</option>
+                <option value="Eating Out">Eating Out</option>
+                <option value="Escort">Escort</option>
+                <option value="Maintenance">Maintenance</option>
+                <option value="School">School</option>
+                <option value="Shop">Shop</option>
+                <option value="University">University</option>
+                <option value="Visiting">Visiting</option>
+                <option value="Work">Work</option>
+                <option value="Work-based">Work-based</option>
             </select>
           </div>
           <div class="col col-md-10">

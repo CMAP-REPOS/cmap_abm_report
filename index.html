@@ -30,7 +30,7 @@
 
     table{ border:none; width:33%; display:inline-block}
     table {font-size: 10px;float:left;margin: 10px;}
-}
+
     td{text-align: right}
     th{text-align: center;}
     </style>
@@ -926,7 +926,7 @@ Model validation is defined as comparing the results of the calibrated models to
         <br/>
         <br/>
         <div class="col col-md-2">
-          <h5><b><div id= "modePTitle"></div> Trips</b></h5>
+          <h5><b><div id= "modePTitle"></div>Single Person Trips</b></h5>
           <div class="small">
             Select data type for comparison from dropdown
             </div>
@@ -935,6 +935,12 @@ Model validation is defined as comparing the results of the calibrated models to
             <option value="All">All</option>
             <option value="fulltime">Full-time Worker</option>
             <option value="parttime">Part-time Worker</option>
+            <option value="nonworker">Non worker</option>
+            <option value = "retired">Retired</option>
+            <option value="preschool">Pre-school</option>
+            <option value="driveagestudent">Student 16+</option>
+            <option value="nondrivingstudent">Student under 16 years</option>
+            <option value="university">University Student</option>
           </select>
         </div>
         <div class="col col-md-10">
@@ -972,9 +978,12 @@ Model validation is defined as comparing the results of the calibrated models to
             </div>
           <br>
           <select id="catModeInc">
-            <option value="Bike">Bike</option>
-            <option value="Drive alone free">Drive alone free</option>
-            <option value="Drive alone pay">Drive alone pay</option>
+            <option value="All">All</option>
+            <option value="Less than $35k">Less than $35k</option>
+            <option value="$35k to $50k">$35k to $50k</option>
+            <option value="$50k to $75k">$50k to $75k</option>
+            <option value="$75k to $100K">$75k to $100K</option>
+            <option value="More than $100k">More than $100k</option>
           </select>
         </div>
         <div class="col col-md-10">
@@ -1060,6 +1069,12 @@ Model validation is defined as comparing the results of the calibrated models to
             <option value="All">All</option>
             <option value="fulltime">Full-time Worker</option>
             <option value="parttime">Part-time Worker</option>
+            <option value="nonworker">Non worker</option>
+            <option value = "retired">Retired</option>
+            <option value="preschool">Pre-school</option>
+            <option value="driveage">Student 16+</option>
+            <option value="nondriveage">Student under 16 years</option>
+            <option value="university">University Student</option>
           </select>
         </div>
         <div class="col col-md-10">
@@ -1098,7 +1113,14 @@ Model validation is defined as comparing the results of the calibrated models to
           <br>
           <select id="catPurpDist">
             <option value="All">All</option>
-            <option value="work">Work Trips</option>
+            <option value="Less than 1 Mile">Less than 1 Mile</option>
+            <option value="1-5 Mile">1-5 Mile</option>
+            <option value="5-10 Miles">5-10 Miles</option>
+            <option value="10-15 Miles">10-15 Miles</option>
+            <option value="15-20 Miles">15-20 Miles</option>
+            <option value="20-25 Miles">20-25 Miles</option>
+            <option value="25-30 Miles">25-30 Miles</option>
+            <option value="30 Miles or More">30 Miles or More</option>
           </select>
         </div>
         <div class="col col-md-10">
@@ -1134,14 +1156,14 @@ Model validation is defined as comparing the results of the calibrated models to
           <h3>Boardings By Mode</h3>
           <div class="btn-group" role="group">
           <div class="btn-group" role="group">
-          <button type="button" id="ModelSurvey" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button type="button" id="ModelSurvey" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Model
           </button>
-          <div class="dropdown-menu" aria-labelledby="ModelSurvey">
-            <a class="dropdown-item">Model</a>
-            <a class="dropdown-item">Survey</a>
-            <a class="dropdown-item">Difference</a>
-          </div>
+          <ul class="dropdown-menu" aria-labelledby="ModelSurvey">
+            <li><a class="dropdown-item">Model</a></li>
+            <li><a class="dropdown-item">Survey</a></li>
+            <li><a class="dropdown-item">Difference</a></li>
+          </ul>
           <button type="button" id="metra" class="btn btn-info">Metra</button>
           <button type="button" id="cta" class="btn btn-light">CTA Rail</button>
           <button type="button" id="pace" class="btn btn-light">Bus</button>
@@ -1200,7 +1222,7 @@ Model validation is defined as comparing the results of the calibrated models to
   <script>makeGroupVBar("data/csv7_mode_distance.csv","#ModeByDistance","#catModeDist",2, "modeDistDesc","modeDTitle");</script>
   <script>makeGroupVBar("data/csv8_wbmode_distance.csv","#wbModeByDistance","#wbcatModeDist",2, "wbmodeDistDesc","wbmodeDTitle");</script>
   <script>makeGroupVBar("data/csv9_mode_person.csv","#ModebyPerson","#catModePer",2, "modePerDesc","modePTitle");</script>
-  <script>makeGroupVBar("data/csv10_mode_income.csv","#ModebyIncome","#catModeinc",2, "modeinDesc","modeITitle");</script>
+  <script>makeGroupVBar("data/csv10_mode_income.csv","#ModebyIncome","#catModeInc",2, "modeinDesc","modeITitle");</script>
   <script>makeGroupVBar("data/csv11_purpose_type.csv","#PurposebyType","#catPurpType",2, "purpTypeDesc","purpTypeTitle");</script>
   <script>makeGroupVBar("data/csv12_purpose_distance.csv","#PurposebyDist","#catPurpDist",2, "purpDistDesc","purpDistTitle");</script>
 

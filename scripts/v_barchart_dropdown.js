@@ -184,6 +184,8 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
         .attr("x", function(d) { return x1(d.key); })
         .attr("fill", function(d) { return z(d.key); })
         .merge(bars);
+      
+      console.log(x1.bandwidth());
 
       bars.transition().duration(durations)
         .attr("y", function(d) {
@@ -201,7 +203,7 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
           //console.log(height);
           //console.log(yscaled);
           //console.log(height - y(d["value"]));
-          return height - y(d["value"]);});
+          return height - yscaled;});
 
       // ======== Grouped bar text ========
 
@@ -215,27 +217,27 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
       textOnBar = textOnBar
         .enter()
       .append("text")
-        .attr("fill","#fff")
+        .attr("fill","black")
         .attr("font-size",11)
         .merge(textOnBar);
 
       textOnBar.transition().duration(durations)
         .attr("transform", function(d, i) {
-          let x0 = x1.bandwidth() * i + 7,
-              y0 = y(d.value) + 8;
-          return "translate(" + x0 + "," + y0 + ") rotate(90)";
+          let x0 = x1.bandwidth() * i + 2,
+              y0 = y(d.value) - 10;
+          return "translate(" + x0 + "," + y0 + ") rotate(0)";
         })
         .text(function(d) {return formatValue(d.value)})
 
       // ======== Legend rects ========
 
-      var legend = g.selectAll(".legend")
+      var legend = g.selectAll(".barlegend")
         .data(keysLegend);
 
       legend = legend
         .enter()
       .append("rect")
-        .attr("class","legend")
+        .attr("class","barlegend")
         .attr("transform", function(d, i) {
           return "translate(0," + i * 40 + ")";
         })
@@ -316,7 +318,7 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
       y.domain([0, d3.max(newdata, function(d) {
         return d3.max(keysLegend, function(key) {
           if (filtered.indexOf(key) == -1)
-            return d[key];
+            return +d[key];
           });
         })
       ]).nice();
@@ -370,9 +372,9 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
         .transition()
         .duration(durations/1.5)
         .attr("transform", function(d, i) {
-          let x0 = x1.bandwidth() * i + 7,
-              y0 = y(d.value) + 8;
-          return "translate(" + x0 + "," + y0 + ") rotate(90)";
+          let x0 = x1.bandwidth() * i + 2,
+              y0 = y(d.value) - 10;
+          return "translate(" + x0 + "," + y0 + ") rotate(0)";
         })
         .text("");
 
@@ -382,13 +384,13 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
         .transition()
         .duration(durations/1.5)
         .attr("transform", function(d, i) {
-          let x0 = x1.bandwidth() * i + 7,
-              y0 = y(d.value) + 8;
-          return "translate(" + x0 + "," + y0 + ") rotate(90)";
+          let x0 = x1.bandwidth() * i + 2,
+              y0 = y(d.value) - 10;
+          return "translate(" + x0 + "," + y0 + ") rotate(0)";
         })
         .text(function(d) {return formatValue(d.value)})
 
-      g.selectAll(".legend")
+      g.selectAll(".barlegend")
         .transition()
         .duration(100)
         .attr("fill",function(d) {

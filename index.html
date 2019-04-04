@@ -1130,7 +1130,8 @@ Model validation is defined as comparing the results of the calibrated models to
             qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
             formarum quam civis excellen
           </p>
-
+          <br>
+          <h3>Boardings By Mode</h3>
           <div class="btn-group" role="group">
           <div class="btn-group" role="group">
           <button type="button" id="ModelSurvey" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1146,12 +1147,16 @@ Model validation is defined as comparing the results of the calibrated models to
           <button type="button" id="pace" class="btn btn-light">Bus</button>
         </div></div>
         <div id="map"></div>
-
           <br/>
-
           <br/>
-
-          Place Holder Model Step Description
+          <div class="col col-md-6" align = "center">
+            <h5><b>Observed Transit Access</b></h5>
+            <div id="pieTransitSurveyMode"></div>
+          </div>
+          <div class="col col-md-6" align = "center">
+            <h5><b>Modeled Transit Access</b></h5>
+            <div id="pieTransitModelMode"></div>
+          </div>
         </div>
       </div>
   </body>

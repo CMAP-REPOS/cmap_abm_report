@@ -1,12 +1,3 @@
 Trips by mode,trip_mode,QUANTITY,selectorid
-Non-motorized,Bike,334105,a
-SOV,Drive alone free,12736555,b
-SOV,Drive alone pay,314630,c
-Transit access,Drive to transit,260700,d
-HOV,School bus,872580,e
-HOV,Shared ride 2 free,5816975,f
-HOV,Shared ride 2+ pay,166485,g
-HOV,Shared ride 3+ free,5372025,h
-HOV,Taxi,110760,j
-Non-motorized,Walk,3409120,k
-Transit access,Walk to transit,1751895,l
+Transit access,Drive to transit,174540,a
+Transit access,Walk to transit,1496345,b

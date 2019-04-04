@@ -161,7 +161,9 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
             .attr("transform", "rotate(-65)");
 
       var barGroups = g.selectAll(".layer") // Bargroups initialized here for proper sorting
-        .data(newdata, function(d) { return d.Index }); // DON'T FORGET KEY FUNCTION
+        .data(newdata, function(d) {
+          console.log(d)
+          return d.Index }); // DON'T FORGET KEY FUNCTION
 
       barGroups.enter().append("g")
         .classed('layer', true);
@@ -194,7 +196,10 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
       let bars = g.selectAll(".layer").selectAll("rect")
         .data(function(d) {
           return copy.map(function(key) {
-            return {key: key, value: d[key]};
+            //console.log( d[key])
+            return {
+              key: key, value: d[key]
+            };
           });
         });
 
@@ -203,7 +208,8 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
           .append("rect")
           .attr("x", 0)
           .attr("y", function (d) {return y1(d.key)})
-          .attr("width", function (d) {  return width - x(d.value);})
+          .attr("width", function (d) {
+            return x(d.value);})
           .attr("height", y1.bandwidth())
           .attr("fill", function(d) { return z(d.key); })
           .merge(bars);
@@ -211,7 +217,7 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
           bars.transition().duration(durations)
             .attr("x", 0)
             .attr("width", function(d) {
-              return width - x(d["value"]);
+              return x(d["value"]);
             });
 
       // ======== Grouped bar text ========

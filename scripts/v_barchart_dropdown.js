@@ -136,7 +136,10 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
         .call(yAxis);
 
       var barGroups = g.selectAll(".layer") // Bargroups initialized here for proper sorting
-        .data(newdata, function(d) { return d.Index }); // DON'T FORGET KEY FUNCTION
+        .data(newdata, function(d) {
+          //console.log(d)
+          return d.Index
+        }); // DON'T FORGET KEY FUNCTION
 
       barGroups.enter().append("g")
         .classed('layer', true);

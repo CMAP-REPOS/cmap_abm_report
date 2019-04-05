@@ -821,11 +821,20 @@ Model validation is defined as comparing the results of the calibrated models to
               </div>
             <br>
             <select id="wbcatModeDist">
-              <option value="All">All Modes</option>
-              <option value="sov1">Drive Alone Free</option>
+              <option value="all">All Modes</option>
+              <option value="sovfree">Drive Alone Free</option>
+              <option value="sovpay">Drive Alone Pay</option>
+              <option value="hov2free">Shared ride 2 free</option>
+              <option value="hov2pay">Shared ride 2 pay</option>
+              <option value="hov3free">Shared ride 3+ free</option>
+              <option value="hov3pay">Shared ride 3+ pay</option>
+              <option value="dtransit">Drive to transit</option>
+              <option value="transit">Transit</option>
+              <option value="walk">Walk</option>
+              <option value="bike">Bike</option>
+              <option value="taxi">Taxi</option>
             </select>
           </div>
-
           <div class="col col-md-10">
             <div id="wbModeByDistance"></div>
             <div class="small">
@@ -1285,7 +1294,7 @@ Model validation is defined as comparing the results of the calibrated models to
   <script>makeGroupVBar("data/csv1_pop_syn.csv","#PurposeChartpums","#catPopSyn",3, "popsynDesc","hhtitle");</script>
   <script>makeGroupVBar("data/csv5_mode_purpose.csv","#ModeByPurpose","#catModePurp",2, "modePurpDesc","modeTitle");</script>
   <script>makeGroupHBar("data/csv6_work_trips.csv","#VChart","#workFlowCat",2, "pDesc","pTitle");</script>
-  <script>makeGroupVBar("data/csv7_mode_distance.csv","#ModeByDistance","#catModeDist",2, "modeDistDesc","modeDTitle");</script>
+  <script>makeGroupVBar("data/csv7_work_mode_distance.csv","#ModeByDistance","#catModeDist",2, "modeDistDesc","modeDTitle");</script>
   <script>makeGroupVBar("data/csv8_wbmode_distance.csv","#wbModeByDistance","#wbcatModeDist",2, "wbmodeDistDesc","wbmodeDTitle");</script>
   <script>makeGroupVBar("data/csv9_mode_person.csv","#ModebyPerson","#catModePer",2, "modePerDesc","modePTitle");</script>
   <script>makeGroupVBar("data/csv10_mode_income.csv","#ModebyIncome","#catModeInc",2, "modeinDesc","modeITitle");</script>

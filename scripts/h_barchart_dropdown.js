@@ -128,7 +128,7 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
         keysLegend.push(s)
       })
 
-      console.log(keysLegend)
+      //console.log(keysLegend)
 
       newdata.forEach(function(d, i, columns) {
         for (var i = 0, test = 0, n = keysLegend.length; i < n; ++i)
@@ -252,7 +252,7 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
       legend = legend
         .enter()
       .append("rect")
-        .attr("class","legend")
+        .attr("class","barlegend")
         .attr("transform", function(d, i) {
           return "translate(0," + i * 40 + ")";
         })
@@ -286,7 +286,7 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
 
       legendText.transition().duration(durations)
         .text(function(d) {
-          var sliceLegend = d.slice(0, -2)
+          var sliceLegend = d.slice(0, -1)
           return sliceLegend;
         });
 

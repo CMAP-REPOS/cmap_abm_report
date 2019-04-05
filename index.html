@@ -1203,7 +1203,7 @@ Model validation is defined as comparing the results of the calibrated models to
 
           <br/>
 
-          <h3>Transit Boardings</h3>
+          <h3>Transit Boardings by Mode</h3>
 
           <p>
             For each transit mode (Metra, CTA Rail, or Bus), the map displays the distribution of boardings by ring sector.  Ring sectors sum to 100% for each transit mode. <p>
@@ -1212,7 +1212,6 @@ Model validation is defined as comparing the results of the calibrated models to
             <b>Example:</b> In the model, 19.7% of all Metra boardings occured in ring sector 2S.  In the survey, 7.8% of Metra boardings occured in ring sector 2S.  This is a difference of 11.9%. </p>
           </p><br>
 
-          <h3>Boardings By Mode</h3>
           <div class="btn-group" role="group">
           <div class="btn-group" role="group" style="margin-left: 20px">
           <button type="button" id="ModelSurvey" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1229,23 +1228,42 @@ Model validation is defined as comparing the results of the calibrated models to
         </div></div>
         <div id="map"></div>
           <br/>
-          <br/>
 
           <div class="small">
               Express and local bus combined. <br>
               Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
               Modeled - CMAP ABM. <br>
             </div>
+          <br>
 
-          <div class="col col-md-6" align = "center">
-            <h5><b>Observed Transit Access</b></h5>
-            <div id="pieTransitSurveyMode"></div>
-          </div>
-          <div class="col col-md-6" align = "center">
-            <h5><b>Modeled Transit Access</b></h5>
-            <div id="pieTransitModelMode"></div>
-          </div>
-        </div>
+          <h3>Transit Access</h3>
+          <div class="row">
+            <div class="col col-md-2" align="center">
+              <div class="small">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                Hover over pie chart to compare trips by mode
+                </div>
+              </div>
+
+              <div class="col col-md-5" align = "center">
+                <h5><b>Observed Transit Access</b></h5>
+                <div id="pieTransitSurveyMode"></div>
+              </div>
+              <div class="col col-md-5" align = "center">
+                <h5><b>Modeled Transit Access</b></h5>
+                <div id="pieTransitModelMode"></div>
+              </div>
+            </div>
       </div>
   </body>
 

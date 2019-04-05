@@ -777,11 +777,20 @@ Model validation is defined as comparing the results of the calibrated models to
               </div>
             <br>
             <select id="catModeDist">
-              <option value="All">All Modes</option>
-              <option value="sov1">Drive Alone Free</option>
+              <option value="all">All Modes</option>
+              <option value="sovfree">Drive Alone Free</option>
+              <option value="sovpay">Drive Alone Pay</option>
+              <option value="hov2free">Shared ride 2 free</option>
+              <option value="hov2pay">Shared ride 2 pay</option>
+              <option value="hov3free">Shared ride 3+ free</option>
+              <option value="hov3pay">Shared ride 3+ pay</option>
+              <option value="dtransit">Drive to transit</option>
+              <option value="transit">Transit</option>
+              <option value="walk">Walk</option>
+              <option value="bike">Bike</option>
+              <option value="taxi">Taxi</option>
             </select>
           </div>
-
           <div class="col col-md-10">
             <div id="ModeByDistance"></div>
             <div class="small">
@@ -1283,7 +1292,6 @@ Model validation is defined as comparing the results of the calibrated models to
   <script>makeGroupVBar("data/csv11_purpose_type.csv","#PurposebyType","#catPurpType",2, "purpTypeDesc","purpTypeTitle");</script>
   <script>makeGroupVBar("data/csv12_purpose_distance.csv","#PurposebyDist","#catPurpDist",2, "purpDistDesc","purpDistTitle");</script>
   <script>makeGroupVBar("data/csv12b_purpose_distance.csv","#DistbyPurpose","#catDistPurp",2, "DistpurpDesc","DistpurpTitle");</script>
-
 
   <script type="text/javascript" src='scripts/table.js'></script>
   <script>

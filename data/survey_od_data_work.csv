@@ -1,199 +1,443 @@
-origAreaName,destAreaName,WGTP
-DuPage,DuPage,403007.2526874696
-DuPage,IL,843.2015928
-DuPage,IN,590.337036
-DuPage,Kane,48903.10576987001
-DuPage,Kendall,8631.3173313
-DuPage,LOOP,51117.01714950001
-DuPage,Lake,13726.097415070002
-DuPage,McHenry,2375.0896046000003
-DuPage,North Chicago,20798.33091238
-DuPage,North Cook,50332.52106967
-DuPage,South Chicago,6634.602824999999
-DuPage,South Cook,14271.973527299997
-DuPage,West Chicago,15618.023224000002
-DuPage,West Cook,73149.14182877996
-DuPage,Will,50512.455617469954
-IL,DuPage,1049.5801675
-IL,IL,21107.130175519986
-IL,IN,0.0
-IL,Kendall,248.950875
-IL,McHenry,317.1417833
-IL,South Cook,181.9309619
-IL,West Cook,540.2652138
-IL,Will,6707.455694819999
-IN,DuPage,412.7571494
-IN,IL,0.0
-IN,IN,1621.5411992999998
-IN,Kane,353.36115789999997
-IN,LOOP,379.1883393
-IN,Lake,0.0
-IN,North Chicago,633.4628428999999
-IN,North Cook,109.68517959999998
-IN,South Chicago,2074.7997665000003
-IN,South Cook,8164.328504099999
-IN,West Chicago,0.0
-IN,West Cook,120.8063327
-IN,Will,1006.9981473
-Kane,DuPage,56232.11574330999
-Kane,IN,0.0
-Kane,Kane,155456.57644740937
-Kane,Kendall,3692.8170831200005
-Kane,LOOP,6942.990082839999
-Kane,Lake,7183.200010119999
-Kane,McHenry,12318.593960020004
-Kane,North Chicago,5183.982122
-Kane,North Cook,16590.705588699995
-Kane,South Cook,2621.1742072999996
-Kane,West Chicago,1296.0603609700001
-Kane,West Cook,10644.210165529998
-Kane,Will,8717.6812806
-Kendall,DuPage,8713.820011300002
-Kendall,IL,248.950875
-Kendall,Kane,2031.1178666799997
-Kendall,Kendall,6156.946190200002
-Kendall,LOOP,1163.7908987
-Kendall,North Chicago,1162.6803061599999
-Kendall,North Cook,248.950875
-Kendall,South Chicago,579.11302
-Kendall,South Cook,307.8369462
-Kendall,West Cook,264.0479752
-Kendall,Will,2331.8116147
-LOOP,DuPage,45170.031886480014
-LOOP,IN,526.0338178
-LOOP,Kane,7657.382407859999
-LOOP,Kendall,1686.8856988000002
-LOOP,LOOP,149521.1550597699
-LOOP,Lake,23900.123986229984
-LOOP,McHenry,4107.4260328
-LOOP,North Chicago,117662.31607502014
-LOOP,North Cook,39006.13187907996
-LOOP,South Chicago,59737.1573082
-LOOP,South Cook,34523.37279290001
-LOOP,West Chicago,35276.41530067001
-LOOP,West Cook,31838.465673329985
-LOOP,Will,16230.115275719996
-Lake,DuPage,15399.186283040002
-Lake,IN,0.0
-Lake,Kane,7217.9672036599995
-Lake,Kendall,206.3785747
-Lake,LOOP,28960.14452952999
-Lake,Lake,353365.90731411194
-Lake,McHenry,18748.40063966
-Lake,North Chicago,13234.858356769999
-Lake,North Cook,71099.90556231998
-Lake,South Chicago,1868.0350725
-Lake,South Cook,1909.6614710000001
-Lake,West Chicago,1021.11200062
-Lake,West Cook,6965.172730499999
-Lake,Will,1448.2153300999998
-McHenry,DuPage,1999.3105616399998
-McHenry,Kane,12548.355281999999
-McHenry,LOOP,3845.0182929
-McHenry,Lake,21750.269915049998
-McHenry,McHenry,142280.56525331008
-McHenry,North Chicago,3898.1532835999997
-McHenry,North Cook,20632.871196199998
-McHenry,South Chicago,260.52058450000004
-McHenry,South Cook,317.1417833
-McHenry,West Chicago,843.4528537
-McHenry,West Cook,7755.921307399999
-North Chicago,DuPage,22467.029125660003
-North Chicago,IL,181.9309619
-North Chicago,IN,125.2211413
-North Chicago,Kane,5440.1381019
-North Chicago,LOOP,144735.33583719016
-North Chicago,Lake,17671.090149539996
-North Chicago,McHenry,3655.3659373000005
-North Chicago,North Chicago,303339.1706907599
-North Chicago,North Cook,91679.61890017013
-North Chicago,South Chicago,32328.830674179997
-North Chicago,South Cook,12690.630660600002
-North Chicago,West Chicago,76262.88328006008
-North Chicago,West Cook,41377.61976716
-North Chicago,Will,7603.42171031
-North Cook,DuPage,49716.97185594999
-North Cook,IN,0.0
-North Cook,Kane,9539.987641669999
-North Cook,LOOP,43946.29264038997
-North Cook,Lake,67922.83043682002
-North Cook,McHenry,18326.119852010004
-North Cook,North Chicago,84098.89505186006
-North Cook,North Cook,435666.088239166
-North Cook,South Chicago,13715.226949619995
-North Cook,South Cook,10957.000223309999
-North Cook,West Chicago,13314.88601162
-North Cook,West Cook,43382.19984690999
-North Cook,Will,9465.567707010001
-South Chicago,DuPage,7212.537232299999
-South Chicago,IN,1413.2830763
-South Chicago,Kane,633.3677819
-South Chicago,Kendall,579.11302
-South Chicago,LOOP,74391.07181525003
-South Chicago,Lake,1539.3025826
-South Chicago,McHenry,260.52058450000004
-South Chicago,North Chicago,31781.833743619994
-South Chicago,North Cook,12582.439258220002
-South Chicago,South Chicago,151714.33566512013
-South Chicago,South Cook,36182.150770700006
-South Chicago,West Chicago,42393.47306755001
-South Chicago,West Cook,18188.67672130001
-South Chicago,Will,6543.04430901
-South Cook,DuPage,18102.564810799995
-South Cook,IL,181.9309619
-South Cook,IN,5062.7942704
-South Cook,Kane,395.53976289999997
-South Cook,Kendall,988.262305
-South Cook,LOOP,37711.894683950006
-South Cook,Lake,1850.068265
-South Cook,McHenry,317.1417833
-South Cook,North Chicago,16443.0171053
-South Cook,North Cook,9878.038926099998
-South Cook,South Chicago,40952.9706336
-South Cook,South Cook,238956.88678530056
-South Cook,West Chicago,17332.478854399997
-South Cook,West Cook,25618.21685809999
-South Cook,Will,36320.11471020001
-West Chicago,DuPage,17301.101681100004
-West Chicago,IN,0.0
-West Chicago,Kane,1047.10948597
-West Chicago,LOOP,43478.333861190025
-West Chicago,Lake,1073.79889242
-West Chicago,McHenry,735.2060778
-West Chicago,North Chicago,78768.90370200005
-West Chicago,North Cook,15003.562350389997
-West Chicago,South Chicago,41219.507877600015
-West Chicago,South Cook,18135.926690900003
-West Chicago,West Chicago,103424.75356020004
-West Chicago,West Cook,23857.785011399992
-West Chicago,Will,4301.1989504
-West Cook,DuPage,70017.36972514
-West Cook,IL,270.1326069
-West Cook,IN,0.0
-West Cook,Kane,10110.21814883
-West Cook,Kendall,264.0479752
-West Cook,LOOP,39684.58851500999
-West Cook,Lake,7819.23625947
-West Cook,McHenry,6655.5324608
-West Cook,North Chicago,40180.177727430004
-West Cook,North Cook,44059.92793838002
-West Cook,South Chicago,16703.625533100003
-West Cook,South Cook,26459.035919999995
-West Cook,West Chicago,25846.507803399993
-West Cook,West Cook,190317.5939208905
-West Cook,Will,8689.060926119999
-Will,DuPage,55336.68485666996
-Will,IL,5447.557164259999
-Will,IN,1006.9981473
-Will,Kane,8146.361067499999
-Will,Kendall,1955.3792082
-Will,LOOP,20923.88364542
-Will,Lake,1114.7949353
-Will,McHenry,317.1417833
-Will,North Chicago,5433.967937810001
-Will,North Cook,8803.907516610001
-Will,South Chicago,9415.766829899998
-Will,South Cook,38718.84541570001
-Will,West Chicago,6093.9959164
-Will,West Cook,12522.57582931
-Will,Will,223683.30453049965
+origAreaName,destAreaName,WGTP,
+DuPage,DuPage,403007.2527,survey
+DuPage,IL,843.2015928,survey
+DuPage,IN,590.337036,survey
+DuPage,Kane,48903.10577,survey
+DuPage,Kendall,8631.317331,survey
+DuPage,LOOP,51117.01715,survey
+DuPage,Lake,13726.09742,survey
+DuPage,McHenry,2375.089605,survey
+DuPage,North Chicago,20798.33091,survey
+DuPage,North Cook,50332.52107,survey
+DuPage,South Chicago,6634.602825,survey
+DuPage,South Cook,14271.97353,survey
+DuPage,West Chicago,15618.02322,survey
+DuPage,West Cook,73149.14183,survey
+DuPage,Will,50512.45562,survey
+IL,DuPage,1049.580168,survey
+IL,IL,21107.13018,survey
+IL,IN,0,survey
+IL,Kendall,248.950875,survey
+IL,McHenry,317.1417833,survey
+IL,South Cook,181.9309619,survey
+IL,West Cook,540.2652138,survey
+IL,Will,6707.455695,survey
+IN,DuPage,412.7571494,survey
+IN,IL,0,survey
+IN,IN,1621.541199,survey
+IN,Kane,353.3611579,survey
+IN,LOOP,379.1883393,survey
+IN,Lake,0,survey
+IN,North Chicago,633.4628429,survey
+IN,North Cook,109.6851796,survey
+IN,South Chicago,2074.799767,survey
+IN,South Cook,8164.328504,survey
+IN,West Chicago,0,survey
+IN,West Cook,120.8063327,survey
+IN,Will,1006.998147,survey
+Kane,DuPage,56232.11574,survey
+Kane,IN,0,survey
+Kane,Kane,155456.5764,survey
+Kane,Kendall,3692.817083,survey
+Kane,LOOP,6942.990083,survey
+Kane,Lake,7183.20001,survey
+Kane,McHenry,12318.59396,survey
+Kane,North Chicago,5183.982122,survey
+Kane,North Cook,16590.70559,survey
+Kane,South Cook,2621.174207,survey
+Kane,West Chicago,1296.060361,survey
+Kane,West Cook,10644.21017,survey
+Kane,Will,8717.681281,survey
+Kendall,DuPage,8713.820011,survey
+Kendall,IL,248.950875,survey
+Kendall,Kane,2031.117867,survey
+Kendall,Kendall,6156.94619,survey
+Kendall,LOOP,1163.790899,survey
+Kendall,North Chicago,1162.680306,survey
+Kendall,North Cook,248.950875,survey
+Kendall,South Chicago,579.11302,survey
+Kendall,South Cook,307.8369462,survey
+Kendall,West Cook,264.0479752,survey
+Kendall,Will,2331.811615,survey
+LOOP,DuPage,45170.03189,survey
+LOOP,IN,526.0338178,survey
+LOOP,Kane,7657.382408,survey
+LOOP,Kendall,1686.885699,survey
+LOOP,LOOP,149521.1551,survey
+LOOP,Lake,23900.12399,survey
+LOOP,McHenry,4107.426033,survey
+LOOP,North Chicago,117662.3161,survey
+LOOP,North Cook,39006.13188,survey
+LOOP,South Chicago,59737.15731,survey
+LOOP,South Cook,34523.37279,survey
+LOOP,West Chicago,35276.4153,survey
+LOOP,West Cook,31838.46567,survey
+LOOP,Will,16230.11528,survey
+Lake,DuPage,15399.18628,survey
+Lake,IN,0,survey
+Lake,Kane,7217.967204,survey
+Lake,Kendall,206.3785747,survey
+Lake,LOOP,28960.14453,survey
+Lake,Lake,353365.9073,survey
+Lake,McHenry,18748.40064,survey
+Lake,North Chicago,13234.85836,survey
+Lake,North Cook,71099.90556,survey
+Lake,South Chicago,1868.035073,survey
+Lake,South Cook,1909.661471,survey
+Lake,West Chicago,1021.112001,survey
+Lake,West Cook,6965.17273,survey
+Lake,Will,1448.21533,survey
+McHenry,DuPage,1999.310562,survey
+McHenry,Kane,12548.35528,survey
+McHenry,LOOP,3845.018293,survey
+McHenry,Lake,21750.26992,survey
+McHenry,McHenry,142280.5653,survey
+McHenry,North Chicago,3898.153284,survey
+McHenry,North Cook,20632.8712,survey
+McHenry,South Chicago,260.5205845,survey
+McHenry,South Cook,317.1417833,survey
+McHenry,West Chicago,843.4528537,survey
+McHenry,West Cook,7755.921307,survey
+North Chicago,DuPage,22467.02913,survey
+North Chicago,IL,181.9309619,survey
+North Chicago,IN,125.2211413,survey
+North Chicago,Kane,5440.138102,survey
+North Chicago,LOOP,144735.3358,survey
+North Chicago,Lake,17671.09015,survey
+North Chicago,McHenry,3655.365937,survey
+North Chicago,North Chicago,303339.1707,survey
+North Chicago,North Cook,91679.6189,survey
+North Chicago,South Chicago,32328.83067,survey
+North Chicago,South Cook,12690.63066,survey
+North Chicago,West Chicago,76262.88328,survey
+North Chicago,West Cook,41377.61977,survey
+North Chicago,Will,7603.42171,survey
+North Cook,DuPage,49716.97186,survey
+North Cook,IN,0,survey
+North Cook,Kane,9539.987642,survey
+North Cook,LOOP,43946.29264,survey
+North Cook,Lake,67922.83044,survey
+North Cook,McHenry,18326.11985,survey
+North Cook,North Chicago,84098.89505,survey
+North Cook,North Cook,435666.0882,survey
+North Cook,South Chicago,13715.22695,survey
+North Cook,South Cook,10957.00022,survey
+North Cook,West Chicago,13314.88601,survey
+North Cook,West Cook,43382.19985,survey
+North Cook,Will,9465.567707,survey
+South Chicago,DuPage,7212.537232,survey
+South Chicago,IN,1413.283076,survey
+South Chicago,Kane,633.3677819,survey
+South Chicago,Kendall,579.11302,survey
+South Chicago,LOOP,74391.07182,survey
+South Chicago,Lake,1539.302583,survey
+South Chicago,McHenry,260.5205845,survey
+South Chicago,North Chicago,31781.83374,survey
+South Chicago,North Cook,12582.43926,survey
+South Chicago,South Chicago,151714.3357,survey
+South Chicago,South Cook,36182.15077,survey
+South Chicago,West Chicago,42393.47307,survey
+South Chicago,West Cook,18188.67672,survey
+South Chicago,Will,6543.044309,survey
+South Cook,DuPage,18102.56481,survey
+South Cook,IL,181.9309619,survey
+South Cook,IN,5062.79427,survey
+South Cook,Kane,395.5397629,survey
+South Cook,Kendall,988.262305,survey
+South Cook,LOOP,37711.89468,survey
+South Cook,Lake,1850.068265,survey
+South Cook,McHenry,317.1417833,survey
+South Cook,North Chicago,16443.01711,survey
+South Cook,North Cook,9878.038926,survey
+South Cook,South Chicago,40952.97063,survey
+South Cook,South Cook,238956.8868,survey
+South Cook,West Chicago,17332.47885,survey
+South Cook,West Cook,25618.21686,survey
+South Cook,Will,36320.11471,survey
+West Chicago,DuPage,17301.10168,survey
+West Chicago,IN,0,survey
+West Chicago,Kane,1047.109486,survey
+West Chicago,LOOP,43478.33386,survey
+West Chicago,Lake,1073.798892,survey
+West Chicago,McHenry,735.2060778,survey
+West Chicago,North Chicago,78768.9037,survey
+West Chicago,North Cook,15003.56235,survey
+West Chicago,South Chicago,41219.50788,survey
+West Chicago,South Cook,18135.92669,survey
+West Chicago,West Chicago,103424.7536,survey
+West Chicago,West Cook,23857.78501,survey
+West Chicago,Will,4301.19895,survey
+West Cook,DuPage,70017.36973,survey
+West Cook,IL,270.1326069,survey
+West Cook,IN,0,survey
+West Cook,Kane,10110.21815,survey
+West Cook,Kendall,264.0479752,survey
+West Cook,LOOP,39684.58852,survey
+West Cook,Lake,7819.236259,survey
+West Cook,McHenry,6655.532461,survey
+West Cook,North Chicago,40180.17773,survey
+West Cook,North Cook,44059.92794,survey
+West Cook,South Chicago,16703.62553,survey
+West Cook,South Cook,26459.03592,survey
+West Cook,West Chicago,25846.5078,survey
+West Cook,West Cook,190317.5939,survey
+West Cook,Will,8689.060926,survey
+Will,DuPage,55336.68486,survey
+Will,IL,5447.557164,survey
+Will,IN,1006.998147,survey
+Will,Kane,8146.361067,survey
+Will,Kendall,1955.379208,survey
+Will,LOOP,20923.88365,survey
+Will,Lake,1114.794935,survey
+Will,McHenry,317.1417833,survey
+Will,North Chicago,5433.967938,survey
+Will,North Cook,8803.907517,survey
+Will,South Chicago,9415.76683,survey
+Will,South Cook,38718.84542,survey
+Will,West Chicago,6093.995916,survey
+Will,West Cook,12522.57583,survey
+Will,Will,223683.3045,survey
+WI,DuPage,0,survey
+WI,IL,0,survey
+WI,IN,0,survey
+WI,Kane,0,survey
+WI,LOOP,0,survey
+WI,Lake,0,survey
+WI,McHenry,0,survey
+WI,North Chicago,0,survey
+WI,North Cook,0,survey
+WI,WI,0,survey
+WI,West Chicago,0,survey
+WI,West Cook,0,survey
+DuPage,DuPage,479770,Model
+DuPage,IL,2240,Model
+DuPage,IN,125,Model
+DuPage,Kane,39595,Model
+DuPage,Kendall,8875,Model
+DuPage,LOOP,11970,Model
+DuPage,Lake,2095,Model
+DuPage,McHenry,1460,Model
+DuPage,North Chicago,13045,Model
+DuPage,North Cook,24655,Model
+DuPage,South Chicago,1705,Model
+DuPage,South Cook,7555,Model
+DuPage,WI,55,Model
+DuPage,West Chicago,5245,Model
+DuPage,West Cook,70500,Model
+DuPage,Will,43650,Model
+IL,DuPage,2425,Model
+IL,IL,345390,Model
+IL,IN,785,Model
+IL,Kane,9130,Model
+IL,Kendall,2790,Model
+IL,LOOP,115,Model
+IL,Lake,110,Model
+IL,McHenry,7140,Model
+IL,North Chicago,40,Model
+IL,North Cook,295,Model
+IL,South Chicago,145,Model
+IL,South Cook,1580,Model
+IL,WI,685,Model
+IL,West Chicago,5,Model
+IL,West Cook,730,Model
+IL,Will,9400,Model
+IN,DuPage,105,Model
+IN,IL,815,Model
+IN,IN,333435,Model
+IN,LOOP,5475,Model
+IN,Lake,5,Model
+IN,North Chicago,735,Model
+IN,North Cook,105,Model
+IN,South Chicago,8820,Model
+IN,South Cook,24800,Model
+IN,West Chicago,1235,Model
+IN,West Cook,255,Model
+IN,Will,3060,Model
+Kane,DuPage,44120,Model
+Kane,IL,8360,Model
+Kane,Kane,173745,Model
+Kane,Kendall,8220,Model
+Kane,LOOP,1470,Model
+Kane,Lake,2335,Model
+Kane,McHenry,10835,Model
+Kane,North Chicago,1870,Model
+Kane,North Cook,11265,Model
+Kane,South Chicago,30,Model
+Kane,South Cook,95,Model
+Kane,WI,150,Model
+Kane,West Chicago,390,Model
+Kane,West Cook,15165,Model
+Kane,Will,4510,Model
+Kendall,DuPage,10475,Model
+Kendall,IL,3170,Model
+Kendall,Kane,8755,Model
+Kendall,Kendall,20375,Model
+Kendall,LOOP,305,Model
+Kendall,McHenry,5,Model
+Kendall,North Chicago,140,Model
+Kendall,North Cook,70,Model
+Kendall,South Chicago,5,Model
+Kendall,South Cook,145,Model
+Kendall,West Chicago,90,Model
+Kendall,West Cook,695,Model
+Kendall,Will,5295,Model
+LOOP,DuPage,9310,Model
+LOOP,IL,95,Model
+LOOP,IN,4405,Model
+LOOP,Kane,1255,Model
+LOOP,Kendall,255,Model
+LOOP,LOOP,112785,Model
+LOOP,Lake,2500,Model
+LOOP,McHenry,210,Model
+LOOP,North Chicago,107450,Model
+LOOP,North Cook,9790,Model
+LOOP,South Chicago,52210,Model
+LOOP,South Cook,13485,Model
+LOOP,WI,210,Model
+LOOP,West Chicago,39925,Model
+LOOP,West Cook,22620,Model
+LOOP,Will,4820,Model
+Lake,DuPage,2185,Model
+Lake,IL,175,Model
+Lake,IN,5,Model
+Lake,Kane,1925,Model
+Lake,LOOP,3010,Model
+Lake,Lake,300320,Model
+Lake,McHenry,15590,Model
+Lake,North Chicago,4640,Model
+Lake,North Cook,63040,Model
+Lake,South Chicago,80,Model
+Lake,South Cook,20,Model
+Lake,WI,20265,Model
+Lake,West Chicago,575,Model
+Lake,West Cook,3575,Model
+Lake,Will,25,Model
+McHenry,DuPage,1910,Model
+McHenry,IL,6140,Model
+McHenry,Kane,12200,Model
+McHenry,LOOP,280,Model
+McHenry,Lake,18040,Model
+McHenry,McHenry,86670,Model
+McHenry,North Chicago,855,Model
+McHenry,North Cook,12930,Model
+McHenry,WI,5510,Model
+McHenry,West Chicago,35,Model
+McHenry,West Cook,4035,Model
+North Chicago,DuPage,11815,Model
+North Chicago,IL,40,Model
+North Chicago,IN,645,Model
+North Chicago,Kane,1390,Model
+North Chicago,Kendall,70,Model
+North Chicago,LOOP,132205,Model
+North Chicago,Lake,4685,Model
+North Chicago,McHenry,705,Model
+North Chicago,North Chicago,359880,Model
+North Chicago,North Cook,79485,Model
+North Chicago,South Chicago,13140,Model
+North Chicago,South Cook,3650,Model
+North Chicago,WI,145,Model
+North Chicago,West Chicago,66480,Model
+North Chicago,West Cook,34190,Model
+North Chicago,Will,1130,Model
+North Cook,DuPage,24000,Model
+North Cook,IL,340,Model
+North Cook,IN,120,Model
+North Cook,Kane,9225,Model
+North Cook,Kendall,40,Model
+North Cook,LOOP,12125,Model
+North Cook,Lake,62670,Model
+North Cook,McHenry,10055,Model
+North Cook,North Chicago,73840,Model
+North Cook,North Cook,419705,Model
+North Cook,South Chicago,1320,Model
+North Cook,South Cook,810,Model
+North Cook,WI,1820,Model
+North Cook,West Chicago,4690,Model
+North Cook,West Cook,43415,Model
+North Cook,Will,650,Model
+South Chicago,DuPage,2280,Model
+South Chicago,IL,125,Model
+South Chicago,IN,9285,Model
+South Chicago,Kane,20,Model
+South Chicago,Kendall,15,Model
+South Chicago,LOOP,67695,Model
+South Chicago,Lake,110,Model
+South Chicago,North Chicago,15235,Model
+South Chicago,North Cook,1775,Model
+South Chicago,South Chicago,129330,Model
+South Chicago,South Cook,32580,Model
+South Chicago,West Chicago,36865,Model
+South Chicago,West Cook,8500,Model
+South Chicago,Will,1585,Model
+South Cook,DuPage,9500,Model
+South Cook,IL,1660,Model
+South Cook,IN,28715,Model
+South Cook,Kane,75,Model
+South Cook,Kendall,110,Model
+South Cook,LOOP,17905,Model
+South Cook,Lake,20,Model
+South Cook,North Chicago,4535,Model
+South Cook,North Cook,1035,Model
+South Cook,South Chicago,30780,Model
+South Cook,South Cook,256370,Model
+South Cook,West Chicago,11335,Model
+South Cook,West Cook,20910,Model
+South Cook,Will,29765,Model
+WI,DuPage,45,Model
+WI,IL,705,Model
+WI,IN,5,Model
+WI,Kane,190,Model
+WI,LOOP,240,Model
+WI,Lake,21330,Model
+WI,McHenry,5500,Model
+WI,North Chicago,115,Model
+WI,North Cook,2085,Model
+WI,WI,209695,Model
+WI,West Chicago,55,Model
+WI,West Cook,55,Model
+West Chicago,DuPage,5605,Model
+West Chicago,IL,40,Model
+West Chicago,IN,1165,Model
+West Chicago,Kane,325,Model
+West Chicago,Kendall,85,Model
+West Chicago,LOOP,52160,Model
+West Chicago,Lake,595,Model
+West Chicago,McHenry,40,Model
+West Chicago,North Chicago,63245,Model
+West Chicago,North Cook,5865,Model
+West Chicago,South Chicago,31725,Model
+West Chicago,South Cook,9725,Model
+West Chicago,WI,60,Model
+West Chicago,West Chicago,131065,Model
+West Chicago,West Cook,27145,Model
+West Chicago,Will,1510,Model
+West Cook,DuPage,76545,Model
+West Cook,IL,660,Model
+West Cook,IN,295,Model
+West Cook,Kane,14025,Model
+West Cook,Kendall,510,Model
+West Cook,LOOP,28010,Model
+West Cook,Lake,3645,Model
+West Cook,McHenry,3235,Model
+West Cook,North Chicago,36095,Model
+West Cook,North Cook,47150,Model
+West Cook,South Chicago,6975,Model
+West Cook,South Cook,18395,Model
+West Cook,WI,80,Model
+West Cook,West Chicago,26660,Model
+West Cook,West Cook,217380,Model
+West Cook,Will,9515,Model
+Will,DuPage,51645,Model
+Will,IL,9805,Model
+Will,IN,3740,Model
+Will,Kane,4930,Model
+Will,Kendall,5005,Model
+Will,LOOP,5725,Model
+Will,Lake,40,Model
+Will,North Chicago,1435,Model
+Will,North Cook,845,Model
+Will,South Chicago,1740,Model
+Will,South Cook,29475,Model
+Will,West Chicago,1830,Model
+Will,West Cook,11830,Model
+Will,Will,188970,Model

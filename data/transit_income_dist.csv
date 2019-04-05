@@ -1,0 +1,16 @@
+Model 01,Survey 01,Index,Category,Description,Title
+38820,14483.32872961,$35k to $50k,dtransit,Drive To Transit trips $35k to $50k,Drive To Transit
+391890,223440.08262072995,$35k to $50k,transit,Walk To Transit trips $35k to $50k,Walk To Transit
+26670,41235.97029165999,$50k to $75k,dtransit,Drive To Transit trips $50k to $75k,Drive To Transit
+184615,235056.01215593994,$50k to $75k,transit,Walk To Transit trips $50k to $75k,Walk To Transit
+17980,41164.45227768998,$75k to $100K,dtransit,Drive To Transit trips $75k to $100K,Drive To Transit
+102320,165065.8265958501,$75k to $100K,transit,Walk To Transit trips $75k to $100K,Walk To Transit
+44810,16194.888949699996,Less than $35k,dtransit,Drive To Transit trips Less than $35k,Drive To Transit
+595570,615776.9710042776,Less than $35k,transit,Walk To Transit trips Less than $35k,Walk To Transit
+46260,79208.86075936,More than $100k,dtransit,Drive To Transit trips More than $100k,Drive To Transit
+221950,289931.2511861104,More than $100k,transit,Walk To Transit trips More than $100k,Walk To Transit
+430710,237923.41135033994,$35k to $50k,all,All trips $35k to $50k,All
+211285,276291.98244759993,$50k to $75k,all,All trips $50k to $75k,All
+120300,206230.2788735401,$75k to $100K,all,All trips $75k to $100K,All
+640380,631971.8599539776,Less than $35k,all,All trips Less than $35k,All
+268210,369140.11194547045,More than $100k,all,All trips More than $100k,All

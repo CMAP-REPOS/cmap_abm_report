@@ -1,1034 +1,489 @@
-root,node,count,Category
-1,1,345490,Model
-1,2N,86530,Model
-1,2NW,39670,Model
-1,2S,67540,Model
-1,2SW,35130,Model
-1,2W,25820,Model
-1,2WNW,20585,Model
-1,2WSW,27605,Model
-1,3IN,6950,Model
-1,3N,3340,Model
-1,3NW,2595,Model
-1,3S,8490,Model
-1,3SW,9765,Model
-1,3W,7000,Model
-1,3WNW,3620,Model
-1,3WSW,9980,Model
-1,4N,2600,Model
-1,4NW,2175,Model
-1,4SW,4975,Model
-1,4W,970,Model
-1,4WNW,565,Model
-1,4WSW,1445,Model
-1,XIL,105,Model
-1,XIN,550,Model
-1,XWI,315,Model
-2N,1,103025,Model
-2N,2N,247275,Model
-2N,2NW,41250,Model
-2N,2S,2500,Model
-2N,2SW,1565,Model
-2N,2W,3575,Model
-2N,2WNW,7050,Model
-2N,2WSW,1550,Model
-2N,3IN,215,Model
-2N,3N,15655,Model
-2N,3NW,4675,Model
-2N,3S,125,Model
-2N,3SW,310,Model
-2N,3W,1075,Model
-2N,3WNW,3560,Model
-2N,3WSW,405,Model
-2N,4N,3465,Model
-2N,4NW,2930,Model
-2N,4SW,95,Model
-2N,4W,55,Model
-2N,4WNW,315,Model
-2N,4WSW,20,Model
-2N,XIL,25,Model
-2N,XIN,25,Model
-2N,XWI,320,Model
-2NW,1,46485,Model
-2NW,2N,41450,Model
-2NW,2NW,141990,Model
-2NW,2S,2105,Model
-2NW,2SW,1650,Model
-2NW,2W,11480,Model
-2NW,2WNW,22315,Model
-2NW,2WSW,3850,Model
-2NW,3IN,175,Model
-2NW,3N,9240,Model
-2NW,3NW,20460,Model
-2NW,3S,155,Model
-2NW,3SW,1135,Model
-2NW,3W,5685,Model
-2NW,3WNW,16820,Model
-2NW,3WSW,2175,Model
-2NW,4N,2430,Model
-2NW,4NW,7535,Model
-2NW,4SW,285,Model
-2NW,4W,350,Model
-2NW,4WNW,1530,Model
-2NW,4WSW,310,Model
-2NW,XIL,55,Model
-2NW,XIN,10,Model
-2NW,XWI,215,Model
-2S,1,82385,Model
-2S,2N,2860,Model
-2S,2NW,2810,Model
-2S,2S,129035,Model
-2S,2SW,27160,Model
-2S,2W,1910,Model
-2S,2WNW,520,Model
-2S,2WSW,2875,Model
-2S,3IN,18230,Model
-2S,3N,140,Model
-2S,3NW,50,Model
-2S,3S,12660,Model
-2S,3SW,12615,Model
-2S,3W,515,Model
-2S,3WNW,170,Model
-2S,3WSW,760,Model
-2S,4N,40,Model
-2S,4NW,15,Model
-2S,4SW,1695,Model
-2S,4WSW,15,Model
-2S,XIL,245,Model
-2S,XIN,1165,Model
-2SW,1,41190,Model
-2SW,2N,1625,Model
-2SW,2NW,1880,Model
-2SW,2S,23660,Model
-2SW,2SW,112725,Model
-2SW,2W,5625,Model
-2SW,2WNW,1550,Model
-2SW,2WSW,13595,Model
-2SW,3IN,1445,Model
-2SW,3N,120,Model
-2SW,3NW,115,Model
-2SW,3S,2535,Model
-2SW,3SW,23265,Model
-2SW,3W,1655,Model
-2SW,3WNW,460,Model
-2SW,3WSW,3250,Model
-2SW,4N,35,Model
-2SW,4NW,40,Model
-2SW,4SW,2375,Model
-2SW,4W,30,Model
-2SW,4WNW,5,Model
-2SW,4WSW,160,Model
-2SW,XIL,145,Model
-2SW,XIN,135,Model
-2SW,XWI,5,Model
-2W,1,31475,Model
-2W,2N,3790,Model
-2W,2NW,13380,Model
-2W,2S,1565,Model
-2W,2SW,5005,Model
-2W,2W,59870,Model
-2W,2WNW,14365,Model
-2W,2WSW,15115,Model
-2W,3IN,80,Model
-2W,3N,535,Model
-2W,3NW,1145,Model
-2W,3S,140,Model
-2W,3SW,2405,Model
-2W,3W,11255,Model
-2W,3WNW,3530,Model
-2W,3WSW,5920,Model
-2W,4N,145,Model
-2W,4NW,255,Model
-2W,4SW,965,Model
-2W,4W,290,Model
-2W,4WNW,185,Model
-2W,4WSW,385,Model
-2W,XIL,70,Model
-2W,XIN,30,Model
-2W,XWI,10,Model
-2WNW,1,24755,Model
-2WNW,2N,7745,Model
-2WNW,2NW,24955,Model
-2WNW,2S,475,Model
-2WNW,2SW,1620,Model
-2WNW,2W,14155,Model
-2WNW,2WNW,36820,Model
-2WNW,2WSW,3520,Model
-2WNW,3IN,70,Model
-2WNW,3N,975,Model
-2WNW,3NW,1330,Model
-2WNW,3S,35,Model
-2WNW,3SW,625,Model
-2WNW,3W,4735,Model
-2WNW,3WNW,4185,Model
-2WNW,3WSW,1360,Model
-2WNW,4N,230,Model
-2WNW,4NW,435,Model
-2WNW,4SW,205,Model
-2WNW,4W,150,Model
-2WNW,4WNW,185,Model
-2WNW,4WSW,110,Model
-2WNW,XIL,35,Model
-2WNW,XWI,20,Model
-2WSW,1,31825,Model
-2WSW,2N,1635,Model
-2WSW,2NW,4580,Model
-2WSW,2S,2425,Model
-2WSW,2SW,13620,Model
-2WSW,2W,15620,Model
-2WSW,2WNW,3505,Model
-2WSW,2WSW,54430,Model
-2WSW,3IN,145,Model
-2WSW,3N,125,Model
-2WSW,3NW,320,Model
-2WSW,3S,235,Model
-2WSW,3SW,6145,Model
-2WSW,3W,7095,Model
-2WSW,3WNW,1310,Model
-2WSW,3WSW,10060,Model
-2WSW,4N,30,Model
-2WSW,4NW,65,Model
-2WSW,4SW,2020,Model
-2WSW,4W,105,Model
-2WSW,4WNW,20,Model
-2WSW,4WSW,385,Model
-2WSW,XIL,55,Model
-2WSW,XWI,10,Model
-3IN,1,7800,Model
-3IN,2N,155,Model
-3IN,2NW,160,Model
-3IN,2S,16280,Model
-3IN,2SW,1590,Model
-3IN,2W,95,Model
-3IN,2WNW,45,Model
-3IN,2WSW,135,Model
-3IN,3IN,137965,Model
-3IN,3N,10,Model
-3IN,3NW,10,Model
-3IN,3S,12435,Model
-3IN,3SW,2105,Model
-3IN,3W,30,Model
-3IN,3WNW,10,Model
-3IN,3WSW,5,Model
-3IN,4N,5,Model
-3IN,4SW,715,Model
-3IN,XIL,210,Model
-3IN,XIN,24180,Model
-3N,1,3690,Model
-3N,2N,14420,Model
-3N,2NW,8400,Model
-3N,2S,125,Model
-3N,2SW,100,Model
-3N,2W,515,Model
-3N,2WNW,740,Model
-3N,2WSW,120,Model
-3N,3IN,5,Model
-3N,3N,40075,Model
-3N,3NW,10075,Model
-3N,3SW,15,Model
-3N,3W,335,Model
-3N,3WNW,1670,Model
-3N,3WSW,115,Model
-3N,4N,8935,Model
-3N,4NW,10355,Model
-3N,4SW,25,Model
-3N,4W,35,Model
-3N,4WNW,445,Model
-3N,XIL,10,Model
-3N,XWI,705,Model
-3NW,1,3045,Model
-3NW,2N,5265,Model
-3NW,2NW,22750,Model
-3NW,2S,35,Model
-3NW,2SW,90,Model
-3NW,2W,1075,Model
-3NW,2WNW,1265,Model
-3NW,2WSW,265,Model
-3NW,3IN,5,Model
-3NW,3N,12115,Model
-3NW,3NW,122915,Model
-3NW,3S,5,Model
-3NW,3SW,125,Model
-3NW,3W,4525,Model
-3NW,3WNW,35230,Model
-3NW,3WSW,1215,Model
-3NW,4N,5295,Model
-3NW,4NW,32780,Model
-3NW,4SW,80,Model
-3NW,4W,585,Model
-3NW,4WNW,5235,Model
-3NW,4WSW,165,Model
-3NW,XIL,340,Model
-3NW,XWI,845,Model
-3S,1,9780,Model
-3S,2N,190,Model
-3S,2NW,205,Model
-3S,2S,13570,Model
-3S,2SW,3130,Model
-3S,2W,155,Model
-3S,2WNW,15,Model
-3S,2WSW,285,Model
-3S,3IN,14500,Model
-3S,3NW,5,Model
-3S,3S,64515,Model
-3S,3SW,9655,Model
-3S,3W,95,Model
-3S,3WNW,15,Model
-3S,3WSW,195,Model
-3S,4SW,5660,Model
-3S,XIL,2045,Model
-3S,XIN,2335,Model
-3SW,1,11105,Model
-3SW,2N,320,Model
-3SW,2NW,1425,Model
-3SW,2S,11010,Model
-3SW,2SW,23590,Model
-3SW,2W,2695,Model
-3SW,2WNW,670,Model
-3SW,2WSW,6140,Model
-3SW,3IN,2120,Model
-3SW,3N,25,Model
-3SW,3NW,160,Model
-3SW,3S,9205,Model
-3SW,3SW,98345,Model
-3SW,3W,3875,Model
-3SW,3WNW,695,Model
-3SW,3WSW,14560,Model
-3SW,4NW,20,Model
-3SW,4SW,21600,Model
-3SW,4W,65,Model
-3SW,4WNW,10,Model
-3SW,4WSW,970,Model
-3SW,XIL,805,Model
-3SW,XIN,265,Model
-3W,1,8075,Model
-3W,2N,995,Model
-3W,2NW,6200,Model
-3W,2S,315,Model
-3W,2SW,1275,Model
-3W,2W,9955,Model
-3W,2WNW,4450,Model
-3W,2WSW,5730,Model
-3W,3IN,30,Model
-3W,3N,350,Model
-3W,3NW,4145,Model
-3W,3S,70,Model
-3W,3SW,3315,Model
-3W,3W,127845,Model
-3W,3WNW,30210,Model
-3W,3WSW,45005,Model
-3W,4N,130,Model
-3W,4NW,1355,Model
-3W,4SW,3650,Model
-3W,4W,7375,Model
-3W,4WNW,2615,Model
-3W,4WSW,5800,Model
-3W,XIL,840,Model
-3W,XIN,5,Model
-3W,XWI,15,Model
-3WNW,1,4110,Model
-3WNW,2N,3285,Model
-3WNW,2NW,16950,Model
-3WNW,2S,140,Model
-3WNW,2SW,385,Model
-3WNW,2W,3380,Model
-3WNW,2WNW,4005,Model
-3WNW,2WSW,1090,Model
-3WNW,3N,2025,Model
-3WNW,3NW,33165,Model
-3WNW,3S,10,Model
-3WNW,3SW,515,Model
-3WNW,3W,32010,Model
-3WNW,3WNW,142805,Model
-3WNW,3WSW,8075,Model
-3WNW,4N,635,Model
-3WNW,4NW,9915,Model
-3WNW,4SW,515,Model
-3WNW,4W,3855,Model
-3WNW,4WNW,14195,Model
-3WNW,4WSW,1030,Model
-3WNW,XIL,575,Model
-3WNW,XIN,5,Model
-3WNW,XWI,130,Model
-3WSW,1,11270,Model
-3WSW,2N,395,Model
-3WSW,2NW,2825,Model
-3WSW,2S,675,Model
-3WSW,2SW,3155,Model
-3WSW,2W,6050,Model
-3WSW,2WNW,1595,Model
-3WSW,2WSW,9415,Model
-3WSW,3IN,45,Model
-3WSW,3N,110,Model
-3WSW,3NW,1265,Model
-3WSW,3S,140,Model
-3WSW,3SW,16910,Model
-3WSW,3W,46830,Model
-3WSW,3WNW,8080,Model
-3WSW,3WSW,239390,Model
-3WSW,4N,25,Model
-3WSW,4NW,345,Model
-3WSW,4SW,20580,Model
-3WSW,4W,5100,Model
-3WSW,4WNW,890,Model
-3WSW,4WSW,27150,Model
-3WSW,XIL,1950,Model
-4N,1,2945,Model
-4N,2N,3595,Model
-4N,2NW,2365,Model
-4N,2S,30,Model
-4N,2SW,10,Model
-4N,2W,90,Model
-4N,2WNW,175,Model
-4N,2WSW,35,Model
-4N,3N,9565,Model
-4N,3NW,4695,Model
-4N,3W,105,Model
-4N,3WNW,505,Model
-4N,3WSW,25,Model
-4N,4N,66955,Model
-4N,4NW,28090,Model
-4N,4W,10,Model
-4N,4WNW,170,Model
-4N,XIL,5,Model
-4N,XWI,8885,Model
-4NW,1,2470,Model
-4NW,2N,3330,Model
-4NW,2NW,8295,Model
-4NW,2S,5,Model
-4NW,2SW,20,Model
-4NW,2W,285,Model
-4NW,2WNW,435,Model
-4NW,2WSW,95,Model
-4NW,3N,11650,Model
-4NW,3NW,33935,Model
-4NW,3SW,20,Model
-4NW,3W,1720,Model
-4NW,3WNW,11910,Model
-4NW,3WSW,385,Model
-4NW,4N,28300,Model
-4NW,4NW,291635,Model
-4NW,4SW,5,Model
-4NW,4W,710,Model
-4NW,4WNW,13305,Model
-4NW,4WSW,65,Model
-4NW,XIL,6335,Model
-4NW,XWI,16770,Model
-4SW,1,5615,Model
-4SW,2N,100,Model
-4SW,2NW,380,Model
-4SW,2S,1735,Model
-4SW,2SW,2805,Model
-4SW,2W,1240,Model
-4SW,2WNW,285,Model
-4SW,2WSW,2490,Model
-4SW,3IN,870,Model
-4SW,3N,20,Model
-4SW,3NW,75,Model
-4SW,3S,5810,Model
-4SW,3SW,23710,Model
-4SW,3W,4715,Model
-4SW,3WNW,625,Model
-4SW,3WSW,24660,Model
-4SW,4NW,5,Model
-4SW,4SW,121805,Model
-4SW,4W,300,Model
-4SW,4WNW,20,Model
-4SW,4WSW,2565,Model
-4SW,XIL,8105,Model
-4SW,XIN,125,Model
-4W,1,1010,Model
-4W,2N,55,Model
-4W,2NW,565,Model
-4W,2SW,35,Model
-4W,2W,330,Model
-4W,2WNW,215,Model
-4W,2WSW,120,Model
-4W,3N,45,Model
-4W,3NW,730,Model
-4W,3SW,70,Model
-4W,3W,7895,Model
-4W,3WNW,3980,Model
-4W,3WSW,5020,Model
-4W,4NW,515,Model
-4W,4SW,250,Model
-4W,4W,40420,Model
-4W,4WNW,5450,Model
-4W,4WSW,8780,Model
-4W,XIL,2990,Model
-4WNW,1,580,Model
-4WNW,2N,410,Model
-4WNW,2NW,1920,Model
-4WNW,2SW,15,Model
-4WNW,2W,235,Model
-4WNW,2WNW,260,Model
-4WNW,2WSW,35,Model
-4WNW,3N,575,Model
-4WNW,3NW,6395,Model
-4WNW,3SW,10,Model
-4WNW,3W,3025,Model
-4WNW,3WNW,15435,Model
-4WNW,3WSW,995,Model
-4WNW,4N,220,Model
-4WNW,4NW,12095,Model
-4WNW,4SW,15,Model
-4WNW,4W,5430,Model
-4WNW,4WNW,59860,Model
-4WNW,4WSW,715,Model
-4WNW,XIL,2905,Model
-4WNW,XWI,135,Model
-4WSW,1,1610,Model
-4WSW,2N,5,Model
-4WSW,2NW,415,Model
-4WSW,2S,25,Model
-4WSW,2SW,170,Model
-4WSW,2W,520,Model
-4WSW,2WNW,150,Model
-4WSW,2WSW,525,Model
-4WSW,3NW,155,Model
-4WSW,3SW,1245,Model
-4WSW,3W,7185,Model
-4WSW,3WNW,1135,Model
-4WSW,3WSW,30710,Model
-4WSW,4NW,65,Model
-4WSW,4SW,2335,Model
-4WSW,4W,10235,Model
-4WSW,4WNW,820,Model
-4WSW,4WSW,76035,Model
-4WSW,XIL,5280,Model
-4WSW,XWI,5,Model
-XIL,1,100,Model
-XIL,2NW,50,Model
-XIL,2S,320,Model
-XIL,2SW,120,Model
-XIL,2W,60,Model
-XIL,2WNW,30,Model
-XIL,2WSW,40,Model
-XIL,3IN,215,Model
-XIL,3N,5,Model
-XIL,3NW,335,Model
-XIL,3S,2185,Model
-XIL,3SW,905,Model
-XIL,3W,985,Model
-XIL,3WNW,660,Model
-XIL,3WSW,1990,Model
-XIL,4N,25,Model
-XIL,4NW,7280,Model
-XIL,4SW,7700,Model
-XIL,4W,3220,Model
-XIL,4WNW,3095,Model
-XIL,4WSW,5435,Model
-XIL,XIL,342595,Model
-XIL,XIN,520,Model
-XIL,XWI,730,Model
-XIN,1,535,Model
-XIN,2N,10,Model
-XIN,2NW,5,Model
-XIN,2S,1195,Model
-XIN,2SW,90,Model
-XIN,2W,25,Model
-XIN,2WSW,5,Model
-XIN,3IN,24850,Model
-XIN,3S,2175,Model
-XIN,3SW,240,Model
-XIN,4SW,110,Model
-XIN,XIL,610,Model
-XIN,XIN,140550,Model
-XWI,1,340,Model
-XWI,2N,295,Model
-XWI,2NW,230,Model
-XWI,2W,15,Model
-XWI,2WNW,10,Model
-XWI,3N,910,Model
-XWI,3NW,940,Model
-XWI,3W,25,Model
-XWI,3WNW,145,Model
-XWI,4N,9670,Model
-XWI,4NW,17375,Model
-XWI,4W,5,Model
-XWI,4WNW,120,Model
-XWI,XIL,750,Model
-XWI,XIN,5,Model
-XWI,XWI,207650,Model
-1,1,244345.535,Survey
-1,2N,89246.81509,Survey
-1,2NW,38061.17777,Survey
-1,2S,60879.25082,Survey
-1,2SW,33901.97153,Survey
-1,2W,28720.83311,Survey
-1,2WNW,16749.07822,Survey
-1,2WSW,28873.51037,Survey
-1,3IN,7437.167409,Survey
-1,3N,10369.64102,Survey
-1,3NW,8838.981999,Survey
-1,3S,7831.441319,Survey
-1,3SW,19317.62942,Survey
-1,3W,14603.58872,Survey
-1,3WNW,9392.347965,Survey
-1,3WSW,29910.56084,Survey
-1,4N,10558.32237,Survey
-1,4NW,15612.64159,Survey
-1,4SW,9012.730906,Survey
-1,4W,2097.508007,Survey
-1,4WNW,1355.086449,Survey
-1,4WSW,5598.157508,Survey
-1,XIL,181.9309619,Survey
-1,XIN,2905.67326,Survey
-2N,1,106479.5149,Survey
-2N,2N,178832.9926,Survey
-2N,2NW,28840.49077,Survey
-2N,2S,9291.901479,Survey
-2N,2SW,3379.56156,Survey
-2N,2W,6084.175774,Survey
-2N,2WNW,7669.283462,Survey
-2N,2WSW,8565.871448,Survey
-2N,3IN,574.8132613,Survey
-2N,3N,24019.47186,Survey
-2N,3NW,6029.238975,Survey
-2N,3S,895.8650495,Survey
-2N,3SW,3667.629139,Survey
-2N,3W,4128.290905,Survey
-2N,3WNW,2934.110846,Survey
-2N,3WSW,2030.893966,Survey
-2N,4N,5331.397633,Survey
-2N,4NW,8242.338314,Survey
-2N,4SW,353.0596357,Survey
-2N,4W,529.9899785,Survey
-2N,4WSW,96.271595,Survey
-2N,XIN,189.80583,Survey
-2NW,1,39387.26693,Survey
-2NW,2N,25796.27686,Survey
-2NW,2NW,70284.59549,Survey
-2NW,2S,2570.380452,Survey
-2NW,2SW,8596.513659,Survey
-2NW,2W,7556.266561,Survey
-2NW,2WNW,16065.11261,Survey
-2NW,2WSW,4877.410193,Survey
-2NW,3IN,491.94649,Survey
-2NW,3N,8081.025978,Survey
-2NW,3NW,19177.00756,Survey
-2NW,3S,590.6400044,Survey
-2NW,3SW,1612.135035,Survey
-2NW,3W,6682.093803,Survey
-2NW,3WNW,18154.04878,Survey
-2NW,3WSW,4857.141203,Survey
-2NW,4N,1912.785607,Survey
-2NW,4NW,11522.1512,Survey
-2NW,4SW,2437.946645,Survey
-2NW,4W,352.3179411,Survey
-2NW,4WNW,1714.282473,Survey
-2NW,4WSW,271.6808209,Survey
-2NW,XIN,24.02957,Survey
-2S,1,75238.98092,Survey
-2S,2N,9817.279475,Survey
-2S,2NW,2540.596525,Survey
-2S,2S,132684.4273,Survey
-2S,2SW,21196.10551,Survey
-2S,2W,8381.180632,Survey
-2S,2WNW,3551.120987,Survey
-2S,2WSW,6240.898679,Survey
-2S,3IN,9134.796843,Survey
-2S,3N,2300.605217,Survey
-2S,3NW,2594.245104,Survey
-2S,3S,8775.576551,Survey
-2S,3SW,11800.88855,Survey
-2S,3W,1387.59694,Survey
-2S,3WNW,2790.025334,Survey
-2S,3WSW,3965.63619,Survey
-2S,4N,687.5760804,Survey
-2S,4NW,1391.153097,Survey
-2S,4SW,4287.378657,Survey
-2S,4W,962.1215152,Survey
-2S,4WSW,919.3256994,Survey
-2S,XIN,1619.482946,Survey
-2SW,1,35360.66455,Survey
-2SW,2N,3442.392019,Survey
-2SW,2NW,8704.731538,Survey
-2SW,2S,19570.67736,Survey
-2SW,2SW,64983.97273,Survey
-2SW,2W,13417.79248,Survey
-2SW,2WNW,1273.030775,Survey
-2SW,2WSW,15523.73324,Survey
-2SW,3IN,1786.36912,Survey
-2SW,3N,909.7315606,Survey
-2SW,3NW,556.9552457,Survey
-2SW,3S,4670.497917,Survey
-2SW,3SW,15584.38637,Survey
-2SW,3W,575.3366596,Survey
-2SW,3WNW,1888.475041,Survey
-2SW,3WSW,4894.719537,Survey
-2SW,4NW,439.5389763,Survey
-2SW,4SW,4115.857004,Survey
-2SW,XIN,1514.91108,Survey
-2W,1,36102.96761,Survey
-2W,2N,6258.81994,Survey
-2W,2NW,10522.79019,Survey
-2W,2S,7238.665105,Survey
-2W,2SW,9187.275109,Survey
-2W,2W,70832.69359,Survey
-2W,2WNW,15125.9447,Survey
-2W,2WSW,15113.77196,Survey
-2W,3IN,293.0652,Survey
-2W,3N,940.3391123,Survey
-2W,3NW,2172.404336,Survey
-2W,3S,684.0229,Survey
-2W,3SW,3381.406891,Survey
-2W,3W,9121.209425,Survey
-2W,3WNW,8275.307059,Survey
-2W,3WSW,10025.29444,Survey
-2W,4N,107.052498,Survey
-2W,4NW,1870.563407,Survey
-2W,4SW,1115.790577,Survey
-2W,4WSW,185.2127866,Survey
-2W,XIN,277.13025,Survey
-2WNW,1,21555.34894,Survey
-2WNW,2N,8311.533661,Survey
-2WNW,2NW,16368.40105,Survey
-2WNW,2S,3482.648478,Survey
-2WNW,2SW,2556.204105,Survey
-2WNW,2W,14747.31572,Survey
-2WNW,2WNW,20546.16156,Survey
-2WNW,2WSW,5280.329738,Survey
-2WNW,3IN,350.45702,Survey
-2WNW,3N,376.9100738,Survey
-2WNW,3NW,1188.144825,Survey
-2WNW,3S,600.4123516,Survey
-2WNW,3SW,2290.812199,Survey
-2WNW,3W,2703.997145,Survey
-2WNW,3WNW,6418.549182,Survey
-2WNW,3WSW,2122.823222,Survey
-2WNW,4N,336.6798486,Survey
-2WNW,4NW,2886.394702,Survey
-2WNW,4SW,303.0175354,Survey
-2WNW,4WNW,1025.097708,Survey
-2WNW,4WSW,1828.790013,Survey
-2WSW,1,29543.4359,Survey
-2WSW,2N,9112.2454,Survey
-2WSW,2NW,4033.116677,Survey
-2WSW,2S,6261.136489,Survey
-2WSW,2SW,15755.67505,Survey
-2WSW,2W,16496.06738,Survey
-2WSW,2WNW,6713.158735,Survey
-2WSW,2WSW,51452.91866,Survey
-2WSW,3IN,117.11342,Survey
-2WSW,3N,326.4831748,Survey
-2WSW,3NW,1924.876125,Survey
-2WSW,3S,687.3132701,Survey
-2WSW,3SW,4498.409071,Survey
-2WSW,3W,5106.496924,Survey
-2WSW,3WNW,1312.595176,Survey
-2WSW,3WSW,12867.15129,Survey
-2WSW,4N,133.8459215,Survey
-2WSW,4NW,1380.006775,Survey
-2WSW,4SW,1316.65045,Survey
-2WSW,4WNW,634.2108974,Survey
-2WSW,4WSW,264.0479752,Survey
-2WSW,XIL,135.0663035,Survey
-2WSW,XIN,243.94663,Survey
-3IN,1,9456.31705,Survey
-3IN,2N,933.3125923,Survey
-3IN,2NW,192.43621,Survey
-3IN,2S,11556.63662,Survey
-3IN,2SW,2388.003972,Survey
-3IN,2W,403.73417,Survey
-3IN,2WNW,277.55538,Survey
-3IN,2WSW,419.86885,Survey
-3IN,3IN,171277.1268,Survey
-3IN,3NW,549.10197,Survey
-3IN,3S,9981.520126,Survey
-3IN,3SW,2000.796766,Survey
-3IN,3W,305.71183,Survey
-3IN,3WNW,423.8290896,Survey
-3IN,3WSW,1326.485626,Survey
-3IN,4N,12.01479,Survey
-3IN,4SW,557.8441019,Survey
-3IN,4W,69.75132,Survey
-3IN,4WNW,353.3611579,Survey
-3IN,4WSW,68.28675,Survey
-3IN,XIN,35735.80088,Survey
-3N,1,12385.57001,Survey
-3N,2N,23550.01731,Survey
-3N,2NW,5729.321059,Survey
-3N,2S,2540.888926,Survey
-3N,2SW,279.1295935,Survey
-3N,2W,982.5717924,Survey
-3N,2WNW,360.2288437,Survey
-3N,2WSW,587.453514,Survey
-3N,3N,31430.9322,Survey
-3N,3NW,9240.701461,Survey
-3N,3S,99.75765385,Survey
-3N,3SW,902.2728212,Survey
-3N,3W,1881.205005,Survey
-3N,3WNW,1837.842723,Survey
-3N,3WSW,1498.123267,Survey
-3N,4N,6401.113295,Survey
-3N,4NW,11021.813,Survey
-3N,4SW,2812.814696,Survey
-3N,4WNW,117.4450479,Survey
-3N,4WSW,217.6140856,Survey
-3NW,1,9292.902586,Survey
-3NW,2N,6584.667739,Survey
-3NW,2NW,18849.36182,Survey
-3NW,2S,2193.387646,Survey
-3NW,2SW,767.7511357,Survey
-3NW,2W,3161.773439,Survey
-3NW,2WNW,2088.666251,Survey
-3NW,2WSW,1290.722831,Survey
-3NW,3IN,616.11182,Survey
-3NW,3N,10749.2243,Survey
-3NW,3NW,93545.26036,Survey
-3NW,3SW,1064.714725,Survey
-3NW,3W,2358.597638,Survey
-3NW,3WNW,27989.62452,Survey
-3NW,3WSW,6190.247549,Survey
-3NW,4N,3845.275434,Survey
-3NW,4NW,28818.86417,Survey
-3NW,4SW,1469.804382,Survey
-3NW,4W,390.7708299,Survey
-3NW,4WNW,3306.184492,Survey
-3NW,4WSW,52.84012915,Survey
-3NW,XIN,24.02958,Survey
-3S,1,9200.534554,Survey
-3S,2N,1101.030312,Survey
-3S,2NW,163.6734993,Survey
-3S,2S,13321.5706,Survey
-3S,2SW,3547.923087,Survey
-3S,2W,991.8598462,Survey
-3S,2WNW,600.4123516,Survey
-3S,2WSW,639.4041162,Survey
-3S,3IN,7219.406461,Survey
-3S,3N,487.4109445,Survey
-3S,3S,72231.16845,Survey
-3S,3SW,14627.26354,Survey
-3S,3W,650.3373601,Survey
-3S,3WNW,367.5671653,Survey
-3S,3WSW,4926.946557,Survey
-3S,4NW,317.1417833,Survey
-3S,4SW,7478.370095,Survey
-3S,XIL,181.9309619,Survey
-3S,XIN,1451.90126,Survey
-3SW,1,20105.77558,Survey
-3SW,2N,3230.869702,Survey
-3SW,2NW,2712.258952,Survey
-3SW,2S,10186.45906,Survey
-3SW,2SW,15025.56498,Survey
-3SW,2W,3575.647872,Survey
-3SW,2WNW,2444.693914,Survey
-3SW,2WSW,5721.357134,Survey
-3SW,3IN,1926.377428,Survey
-3SW,3N,697.7995187,Survey
-3SW,3NW,2069.285633,Survey
-3SW,3S,13625.87603,Survey
-3SW,3SW,65930.75578,Survey
-3SW,3W,3881.590859,Survey
-3SW,3WNW,2844.514118,Survey
-3SW,3WSW,13800.69538,Survey
-3SW,4N,122.5748526,Survey
-3SW,4NW,628.8584187,Survey
-3SW,4SW,13117.40939,Survey
-3SW,4WNW,124.4754375,Survey
-3SW,4WSW,477.9432859,Survey
-3SW,XIN,1176.729048,Survey
-3W,1,15335.67181,Survey
-3W,2N,3781.558805,Survey
-3W,2NW,7596.654576,Survey
-3W,2S,686.2148094,Survey
-3W,2SW,617.079493,Survey
-3W,2W,7970.924598,Survey
-3W,2WNW,2897.583961,Survey
-3W,2WSW,6068.753134,Survey
-3W,3IN,218.60648,Survey
-3W,3N,1638.0317,Survey
-3W,3NW,2878.030144,Survey
-3W,3S,650.3373601,Survey
-3W,3SW,3331.612847,Survey
-3W,3W,89459.93048,Survey
-3W,3WNW,18638.17325,Survey
-3W,3WSW,31821.04152,Survey
-3W,4N,936.5996233,Survey
-3W,4NW,4403.190926,Survey
-3W,4SW,2147.944358,Survey
-3W,4W,5163.391556,Survey
-3W,4WNW,2777.104618,Survey
-3W,4WSW,6324.861638,Survey
-3W,XIN,60.48039,Survey
-3WNW,1,9612.39536,Survey
-3WNW,2N,2634.308826,Survey
-3WNW,2NW,13719.69864,Survey
-3WNW,2S,2725.190018,Survey
-3WNW,2SW,1537.407206,Survey
-3WNW,2W,6054.068009,Survey
-3WNW,2WNW,8495.187085,Survey
-3WNW,2WSW,1753.895053,Survey
-3WNW,3N,700.7256134,Survey
-3WNW,3NW,25658.13093,Survey
-3WNW,3S,413.4910516,Survey
-3WNW,3SW,1951.746534,Survey
-3WNW,3W,14649.48365,Survey
-3WNW,3WNW,77809.24746,Survey
-3WNW,3WSW,16105.91495,Survey
-3WNW,4N,1307.999087,Survey
-3WNW,4NW,15374.83218,Survey
-3WNW,4SW,1267.962758,Survey
-3WNW,4W,2074.379926,Survey
-3WNW,4WNW,8900.252505,Survey
-3WNW,4WSW,501.7362429,Survey
-3WNW,XIN,330.15816,Survey
-3WSW,1,35133.60891,Survey
-3WSW,2N,1454.638845,Survey
-3WSW,2NW,5714.138306,Survey
-3WSW,2S,3677.364891,Survey
-3WSW,2SW,5297.465566,Survey
-3WSW,2W,10842.13926,Survey
-3WSW,2WNW,1908.153906,Survey
-3WSW,2WSW,10159.74437,Survey
-3WSW,3IN,1578.79524,Survey
-3WSW,3N,935.1416105,Survey
-3WSW,3NW,5609.867274,Survey
-3WSW,3S,4061.158988,Survey
-3WSW,3SW,14811.64243,Survey
-3WSW,3W,30316.89509,Survey
-3WSW,3WNW,13860.31111,Survey
-3WSW,3WSW,169705.3509,Survey
-3WSW,4N,285.2412456,Survey
-3WSW,4NW,4256.125781,Survey
-3WSW,4SW,22912.23993,Survey
-3WSW,4W,5359.792569,Survey
-3WSW,4WNW,1348.88279,Survey
-3WSW,4WSW,29988.94222,Survey
-3WSW,XIL,996.2023844,Survey
-3WSW,XIN,377.17788,Survey
-4N,1,11723.47459,Survey
-4N,2N,3329.896603,Survey
-4N,2NW,1213.438986,Survey
-4N,2S,875.1946546,Survey
-4N,2WNW,214.104996,Survey
-4N,3N,8522.185562,Survey
-4N,3NW,2859.97185,Survey
-4N,3SW,122.5748526,Survey
-4N,3W,1110.232623,Survey
-4N,3WNW,2045.950769,Survey
-4N,3WSW,826.8499786,Survey
-4N,4N,66212.8253,Survey
-4N,4NW,40070.68021,Survey
-4N,4WSW,103.1892874,Survey
-4NW,1,16769.2271,Survey
-4NW,2N,7147.953391,Survey
-4NW,2NW,11430.12183,Survey
-4NW,2S,1305.48895,Survey
-4NW,2SW,883.3719818,Survey
-4NW,2W,2139.179778,Survey
-4NW,2WNW,2886.394702,Survey
-4NW,2WSW,1114.493164,Survey
-4NW,3N,12647.31863,Survey
-4NW,3NW,32461.23712,Survey
-4NW,3SW,307.8369462,Survey
-4NW,3W,4158.766847,Survey
-4NW,3WNW,14822.36346,Survey
-4NW,3WSW,5057.846664,Survey
-4NW,4N,34994.05977,Survey
-4NW,4NW,296165.2733,Survey
-4NW,4SW,724.107665,Survey
-4NW,4W,903.3443609,Survey
-4NW,4WNW,12575.16144,Survey
-4NW,4WSW,2918.800315,Survey
-4NW,XIN,65.51746,Survey
-4SW,1,10586.75336,Survey
-4SW,2N,125.2211413,Survey
-4SW,2NW,1945.661963,Survey
-4SW,2S,4314.162147,Survey
-4SW,2SW,8339.231135,Survey
-4SW,2W,2429.195001,Survey
-4SW,2WNW,303.0175354,Survey
-4SW,2WSW,2517.768389,Survey
-4SW,3IN,702.4839519,Survey
-4SW,3N,1406.407348,Survey
-4SW,3NW,1611.692308,Survey
-4SW,3S,6380.118812,Survey
-4SW,3SW,14269.14531,Survey
-4SW,3W,2078.561935,Survey
-4SW,3WNW,2446.289566,Survey
-4SW,3WSW,24438.65977,Survey
-4SW,4NW,697.146477,Survey
-4SW,4SW,107521.2507,Survey
-4SW,4WSW,1825.947235,Survey
-4SW,XIL,4792.28932,Survey
-4W,1,2652.153555,Survey
-4W,2N,529.9899785,Survey
-4W,2NW,304.1648967,Survey
-4W,2S,395.5397629,Survey
-4W,2SW,533.4464878,Survey
-4W,2W,141.5286523,Survey
-4W,3IN,69.75132,Survey
-4W,3NW,370.1951943,Survey
-4W,3W,5154.392169,Survey
-4W,3WNW,1616.501705,Survey
-4W,3WSW,6026.021121,Survey
-4W,4NW,1386.986384,Survey
-4W,4SW,344.3826305,Survey
-4W,4W,29332.73793,Survey
-4W,4WNW,4828.97991,Survey
-4W,4WSW,5025.583537,Survey
-4WNW,1,1472.531497,Survey
-4WNW,2N,239.8317582,Survey
-4WNW,2NW,5252.564451,Survey
-4WNW,2W,248.950875,Survey
-4WNW,2WNW,555.3920628,Survey
-4WNW,2WSW,518.0970617,Survey
-4WNW,3NW,6825.841187,Survey
-4WNW,3SW,124.4754375,Survey
-4WNW,3W,6338.347798,Survey
-4WNW,3WNW,10646.29279,Survey
-4WNW,3WSW,3849.564416,Survey
-4WNW,4N,83.43926532,Survey
-4WNW,4NW,13373.92457,Survey
-4WNW,4W,4168.429806,Survey
-4WNW,4WNW,39777.81242,Survey
-4WNW,4WSW,241.9204854,Survey
-4WSW,1,3311.818621,Survey
-4WSW,2N,173.094136,Survey
-4WSW,2NW,295.2819447,Survey
-4WSW,2S,1332.635352,Survey
-4WSW,2W,185.2127866,Survey
-4WSW,2WNW,1643.325092,Survey
-4WSW,2WSW,1517.682121,Survey
-4WSW,3IN,68.28675,Survey
-4WSW,3NW,418.8090964,Survey
-4WSW,3S,469.3328124,Survey
-4WSW,3SW,556.7878212,Survey
-4WSW,3W,7598.952822,Survey
-4WSW,3WNW,591.8659652,Survey
-4WSW,3WSW,30126.0181,Survey
-4WSW,4NW,1608.350196,Survey
-4WSW,4SW,1750.609642,Survey
-4WSW,4W,5379.496346,Survey
-4WSW,4WNW,3888.197733,Survey
-4WSW,4WSW,44793.19193,Survey
-4WSW,XIL,248.950875,Survey
-XIL,2WSW,270.1326069,Survey
-XIL,3S,181.9309619,Survey
-XIL,3WSW,1126.080563,Survey
-XIL,4NW,317.1417833,Survey
-XIL,4SW,5616.043021,Survey
-XIL,4WSW,248.950875,Survey
-XIL,XIL,20652.30277,Survey
-XIL,XIN,30.00806,Survey
-XIN,1,3403.77736,Survey
-XIN,2N,188.86356,Survey
-XIN,2NW,196.33273,Survey
-XIN,2S,1736.36334,Survey
-XIN,2SW,1420.48595,Survey
-XIN,2W,117.88124,Survey
-XIN,2WNW,72.90164,Survey
-XIN,2WSW,193.04109,Survey
-XIN,3IN,38032.19408,Survey
-XIN,3NW,24.02958,Survey
-XIN,3S,2027.51197,Survey
-XIN,3SW,1139.374128,Survey
-XIN,3W,112.44977,Survey
-XIN,3WNW,330.15816,Survey
-XIN,3WSW,327.05628,Survey
-XIN,4NW,35.67341,Survey
-XIN,4SW,35.63875,Survey
-XIN,XIL,30.00806,Survey
-XIN,XIN,152460.2721,Survey
+root,node,count,Category,color
+CBD,DuPage,461744.8675,Survey,#c26ac6
+CBD,IL,473.1918851,Survey,#c26ac7
+CBD,IN,2144.662612,Survey,#c26ac8
+CBD,Kane,137809.4848,Survey,#c26ac9
+CBD,Kendall,185105.1733,Survey,#c26ac10
+CBD,CBD,455896.7861,Survey,#c26ac11
+CBD,Lake,464137.4285,Survey,#c26ac12
+CBD,McHenry,117468.3273,Survey,#c26ac13
+CBD,North Chicago,963524.5053,Survey,#c26ac14
+CBD,North Cook,348893.4492,Survey,#c26ac15
+CBD,South Chicago,658997.6734,Survey,#c26ac16
+CBD,South Cook,373294.6946,Survey,#c26ac17
+CBD,West Chicago,298785.9029,Survey,#c26ac18
+CBD,West Cook,307471.3849,Survey,#c26ac19
+CBD,Will,476264.9545,Survey,#c26ac20
+CBD,DuPage,14785,Model,#c26ac21
+CBD,IL,515,Model,#c26ac22
+CBD,IN,6810,Model,#c26ac23
+CBD,Kane,1925,Model,#c26ac24
+CBD,Kendall,390,Model,#c26ac25
+CBD,CBD,257265,Model,#c26ac26
+CBD,Lake,3945,Model,#c26ac27
+CBD,McHenry,470,Model,#c26ac28
+CBD,North Chicago,237610,Model,#c26ac29
+CBD,North Cook,19165,Model,#c26ac30
+CBD,South Chicago,118815,Model,#c26ac31
+CBD,South Cook,21495,Model,#c26ac32
+CBD,WI,340,Model,#c26ac33
+CBD,West Chicago,116850,Model,#c26ac34
+CBD,West Cook,41915,Model,#c26ac35
+CBD,Will,6755,Model,#c26ac36
+DuPage,DuPage,210994621.1,Survey,#9aaf3e
+DuPage,IL,1950415.8,Survey,#9aaf3e
+DuPage,IN,16446.00329,Survey,#9aaf3e
+DuPage,Kane,11970511.2,Survey,#9aaf3e
+DuPage,Kendall,13418737.9,Survey,#9aaf3e
+DuPage,CBD,484980.1741,Survey,#9aaf3e
+DuPage,Lake,2603908.003,Survey,#9aaf3e
+DuPage,McHenry,1458277.694,Survey,#9aaf3e
+DuPage,North Chicago,1550650.443,Survey,#9aaf3e
+DuPage,North Cook,2823733.375,Survey,#9aaf3e
+DuPage,South Chicago,859204.7061,Survey,#9aaf3e
+DuPage,South Cook,1709376.861,Survey,#9aaf3e
+DuPage,West Chicago,722783.1653,Survey,#9aaf3e
+DuPage,West Cook,9315853.237,Survey,#9aaf3e
+DuPage,Will,20434466.01,Survey,#9aaf3e
+DuPage,DuPage,2325715,Model,#9aaf3e
+DuPage,IL,13550,Model,#9aaf3e
+DuPage,IN,1755,Model,#9aaf3e
+DuPage,Kane,153100,Model,#9aaf3e
+DuPage,Kendall,29120,Model,#9aaf3e
+DuPage,CBD,15165,Model,#9aaf3e
+DuPage,Lake,12855,Model,#9aaf3e
+DuPage,McHenry,8825,Model,#9aaf3e
+DuPage,North Chicago,44055,Model,#9aaf3e
+DuPage,North Cook,89885,Model,#9aaf3e
+DuPage,South Chicago,13330,Model,#9aaf3e
+DuPage,South Cook,32510,Model,#9aaf3e
+DuPage,WI,1075,Model,#9aaf3e
+DuPage,West Chicago,22925,Model,#9aaf3e
+DuPage,West Cook,314635,Model,#9aaf3e
+DuPage,Will,180300,Model,#9aaf3e
+IL,DuPage,2203130.453,Survey,#726cd7
+IL,IL,517425607.6,Survey,#726cd8
+IL,IN,0,Survey,#726cd9
+IL,Kane,76937.50616,Survey,#726cd10
+IL,Kendall,2179196.936,Survey,#726cd11
+IL,CBD,49087.63807,Survey,#726cd12
+IL,Lake,3425.679936,Survey,#726cd13
+IL,McHenry,11417.1042,Survey,#726cd14
+IL,North Chicago,1640.111036,Survey,#726cd15
+IL,North Cook,1296.733956,Survey,#726cd16
+IL,South Chicago,181.9309619,Survey,#726cd17
+IL,South Cook,2801903.824,Survey,#726cd18
+IL,West Chicago,1348.524192,Survey,#726cd19
+IL,West Cook,926603.2085,Survey,#726cd20
+IL,Will,36984754.73,Survey,#726cd21
+IL,DuPage,13395,Model,#726cd22
+IL,IL,1954900,Model,#726cd23
+IL,IN,4385,Model,#726cd24
+IL,Kane,27470,Model,#726cd25
+IL,Kendall,12335,Model,#726cd26
+IL,CBD,580,Model,#726cd27
+IL,Lake,2405,Model,#726cd28
+IL,McHenry,18735,Model,#726cd29
+IL,North Chicago,2120,Model,#726cd30
+IL,North Cook,3375,Model,#726cd31
+IL,South Chicago,2620,Model,#726cd32
+IL,South Cook,10045,Model,#726cd33
+IL,WI,3475,Model,#726cd34
+IL,West Chicago,1255,Model,#726cd35
+IL,West Cook,5340,Model,#726cd36
+IL,Will,36820,Model,#726cd37
+IN,DuPage,10302.6679,Survey,#5bbc73
+IN,IL,0,Survey,#5bbc74
+IN,IN,21894.57552,Survey,#5bbc75
+IN,Kane,3104.328764,Survey,#5bbc76
+IN,CBD,1487.500684,Survey,#5bbc77
+IN,Lake,11963.6944,Survey,#5bbc78
+IN,North Chicago,6688.731057,Survey,#5bbc79
+IN,North Cook,1689.0774,Survey,#5bbc80
+IN,South Chicago,63817.65539,Survey,#5bbc81
+IN,South Cook,277129.0806,Survey,#5bbc82
+IN,West Chicago,3423.908116,Survey,#5bbc83
+IN,West Cook,23272.23651,Survey,#5bbc84
+IN,Will,112238.5617,Survey,#5bbc85
+IN,DuPage,1720,Model,#5bbc86
+IN,IL,4390,Model,#5bbc87
+IN,IN,1927885,Model,#5bbc88
+IN,Kane,130,Model,#5bbc89
+IN,Kendall,90,Model,#5bbc90
+IN,CBD,7145,Model,#5bbc91
+IN,Lake,330,Model,#5bbc92
+IN,McHenry,25,Model,#5bbc93
+IN,North Chicago,7125,Model,#5bbc94
+IN,North Cook,1875,Model,#5bbc95
+IN,South Chicago,47080,Model,#5bbc96
+IN,South Cook,135720,Model,#5bbc97
+IN,WI,40,Model,#5bbc98
+IN,West Chicago,5810,Model,#5bbc99
+IN,West Cook,3000,Model,#5bbc100
+IN,Will,19255,Model,#5bbc101
+Kane,DuPage,12374187.64,Survey,#573687
+Kane,IL,2742216.157,Survey,#573688
+Kane,IN,1413.444632,Survey,#573689
+Kane,Kane,198325302.8,Survey,#573690
+Kane,Kendall,13205742.48,Survey,#573691
+Kane,CBD,131848.3769,Survey,#573692
+Kane,Lake,2222192.169,Survey,#573693
+Kane,McHenry,19378163.34,Survey,#573694
+Kane,North Chicago,359651.8413,Survey,#573695
+Kane,North Cook,1928373.351,Survey,#573696
+Kane,South Chicago,184643.35,Survey,#573697
+Kane,South Cook,414080.1806,Survey,#573698
+Kane,West Chicago,158015.6646,Survey,#573699
+Kane,West Cook,5325560.36,Survey,#573700
+Kane,Will,3868116.52,Survey,#573701
+Kane,DuPage,152225,Model,#573702
+Kane,IL,27150,Model,#573703
+Kane,IN,130,Model,#573704
+Kane,Kane,1016810,Model,#573705
+Kane,Kendall,44230,Model,#573706
+Kane,CBD,2095,Model,#573707
+Kane,Lake,10655,Model,#573708
+Kane,McHenry,60275,Model,#573709
+Kane,North Chicago,6770,Model,#573710
+Kane,North Cook,32800,Model,#573711
+Kane,South Chicago,1380,Model,#573712
+Kane,South Cook,2015,Model,#573713
+Kane,WI,1510,Model,#573714
+Kane,West Chicago,2270,Model,#573715
+Kane,West Cook,74290,Model,#573716
+Kane,Will,23545,Model,#573717
+Kendall,DuPage,13932472.44,Survey,#c99035
+Kendall,IL,15131368.58,Survey,#c99036
+Kendall,Kane,12126305.05,Survey,#c99037
+Kendall,Kendall,362552609.3,Survey,#c99038
+Kendall,CBD,144444.4448,Survey,#c99039
+Kendall,McHenry,783850.0133,Survey,#c99040
+Kendall,North Chicago,215612.6694,Survey,#c99041
+Kendall,North Cook,35848.926,Survey,#c99042
+Kendall,South Chicago,207350.1955,Survey,#c99043
+Kendall,South Cook,106587.4406,Survey,#c99044
+Kendall,West Chicago,313206.9573,Survey,#c99045
+Kendall,West Cook,360095.8869,Survey,#c99046
+Kendall,Will,25964089.67,Survey,#c99047
+Kendall,DuPage,29425,Model,#c99048
+Kendall,IL,12355,Model,#c99049
+Kendall,IN,75,Model,#c99050
+Kendall,Kane,43785,Model,#c99051
+Kendall,Kendall,165460,Model,#c99052
+Kendall,CBD,420,Model,#c99053
+Kendall,Lake,225,Model,#c99054
+Kendall,McHenry,385,Model,#c99055
+Kendall,North Chicago,865,Model,#c99056
+Kendall,North Cook,715,Model,#c99057
+Kendall,South Chicago,520,Model,#c99058
+Kendall,South Cook,1485,Model,#c99059
+Kendall,WI,5,Model,#c99060
+Kendall,West Chicago,620,Model,#c99061
+Kendall,West Cook,2955,Model,#c99062
+Kendall,Will,29765,Model,#c99063
+Lake,DuPage,3165048.877,Survey,#5083de
+Lake,IL,6851.359872,Survey,#5083de
+Lake,IN,2958.359397,Survey,#5083de
+Lake,Kane,1284328.087,Survey,#5083de
+Lake,Kendall,7429.628689,Survey,#5083de
+Lake,CBD,498310.6609,Survey,#5083de
+Lake,Lake,385372100.1,Survey,#5083de
+Lake,McHenry,15194627.05,Survey,#5083de
+Lake,North Chicago,1411410.796,Survey,#5083de
+Lake,North Cook,14210224.18,Survey,#5083de
+Lake,South Chicago,236736.5931,Survey,#5083de
+Lake,South Cook,595873.4815,Survey,#5083de
+Lake,West Chicago,260199.4172,Survey,#5083de
+Lake,West Cook,2436485.831,Survey,#5083de
+Lake,Will,568290.4981,Survey,#5083de
+Lake,DuPage,12855,Model,#5083de
+Lake,IL,2400,Model,#5083de
+Lake,IN,255,Model,#5083de
+Lake,Kane,10630,Model,#5083de
+Lake,Kendall,210,Model,#5083de
+Lake,CBD,4250,Model,#5083de
+Lake,Lake,1647680,Model,#5083de
+Lake,McHenry,70800,Model,#5083de
+Lake,North Chicago,20505,Model,#5083de
+Lake,North Cook,228975,Model,#5083de
+Lake,South Chicago,2235,Model,#5083de
+Lake,South Cook,1170,Model,#5083de
+Lake,WI,61855,Model,#5083de
+Lake,West Chicago,3870,Model,#5083de
+Lake,West Cook,17940,Model,#5083de
+Lake,Will,895,Model,#5083de
+McHenry,DuPage,1194144.393,Survey,#698d3c
+McHenry,IL,11417.1042,Survey,#698d3c
+McHenry,Kane,19795459.72,Survey,#698d3c
+McHenry,Kendall,783850.0133,Survey,#698d3c
+McHenry,CBD,115730.669,Survey,#698d3c
+McHenry,Lake,16736748.35,Survey,#698d3c
+McHenry,McHenry,333501035,Survey,#698d3c
+McHenry,North Chicago,1120419.843,Survey,#698d3c
+McHenry,North Cook,4515837.592,Survey,#698d3c
+McHenry,South Chicago,219954.0874,Survey,#698d3c
+McHenry,South Cook,175552.2685,Survey,#698d3c
+McHenry,West Chicago,471754.1067,Survey,#698d3c
+McHenry,West Cook,3050000.361,Survey,#698d3c
+McHenry,Will,820337.7089,Survey,#698d3c
+McHenry,DuPage,8890,Model,#698d3c
+McHenry,IL,18805,Model,#698d3c
+McHenry,IN,25,Model,#698d3c
+McHenry,Kane,59705,Model,#698d3c
+McHenry,Kendall,365,Model,#698d3c
+McHenry,CBD,550,Model,#698d3c
+McHenry,Lake,70410,Model,#698d3c
+McHenry,McHenry,642115,Model,#698d3c
+McHenry,North Chicago,3630,Model,#698d3c
+McHenry,North Cook,32745,Model,#698d3c
+McHenry,South Chicago,390,Model,#698d3c
+McHenry,South Cook,340,Model,#698d3c
+McHenry,WI,18450,Model,#698d3c
+McHenry,West Chicago,655,Model,#698d3c
+McHenry,West Cook,13985,Model,#698d3c
+McHenry,Will,600,Model,#698d3c
+North Chicago,DuPage,1487275.701,Survey,#d971b0
+North Chicago,IL,1640.111036,Survey,#d971b1
+North Chicago,IN,8132.04803,Survey,#d971b2
+North Chicago,Kane,453065.1105,Survey,#d971b3
+North Chicago,Kendall,71484.66756,Survey,#d971b4
+North Chicago,CBD,943915.2398,Survey,#d971b5
+North Chicago,Lake,1675909.569,Survey,#d971b6
+North Chicago,McHenry,1105521.535,Survey,#d971b7
+North Chicago,North Chicago,38390075.91,Survey,#d971b8
+North Chicago,North Cook,6391215.352,Survey,#d971b9
+North Chicago,South Chicago,2332077.011,Survey,#d971b10
+North Chicago,South Cook,707344.0974,Survey,#d971b11
+North Chicago,West Chicago,4952029.729,Survey,#d971b12
+North Chicago,West Cook,2644542.338,Survey,#d971b13
+North Chicago,Will,1360960.09,Survey,#d971b14
+North Chicago,DuPage,44545,Model,#d971b15
+North Chicago,IL,2070,Model,#d971b16
+North Chicago,IN,7040,Model,#d971b17
+North Chicago,Kane,6690,Model,#d971b18
+North Chicago,Kendall,780,Model,#d971b19
+North Chicago,CBD,234960,Model,#d971b20
+North Chicago,Lake,20925,Model,#d971b21
+North Chicago,McHenry,3505,Model,#d971b22
+North Chicago,North Chicago,2056395,Model,#d971b23
+North Chicago,North Cook,330975,Model,#d971b24
+North Chicago,South Chicago,90185,Model,#d971b25
+North Chicago,South Cook,21290,Model,#d971b26
+North Chicago,WI,1770,Model,#d971b27
+North Chicago,West Chicago,357095,Model,#d971b28
+North Chicago,West Cook,178460,Model,#d971b29
+North Chicago,Will,9140,Model,#d971b30
+North Cook,DuPage,2926946.388,Survey,#43c8ac
+North Cook,IL,1991.523396,Survey,#43c8ac
+North Cook,IN,1402.086225,Survey,#43c8ac
+North Cook,Kane,2187837.086,Survey,#43c8ac
+North Cook,CBD,361099.3779,Survey,#43c8ac
+North Cook,Lake,14251531.91,Survey,#43c8ac
+North Cook,McHenry,4839750.528,Survey,#43c8ac
+North Cook,North Chicago,6137641.501,Survey,#43c8ac
+North Cook,North Cook,70983772.09,Survey,#43c8ac
+North Cook,South Chicago,448200.0388,Survey,#43c8ac
+North Cook,South Cook,1052477.574,Survey,#43c8ac
+North Cook,West Chicago,491746.9255,Survey,#43c8ac
+North Cook,West Cook,6263266.579,Survey,#43c8ac
+North Cook,Will,1211398.499,Survey,#43c8ac
+North Cook,DuPage,89575,Model,#43c8ac
+North Cook,IL,3405,Model,#43c8ac
+North Cook,IN,1875,Model,#43c8ac
+North Cook,Kane,32895,Model,#43c8ac
+North Cook,Kendall,705,Model,#43c8ac
+North Cook,CBD,18385,Model,#43c8ac
+North Cook,Lake,229435,Model,#43c8ac
+North Cook,McHenry,32495,Model,#43c8ac
+North Cook,North Chicago,332060,Model,#43c8ac
+North Cook,North Cook,2074020,Model,#43c8ac
+North Cook,South Chicago,10220,Model,#43c8ac
+North Cook,South Cook,6255,Model,#43c8ac
+North Cook,WI,7175,Model,#43c8ac
+North Cook,West Chicago,24495,Model,#43c8ac
+North Cook,West Cook,184365,Model,#43c8ac
+North Cook,Will,5405,Model,#43c8ac
+South Chicago,DuPage,714627.7544,Survey,#8c2b68
+South Chicago,IL,1530.455154,Survey,#8c2b69
+South Chicago,IN,59477.45273,Survey,#8c2b70
+South Chicago,Kane,157041.2081,Survey,#8c2b71
+South Chicago,Kendall,207350.1955,Survey,#8c2b72
+South Chicago,CBD,616994.4749,Survey,#8c2b73
+South Chicago,Lake,272186.9161,Survey,#8c2b74
+South Chicago,McHenry,333162.7053,Survey,#8c2b75
+South Chicago,North Chicago,2280647.931,Survey,#8c2b76
+South Chicago,North Cook,474771.3942,Survey,#8c2b77
+South Chicago,South Chicago,35502155.73,Survey,#8c2b78
+South Chicago,South Cook,5625399.927,Survey,#8c2b79
+South Chicago,West Chicago,3154992.089,Survey,#8c2b80
+South Chicago,West Cook,949340.7014,Survey,#8c2b81
+South Chicago,Will,1598821.923,Survey,#8c2b82
+South Chicago,DuPage,13735,Model,#8c2b83
+South Chicago,IL,2590,Model,#8c2b84
+South Chicago,IN,46925,Model,#8c2b85
+South Chicago,Kane,1365,Model,#8c2b86
+South Chicago,Kendall,510,Model,#8c2b87
+South Chicago,CBD,120205,Model,#8c2b88
+South Chicago,Lake,2245,Model,#8c2b89
+South Chicago,McHenry,410,Model,#8c2b90
+South Chicago,North Chicago,87990,Model,#8c2b91
+South Chicago,North Cook,10405,Model,#8c2b92
+South Chicago,South Chicago,1272670,Model,#8c2b93
+South Chicago,South Cook,246385,Model,#8c2b94
+South Chicago,WI,195,Model,#8c2b95
+South Chicago,West Chicago,183750,Model,#8c2b96
+South Chicago,West Cook,39980,Model,#8c2b97
+South Chicago,Will,15045,Model,#8c2b98
+South Cook,DuPage,1732832.634,Survey,#b98049
+South Cook,IL,2802631.548,Survey,#b98050
+South Cook,IN,187980.5245,Survey,#b98051
+South Cook,Kane,106540.8427,Survey,#b98052
+South Cook,Kendall,204437.2673,Survey,#b98053
+South Cook,CBD,382696.3388,Survey,#b98054
+South Cook,Lake,431033.4951,Survey,#b98055
+South Cook,McHenry,5074.268533,Survey,#b98056
+South Cook,North Chicago,743749.6223,Survey,#b98057
+South Cook,North Cook,1148940.956,Survey,#b98058
+South Cook,South Chicago,5968623.891,Survey,#b98059
+South Cook,South Cook,139298108.2,Survey,#b98060
+South Cook,West Chicago,1653927.131,Survey,#b98061
+South Cook,West Cook,5706990.613,Survey,#b98062
+South Cook,Will,19407256.29,Survey,#b98063
+South Cook,DuPage,32580,Model,#b98064
+South Cook,IL,9905,Model,#b98065
+South Cook,IN,136425,Model,#b98066
+South Cook,Kane,1950,Model,#b98067
+South Cook,Kendall,1450,Model,#b98068
+South Cook,CBD,21980,Model,#b98069
+South Cook,Lake,1175,Model,#b98070
+South Cook,McHenry,320,Model,#b98071
+South Cook,North Chicago,21250,Model,#b98072
+South Cook,North Cook,6405,Model,#b98073
+South Cook,South Chicago,245760,Model,#b98074
+South Cook,South Cook,1735240,Model,#b98075
+South Cook,WI,55,Model,#b98076
+South Cook,West Chicago,46275,Model,#b98077
+South Cook,West Cook,85680,Model,#b98078
+South Cook,Will,150765,Model,#b98079
+West Chicago,DuPage,773078.4736,Survey,#848bd3
+West Chicago,IN,2736.450502,Survey,#848bd4
+West Chicago,Kane,109944.9614,Survey,#848bd5
+West Chicago,CBD,303343.9988,Survey,#848bd6
+West Chicago,Lake,233684.2756,Survey,#848bd7
+West Chicago,McHenry,270027.5768,Survey,#848bd8
+West Chicago,North Chicago,5187599.501,Survey,#848bd9
+West Chicago,North Cook,545707.4547,Survey,#848bd10
+West Chicago,South Chicago,3070668.579,Survey,#848bd11
+West Chicago,South Cook,1556877.155,Survey,#848bd12
+West Chicago,West Chicago,13059377.5,Survey,#848bd13
+West Chicago,West Cook,2823599.173,Survey,#848bd14
+West Chicago,Will,1181325.512,Survey,#848bd15
+West Chicago,DuPage,23075,Model,#848bd16
+West Chicago,IL,1245,Model,#848bd17
+West Chicago,IN,5710,Model,#848bd18
+West Chicago,Kane,2240,Model,#848bd19
+West Chicago,Kendall,540,Model,#848bd20
+West Chicago,CBD,117960,Model,#848bd21
+West Chicago,Lake,3775,Model,#848bd22
+West Chicago,McHenry,655,Model,#848bd23
+West Chicago,North Chicago,356305,Model,#848bd24
+West Chicago,North Cook,24910,Model,#848bd25
+West Chicago,South Chicago,183825,Model,#848bd26
+West Chicago,South Cook,46485,Model,#848bd27
+West Chicago,WI,425,Model,#848bd28
+West Chicago,West Chicago,646070,Model,#848bd29
+West Chicago,West Cook,149970,Model,#848bd30
+West Chicago,Will,8075,Model,#848bd31
+West Cook,DuPage,9278667.045,Survey,#b44931
+West Cook,IL,923235.0748,Survey,#b44932
+West Cook,IN,22222.48563,Survey,#b44933
+West Cook,Kane,4220819.569,Survey,#b44934
+West Cook,Kendall,245155.7656,Survey,#b44935
+West Cook,CBD,286102.5425,Survey,#b44936
+West Cook,Lake,1931509.407,Survey,#b44937
+West Cook,McHenry,2875137.477,Survey,#b44938
+West Cook,North Chicago,2825231.771,Survey,#b44939
+West Cook,North Cook,6218398.525,Survey,#b44940
+West Cook,South Chicago,779427.5068,Survey,#b44941
+West Cook,South Cook,6312958.712,Survey,#b44942
+West Cook,West Chicago,2906548.11,Survey,#b44943
+West Cook,West Cook,64538775.91,Survey,#b44944
+West Cook,Will,3392946.219,Survey,#b44945
+West Cook,DuPage,315365,Model,#b44946
+West Cook,IL,5240,Model,#b44947
+West Cook,IN,3100,Model,#b44948
+West Cook,Kane,74525,Model,#b44949
+West Cook,Kendall,2875,Model,#b44950
+West Cook,CBD,40575,Model,#b44951
+West Cook,Lake,17965,Model,#b44952
+West Cook,McHenry,13950,Model,#b44953
+West Cook,North Chicago,178040,Model,#b44954
+West Cook,North Cook,183400,Model,#b44955
+West Cook,South Chicago,40415,Model,#b44956
+West Cook,South Cook,86885,Model,#b44957
+West Cook,WI,1165,Model,#b44958
+West Cook,West Chicago,150510,Model,#b44959
+West Cook,West Cook,1330010,Model,#b44960
+West Cook,Will,40610,Model,#b44961
+WI,DuPage,0,Survey,#c04b6d
+WI,IL,0,Survey,#c04b6d
+WI,IN,0,Survey,#c04b6d
+WI,Kane,0,Survey,#c04b6d
+WI,Kendall,0,Survey,#c04b6d
+WI,CBD,0,Survey,#c04b6d
+WI,Lake,0,Survey,#c04b6d
+WI,McHenry,0,Survey,#c04b6d
+WI,North Chicago,0,Survey,#c04b6d
+WI,North Cook,0,Survey,#c04b6d
+WI,South Chicago,0,Survey,#c04b6d
+WI,South Cook,0,Survey,#c04b6d
+WI,West Chicago,0,Survey,#c04b6d
+WI,West Cook,0,Survey,#c04b6d
+WI,Will,0,Survey,#c04b6d
+WI,DuPage,1125,Model,#c04b6d
+WI,IL,3455,Model,#c04b6d
+WI,IN,30,Model,#c04b6d
+WI,Kane,1625,Model,#c04b6d
+WI,Kendall,5,Model,#c04b6d
+WI,CBD,385,Model,#c04b6d
+WI,Lake,61595,Model,#c04b6d
+WI,McHenry,18170,Model,#c04b6d
+WI,North Chicago,1850,Model,#c04b6d
+WI,North Cook,7515,Model,#c04b6d
+WI,South Chicago,175,Model,#c04b6d
+WI,South Cook,60,Model,#c04b6d
+WI,WI,1199320,Model,#c04b6d
+WI,West Chicago,410,Model,#c04b6d
+WI,West Cook,1135,Model,#c04b6d
+WI,Will,30,Model,#c04b6d
+Will,DuPage,21317226.33,Survey,#bc4850
+Will,IL,35291482.12,Survey,#bc4851
+Will,IN,115693.8428,Survey,#bc4852
+Will,Kane,4590497.028,Survey,#bc4853
+Will,Kendall,27171802.37,Survey,#bc4854
+Will,CBD,534001.0128,Survey,#bc4855
+Will,Lake,1096168.896,Survey,#bc4856
+Will,McHenry,610388.067,Survey,#bc4857
+Will,North Chicago,1178722.022,Survey,#bc4858
+Will,North Cook,958695.5061,Survey,#bc4859
+Will,South Chicago,1146255.353,Survey,#bc4860
+Will,South Cook,19356864.19,Survey,#bc4861
+Will,West Chicago,800340.8601,Survey,#bc4862
+Will,West Cook,3551544.387,Survey,#bc4863
+Will,Will,397881050.2,Survey,#bc4864
+Will,DuPage,179790,Model,#bc4865
+Will,IL,37280,Model,#bc4866
+Will,IN,19195,Model,#bc4867
+Will,Kane,23305,Model,#bc4868
+Will,Kendall,29995,Model,#bc4869
+Will,CBD,7130,Model,#bc4870
+Will,Lake,905,Model,#bc4871
+Will,McHenry,525,Model,#bc4872
+Will,North Chicago,9255,Model,#bc4873
+Will,North Cook,5600,Model,#bc4874
+Will,South Chicago,14785,Model,#bc4875
+Will,South Cook,149835,Model,#bc4876
+Will,WI,30,Model,#bc4877
+Will,West Chicago,8405,Model,#bc4878
+Will,West Cook,40970,Model,#bc4879
+Will,Will,1308350,Model,#bc4880

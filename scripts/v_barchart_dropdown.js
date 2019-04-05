@@ -82,6 +82,7 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
       catInt = d3.select(catID).property('value');
 
       var newdata = data.filter(function(d){
+        //console.log(d)
         return d.Category == catInt;
       });
       ////console.log(newdata);
@@ -135,7 +136,10 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
         .call(yAxis);
 
       var barGroups = g.selectAll(".layer") // Bargroups initialized here for proper sorting
-        .data(newdata, function(d) { return d.Index }); // DON'T FORGET KEY FUNCTION
+        .data(newdata, function(d) {
+          //console.log(d)
+          return d.Index
+        }); // DON'T FORGET KEY FUNCTION
 
       barGroups.enter().append("g")
         .classed('layer', true);
@@ -184,8 +188,8 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
         .attr("x", function(d) { return x1(d.key); })
         .attr("fill", function(d) { return z(d.key); })
         .merge(bars);
-      
-      console.log(x1.bandwidth());
+
+      //console.log(x1.bandwidth());
 
       bars.transition().duration(durations)
         .attr("y", function(d) {

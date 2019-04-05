@@ -16,7 +16,7 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
   var divTitle = document.getElementById(dtitle);
   var ngroups= nogroups+1
   var formatValue = d3.format(".2s");
-  var margin = {top: 35, right: 80, bottom: 100, left: 45},
+  var margin = {top: 35, right: 80, bottom: 100, left: 100},
     width = 400 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
 
@@ -73,7 +73,11 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
           d.descr = d.Description;
           d.title = d.Title;
           ttl += d[columns[i]] = +d[columns[i]];
-          d.total = ttl;
+          d.total = ttl
+          d.M = parseInt(d.Model)
+          d.S = parseInt(d.Survey)
+          d.Model = d.M
+          d.Survey = d.S
           return d;
   })
   .await(function(error, data){
@@ -101,10 +105,13 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
       catInt = d3.select(catID).property('value');
 
       var newdata = data.filter(function(d){
+        //console.log(d)
         return d.Category == catInt;
       });
-      ////console.log(newdata);
+      console.log(newdata)
+      //console.log(newdata);
       keys = data.columns.slice(1, ngroups); //Filter columns for Group Labels
+      console.log(keys)
       ////console.log(keys)
       copy = [];
       keys.forEach(function(t) {
@@ -120,6 +127,8 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
         s = s.slice(0)  //Slice column label to select subgroup
         keysLegend.push(s)
       })
+
+      //console.log(keysLegend)
 
       newdata.forEach(function(d, i, columns) {
         for (var i = 0, test = 0, n = keysLegend.length; i < n; ++i)
@@ -152,7 +161,9 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
             .attr("transform", "rotate(-65)");
 
       var barGroups = g.selectAll(".layer") // Bargroups initialized here for proper sorting
-        .data(newdata, function(d) { return d.Index }); // DON'T FORGET KEY FUNCTION
+        .data(newdata, function(d) {
+          console.log(d)
+          return d.Index }); // DON'T FORGET KEY FUNCTION
 
       barGroups.enter().append("g")
         .classed('layer', true);
@@ -185,7 +196,10 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
       let bars = g.selectAll(".layer").selectAll("rect")
         .data(function(d) {
           return copy.map(function(key) {
-            return {key: key, value: d[key]};
+            //console.log( d[key])
+            return {
+              key: key, value: d[key]
+            };
           });
         });
 
@@ -194,7 +208,8 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
           .append("rect")
           .attr("x", 0)
           .attr("y", function (d) {return y1(d.key)})
-          .attr("width", function (d) {  return width - x(d.value);})
+          .attr("width", function (d) {
+            return x(d.value);})
           .attr("height", y1.bandwidth())
           .attr("fill", function(d) { return z(d.key); })
           .merge(bars);
@@ -202,7 +217,7 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
           bars.transition().duration(durations)
             .attr("x", 0)
             .attr("width", function(d) {
-              return width - x(d["value"]);
+              return x(d["value"]);
             });
 
       // ======== Grouped bar text ========
@@ -237,7 +252,7 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
       legend = legend
         .enter()
       .append("rect")
-        .attr("class","legend")
+        .attr("class","barlegend")
         .attr("transform", function(d, i) {
           return "translate(0," + i * 40 + ")";
         })
@@ -271,7 +286,7 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
 
       legendText.transition().duration(durations)
         .text(function(d) {
-          var sliceLegend = d.slice(0, -2)
+          var sliceLegend = d.slice(0, -1)
           return sliceLegend;
         });
 

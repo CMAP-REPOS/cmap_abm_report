@@ -1,0 +1,233 @@
+origAreaName,destAreaName,Model
+DuPage,DuPage,479770.0
+DuPage,IL,2240.0
+DuPage,IN,125.0
+DuPage,Kane,39595.0
+DuPage,Kendall,8875.0
+DuPage,LOOP,11970.0
+DuPage,Lake,2095.0
+DuPage,McHenry,1460.0
+DuPage,North Chicago,13045.0
+DuPage,North Cook,24655.0
+DuPage,South Chicago,1705.0
+DuPage,South Cook,7555.0
+DuPage,WI,55.0
+DuPage,West Chicago,5245.0
+DuPage,West Cook,70500.0
+DuPage,Will,43650.0
+IL,DuPage,2425.0
+IL,IL,345390.0
+IL,IN,785.0
+IL,Kane,9130.0
+IL,Kendall,2790.0
+IL,LOOP,115.0
+IL,Lake,110.0
+IL,McHenry,7140.0
+IL,North Chicago,40.0
+IL,North Cook,295.0
+IL,South Chicago,145.0
+IL,South Cook,1580.0
+IL,WI,685.0
+IL,West Chicago,5.0
+IL,West Cook,730.0
+IL,Will,9400.0
+IN,DuPage,105.0
+IN,IL,815.0
+IN,IN,333435.0
+IN,LOOP,5475.0
+IN,Lake,5.0
+IN,North Chicago,735.0
+IN,North Cook,105.0
+IN,South Chicago,8820.0
+IN,South Cook,24800.0
+IN,West Chicago,1235.0
+IN,West Cook,255.0
+IN,Will,3060.0
+Kane,DuPage,44120.0
+Kane,IL,8360.0
+Kane,Kane,173745.0
+Kane,Kendall,8220.0
+Kane,LOOP,1470.0
+Kane,Lake,2335.0
+Kane,McHenry,10835.0
+Kane,North Chicago,1870.0
+Kane,North Cook,11265.0
+Kane,South Chicago,30.0
+Kane,South Cook,95.0
+Kane,WI,150.0
+Kane,West Chicago,390.0
+Kane,West Cook,15165.0
+Kane,Will,4510.0
+Kendall,DuPage,10475.0
+Kendall,IL,3170.0
+Kendall,Kane,8755.0
+Kendall,Kendall,20375.0
+Kendall,LOOP,305.0
+Kendall,McHenry,5.0
+Kendall,North Chicago,140.0
+Kendall,North Cook,70.0
+Kendall,South Chicago,5.0
+Kendall,South Cook,145.0
+Kendall,West Chicago,90.0
+Kendall,West Cook,695.0
+Kendall,Will,5295.0
+LOOP,DuPage,9310.0
+LOOP,IL,95.0
+LOOP,IN,4405.0
+LOOP,Kane,1255.0
+LOOP,Kendall,255.0
+LOOP,LOOP,112785.0
+LOOP,Lake,2500.0
+LOOP,McHenry,210.0
+LOOP,North Chicago,107450.0
+LOOP,North Cook,9790.0
+LOOP,South Chicago,52210.0
+LOOP,South Cook,13485.0
+LOOP,WI,210.0
+LOOP,West Chicago,39925.0
+LOOP,West Cook,22620.0
+LOOP,Will,4820.0
+Lake,DuPage,2185.0
+Lake,IL,175.0
+Lake,IN,5.0
+Lake,Kane,1925.0
+Lake,LOOP,3010.0
+Lake,Lake,300320.0
+Lake,McHenry,15590.0
+Lake,North Chicago,4640.0
+Lake,North Cook,63040.0
+Lake,South Chicago,80.0
+Lake,South Cook,20.0
+Lake,WI,20265.0
+Lake,West Chicago,575.0
+Lake,West Cook,3575.0
+Lake,Will,25.0
+McHenry,DuPage,1910.0
+McHenry,IL,6140.0
+McHenry,Kane,12200.0
+McHenry,LOOP,280.0
+McHenry,Lake,18040.0
+McHenry,McHenry,86670.0
+McHenry,North Chicago,855.0
+McHenry,North Cook,12930.0
+McHenry,WI,5510.0
+McHenry,West Chicago,35.0
+McHenry,West Cook,4035.0
+North Chicago,DuPage,11815.0
+North Chicago,IL,40.0
+North Chicago,IN,645.0
+North Chicago,Kane,1390.0
+North Chicago,Kendall,70.0
+North Chicago,LOOP,132205.0
+North Chicago,Lake,4685.0
+North Chicago,McHenry,705.0
+North Chicago,North Chicago,359880.0
+North Chicago,North Cook,79485.0
+North Chicago,South Chicago,13140.0
+North Chicago,South Cook,3650.0
+North Chicago,WI,145.0
+North Chicago,West Chicago,66480.0
+North Chicago,West Cook,34190.0
+North Chicago,Will,1130.0
+North Cook,DuPage,24000.0
+North Cook,IL,340.0
+North Cook,IN,120.0
+North Cook,Kane,9225.0
+North Cook,Kendall,40.0
+North Cook,LOOP,12125.0
+North Cook,Lake,62670.0
+North Cook,McHenry,10055.0
+North Cook,North Chicago,73840.0
+North Cook,North Cook,419705.0
+North Cook,South Chicago,1320.0
+North Cook,South Cook,810.0
+North Cook,WI,1820.0
+North Cook,West Chicago,4690.0
+North Cook,West Cook,43415.0
+North Cook,Will,650.0
+South Chicago,DuPage,2280.0
+South Chicago,IL,125.0
+South Chicago,IN,9285.0
+South Chicago,Kane,20.0
+South Chicago,Kendall,15.0
+South Chicago,LOOP,67695.0
+South Chicago,Lake,110.0
+South Chicago,North Chicago,15235.0
+South Chicago,North Cook,1775.0
+South Chicago,South Chicago,129330.0
+South Chicago,South Cook,32580.0
+South Chicago,West Chicago,36865.0
+South Chicago,West Cook,8500.0
+South Chicago,Will,1585.0
+South Cook,DuPage,9500.0
+South Cook,IL,1660.0
+South Cook,IN,28715.0
+South Cook,Kane,75.0
+South Cook,Kendall,110.0
+South Cook,LOOP,17905.0
+South Cook,Lake,20.0
+South Cook,North Chicago,4535.0
+South Cook,North Cook,1035.0
+South Cook,South Chicago,30780.0
+South Cook,South Cook,256370.0
+South Cook,West Chicago,11335.0
+South Cook,West Cook,20910.0
+South Cook,Will,29765.0
+WI,DuPage,45.0
+WI,IL,705.0
+WI,IN,5.0
+WI,Kane,190.0
+WI,LOOP,240.0
+WI,Lake,21330.0
+WI,McHenry,5500.0
+WI,North Chicago,115.0
+WI,North Cook,2085.0
+WI,WI,209695.0
+WI,West Chicago,55.0
+WI,West Cook,55.0
+West Chicago,DuPage,5605.0
+West Chicago,IL,40.0
+West Chicago,IN,1165.0
+West Chicago,Kane,325.0
+West Chicago,Kendall,85.0
+West Chicago,LOOP,52160.0
+West Chicago,Lake,595.0
+West Chicago,McHenry,40.0
+West Chicago,North Chicago,63245.0
+West Chicago,North Cook,5865.0
+West Chicago,South Chicago,31725.0
+West Chicago,South Cook,9725.0
+West Chicago,WI,60.0
+West Chicago,West Chicago,131065.0
+West Chicago,West Cook,27145.0
+West Chicago,Will,1510.0
+West Cook,DuPage,76545.0
+West Cook,IL,660.0
+West Cook,IN,295.0
+West Cook,Kane,14025.0
+West Cook,Kendall,510.0
+West Cook,LOOP,28010.0
+West Cook,Lake,3645.0
+West Cook,McHenry,3235.0
+West Cook,North Chicago,36095.0
+West Cook,North Cook,47150.0
+West Cook,South Chicago,6975.0
+West Cook,South Cook,18395.0
+West Cook,WI,80.0
+West Cook,West Chicago,26660.0
+West Cook,West Cook,217380.0
+West Cook,Will,9515.0
+Will,DuPage,51645.0
+Will,IL,9805.0
+Will,IN,3740.0
+Will,Kane,4930.0
+Will,Kendall,5005.0
+Will,LOOP,5725.0
+Will,Lake,40.0
+Will,North Chicago,1435.0
+Will,North Cook,845.0
+Will,South Chicago,1740.0
+Will,South Cook,29475.0
+Will,West Chicago,1830.0
+Will,West Cook,11830.0
+Will,Will,188970.0

@@ -153,9 +153,10 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
       //   : function(a, b) {
       //     return sortIndex.indexOf(a.Index) - sortIndex.indexOf(b.Index);
       //   });
+      x0.domain(newdata.map(function(d) {
+        return d.Index;
+      }));
 
-
-      x0.domain(newdata.map(function(d) { return d.Index; }));
       x1.domain(keys).rangeRound([0, x0.bandwidth()]);
 
       g.selectAll(".axis.axis--x").transition()
@@ -166,7 +167,6 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
             .attr("dx", "-.8em")
             .attr("dy", ".15em")
             .attr("transform", "rotate(-65)");
-
       // ======== Grouped bars ========
 
       g.selectAll(".layer").transition().duration(durations)

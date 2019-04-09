@@ -1,0 +1,16 @@
+Index,Model 01,Survey 01,Category,Description,Title
+$35k to $50k,38820,14483.32873,dtransit,Drive To Transit trips $35k to $50k,Drive To Transit
+$35k to $50k,391890,223440.0826,transit,Walk To Transit trips $35k to $50k,Walk To Transit
+$50k to $75k,26670,41235.97029,dtransit,Drive To Transit trips $50k to $75k,Drive To Transit
+$50k to $75k,184615,235056.0122,transit,Walk To Transit trips $50k to $75k,Walk To Transit
+$75k to $100K,17980,41164.45228,dtransit,Drive To Transit trips $75k to $100K,Drive To Transit
+$75k to $100K,102320,165065.8266,transit,Walk To Transit trips $75k to $100K,Walk To Transit
+Less than $35k,44810,16194.88895,dtransit,Drive To Transit trips Less than $35k,Drive To Transit
+Less than $35k,595570,615776.971,transit,Walk To Transit trips Less than $35k,Walk To Transit
+More than $100k,46260,79208.86076,dtransit,Drive To Transit trips More than $100k,Drive To Transit
+More than $100k,221950,289931.2512,transit,Walk To Transit trips More than $100k,Walk To Transit
+$35k to $50k,430710,237923.4114,all,All trips $35k to $50k,All
+$50k to $75k,211285,276291.9824,all,All trips $50k to $75k,All
+$75k to $100K,120300,206230.2789,all,All trips $75k to $100K,All
+Less than $35k,640380,631971.86,all,All trips Less than $35k,All
+More than $100k,268210,369140.1119,all,All trips More than $100k,All

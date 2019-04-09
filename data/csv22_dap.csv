@@ -1,0 +1,23 @@
+Index,Model 01,Survey 01,Category,Description,Title
+Child too young for school,240075,176705.13114562983,H,Person Type by Home Activity,Home Activity
+Child too young for school,188945,232287.42412868995,M,Person Type by Mandatory Activity,Mandatory Activity
+Child too young for school,384915,465914.9826780991,N,Person Type by Non-Mandatory Activity,Non-Mandatory Activity
+Full-time worker,226000,176667.8321199399,H,Person Type by Home Activity,Home Activity
+Full-time worker,2764645,2977165.6537475954,M,Person Type by Mandatory Activity,Mandatory Activity
+Full-time worker,462880,541665.8334227717,N,Person Type by Non-Mandatory Activity,Non-Mandatory Activity
+Non-worker,582610,257746.86208771056,H,Person Type by Home Activity,Home Activity
+Non-worker,1208285,836338.4847633482,N,Person Type by Non-Mandatory Activity,Non-Mandatory Activity
+Part-time worker,125240,55338.80266615001,H,Person Type by Home Activity,Home Activity
+Part-time worker,522880,439383.8401303215,M,Person Type by Mandatory Activity,Mandatory Activity
+Part-time worker,332955,227382.0363132996,N,Person Type by Non-Mandatory Activity,Non-Mandatory Activity
+Retired,252010,355273.5440439693,H,Person Type by Home Activity,Home Activity
+Retired,578240,946650.7994138391,N,Person Type by Non-Mandatory Activity,Non-Mandatory Activity
+Student of driving age,34480,25562.324596600007,H,Person Type by Home Activity,Home Activity
+Student of driving age,289775,271627.82910439995,M,Person Type by Mandatory Activity,Mandatory Activity
+Student of driving age,72990,64039.79353949999,N,Person Type by Non-Mandatory Activity,Non-Mandatory Activity
+Student of non-driving age,145730,128847.8941537,H,Person Type by Home Activity,Home Activity
+Student of non-driving age,1016950,1052573.3011048364,M,Person Type by Mandatory Activity,Mandatory Activity
+Student of non-driving age,327275,340912.8960738302,N,Person Type by Non-Mandatory Activity,Non-Mandatory Activity
+University student,55920,35037.4533119,H,Person Type by Home Activity,Home Activity
+University student,267880,167770.6422380901,M,Person Type by Mandatory Activity,Mandatory Activity
+University student,159580,99146.97486889003,N,Person Type by Non-Mandatory Activity,Non-Mandatory Activity

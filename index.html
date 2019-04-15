@@ -10,6 +10,7 @@
 
     <link href="css/chordStyles.css" rel="stylesheet"></link>
     <link rel="stylesheet" href="css/mapstyle.css"></link>
+    <link rel="stylesheet" href="css/intromapstyle.css"></link>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
     integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
     crossorigin=""></link>
@@ -132,7 +133,7 @@ Model validation is defined as comparing the results of the calibrated models to
 
           </p>
 
-          Map of Region/Network Placeholder
+          <div id="regionmap"></div>
           <br/>
 
           <br/>
@@ -147,8 +148,10 @@ Model validation is defined as comparing the results of the calibrated models to
           <div class="col-md-12">
             <br/>
             <br/>
-            <h3>INTRODUCTION/DESCRIPTION</h3>
+            <h3>Population Synthesis</h3>
             <p>
+A synthetic population provides the foundation for modeling individuals’ travel behavior within an activity-based model.  Using Census data and other socio-economic information, a complete set of households for a modeling area is developed.  This dataset contains all of the relevant attributes about each household and for each individual living in those households that are required by the ABM.  While the synthetic population is statistically representative of the Census data, the actual households and individuals are “synthetic” in that they do not represent identifiable people and an individual household in the Census data may be replicated numerous times in order to generate a complete distribution of households in the modeling inputs.  The current population synthesis software used by CMAP is PopSynIII.
+
               </p>
           </div>
         </div>
@@ -631,6 +634,7 @@ Model validation is defined as comparing the results of the calibrated models to
             <br/>
             <h3>INTRODUCTION/DESCRIPTION</h3>
             <p>
+              Auto ownership plays an important role in individuals’ travel behavior decisions and helps define the set of travel mode options available to them.  “Auto sufficiency” is a concept often applied to understand constraints a household may have on travel choices -- generally categorizing household as having zero autos, having more workers in the household than autos, or having at least as many auto as workers in the household.  This is a key measure in determining which households may be transit-dependent.
             </p>
 
           </div>
@@ -707,7 +711,6 @@ Model validation is defined as comparing the results of the calibrated models to
             <br/>
             <h3>INTRODUCTION/DESCRIPTION</h3>
             <p>
-
             </p>
           </div>
         </div>
@@ -821,11 +824,20 @@ Model validation is defined as comparing the results of the calibrated models to
               </div>
             <br>
             <select id="wbcatModeDist">
-              <option value="All">All Modes</option>
-              <option value="sov1">Drive Alone Free</option>
+              <option value="all">All Modes</option>
+              <option value="sovfree">Drive Alone Free</option>
+              <option value="sovpay">Drive Alone Pay</option>
+              <option value="hov2free">Shared ride 2 free</option>
+              <option value="hov2pay">Shared ride 2 pay</option>
+              <option value="hov3free">Shared ride 3+ free</option>
+              <option value="hov3pay">Shared ride 3+ pay</option>
+              <option value="dtransit">Drive to transit</option>
+              <option value="transit">Transit</option>
+              <option value="walk">Walk</option>
+              <option value="bike">Bike</option>
+              <option value="taxi">Taxi</option>
             </select>
           </div>
-
           <div class="col col-md-10">
             <div id="wbModeByDistance"></div>
             <div class="small">
@@ -1194,13 +1206,50 @@ Model validation is defined as comparing the results of the calibrated models to
             </div>
           </div>
         </div>
+        <div class="row">
+            <div class="col-md-12">
+              <br/>
+              <br/>
+              <h3>Daily Activity Patterns By Person Type</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+                improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+                sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+                factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+                qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+                formarum quam civis excellen
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <br/>
+            <br/>
+            <div class="col col-md-2">
+              <h5><b><div id= "dapTitle"></div></b></h5>
+              <div class="small">
+                Select data type for comparison from dropdown
+                </div>
+              <br>
+              <select id="catdap">
+                  <option value="H">Home Activity</option>
+                  <option value="M">Mandatory Activity</option>
+                  <option value="N">Non-Mandatory Activity</option>
+              </select>
+            </div>
+            <div class="col col-md-10">
+              <div id="dap"></div>
+              <div class="small">
+                  Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
+                  Modeled - CMAP ABM. <br>
+              </div>
+            </div>
+          </div>
       </div>
       <div
         id="7"
         class="tab-pane container">
         <div class="col-md-12">
           <br/>
-
           <br/>
 
           <h3>Transit Boardings by Mode</h3>
@@ -1211,7 +1260,6 @@ Model validation is defined as comparing the results of the calibrated models to
             Hover over each ring sector to display data, and use the layer icon in the bottom left to activate CTA Rail and Metra line layers. </p><p>
             <b>Example:</b> In the model, 19.7% of all Metra boardings occured in ring sector 2S.  In the survey, 7.8% of Metra boardings occured in ring sector 2S.  This is a difference of 11.9%. </p>
           </p><br>
-
           <div class="btn-group" role="group">
           <div class="btn-group" role="group" style="margin-left: 20px">
           <button type="button" id="ModelSurvey" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1264,6 +1312,123 @@ Model validation is defined as comparing the results of the calibrated models to
                 <div id="pieTransitModelMode"></div>
               </div>
             </div>
+
+          <div class="row">
+              <div class="col-md-12">
+                <br/>
+                <br/>
+                <h3>TRANSIT TRIPS BY MODE OF ACCESS AND DISTANCE</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+                  improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+                  sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+                  factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+                  qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+                  formarum quam civis excellen
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <br/>
+              <br/>
+              <div class="col col-md-2">
+                <h5><b><div id= "TranDistTitle"></div> Trips</b></h5>
+                <div class="small">
+                  Select data type for comparison from dropdown
+                  </div>
+                <br>
+                <select id="catTranDist">
+                    <option value="all">All Access Modes</option>
+                    <option value="transit">Walk To Transit</option>
+                    <option value="dtransit">Drive to Transit</option>
+                </select>
+              </div>
+              <div class="col col-md-10">
+                <div id="TranDist"></div>
+                <div class="small">
+                    Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
+                    Modeled - CMAP ABM. <br>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                  <br/>
+                  <br/>
+                  <h3>TRANSIT TRIPS BY Income</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+                    improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+                    sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+                    factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+                    qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+                    formarum quam civis excellen
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <br/>
+                <br/>
+                <div class="col col-md-2">
+                  <h5><b><div id= "TranIncomeTitle"></div> Trips</b></h5>
+                  <div class="small">
+                    Select data type for comparison from dropdown
+                    </div>
+                  <br>
+                  <select id="catIncomeDist">
+                      <option value="all">All Access Modes</option>
+                      <option value="transit">Walk To Transit</option>
+                      <option value="dtransit">Drive to Transit</option>
+                  </select>
+                </div>
+                <div class="col col-md-10">
+                  <div id="TranIncome"></div>
+                  <div class="small">
+                      Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
+                      Modeled - CMAP ABM. <br>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                    <br/>
+                    <br/>
+                    <h3>TRANSIT TRIPS BY Ratio of Autos to Adults</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+                      improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+                      sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+                      factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+                      qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+                      formarum quam civis excellen
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <br/>
+                  <br/>
+                  <div class="col col-md-2">
+                    <h5><b><div id= "TranAutoAdultTitle"></div> Trips</b></h5>
+                    <div class="small">
+                      Select data type for comparison from dropdown
+                      </div>
+                    <br>
+                    <select id="catAutoAdult">
+                        <option value="all">All Access Modes</option>
+                        <option value="transit">Walk To Transit</option>
+                        <option value="dtransit">Drive to Transit</option>
+                    </select>
+                  </div>
+                  <div class="col col-md-10">
+                    <div id="TranAutoAdult"></div>
+                    <div class="small">
+                        Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
+                        Modeled - CMAP ABM. <br>
+                    </div>
+                  </div>
+                </div>
+        </div>
+>>>>>>> upstream/master
       </div>
   </body>
 
@@ -1303,13 +1468,18 @@ Model validation is defined as comparing the results of the calibrated models to
   <script>makeGroupVBar("data/csv1_pop_syn.csv","#PurposeChartpums","#catPopSyn",3, "popsynDesc","hhtitle");</script>
   <script>makeGroupVBar("data/csv5_mode_purpose.csv","#ModeByPurpose","#catModePurp",2, "modePurpDesc","modeTitle");</script>
   <script>makeGroupHBar("data/csv6_work_trips.csv","#VChart","#workFlowCat",2, "pDesc","pTitle");</script>
-  <script>makeGroupVBar("data/csv7_mode_distance.csv","#ModeByDistance","#catModeDist",2, "modeDistDesc","modeDTitle");</script>
+  <script>makeGroupVBar("data/csv7_work_mode_distance.csv","#ModeByDistance","#catModeDist",2, "modeDistDesc","modeDTitle");</script>
   <script>makeGroupVBar("data/csv8_wbmode_distance.csv","#wbModeByDistance","#wbcatModeDist",2, "wbmodeDistDesc","wbmodeDTitle");</script>
   <script>makeGroupVBar("data/csv9_mode_person.csv","#ModebyPerson","#catModePer",2, "modePerDesc","modePTitle");</script>
   <script>makeGroupVBar("data/csv10_mode_income.csv","#ModebyIncome","#catModeInc",2, "modeinDesc","modeITitle");</script>
   <script>makeGroupVBar("data/csv11_purpose_type.csv","#PurposebyType","#catPurpType",2, "purpTypeDesc","purpTypeTitle");</script>
   <script>makeGroupVBar("data/csv12_purpose_distance.csv","#PurposebyDist","#catPurpDist",2, "purpDistDesc","purpDistTitle");</script>
   <script>makeGroupVBar("data/csv12b_purpose_distance.csv","#DistbyPurpose","#catDistPurp",2, "DistpurpDesc","DistpurpTitle");</script>
+  <script>makeGroupVBar("data/csv19_transit_distance.csv","#TranDist","#catTranDist",2, "TranDistDesc","TranDistTitle");</script>
+  <script>makeGroupVBar("data/csv20_transit_income.csv","#TranIncome","#catIncomeDist",2, "TranIncomeDesc","TranIncomeTitle");</script>
+  <script>makeGroupVBar("data/csv21_transit_auto.csv","#TranAutoAdult","#catAutoAdult",2, "TranAutoAdultDesc","TranAutoAdultTitle");</script>
+  <script>makeGroupVBar("data/csv22_dap.csv","#dap","#catdap",2, "dapDesc","dapTitle");</script>
+
 
   <script type="text/javascript" src='scripts/table.js'></script>
   <script>
@@ -1337,7 +1507,10 @@ Model validation is defined as comparing the results of the calibrated models to
   <script type="text/javascript" src="data/counties.js"></script>
   <script type="text/javascript" src="data/MetraLines.js"></script>
   <script type="text/javascript" src="data/ctalines.js"></script>
+  <script type="text/javascript" src="data/mhn.js"></script>
   <script type="text/javascript" src="scripts/transitboardings.js"></script>
+  <script type="text/javascript" src="scripts/intromap.js"></script>
+
 
 
 </html>

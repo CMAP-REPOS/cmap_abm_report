@@ -19,21 +19,21 @@ $("a[href='#1']").on('shown.bs.tab',function(e) {
 });
 regionmap.addLayer(regionbaselayer);
 
-function highlightFeature(e) {
+function highlightFeatureintro(e) {
     var layer = e.target;
 
     layer.setStyle({
         weight: 5,
         color: '#666',
         dashArray: '',
-        fillOpacity: 0.7,
+        fillOpacity: 0,
     }); }
 
-function resetHighlight(e) {
+function resetHighlightintro(e) {
     var layer = e.target;
 
     layer.setStyle(
-        mhnstyle(layer.feature)
+       countystyle(layer.feature)
     );
     }
 
@@ -42,7 +42,6 @@ function countystyle(feature) {
     weight: 2,
     fillOpacity: 0,
     color: 'grey',
-    fillColor: 'green',
     dashArray: '3',    
     className: feature.properties.COUNTY
     };
@@ -69,7 +68,11 @@ function mhnstyle(feature) {
 var counties = L.geoJSON(countiesdata, {
         style: countystyle,
         onEachFeature: function(feature, layer) {
-            // layer.bindTooltip(feature.properties.COUNTY)     
+            layer.bindPopup(feature.properties.COUNTY)
+            layer.on({
+                'mouseover':highlightFeatureintro,
+                'mouseout': resetHighlightintro
+            })     
     }});
 
 counties.addTo(regionmap);
@@ -77,11 +80,11 @@ counties.addTo(regionmap);
 var mhn = L.geoJSON(mhndata, {
         style: mhnstyle,
         onEachFeature: function(feature, layer) {
-            layer.bindPopup(feature.properties.Name_1) 
-            layer.on({
-                'mouseover':highlightFeature,
-                'mouseout':resetHighlight
-            });
+            // layer.bindPopup(feature.properties.Name_1) 
+            // layer.on({
+            //     'mouseover':highlightFeature,
+            //     'mouseout':resetHighlight
+            // });
 }}).addTo(regionmap);
 
 

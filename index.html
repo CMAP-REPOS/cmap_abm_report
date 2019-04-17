@@ -10,6 +10,7 @@
 
     <link href="css/chordStyles.css" rel="stylesheet"></link>
     <link rel="stylesheet" href="css/mapstyle.css"></link>
+    <link rel="stylesheet" href="css/intromapstyle.css"></link>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
     integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
     crossorigin=""></link>
@@ -132,7 +133,7 @@ Model validation is defined as comparing the results of the calibrated models to
 
           </p>
 
-          Map of Region/Network Placeholder
+          <div id="regionmap"></div>
           <br/>
 
           <br/>
@@ -830,7 +831,6 @@ A synthetic population provides the foundation for modeling individuals’ trave
               <option value="hov2pay">Shared ride 2 pay</option>
               <option value="hov3free">Shared ride 3+ free</option>
               <option value="hov3pay">Shared ride 3+ pay</option>
-              <option value="dtransit">Drive to transit</option>
               <option value="transit">Transit</option>
               <option value="walk">Walk</option>
               <option value="bike">Bike</option>
@@ -1250,14 +1250,15 @@ A synthetic population provides the foundation for modeling individuals’ trave
         <div class="col-md-12">
           <br/>
           <br/>
-          <h3>Transit Boardings</h3>
+
+          <h3>Transit Boardings by Mode</h3>
+
           <p>
             For each transit mode (Metra, CTA Rail, or Bus), the map displays the distribution of boardings by ring sector.  Ring sectors sum to 100% for each transit mode. <p>
             Choose the transit mode by clicking the Metra, CTA Rail, or Bus buttons.  Choose the data source (Model, Survey, or Difference) using the first dropdown button.
             Hover over each ring sector to display data, and use the layer icon in the bottom left to activate CTA Rail and Metra line layers. </p><p>
             <b>Example:</b> In the model, 19.7% of all Metra boardings occured in ring sector 2S.  In the survey, 7.8% of Metra boardings occured in ring sector 2S.  This is a difference of 11.9%. </p>
           </p><br>
-          <h3>Boardings By Mode</h3>
           <div class="btn-group" role="group">
           <div class="btn-group" role="group" style="margin-left: 20px">
           <button type="button" id="ModelSurvey" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1274,22 +1275,43 @@ A synthetic population provides the foundation for modeling individuals’ trave
         </div></div>
         <div id="map"></div>
           <br/>
-          <br/>
 
           <div class="small">
               Express and local bus combined. <br>
               Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
               Modeled - CMAP ABM. <br>
             </div>
+          <br>
 
-          <div class="col col-md-6" align = "center">
-            <h5><b>Observed Transit Access</b></h5>
-            <div id="pieTransitSurveyMode"></div>
-          </div>
-          <div class="col col-md-6" align = "center">
-            <h5><b>Modeled Transit Access</b></h5>
-            <div id="pieTransitModelMode"></div>
-          </div>
+          <h3>Transit Access</h3>
+          <div class="row">
+            <div class="col col-md-2" align="center">
+              <div class="small">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                Hover over pie chart to compare trips by mode
+                </div>
+              </div>
+
+              <div class="col col-md-5" align = "center">
+                <h5><b>Observed Transit Access</b></h5>
+                <div id="pieTransitSurveyMode"></div>
+              </div>
+              <div class="col col-md-5" align = "center">
+                <h5><b>Modeled Transit Access</b></h5>
+                <div id="pieTransitModelMode"></div>
+              </div>
+            </div>
+
           <div class="row">
               <div class="col-md-12">
                 <br/>
@@ -1483,7 +1505,10 @@ A synthetic population provides the foundation for modeling individuals’ trave
   <script type="text/javascript" src="data/counties.js"></script>
   <script type="text/javascript" src="data/MetraLines.js"></script>
   <script type="text/javascript" src="data/ctalines.js"></script>
+  <script type="text/javascript" src="data/mhn.js"></script>
   <script type="text/javascript" src="scripts/transitboardings.js"></script>
+  <script type="text/javascript" src="scripts/intromap.js"></script>
+
 
 
 </html>

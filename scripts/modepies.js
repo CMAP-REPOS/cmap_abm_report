@@ -55,7 +55,7 @@ d3.csv("data/csv17_model_transit_access.csv", function(data) {
                 count: parseInt(data[i].QUANTITY, 10),
               label: data[i].trip_mode})
 }
-  drawPieChartFunction(data5, "#pieTransitModelMode", 'tooltip4');
+  drawPieChartFunction(data5, "#pieTransitModelMode", 'tooltip5');
 });
 
 d3.csv("data/csv18_survey_transit_access.csv", function(data) {
@@ -66,7 +66,7 @@ d3.csv("data/csv18_survey_transit_access.csv", function(data) {
               count: parseInt(data[i].QUANTITY, 10),
               label: data[i].trip_mode})
 }
-  drawPieChartFunction(data6, "#pieTransitSurveyMode", 'tooltip4');
+  drawPieChartFunction(data6, "#pieTransitSurveyMode", 'tooltip6');
 });
 
 // chart
@@ -175,8 +175,9 @@ d3.csv("data/csv18_survey_transit_access.csv", function(data) {
     on('mouseout', function(d0) {
         d3.selectAll('path').transition()
             .style("opacity",1)
-      d3.selectAll('path.' + d0.data.selectorid)
-        .attr('d', arc);
+      d3.selectAll('path.' + d0.data.selectorid).interrupt()
+        .attr('d', arc)
+        .style("opacity",1);
       // d3.selectAll('.tooltip').style('display', 'none');
     });
     return path;

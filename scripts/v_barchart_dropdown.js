@@ -227,7 +227,7 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
 
       textOnBar.transition().duration(durations)
         .attr("transform", function(d, i) {
-          let x0 = x1.bandwidth() * i + 2,
+          let x0 = x1.bandwidth() * i + 3,
               y0 = y(d.value) - 10;
           return "translate(" + x0 + "," + y0 + ") rotate(0)";
         })
@@ -251,7 +251,7 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
         .attr("stroke-width",2)
         .on("click",function(d) {
           ////console.log(d)
-          updateLegend(d)
+          //updateLegend(d)
         })
         .merge(legend)
 

@@ -326,6 +326,8 @@ function makeChords(csv_file, modelDiv, obsDiv){
                             (d.angle > Math.PI ? "rotate(180)" : "");
                     })
                     .text(function(d) {
+                      d.name = mapReader(d).gname
+                      d.color = colors(d.index)
                         return mapReader(d).gname;
                     });
 

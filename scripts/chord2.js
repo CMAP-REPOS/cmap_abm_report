@@ -55,13 +55,13 @@ function makeChords(csv_file, modelDiv, obsDiv){
   });
   wflowmap.addLayer(baselayer);
 
-  var counties = L.geoJSON(workflow_geo, {
+  var rings = L.geoJSON(workflow_geo, {
     style: baseStyle,
     onEachFeature: function(feature, layer) {
         layer.bindPopup(feature.properties.subzoneGroups_csv_AREANAME)
         layer.NAME = feature.properties.subzoneGroups_csv_AREANAME;
   }});
-  counties.addTo(wflowmap);
+  rings.addTo(wflowmap);
 
   d3.csv(csv_file, function(error, data) {
 
@@ -144,7 +144,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
               .filter(function(d) {
                 return color_dict[d.name] = colors(d.index)
               })
-          counties.eachLayer(function(layer) {
+          rings.eachLayer(function(layer) {
             if(layer.NAME == newCurrentDistrict){
               layer.setStyle({
                 weight: 2,

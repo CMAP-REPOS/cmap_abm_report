@@ -27,7 +27,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
   function baseStyle(feature) {
       return {
       weight: 2,
-      fillOpacity: 100,
+      fillOpacity: 0,
       color: 'grey',
       dashArray: '3',
       className: feature.properties.subzoneGroups_csv_AREANAME
@@ -39,7 +39,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
 
   var wflowmap = new L.Map("wflowmap", {
       zoomControl: false,
-      center: new L.LatLng(41.8781, -87.6298),
+      center: new L.LatLng(41.8781, -87.9298),
       zoom: 8
   });
 
@@ -50,7 +50,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
       'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
   })
 
-  $("a[href='#7']").on('shown.bs.tab',function(e) {
+  $("a[href='#4']").on('shown.bs.tab',function(e) {
       wflowmap.invalidateSize();
   });
   wflowmap.addLayer(baselayer);
@@ -173,7 +173,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
             var w = 480,
                 h = 400,
                 r1 = h / 2,
-                r0 = r1 - 110;
+                r0 = r1 - 80;
 
             var chord = d3.chord()
                 .padAngle(0.05)

@@ -34,19 +34,27 @@ function makeChords(csv_file, modelDiv, obsDiv){
       };
   }
 
+  // basic map
+  var mapboxAccessToken = 'pk.eyJ1Ijoic2FyYWhjbWFwIiwiYSI6ImNqc3VzMDl0YzJocm80OXBnZjc2MGk4cGgifQ.S_UmPA1jm5pQPrCCLDs41Q';
+
   var wflowmap = new L.Map("wflowmap", {
       zoomControl: false,
-      center: new L.LatLng(41.8781, -87.8298),
+      center: new L.LatLng(41.8781, -87.6298),
       zoom: 8
   });
 
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(wflowmap);
+  var baselayer = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
+      id: 'mapbox.light',
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+      '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+      'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
+  })
 
-  $("a[href='#1']").on('shown.bs.tab',function(e) {
+  $("a[href='#7']").on('shown.bs.tab',function(e) {
       wflowmap.invalidateSize();
   });
+  wflowmap.addLayer(baselayer);
+
   var counties = L.geoJSON(workflow_geo, {
     style: baseStyle,
     onEachFeature: function(feature, layer) {

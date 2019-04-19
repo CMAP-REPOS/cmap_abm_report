@@ -32,7 +32,7 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
   .attr("class", "axis axis--y");
 
   var z = d3.scaleOrdinal()
-  .range(["#2E4257","#2A697C","#159398","#20BEA7","#5BE8A7","#23202F"]);
+  .range(['#1c4e80','#6A9BCC',"#159398","#20BEA7","#5BE8A7","#23202F"]);
 
   var durations = 0;
 

@@ -5,6 +5,11 @@
     margin-right: 20px
 }
 
+.btn-info {
+    background-color: #1C4E80 !important;
+    border-color: #1C4E80 !important;
+  }
+  
 .info {
     padding: 6px 8px;
     font: 14px/16px Arial, Helvetica, sans-serif;
@@ -34,7 +39,7 @@
 }
 
 .btn-group .dropdown-menu a:active {
-    background-color: #5bc0de
+    background-color: '#006BA4'
 }
 
 .difflegend {

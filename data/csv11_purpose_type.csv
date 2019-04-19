@@ -1,91 +1,91 @@
 Index,Model 01,Survey 01,Category,Description,Title
-Discretionary,1419045,1421291,All,temp1,All
-Eating Out,1010205,1145310,All,temp1,All
-Escort,1963825,1480275,All,temp1,All
-Maintenance,2292885,2683143,All,temp1,All
-School,1942200,939221,All,temp1,All
-Shop,2896360,3011859,All,temp1,All
-University,315420,293895,All,temp1,All
-Visiting,867110,990930,All,temp1,All
-Work,5676120,5119689,All,temp1,All
-Work-based,880325,877711,All,temp1,All
-Discretionary,580810,526969,Full-time Worker,temp1,Full-time Worker
-Eating Out,410360,640369,Full-time Worker,temp1,Full-time Worker
-Escort,1009215,635640,Full-time Worker,temp1,Full-time Worker
-Maintenance,803855,1128152,Full-time Worker,temp1,Full-time Worker
+Discretionary,2183070,1421291,All,temp1,All
+Eating Out,1451475,1145310,All,temp1,All
+Escort,3585550,1480275,All,temp1,All
+Maintenance,2838505,2683143,All,temp1,All
+School,2675275,939221,All,temp1,All
+Shop,3723920,3011859,All,temp1,All
+University,381140,293895,All,temp1,All
+Visiting,1273200,990930,All,temp1,All
+Work,6218755,5119689,All,temp1,All
+Work-based,958235,877711,All,temp1,All
+Discretionary,664785,526969,Full-time Worker,temp1,Full-time Worker
+Eating Out,478915,640369,Full-time Worker,temp1,Full-time Worker
+Escort,1497280,635640,Full-time Worker,temp1,Full-time Worker
+Maintenance,889700,1128152,Full-time Worker,temp1,Full-time Worker
 School,0,0,Full-time Worker,temp1,Full-time Worker
-Shop,1173250,1197060,Full-time Worker,temp1,Full-time Worker
-University,21820,74558,Full-time Worker,temp1,Full-time Worker
-Visiting,250435,316929,Full-time Worker,temp1,Full-time Worker
-Work,4546580,4415742,Full-time Worker,temp1,Full-time Worker
-Work-based,722385,767190,Full-time Worker,temp1,Full-time Worker
-Discretionary,209810,266731,Non worker,temp1,Non worker
-Eating Out,184400,158884,Non worker,temp1,Non worker
-Escort,418135,381775,Non worker,temp1,Non worker
-Maintenance,646410,622855,Non worker,temp1,Non worker
+Shop,1327420,1197060,Full-time Worker,temp1,Full-time Worker
+University,24315,74558,Full-time Worker,temp1,Full-time Worker
+Visiting,293980,316929,Full-time Worker,temp1,Full-time Worker
+Work,4975970,4415742,Full-time Worker,temp1,Full-time Worker
+Work-based,790310,767190,Full-time Worker,temp1,Full-time Worker
+Discretionary,277660,266731,Non worker,temp1,Non worker
+Eating Out,255985,158884,Non worker,temp1,Non worker
+Escort,907100,381775,Non worker,temp1,Non worker
+Maintenance,751120,622855,Non worker,temp1,Non worker
 School,0,0,Non worker,temp1,Non worker
-Shop,755635,746756,Non worker,temp1,Non worker
+Shop,942505,746756,Non worker,temp1,Non worker
 University,0,0,Non worker,temp1,Non worker
-Visiting,270805,208329,Non worker,temp1,Non worker
+Visiting,354235,208329,Non worker,temp1,Non worker
 Work,0,0,Non worker,temp1,Non worker
 Work-based,0,0,Non worker,temp2,Non worker
-Discretionary,118055,126875,Part-time Worker,temp1,Part-time Worker
-Eating Out,101120,107513,Part-time Worker,temp1,Part-time Worker
-Escort,240660,204141,Part-time Worker,temp1,Part-time Worker
-Maintenance,214780,283516,Part-time Worker,temp1,Part-time Worker
+Discretionary,138525,126875,Part-time Worker,temp1,Part-time Worker
+Eating Out,120225,107513,Part-time Worker,temp1,Part-time Worker
+Escort,378420,204141,Part-time Worker,temp1,Part-time Worker
+Maintenance,234580,283516,Part-time Worker,temp1,Part-time Worker
 School,0,0,Part-time Worker,temp1,Part-time Worker
-Shop,289380,380944,Part-time Worker,temp1,Part-time Worker
+Shop,327695,380944,Part-time Worker,temp1,Part-time Worker
 University,0,0,Part-time Worker,temp1,Part-time Worker
-Visiting,80380,95964,Part-time Worker,temp1,Part-time Worker
-Work,908755,548977,Part-time Worker,temp1,Part-time Worker
-Work-based,124770,93332,Part-time Worker,temp1,Part-time Worker
-Discretionary,22780,4122,Preschool,temp1,Preschool
-Eating Out,8345,740,Preschool,temp1,Preschool
-Escort,43955,547,Preschool,temp1,Preschool
-Maintenance,32480,1665,Preschool,temp1,Preschool
-School,129970,35324,Preschool,temp1,Preschool
-Shop,29865,126,Preschool,temp1,Preschool
+Visiting,90875,95964,Part-time Worker,temp1,Part-time Worker
+Work,1001860,548977,Part-time Worker,temp1,Part-time Worker
+Work-based,132985,93332,Part-time Worker,temp1,Part-time Worker
+Discretionary,137615,4122,Preschool,temp1,Preschool
+Eating Out,77075,740,Preschool,temp1,Preschool
+Escort,288505,547,Preschool,temp1,Preschool
+Maintenance,134275,1665,Preschool,temp1,Preschool
+School,317425,35324,Preschool,temp1,Preschool
+Shop,173395,126,Preschool,temp1,Preschool
 University,0,0,Preschool,temp1,Preschool
-Visiting,14950,6264,Preschool,temp1,Preschool
+Visiting,92125,6264,Preschool,temp1,Preschool
 Work,0,0,Preschool,temp1,Preschool
 Work-based,0,0,Preschool,temp1,Preschool
-Discretionary,329690,257265,Retired,temp1,Retired
-Eating Out,211240,142376,Retired,temp1,Retired
-Escort,86920,148058,Retired,temp1,Retired
-Maintenance,467625,483701,Retired,temp1,Retired
+Discretionary,383205,257265,Retired,temp1,Retired
+Eating Out,250560,142376,Retired,temp1,Retired
+Escort,161905,148058,Retired,temp1,Retired
+Maintenance,509815,483701,Retired,temp1,Retired
 School,0,0,Retired,temp1,Retired
-Shop,512940,543492,Retired,temp1,Retired
+Shop,571680,543492,Retired,temp1,Retired
 University,0,0,Retired,temp1,Retired
-Visiting,154315,149622,Retired,temp1,Retired
+Visiting,179270,149622,Retired,temp1,Retired
 Work,0,0,Retired,temp1,Retired
 Work-based,0,0,Retired,temp1,Retired
-Discretionary,32820,90041,Student 16+,temp1,Student 16+
-Eating Out,28195,32580,Student 16+,temp1,Student 16+
-Escort,46195,37114,Student 16+,temp1,Student 16+
-Maintenance,24975,35397,Student 16+,temp1,Student 16+
-School,392065,235992,Student 16+,temp1,Student 16+
-Shop,29030,30772,Student 16+,temp1,Student 16+
+Discretionary,48145,90041,Student 16+,temp1,Student 16+
+Eating Out,45125,32580,Student 16+,temp1,Student 16+
+Escort,76550,37114,Student 16+,temp1,Student 16+
+Maintenance,35930,35397,Student 16+,temp1,Student 16+
+School,504825,235992,Student 16+,temp1,Student 16+
+Shop,41050,30772,Student 16+,temp1,Student 16+
 University,0,0,Student 16+,temp1,Student 16+
-Visiting,32820,58634,Student 16+,temp1,Student 16+
-Work,37155,40094,Student 16+,temp1,Student 16+
-Work-based,3930,2081,Student 16+,temp1,Student 16+
-Discretionary,92760,80560,Student under 16 years,temp1,Student under 16 years
-Eating Out,32320,12444,Student under 16 years,temp1,Student under 16 years
-Escort,46465,4963,Student under 16 years,temp1,Student under 16 years
-Maintenance,62150,22549,Student under 16 years,temp1,Student under 16 years
-School,1420165,667905,Student under 16 years,temp1,Student under 16 years
-Shop,55140,12225,Student under 16 years,temp1,Student under 16 years
+Visiting,49550,58634,Student 16+,temp1,Student 16+
+Work,40820,40094,Student 16+,temp1,Student 16+
+Work-based,4035,2081,Student 16+,temp1,Student 16+
+Discretionary,493780,80560,Student under 16 years,temp1,Student under 16 years
+Eating Out,183575,12444,Student under 16 years,temp1,Student under 16 years
+Escort,169145,4963,Student under 16 years,temp1,Student under 16 years
+Maintenance,235960,22549,Student under 16 years,temp1,Student under 16 years
+School,1853025,667905,Student under 16 years,temp1,Student under 16 years
+Shop,278305,12225,Student under 16 years,temp1,Student under 16 years
 University,0,0,Student under 16 years,temp1,Student under 16 years
-Visiting,39210,77763,Student under 16 years,temp1,Student under 16 years
+Visiting,185195,77763,Student under 16 years,temp1,Student under 16 years
 Work,0,0,Student under 16 years,temp1,Student under 16 years
 Work-based,0,0,Student under 16 years,temp1,Student under 16 years
-Discretionary,32320,68728,University Student,temp1,University Student
-Eating Out,34225,50404,University Student,temp1,University Student
-Escort,72280,68037,University Student,temp1,University Student
-Maintenance,40610,105308,University Student,temp1,University Student
+Discretionary,39355,68728,University Student,temp1,University Student
+Eating Out,40015,50404,University Student,temp1,University Student
+Escort,106645,68037,University Student,temp1,University Student
+Maintenance,47125,105308,University Student,temp1,University Student
 School,0,0,University Student,temp1,University Student
-Shop,51120,100484,University Student,temp1,University Student
-University,293600,219337,University Student,temp1,University Student
-Visiting,24195,77425,University Student,temp1,University Student
-Work,183630,114876,University Student,temp1,University Student
-Work-based,29240,15108,University Student,temp1,University Student
+Shop,61870,100484,University Student,temp1,University Student
+University,356825,219337,University Student,temp1,University Student
+Visiting,27970,77425,University Student,temp1,University Student
+Work,200105,114876,University Student,temp1,University Student
+Work-based,30905,15108,University Student,temp1,University Student

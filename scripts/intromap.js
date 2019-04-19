@@ -42,7 +42,7 @@ function countystyle(feature) {
     weight: 2,
     fillOpacity: 0,
     color: 'grey',
-    dashArray: '3',    
+    dashArray: '3',
     className: feature.properties.COUNTY
     };
 }
@@ -72,7 +72,7 @@ var counties = L.geoJSON(countiesdata, {
             layer.on({
                 'mouseover':highlightFeatureintro,
                 'mouseout': resetHighlightintro
-            })     
+            })
     }});
 
 counties.addTo(regionmap);
@@ -80,12 +80,9 @@ counties.addTo(regionmap);
 var mhn = L.geoJSON(mhndata, {
         style: mhnstyle,
         onEachFeature: function(feature, layer) {
-            // layer.bindPopup(feature.properties.Name_1) 
+            // layer.bindPopup(feature.properties.Name_1)
             // layer.on({
             //     'mouseover':highlightFeature,
             //     'mouseout':resetHighlight
             // });
 }}).addTo(regionmap);
-
-
-

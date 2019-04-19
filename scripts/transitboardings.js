@@ -271,32 +271,32 @@ function metrastyle(feature) {
 
 // style: difference colors
 function getColor(d) {
-    return d > 20 ? '#800026' :
-           d > 15  ? '#BD0026' :
-           d > 10  ? '#E31A1C' :
-           d > 5  ? '#FC4E2A' :
-           d > 3   ? '#FD8D3C' :
-           d > 2   ? '#FEB24C' :
-           d > 1   ? '#FED976' :
-                      '#FFEDA0';
+    return d > 20 ?  '	#0D263F' :
+           d > 15  ? '		#163E66' :
+           d > 10  ? '#1C4E80' :
+           d > 5  ?  '#4A729A	':
+           d > 3   ?  '	#7896B4' :
+           d > 2   ? '#8FA8C1' :
+           d > 1   ?  '	#A6BACE	':
+           '#EBF0F5';
 }
 
 function getDiffColor(d) {
-    return d > 20 ? '#800026' :
-           d > 15  ? '#BD0026' :
-           d > 10  ? '#E31A1C' :
-           d > 5  ? '#FC4E2A' :
-           d > 3   ? '#FD8D3C' :
-           d > 2   ? '#FEB24C' :
-           d > 1   ? '#FED976' :
-           d < -20  ? '#0570b0' :
-           d < -15  ? '#3690c0' :
-           d < -10  ? '#74a9cf' :
-           d < -5   ? '#a6bddb' :
-           d < -3   ? '#D0D1E6' :
-           d < -2   ? '#ECE7F2' :
-           d < -1   ? '#FFF7FB' :
-                      '#FFEDA0';
+    return d > 20 ?  '	#0D263F' :
+    d > 15  ? '		#163E66' :
+    d > 10  ? '#1C4E80' :
+    d > 5  ?  '#4A729A	':
+    d > 3   ?  '	#7896B4' :
+    d > 2   ? '#8FA8C1' :
+    d > 1   ?  '	#A6BACE	':
+           d < -20  ? '#670000' :
+           d < -15  ? '#910000' :
+           d < -10  ? '#D00000' :
+           d < -5   ? '#DA3434' :
+           d < -3   ? '#E46868' :
+           d < -2   ? '	#EE9C9C' :
+           d < -1   ? '#F8D0D0' :
+           '#EBF0F5';
 }
 
 

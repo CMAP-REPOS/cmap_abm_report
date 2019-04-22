@@ -7,22 +7,29 @@ function makeChords(csv_file, modelDiv, obsDiv){
   var odpairs={};
   var colors = d3.scaleOrdinal()
           .domain(d3.range(16))
-          .range(["#c26ac6",
-                  "#9aaf3e",
-                  "#726cd7",
-                  "#5bbc73",
-                  "#573687",
-                  "#c99035",
-                  "#5083de",
-                  "#698d3c",
-                  "#d971b0",
-                  "#43c8ac",
-                  "#8c2b68",
-                  "#b98049",
-                  "#848bd3",
-                  "#b44931",
-                  "#c04b6d",
-                  "#bc4850"])
+          .range([
+            '#081D58',
+            '#1C4E80',
+            '#6A9BCC',
+            '#AEC1D5',
+
+            '#CFCFCF',
+            '#ABABAB',
+            '#595959',
+
+            '#821E20',
+            '#CF4446',
+            '#DB6B3D',
+
+
+            '#9C4624',
+            '#69544C',
+
+            '#D7D55C',
+            '#8A882D',
+                      
+            '#3D3C0E',
+          ])
 
   function baseStyle(feature) {
       return {
@@ -211,22 +218,34 @@ function makeChords(csv_file, modelDiv, obsDiv){
 
             var colors = d3.scaleOrdinal()
                     .domain(d3.range(16))
-                    .range(["#c26ac6",
-                            "#9aaf3e",
-                            "#726cd7",
-                            "#5bbc73",
-                            "#573687",
-                            "#c99035",
-                            "#5083de",
-                            "#698d3c",
-                            "#d971b0",
-                            "#43c8ac",
-                            "#8c2b68",
-                            "#b98049",
-                            "#848bd3",
-                            "#b44931",
-                            "#c04b6d",
-                            "#bc4850"])
+                    .range([
+                        '#081D58',
+                        '#1C4E80',
+                        '#6A9BCC',
+                        '#AEC1D5',
+            
+                        '#CFCFCF',
+                        '#ABABAB',
+                        '#595959',
+            
+                        '#821E20',
+                        '#CF4446',
+                        '#DB6B3D',
+    
+    
+                        '#9C4624',
+                        '#69544C',
+            
+                        '#D7D55C',
+                        '#8A882D',
+                                  
+                        '#3D3C0E',
+            
+    
+  
+
+                    ])
+
             g.append("svg:path")
                 .style("stroke", "grey")
                 .style("fill", function(d) {
@@ -257,22 +276,33 @@ function makeChords(csv_file, modelDiv, obsDiv){
 
             var colors = d3.scaleOrdinal()
                 .domain(d3.range(16))
-                .range(["#c26ac6",
-                        "#9aaf3e",
-                        "#726cd7",
-                        "#5bbc73",
-                        "#573687",
-                        "#c99035",
-                        "#5083de",
-                        "#698d3c",
-                        "#d971b0",
-                        "#43c8ac",
-                        "#8c2b68",
-                        "#b98049",
-                        "#848bd3",
-                        "#b44931",
-                        "#c04b6d",
-                        "#bc4850"])
+                .range([
+                    '#081D58',
+                    '#1C4E80',
+                    '#6A9BCC',
+                    '#AEC1D5',
+        
+                    '#CFCFCF',
+                    '#ABABAB',
+                    '#595959',
+        
+                    '#821E20',
+                    '#CF4446',
+                    '#DB6B3D',
+
+
+                    '#9C4624',
+                    '#69544C',
+        
+                    '#D7D55C',
+                    '#8A882D',
+                              
+                    '#3D3C0E',
+
+
+
+                ])
+
             var chordPaths = svg1.selectAll("path.chord")
                 .data(function(chords) {
                   //console.log(chords)

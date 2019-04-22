@@ -89,19 +89,27 @@ d3.csv("data/csv18_survey_transit_access.csv", function(data) {
 
     var color = d3.
     scaleOrdinal().
-    range(["#543005",
-    "#8c510a",
-    "#bf812d",
-    "#dfc27d",
-    "#f6e8c3",
-    "#c7eae5",
-    "#80cdc1",
-    "#35978f",
-    "#01665e",
-    "#003c30"]).
+    range(['#ABABAB',
+    '#1C4E80',
+    '#6A9BCC',
+
+    '#CFCFCF',
+    '#ABABAB',
+    '#595959',
+    
+    '#821E20',
+    '#CF4446',
+    
+    '#D7D55C',
+    '#8A882D',
+    
+    '#081D58'
+    ]).
     domain(d3.keys(data[0]).filter(function(key) {
       return key === 'selectorid';
     }));
+
+    console.log(color);
 
 
     // like the canvas

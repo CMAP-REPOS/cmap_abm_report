@@ -1,11 +1,11 @@
 Trips by purpose,trip_purpose,QUANTITY,selectorid
-Non-mandatory,discretionary,3376777.811,a1
-Non-mandatory,eating out,2535580.805,b1
-Non-mandatory,escort,4068982.769,c1
-Non-mandatory,maintenance,4689504.886,d1
-Mandatory,school,2514119.472,e1
-Non-mandatory,shop,5555766.254,f1
-Mandatory,university,333810.6387,g1
+Mandatory,work,5585820.093,a1
+Non-mandatory,shop,5555766.254,b1
+Non-mandatory,maintenance,4689504.886,c1
+Non-mandatory,escort,4068982.769,d1
+Non-mandatory,discretionary,3376777.811,e1
+Non-mandatory,eating out,2535580.805,f1
+Mandatory,school,2514119.472,g1
 Non-mandatory,visiting,2019572.211,h1
-Mandatory,work,5585820.093,i1
-Non-mandatory,work-based,961957.5649,j1
+Non-mandatory,work-based,961957.5649,i1
+Mandatory,university,333810.6387,j1

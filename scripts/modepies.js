@@ -90,8 +90,7 @@ d3.csv("data/csv18_survey_transit_access.csv", function(data) {
     var color = d3.
     scaleOrdinal().
     range(['#ABABAB',
-    '#1C4E80',
-    '#6A9BCC',
+    "#1C4E80", "#A6BACE",
 
     '#CFCFCF',
     '#ABABAB',

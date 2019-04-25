@@ -29,7 +29,7 @@ function makeStackedChart(csv_file,catID,dataTitle,divID){
   var y1 = d3.scaleBand()
 
   var z = d3.scaleOrdinal()
-      .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+      .range(["#A6BACE", "#7896B4", "#4A729A", "#1C4E80", "#0D263F"]);
 
   var stack = d3.stack()
       .offset(d3.stackOffsetExpand);
@@ -123,6 +123,16 @@ function makeStackedChart(csv_file,catID,dataTitle,divID){
     g.append("g")
         .attr("class", "axis")
         .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x1));
+
+    g.append("g")
+        .attr("class", "axis")
+        .attr("transform", "translate(200," + height + ")")
+        .call(d3.axisBottom(x1));
+
+    g.append("g")
+        .attr("class", "axis")
+        .attr("transform", "translate(400," + height + ")")
         .call(d3.axisBottom(x1));
 
     g.append("g")
@@ -271,6 +281,16 @@ function makeStackedChart(csv_file,catID,dataTitle,divID){
           g.append("g")
               .attr("class", "axis")
               .attr("transform", "translate(0," + height + ")")
+              .call(d3.axisBottom(x1));
+
+          g.append("g")
+              .attr("class", "axis")
+              .attr("transform", "translate(200," + height + ")")
+              .call(d3.axisBottom(x1));
+
+          g.append("g")
+              .attr("class", "axis")
+              .attr("transform", "translate(400," + height + ")")
               .call(d3.axisBottom(x1));
 
           g.append("g")

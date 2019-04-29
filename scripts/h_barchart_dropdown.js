@@ -51,7 +51,7 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
   .attr("class", "axis axis--y");
 
   var z = d3.scaleOrdinal()
-  .range(['#1c4e80','#6A9BCC',"#159398","#20BEA7","#5BE8A7","#23202F"]);
+  .range(["#1C4E80", "#A6BACE","#159398","#20BEA7","#5BE8A7","#23202F"]);
 
   var durations = 0;
 

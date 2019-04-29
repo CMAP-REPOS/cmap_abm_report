@@ -18,7 +18,7 @@ function BarChart(data,loc,title) {
     .rangeRound([height, 0]);
 
   var z = d3.scaleOrdinal()
-    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+    .range(["#1C4E80", "#A6BACE"]);
   var keys = data.columns.slice(1);
 
     x0.domain(data.map(function(d) { return d.Index; }));

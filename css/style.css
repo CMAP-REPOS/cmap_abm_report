@@ -87,4 +87,59 @@ width: 100px;
   width: 100px;
   }
 
-  
+  h3 {
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+  }
+
+  #accordion .panel{
+    border: none;
+    box-shadow: none;
+    margin-bottom: 5px;
+}
+
+#accordion .panel-heading{
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+#accordion .panel-title a{
+    display: block;
+    padding: 14px 50px 14px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: rgb(28, 78, 128);
+    position: relative;
+    border-bottom: none;
+    border-radius: 20px 20px 0 0;
+}
+
+#accordion .panel-title a.collapsed{
+    border-radius: 20px;
+}
+
+#accordion .panel-title a:before,
+#accordion .panel-title a.collapsed:before{
+    content: "\f106";
+    font-family: fontawesome;
+    font-size: 20px;
+    position: absolute;
+    top: 12px;
+    right: 30px;
+}
+
+#accordion .panel-title a.collapsed:before{
+    content: "\f107";
+}
+
+#accordion .panel-body{
+    font-size: 14px;
+    color: #555;
+    line-height: 25px;
+    padding: 20px 25px;
+    position: relative;
+    border: none;
+}

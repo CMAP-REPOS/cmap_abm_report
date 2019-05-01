@@ -1,0 +1,43 @@
+MainGroup,StackGroup,SubGroup,Value,Category,Title
+Chicago,Arterial,Model,19861977.34,CMAP Region,CMAP Region
+Suburban Cook,Arterial,Model,40470017.99,CMAP Region,CMAP Region
+DuPage,Arterial,Model,18246438.25,CMAP Region,CMAP Region
+Kane,Arterial,Model,13933754.92,CMAP Region,CMAP Region
+Lake,Arterial,Model,16457449.65,CMAP Region,CMAP Region
+McHenry,Arterial,Model,12417592.86,CMAP Region,CMAP Region
+Will,Arterial,Model,14192458.45,CMAP Region,CMAP Region
+Chicago,Interstate,Model,17748147.71,CMAP Region,CMAP Region
+Suburban Cook,Interstate,Model,26678273.95,CMAP Region,CMAP Region
+DuPage,Interstate,Model,11738790.48,CMAP Region,CMAP Region
+Kane,Interstate,Model,4850875.03,CMAP Region,CMAP Region
+Lake,Interstate,Model,8752172.17,CMAP Region,CMAP Region
+McHenry,Interstate,Model,1279159.55,CMAP Region,CMAP Region
+Will,Interstate,Model,9141323.29,CMAP Region,CMAP Region
+Chicago,Local,Model,4464573.71,CMAP Region,CMAP Region
+Suburban Cook,Local,Model,7729478.36,CMAP Region,CMAP Region
+DuPage,Local,Model,3812146.04,CMAP Region,CMAP Region
+Kane,Local,Model,2037694.47,CMAP Region,CMAP Region
+Lake,Local,Model,3164405.72,CMAP Region,CMAP Region
+McHenry,Local,Model,1579816.88,CMAP Region,CMAP Region
+Will,Local,Model,3203748.39,CMAP Region,CMAP Region
+Chicago,Arterial,Observed,14769849.00,CMAP Region,CMAP Region
+Suburban Cook,Arterial,Observed,28386797.00,CMAP Region,CMAP Region
+DuPage,Arterial,Observed,12500082.00,CMAP Region,CMAP Region
+Kane,Arterial,Observed,6335693.00,CMAP Region,CMAP Region
+Lake,Arterial,Observed,10221381.00,CMAP Region,CMAP Region
+McHenry,Arterial,Observed,4459334.00,CMAP Region,CMAP Region
+Will,Arterial,Observed,7327222.00,CMAP Region,CMAP Region
+Chicago,Interstate,Observed,10791247.00,CMAP Region,CMAP Region
+Suburban Cook,Interstate,Observed,20423701.00,CMAP Region,CMAP Region
+DuPage,Interstate,Observed,7489071.00,CMAP Region,CMAP Region
+Kane,Interstate,Observed,1994595.00,CMAP Region,CMAP Region
+Lake,Interstate,Observed,3038507.00,CMAP Region,CMAP Region
+McHenry,Interstate,Observed,355101.00,CMAP Region,CMAP Region
+Will,Interstate,Observed,5784249.00,CMAP Region,CMAP Region
+Chicago,Local,Observed,3353819.00,CMAP Region,CMAP Region
+Suburban Cook,Local,Observed,7119745.00,CMAP Region,CMAP Region
+DuPage,Local,Observed,3110932.00,CMAP Region,CMAP Region
+Kane,Local,Observed,2150290.00,CMAP Region,CMAP Region
+Lake,Local,Observed,2557252.00,CMAP Region,CMAP Region
+McHenry,Local,Observed,1609123.00,CMAP Region,CMAP Region
+Will,Local,Observed,3301896.00,CMAP Region,CMAP Region

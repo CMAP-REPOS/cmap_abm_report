@@ -1,4 +1,4 @@
-function makeStackedChartno100(csv_file,catID,dataTitle,divID){
+function makeStackedChartno100_dd(csv_file,catID,dataTitle,divID){
 
   var divText = document.getElementById(dataTitle);
   catInt = d3.select(catID).property('value');

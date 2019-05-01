@@ -1,4 +1,4 @@
-function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
+function makeGroupHBar_dd(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
 
   var barChartConfig = {
        mainDiv: "#chart",
@@ -108,10 +108,10 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
         //console.log(d)
         return d.Category == catInt;
       });
-      console.log(newdata)
+      //console.log(newdata)
       //console.log(newdata);
       keys = data.columns.slice(1, ngroups); //Filter columns for Group Labels
-      console.log(keys)
+      //console.log(keys)
       ////console.log(keys)
       copy = [];
       keys.forEach(function(t) {
@@ -162,7 +162,7 @@ function makeGroupHBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
 
       var barGroups = g.selectAll(".layer") // Bargroups initialized here for proper sorting
         .data(newdata, function(d) {
-          console.log(d)
+          //console.log(d)
           return d.Index }); // DON'T FORGET KEY FUNCTION
 
       barGroups.enter().append("g")

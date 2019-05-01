@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8">
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,600italic,700italic,200,300,400,600,700,900">
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<style>
+
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  color: #333;
+  font-weight: 400;
+}
+
+#content {
+  margin: 5px;
+  padding: 20px;
+  width: 765px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+h1 {
+  line-height: 1em;
+  font-size: 1.75em;
+  font-weight: 900;
+  color: #000;
+}
+
+p {
+  margin: 5px 0px 0px 0px;
+}
+
+.domain {
+  fill: none;
+  stroke-width: 0;
+}
+
+#chart {
+  margin: 15px 0px 0px 0px;
+  padding: 0px;
+}
+
+#menu {
+  margin: 5px 0px 0px 0px;
+  padding: 0;
+  display: block;
+}
+
+select {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.9em;
+  color: #333;
+  font-weight: 400;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #ccc;
+  shape-rendering: crispEdges;
+}
+
+.axis line {
+  stroke: #eee;
+  stroke-width: 1;
+  opacity: 0.5;
+  shape-rendering: crispEdges;
+}
+
+.g-baseline line {
+  stroke: #333;
+  stroke-width: 2;
+  opacity: 1;
+  shape-rendering: crispEdges;
+}
+
+.x.axis .tick text, .y.axis .tick text, .ylabel {
+  fill: #333;
+  font-size: 0.9em;
+}
+
+.x.axis .tick text {
+  fill: #fff;
+}
+
+.x.axis .tick line {
+  stroke: none;
+}
+
+.keylabel {
+  fill: #333;
+}
+
+.line {
+  fill: none;
+  stroke: #2C3E50;
+  stroke-width: 3px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="content">
+<h1>U.S. International Trade in Goods, 2000-2013</h1>
+<p>Value of Exports and Imports by 3-digit NAICS Code ($US Billions)</p>
+<select id="menu" onchange="makeBars()">
+        <option selected value="000">Total</option>
+        <option value="all">Total</option>
+        <option value="work">Work</option>
+
+</select>
+<div id="chart"></div>
+<p>Source: U.S. Census Bureau.</p>
+</div>
+
+<script src="scripts/chart.js"></script>
+
+</body>
+</html>

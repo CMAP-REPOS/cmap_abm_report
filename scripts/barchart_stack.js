@@ -1,7 +1,8 @@
 function makeStackedChart_nodd(csv_file,dataTitle,divID){
 
   var divText = document.getElementById(dataTitle);
-  //catInt = d3.select(catID).property('value');
+  allKey = 'CMAP Region'
+  catInt = allKey;
   //console.log(catInt);
 
   var margin = {top: 35, right: 75, bottom: 50, left: 45},
@@ -31,17 +32,15 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
   var z = d3.scaleOrdinal()
       .range(["#A6BACE", "#7896B4", "#4A729A", "#1C4E80", "#0D263F"]);
 
-  var stack = d3.stack()
-      .offset(d3.stackOffsetExpand);
+  var stack = d3.stack();
 
 
   d3.csv(csv_file, function(error, data) {
     if (error) throw error;
-    //catInt = d3.select(catID).property('value');
+    //catInt = allKey;
     //d3.select(catID).on('change', update);
-
     data.forEach(function(d){
-      d.Value = +d.Value;
+      d.Value = parseInt(d.Value);
     })
 
     ////console.log("data", data);
@@ -66,6 +65,7 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
       })
       .rollup(function(d, i){
         ////console.log(d[0].Category)
+            ////console.log(d)
             var d2 = {SubGroup: d[0].SubGroup, MainGroup: d[0].MainGroup}
           d.forEach(function(d){
               d2[d.StackGroup] = d.Value;
@@ -77,14 +77,14 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
       .entries(data)
       .map(function(d){ return d.value; });
 
-    ////console.log("groupData", groupData)
+    console.log("groupData", groupData)
 
     var stackData = stack
       .keys(keys)(groupData)
     d3.select("#" + dataTitle).text(divText);
     //console.log("stackData", stackData)
 
-    //y.domain([0, d3.max(data, function(d) { return d.Value; })]).nice();
+    y.domain([0, 30]).nice();
 
     ////console.log("keys", keys)
 
@@ -164,21 +164,28 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
         */
 
 
-    var legend = serie.append("g")
-        .attr("class", "legend")
-        .attr("transform", function(d) { var d = d[d.length - 1]; return "translate(" + (x0(d.data.MainGroup) + x1(d.data.SubGroup) + x1.bandwidth()) + "," + ((y(d[0]) + y(d[1])) / 2) + ")"; });
+        var legend = serie.append("g")
+        .attr("font-family", "sans-serif")
+        .attr("font-size", 10)
+        .attr("text-anchor", "end")
+            .attr("class", "legend")
+            .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
-    legend.append("line")
-        .attr("x1", -10)
-        .attr("x2", 10)
-        .attr("stroke", "#000");
+            legend.append("rect")
+                  .attr("x", width - 19)
+                  .attr("y", -20)
+                  .attr("width", 19)
+                  .attr("height", 19)
+                  .attr("fill", function(d) { return z(d.key); });
 
-    legend.append("text")
-        .attr("x", 9)
-        .attr("dy", "0.35em")
-        .attr("fill", "#000")
-        .style("font", "10px sans-serif")
-        .text(function(d) { return d.key; });
+            legend.append("text")
+              .attr("x", width-30)
+              .attr("y", -10)
+              .attr("dy", "0.32em")
+              .style("fill","black")
+              .text(function(d) {
+                return d.key;
+              });
 
       });
 

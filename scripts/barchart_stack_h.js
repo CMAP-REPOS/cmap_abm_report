@@ -1,4 +1,4 @@
-function makeStackedChart_nodd(csv_file,dataTitle,divID){
+function makeStackedChart_nodd_h(csv_file,dataTitle,divID){
 
   var divText = document.getElementById(dataTitle);
   allKey = 'CMAP Region'
@@ -13,7 +13,7 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
       d.Value = parseInt(d.Value);
     })
 
-    var margin = {top: 35, right: 75, bottom: 200, left: 45},
+    var margin = {top: 35, right: 75, bottom: 20, left: 150},
     width = 900 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
     height2 = 575 - margin.top - margin.bottom;
@@ -26,21 +26,15 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
     .attr("align","center")
     .append("g")
     .attr("transform","translate(" + margin.left + "," + margin.top + ")");
-    var x0 = d3.scaleBand()
-        .rangeRound([0, width])
+    var y0 = d3.scaleBand()
+        .rangeRound([0, height])
         .paddingInner(0.1);
 
-    var x1 = d3.scaleBand()
+    var y1 = d3.scaleBand()
         .padding(0.05);
 
-    var y = d3.scaleLinear()
-    .domain([d3.min(data, function(d){
-      return(d.Value);
-    }),
-    d3.max(data, function(d){
-      return d.Value;
-     })]) //y range is reversed because svg
-     .range([height-padding, padding]);
+    var x = d3.scaleLinear()
+          .range([0, width]);
 
     var y1 = d3.scaleBand()
 
@@ -51,13 +45,17 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
 
     ////console.log("data", data);
     ////console.log("data", newdata);
+    x.domain([0,
+    d3.max(data, function(d){
+      return d.Value;
+     })]) //y range is reversed because svg
+     .range([width-padding, padding]);
 
-    x0.domain(data.map(function(d) {
+    y0.domain(data.map(function(d) {
       return d.MainGroup; }));
-    x1.domain(data.map(function(d) {
-
-      return d.SubGroup; }))
-      .rangeRound([0, x0.bandwidth()])
+    y1.domain(data.map(function(d) {
+      return d.SubGroup; }).reverse())
+      .rangeRound([0, y0.bandwidth()])
       .padding(0.2);
 
     z.domain(data.map(function(d) {
@@ -81,7 +79,9 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
           return d2;
       })
       .entries(data)
-      .map(function(d){ return d.value; });
+      .map(function(d){
+        return d.value;
+      });
 
     console.log("groupData", groupData)
 
@@ -90,7 +90,7 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
     d3.select("#" + dataTitle).text(divText);
     //console.log("stackData", stackData)
 
-    y.domain([0, d3.max(data, function(d){
+    x.domain([0, d3.max(data, function(d){
       return d.Value;
      })]).nice();
 
@@ -100,67 +100,56 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
       .data(stackData)
       .enter().append("g")
         .attr("class", "serie")
-        .attr("fill", function(d) { return z(d.key); });
+        .attr("fill", function(d) {
+          return z(d.key);
+        });
 
     serie.selectAll("rect")
       .data(function(d) { return d; })
-      .enter().append("rect")
+      .enter()
+      .append("rect")
         .attr("class", "serie-rect")
-        .attr("transform", function(d) { return "translate(" + x0(d.data.MainGroup) + ",0)"; })
-        .attr("x", function(d) {
-          ////console.log(d);
-          return x1(d.data.SubGroup); })
+        .attr("transform", function(d) {
+          return "translate(0," + y0(d.data.MainGroup) + ")";
+        })
         .attr("y", function(d) {
           ////console.log(d);
-          return y(d[1]); })
-        .attr("height", function(d) { return y(d[0]) - y(d[1]); })
-        .attr("width", x1.bandwidth())
+          return y1(d.data.SubGroup);
+        })
+        .attr("x", function(d) {
+          ////console.log(d);
+          return x(d[1]);
+        })
+        .attr("width", function(d) {
+          return x(d[0]) - x(d[1]);
+        })
+        .attr("height", y1.bandwidth())
         .on("click", function(d, i){ });
 
-    g.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(0," + height + ")")
-        .call(d3.axisBottom(x1));
-
-    g.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(200," + height + ")")
-        .call(d3.axisBottom(x1));
-
-    g.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(400," + height + ")")
-        .call(d3.axisBottom(x1));
 
     // g.append("g")
     //     .attr("class", "axis")
     //     .attr("transform", "translate(0," + height * 1.1 + ")")
-    //     .call(d3.axisBottom(x0))
+    //     .call(d3.axisLeft(x0))
 
     g.append("g")
         .attr("class", "axis")
-        .call(d3.axisLeft(y).ticks(null, "s"))
+        .attr("transform", "translate(20," + height + ")")
+        .call(d3.axisBottom(x).ticks(null, "s"))
       .append("text")
-        .attr("x", 2)
-        .attr("y", y(y.ticks().pop()) + 0.5)
-        .attr("dy", "0.32em")
+        .attr("y", 2)
+        .attr("x", x(x.ticks().pop()) + 0.5)
+        .attr("dx", "0.32em")
         .attr("fill", "#000")
         .attr("font-weight", "bold")
         .attr("text-anchor", "start")
 
         // Add the X Axis
        g.append("g")
-           .attr("class", "x axis")
-           .attr("transform", "translate(0," + height * 1.1 + ")")
-           .call(d3.axisBottom(x0))
+           .attr("class", "y axis")
+           .call(d3.axisLeft(y0))
            .selectAll("text")
             .style("text-anchor", "end")
-            .attr("dx", "-.8em")
-            .attr("dy", ".15em")
-            .attr("transform", function(d) {
-                return "rotate(-65)"
-                });
-
   /*
     var legend = g.append("g")
         .attr("font-family", "sans-serif")

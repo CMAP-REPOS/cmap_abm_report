@@ -14,11 +14,6 @@ Drive alone pay,65980,30759,$35k to $50k,Drive alone pay $35k to $50k,$35k to $5
 Drive alone pay,69965,66233,$50k to $75k,Drive alone pay $50k to $75k,$50k to $75k
 Drive alone pay,52995,81512,$75k to $100K,Drive alone pay $75k to $100K,$75k to $100K
 Drive alone pay,83000,173976,More than $100k,Drive alone pay More than $100k,More than $100k
-Drive to transit,63540,15264,Less than $35k,Drive to transit lt38,Less than $35k
-Drive to transit,36170,11629,$35k to $50k,Drive to transit $35k to $50k,$35k to $50k
-Drive to transit,23450,35374,$50k to $75k,Drive to transit $50k to $75k,$50k to $75k
-Drive to transit,17790,31652,$75k to $100K,Drive to transit $75k to $100K,$75k to $100K
-Drive to transit,33590,68141,More than $100k,Drive to transit More than $100k,More than $100k
 School bus,400000,127589,Less than $35k,School bus lt39,Less than $35k
 School bus,153740,99023,$35k to $50k,School bus $35k to $50k,$35k to $50k
 School bus,147890,120419,$50k to $75k,School bus $50k to $75k,$50k to $75k
@@ -54,15 +49,14 @@ Walk,562815,380596,$35k to $50k,Walk $35k to $50k,$35k to $50k
 Walk,428530,436040,$50k to $75k,Walk $50k to $75k,$50k to $75k
 Walk,252090,391974,$75k to $100K,Walk $75k to $100K,$75k to $100K
 Walk,349300,758642,More than $100k,Walk More than $100k,More than $100k
-Walk to transit,850910,499254,Less than $35k,Walk to transit lt46,Less than $35k
-Walk to transit,245670,182619,$35k to $50k,Walk to transit $35k to $50k,$35k to $50k
-Walk to transit,149155,198472,$50k to $75k,Walk to transit $50k to $75k,$50k to $75k
-Walk to transit,94315,137248,$75k to $100K,Walk to transit $75k to $100K,$75k to $100K
-Walk to transit,156295,231849,More than $100k,Walk to transit More than $100k,More than $100k
+Transit,914450,514518,Less than $35k,Walk to transit lt46,Less than $35k
+Transit,281840,194248,$35k to $50k,Walk to transit $35k to $50k,$35k to $50k
+Transit,172605,233846,$50k to $75k,Walk to transit $50k to $75k,$50k to $75k
+Transit,112105,168900,$75k to $100K,Walk to transit $75k to $100K,$75k to $100K
+Transit,189885,299990,More than $100k,Walk to transit More than $100k,More than $100k
 Bike,348510,253072,All,Bike All,All
 Drive alone free,13036135,12222867,All,Drive alone free All,All
 Drive alone pay,320830,369637,All,Drive alone pay All,All
-Drive to transit,174540,162060,All,Drive to transit All,All
 School bus,877930,699298,All,School bus All,All
 Shared ride 2 free,5876675,6009703,All,Shared ride 2 free All,All
 Shared ride 2 pay,57550,40827,All,Shared ride 2 pay All,All
@@ -70,4 +64,4 @@ Shared ride 3+ free,5423640,5115529,All,Shared ride 3+ free All,All
 Shared ride 3+ pay,108940,20611,All,Shared ride 3+ pay All,All
 Taxi,110935,64726,All,Taxi All,All
 Walk,3390435,2986980,All,Walk All,All
-Walk to transit,1496345,1249442,All,Walk to transit All,All
+Transit,1670885,1411502,All,Transit,All

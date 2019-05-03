@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <title>A D3 map</title>
+
+    <style>
+      path {
+        stroke: white;
+        stroke-width: 0.5px;
+        fill: grey;
+      }
+
+      path:hover {
+      	fill-opacity: .7;
+      }
+
+    </style>
+
+  <script src='https://d3js.org/d3.v4.min.js'></script>
+  <script src='data/json/ModelingArea2.js'></script>
+</head>
+<body>
+  map test
+  <script>
+var width = 700,
+    height = 580;
+
+var svg = d3.select('body')
+  .append('svg')
+  .attr('width', width)
+  .attr('height', height);
+
+var g = svg.append('g');
+
+var albersProjection = d3.geoAlbers()
+  .scale(15000) //adjust until map features are centered
+  .rotate([87.6231777, 0]) //longitude
+  .center([0, 41.881832]) //latitude
+  .translate([width/2, height/2]);
+
+var geoPath = d3.geoPath()
+    .projection(albersProjection);
+
+//Load datasets
+d3.csv("data/CountyData.csv", function(data){
+  color.domain
+})
+
+//var ramp = d3.scaleLinear().domain([minVal,maxVal]).range([lowColor,highColor])
+
+g.selectAll('path') //could replace attr('fill','#ccc') with path{fill:#ccc} in style sheet
+  .data(neighborhoods_json.features) //var name of js features
+  .enter()
+  .append('path')
+  //.attr('fill', '#ccc')
+  .attr('d', geoPath)
+  .style("fill",function(d) {return ramp(d.properties.COUNTYP020)});
+
+
+
+
+  </script>
+
+  </body>
+</html>

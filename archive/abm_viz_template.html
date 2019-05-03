@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </meta>
+    <title>CMAP ABM</title>
+
+    <link href="css/chordStyles.css" rel="stylesheet"></link>
+    <link rel="stylesheet" href="css/mapstyle.css"></link>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""></link>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+
+    #main {
+      width: 960px;
+    }
+    .axis .domain {
+      display: none;
+    }
+    text_div
+    {
+      display: inline-block;
+    }
+
+    table {font-size: 11px;width:20%;
+  float:left;margin: 10px;}
+  table:nth-child(3n+1) {
+  clear:left;
+}
+    td{text-align: right}
+    th{text-align: center;}
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+      <h2>
+        <a href="https://www.cmap.illinois.gov/data/transportation/modeling?doAsUserId=fH2a30wm7Fk%3D%2F-%2Fasset_publisher%2FQ4En%2Fcontent%2Fid%2F322604">
+          CMAP-ABM
+        </a>
+      </h2>
+
+      <br/>
+
+      <br/>
+
+      <ul class="nav nav-tabs">
+        <li class="active">
+          <a
+            href="#1"
+            role="tab"
+            data-toggle="tab">
+            Introduction
+          </a>
+        </li>
+
+        <li >
+          <a
+            href="#2"
+            role="tab"
+            data-toggle="tab">
+            Population Synthesis
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#3"
+            role="tab"
+            data-toggle="tab">
+            Auto Ownership
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#4"
+            role="tab"
+            data-toggle="tab">
+            Work Flows
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#5"
+            role="tab"
+            data-toggle="tab">
+            Trip Mode
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#6"
+            role="tab"
+            data-toggle="tab">
+            Trip Activities
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#7"
+            role="tab"
+            data-toggle="tab">
+            Transit
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tab-content ">
+      <div
+        id="1" class="tab-pane active container">
+        <div class="col-md-12">
+          <br/>
+
+          <br/>
+
+          <h3>INTRODUCTION/DESCRIPTION</h3>
+
+          <p>
+
+          </p>
+
+          Map of Region/Network Placeholder
+          <br/>
+
+          <br/>
+          Place Holder Model Step Description
+        </div>
+      </div>
+
+      <div
+        id="2"
+        class="tab-pane container">
+        <div class="row">
+          <div class="col-md-12">
+            <br/>
+            <br/>
+            <h3>INTRODUCTION/DESCRIPTION</h3>
+            <p>
+              </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <br/>
+          <br/>
+          <text_div class="col col-md-2">
+            <h5><b>Residential Households  by <div id= "hhtitle"></div></b></h5>
+            <div class="small">
+              Select data type for comparison from dropdown
+              </div>
+            <br>
+            <select id="catPopSyn">
+              <option value="size">Household Size</option>
+              <option value="veh">Vehicles</option>
+              <option value="age">Age</option>
+              <option value="income">Household Income</option>
+              <option value="workers">Household Workers</option>
+              <option value="pertype">Person Type</option>
+            </select>
+          </text_div>
+
+          <div class="col col-md-10">
+            <div id="PurposeChartpums"></div>
+            <div class="small">
+              <div id="popsynDesc" ></div>
+              PUMA - source: <br>
+              Census- source: <br>
+              Modeled- description <br>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <br/>
+            <br/>
+            <h3>PLACE HOLDER</h3>
+            <p>
+            </p>
+            {{ child_table }}
+          </div>
+        </div>
+      </div>
+        <!-- Auto Counts -->
+      <div
+        id="3"
+        class="tab-pane container">
+        <div class="row">
+          <div class="col-md-12">
+            <br/>
+
+            <br/>
+
+            <h3>INTRODUCTION/DESCRIPTION</h3>
+
+            <p>
+
+            </p>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <br/>
+          <br/>
+          <div class="col col-md-4">
+          <h5><b>Distribution of Auto Ownership</b></h5>
+            <br>
+            <div id="auto_counts" style="width : 86%" align="center"></div>
+            <div class="small">
+              <div id="popsynDesc"></div>
+              Census - source: <br>
+              Survey- source: <br>
+              Modeled- description <br>
+            </div>
+          </div>
+          <div class = "col col-md-8">
+            <br>
+            <br>
+            <br>
+            <br>
+            <svg id="aoCountBar" width="700" height="300"
+                  preserveAspectRatio="xMidYMid meet"></svg>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <br/>
+            <br/>
+            <h3>PLACE HOLDER</h3>
+            <p>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <br>
+          <div class="col col-md-4">
+            <h5><b>Distribution of Auto Ownership by <div id= "dtitle"></div></b></h5>
+            <div class="small">
+              Select data type for comparison from dropdown
+              </div>
+            <br>
+            <select id="aoCat">
+              <option value="size">Household Size</option>
+              <option value="income">Household Income</option>
+              <option value="workers">Household Workers</option>
+            </select>
+          </div>
+          <div class="col col-md-8">
+              <div id="stackedbar"></div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <br/>
+            <br/>
+            <h3>PLACE HOLDER</h3>
+            <p>
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Work Flows -->
+      <div
+        id="4"
+        class="tab-pane container">
+        <div class="row">
+          <div class="col-md-12">
+            <br/>
+            <br/>
+            <h3>INTRODUCTION/DESCRIPTION</h3>
+            <p>
+
+            </p>
+          </div>
+        </div>
+      <div class="row">
+          <div class="col col-md-6" align = "center">
+            <h5><b>Observed Work Flows</b></h5>
+            <div id="obsChord"></div>
+          </div>
+          <div class="col col-md-6" align = "center">
+            <h5><b>Modeled Work Flows</b></h5>
+            <div id="modelChord"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <br/>
+            <br/>
+            <h3>Work Trips to <text_div id="pTitle"></text_div></h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis.
+              <div class="small">
+                Select data type for comparison from dropdown
+              </div>
+              <br>
+              <select id="cat">
+                <option value="1">CBD</option>
+                <option value="2N">North Chicago</option>
+                <option value="3N">North Cook</option>
+              </select>
+          </div>
+          <div class="col-md-6">
+            <br/>
+            <br/>
+            <br/>
+            <div id="VChart"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Work Trips by Mode and Distance</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis. Nullam scelerisque lorem at felis placerat, vel cursus neque imperdiet. Donec interdum elementum metus, et convallis est cursus ut. Nulla finibus lorem a imperdiet fringilla. Donec pharetra tristique ultrices. Pellentesque at arcu quis turpis blandit dictum. Fusce dignissim ut elit sed blandit. Nulla volutpat posuere sapien. Donec quis consectetur eros. Pellentesque sodales semper fermentum.
+            </p>
+            <!--HOLD FOR Work Trips by Mode & Distance-->
+          </div>
+        </div>
+        <div class="row">
+          <br/>
+          <br/>
+          <div class="col col-md-2">
+            <h5><b>Mean Distance To Work by <div id= "modeDTitle"></div></b></h5>
+            <div class="small">
+              Select data type for comparison from dropdown
+              </div>
+            <br>
+            <select id="catModeDist">
+              <option value="All">All Modes</option>
+              <option value="sov1">Drive Alone Free</option>
+            </select>
+          </div>
+
+          <div class="col col-md-10">
+            <div id="ModeByDistance"></div>
+            <div class="small">
+              <div id="modeDistDesc" ></div>
+              Survey - description <br>
+              Modeled- description <br>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <br/>
+            <br/>
+            <h3>Work-Based Walk Trips by Distance</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis. Nullam scelerisque lorem at felis placerat, vel cursus neque imperdiet. Donec interdum elementum metus, et convallis est cursus ut. Nulla finibus lorem a imperdiet fringilla. Donec pharetra tristique ultrices. Pellentesque at arcu quis turpis blandit dictum. Fusce dignissim ut elit sed blandit. Nulla volutpat posuere sapien. Donec quis consectetur eros. Pellentesque sodales semper fermentum.
+            </p>
+            <!--HOLD FOR Work-Based Trips by Mode & Distance-->
+          </div>
+        </div>
+        <div class="row">
+          <br/>
+          <br/>
+          <div class="col col-md-2">
+            <h5><b>Mean Distance of Work-Based Trips by <div id= "wbmodeDTitle"></div></b></h5>
+            <div class="small">
+              Select data type for comparison from dropdown
+              </div>
+            <br>
+            <select id="wbcatModeDist">
+              <option value="All">All Modes</option>
+              <option value="sov1">Drive Alone Free</option>
+            </select>
+          </div>
+
+          <div class="col col-md-10">
+            <div id="wbModeByDistance"></div>
+            <div class="small">
+              <div id="wbmodeDistDesc" ></div>
+              Survey - description <br>
+              Modeled- description <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="5"
+        class="tab-pane container">
+        <div class="row">
+        <div class="col-md-12">
+          <br/>
+          <br/>
+          <h3>TRIPS BY MODE</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+            improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+            sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+            factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+            qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+            formarum quam civis excellen
+          </p>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-2" align = "center">
+            <div class="small">
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              Hover over pie chart to compare trips by mode
+            </div>
+          </div>
+          <div class="col col-md-5" align = "center">
+            <h5><b>Observed Mode Share</b></h5>
+            <div id="pieMode1"></div>
+          </div>
+          <div class="col col-md-5" align = "center">
+            <h5><b>Modeled Mode Share</b></h5>
+            <div id="pieMode2"></div>
+          </div>
+      </div>
+      <div class="row">
+      <div class="col-md-12">
+        <br/>
+        <br/>
+        <h3>TRIPS BY MODE AND PURPOSE</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+          improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+          sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+          factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+          qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+          formarum quam civis excellen
+        </p>
+      </div>
+      </div>
+      <div class="row">
+        <br/>
+        <br/>
+        <div class="col col-md-2">
+          <h5><b><div id= "modeTitle"></div> Trips</b></h5>
+          <div class="small">
+            Select data type for comparison from dropdown
+            </div>
+          <br>
+          <select id="catModePurp">
+            <option value="All">All</option>
+            <option value="discretionary">Discretionary</option>
+            <option value="eatingout">Eating Out</option>
+            <option value="escort">Escort</option>
+            <option value="maintenance">Maintenance</option>
+            <option value="school">School</option>
+            <option value="shop">Shop</option>
+            <option value="university">University</option>
+            <option value="visiting">Visiting</option>
+            <option value="work">Work</option>
+            <option value="work-based">Work-based</option>
+          </select>
+        </div>
+
+        <div class="col col-md-10">
+          <div id="ModeByPurpose"></div>
+          <div class="small">
+            <div id="catModePurp" ></div>
+            PUMA - source: <br>
+            Census- source: <br>
+            Modeled- description <br>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+      <div class="col-md-12">
+        <br/>
+        <br/>
+        <h3>TRIPS BY MODE AND PERSON TYPE</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+          improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+          sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+          factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+          qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+          formarum quam civis excellen
+        </p>
+      </div>
+      </div>
+      <div class="row">
+        <br/>
+        <br/>
+        <div class="col col-md-2">
+          <h5><b><div id= "modePTitle"></div> Trips</b></h5>
+          <div class="small">
+            Select data type for comparison from dropdown
+            </div>
+          <br>
+          <select id="catModePer">
+            <option value="All">All</option>
+            <option value="fulltime">Full-time Worker</option>
+            <option value="parttime">Part-time Worker</option>
+          </select>
+        </div>
+        <div class="col col-md-10">
+          <div id="ModebyPerson"></div>
+          <div class="small">
+            <div id="modePerDesc" ></div>
+            PUMA - source: <br>
+            Census- source: <br>
+            Modeled- description <br>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+      <div class="col-md-12">
+        <br/>
+        <br/>
+        <h3>TRIPS BY MODE AND HOUSEHOLD INCOME</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+          improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+          sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+          factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+          qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+          formarum quam civis excellen
+        </p>
+      </div>
+      </div>
+      <div class="row">
+        <br/>
+        <br/>
+        <div class="col col-md-2">
+          <h5><b><div id= "modeITitle"></div> Trips</b></h5>
+          <div class="small">
+            Select data type for comparison from dropdown
+            </div>
+          <br>
+          <select id="catModeInc">
+            <option value="Bike">Bike</option>
+            <option value="Drive alone free">Drive alone free</option>
+            <option value="Drive alone pay">Drive alone pay</option>
+          </select>
+        </div>
+        <div class="col col-md-10">
+          <div id="ModebyIncome"></div>
+          <div class="small">
+            <div id="modeIncrDesc" ></div>
+            PUMA - source: <br>
+            Census- source: <br>
+            Modeled- description <br>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div
+        id="6"
+        class="tab-pane container">
+        <div class="row">
+          <div class="col-md-12">
+            <br/>
+            <br/>
+            <h3>TRIPS BY PURPOSE</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+              improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+              sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+              factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+              qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+              formarum quam civis excellen
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-2" align = "center">
+            <div class="small">
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              Hover over pie chart to compare trips by purpose
+            </div>
+          </div>
+          <div class="col col-md-5" align = "center">
+            <h5><b>Observed Trip Purpose</b></h5>
+            <div id="piePurpose1"></div>
+          </div>
+          <div class="col col-md-5" align = "center">
+            <h5><b>Modeled Trip Purpose</b></h5>
+            <div id="piePurpose2"></div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <br/>
+          <br/>
+          <h3>TRIPS BY PERSONTYPE AND PURPOSE</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+            improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+            sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+            factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+            qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+            formarum quam civis excellen
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <br/>
+        <br/>
+        <div class="col col-md-2">
+          <h5><b><div id= "purpTypeTitle"></div> Trips</b></h5>
+          <div class="small">
+            Select data type for comparison from dropdown
+            </div>
+          <br>
+          <select id="catPurpType">
+            <option value="All">All</option>
+            <option value="fulltime">Full-time Worker</option>
+            <option value="parttime">Part-time Worker</option>
+          </select>
+        </div>
+        <div class="col col-md-10">
+          <div id="PurposebyType"></div>
+          <div class="small">
+            <div id="purpTypeDesc" ></div>
+            PUMA - source: <br>
+            Census- source: <br>
+            Modeled- description <br>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <br/>
+          <br/>
+          <h3>TRIPS BY DISTANCE AND PURPOSE</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+            improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+            sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+            factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+            qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+            formarum quam civis excellen
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <br/>
+        <br/>
+        <div class="col col-md-2">
+          <h5><b><div id= "purpDistTitle"></div> Trips</b></h5>
+          <div class="small">
+            Select data type for comparison from dropdown
+            </div>
+          <br>
+          <select id="catPurpDist">
+            <option value="All">All</option>
+            <option value="work">Work Trips</option>
+          </select>
+        </div>
+        <div class="col col-md-10">
+          <div id="PurposebyDist"></div>
+          <div class="small">
+            <div id="purpDistDesc" ></div>
+            PUMA - source: <br>
+            Census- source: <br>
+            Modeled- description <br>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div
+        id="7"
+        class="tab-pane container">
+        <div class="col-md-12">
+          <br/>
+
+          <br/>
+
+          <h3>Transit/DESCRIPTION</h3>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+            improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+            sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+            factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+            qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+            formarum quam civis excellen
+          </p>
+
+          <div class="btn-group" role="group">
+          <div class="btn-group" role="group">
+          <button type="button" id="ModelSurvey" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Model
+          </button>
+          <div class="dropdown-menu" aria-labelledby="ModelSurvey">
+            <a class="dropdown-item">Model</a>
+            <a class="dropdown-item">Survey</a>
+            <a class="dropdown-item">Difference</a>
+          </div>
+          <button type="button" id="metra" class="btn btn-info">Metra</button>
+          <button type="button" id="cta" class="btn btn-light">CTA Rail</button>
+          <button type="button" id="pace" class="btn btn-light">Bus</button>
+        </div></div>
+        <div id="map"></div>
+
+          <br/>
+
+          <br/>
+
+          Place Holder Model Step Description
+        </div>
+      </div>
+  </body>
+
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+  integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+  crossorigin=""></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- D3 scripts -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+
+  <script src="https://underscorejs.org/underscore-min.js"></script>
+    <script src="https://rawgit.com/sghall/7859113/raw/422da4401f7d4fc0352a7c49961d24f03716be7a/gistfile1.js"></script>
+
+  <script
+    src="scripts/h_barchart_dropdown.js"
+    type="text/javascript">
+  </script>
+  <script
+    src="scripts/v_barchart_dropdown.js"
+    type="text/javascript">
+  </script>
+  <script
+    src="scripts/barchart_dropdown_stacked.js"
+    type="text/javascript">
+  </script>
+  <script
+    src="scripts/barchart.js"
+    type="text/javascript">
+  </script>
+  <script
+    src="scripts/chord2.js"
+    type="text/javascript">
+  </script>
+  <script>makeGroupVBar("data/csv1_pop_syn.csv","#PurposeChartpums","#catPopSyn",3, "popsynDesc","hhtitle");</script>
+  <script>makeGroupVBar("data/csv5_mode_purpose.csv","#ModeByPurpose","#catModePurp",2, "modePurpDesc","modeTitle");</script>
+  <script>makeGroupHBar("data/csv6_placeholder.csv","#VChart","#cat",2, "pDesc","pTitle");</script>
+  <script>makeGroupVBar("data/csv7_mode_distance.csv","#ModeByDistance","#catModeDist",2, "modeDistDesc","modeDTitle");</script>
+  <script>makeGroupVBar("data/csv8_wbmode_distance.csv","#wbModeByDistance","#wbcatModeDist",2, "wbmodeDistDesc","wbmodeDTitle");</script>
+  <script>makeGroupVBar("data/csv9_mode_person.csv","#ModebyPerson","#catModePer",2, "modePerDesc","modePTitle");</script>
+  <script>makeGroupVBar("data/csv10_mode_income.csv","#ModebyIncome","#catModeinc",2, "modeinDesc","modeITitle");</script>
+  <script>makeGroupVBar("data/csv11_purpose_type.csv","#PurposebyType","#catPurpType",2, "purpTypeDesc","purpTypeTitle");</script>
+  <script>makeGroupVBar("data/csv12_purpose_distance.csv","#PurposebyDist","#catPurpDist",2, "purpDistDesc","purpDistTitle");</script>
+
+  <script type="text/javascript" src='scripts/table.js'></script>
+  <script>
+  d3.csv("data/aoCounts_tbl.csv", function(d, i, columns) {
+    for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+    return d;
+  }, function(error, data) {
+    if (error) throw error;
+    tabulate(data, ['# Veh', 'Census','Survey','Model'],"#auto_counts"); // 2 column table
+  });
+  d3.csv("data/aoCounts.csv", function(d, i, columns) {
+    for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+    return d;
+  }, function(error, data) {
+    if (error) throw error;
+    BarChart(data,"#aoCountBar","")
+  });
+
+
+  </script>
+  <script>makeStackedChart("data/csv3_aocrosstab_counts.csv","#aoCat","dtitle","stackedbar");</script>
+  <script>makeChords('data/csv4_chord.csv', "modelChord", "obsChord");</script>
+  <script type="text/javascript" src="scripts/modepies.js"></script>
+
+  <script type="text/javascript" src="data/counties.js"></script>
+  <script type="text/javascript" src="data/MetraLines.js"></script>
+  <script type="text/javascript" src="data/ctalines.js"></script>
+  <script type="text/javascript" src="scripts/transitboardings.js"></script>
+
+
+</html>

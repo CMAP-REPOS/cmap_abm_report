@@ -173,22 +173,28 @@ function makeStackedChartno101(csv_file,catID,dataTitle,divID){
 
         */
 
+        var legend = serie.append("g")
+        .attr("font-family", "sans-serif")
+        .attr("font-size", 10)
+        .attr("text-anchor", "end")
+            .attr("class", "legend")
+            .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
-    var legend = serie.append("g")
-        .attr("class", "legend")
-        .attr("transform", function(d) { var d = d[d.length - 1]; return "translate(" + (x0(d.data.MainGroup) + x1(d.data.SubGroup) + x1.bandwidth()) + "," + ((y(d[0]) + y(d[1])) / 2) + ")"; });
+      legend.append("rect")
+            .attr("x", width - 19)
+            .attr("y", -20)
+            .attr("width", 19)
+            .attr("height", 19)
+            .attr("fill", function(d) { return z(d.key); });
 
-    legend.append("line")
-        .attr("x1", -10)
-        .attr("x2", 10)
-        .attr("stroke", "#000");
-
-    legend.append("text")
-        .attr("x", 9)
-        .attr("dy", "0.35em")
-        .attr("fill", "#000")
-        .style("font", "10px sans-serif")
-        .text(function(d) { return d.key; });
+      legend.append("text")
+        .attr("x", width - 24)
+        .attr("y", -10)
+        .attr("dy", "0.32em")
+        .style("fill","black")
+        .text(function(d) {
+          return d.key;
+        });
 
 
         function update(){
@@ -248,7 +254,7 @@ function makeStackedChartno101(csv_file,catID,dataTitle,divID){
                 .keys(keys)(groupData)
                 d3.select("#" + dataTitle).text(divText);
           //console.log("stackData", stackData)
-          
+
           y.domain([0,1500000]).nice();
 
           //console.log("keys", keys)
@@ -312,20 +318,27 @@ function makeStackedChartno101(csv_file,catID,dataTitle,divID){
               .attr("font-weight", "bold")
               .attr("text-anchor", "start")
               var legend = new_layer.append("g")
+              .attr("font-family", "sans-serif")
+              .attr("font-size", 10)
+              .attr("text-anchor", "end")
                   .attr("class", "legend")
-                  .attr("transform", function(d) { var d = d[d.length - 1]; return "translate(" + (x0(d.data.MainGroup) + x1(d.data.SubGroup) + x1.bandwidth()) + "," + ((y(d[0]) + y(d[1])) / 2) + ")"; });
+                  .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
-              legend.append("line")
-                  .attr("x1", -6)
-                  .attr("x2", 6)
-                  .attr("stroke", "#000");
+            legend.append("rect")
+                  .attr("x", width - 19)
+                  .attr("y", -20)
+                  .attr("width", 19)
+                  .attr("height", 19)
+                  .attr("fill", function(d) { return z(d.key); });
 
-              legend.append("text")
-                  .attr("x", 9)
-                  .attr("dy", "0.35em")
-                  .attr("fill", "#000")
-                  .style("font", "10px sans-serif")
-                  .text(function(d) { return d.key; });
+            legend.append("text")
+              .attr("x", width - 24)
+              .attr("y", -10)
+              .attr("dy", "0.32em")
+              .style("fill","black")
+              .text(function(d) {
+                return d.key;
+              });
 
 
         }

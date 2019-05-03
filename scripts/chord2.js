@@ -27,7 +27,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
 
             '#D7D55C',
             '#8A882D',
-                      
+
             '#3D3C0E',
           ])
 
@@ -37,7 +37,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
       fillOpacity: 0,
       color: 'grey',
       dashArray: '3',
-      className: feature.properties.subzoneGroups_csv_AREANAME
+      className: feature.properties.AREANAME
       };
   }
 
@@ -65,8 +65,8 @@ function makeChords(csv_file, modelDiv, obsDiv){
   var rings = L.geoJSON(workflow_geo, {
     style: baseStyle,
     onEachFeature: function(feature, layer) {
-        layer.bindPopup(feature.properties.subzoneGroups_csv_AREANAME)
-        layer.NAME = feature.properties.subzoneGroups_csv_AREANAME;
+        layer.bindPopup(feature.properties.AREANAME)
+        layer.NAME = feature.properties.AREANAME;
   }});
   rings.addTo(wflowmap);
 
@@ -74,13 +74,16 @@ function makeChords(csv_file, modelDiv, obsDiv){
 
             var modelData = data.filter(function(d){
               if (d.Category == "Model"){
+                d.count = parseInt(d.count)
                 return data;
               };
             });
+            console.log(modelData)
 
             var obsData = data.filter(function(d){
               ////console.log(d)
               if (d.Category == "Survey"){
+                d.count = parseInt(d.count)
                 return data;
               };
             });
@@ -88,7 +91,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
             var mpr = chordMpr(modelData);
             mpr.addValuesToMap('root')
                 .addValuesToMap('node')
-                .setFilter(function(row, a, b, c) {
+                .setFilter(function(row, a, b) {
                     return (row.root === a.name && row.node === b.name)
                 })
                 .setAccessor(function(recs, a, b) {
@@ -223,26 +226,26 @@ function makeChords(csv_file, modelDiv, obsDiv){
                         '#1C4E80',
                         '#6A9BCC',
                         '#AEC1D5',
-            
+
                         '#CFCFCF',
                         '#ABABAB',
                         '#595959',
-            
+
                         '#821E20',
                         '#CF4446',
                         '#DB6B3D',
-    
-    
+
+
                         '#9C4624',
                         '#69544C',
-            
+
                         '#D7D55C',
                         '#8A882D',
-                                  
+
                         '#3D3C0E',
-            
-    
-  
+
+
+
 
                     ])
 
@@ -281,11 +284,11 @@ function makeChords(csv_file, modelDiv, obsDiv){
                     '#1C4E80',
                     '#6A9BCC',
                     '#AEC1D5',
-        
+
                     '#CFCFCF',
                     '#ABABAB',
                     '#595959',
-        
+
                     '#821E20',
                     '#CF4446',
                     '#DB6B3D',
@@ -293,10 +296,10 @@ function makeChords(csv_file, modelDiv, obsDiv){
 
                     '#9C4624',
                     '#69544C',
-        
+
                     '#D7D55C',
                     '#8A882D',
-                              
+
                     '#3D3C0E',
 
 

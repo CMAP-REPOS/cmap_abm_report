@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<style>
+/* --- Global --- */
+body {
+  margin:auto;
+  width: 885px;
+  font: 10px arial;
+  padding: 25px;
+  color:#333;
+}
+
+/* --- Chart --- */
+.axis--y path,
+.grid--y path,
+.grid--y text {
+  display: none;
+}
+.axis.axis--y line {
+  opacity:.15;
+}
+g.layer {
+  opacity:.9;
+}
+g.layer:hover {
+  opacity:1;
+}
+.sortCheck {
+  float:right;
+  margin-top:-35px;
+  margin-right:285px;
+}
+#myCheckbox {
+  position:relative;
+  top:3px;
+}
+.clickThis {
+  float:right;
+  margin-top:-417px;
+  margin-right:205px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Selection Category -->
+<b>Choose Category</b>
+
+<select id="category">
+  <option value="1">Category 1</option>
+  <option value="2">Category 2</option>
+</select>
+
+<!-- Chart -->
+<div id="chart"></div>
+
+<span class="clickThis"> <b style="font-size: 11px;"> <--Click Legend! </b></span>
+
+<!-- Sort dimension -->
+<span class="sortCheck"><b style="font-size: 11px;">Sort Values</b>
+<input type="checkbox" id="myCheckbox">
+</span>
+
+<script src='scripts/barchart2.js'></script>
+
+<script>
+var formatValue = d3.format(".2s");
+
+var margin = {top: 35, right: 145, bottom: 35, left: 45},
+    width = 650 - margin.left - margin.right,
+    height = 450 - margin.top - margin.bottom;
+
+var g = d3.select("#chart").append("svg")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom)
+.append("g")
+  .attr("transform","translate(" + margin.left + "," + margin.top + ")");
+
+let x0 = d3.scaleBand().rangeRound([0, width]).paddingInner(0.1),
+    x1 = d3.scaleBand(),
+    y = d3.scaleLinear().rangeRound([height, 0]);
+
+let xAxis = d3.axisBottom(x0),
+    yAxis = d3.axisLeft(y).ticks(null, "s").tickSize(-width);
+
+g.append("g")
+  .attr("class","axis axis--x")
+  .attr("transform", "translate(0," + height + ")");
+
+g.append("g")
+  .attr("class", "axis axis--y");
+
+var z = d3.scaleOrdinal()
+  .range(["steelblue", "lightblue"]);
+
+var durations = 0;
+
+let afterLoad = () => durations = 750;
+
+var catInt, keys, copy, sortIndex;
+
+var keysLegend = [];
+
+//makeChart();
+d3.queue()
+  .defer(d3.csv, "data.csv", function(d, i, columns) {
+    for (var i = 1, ttl = 0, n = columns.length; i < n; ++i)
+      ttl += d[columns[i]] = +d[columns[i]];
+      d.total = ttl;
+      return d;
+  })
+  .await(ready);
+
+</script>
+</body>

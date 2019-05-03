@@ -117,7 +117,16 @@
             href="#7"
             role="tab"
             data-toggle="tab">
-            Transit
+            Transit Trips
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#8"
+            role="tab"
+            data-toggle="tab">
+            Highway VMT
           </a>
         </li>
       </ul>
@@ -157,7 +166,7 @@ Model validation is defined as comparing the results of the calibrated models to
                     </a>
                   </h4>
                 </div>
-            
+
                 <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                   <div class="panel-body">
                   </div>
@@ -249,7 +258,7 @@ Model validation is defined as comparing the results of the calibrated models to
                     </div>
                     <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven">
                         <div class="card-body">
-                      List of trips 
+                      List of trips
                       Trip Tables
                       Assignment
                       </div>
@@ -311,7 +320,7 @@ A synthetic population provides the foundation for modeling individuals’ trave
             </p>
           </div>
         </div>
-        
+
         <div class="row">
           <br>
           <div class="col col-md-4">
@@ -330,9 +339,9 @@ A synthetic population provides the foundation for modeling individuals’ trave
               <div id="popsynstack"></div>
             </div>
         </div>
-  
+
             </div>
-  
+
 
         <!-- Auto Counts -->
       <div
@@ -1138,6 +1147,32 @@ A synthetic population provides the foundation for modeling individuals’ trave
                 </div>
         </div>
       </div>
+      <div id="8" class="tab-pane container">
+
+        <div class="col-md-12">
+          <br/>
+          <br/>
+          <h3>Comparison of Daily VMT Shares by County</h3>
+          </div>
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
+          <div id="vmtcounty"></div>
+        </div>
+       <div class="col-md-12">
+          <h3>Comparison of Daily VMT Shares by County and Facility Type</h3>
+          <div id="cfstack"></div>
+        </div>
+        <div class="col-md-12">
+          <h3>Comparison of Daily VMT Shares by County and Facility Type</h3>
+          <br>
+          <p style="text-align:center">r2 = <text_div id="r2"></text_div></p>
+          <div id="scatter_vmt"></div>
+
+          <h3>Comparison of Interstate Daily VMT By Auto and Truck</h3>
+          <div id="interstateVMT"></div>
+        </div>
+      </div>
   </body>
 
   <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
@@ -1158,6 +1193,10 @@ A synthetic population provides the foundation for modeling individuals’ trave
     type="text/javascript">
   </script>
   <script
+    src="scripts/h_barchart.js"
+    type="text/javascript">
+  </script>
+  <script
     src="scripts/v_barchart_dropdown.js"
     type="text/javascript">
   </script>
@@ -1169,7 +1208,7 @@ A synthetic population provides the foundation for modeling individuals’ trave
     src="scripts/barchart_dropdown_stack_no100.js"
     type="text/javascript">
   </script>
-      <script
+  <script
       src="scripts/barchart_dropdown_stack_no101.js"
       type="text/javascript">
     </script>
@@ -1181,9 +1220,21 @@ A synthetic population provides the foundation for modeling individuals’ trave
     src="scripts/chord2.js"
     type="text/javascript">
   </script>
+  <script
+    src="scripts/barchart_stack.js"
+    type="text/javascript">
+  </script>
+  <script
+    src="scripts/barchart_stack_h.js"
+    type="text/javascript">
+  </script>
+  <script
+    src="scripts/scatter_plot.js"
+    type="text/javascript">
+  </script>
   <script>makeGroupVBar("data/csv1_pop_syn.csv","#PurposeChartpums","#catPopSyn",2, "popsynDesc","hhtitle");</script>
   <script>makeGroupVBar("data/csv5_mode_purpose.csv","#ModeByPurpose","#catModePurp",2, "modePurpDesc","modeTitle");</script>
-  <script>makeGroupHBar("data/csv6_work_trips.csv","#VChart","#workFlowCat",2, "pDesc","pTitle");</script>
+  <script>makeGroupHBar_dd("data/csv6_work_trips.csv","#VChart","#workFlowCat",2, "pDesc","pTitle");</script>
   <script>makeGroupVBar("data/csv7_work_mode_distance.csv","#ModeByDistance","#catModeDist",2, "modeDistDesc","modeDTitle");</script>
   <script>makeGroupVBar("data/csv8_wbmode_distance.csv","#wbModeByDistance","#wbcatModeDist",2, "wbmodeDistDesc","wbmodeDTitle");</script>
   <script>makeGroupVBar("data/csv9_mode_person.csv","#ModebyPerson","#catModePer",2, "modePerDesc","modePTitle");</script>
@@ -1195,7 +1246,8 @@ A synthetic population provides the foundation for modeling individuals’ trave
   <script>makeGroupVBar("data/csv20_transit_income.csv","#TranIncome","#catIncomeDist",2, "TranIncomeDesc","TranIncomeTitle");</script>
   <script>makeGroupVBar("data/csv21_transit_auto.csv","#TranAutoAdult","#catAutoAdult",2, "TranAutoAdultDesc","TranAutoAdultTitle");</script>
   <script>makeGroupVBar("data/csv22_dap.csv","#dap","#catdap",2, "dapDesc","dapTitle");</script>
-
+  <script>makeGroupHBar("data/csv24_vmt_county.csv","#vmtcounty",2, "vmtDesc","vmtTitle");</script>
+  <script>makeScatter("data/raw/link_counts.csv","#scatter_vmt",2, "vmtScatterDesc","vmtScatterTitle");</script>
 
   <script type="text/javascript" src='scripts/table.js'></script>
   <script>
@@ -1214,13 +1266,14 @@ A synthetic population provides the foundation for modeling individuals’ trave
     BarChart(data,"#aoCountBar","")
   });
 
-
   </script>
   <script type="text/javascript" src="data/subzonegroups.js"></script>
-  <script>makeStackedChartno100("data/csv3a_popsyn_crosstab.csv","#popsynCat","dtitle","popsynstack");</script>
+  <script>makeStackedChartno100_dd("data/csv3a_popsyn_crosstab.csv","#popsynCat","dtitle","popsynstack");</script>
+  <script>makeStackedChart_nodd("data/csv23_vmt_county_facility.csv","cftitle","cfstack");</script>
   <script>makeStackedChartno101("data/csv3_aocrosstab_counts.csv","#aoCat","dtitle","stackedbar");</script>
   <script>makeChords('data/csv4_chord.csv', "modelChord", "obsChord");</script>
   <script type="text/javascript" src="scripts/modepies.js"></script>
+  <script>makeStackedChart_nodd_h("data/csv25_interstate_vmt.csv","intVMTTitle","interstateVMT");</script>
 
   <script type="text/javascript" src="data/counties.js"></script>
   <script type="text/javascript" src="data/MetraLines.js"></script>

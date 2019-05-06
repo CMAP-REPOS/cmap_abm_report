@@ -1,3 +1,4 @@
+// set up stacked barchart with no dropdown (no dd) and 7 categories/14 bars
 function makeStackedChart_nodd(csv_file,dataTitle,divID){
 
   var divText = document.getElementById(dataTitle);
@@ -13,7 +14,7 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
       d.Value = parseInt(d.Value);
     })
 
-    var margin = {top: 35, right: 75, bottom: 200, left: 45},
+    var margin = {top: 35, right: 75, bottom: 100, left: 45},
     width = 900 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
     height2 = 575 - margin.top - margin.bottom;
@@ -124,12 +125,32 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
 
     g.append("g")
         .attr("class", "axis")
-        .attr("transform", "translate(200," + height + ")")
+        .attr("transform", "translate(115," + height + ")")
         .call(d3.axisBottom(x1));
 
     g.append("g")
+    .attr("class", "axis")
+    .attr("transform", "translate(230," + height + ")")
+    .call(d3.axisBottom(x1));    
+
+    g.append("g")
+    .attr("class", "axis")
+    .attr("transform", "translate(340," + height + ")")
+    .call(d3.axisBottom(x1));   
+
+    g.append("g")
+    .attr("class", "axis")
+    .attr("transform", "translate(450," + height + ")")
+    .call(d3.axisBottom(x1));   
+
+    g.append("g")
+    .attr("class", "axis")
+    .attr("transform", "translate(560," + height + ")")
+    .call(d3.axisBottom(x1));   
+
+    g.append("g")
         .attr("class", "axis")
-        .attr("transform", "translate(400," + height + ")")
+        .attr("transform", "translate(680," + height + ")")
         .call(d3.axisBottom(x1));
 
     // g.append("g")
@@ -151,14 +172,17 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
         // Add the X Axis
        g.append("g")
            .attr("class", "x axis")
-           .attr("transform", "translate(0," + height * 1.1 + ")")
+           .attr("transform", "translate(10," + height * 1.1 + ")")
            .call(d3.axisBottom(x0))
+           .call(d3.axisBottom(x0).tickSize(0))
            .selectAll("text")
-            .style("text-anchor", "end")
+            .style("font-weight", "bold")
+            .style("font-size","larger")
+            .style("text-anchor", "middle")
             .attr("dx", "-.8em")
             .attr("dy", ".15em")
             .attr("transform", function(d) {
-                return "rotate(-65)"
+                return "rotate(0)"
                 });
 
   /*

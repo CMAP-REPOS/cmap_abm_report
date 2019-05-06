@@ -1161,13 +1161,14 @@ A synthetic population provides the foundation for modeling individuals’ trave
         </div>
        <div class="col-md-12">
           <h3>Comparison of Daily VMT Shares by County and Facility Type</h3>
-          <div id="cfstack"></div>
+          <br><br><br>
+          <center><div id="cfstack"></div></center>
         </div>
         <div class="col-md-12">
           <h3>Comparison of Daily VMT Shares by County and Facility Type</h3>
           <br>
-          <p style="text-align:center">r2 = <text_div id="r2"></text_div></p>
-          <div id="scatter_vmt"></div>
+          <p style="text-align:right">r<sup>2</sup> = <text_div id="r2" style="padding-right: 100px"></text_div></p>
+          <center><div id="scatter_vmt"></div></center>
 
           <h3>Comparison of Interstate Daily VMT By Auto and Truck</h3>
           <div id="interstateVMT"></div>
@@ -1205,11 +1206,11 @@ A synthetic population provides the foundation for modeling individuals’ trave
     type="text/javascript">
   </script>
     <script
-    src="scripts/barchart_dropdown_stack_no100.js"
+    src="scripts/barchart_dropdown_stack_3.js"
     type="text/javascript">
   </script>
   <script
-      src="scripts/barchart_dropdown_stack_no101.js"
+      src="scripts/barchart_dropdown_stack_4.js"
       type="text/javascript">
     </script>
   <script
@@ -1268,9 +1269,9 @@ A synthetic population provides the foundation for modeling individuals’ trave
 
   </script>
   <script type="text/javascript" src="data/subzonegroups.js"></script>
-  <script>makeStackedChartno100_dd("data/csv3a_popsyn_crosstab.csv","#popsynCat","dtitle","popsynstack");</script>
+  <script>makeStackedChart_3("data/csv3a_popsyn_crosstab.csv","#popsynCat","dtitle","popsynstack");</script>
   <script>makeStackedChart_nodd("data/csv23_vmt_county_facility.csv","cftitle","cfstack");</script>
-  <script>makeStackedChartno101("data/csv3_aocrosstab_counts.csv","#aoCat","dtitle","stackedbar");</script>
+  <script>makeStackedChart_4("data/csv3_aocrosstab_counts.csv","#aoCat","dtitle","stackedbar");</script>
   <script>makeChords('data/csv4_chord.csv', "modelChord", "obsChord");</script>
   <script type="text/javascript" src="scripts/modepies.js"></script>
   <script>makeStackedChart_nodd_h("data/csv25_interstate_vmt.csv","intVMTTitle","interstateVMT");</script>

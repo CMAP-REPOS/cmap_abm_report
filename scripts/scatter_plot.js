@@ -1,5 +1,5 @@
 function makeScatter(csv_file, chart_id){
-  var margin = {top: 5, right: 5, bottom: 20, left: 50},
+  var margin = {top: 5, right: 5, bottom: 50, left: 90},
 	    width = 900 - margin.left - margin.right,
 	    height = 450 - margin.top - margin.bottom;
 
@@ -55,11 +55,25 @@ function makeScatter(csv_file, chart_id){
           .attr("class", "x axis")
           .attr("transform", "translate(0," + (height-padding) + ")")
           .call(xAxis);
+      
+        svg.append("text")             
+        .attr("transform",
+              "translate(" + (width/2) + " ," + 
+                              (height + margin.top + 20) + ")")
+        .style("text-anchor", "middle")
+        .text("Survey VMT");
 
       svg.append("g")
           .attr("class", "y axis")
           .attr("transform", "translate(" + padding + ",0)")
           .call(yAxis);
+
+      svg.append("text")             
+      .attr("transform",
+            "translate(-40," + 
+                            (height/2) + ") rotate(-90)")
+      .style("text-anchor", "middle")
+      .text("Model VMT");
 
 	    svg.selectAll(".point")
 	        .data(data)

@@ -17,15 +17,6 @@ Drive alone pay,32960,8082.381018,Retired,retired Drive alone pay Trips,Retired
 Drive alone pay,3880,689.4606474,Student 16+,driveagestudent Drive alone pay Trips,Student 16+
 Drive alone pay,10515,10526.96233,University Student,university Drive alone pay Trips,University Student
 Drive alone pay,320830,389588.7272,All,All Drive alone pay Trips,All
-Drive to transit,770,427.6420898,Preschool,preschool Drive to transit Trips,Preschool
-Drive to transit,81220,140416.372,Full-time Worker,fulltime Drive to transit Trips,Full-time Worker
-Drive to transit,2510,5756.744229,Non worker,nonworker Drive to transit Trips,Non worker
-Drive to transit,13290,10077.14228,Part-time Worker,parttime Drive to transit Trips,Part-time Worker
-Drive to transit,780,2090.600391,Retired,retired Drive to transit Trips,Retired
-Drive to transit,3660,1898.909759,Student 16+,driveagestudent Drive to transit Trips,Student 16+
-Drive to transit,6390,2923.68998,Student under 16 years,nondrivingstudent Drive to transit Trips,Student under 16 years
-Drive to transit,6560,7156.081733,University Student,university Drive to transit Trips,University Student
-Drive to transit,115180,170747.1824,All,All Drive to transit Trips,All
 Taxi,1830,624.5517692,Preschool,preschool Taxi Trips,Preschool
 Taxi,36915,32379.97521,Full-time Worker,fulltime Taxi Trips,Full-time Worker
 Taxi,9075,7227.88295,Non worker,nonworker Taxi Trips,Non worker
@@ -44,15 +35,15 @@ School bus,123930,98525.02145,Student 16+,driveagestudent School bus Trips,Stude
 School bus,718210,605154.6332,Student under 16 years,nondrivingstudent School bus Trips,Student under 16 years
 School bus,0,2911.928648,University Student,university School bus Trips,University Student
 School bus,877930,753207.1912,All,All School bus Trips,All
-Transit,7705,8510.938206,Preschool,preschool Walk to transit Trips,Preschool
-Transit,847965,654058.9686,Full-time Worker,fulltime Walk to transit Trips,Full-time Worker
-Transit,104140,145612.1856,Non worker,nonworker Walk to transit Trips,Non worker
-Transit,186435,134596.2904,Part-time Worker,parttime Walk to transit Trips,Part-time Worker
-Transit,11785,62263.62983,Retired,retired Walk to transit Trips,Retired
-Transit,58605,65469.91196,Student 16+,driveagestudent Walk to transit Trips,Student 16+
-Transit,78385,73789.44237,Student under 16 years,nondrivingstudent Walk to transit Trips,Student under 16 years
-Transit,79340,105101.8686,University Student,university Walk to transit Trips,University Student
-Transit,1374360,1249403.235,All,All Walk to transit Trips,All
+Transit,8475,8938.580296,Preschool,preschool Walk to transit Trips,Preschool
+Transit,929185,794475.3406,Full-time Worker,fulltime Walk to transit Trips,Full-time Worker
+Transit,106650,151368.9298,Non worker,nonworker Walk to transit Trips,Non worker
+Transit,199725,144673.4327,Part-time Worker,parttime Walk to transit Trips,Part-time Worker
+Transit,12565,64354.23022,Retired,retired Walk to transit Trips,Retired
+Transit,62265,67368.82172,Student 16+,driveagestudent Walk to transit Trips,Student 16+
+Transit,84775,76713.13235,Student under 16 years,nondrivingstudent Walk to transit Trips,Student under 16 years
+Transit,85900,112257.9503,University Student,university Walk to transit Trips,University Student
+Transit,1489540,1420150.417,All,All Walk to transit Trips,All
 Walk,216670,171002.818,Preschool,preschool Walk Trips,Preschool
 Walk,896470,885631.2348,Full-time Worker,fulltime Walk Trips,Full-time Worker
 Walk,361580,463052.2411,Non worker,nonworker Walk Trips,Non worker

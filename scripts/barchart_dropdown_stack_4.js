@@ -1,4 +1,5 @@
-function makeStackedChartno101(csv_file,catID,dataTitle,divID){
+// sets up a stacked barchart with dropdown and 4 categories/8 bars
+function makeStackedChart_4(csv_file,catID,dataTitle,divID){
 
   var divText = document.getElementById(dataTitle);
   catInt = d3.select(catID).property('value');
@@ -178,7 +179,7 @@ function makeStackedChartno101(csv_file,catID,dataTitle,divID){
         .attr("font-size", 10)
         .attr("text-anchor", "end")
             .attr("class", "legend")
-            .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+            .attr("transform", function(d, i) { return "translate(50," + i * 15 + ")"; });
 
       legend.append("rect")
             .attr("x", width - 19)
@@ -322,7 +323,7 @@ function makeStackedChartno101(csv_file,catID,dataTitle,divID){
               .attr("font-size", 10)
               .attr("text-anchor", "end")
                   .attr("class", "legend")
-                  .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+                  .attr("transform", function(d, i) { return "translate(50," + i * 15 + ")"; });
 
             legend.append("rect")
                   .attr("x", width - 19)

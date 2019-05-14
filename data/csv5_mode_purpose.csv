@@ -21,17 +21,6 @@ Drive alone pay,21110,22556,Visiting,visiting Drive alone pay trips,Visiting
 Drive alone pay,138090,220216,Work,work Drive alone pay trips,Work
 Drive alone pay,17235,39538,Work-based,work-based Drive alone pay trips,Work-based
 Drive alone pay,320830,389394,All,All Drive alone pay trips,All
-Drive to transit,1420,7979,Discretionary,discretionary Drive to transit trips,Discretionary
-Drive to transit,880,2145,Eating Out,eatingout Drive to transit trips,Eating Out
-Drive to transit,0,1992,Escort,escort Drive to transit trips,Escort
-Drive to transit,27670,14707,Maintenance,maintenance Drive to transit trips,Maintenance
-Drive to transit,8790,3592,School,school Drive to transit trips,School
-Drive to transit,37550,2473,Shop,shop Drive to transit trips,Shop
-Drive to transit,4320,7614,University,university Drive to transit trips,University
-Drive to transit,780,3795,Visiting,visiting Drive to transit trips,Visiting
-Drive to transit,93130,122633,Work,work Drive to transit trips,Work
-Drive to transit,0,10526,Work-based,work-based Drive to transit trips,Work-based
-Drive to transit,174540,177456,All,All Drive to transit trips,All
 Shared ride 2 free,793865,834218,Discretionary,discretionary Shared ride 2 free trips,Discretionary
 Shared ride 2 free,624350,665455,Eating Out,eatingout Shared ride 2 free trips,Eating Out
 Shared ride 2 free,498265,1175271,Escort,escort Shared ride 2 free trips,Escort
@@ -98,17 +87,17 @@ School bus,0,5240,Visiting,visiting School bus trips,Visiting
 School bus,0,6202,Work,work School bus trips,Work
 School bus,0,2092,Work-based,work-based School bus trips,Work-based
 School bus,877930,752635,All,All School bus trips,All
-Transit,113705,88601,Discretionary,discretionary Walk to transit trips,Discretionary
-Transit,110885,43052,Eating Out,eatingout Walk to transit trips,Eating Out
-Transit,118600,44898,Escort,escort Walk to transit trips,Escort
-Transit,123265,186365,Maintenance,maintenance Walk to transit trips,Maintenance
-Transit,74515,105388,School,school Walk to transit trips,School
-Transit,184050,142438,Shop,shop Walk to transit trips,Shop
-Transit,24675,61314,University,university Walk to transit trips,University
-Transit,70785,66008,Visiting,visiting Walk to transit trips,Visiting
-Transit,625545,583886,Work,work Walk to transit trips,Work
-Transit,50320,24219,Work-based,work-based Walk to transit trips,Work-based
-Transit,1496345,1346169,All,All Walk to transit trips,All
+Transit,115125,96580,Discretionary,discretionary Walk to transit trips,Discretionary
+Transit,111765,45197,Eating Out,eatingout Walk to transit trips,Eating Out
+Transit,118600,46890,Escort,escort Walk to transit trips,Escort
+Transit,150935,201072,Maintenance,maintenance Walk to transit trips,Maintenance
+Transit,83305,108980,School,school Walk to transit trips,School
+Transit,221600,144911,Shop,shop Walk to transit trips,Shop
+Transit,28995,68928,University,university Walk to transit trips,University
+Transit,71565,69803,Visiting,visiting Walk to transit trips,Visiting
+Transit,718675,706519,Work,work Walk to transit trips,Work
+Transit,50320,34745,Work-based,work-based Walk to transit trips,Work-based
+Transit,1670885,1523625,All,All Walk to transit trips,All
 Walk,308015,426040,Discretionary,discretionary Walk trips,Discretionary
 Walk,158015,273748,Eating Out,eatingout Walk trips,Eating Out
 Walk,314145,263474,Escort,escort Walk trips,Escort

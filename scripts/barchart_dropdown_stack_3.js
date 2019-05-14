@@ -1,4 +1,5 @@
-function makeStackedChartno100_dd(csv_file,catID,dataTitle,divID){
+// sets up a stacked barchart with dropdown and 3 categories/6 bars
+function makeStackedChart_3(csv_file,catID,dataTitle,divID){
 
   var divText = document.getElementById(dataTitle);
   catInt = d3.select(catID).property('value');

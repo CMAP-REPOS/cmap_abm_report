@@ -9,7 +9,7 @@ d3.csv("data/csv13_model_trip_mode.csv", function(data) {
                 count: parseInt(data[i].QUANTITY, 10),
               label: data[i].trip_mode})
 }
-  drawPieChartFunction(data2, '#pieMode2', 'tooltip2');
+  drawPieChartFunction(data2, '#pieMode2', 'tooltip2', 'colorscale1');
 
 });
 
@@ -21,7 +21,7 @@ d3.csv("data/csv14_survey_trip_mode.csv", function(data) {
                 count: parseInt(data[i].QUANTITY, 10),
               label: data[i].trip_mode})
 }
-  drawPieChartFunction(data1, '#pieMode1', 'tooltip1');
+  drawPieChartFunction(data1, '#pieMode1', 'tooltip1', 'colorscale2');
 });
 
 d3.csv("data/csv15_survey_trip_purpose.csv", function(data) {
@@ -32,7 +32,7 @@ d3.csv("data/csv15_survey_trip_purpose.csv", function(data) {
                 count: parseInt(data[i].QUANTITY, 10),
               label: data[i].trip_purpose})
 }
-  drawPieChartFunction(data3, '#piePurpose1', 'tooltip3');
+  drawPieChartFunction(data3, '#piePurpose1', 'tooltip3', 'colorscale2');
 
 });
 
@@ -44,7 +44,7 @@ d3.csv("data/csv16_model_trip_purpose.csv", function(data) {
                 count: parseInt(data[i].QUANTITY, 10),
               label: data[i].trip_purpose})
 }
-  drawPieChartFunction(data4, "#piePurpose2", 'tooltip4');
+  drawPieChartFunction(data4, "#piePurpose2", 'tooltip4', 'colorscale2');
 });
 
 d3.csv("data/csv17_model_transit_access.csv", function(data) {
@@ -55,7 +55,7 @@ d3.csv("data/csv17_model_transit_access.csv", function(data) {
                 count: parseInt(data[i].QUANTITY, 10),
               label: data[i].trip_mode})
 }
-  drawPieChartFunction(data5, "#pieTransitModelMode", 'tooltip5');
+  drawPieChartFunction(data5, "#pieTransitModelMode", 'tooltip5','colorscale2');
 });
 
 d3.csv("data/csv18_survey_transit_access.csv", function(data) {
@@ -66,12 +66,12 @@ d3.csv("data/csv18_survey_transit_access.csv", function(data) {
               count: parseInt(data[i].QUANTITY, 10),
               label: data[i].trip_mode})
 }
-  drawPieChartFunction(data6, "#pieTransitSurveyMode", 'tooltip6');
+  drawPieChartFunction(data6, "#pieTransitSurveyMode", 'tooltip6', 'colorscale2');
 });
 
 // chart
   var formatComma = d3.format(",");
-  var drawPieChartFunction = function(data, chartId, tooltipName) {
+  var drawPieChartFunction = function(data, chartId, tooltipName, colorscale) {
 
     var margin = {
         top: 20,
@@ -87,29 +87,53 @@ d3.csv("data/csv18_survey_transit_access.csv", function(data) {
     var legendRectSize = 18;
     var legendSpacing = 4;
 
-    var color = d3.
-    scaleOrdinal().
-    range(['#ABABAB',
-    "#1C4E80", "#A6BACE",
+    if (colorscale == 'colorscale1') {
+      var color = d3.
+      scaleOrdinal().
+      range(['#081D58',
+      "#1C4E80", "#A6BACE",
+  
+      '#CFCFCF',
+      '#ABABAB',
+      '#595959',
+      
+      '#821E20',
+      '#D7D55C',
+      '#CF4446',
+      
+      
+      '#8A882D',
+      
+      '#ABABAB'
+      ]).
+      domain(d3.keys(data[0]).filter(function(key) {
+        return key === 'selectorid';
+      }));
+    }
 
-    '#CFCFCF',
-    '#ABABAB',
-    '#595959',
-    
-    '#821E20',
-    '#CF4446',
-    
-    '#D7D55C',
-    '#8A882D',
-    
-    '#081D58'
-    ]).
-    domain(d3.keys(data[0]).filter(function(key) {
-      return key === 'selectorid';
-    }));
 
-    console.log(color);
-
+    if (colorscale == 'colorscale2') {
+      var color = d3.
+      scaleOrdinal().
+      range(['#ABABAB',
+      "#1C4E80", "#A6BACE",
+  
+      '#CFCFCF',
+      '#ABABAB',
+      '#595959',
+      
+      '#821E20',
+      '#CF4446',
+      
+      '#D7D55C',
+      '#8A882D',
+      
+      '#081D58'
+      ]).
+      domain(d3.keys(data[0]).filter(function(key) {
+        return key === 'selectorid';
+      }));
+    }
 
     // like the canvas
     var svg = d3.select(chartId).append('svg')

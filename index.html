@@ -6,7 +6,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </meta>
-    <title>CMAP ABM</title>
+    <title> CMAP ABM</title>
+
 
     <link href="css/chordStyles.css" rel="stylesheet"></link>
     <link rel="stylesheet" href="css/mapstyle.css"></link>
@@ -55,9 +56,12 @@
     <div class="container">
       <h2>
         <a href="https://www.cmap.illinois.gov/data/transportation/modeling?doAsUserId=fH2a30wm7Fk%3D%2F-%2Fasset_publisher%2FQ4En%2Fcontent%2Fid%2F322604">
-          CMAP-ABM
+      <h3>
+          <img src='data/cmap_shortid_margins_CMYK-01.png' height="70px">
+        <a href="https://www.cmap.illinois.gov/data/transportation/modeling?doAsUserId=fH2a30wm7Fk%3D%2F-%2Fasset_publisher%2FQ4En%2Fcontent%2Fid%2F322604" target="_blank" style="vertical-align: sub">
+         Modeling
         </a>
-      </h2>
+      </h3>
 
       <br/>
 
@@ -306,14 +310,17 @@ A synthetic population provides the foundation for modeling individuals’ trave
               <option value="veh">Vehicles</option>
               <option value="income">Household Income</option>
             </select>
+            <div class="small" style="margin-top: 150px;">
+              <b>Sources</b><br>
+                PUMA - PUMS 2007-2011. <br>
+                Modeled - CMAP ABM - 2010 Scenario.
+                <br>
+              </div>
           </text_div>
 
           <div class="col col-md-9">
             <div id="PurposeChartpums"></div>
-            <div class="small">
-              PUMA - source: <br>
-              Modeled - CMAP, PopSynIII. <br>
-            </div>
+
           </div>
         </div>
 
@@ -340,6 +347,12 @@ A synthetic population provides the foundation for modeling individuals’ trave
               <option value="Workers">Workers</option>
               <option value="Vehicles">Vehicles</option>
             </select>
+            <div class="small" style="margin-top: 130px;">
+              <b>Sources</b><br>
+                Observed - ACS 2006-2010. <br>
+                Modeled - CMAP ABM - 2010 Scenario.
+                <br>
+              </div>
           </div>
           <div class="col col-md-8">
               <div id="popsynstack"></div>
@@ -373,8 +386,9 @@ A synthetic population provides the foundation for modeling individuals’ trave
             <br>
             <div id="auto_counts" style="width : 86%" align="center"></div>
             <div class="small">
-              Survey- source: <br>
-              Modeled- CMAP, PopSynIII. <br>
+              <b>Sources</b><br>
+              Survey - ACS 2006-2010. <br>
+              Modeled- CMAP ABM - 2010 Scenario. <br>
             </div>
           </div>
           <div class = "col col-md-8">
@@ -408,6 +422,11 @@ A synthetic population provides the foundation for modeling individuals’ trave
               <option value="income">Household Income</option>
               <option value="workers">Household Workers</option>
             </select>
+            <div class="small" style="margin-top: 130px;">
+                <b>Sources</b><br>
+                  Observed - ACS 2009-2013. <br>
+                  Modeled- CMAP ABM - 2010 Scenario. <br>
+                </div>
           </div>
           <div class="col col-md-8">
               <div id="stackedbar"></div>
@@ -440,8 +459,10 @@ A synthetic population provides the foundation for modeling individuals’ trave
       <div class="row">
           <div class="col col-md-6" align = "center">
             <h5><b>Observed Work Flows</b></h5>
+            <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
             <div id="obsChord"></div>
             <h5><b>Modeled Work Flows</b></h5>
+            <p style="font-size:small;">CMAP ABM - 2010 Scenario</p>
             <div id="modelChord"></div>
           </div>
           <div class="col col-md-6" align = "center">
@@ -478,6 +499,12 @@ A synthetic population provides the foundation for modeling individuals’ trave
                 <option value="IN">Indiana</option>
                 <option value="WI">Wisconsin</option>
               </select>
+              <div class="small" style="margin-top: 270px;">
+                  <b>Sources</b><br>
+                  Observed -Travel Tracker Survey, 2007-2008. <br>
+                  Modeled- CMAP ABM - 2010 Scenario. <br>
+                </div>
+
           </div>
           <div class="col-md-6">
             <br/>
@@ -518,14 +545,15 @@ A synthetic population provides the foundation for modeling individuals’ trave
               <option value="bike">Bike</option>
               <option value="taxi">Taxi</option>
             </select>
+            <div class="small" style="margin-top: 100px;">
+                <b>Sources</b><br>
+                Observed -Travel Tracker Survey, 2007-2008. <br>
+                Modeled- CMAP ABM - 2010 Scenario. <br>
+              </div>
           </div>
           <div class="col col-md-10">
             <div id="ModeByDistance"></div>
-            <div class="small">
-              <div id="modeDistDesc" ></div>
-              Survey - description <br>
-              Modeled- description <br>
-            </div>
+
           </div>
         </div>
         <div class="row">
@@ -561,14 +589,14 @@ A synthetic population provides the foundation for modeling individuals’ trave
               <option value="bike">Bike</option>
               <option value="taxi">Taxi</option>
             </select>
+            <div class="small" style="margin-top: 100px;">
+                <b>Sources</b><br>
+                Observed -Travel Tracker Survey, 2007-2008. <br>
+                Modeled- CMAP ABM - 2010 Scenario. <br>
+              </div>
           </div>
           <div class="col col-md-10">
             <div id="wbModeByDistance"></div>
-            <div class="small">
-              <div id="wbmodeDistDesc" ></div>
-              Survey - description <br>
-              Modeled- description <br>
-            </div>
           </div>
         </div>
       </div>
@@ -609,10 +637,12 @@ A synthetic population provides the foundation for modeling individuals’ trave
           </div>
           <div class="col col-md-5" align = "center">
             <h5><b>Observed Mode Share</b></h5>
+            <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
             <div id="pieMode1"></div>
           </div>
           <div class="col col-md-5" align = "center">
             <h5><b>Modeled Mode Share</b></h5>
+            <p style="font-size:small;">CMAP ABM - 2010 Scenario</p>
             <div id="pieMode2"></div>
           </div>
       </div>
@@ -653,15 +683,16 @@ A synthetic population provides the foundation for modeling individuals’ trave
             <option value="Work">Work</option>
             <option value="Work-based">Work-based</option>
           </select>
+          <div class="small" style="margin-top: 100px;">
+              <b>Sources</b><br>
+              Observed -Travel Tracker Survey, 2007-2008. <br>
+              Modeled- CMAP ABM - 2010 Scenario. <br>
+            </div>
         </div>
 
         <div class="col col-md-10">
           <div id="ModeByPurpose"></div>
-          <div class="small">
-            <div id="catModePurp" ></div>
-            Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-            Modeled - CMAP ABM. <br>
-          </div>
+
         </div>
       </div>
       <div class="row">
@@ -699,14 +730,16 @@ A synthetic population provides the foundation for modeling individuals’ trave
             <option value="Student under 16 years">Student under 16 years</option>
             <option value="University Student">University Student</option>
           </select>
+          <div class="small" style="margin-top: 100px;">
+              Single person trips only. <br>
+              <b>Sources</b><br>
+              Observed -Travel Tracker Survey, 2007-2008. <br>
+              Modeled- CMAP ABM - 2010 Scenario. <br>
+            </div>
         </div>
         <div class="col col-md-10">
           <div id="ModebyPerson"></div>
-          <div class="small">
-            Single person trips only. <br>
-            Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-            Modeled - CMAP ABM. <br>
-          </div>
+
         </div>
       </div>
       <div class="row">
@@ -741,14 +774,14 @@ A synthetic population provides the foundation for modeling individuals’ trave
             <option value="$75k to $100K">$75k to $100K</option>
             <option value="More than $100k">More than $100k</option>
           </select>
+          <div class="small" style="margin-top: 100px;">
+              <b>Sources</b><br>
+              Observed -Travel Tracker Survey, 2007-2008. <br>
+              Modeled- CMAP ABM - 2010 Scenario. <br>
+            </div>
         </div>
         <div class="col col-md-10">
           <div id="ModebyIncome"></div>
-          <div class="small">
-            <div id="modeIncrDesc" ></div>
-            Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-            Modeled - CMAP ABM. <br>
-          </div>
         </div>
       </div>
       </div>
@@ -789,10 +822,12 @@ A synthetic population provides the foundation for modeling individuals’ trave
           </div>
           <div class="col col-md-5" align = "center">
             <h5><b>Observed Trip Purpose</b></h5>
+            <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
             <div id="piePurpose1"></div>
           </div>
           <div class="col col-md-5" align = "center">
             <h5><b>Modeled Trip Purpose</b></h5>
+            <p style="font-size:small;">CMAP ABM - 2010 Scenario</p>
             <div id="piePurpose2"></div>
           </div>
       </div>
@@ -831,14 +866,16 @@ A synthetic population provides the foundation for modeling individuals’ trave
             <option value="Student under 16 years">Student under 16 years</option>
             <option value="University Student">University Student</option>
           </select>
+          <div class="small" style="margin-top: 100px;">
+            Single-person trips only.<br>
+              <b>Sources</b><br>
+              Observed -Travel Tracker Survey, 2007-2008. <br>
+              Modeled- CMAP ABM - 2010 Scenario. <br>
+            </div>
         </div>
         <div class="col col-md-10">
           <div id="PurposebyType"></div>
-          <div class="small">
-            Single-person trips only. <br>
-            Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-            Modeled - CMAP ABM. <br>
-          </div>
+
         </div>
       </div>
       <div class="row">
@@ -876,13 +913,15 @@ A synthetic population provides the foundation for modeling individuals’ trave
             <option value="25-30 Miles">25-30 Miles</option>
             <option value="30 Miles or More">30 Miles or More</option>
           </select>
+          <div class="small" style="margin-top: 100px;">
+              <b>Sources</b><br>
+              Observed -Travel Tracker Survey, 2007-2008. <br>
+              Modeled- CMAP ABM - 2010 Scenario. <br>
+            </div>
         </div>
         <div class="col col-md-10">
           <div id="PurposebyDist"></div>
-          <div class="small">
-              Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-              Modeled - CMAP ABM. <br>
-          </div>
+
         </div>
       </div>
       <div class="row">
@@ -921,13 +960,15 @@ A synthetic population provides the foundation for modeling individuals’ trave
                 <option value="Work">Work</option>
                 <option value="Work-based">Work-based</option>
             </select>
+            <div class="small" style="margin-top: 100px;">
+                <b>Sources</b><br>
+                Observed -Travel Tracker Survey, 2007-2008. <br>
+                Modeled- CMAP ABM - 2010 Scenario. <br>
+              </div>
           </div>
           <div class="col col-md-10">
             <div id="DistbyPurpose"></div>
-            <div class="small">
-                Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-                Modeled - CMAP ABM. <br>
-            </div>
+
           </div>
         </div>
         <div class="row">
@@ -959,13 +1000,15 @@ A synthetic population provides the foundation for modeling individuals’ trave
                   <option value="M">Mandatory Activity</option>
                   <option value="N">Non-Mandatory Activity</option>
               </select>
+              <div class="small" style="margin-top: 100px;">
+                  <b>Sources</b><br>
+                  Observed -Travel Tracker Survey, 2007-2008. <br>
+                  Modeled- CMAP ABM - 2010 Scenario. <br>
+                </div>
             </div>
             <div class="col col-md-10">
               <div id="dap"></div>
-              <div class="small">
-                  Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-                  Modeled - CMAP ABM. <br>
-              </div>
+
             </div>
           </div>
       </div>
@@ -1003,8 +1046,9 @@ A synthetic population provides the foundation for modeling individuals’ trave
 
           <div class="small">
               Express and local bus combined. <br>
-              Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-              Modeled - CMAP ABM. <br>
+              <b>Sources</b><br>
+              Survey - Travel Tracker Survey, 2007-2008.<br>
+              Modeled - CMAP ABM - 2010 Scenario. <br>
             </div>
           <br>
 
@@ -1029,10 +1073,12 @@ A synthetic population provides the foundation for modeling individuals’ trave
 
               <div class="col col-md-5" align = "center">
                 <h5><b>Observed Transit Access</b></h5>
+                <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
                 <div id="pieTransitSurveyMode"></div>
               </div>
               <div class="col col-md-5" align = "center">
                 <h5><b>Modeled Transit Access</b></h5>
+                <p style="font-size:small;">CMAP ABM - 2010 Scenario</p>
                 <div id="pieTransitModelMode"></div>
               </div>
             </div>
@@ -1066,13 +1112,15 @@ A synthetic population provides the foundation for modeling individuals’ trave
                     <option value="transit">Walk To Transit</option>
                     <option value="dtransit">Drive to Transit</option>
                 </select>
+                <div class="small" style="margin-top:100px;">
+                    <b>Sources</b><br>
+                    Survey - Travel Tracker Survey, 2007-2008.<br>
+                    Modeled - CMAP ABM - 2010 Scenario. <br>
+                  </div>
               </div>
               <div class="col col-md-10">
                 <div id="TranDist"></div>
-                <div class="small">
-                    Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-                    Modeled - CMAP ABM. <br>
-                </div>
+
               </div>
             </div>
             <div class="row">
@@ -1104,13 +1152,15 @@ A synthetic population provides the foundation for modeling individuals’ trave
                       <option value="transit">Walk To Transit</option>
                       <option value="dtransit">Drive to Transit</option>
                   </select>
+                  <div class="small" style="margin-top:100px;">
+                      <b>Sources</b><br>
+                      Survey - Travel Tracker Survey, 2007-2008.<br>
+                      Modeled - CMAP ABM - 2010 Scenario. <br>
+                    </div>
                 </div>
                 <div class="col col-md-10">
                   <div id="TranIncome"></div>
-                  <div class="small">
-                      Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-                      Modeled - CMAP ABM. <br>
-                  </div>
+
                 </div>
               </div>
               <div class="row">
@@ -1142,13 +1192,15 @@ A synthetic population provides the foundation for modeling individuals’ trave
                         <option value="transit">Walk To Transit</option>
                         <option value="dtransit">Drive to Transit</option>
                     </select>
+                    <div class="small" style="margin-top:100px;">
+                        <b>Sources</b><br>
+                        Survey - Travel Tracker Survey, 2007-2008.<br>
+                        Modeled - CMAP ABM - 2010 Scenario. <br>
+                      </div>
                   </div>
                   <div class="col col-md-10">
                     <div id="TranAutoAdult"></div>
-                    <div class="small">
-                        Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-                        Modeled - CMAP ABM. <br>
-                    </div>
+
                   </div>
                 </div>
         </div>
@@ -1164,11 +1216,21 @@ A synthetic population provides the foundation for modeling individuals’ trave
         </div>
         <div class="col-md-6">
           <div id="vmtcounty"></div>
+          <div class="small">
+              <b>Sources</b><br>
+              Survey - Illinois Travel Statistics 2015<br>
+              Modeled - CMAP ABM - 2015 Scenario. <br>
+            </div>
         </div>
        <div class="col-md-12">
           <h3>Comparison of Daily VMT Shares by County and Facility Type</h3>
           <br><br><br>
           <center><div id="cfstack"></div></center>
+          <div class="small">
+              <b>Sources</b><br>
+              Survey - Illinois Travel Statistics 2015<br>
+              Modeled - CMAP ABM - 2015 Scenario. <br>
+            </div>
         </div>
         <div class="col-md-12">
           <h3>Comparison of Daily VMT Shares by County and Facility Type</h3>

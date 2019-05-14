@@ -26,6 +26,12 @@
         margin-left: 20px;
         margin-right: 20px
     }
+    #interstate_map{
+        width: 100%;
+        height: 475px;
+        margin-left: 20px;
+        margin-right: 20px
+    }
     #main {
       width: 960px;
     }
@@ -1169,9 +1175,21 @@ A synthetic population provides the foundation for modeling individuals’ trave
           <br>
           <p style="text-align:right">r<sup>2</sup> = <text_div id="r2" style="padding-right: 100px"></text_div></p>
           <center><div id="scatter_vmt"></div></center>
-
+        </div>
+        <div class="col-md-12">
           <h3>Comparison of Interstate Daily VMT By Auto and Truck</h3>
-          <div id="interstateVMT"></div>
+        </div>
+        <div class="col-md-6">
+          <br>
+          <br>
+        <div id="interstate_map"></div>
+        </div>
+        <div class="col-md-3">
+        <center><div id="interstateVMTbar_obs"></div></center>
+        </div>
+        <div class="col-md-3">
+        <center><div id="interstateVMTbar_model"></div></center>
+        </div>
         </div>
       </div>
   </body>
@@ -1226,7 +1244,7 @@ A synthetic population provides the foundation for modeling individuals’ trave
     type="text/javascript">
   </script>
   <script
-    src="scripts/barchart_stack_h.js"
+    src="scripts/barchart_stack_h_v2.js"
     type="text/javascript">
   </script>
   <script
@@ -1269,12 +1287,14 @@ A synthetic population provides the foundation for modeling individuals’ trave
 
   </script>
   <script type="text/javascript" src="data/subzonegroups.js"></script>
+  <script type="text/javascript" src="data/hwy_interstates.js"></script>
   <script>makeStackedChart_3("data/csv3a_popsyn_crosstab.csv","#popsynCat","dtitle","popsynstack");</script>
   <script>makeStackedChart_nodd("data/csv23_vmt_county_facility.csv","cftitle","cfstack");</script>
   <script>makeStackedChart_4("data/csv3_aocrosstab_counts.csv","#aoCat","dtitle","stackedbar");</script>
   <script>makeChords('data/csv4_chord.csv', "modelChord", "obsChord");</script>
+
   <script type="text/javascript" src="scripts/modepies.js"></script>
-  <script>makeStackedChart_nodd_h("data/csv25_interstate_vmt.csv","intVMTTitle","interstateVMT");</script>
+  <script>hStackedBar("data/csv26_interstate_vmt_obs.csv","data/csv25_interstate_vmt_model.csv","interstateVMTbar_obs","interstateVMTbar_model");</script>
 
   <script type="text/javascript" src="data/counties.js"></script>
   <script type="text/javascript" src="data/MetraLines.js"></script>

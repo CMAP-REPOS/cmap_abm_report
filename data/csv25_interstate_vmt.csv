@@ -1,65 +1,33 @@
-MainGroup,StackGroup,SubGroup,Value,Category,Title
-I-190,Auto,Model,257150,CMAP Region,Free
-I-190,Truck,Model,9897,CMAP Region,Free
-I-190,Auto,Observed,188485,CMAP Region,Free
-I-190,Truck,Observed,9918,CMAP Region,Free
-I-290,Auto,Model,5775191,CMAP Region,Free
-I-290,Truck,Model,705992,CMAP Region,Free
-I-290,Auto,Observed,5339887,CMAP Region,Free
-I-290,Truck,Observed,396793,CMAP Region,Free
-I-55 E of I-355,Auto,Model,3166016,CMAP Region,Free
-I-55 E of I-355,Truck,Model,384211,CMAP Region,Free
-I-55 E of I-355,Auto,Observed,3164364,CMAP Region,Free
-I-55 E of I-355,Truck,Observed,304808,CMAP Region,Free
-I-55 W of I-355,Auto,Model,2758991,CMAP Region,Free
-I-55 W of I-355,Truck,Model,535536,CMAP Region,Free
-I-55 W of I-355,Auto,Observed,2206610,CMAP Region,Free
-I-55 W of I-355,Truck,Observed,301303,CMAP Region,Free
-I-57,Auto,Model,2854565,CMAP Region,Free
-I-57,Truck,Model,285407,CMAP Region,Free
-I-57,Auto,Observed,2732835,CMAP Region,Free
-I-57,Truck,Observed,155529,CMAP Region,Free
-I-80 & I-80/I-94,Auto,Model,3217603,CMAP Region,Free
-I-80 & I-80/I-94,Truck,Model,828596,CMAP Region,Free
-I-80 & I-80/I-94,Auto,Observed,2787491,CMAP Region,Free
-I-80 & I-80/I-94,Truck,Observed,601497,CMAP Region,Free
-I-90 Skyway,Auto,Model,2120800,CMAP Region,Free
-I-90 Skyway,Truck,Model,65326,CMAP Region,Free
-I-90 Skyway,Auto,Observed,1730646,CMAP Region,Free
-I-90 Skyway,Truck,Observed,59835,CMAP Region,Free
-I-90/94,Auto,Model,4321857,CMAP Region,Free
-I-90/94,Truck,Model,390789,CMAP Region,Free
-I-90/94,Auto,Observed,3871531,CMAP Region,Free
-I-90/94,Truck,Observed,26983,CMAP Region,Free
-I-94,Auto,Model,4742510,CMAP Region,Free
-I-94,Truck,Model,724221,CMAP Region,Free
-I-94,Auto,Observed,4354766,CMAP Region,Free
-I-94,Truck,Observed,356340,CMAP Region,Free
-I-294 N of I-290 (toll),Auto,Model,2929715,CMAP Region,Toll
-I-294 N of I-290 (toll),Truck,Model,291604,CMAP Region,Toll
-I-294 N of I-290 (toll),Auto,Observed,2801814,CMAP Region,Toll
-I-294 N of I-290 (toll),Truck,Observed,257636,CMAP Region,Toll
-I-294 S of I-290 & I-80/294 (toll),Auto,Model,3631056,CMAP Region,Toll
-I-294 S of I-290 & I-80/294 (toll),Truck,Model,436437,CMAP Region,Toll
-I-294 S of I-290 & I-80/294 (toll),Auto,Observed,3170388,CMAP Region,Toll
-I-294 S of I-290 & I-80/294 (toll),Truck,Observed,621979,CMAP Region,Toll
-I-355 (toll),Auto,Model,2912826,CMAP Region,Toll
-I-355 (toll),Truck,Model,247285,CMAP Region,Toll
-I-355 (toll),Auto,Observed,2704792,CMAP Region,Toll
-I-355 (toll),Truck,Observed,278332,CMAP Region,Toll
-I-88 & I-88/294 (toll),Auto,Model,4213896,CMAP Region,Toll
-I-88 & I-88/294 (toll),Truck,Model,288663,CMAP Region,Toll
-I-88 & I-88/294 (toll),Auto,Observed,2920580,CMAP Region,Toll
-I-88 & I-88/294 (toll),Truck,Observed,215740,CMAP Region,Toll
-I-90 E of IL-31 (toll),Auto,Model,2717987,CMAP Region,Toll
-I-90 E of IL-31 (toll),Truck,Model,100567,CMAP Region,Toll
-I-90 E of IL-31 (toll),Auto,Observed,2553011,CMAP Region,Toll
-I-90 E of IL-31 (toll),Truck,Observed,187914,CMAP Region,Toll
-I-90 W of IL-31 (toll),Auto,Model,3178680,CMAP Region,Toll
-I-90 W of IL-31 (toll),Truck,Model,99109,CMAP Region,Toll
-I-90 W of IL-31 (toll),Auto,Observed,1175080,CMAP Region,Toll
-I-90 W of IL-31 (toll),Truck,Observed,202921,CMAP Region,Toll
-I-94 (toll),Auto,Model,4970387,CMAP Region,Toll
-I-94 (toll),Truck,Model,356258,CMAP Region,Toll
-I-94 (toll),Auto,Observed,2285368,CMAP Region,Toll
-I-94 (toll),Truck,Observed,460190,CMAP Region,Toll
+Index,Auto,Truck,Cat
+I-190,257150,9897,Model
+I-290,5775191,705992,Model
+I-294 N of I-290 (toll),2929715,291604,Model
+I-294 S of I-290 & I-80/294 (toll),3631056,436437,Model
+I-355 (toll),2912826,247285,Model
+I-55 E of I-355,3166016,384211,Model
+I-55 W of I-355,2758991,535536,Model
+I-57,2854565,285407,Model
+I-80 & I-80/I-94,3217603,828596,Model
+I-88 & I-88/294 (toll),4213896,288663,Model
+I-90 E of IL-31 (toll),2717987,100567,Model
+I-90 Skyway,2120800,65326,Model
+I-90 W of IL-31 (toll),3178680,99109,Model
+I-90/94,4321857,390789,Model
+I-94,4742510,724221,Model
+I-94 (toll),4970387,356258,Model
+I-190,188485,9918,Survey
+I-290,5339887,396793,Survey
+I-294 N of I-290 (toll),2801814,257636,Survey
+I-294 S of I-290 & I-80/294 (toll),3170388,621979,Survey
+I-355 (toll),2704792,278332,Survey
+I-55 E of I-355,3164364,304808,Survey
+I-55 W of I-355,2206610,301303,Survey
+I-57,2732835,155529,Survey
+I-80 & I-80/I-94,2787491,601497,Survey
+I-88 & I-88/294 (toll),2920580,215740,Survey
+I-90 E of IL-31 (toll),2553011,187914,Survey
+I-90 Skyway,1730646,59835,Survey
+I-90 W of IL-31 (toll),1175080,202921,Survey
+I-90/94,3871531,26983,Survey
+I-94,4354766,356340,Survey
+I-94 (toll),2285368,460190,Survey

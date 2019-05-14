@@ -116,10 +116,7 @@ function makeStackedChart_nodd_h(csv_file,dataTitle,divID){
           ////console.log(d);
           return y1(d.data.SubGroup);
         })
-        .attr("x", function(d) {
-          ////console.log(d);
-          return x(d[1]);
-        })
+        .attr("x", 0)
         .attr("width", function(d) {
           return x(d[0]) - x(d[1]);
         })
@@ -142,7 +139,7 @@ function makeStackedChart_nodd_h(csv_file,dataTitle,divID){
         .attr("dx", "0.32em")
         .attr("fill", "#000")
         .attr("font-weight", "bold")
-        .attr("text-anchor", "start")
+        .attr("text-anchor", "end")
 
         // Add the X Axis
        g.append("g")

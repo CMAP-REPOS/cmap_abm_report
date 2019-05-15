@@ -1,7 +1,7 @@
 function hStackedBar(obscsv_file,modelcsv_file,obsID,modelID, mapID){
 
   var formatValue = d3.format(".2s");
-  var margin = {top: 35, right: 0, bottom: 100, left: 160},
+  var margin = {top: 35, right: 20, bottom: 100, left: 160},
     width = 300 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
 
@@ -98,7 +98,7 @@ function makechart(csv_file, divID, axis){
     	 .attr("transform", function(d, i) { return "translate(10," + (300 + i * 20) + ")"; });
 
       legend.append("rect")
-          .attr("x", width - 10)
+          .attr("x", width)
           .attr("width", 19)
           .attr("height", 19)
           .attr("fill", z);

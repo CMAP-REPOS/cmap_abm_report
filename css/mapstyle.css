@@ -5,6 +5,10 @@
     margin-right: 20px
 }
 
+#transit_map {
+    height: 500px;
+}
+
 .btn-info {
     background-color: #1C4E80 !important;
     border-color: #1C4E80 !important;

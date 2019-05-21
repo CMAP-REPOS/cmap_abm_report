@@ -78,7 +78,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
                 return data;
               };
             });
-            console.log(modelData)
+            //console.log(modelData)
 
             var obsData = data.filter(function(d){
               ////console.log(d)

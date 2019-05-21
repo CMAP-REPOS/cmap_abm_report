@@ -1263,9 +1263,20 @@ A synthetic population provides the foundation for modeling individuals’ trave
 
 
         <!-- TRANSIT ASSIGNMENT -->
-        <div id="8" class="tab-pane container">
-          <div class="col-md-2">
-            <div id=></div>
+        <div id="9" class="tab-pane container">
+          <div class="col-md-12">
+            <h3>Transit Boardings by Line</h3>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <br>
+          <div id="transit_map"></div>
+          </div>
+          <div class="col-md-3">
+          <center><div id="transitBoardingsBar_obs"></div></center>
+          </div>
+          <div class="col-md-3">
+          <center><div id="transitBoardingsBar_model"></div></center>
           </div>
         </div>
 
@@ -1374,6 +1385,7 @@ A synthetic population provides the foundation for modeling individuals’ trave
 
   <script type="text/javascript" src="scripts/modepies.js"></script>
   <script>hStackedBar("data/csv26_interstate_vmt_obs.csv","data/csv25_interstate_vmt_model.csv","interstateVMTbar_obs","interstateVMTbar_model");</script>
+  <script>hStackedBar("data/csv27_transit_boardings_obs.csv","data/csv28_transit_boardings_model.csv","transitBoardingsBar_obs","transitBoardingsBar_model");</script>
 
   <script type="text/javascript" src="data/counties.js"></script>
   <script type="text/javascript" src="data/MetraLines.js"></script>
@@ -1381,4 +1393,6 @@ A synthetic population provides the foundation for modeling individuals’ trave
   <script type="text/javascript" src="data/mhn.js"></script>
   <script type="text/javascript" src="scripts/transitboardings.js"></script>
   <script type="text/javascript" src="scripts/intromap.js"></script>
+  <script type="text/javascript" src="scripts/transit_assignment_map.js"></script>
+  <script type="text/javascript" src="scripts/highway_assignment_map.js"></script>
 </html>

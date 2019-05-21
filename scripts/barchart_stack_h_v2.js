@@ -13,11 +13,11 @@ function hStackedBar(obscsv_file,modelcsv_file,obsID,modelID, mapID){
 function makechart(csv_file, divID, axis){
 
   var g = d3.select("#"+divID).append("svg")
-  .attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
-  .attr("align","center")
-  .append("g")
-  .attr("transform","translate(" + margin.left + "," + margin.top + ")");
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .attr("align","center")
+    .append("g")
+      .attr("transform","translate(" + margin.left + "," + margin.top + ")");
 
   var y = d3.scaleBand()			// x = d3.scaleBand()
       .rangeRound([0, height])	// .rangeRound([0, width])
@@ -58,7 +58,44 @@ function makechart(csv_file, divID, axis){
           return y(d.data.Index); })	    //.attr("x", function(d) { return x(d.data.Index); })
         .attr("x", function(d) { return x(d[0]); })			    //.attr("y", function(d) { return y(d[1]); })
         .attr("width", function(d) { return x(d[1]) - x(d[0]); })	//.attr("height", function(d) { return y(d[0]) - y(d[1]); })
-        .attr("height", y.bandwidth());						    //.attr("width", x.bandwidth());
+        .attr("height", y.bandwidth())
+        .attr("class", function(d) {return d.data.Index.replace(/\s/g, '')})
+        // this highlights the same line on the two bar charts
+        .on("mouseover", function(d) {
+          d3.selectAll("." + d.data.Index.replace(/\s/g, '')).attr("fill", "red");
+          selectedline = d.data.Index
+          // this highlights the line on the map!
+          metra.eachLayer(function(layer) {
+            if(layer.LINE.includes(selectedline)){
+              layer.setStyle({
+                color:"Red"
+            })
+            }})
+          cta.eachLayer(function(layer) {
+            if(layer.LINE.includes(selectedline)){
+              layer.setStyle({
+                color:"Red"
+            })
+            }})
+          })
+        .on("mouseout", function(d) {
+          d3.selectAll("." + d.data.Index.replace(/\s/g, '')).attr("fill", function(d) {
+            return z(d.key); });
+          selectedline = d.data.Index
+          // this highlights the line on the map!
+          metra.eachLayer(function(layer) {
+            if(layer.LINE.includes(selectedline)){
+              layer.setStyle({
+                color:'#696969'
+            })
+            }})
+          cta.eachLayer(function(layer) {
+            if(layer.LINE.includes(selectedline)){
+              layer.setStyle({
+                color:"black"
+            })
+            }})
+        });
 
 
     if(axis == true){
@@ -114,34 +151,4 @@ function makechart(csv_file, divID, axis){
 
 }
 
-
-  // basic map
-var mapboxAccessToken = 'pk.eyJ1Ijoic2FyYWhjbWFwIiwiYSI6ImNqc3VzMDl0YzJocm80OXBnZjc2MGk4cGgifQ.S_UmPA1jm5pQPrCCLDs41Q';
-
-var interstate_map = new L.Map("interstate_map", {
-    zoomControl: false,
-    center: new L.LatLng(41.8781, -87.9298),
-    zoom: 8
-});
-
-var baselayer = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
-    id: 'mapbox.light',
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-    '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-    'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
-})
-
-$("a[href='#4']").on('shown.bs.tab',function(e) {
-    interstate_map.invalidateSize();
-});
-  interstate_map.addLayer(baselayer);
-
-var hwy_lyr = L.geoJSON(hwy_fc, {
-  // style: baseStyle,
-  // onEachFeature: function(feature, layer) {
-  //     layer.bindPopup(feature.properties.AREANAME)
-  //     layer.NAME = feature.properties.AREANAME;
-//}
-});
-hwy_lyr.addTo(interstate_map);
 }

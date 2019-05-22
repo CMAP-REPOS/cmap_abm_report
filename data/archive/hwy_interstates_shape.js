@@ -1,4 +1,4 @@
-{
+interstateshape = {
   "type" : "FeatureCollection",
   "crs" : {
     "type" : "name",

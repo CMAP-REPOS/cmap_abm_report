@@ -1,5 +1,18 @@
 //d3.json('data/data.json', function (error,data) {
 
+var formatComma = d3.format(","),
+    formatDecimal = d3.format(".1f"),
+    formatDecimalComma = d3.format(",.0f"),
+    formatSuffix = d3.format("s"),
+    formatSuffixDecimal1 = d3.format(".1s"),
+    formatSuffixDecimal2 = d3.format(".2s"),
+    formatMoney = function(d) { return "$" + formatDecimalComma(d); },
+    formatPercent = d3.format(",.1%");
+
+var isNumeric = function (n) {
+		    return !isNaN(parseFloat(n)) && isFinite(n);
+		};
+
 function tabulate(data, columns, loc) {
 	var table = d3.select(loc)
     .append('table')
@@ -29,7 +42,21 @@ function tabulate(data, columns, loc) {
 	  })
 	  .enter()
 	  .append('td')
-	    .text(function (d) { return d.value; });
+	    .text(function (d) {
+				var datavalue;
+				if(d.value <= 1){
+					datavalue = formatPercent(d.value)
+				}
+				else if(isNumeric(d.value)){
+					datavalue = formatDecimalComma(d.value)
+				}
+				else{
+					datavalue = d.value
+				}
+				console.log(d.value)
+				return datavalue;
+			});
+
 
   return table;
 }

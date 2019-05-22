@@ -13,16 +13,16 @@ function makeScatter(csv_file, chart_id){
 	  d3.csv(csv_file, types, function(error, data){
       var x = d3.scaleLinear()
        .domain([0,d3.max(data, function(d){
-         return d.obs_vmt;
+         return d.AADT;
         })])
        .range([padding,width - padding*2]);
 
   	  var y = d3.scaleLinear()
       .domain([d3.min(data, function(d){
-        return(d.vmt);
+        return(d.vadt);
       }),
       d3.max(data, function(d){
-        return d.vmt;
+        return d.vadt;
        })]) //y range is reversed because svg
        .range([height-padding, padding]);
 
@@ -33,17 +33,22 @@ function makeScatter(csv_file, chart_id){
   	      .scale(y);
 
 
+          // colors for foo
+      var color = d3.scaleOrdinal()
+      .domain(["Arterial/Collector", "Interstate" ])
+      .range([ "#440154ff", "#21908dff"])
+
       //x = survey
       //Y = Model
-	    y.domain(d3.extent(data, function(d){ return parseFloat(d.vmt)}));
-	    x.domain(d3.extent(data, function(d){ return parseFloat(d.obs_vmt)}));
+	    y.domain(d3.extent(data, function(d){ return parseFloat(d.vadt)}));
+	    x.domain(d3.extent(data, function(d){ return parseFloat(d.AADT)}));
 
 	    // see below for an explanation of the calcLinear function
-      var yval = data.map(function (d) { return parseFloat(d.vmt); });
-      var xval = data.map(function (d) { return parseFloat(d.obs_vmt); });
+      var yval = data.map(function (d) { return parseFloat(d.vadt); });
+      var xval = data.map(function (d) { return parseFloat(d.AADT); });
 	    var lr = linearRegression(yval,xval);
       d3.select("#r2").text(parseFloat(lr.r2).toPrecision(4));
-      var max = d3.max(data, function (d) { return d.obs_vmt; });
+      var max = d3.max(data, function (d) { return d.AADT; });
       var myLine = svg.append("line")
                   .attr("x1", x(0))
                   .attr("y1", y(lr.intercept))
@@ -55,41 +60,43 @@ function makeScatter(csv_file, chart_id){
           .attr("class", "x axis")
           .attr("transform", "translate(0," + (height-padding) + ")")
           .call(xAxis);
-      
-        svg.append("text")             
+
+        svg.append("text")
         .attr("transform",
-              "translate(" + (width/2) + " ," + 
+              "translate(" + (width/2) + " ," +
                               (height + margin.top + 20) + ")")
         .style("text-anchor", "middle")
-        .text("Survey VMT");
+        .text("Survey vadt");
 
       svg.append("g")
           .attr("class", "y axis")
           .attr("transform", "translate(" + padding + ",0)")
           .call(yAxis);
 
-      svg.append("text")             
+      svg.append("text")
       .attr("transform",
-            "translate(-40," + 
+            "translate(-40," +
                             (height/2) + ") rotate(-90)")
       .style("text-anchor", "middle")
-      .text("Model VMT");
+      .text("Model vadt");
 
 	    svg.selectAll(".point")
 	        .data(data)
 	      .enter().append("circle")
 	        .attr("class", "point")
 	        .attr("r", 3)
-	        .attr("cy", function(d){ return y(d.vmt)})
-	        .attr("cx", function(d){ return x(d.obs_vmt)})
-          .style("fill","#1C4E80")
+	        .attr("cy", function(d){ return y(d.vadt)})
+	        .attr("cx", function(d){ return x(d.AADT)})
+          .style("fill",function(d){
+            return color(d.FacilityType)
+          })
           .style("stroke","#A6BACE");
 
 	  });
 
 	  function types(d){
-	    d.obs_vmt = +d.obs_vmt;
-	    d.vmt = +d.vmt;
+	    d.AADT = +d.AADT;
+	    d.vadt = +d.vadt;
 
 	    return d;
 	  }
@@ -131,4 +138,6 @@ function makeScatter(csv_file, chart_id){
         return lr;
 
 };
-  }
+
+
+}

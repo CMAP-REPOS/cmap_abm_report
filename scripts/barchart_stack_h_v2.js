@@ -59,11 +59,12 @@ function makechart(csv_file, divID, axis){
         .attr("x", function(d) { return x(d[0]); })			    //.attr("y", function(d) { return y(d[1]); })
         .attr("width", function(d) { return x(d[1]) - x(d[0]); })	//.attr("height", function(d) { return y(d[0]) - y(d[1]); })
         .attr("height", y.bandwidth())
-        .attr("class", function(d) {return d.data.Index.replace(/\s/g, '')})
+        .attr("class", function(d) {return d.data.Index.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "")})
         // this highlights the same line on the two bar charts
         .on("mouseover", function(d) {
-          d3.selectAll("." + d.data.Index.replace(/\s/g, '')).attr("fill", "red");
-          selectedline = d.data.Index
+          d3.selectAll("." + d.data.Index.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, ""))
+            .attr("fill", "red");
+          selectedline = d.data.Index.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "")
           // this highlights the line on the map!
           metra.eachLayer(function(layer) {
             if(layer.LINE.includes(selectedline)){
@@ -77,11 +78,19 @@ function makechart(csv_file, divID, axis){
                 color:"Red"
             })
             }})
+          hwy_lyr.eachLayer(function(layer) {
+            if(layer.LINE.includes(selectedline)){
+              layer.setStyle({
+                color:"red"
+              })
+            }
+          })
           })
         .on("mouseout", function(d) {
-          d3.selectAll("." + d.data.Index.replace(/\s/g, '')).attr("fill", function(d) {
-            return z(d.key); });
-          selectedline = d.data.Index
+          d3.selectAll("." + d.data.Index.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, ""))
+            .attr("fill", function(d) {
+            return z(0); });
+          selectedline = d.data.Index.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "")
           // this highlights the line on the map!
           metra.eachLayer(function(layer) {
             if(layer.LINE.includes(selectedline)){
@@ -95,6 +104,13 @@ function makechart(csv_file, divID, axis){
                 color:"black"
             })
             }})
+          hwy_lyr.eachLayer(function(layer) {
+            if(layer.LINE.includes(selectedline)){
+              layer.setStyle({
+                color:"blue"
+              })
+            }
+          })
         });
 
 

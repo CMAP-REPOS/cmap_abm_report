@@ -22,10 +22,10 @@
   
   var hwy_lyr = L.geoJSON(hwy_fc, {
     // style: baseStyle,
-    // onEachFeature: function(feature, layer) {
-    //     layer.bindPopup(feature.properties.AREANAME)
-    //     layer.NAME = feature.properties.AREANAME;
-  //}
+    onEachFeature: function(feature, layer) {
+        layer.bindPopup(feature.properties.intcorr_RDNM_TOLL_SEG_m),
+        layer.LINE = feature.properties.intcorr_RDNM_TOLL_SEG_m.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "");
+  }
   });
   hwy_lyr.addTo(interstate_map);
   

@@ -26,7 +26,7 @@ var metra = L.geoJson(metradata, {
     weight: 2,
     onEachFeature: function(feature, layer) {
         layer.bindPopup(feature.properties.LINES),
-        layer.LINE = feature.properties.LINES;
+        layer.LINE = feature.properties.LINES.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "");
     }
 });
 
@@ -36,7 +36,7 @@ var cta = L.geoJson(ctalines, {
     weight: 2,
     onEachFeature: function(feature, layer) {
         layer.bindPopup(feature.properties.LINES),
-        layer.LINE = feature.properties.LINES;
+        layer.LINE = feature.properties.LINES.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "");
     }
 });
 

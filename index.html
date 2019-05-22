@@ -1230,7 +1230,7 @@ Model validation is defined as comparing the results of the calibrated models to
           <br/>
           <br/>
           <h3>Comparison of Daily VMT Shares by County</h3>
-          </div>
+        </div>
         <div class="col-md-6">
           <div id="vmt_county_tbl" style = "width: 50%"></div>
         </div>
@@ -1272,6 +1272,21 @@ Model validation is defined as comparing the results of the calibrated models to
         <div class="col-md-3">
         <center><div id="interstateVMTbar_model"></div></center>
         </div>
+
+        <div class="col-md-6">
+          <h3>Daily VMT Comparison by Volume Range (7 Counties)</h3>
+          <h4>Interstate</h4>
+          <center><div id="vrange_int"></div></center>
+          <h4>Arterial</h4>
+          <center><div id="vrange_art"></div></center>
+          <h4>Total</h4>
+          <center><div id="vrange_total"></div></center>
+
+
+          <h3>Root Mean Squared Error Analysis (7 Counties)</h3>
+          <center><div id="rmse_7"></div></center>
+        </div>
+
         </div>
 
 
@@ -1387,6 +1402,38 @@ Model validation is defined as comparing the results of the calibrated models to
   }, function(error, data) {
     if (error) throw error;
     tabulate(data, ['County','Observed Share','Modeled Share','Observed','Model'],"#vmt_county_tbl"); // 2 column table
+  });
+
+  d3.csv("data/csv30_rmse_7.csv", function(d, i, columns) {
+    for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+    return d;
+  }, function(error, data) {
+    if (error) throw error;
+    tabulate(data, ['Vrange','Weight (Miles)','Links','AADT','Model Volumes','rmse','%rmse'],"#rmse_7"); // 2 column table
+  });
+
+  d3.csv("data/csv30_vrange_total.csv", function(d, i, columns) {
+    for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+    return d;
+  }, function(error, data) {
+    if (error) throw error;
+    tabulate(data, ['Vrange','Number of Links','Observed VMT','Model VMT','Percent Diff'],"#vrange_total"); // 2 column table
+  });
+
+  d3.csv("data/csv30_vrange_art.csv", function(d, i, columns) {
+    for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+    return d;
+  }, function(error, data) {
+    if (error) throw error;
+    tabulate(data, ['Vrange','Number of Links','Observed VMT','Model VMT','Percent Diff'],"#vrange_art"); // 2 column table
+  });
+
+  d3.csv("data/csv30_vrange_int.csv", function(d, i, columns) {
+    for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+    return d;
+  }, function(error, data) {
+    if (error) throw error;
+    tabulate(data, ['Vrange','Number of Links','Observed VMT','Model VMT','Percent Diff'],"#vrange_int"); // 2 column table
   });
 
   d3.csv("data/aoCounts.csv", function(d, i, columns) {

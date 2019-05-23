@@ -36,7 +36,7 @@ function makeScatter(csv_file, chart_id){
           // colors for foo
       var color = d3.scaleOrdinal()
       .domain(["Arterial/Collector", "Interstate" ])
-      .range([ "#440154ff", "#21908dff"])
+      .range([ "#A6BACE", "#7896B4"])
 
       //x = survey
       //Y = Model
@@ -90,7 +90,8 @@ function makeScatter(csv_file, chart_id){
           .style("fill",function(d){
             return color(d.FacilityType)
           })
-          .style("stroke","#A6BACE");
+          .style("stroke","#f0f0f0")
+          .style("stroke-width", .25) ;
 
 	  });
 

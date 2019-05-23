@@ -66,7 +66,7 @@ function makeScatter(csv_file, chart_id){
               "translate(" + (width/2) + " ," +
                               (height + margin.top + 20) + ")")
         .style("text-anchor", "middle")
-        .text("Survey vadt");
+        .text("Survey AADT");
 
       svg.append("g")
           .attr("class", "y axis")
@@ -78,7 +78,7 @@ function makeScatter(csv_file, chart_id){
             "translate(-40," +
                             (height/2) + ") rotate(-90)")
       .style("text-anchor", "middle")
-      .text("Model vadt");
+      .text("Model AADT");
 
 	    svg.selectAll(".point")
 	        .data(data)

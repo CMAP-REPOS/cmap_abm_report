@@ -53,7 +53,7 @@ function tabulate(data, columns, loc) {
 				else{
 					datavalue = d.value
 				}
-				console.log(d.value)
+			//	console.log(d.value)
 				return datavalue;
 			});
 

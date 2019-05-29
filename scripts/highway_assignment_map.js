@@ -8,7 +8,7 @@
       zoom: 8
   });
   
-  var baselayer = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
+  var baselayer2 = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
       id: 'mapbox.light',
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
       '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -18,7 +18,7 @@
   $("a[href='#8']").on('shown.bs.tab',function(e) {
       interstate_map.invalidateSize();
   });
-    interstate_map.addLayer(baselayer);
+    interstate_map.addLayer(baselayer2);
   
   var hwy_lyr = L.geoJSON(hwy_fc, {
     // style: baseStyle,

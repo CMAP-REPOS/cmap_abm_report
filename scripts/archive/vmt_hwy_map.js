@@ -47,7 +47,7 @@ function countystyle(feature) {
     };
 }
 
-function mhnstyle(feature) {
+function mhnstyle1(feature) {
     if (feature.properties.TYPE1 == 1) {
         return {
             weight: 0.7,
@@ -77,8 +77,8 @@ var counties = L.geoJSON(countiesdata, {
 
 counties.addTo(regionmap);
 
-var mhn = L.geoJSON(mhndata, {
-        style: mhnstyle,
+var mhn1 = L.geoJSON(mhndata, {
+        style: mhnstyle1,
         onEachFeature: function(feature, layer) {
             // layer.bindPopup(feature.properties.Name_1)
             // layer.on({

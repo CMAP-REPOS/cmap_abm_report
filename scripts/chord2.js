@@ -50,7 +50,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
       zoom: 8
   });
 
-  var baselayer = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
+  var baselayer1 = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
       id: 'mapbox.light',
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
       '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -60,7 +60,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
   $("a[href='#4']").on('shown.bs.tab',function(e) {
       wflowmap.invalidateSize();
   });
-  wflowmap.addLayer(baselayer);
+  wflowmap.addLayer(baselayer1);
 
   var rings = L.geoJSON(workflow_geo, {
     style: baseStyle,

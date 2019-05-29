@@ -52,16 +52,14 @@ function mhnstyle(feature) {
         return {
             weight: 0.7,
             opacity: 1,
-            color: "grey",
-            className: feature.properties.Name_1
+            color: "grey"
             };
     }
     else {
     return {
     weight: 1.5,
     opacity: 1,
-    color: "white",
-    className: feature.properties.Name_1,
+    color: "white"
     };
 }}
 
@@ -79,10 +77,16 @@ counties.addTo(regionmap);
 
 var mhn = L.geoJSON(mhndata, {
         style: mhnstyle,
-        onEachFeature: function(feature, layer) {
-            // layer.bindPopup(feature.properties.Name_1)
-            // layer.on({
-            //     'mouseover':highlightFeature,
-            //     'mouseout':resetHighlight
-            // });
-}}).addTo(regionmap);
+        interactive: false
+}).addTo(regionmap);
+
+var cmap2 = L.geoJSON(cmaparea, {
+    style: {
+        color: "#1c4e80",
+        fillOpacity: 0,
+        weight: 1.5
+    },
+    interactive: false
+}).addTo(regionmap);
+
+

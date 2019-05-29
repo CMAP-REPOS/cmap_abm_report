@@ -7,7 +7,7 @@ var transit_map = new L.Map("transit_map", {
     zoom: 9
 });
 
-var baselayer = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
+var baselayer3 = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
     id: 'mapbox.light',
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
     '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -17,7 +17,7 @@ var baselayer = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.pn
 $("a[href='#9']").on('shown.bs.tab',function(e) {
     transit_map.invalidateSize();
 });
-transit_map.addLayer(baselayer);
+transit_map.addLayer(baselayer3);
 
 
 var metra = L.geoJson(metradata, {

@@ -38,8 +38,9 @@ function makechart(csv_file, divID, axis){
      if (error) throw error;
 
      var keys = data.columns.slice(1);
+     keys.pop()
 
-     data.sort(function(a, b) { return b.total - a.total; });
+     data.sort(function(a, b) { return a.order - b.order; });
      y.domain(data.map(function(d) { return d.Index; }));					// x.domain...
      x.domain([0, d3.max(data, function(d) { return d.total; })]).nice();	// y.domain...
      z.domain(keys);
@@ -63,25 +64,27 @@ function makechart(csv_file, divID, axis){
         // this highlights the same line on the two bar charts
         .on("mouseover", function(d) {
           d3.selectAll("." + d.data.Index.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, ""))
-            .attr("fill", "red");
+            .attr("fill", "#cf4446");
           selectedline = d.data.Index.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "")
           // this highlights the line on the map!
           metra.eachLayer(function(layer) {
             if(layer.LINE.includes(selectedline)){
               layer.setStyle({
-                color:"Red"
+                color:"#d7d55c",
+                weight: 3
             })
             }})
           cta.eachLayer(function(layer) {
             if(layer.LINE.includes(selectedline)){
               layer.setStyle({
-                color:"Red"
+                color:"#cf4446",
+                weight: 3
             })
             }})
           hwy_lyr.eachLayer(function(layer) {
             if(layer.LINE.includes(selectedline)){
               layer.setStyle({
-                color:"red"
+                color:"#cf4446"
               })
             }
           })
@@ -89,25 +92,27 @@ function makechart(csv_file, divID, axis){
         .on("mouseout", function(d) {
           d3.selectAll("." + d.data.Index.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, ""))
             .attr("fill", function(d) {
-            return z(0); });
+            return z[1]; });
           selectedline = d.data.Index.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "")
           // this highlights the line on the map!
           metra.eachLayer(function(layer) {
             if(layer.LINE.includes(selectedline)){
               layer.setStyle({
-                color:'#696969'
+                color:'#696969',
+                weight: 2
             })
             }})
           cta.eachLayer(function(layer) {
             if(layer.LINE.includes(selectedline)){
               layer.setStyle({
-                color:"black"
+                color:"black",
+                weight: 2
             })
             }})
           hwy_lyr.eachLayer(function(layer) {
             if(layer.LINE.includes(selectedline)){
               layer.setStyle({
-                color:"blue"
+                color:"#3388ff"
               })
             }
           })

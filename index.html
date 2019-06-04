@@ -155,7 +155,7 @@
     </div>
 
     <div class="tab-content ">
-      <div id="1" class="tab-pane active container-fluid">
+      <div id="1" class="tab-pane  container-fluid">
         <div class="row">
           <br/>
           <br/>
@@ -327,7 +327,7 @@
         </div> <!--end row-->
       </div><!--end tab-->
 
-      <div id="2" class="tab-pane container">
+      <div id="2" class="tab-pane active container">
         <div class="col-md-2"></div> <!-- end -->
         <div class="row">
           <div class="col-md-8">
@@ -335,13 +335,23 @@
             <br/>
             <h3>Population Synthesis</h3>
             <p>
-                Using Census data and other socio-economic information, a complete set of households for the CMAP modeling area is developed. This dataset contains all of the relevant attributes about each household and for each individual living in those households that are required by the ABM. While this population is statistically representative of the Census data, the actual households and individuals are “synthetic” in that they do not represent identifiable people and an individual household in the Census data may be replicated numerous times in order to generate a complete distribution of households in the modeling inputs.
-
+                Using Census data and other socio-economic information, a complete set of households for the CMAP modeling area is developed. This dataset contains all of the relevant attributes about each household and for each individual living in those households that are required by the ABM. While this population is statistically representative of the Census data, the actual households and individuals are “synthetic” in that they do not represent identifiable people and an individual household in the Census data may be replicated numerous times in order to generate a complete distribution of households in the modeling inputs.</p>
+                <p>
                 The current population synthesis software used by CMAP is PopSynIII.  The socioeconomic data developed from CMAP’s regional forecasting and Local Area Allocation procedures provide the subzone-level control values for all ON TO 2050 model scenarios. CMAP has greatly enhanced the functionality of PopSyn to enforce these controls and generate a distribution of enumerated households that account for the distribution of adults, workers and children within the agency’s forecasting procedures.
-
               </p>
-          </div>
-        </div>
+          </div><!-- end -->
+        </div><!-- row end -->
+        <br>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="colborder"></div><!-- end -->
+            <h4>Synthesized Population</h4>
+          </div> <!-- end -->
+          <div class="col-md-8">
+            <div class="colborder"></div><!-- end -->
+            <div id="htext"></div><!-- end -->
+          </div> <!-- end -->
+        </div> <!--row end -->
 
         <div class="row">
           <br/>
@@ -1397,6 +1407,10 @@
     src="scripts/scatter_plot.js"
     type="text/javascript">
   </script>
+  <script
+    src="scripts/h_stacked.js"
+    type="text/javascript">
+  </script>
   <script>makeGroupVBar("data/csv1_pop_syn.csv","#PurposeChartpums","#catPopSyn",2, "popsynDesc","hhtitle");</script>
   <script>makeGroupVBar("data/csv5_mode_purpose.csv","#ModeByPurpose","#catModePurp",2, "modePurpDesc","modeTitle");</script>
   <script>makeGroupHBar_dd("data/csv6_work_trips.csv","#VChart","#workFlowCat",2, "pDesc","pTitle");</script>
@@ -1483,6 +1497,8 @@
   <script type="text/javascript" src="scripts/modepies.js"></script>
   <script>hStackedBar("data/csv26_interstate_vmt_obs.csv","data/csv25_interstate_vmt_model.csv","interstateVMTbar_obs","interstateVMTbar_model");</script>
   <script>hStackedBar("data/csv27_transit_boardings_obs.csv","data/csv28_transit_boardings_model.csv","transitBoardingsBar_obs","transitBoardingsBar_model");</script>
+  <script>make_h_stacked("data/htest.csv","htext", "hlegend")</script>
+
 
   <script type="text/javascript" src="data/counties.js"></script>
   <script type="text/javascript" src="data/MetraLines.js"></script>

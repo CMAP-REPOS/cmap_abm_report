@@ -21,6 +21,7 @@
 
     <style>
 
+
     .colborder {
       border-top: 3px solid;
     }
@@ -158,8 +159,7 @@
         <div class="row">
           <br/>
           <br/>
-          <div class="col-md-2">
-          </div> <!-- end -->
+          <div class="col-md-2"></div> <!-- end -->
           <div class="col-md-8">
             <h3>Introduction</h3>
             <p>
@@ -181,9 +181,10 @@
         <div class="row">
           <div class = "col-md-2">
             <div class="colborder"></div><!-- end -->
-            <h4>CMAP Modeling Region</h4>
-            <p>Counties are outlined by dashed lines.  The CMAP region is outlined in blue.  Click on a county to view the name.  Arterial roads in the network are grey, and freeways are white.  </p><br>
-          </div>
+            <h4>CMAP Modeling Area and Network</h4>
+            <svg id="intromaplegend" ></svg>
+            <p>Click on a county to view the name</p>
+          </div><!-- end -->
           <div class="col-md-8">
             <div class="colborder"></div><!-- end -->
               <div id="regionmap"></div><!-- end -->
@@ -191,7 +192,8 @@
           <div class="col-md-2">
           </div> <!-- end -->
         </div>  <!-- end row -->
-          <br/>
+        <br>
+        <br>
         <div class="row">
           <div class="col-md-2">
             <div class="colborder"></div><!-- end -->
@@ -321,11 +323,10 @@
         </div> <!--end row-->
       </div><!--end tab-->
 
-      <div
-        id="2"
-        class="tab-pane container">
+      <div id="2" class="tab-pane container">
+        <div class="col-md-2"></div> <!-- end -->
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-8">
             <br/>
             <br/>
             <h3>Population Synthesis</h3>

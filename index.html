@@ -21,6 +21,10 @@
 
     <style>
 
+    .colborder {
+      border-top: 3px solid;
+    }
+
     #wflowmap{
         width: 100%;
         height: 800px;
@@ -53,7 +57,7 @@
 
   </head>
   <body>
-    <div class="container">
+    <div>
       <h3>
           <img src='data/cmap_shortid_margins_CMYK-01.png' height="70px">
         <a href="https://www.cmap.illinois.gov/data/transportation/modeling?doAsUserId=fH2a30wm7Fk%3D%2F-%2Fasset_publisher%2FQ4En%2Fcontent%2Fid%2F322604" target="_blank" style="vertical-align: sub">
@@ -150,153 +154,172 @@
     </div>
 
     <div class="tab-content ">
-      <div
-        id="1" class="tab-pane active container">
-        <div class="col-md-12">
+      <div id="1" class="tab-pane active container-fluid">
+        <div class="row">
           <br/>
-
           <br/>
-
-          <h3>Introduction</h3>
-
-          <p>
-            CMAP's activity-based model (ABM) platform is CT-RAMP (Coordinated Travel and Regional Activity-Based Modeling Platform), which was developed open source by a consultant under contract to CMAP.  Activity-Based Modeling is increasingly viewed as a superior method to better understand the socioeconomic determinants of travel choice and for evaluating modern transportation solutions.  CMAP's ABM has been developed to demonstrate sensitivity to highway pricing scenarios based on each traveler's individual value of time and to improve model sensitivity to a wider range of non-traditional transit attributes, i.e., attributes such as service reliability, personal safety, station and vehicle cleanliness, and crowding that do not typically inform transit Level-of-Service calculations.  Subsequent work on the ABM has focused on the calibration of selected sub-models and the overall validation of the model results.
-<br><br>This report represents the results of model calibration and validation activities completed over the last several years by CMAP staff and their consultants.
-Model calibration is defined as the adjustment of model parameters and constants so that the models better replicate observed data for a base year.  CMAP's ABM is calibrated to a base year of 2010.
-Model validation is defined as comparing the results of the calibrated models to observed data.  Modeling best practice dictates that different data sets be used to conduct calibration and validation activities; in the absence of other observed data, the sources used for model calibration may be used for validation as long as they examine different aspects of the data or rely on alternate geographic scopes.  Model validation results in this report reflect 2015 conditions.
-
-          </p><br>
-          <h4>CMAP Modeling Region</h4>
-          <p>Counties are outlined by dashed lines.  The CMAP region is outlined in blue.  Click on a county to view the name.  Arterial roads in the network are grey, and freeways are white.  </p><br>
-          <div id="regionmap"></div>
+          <div class="col-md-2">
+          </div> <!-- end -->
+          <div class="col-md-8">
+            <h3>Introduction</h3>
+            <p>
+              CMAP's activity-based model (ABM) platform is CT-RAMP (Coordinated Travel and Regional Activity-Based Modeling Platform), which was developed open source by a consultant under contract to CMAP.  Activity-Based Modeling is increasingly viewed as a superior method to better understand the socioeconomic determinants of travel choice and for evaluating modern transportation solutions.  CMAP's ABM has been developed to demonstrate sensitivity to highway pricing scenarios based on each traveler's individual value of time and to improve model sensitivity to a wider range of non-traditional transit attributes, i.e., attributes such as service reliability, personal safety, station and vehicle cleanliness, and crowding that do not typically inform transit Level-of-Service calculations.  Subsequent work on the ABM has focused on the calibration of selected sub-models and the overall validation of the model results.
+              <br><br>This report represents the results of model calibration and validation activities completed over the last several years by CMAP staff and their consultants.
+              Model calibration is defined as the adjustment of model parameters and constants so that the models better replicate observed data for a base year.  CMAP's ABM is calibrated to a base year of 2010.
+              Model validation is defined as comparing the results of the calibrated models to observed data.
+               Modeling best practice dictates that different data sets be used to conduct calibration and
+               validation activities; in the absence of other observed data, the sources used for model
+               calibration may be used for validation as long as they examine different aspects of the
+               data or rely on alternate geographic scopes.  Model validation results in this report reflect 2015 conditions.
+               </p>
+            </div><!-- end -->
+          <div class="col-md-2">
+          </div> <!-- end -->
+        </div> <!-- end row-->
+        <br>
+        <br>
+        <div class="row">
+          <div class = "col-md-2">
+            <div class="colborder"></div><!-- end -->
+            <h4>CMAP Modeling Region</h4>
+            <p>Counties are outlined by dashed lines.  The CMAP region is outlined in blue.  Click on a county to view the name.  Arterial roads in the network are grey, and freeways are white.  </p><br>
+          </div>
+          <div class="col-md-8">
+            <div class="colborder"></div><!-- end -->
+              <div id="regionmap"></div><!-- end -->
+          </div> <!-- end -->
+          <div class="col-md-2">
+          </div> <!-- end -->
+        </div>  <!-- end row -->
           <br/>
-
-          <br/>
-          <h3>Model Steps</h3>
-          <p>The following provides a brief outline of the major steps involved in running CMAP’s ABM.  An initial set of procedures determines zonal accessibility measures and identifies network connectivity for transit trips.  Preliminary sets of highway and transit trip assignments are run to generate realistic congested travel times that are used by CT-RAMP when daily activities are scheduled.</p>
-          <br>
-          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                      <tabstyle>1 - Population Synthesis</tabstyle>
-                    </a>
-                  </h4>
-                </div>
-
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                  <div class="panel-body">
-                      A synthetic population provides the foundation for modeling individuals’ travel behavior within an activity-based model. Using Census data and other socio-economic information, a complete set of households for a modeling area is developed. This dataset contains all of the relevant attributes about each household and for each individual living in those households that are required by the ABM. While the synthetic population is statistically representative of the Census data, the actual households and individuals are “synthetic” in that they do not represent identifiable people and an individual household in the Census data may be replicated numerous times in order to generate a complete distribution of households in the modeling inputs.  All of the subsequent steps in the ABM rely on the data provided in the synthetic population.
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingTwo">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="colborder"></div><!-- end -->
+            <h4>Model Steps</h4>
+            <p>The following provides a brief outline of the major steps involved in running CMAP’s ABM.  An initial set of procedures determines zonal accessibility measures and identifies network connectivity for transit trips.  Preliminary sets of highway and transit trip assignments are run to generate realistic congested travel times that are used by CT-RAMP when daily activities are scheduled.</p>
+          </div> <!-- end -->
+          <div class="col-md-8">
+            <div class="colborder"></div><!-- end -->
+            <br>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
                     <h4 class="panel-title">
-                      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          <tabstyle>2 - Long Term Location Choices</tabstyle>
+                      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <tabstyle>1 - Population Synthesis</tabstyle>
                       </a>
-                  </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
-                        Two sub-models are included in this step: one that models the usual workplace locations for workers and one that models the usual school location for students.  The workplace location model accounts for the worker’s occupation, as identified by the industry category they are employed in within the synthetic person file.  This information is paired with jobs within the employment categories summarized at a fine geographic level to ensure that workers are sent to locations where they could be employed in their field.  Similarly, enrollment figures are provided for elementary schools, high schools and colleges to ensure students are sent to realistic school locations.
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingThree">
-                    <h4 class="panel-title">
-                      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          <tabstyle>3 - Individual Mobility Attributes</tabstyle>
-                      </a>
-                  </h4>
-                </div>
-                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                    <div class="panel-body">
-                        These models simulate four mobility attributes that affect individual transport mode decisions: 1) free parking eligibility for workers in the Central Business District, i.e., a determination of whether workers will pay to park; 2) household auto ownership; 3) whether or not individuals hold transit passes; and 4) whether or not individuals have toll transponders.
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingFour">
-                    <h4 class="panel-title">
-                      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                          <tabstyle>4 - Daily Activity and Travel Pattern</tabstyle>
-                        </a>
-                      </h4>
+                        A synthetic population provides the foundation for modeling individuals’ travel behavior within an activity-based model. Using Census data and other socio-economic information, a complete set of households for a modeling area is developed. This dataset contains all of the relevant attributes about each household and for each individual living in those households that are required by the ABM. While the synthetic population is statistically representative of the Census data, the actual households and individuals are “synthetic” in that they do not represent identifiable people and an individual household in the Census data may be replicated numerous times in order to generate a complete distribution of households in the modeling inputs.  All of the subsequent steps in the ABM rely on the data provided in the synthetic population.
                     </div>
-                  <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <tabstyle>2 - Long Term Location Choices</tabstyle>
+                        </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                       <div class="panel-body">
-                          These models schedule activities and travel tours for all household members.  The first sub-model classifies daily travel patterns into three types: </li>
-                          <ul><li>Mandatory (work and school) – includes at least one out-of-home mandatory activity;</li>
-                          <li>Non-mandatory (other purposes) – includes at least one out-of-home non-mandatory activity but no out-of-home mandatory activities;</li>
-                          <li>Home – in-home activities only.</li></ul>
-
-                          <p>These activities are modeled as joint choices so that decisions made by household members affect the decisions of other members of the household.  The next sub-models estimate the frequency and time-of-day for mandatory activities.  These are given a higher priority for scheduling than non-mandatory and home activities.  Following the scheduling of mandatory activities, individuals have “residual time windows” which can be used to schedule other activities including joint travel with other household members.
-                          </p>
-                          <p>The next sub-model estimates joint travel for household members.  All characteristics of joint travel (travel purpose, individual household members traveling, destination and time-of-day) are simulated.  Joint travel is conditional upon the available time window for each household member following the scheduling of mandatory activities.
-                          </p><p>
-                          The next sub-model generates maintenance tours, which cover shopping and other household errands.  These tasks are allocated to a single household member to carry out, and the destinations and times-of-day are generated.  These tours are developed sequentially for individuals to ensure consistency in their personal schedule.
-                          </p><p>
-                          The next sub-model simulates discretionary tours which are modeled for individual, not joint, travel.  These are also modeled sequentially so that they could all realistically occur during an individual’s day.
-                          </p><p>
-                          The final sub-model simulates at-work tours – those tours that occur during the day with the workplace as the starting and ending location.
-                          </p>
-                          <center><img src="data/daily.JPG"></center>
-                      </div>
-                  </div>
-                  </div>
-                  <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="headingFive">
-                        <h4 class="panel-title">
-                          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                              <tabstyle>5 - Tour Level Details</tabstyle>
-                        </a>
-                      </h4>
+                          Two sub-models are included in this step: one that models the usual workplace locations for workers and one that models the usual school location for students.  The workplace location model accounts for the worker’s occupation, as identified by the industry category they are employed in within the synthetic person file.  This information is paired with jobs within the employment categories summarized at a fine geographic level to ensure that workers are sent to locations where they could be employed in their field.  Similarly, enrollment figures are provided for elementary schools, high schools and colleges to ensure students are sent to realistic school locations.
                     </div>
-                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                        <div class="panel-body">
-                            These sub-models determine the transport mode used on tours, the locations of intermediate stops made on the tours and the purpose of each stop.
-                      </div>
                   </div>
-                  </div>
-                  <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="headingSix">
-                        <h4 class="panel-title">
-                          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                              <tabstyle>6 - Trip Level Details</tabstyle>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <tabstyle>3 - Individual Mobility Attributes</tabstyle>
                         </a>
-                      </h4>
-                    </div>
-                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix">
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                       <div class="panel-body">
-                          These sub-models add details about the trips occurring within the tours including the mode of travel, the departure time form each location and the parking location for auto trips.
-                          <center><img src="data/triplevel.JPG"></center>
-                      </div>
-                  </div>
-                  </div>
-                  <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="headingSeven">
-                        <h4 class="panel-title">
-                          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                              <tabstyle>7 - Network Simulations</tabstyle>
-                        </a>
-                      </h4>
+                          These models simulate four mobility attributes that affect individual transport mode decisions: 1) free parking eligibility for workers in the Central Business District, i.e., a determination of whether workers will pay to park; 2) household auto ownership; 3) whether or not individuals hold transit passes; and 4) whether or not individuals have toll transponders.
                     </div>
-                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven">
-                        <div class="panel-body">
-                            Following development of the complete set of tours and trips, that information is assigned to the travel networks and network equilibrium based on route choice creates congested travel times.  Highway and transit trips are assigned through separate procedures.
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <tabstyle>4 - Daily Activity and Travel Pattern</tabstyle>
+                          </a>
+                        </h4>
                       </div>
-                  </div>
-                  </div>
-            </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body">
+                            These models schedule activities and travel tours for all household members.  The first sub-model classifies daily travel patterns into three types: </li>
+                            <ul><li>Mandatory (work and school) – includes at least one out-of-home mandatory activity;</li>
+                            <li>Non-mandatory (other purposes) – includes at least one out-of-home non-mandatory activity but no out-of-home mandatory activities;</li>
+                            <li>Home – in-home activities only.</li></ul>
 
-
-
-        </div>
-      </div>
+                            <p>These activities are modeled as joint choices so that decisions made by household members affect the decisions of other members of the household.  The next sub-models estimate the frequency and time-of-day for mandatory activities.  These are given a higher priority for scheduling than non-mandatory and home activities.  Following the scheduling of mandatory activities, individuals have “residual time windows” which can be used to schedule other activities including joint travel with other household members.
+                            </p>
+                            <p>The next sub-model estimates joint travel for household members.  All characteristics of joint travel (travel purpose, individual household members traveling, destination and time-of-day) are simulated.  Joint travel is conditional upon the available time window for each household member following the scheduling of mandatory activities.
+                            </p><p>
+                            The next sub-model generates maintenance tours, which cover shopping and other household errands.  These tasks are allocated to a single household member to carry out, and the destinations and times-of-day are generated.  These tours are developed sequentially for individuals to ensure consistency in their personal schedule.
+                            </p><p>
+                            The next sub-model simulates discretionary tours which are modeled for individual, not joint, travel.  These are also modeled sequentially so that they could all realistically occur during an individual’s day.
+                            </p><p>
+                            The final sub-model simulates at-work tours – those tours that occur during the day with the workplace as the starting and ending location.
+                            </p>
+                            <center><img src="data/daily.JPG"></center>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <tabstyle>5 - Tour Level Details</tabstyle>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                          <div class="panel-body">
+                              These sub-models determine the transport mode used on tours, the locations of intermediate stops made on the tours and the purpose of each stop.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSix">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <tabstyle>6 - Trip Level Details</tabstyle>
+                          </a>
+                        </h4>
+                      </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix">
+                        <div class="panel-body">
+                            These sub-models add details about the trips occurring within the tours including the mode of travel, the departure time form each location and the parking location for auto trips.
+                            <center><img src="data/triplevel.JPG"></center>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSeven">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                <tabstyle>7 - Network Simulations</tabstyle>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven">
+                          <div class="panel-body">
+                              Following development of the complete set of tours and trips, that information is assigned to the travel networks and network equilibrium based on route choice creates congested travel times.  Highway and transit trips are assigned through separate procedures.
+                        </div>
+                    </div>
+                    </div>
+              </div>
+          </div><!-- end -->
+        </div> <!--end row-->
+      </div><!--end tab-->
 
       <div
         id="2"

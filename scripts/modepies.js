@@ -92,18 +92,18 @@ d3.csv("data/csv18_survey_transit_access.csv", function(data) {
       scaleOrdinal().
       range(['#081D58',
       "#1C4E80", "#A6BACE",
-  
+
       '#CFCFCF',
       '#ABABAB',
       '#595959',
-      
+
       '#821E20',
       '#D7D55C',
       '#CF4446',
-      
-      
+
+
       '#8A882D',
-      
+
       '#ABABAB'
       ]).
       domain(d3.keys(data[0]).filter(function(key) {
@@ -117,17 +117,17 @@ d3.csv("data/csv18_survey_transit_access.csv", function(data) {
       scaleOrdinal().
       range(['#ABABAB',
       "#1C4E80", "#A6BACE",
-  
+
       '#CFCFCF',
       '#ABABAB',
       '#595959',
-      
+
       '#821E20',
       '#CF4446',
-      
+
       '#D7D55C',
       '#8A882D',
-      
+
       '#081D58'
       ]).
       domain(d3.keys(data[0]).filter(function(key) {

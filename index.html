@@ -20,6 +20,28 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
+    .d3-tip {
+      line-height: 1;
+      font-weight: bold;
+      padding: 12px;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      border-radius: 2px;
+    }
+
+    .d3-tip:after {
+      box-sizing: border-box;
+      display: inline;
+      font-size: 10px;
+      width: 100%;
+      line-height: 1;
+      color: rgba(0, 0, 0, 0.8);
+      content: "\25BC";
+      position: absolute;
+      text-align: center;
+    }
+
+    .axis { font: 14px sans-serif; }
 
 
     .colborder {
@@ -346,10 +368,16 @@
           <div class="col-md-2">
             <div class="colborder"></div><!-- end -->
             <h4>Synthesized Population</h4>
+              <div id="hlegend"></div><!-- end -->
+              <br>
+              <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png">
+              <p>Hover over population groups to reveal details</p>
           </div> <!-- end -->
           <div class="col-md-8">
             <div class="colborder"></div><!-- end -->
-            <div id="htext" width="100%"></div><!-- end -->
+            <br>
+            <br>
+            <div id="htext" width="100%" ></div><!-- end -->
           </div> <!-- end -->
         </div> <!--row end -->
 

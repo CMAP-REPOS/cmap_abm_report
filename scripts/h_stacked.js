@@ -1,7 +1,7 @@
 function make_h_stacked(csv_file,divID, legendID){
-  var margin = {top: 35, right: 10, bottom: 50, left: 75},
-    width = 750 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
+  var margin = {top: 80, right: 10, bottom: 0, left: 75},
+    width = 650 - margin.left - margin.right,
+    height = 300 - margin.top - margin.bottom;
 
 
 
@@ -14,7 +14,7 @@ function make_h_stacked(csv_file,divID, legendID){
 
 
     var y = d3.scaleBand()
-        .rangeRound([0, height/2])
+        .rangeRound([0, height])
         .padding(0.1)
         .align(0.1);
 
@@ -48,7 +48,7 @@ function make_h_stacked(csv_file,divID, legendID){
           var obsvalue;
           var modelvalue;
 
-          d3.selectAll(".myRect").style("opacity", 0.2).select("text").remove();
+          d3.selectAll("."+divID+"class").style("opacity", 0.2).select("text").remove();
 
           var bardata = serie.selectAll("rect")
               .data(function (d) {
@@ -65,8 +65,8 @@ function make_h_stacked(csv_file,divID, legendID){
           d3.selectAll("."+subgroupName)
             .style("opacity", 1)
             .append("text")
-              .attr("x", 100)
-              .attr("y", -20) // 100 is where the first dot appears. 25 is the distance between dots
+              .attr("x", 60)
+              .attr("y", -30) // 100 is where the first dot appears. 25 is the distance between dots
               .text(subgroupName.replace(/_/g, " ") + " - Observed Total = " + obsvalue + " | Modeled Total = "+modelvalue)
               .attr("text-anchor", "left")
               .style("alignment-baseline", "middle")
@@ -77,7 +77,7 @@ function make_h_stacked(csv_file,divID, legendID){
       // When user do not hover anymore
       var mouseleave = function(d) {
         // Back to normal opacity: 0.8
-        d3.selectAll(".myRect")
+        d3.selectAll("."+divID+"class")
           .style("opacity",0.8)
           .select("text").remove();
         }
@@ -91,7 +91,7 @@ function make_h_stacked(csv_file,divID, legendID){
                 return z(d.key);
             })
             .attr("class", function(d){
-              return "myRect " + d.key })
+              return divID+"class " + d.key })
 
 
 
@@ -127,6 +127,7 @@ function make_h_stacked(csv_file,divID, legendID){
             // select the svg area
     var legend = d3.select("#"+legendID).append("svg")
     .attr("height", 210)
+    .attr("width", 250)
 
     // create a list of keys
     var keys = data.columns.slice(1)

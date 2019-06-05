@@ -20,26 +20,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-    .d3-tip {
-      line-height: 1;
-      font-weight: bold;
-      padding: 12px;
-      background: rgba(0, 0, 0, 0.8);
-      color: #fff;
-      border-radius: 2px;
-    }
-
-    .d3-tip:after {
-      box-sizing: border-box;
-      display: inline;
-      font-size: 10px;
-      width: 100%;
-      line-height: 1;
-      color: rgba(0, 0, 0, 0.8);
-      content: "\25BC";
-      position: absolute;
-      text-align: center;
-    }
 
     .axis { font: 14px sans-serif; }
 
@@ -69,6 +49,11 @@
     text_div
     {
       display: inline-block;
+    }
+
+    div
+    {
+      display:inherit;
     }
 
     table{ border:none; width:33%; display:inline-table}
@@ -181,8 +166,8 @@
         <div class="row">
           <br/>
           <br/>
-          <div class="col-md-2"></div> <!-- end -->
-          <div class="col-md-8">
+          <div class="col-md-3"></div> <!-- end -->
+          <div class="col-md-7">
             <h3>Introduction</h3>
             <p>
               CMAP's activity-based model (ABM) platform is CT-RAMP (Coordinated Travel and Regional Activity-Based Modeling Platform), which was developed open source by a consultant under contract to CMAP.  Activity-Based Modeling is increasingly viewed as a superior method to better understand the socioeconomic determinants of travel choice and for evaluating modern transportation solutions.  CMAP's ABM has been developed to demonstrate sensitivity to highway pricing scenarios based on each traveler's individual value of time and to improve model sensitivity to a wider range of non-traditional transit attributes, i.e., attributes such as service reliability, personal safety, station and vehicle cleanliness, and crowding that do not typically inform transit Level-of-Service calculations.  Subsequent work on the ABM has focused on the calibration of selected sub-models and the overall validation of the model results.
@@ -201,14 +186,14 @@
         <br>
         <br>
         <div class="row">
-          <div class = "col-md-2">
+          <div class = "col-md-3">
             <div class="colborder"></div><!-- end -->
             <h4>CMAP Modeling Area and Network</h4>
             <svg id="intromaplegend" ></svg>
             <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png">
             <p>Click within modeling area to view county name</p>
           </div><!-- end -->
-          <div class="col-md-8">
+          <div class="col-md-7">
             <div class="colborder"></div><!-- end -->
               <div id="regionmap"></div><!-- end -->
           </div> <!-- end -->
@@ -218,7 +203,7 @@
         <br>
         <br>
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-md-3">
             <div class="colborder"></div><!-- end -->
             <h4>Model Steps</h4>
             <p>The following provides a brief outline of the major steps involved in running CMAP’s ABM.  An initial set of procedures determines zonal accessibility measures and identifies network connectivity for transit trips.  Preliminary sets of highway and transit trip assignments are run to generate realistic congested travel times that are used by CT-RAMP when daily activities are scheduled.</p>
@@ -226,7 +211,7 @@
             <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png">
             <p>Click on modeling step panel to reveal description</p>
           </div> <!-- end -->
-          <div class="col-md-8">
+          <div class="col-md-7">
             <div class="colborder"></div><!-- end -->
             <br>
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -350,9 +335,9 @@
       </div><!--end tab-->
 
       <div id="2" class="tab-pane active container">
-        <div class="col-md-2"></div> <!-- end -->
+        <div class="col-md-3"></div> <!-- end -->
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-7">
             <br/>
             <br/>
             <h3>Population Synthesis</h3>
@@ -365,24 +350,36 @@
         </div><!-- row end -->
         <br>
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-md-3">
             <div class="colborder"></div><!-- end -->
-            <h4>Synthesized Population</h4>
+            <h4>Population by Person Type</h4>
               <div id="hlegend"></div><!-- end -->
               <br>
               <br>
               <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png">
-              <p>Hover over population groups to reveal details</p>
+              <p>Hover over population categories to reveal details</p>
           </div> <!-- end -->
-          <div class="col-md-8">
+          <div class="col-md-7">
             <div class="colborder"></div><!-- end -->
-            <br>
-            <br>
-            <div id="htext" width="100%" ></div><!-- end -->
+            <div id="PopPersonType" width="100%" ></div><!-- end -->
           </div> <!-- end -->
-        </div> <!--row end -->
-
+        </div> <!-- end -->
+        <br>
         <div class="row">
+          <div class="col-md-3">
+            <div class="colborder"></div><!-- end -->
+              <h4>Households by Size</h4>
+              <br>
+              <div id="hhlegend"></div><!-- end -->
+              <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png">
+              <p>Hover over household categories to reveal details</p>
+          </div> <!-- end -->
+          <div class="col-md-7">
+            <div class="colborder"></div><!-- end -->
+            <div id="HouseholdSize" width="100%" ></div><!-- end -->
+          </div> <!-- end -->
+        </div> <!-- end row-->
+        <div class="row">    
           <br/>
           <br/>
           <text_div class="col col-md-3">
@@ -1526,7 +1523,8 @@
   <script type="text/javascript" src="scripts/modepies.js"></script>
   <script>hStackedBar("data/csv26_interstate_vmt_obs.csv","data/csv25_interstate_vmt_model.csv","interstateVMTbar_obs","interstateVMTbar_model");</script>
   <script>hStackedBar("data/csv27_transit_boardings_obs.csv","data/csv28_transit_boardings_model.csv","transitBoardingsBar_obs","transitBoardingsBar_model");</script>
-  <script>make_h_stacked("data/htest.csv","htext", "hlegend")</script>
+  <script>make_h_stacked("data/htest.csv","PopPersonType", "hlegend")</script>
+    <script>make_h_stacked("data/htest2.csv","HouseholdSize", "hhlegend")</script>
 
 
   <script type="text/javascript" src="data/counties.js"></script>

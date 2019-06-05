@@ -162,7 +162,7 @@
     </div>
 
     <div class="tab-content ">
-      <div id="1" class="tab-pane  container-fluid">
+      <div id="1" class="tab-pane active container-fluid">
         <div class="row">
           <br/>
           <br/>
@@ -190,7 +190,7 @@
             <div class="colborder"></div><!-- end -->
             <h4>CMAP Modeling Area and Network</h4>
             <svg id="intromaplegend" ></svg>
-            <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png">
+            <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png" width="10%">
             <p>Click within modeling area to view county name</p>
           </div><!-- end -->
           <div class="col-md-7">
@@ -208,7 +208,7 @@
             <h4>Model Steps</h4>
             <p>The following provides a brief outline of the major steps involved in running CMAP’s ABM.  An initial set of procedures determines zonal accessibility measures and identifies network connectivity for transit trips.  Preliminary sets of highway and transit trip assignments are run to generate realistic congested travel times that are used by CT-RAMP when daily activities are scheduled.</p>
             <br>
-            <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png">
+            <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png" width="10%">
             <p>Click on modeling step panel to reveal description</p>
           </div> <!-- end -->
           <div class="col-md-7">
@@ -334,7 +334,7 @@
         </div> <!--end row-->
       </div><!--end tab-->
 
-      <div id="2" class="tab-pane active container">
+      <div id="2" class="tab-pane  container">
         <div class="col-md-3"></div> <!-- end -->
         <div class="row">
           <div class="col-md-7">
@@ -355,9 +355,13 @@
             <h4>Population by Person Type</h4>
               <div id="hlegend"></div><!-- end -->
               <br>
-              <br>
-              <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png">
-              <p>Hover over population categories to reveal details</p>
+              <p class="small">
+                <b>Sources</b><br>
+                Observed- Travel Tracker Survey, 2007-2008 <br>
+                Modeled- CMAP ABM - 2010 Scenario <br>
+              </p>
+              <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png" width="10%">
+              <p class="small">Hover over population categories to reveal details</p>
           </div> <!-- end -->
           <div class="col-md-7">
             <div class="colborder"></div><!-- end -->
@@ -371,78 +375,79 @@
               <h4>Households by Size</h4>
               <br>
               <div id="hhlegend"></div><!-- end -->
-              <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png">
-              <p>Hover over household categories to reveal details</p>
+              <p class="small">
+                <b>Sources</b><br>
+                Observed- Travel Tracker Survey, 2007-2008 <br>
+                Modeled- CMAP ABM - 2010 Scenario <br>
+              </p>
+              <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png" width="10%">
+              <p class="small">Hover over household size categories to reveal details</p>
           </div> <!-- end -->
           <div class="col-md-7">
             <div class="colborder"></div><!-- end -->
             <div id="HouseholdSize" width="100%" ></div><!-- end -->
           </div> <!-- end -->
         </div> <!-- end row-->
-        <div class="row">    
-          <br/>
-          <br/>
-          <text_div class="col col-md-3">
-            <h5><b>Residential Households by <div id= "hhtitle"></div></b></h5>
-            <div class="small">
-              Select data type for comparison from dropdown
-              </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="colborder"></div><!-- end -->
+            <h4>Household Characteristics</h4>
+            <div id="pumsLegend"></div>
+            <p class="small">
+              <b>Sources</b><br>
+              Observed- PUMS 2007-2011 <br>
+              Modeled- CMAP ABM - 2010 Scenario <br>
+            </p>
             <br>
             <select id="catPopSyn">
-              <option value="size">Household Size</option>
               <option value="veh">Vehicles</option>
               <option value="income">Household Income</option>
-            </select>
-            <div class="small" style="margin-top: 150px;">
+              <option value="income">Household With Children</option>
+            </select><!-- end -->
+            <br>
+            <br>
+            <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png" width="10%">
+            <p class="small">Select household attribute from dropdown to view observed and model comparison</p>
+          </div><!-- end -->
+          <div class="col-md-7">
+            <div class="colborder" style="text-align:center">
+            <h4>Households by <div id= "hhtitle"></div></h4><!-- end -->
+            <div id="PurposeChartpums"></div><!-- end -->
+          </div><!-- end -->
+          </div> <!-- end -->
+        </div> <!-- end row-->
+
+        <div class="row">
+          <div class="col-md-3">
+            <div class="colborder"></div><!-- end -->
+            <h4>Household Details</h4>
+            <!--chart legend-->
+            <p class="small">
               <b>Sources</b><br>
-                PUMA - PUMS 2007-2011. <br>
-                Modeled - CMAP ABM - 2010 Scenario.
-                <br>
-              </div>
-          </text_div>
-
-          <div class="col col-md-9">
-            <div id="PurposeChartpums"></div>
-
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <br/>
-            <br/>
-            <h3>Household Detail</h3>
-            <p>
+              Observed- ACS 2006-2010 <br>
+              Modeled- CMAP ABM - 2010 Scenario <br>
             </p>
-          </div>
-        </div>
-
-        <div class="row">
-          <br>
-          <div class="col col-md-4">
-            <h5><b>Adults by <div id= "dtitle"></div></b></h5>
-            <div class="small">
-              Select data type for comparison from dropdown
-              </div>
             <br>
             <select id="popsynCat">
               <option value="Children">Children</option>
               <option value="Workers">Workers</option>
               <option value="Vehicles">Vehicles</option>
             </select>
-            <div class="small" style="margin-top: 130px;">
-              <b>Sources</b><br>
-                Observed - ACS 2006-2010. <br>
-                Modeled - CMAP ABM - 2010 Scenario.
-                <br>
-              </div>
+            <br>
+            <br>
+            <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png" width="10%">
+            <p class="small">Select household attribute from dropdown to view observed and model comparison</p>
+            <div></div>
+          </div> <!--end-->
+        <div class="col-md-7">
+          <div class="colborder" style="text-align:center">
+            <h4> Households by Number of Adults and <div id="dtitle"></div></h4>
           </div>
-          <div class="col col-md-8">
-              <div id="popsynstack"></div>
-            </div>
-        </div>
-
-            </div>
+          <div id="popsynstack"></div>
+        </div> <!--end-->
+        </div> <!-- end row -->
+      </div><!--end tab-->
 
 
         <!-- Auto Counts -->
@@ -1437,7 +1442,7 @@
     src="scripts/h_stacked.js"
     type="text/javascript">
   </script>
-  <script>makeGroupVBar("data/csv1_pop_syn.csv","#PurposeChartpums","#catPopSyn",2, "popsynDesc","hhtitle");</script>
+  <script>makeGroupVBar("data/csv1_pop_syn.csv","#PurposeChartpums","#catPopSyn",2, "popsynDesc","hhtitle","pumsLegend");</script>
   <script>makeGroupVBar("data/csv5_mode_purpose.csv","#ModeByPurpose","#catModePurp",2, "modePurpDesc","modeTitle");</script>
   <script>makeGroupHBar_dd("data/csv6_work_trips.csv","#VChart","#workFlowCat",2, "pDesc","pTitle");</script>
   <script>makeGroupVBar("data/csv7_work_mode_distance.csv","#ModeByDistance","#catModeDist",2, "modeDistDesc","modeDTitle");</script>

@@ -6,7 +6,7 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle,l
   var formatValue = d3.format(".2s");
   var maxvalue = 0;
   var bartotal = 0;
-  var margin = {top: 35, right: 80, bottom: 100, left: 45},
+  var margin = {top: 35, right: 80, bottom: 120, left: 45},
     width = 750 - margin.left - margin.right,
     height = 300 - margin.top - margin.bottom;
 
@@ -235,55 +235,7 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle,l
 
       // ======== Legend rects ========
 
-      var legend = d3.select("#"+legendID).append("svg")
-      .attr("height", 75)
-      .attr("width", 250)
 
-
-      // legend.selectAll("legendrecs")
-      //   .data(keysLegend)
-      //   .enter()
-      // .append("rect")
-      //   .attr("x", 17)
-      //   .attr("y", 8)
-      //   .attr("width", 15)
-      //   .attr("height", 15)
-      //   .attr("stroke-width",2)
-      //   .merge(legend)
-      //
-      // // ======== Legend text ========
-      //
-      // legend.selectAll("textonlegend")
-      //   .data(keysLegend)
-      //   .enter()
-      // .append("text")
-      //   .attr("x", 30)
-      //   .attr("font-size",12)
-      //   .attr("y", 8)
-      //   .attr("dy", "0.32em");
-
-
-      legend.selectAll("mydots")
-        .data(keys)
-        .enter()
-        .append("circle")
-          .attr("cx", 10)
-          .attr("cy", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
-          .attr("r", 7)
-          .style("fill", function(d) { return z(d.key); })
-
-      // Add one dot in the legend for each name.
-      legend.selectAll("mylabels")
-        .data(keys)
-        .enter()
-        .append("text")
-          .attr("x", 20)
-          .attr("y", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
-          .text(function(d){ console.log(d)
-            return d})
-          .attr("text-anchor", "left")
-          .style("alignment-baseline", "middle")
-          .style("fill","black")
 
 
 
@@ -295,130 +247,180 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle,l
 
     } // End of update function
 
+    var legend = d3.select("#"+legendID).append("svg")
+    .attr("height", 75)
+    .attr("width", 250)
+
+
+    // legend.selectAll("legendrecs")
+    //   .data(keysLegend)
+    //   .enter()
+    // .append("rect")
+    //   .attr("x", 17)
+    //   .attr("y", 8)
+    //   .attr("width", 15)
+    //   .attr("height", 15)
+    //   .attr("stroke-width",2)
+    //   .merge(legend)
+    //
+    // // ======== Legend text ========
+    //
+    // legend.selectAll("textonlegend")
+    //   .data(keysLegend)
+    //   .enter()
+    // .append("text")
+    //   .attr("x", 30)
+    //   .attr("font-size",12)
+    //   .attr("y", 8)
+    //   .attr("dy", "0.32em");
+
+
+    legend.selectAll("mydots")
+      .data(keys)
+      .enter()
+      .append("circle")
+        .attr("cx", 10)
+        .attr("cy", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+        .attr("r", 7)
+        .style("fill", function(d) { return z(d.key); })
+
+    // Add one dot in the legend for each name.
+    legend.selectAll("mylabels")
+      .data(keys)
+      .enter()
+      .append("text")
+        .attr("x", 20)
+        .attr("y", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+        .text(function(d){ console.log(d)
+          return d})
+        .attr("text-anchor", "left")
+        .style("alignment-baseline", "middle")
+        .style("fill","black")
+
     var filtered = [];
 
     // Function by Andrew Reid
     // @link: https://bl.ocks.org/andrew-reid/64a6c1892d1893009d2b99b8abee75a7
 
-    // function updateLegend(d) {
-    //
-    //   catInt = d3.select(catID).property('value');
-    //
-    //   var newdata = data.filter(function(d){
-    //     return d.Category == catInt;
-    //   });
-    //
-    //   d3.select(".clickThis").style("display","none")
-    //
-    //   if (filtered.indexOf(d) == -1) {
-    //     filtered.push(d);
-    //
-    //     if(filtered.length == keysLegend.length) filtered = [];
-    //   }
-    //
-    //   else {
-    //     filtered.splice(filtered.indexOf(d), 1);
-    //   }
-    //
-    //   var newKeys = [];
-    //   keysLegend.forEach(function(d) {
-    //     if (filtered.indexOf(d) == -1 ) {
-    //       newKeys.push(d);
-    //     }
-    //   })
-    //
-    //   x1.domain(newKeys).rangeRound([0, x0.bandwidth()]);
-    //
-    //   y.domain([0, d3.max(newdata, function(d) {
-    //     return d3.max(keysLegend, function(key) {
-    //       if (filtered.indexOf(key) == -1)
-    //         return +d[key];
-    //       });
-    //     })
-    //   ]).nice();
-    //
-    //   g.select(".axis--y")
-    //     .transition()
-    //     .duration(durations/1.5)
-    //     .call(yAxis);
-    //
-    //   var barsLegend = g.selectAll(".layer").selectAll("rect")
-    //     .data(function(d) {
-    //       return keysLegend.map(function(key) {
-    //         return {key: key, value: d[key]};
-    //       });
-    //     })
-    //
-    //   barsLegend.filter(function(d) {
-    //        return filtered.indexOf(d.key) > -1;
-    //     })
-    //     .transition()
-    //     .duration(durations/1.5)
-    //     .attr("x", function(d) {
-    //       return (+d3.select(this).attr("x")) +
-    //              (+d3.select(this).attr("width"))/2;
-    //     })
-    //     .attr("height",0)
-    //     .attr("width",0)
-    //     .attr("y", function(d) { return height; });
-    //
-    //   barsLegend.filter(function(d) {
-    //       return filtered.indexOf(d.key) == -1;
-    //     })
-    //     .transition()
-    //     .duration(durations/1.5)
-    //     .attr("x", function(d) { return x1(d.key); })
-    //     .attr("y", function(d) { return y(d.value); })
-    //     .attr("height", function(d) { return height - y(d.value); })
-    //     .attr("width", x1.bandwidth())
-    //     .attr("fill", function(d) { return z(d.key); });
-    //
-    //   var barsLegendText = g.selectAll(".layer").selectAll("text")
-    //     .data(function(d) {
-    //       return keysLegend.map(function(key) {
-    //         return {key: key, value: d[key]};
-    //       });
-    //     })
-    //
-    //   barsLegendText.filter(function(d) {
-    //        return filtered.indexOf(d.key) > -1;
-    //     })
-    //     .transition()
-    //     .duration(durations/1.5)
-    //     .attr("transform", function(d, i) {
-    //       let x0 = x1.bandwidth() * i + 2,
-    //           y0 = y(d.value) - 10;
-    //       return "translate(" + x0 + "," + y0 + ") rotate(0)";
-    //     })
-    //     .text("");
-    //
-    //   barsLegendText.filter(function(d) {
-    //       return filtered.indexOf(d.key) == -1;
-    //     })
-    //     .transition()
-    //     .duration(durations/1.5)
-    //     .attr("transform", function(d, i) {
-    //       let x0 = x1.bandwidth() * i + 2,
-    //           y0 = y(d.value) - 10;
-    //       return "translate(" + x0 + "," + y0 + ") rotate(0)";
-    //     })
-    //     .text(function(d) {return formatValue(d.value)})
-    //
-    //   g.selectAll(".barlegend")
-    //     .transition()
-    //     .duration(100)
-    //     .attr("fill",function(d) {
-    //       if (filtered.length) {
-    //         if (filtered.indexOf(d) == -1) {
-    //           return z(d);
-    //         } else {
-    //           return "white"; }
-    //         } else {
-    //         return z(d);
-    //       }
-    //     });
-    //
-    // } // End of updateLegend
+    function updateLegend(d) {
+
+      catInt = d3.select(catID).property('value');
+
+      var newdata = data.filter(function(d){
+        return d.Category == catInt;
+      });
+
+      d3.select(".clickThis").style("display","none")
+
+      if (filtered.indexOf(d) == -1) {
+        filtered.push(d);
+
+        if(filtered.length == keysLegend.length) filtered = [];
+      }
+
+      else {
+        filtered.splice(filtered.indexOf(d), 1);
+      }
+
+      var newKeys = [];
+      keysLegend.forEach(function(d) {
+        if (filtered.indexOf(d) == -1 ) {
+          newKeys.push(d);
+        }
+      })
+
+      x1.domain(newKeys).rangeRound([0, x0.bandwidth()]);
+
+      y.domain([0, d3.max(newdata, function(d) {
+        return d3.max(keysLegend, function(key) {
+          if (filtered.indexOf(key) == -1)
+            return +d[key];
+          });
+        })
+      ]).nice();
+
+      g.select(".axis--y")
+        .transition()
+        .duration(durations/1.5)
+        .call(yAxis);
+
+      var barsLegend = g.selectAll(".layer").selectAll("rect")
+        .data(function(d) {
+          return keysLegend.map(function(key) {
+            return {key: key, value: d[key]};
+          });
+        })
+
+      barsLegend.filter(function(d) {
+           return filtered.indexOf(d.key) > -1;
+        })
+        .transition()
+        .duration(durations/1.5)
+        .attr("x", function(d) {
+          return (+d3.select(this).attr("x")) +
+                 (+d3.select(this).attr("width"))/2;
+        })
+        .attr("height",0)
+        .attr("width",0)
+        .attr("y", function(d) { return height; });
+
+      barsLegend.filter(function(d) {
+          return filtered.indexOf(d.key) == -1;
+        })
+        .transition()
+        .duration(durations/1.5)
+        .attr("x", function(d) { return x1(d.key); })
+        .attr("y", function(d) { return y(d.value); })
+        .attr("height", function(d) { return height - y(d.value); })
+        .attr("width", x1.bandwidth())
+        .attr("fill", function(d) { return z(d.key); });
+
+      var barsLegendText = g.selectAll(".layer").selectAll("text")
+        .data(function(d) {
+          return keysLegend.map(function(key) {
+            return {key: key, value: d[key]};
+          });
+        })
+
+      barsLegendText.filter(function(d) {
+           return filtered.indexOf(d.key) > -1;
+        })
+        .transition()
+        .duration(durations/1.5)
+        .attr("transform", function(d, i) {
+          let x0 = x1.bandwidth() * i + 2,
+              y0 = y(d.value) - 10;
+          return "translate(" + x0 + "," + y0 + ") rotate(0)";
+        })
+        .text("");
+
+      barsLegendText.filter(function(d) {
+          return filtered.indexOf(d.key) == -1;
+        })
+        .transition()
+        .duration(durations/1.5)
+        .attr("transform", function(d, i) {
+          let x0 = x1.bandwidth() * i + 2,
+              y0 = y(d.value) - 10;
+          return "translate(" + x0 + "," + y0 + ") rotate(0)";
+        })
+        .text(function(d) {return formatValue(d.value)})
+
+      g.selectAll(".barlegend")
+        .transition()
+        .duration(100)
+        .attr("fill",function(d) {
+          if (filtered.length) {
+            if (filtered.indexOf(d) == -1) {
+              return z(d);
+            } else {
+              return "white"; }
+            } else {
+            return z(d);
+          }
+        });
+
+    } // End of updateLegend
 
     afterLoad();
 

@@ -71,6 +71,7 @@ function make_h_stacked(csv_file,divID, legendID){
               .attr("text-anchor", "left")
               .style("alignment-baseline", "middle")
               .style("fill","black")
+              .style("font-size","16px")
         }
 
       // When user do not hover anymore

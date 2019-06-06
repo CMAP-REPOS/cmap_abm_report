@@ -1,6 +1,6 @@
 function make_bubble(csv_file,divID, legendID){
-  var margin = {top: 40, right: 150, bottom: 60, left: 50},
-      width = 700 - margin.left - margin.right,
+  var margin = {top: 40, right: 50, bottom: 60, left: 50},
+      width = 900 - margin.left - margin.right,
       height = 420 - margin.top - margin.bottom;
 
   var svg = d3.select("#"+divID)
@@ -171,6 +171,7 @@ function make_bubble(csv_file,divID, legendID){
         .attr("cy", function (d) { return y(parseFloat(d.yValue)); } )
         .attr("r", function (d) { return z(parseFloat(d.magnitude)); } )
         .style("fill", function (d) { return myColor(d.SubGroup); } )
+        .style("opacity",.8)
       // -3- Trigger the functions for hover
       .on("mouseover", showTooltip )
       .on("mousemove", moveTooltip )
@@ -204,7 +205,7 @@ function make_bubble(csv_file,divID, legendID){
         .enter()
         .append("circle")
           .attr("cx", 45)
-          .attr("cy", function(d){ return 150 - z(d) } )
+          .attr("cy", function(d){ return 170 - z(d) } )
           .attr("r", function(d){ return z(d) })
           .style("fill", "none")
           .attr("stroke", "black")
@@ -217,8 +218,8 @@ function make_bubble(csv_file,divID, legendID){
         .append("line")
           .attr('x1', function(d){ return 45 + z(d) } )
           .attr('x2', function(d){ return 80 + z(d) })
-          .attr('y1', function(d){ return 150 - z(d) } )
-          .attr('y2', function(d){ return 150 - z(d) } )
+          .attr('y1', function(d){ return 170 - z(d) } )
+          .attr('y2', function(d){ return 170 - z(d) } )
           .attr('stroke', 'black')
           .style('stroke-dasharray', ('2,2'))
 
@@ -229,7 +230,7 @@ function make_bubble(csv_file,divID, legendID){
         .enter()
         .append("text")
           .attr('x', function(d){ return 80 + z(d) })
-          .attr('y', function(d){ return 150 - z(d) } )
+          .attr('y', function(d){ return 170 - z(d) } )
           .text( function(d){ return d  + " Children"} )
           .style("font-size", 12)
           .attr('alignment-baseline', 'middle')

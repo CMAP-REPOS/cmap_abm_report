@@ -3,6 +3,32 @@ svg {
     filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.25) );
 }
 
+svg#intromaplegend, svg#hlegend, svg#hhlegend, svg#bblegend, svg#pumsLegend {
+  -webkit-filter: drop-shadow( 0px 0px 0px rgba(0,0,0,.3) );
+  filter: drop-shadow( 0px 0px 0px rgba(0,0,0,.25) );
+}
+
+.icon:hover {
+  fill:#337ab7;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+#hlegend {
+  height: 250px;
+}
+
+#bblegend {
+  height: 250px;
+}
+
+#modelegend {
+  height: 300px;
+}
+
 #piePurpose1 {
     height: 360px;
     position: relative;

@@ -7,8 +7,8 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle,l
   var maxvalue = 0;
   var bartotal = 0;
   var margin = {top: 35, right: 80, bottom: 120, left: 45},
-    width = 900 - margin.left - margin.right,
-    height = 300 - margin.top - margin.bottom;
+    width = 700 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
 
   var g = d3.select(chartID).append("svg")
   .attr("width", width + margin.left + margin.right)

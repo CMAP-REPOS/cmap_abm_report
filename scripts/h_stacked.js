@@ -1,6 +1,6 @@
 function make_h_stacked(csv_file,divID, legendID){
   var margin = {top: 80, right: 10, bottom: 0, left: 75},
-    width = 900 - margin.left - margin.right,
+    width = 700 - margin.left - margin.right,
     height = 300 - margin.top - margin.bottom;
 
 
@@ -59,7 +59,7 @@ function make_h_stacked(csv_file,divID, legendID){
                 return d
               })
 
-          console.log(obsvalue)
+          //console.log(obsvalue)
 
           // Highlight all rects of this subgroup with opacity 0.8. It is possible to select them since they have a specific class = their name.
           d3.selectAll("."+subgroupName)
@@ -126,7 +126,7 @@ function make_h_stacked(csv_file,divID, legendID){
 
             // select the svg area
     var legend = d3.select("#"+legendID).append("svg")
-    .attr("height", 210)
+    .attr("height", 300)
     .attr("width", 250)
 
     // create a list of keys

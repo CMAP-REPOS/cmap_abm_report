@@ -36,7 +36,7 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
 
     var y = d3.scaleLinear()
     .domain([d3.min(data, function(d){
-      return(d.Value);
+      return(d.lifeExp);
     }),
     d3.max(data, function(d){
       return d.Value;
@@ -131,22 +131,22 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
     g.append("g")
     .attr("class", "axis")
     .attr("transform", "translate(230," + height + ")")
-    .call(d3.axisBottom(x1));    
+    .call(d3.axisBottom(x1));
 
     g.append("g")
     .attr("class", "axis")
     .attr("transform", "translate(340," + height + ")")
-    .call(d3.axisBottom(x1));   
+    .call(d3.axisBottom(x1));
 
     g.append("g")
     .attr("class", "axis")
     .attr("transform", "translate(450," + height + ")")
-    .call(d3.axisBottom(x1));   
+    .call(d3.axisBottom(x1));
 
     g.append("g")
     .attr("class", "axis")
     .attr("transform", "translate(560," + height + ")")
-    .call(d3.axisBottom(x1));   
+    .call(d3.axisBottom(x1));
 
     g.append("g")
         .attr("class", "axis")

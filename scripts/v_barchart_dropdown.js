@@ -1,4 +1,4 @@
-function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
+function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle,legendID){
 
   var divText = document.getElementById(dataDescription);
   var divTitle = document.getElementById(dtitle);
@@ -6,9 +6,9 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
   var formatValue = d3.format(".2s");
   var maxvalue = 0;
   var bartotal = 0;
-  var margin = {top: 35, right: 80, bottom: 100, left: 45},
-    width = 850 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
+  var margin = {top: 35, right: 80, bottom: 120, left: 45},
+    width = 900 - margin.left - margin.right,
+    height = 300 - margin.top - margin.bottom;
 
   var g = d3.select(chartID).append("svg")
   .attr("width", width + margin.left + margin.right)
@@ -28,8 +28,8 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
   .attr("class","axis axis--x")
   .attr("transform", "translate(0," + height + ")");
 
-  g.append("g")
-  .attr("class", "axis axis--y");
+  // g.append("g")
+  // .attr("class", "axis axis--y");
 
   var z = d3.scaleOrdinal()
   .range(["#1C4E80", "#A6BACE"]);
@@ -235,55 +235,67 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle){
 
       // ======== Legend rects ========
 
-      var legend = g.selectAll(".barlegend")
-        .data(keysLegend);
 
-      legend = legend
-        .enter()
-      .append("rect")
-        .attr("class","barlegend")
-        .attr("transform", function(d, i) {
-          return "translate(0," + i * 40 + ")";
-        })
-        .attr("x", width + 17)
-        .attr("width", 15)
-        .attr("height", 15)
-        .attr("stroke-width",2)
-        .on("click",function(d) {
-          ////console.log(d)
-          //updateLegend(d)
-        })
-        .merge(legend)
 
-      legend.transition().duration(durations)
-        .attr("fill", z)
-        .attr("stroke", z);
 
-      // ======== Legend text ========
 
-      var legendText = g.selectAll(".legendText")
-        .data(keysLegend);
-
-      legendText = legendText
-        .enter()
-      .append("text")
-        .attr("class","legendText")
-        .attr("transform", function(d, i) {
-          return "translate(0," + i * 40 + ")";
-        })
-        .attr("x", width + 40)
-        .attr("font-size",12)
-        .attr("y", 8)
-        .attr("dy", "0.32em")
-        .merge(legendText);
-
-      legendText.transition().duration(durations)
-        .text(function(d) {
-          var sliceLegend = d.slice(0, -2)
-          return sliceLegend;
-        });
+      // legendText.transition().duration(durations)
+      //   .text(function(d) {
+      //     var sliceLegend = d.slice(0, -2)
+      //     return sliceLegend;
+      //   });
 
     } // End of update function
+
+    var legend = d3.select("#"+legendID).append("svg")
+    .attr("height", 75)
+    .attr("width", 250)
+
+
+    // legend.selectAll("legendrecs")
+    //   .data(keysLegend)
+    //   .enter()
+    // .append("rect")
+    //   .attr("x", 17)
+    //   .attr("y", 8)
+    //   .attr("width", 15)
+    //   .attr("height", 15)
+    //   .attr("stroke-width",2)
+    //   .merge(legend)
+    //
+    // // ======== Legend text ========
+    //
+    // legend.selectAll("textonlegend")
+    //   .data(keysLegend)
+    //   .enter()
+    // .append("text")
+    //   .attr("x", 30)
+    //   .attr("font-size",12)
+    //   .attr("y", 8)
+    //   .attr("dy", "0.32em");
+
+
+    legend.selectAll("mydots")
+      .data(keys)
+      .enter()
+      .append("circle")
+        .attr("cx", 10)
+        .attr("cy", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+        .attr("r", 7)
+        .style("fill", function(d) { return z(d.key); })
+
+    // Add one dot in the legend for each name.
+    legend.selectAll("mylabels")
+      .data(keys)
+      .enter()
+      .append("text")
+        .attr("x", 20)
+        .attr("y", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+        .text(function(d){ console.log(d)
+          return d})
+        .attr("text-anchor", "left")
+        .style("alignment-baseline", "middle")
+        .style("fill","black")
 
     var filtered = [];
 

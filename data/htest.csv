@@ -1,0 +1,3 @@
+Index,Full_time_worker,Part_time_worker,Non_worker,Retired,Preschool,Student_under_16_years,Student_16_and_over,University_student
+Observed,64,10,10,64,10,10,79,30
+Modeled,69,15,25,74,12,14,69,40

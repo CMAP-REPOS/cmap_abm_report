@@ -127,13 +127,18 @@ function makeStackedChart_4(csv_file,catID,dataTitle,divID){
 
     g.append("g")
         .attr("class", "axis")
-        .attr("transform", "translate(200," + height + ")")
+        .attr("transform", "translate(150," + height + ")")
         .call(d3.axisBottom(x1));
 
     g.append("g")
         .attr("class", "axis")
-        .attr("transform", "translate(400," + height + ")")
+        .attr("transform", "translate(300," + height + ")")
         .call(d3.axisBottom(x1));
+
+    g.append("g")
+    .attr("class", "axis")
+    .attr("transform", "translate(450," + height + ")")
+    .call(d3.axisBottom(x1));
 
     g.append("g")
         .attr("class", "axis")

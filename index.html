@@ -6,7 +6,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </meta>
-    <title>CMAP ABM</title>
+    <title> CMAP ABM</title>
+
 
     <link href="css/chordStyles.css" rel="stylesheet"></link>
     <link rel="stylesheet" href="css/mapstyle.css"></link>
@@ -20,9 +21,22 @@
 
     <style>
 
+    .axis { font: 14px sans-serif; }
+
+
+    .colborder {
+      border-top: 3px solid;
+    }
+
     #wflowmap{
         width: 100%;
         height: 800px;
+        margin-left: 20px;
+        margin-right: 20px
+    }
+    #interstate_map{
+        width: 100%;
+        height: 475px;
         margin-left: 20px;
         margin-right: 20px
     }
@@ -37,6 +51,11 @@
       display: inline-block;
     }
 
+    div
+    {
+      display:inherit;
+    }
+
     table{ border:none; width:33%; display:inline-table}
     table {font-size: 12px;}
 
@@ -46,12 +65,13 @@
 
   </head>
   <body>
-    <div class="container">
-      <h2>
-        <a href="https://www.cmap.illinois.gov/data/transportation/modeling?doAsUserId=fH2a30wm7Fk%3D%2F-%2Fasset_publisher%2FQ4En%2Fcontent%2Fid%2F322604">
-          CMAP-ABM
+    <div>
+      <h3>
+          <img src='data/cmap_shortid_margins_CMYK-01.png' height="70px">
+        <a href="https://www.cmap.illinois.gov/data/transportation/modeling?doAsUserId=fH2a30wm7Fk%3D%2F-%2Fasset_publisher%2FQ4En%2Fcontent%2Fid%2F322604" target="_blank" style="vertical-align: sub">
+         Modeling
         </a>
-      </h2>
+      </h3>
 
       <br/>
 
@@ -126,222 +146,303 @@
             href="#8"
             role="tab"
             data-toggle="tab">
-            Highway VMT
+            Highway Assignment
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#9"
+            role="tab"
+            data-toggle="tab">
+            Transit Assignment
           </a>
         </li>
       </ul>
     </div>
 
     <div class="tab-content ">
-      <div
-        id="1" class="tab-pane active container">
-        <div class="col-md-12">
-          <br/>
-
-          <br/>
-
-          <h3>Introduction</h3>
-
-          <p>
-            CMAP's activity-based model (ABM) platform is CT-RAMP (Coordinated Travel and Regional Activity-Based Modeling Platform), which was developed open source by a consultant under contract to CMAP.  Activity-Based Modeling is increasingly viewed as a superior method to better understand the socioeconomic determinants of travel choice and for evaluating modern transportation solutions.  CMAP's ABM has been developed to demonstrate sensitivity to highway pricing scenarios based on each traveler's individual value of time and to improve model sensitivity to a wider range of non-traditional transit attributes, i.e., attributes such as service reliability, personal safety, station and vehicle cleanliness, and crowding that do not typically inform transit Level-of-Service calculations.  Subsequent work on the ABM has focused on the calibration of selected sub-models and the overall validation of the model results.
-<br><br>This report represents the results of model calibration and validation activities completed over the last several years by CMAP staff and their consultants.
-Model calibration is defined as the adjustment of model parameters and constants so that the models better replicate observed data for a base year.  CMAP's ABM is calibrated to a base year of 2010.
-Model validation is defined as comparing the results of the calibrated models to observed data.  Modeling best practice dictates that different data sets be used to conduct calibration and validation activities; in the absence of other observed data, the sources used for model calibration may be used for validation as long as they examine different aspects of the data or rely on alternate geographic scopes.  Model validation results in this report reflect 2015 conditions.
-
-          </p><br>
-          <h4>CMAP Modeling Region</h4>
-          <p>Counties are outlined by dashed lines.  Click on a county to view the name.  Arterial roads in the network are grey, and freeways are white.  </p><br>
-          <div id="regionmap"></div>
-          <br/>
-
-          <br/>
-          <h3>Model Steps</h3>
-
-          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                      <tabstyle>1 - Population Synthesis</tabstyle>
-                    </a>
-                  </h4>
-                </div>
-
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                  <div class="panel-body">
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingTwo">
-                    <h4 class="panel-title">
-                      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          <tabstyle>2 - Long-term</tabstyle>
-                      </a>
-                  </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                    <div class="panel-body">
-                    Usual Workplace
-                    Usual School
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingThree">
-                    <h4 class="panel-title">
-                      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          <tabstyle>3 - Mobility</tabstyle>
-                      </a>
-                  </h4>
-                </div>
-                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                    <div class="panel-body">
-                      Free Parking
-                      Car Ownership
-                      Transit pass
-                      Toll transponder
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingFour">
-                    <h4 class="panel-title">
-                      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                          <tabstyle>4 - Daily</tabstyle>
-                        </a>
-                      </h4>
-                    </div>
-                  <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                      <div class="panel-body">
-                          <center><img src="data/daily.JPG"></center>
-                      </div>
-                  </div>
-                  </div>
-                  <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="headingFive">
-                        <h4 class="panel-title">
-                          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                              <tabstyle>5 - Tour level</tabstyle>
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                        <div class="panel-body">
-                      Tour mode
-                      Stop frequency
-                      Stop location
-                      </div>
-                  </div>
-                  </div>
-                  <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="headingSix">
-                        <h4 class="panel-title">
-                          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                              <tabstyle>6 - Trip level</tabstyle>
-                        </a>
-                      </h4>
-                    </div>
-                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix">
-                      <div class="card-body">
-                          <center><img src="data/triplevel.JPG"></center>
-                      </div>
-                  </div>
-                  </div>
-                  <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="headingSeven">
-                        <h4 class="panel-title">
-                          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                              <tabstyle>7 - Network Simulations</tabstyle>
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven">
-                        <div class="card-body">
-                      List of trips
-                      Trip Tables
-                      Assignment
-                      </div>
-                  </div>
-                  </div>
-            </div>
-
-
-
-        </div>
-      </div>
-
-      <div
-        id="2"
-        class="tab-pane container">
+      <div id="1" class="tab-pane active container-fluid">
         <div class="row">
-          <div class="col-md-12">
+          <br/>
+          <br/>
+          <div class="col-md-3"></div> <!-- end -->
+          <div class="col-md-7">
+            <h3>Introduction</h3>
+            <p>
+              CMAP's activity-based model (ABM) platform is CT-RAMP (Coordinated Travel and Regional Activity-Based Modeling Platform), which was developed open source by a consultant under contract to CMAP.  Activity-Based Modeling is increasingly viewed as a superior method to better understand the socioeconomic determinants of travel choice and for evaluating modern transportation solutions.  CMAP's ABM has been developed to demonstrate sensitivity to highway pricing scenarios based on each traveler's individual value of time and to improve model sensitivity to a wider range of non-traditional transit attributes, i.e., attributes such as service reliability, personal safety, station and vehicle cleanliness, and crowding that do not typically inform transit Level-of-Service calculations.  Subsequent work on the ABM has focused on the calibration of selected sub-models and the overall validation of the model results.
+              <br><br>This report represents the results of model calibration and validation activities completed over the last several years by CMAP staff and their consultants.
+              Model calibration is defined as the adjustment of model parameters and constants so that the models better replicate observed data for a base year.  CMAP's ABM is calibrated to a base year of 2010.
+              Model validation is defined as comparing the results of the calibrated models to observed data.
+               Modeling best practice dictates that different data sets be used to conduct calibration and
+               validation activities; in the absence of other observed data, the sources used for model
+               calibration may be used for validation as long as they examine different aspects of the
+               data or rely on alternate geographic scopes.  Model validation results in this report reflect 2015 conditions.
+               </p>
+            </div><!-- end -->
+          <div class="col-md-2">
+          </div> <!-- end -->
+        </div> <!-- end row-->
+        <br>
+        <br>
+        <div class="row">
+          <div class = "col-md-3">
+            <div class="colborder"></div><!-- end -->
+            <h4>CMAP Modeling Area and Network</h4>
+            <svg id="intromaplegend" ></svg>
+            <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png" width="15px">
+            <p>Click within modeling area to view county name</p>
+          </div><!-- end -->
+          <div class="col-md-7">
+            <div class="colborder"></div><!-- end -->
+              <div id="regionmap"></div><!-- end -->
+          </div> <!-- end -->
+          <div class="col-md-2">
+          </div> <!-- end -->
+        </div>  <!-- end row -->
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="colborder"></div><!-- end -->
+            <h4>Model Steps</h4>
+            <p>The following provides a brief outline of the major steps involved in running CMAP’s ABM.  An initial set of procedures determines zonal accessibility measures and identifies network connectivity for transit trips.  Preliminary sets of highway and transit trip assignments are run to generate realistic congested travel times that are used by CT-RAMP when daily activities are scheduled.</p>
+            <br>
+            <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png" width="15px"><br>
+            <p>Click on modeling step panel to reveal description</p>
+          </div> <!-- end -->
+          <div class="col-md-7">
+            <div class="colborder"></div><!-- end -->
+            <br>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <tabstyle>1 - Population Synthesis</tabstyle>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        A synthetic population provides the foundation for modeling individuals’ travel behavior within an activity-based model. Using Census data and other socio-economic information, a complete set of households for a modeling area is developed. This dataset contains all of the relevant attributes about each household and for each individual living in those households that are required by the ABM. While the synthetic population is statistically representative of the Census data, the actual households and individuals are “synthetic” in that they do not represent identifiable people and an individual household in the Census data may be replicated numerous times in order to generate a complete distribution of households in the modeling inputs.  All of the subsequent steps in the ABM rely on the data provided in the synthetic population.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <tabstyle>2 - Long Term Location Choices</tabstyle>
+                        </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body">
+                          Two sub-models are included in this step: one that models the usual workplace locations for workers and one that models the usual school location for students.  The workplace location model accounts for the worker’s occupation, as identified by the industry category they are employed in within the synthetic person file.  This information is paired with jobs within the employment categories summarized at a fine geographic level to ensure that workers are sent to locations where they could be employed in their field.  Similarly, enrollment figures are provided for elementary schools, high schools and colleges to ensure students are sent to realistic school locations.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <tabstyle>3 - Individual Mobility Attributes</tabstyle>
+                        </a>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                          These models simulate four mobility attributes that affect individual transport mode decisions: 1) free parking eligibility for workers in the Central Business District, i.e., a determination of whether workers will pay to park; 2) household auto ownership; 3) whether or not individuals hold transit passes; and 4) whether or not individuals have toll transponders.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <tabstyle>4 - Daily Activity and Travel Pattern</tabstyle>
+                          </a>
+                        </h4>
+                      </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body">
+                            These models schedule activities and travel tours for all household members.  The first sub-model classifies daily travel patterns into three types: </li>
+                            <ul><li>Mandatory (work and school) – includes at least one out-of-home mandatory activity;</li>
+                            <li>Non-mandatory (other purposes) – includes at least one out-of-home non-mandatory activity but no out-of-home mandatory activities;</li>
+                            <li>Home – in-home activities only.</li></ul>
+
+                            <p>These activities are modeled as joint choices so that decisions made by household members affect the decisions of other members of the household.  The next sub-models estimate the frequency and time-of-day for mandatory activities.  These are given a higher priority for scheduling than non-mandatory and home activities.  Following the scheduling of mandatory activities, individuals have “residual time windows” which can be used to schedule other activities including joint travel with other household members.
+                            </p>
+                            <p>The next sub-model estimates joint travel for household members.  All characteristics of joint travel (travel purpose, individual household members traveling, destination and time-of-day) are simulated.  Joint travel is conditional upon the available time window for each household member following the scheduling of mandatory activities.
+                            </p><p>
+                            The next sub-model generates maintenance tours, which cover shopping and other household errands.  These tasks are allocated to a single household member to carry out, and the destinations and times-of-day are generated.  These tours are developed sequentially for individuals to ensure consistency in their personal schedule.
+                            </p><p>
+                            The next sub-model simulates discretionary tours which are modeled for individual, not joint, travel.  These are also modeled sequentially so that they could all realistically occur during an individual’s day.
+                            </p><p>
+                            The final sub-model simulates at-work tours – those tours that occur during the day with the workplace as the starting and ending location.
+                            </p>
+                            <center><img src="data/daily.JPG"></center>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <tabstyle>5 - Tour Level Details</tabstyle>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                          <div class="panel-body">
+                              These sub-models determine the transport mode used on tours, the locations of intermediate stops made on the tours and the purpose of each stop.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSix">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <tabstyle>6 - Trip Level Details</tabstyle>
+                          </a>
+                        </h4>
+                      </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix">
+                        <div class="panel-body">
+                            These sub-models add details about the trips occurring within the tours including the mode of travel, the departure time form each location and the parking location for auto trips.
+                            <center><img src="data/triplevel.JPG"></center>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSeven">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                <tabstyle>7 - Network Simulations</tabstyle>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven">
+                          <div class="panel-body">
+                              Following development of the complete set of tours and trips, that information is assigned to the travel networks and network equilibrium based on route choice creates congested travel times.  Highway and transit trips are assigned through separate procedures.
+                        </div>
+                    </div>
+                    </div>
+              </div>
+          </div><!-- end -->
+        </div> <!--end row-->
+      </div><!--end tab-->
+
+      <div id="2" class="tab-pane  container-fluid">
+        <div class="col-md-3"></div> <!-- end -->
+        <div class="row">
+          <div class="col-md-7">
             <br/>
             <br/>
             <h3>Population Synthesis</h3>
             <p>
-A synthetic population provides the foundation for modeling individuals’ travel behavior within an activity-based model.  Using Census data and other socio-economic information, a complete set of households for a modeling area is developed.  This dataset contains all of the relevant attributes about each household and for each individual living in those households that are required by the ABM.  While the synthetic population is statistically representative of the Census data, the actual households and individuals are “synthetic” in that they do not represent identifiable people and an individual household in the Census data may be replicated numerous times in order to generate a complete distribution of households in the modeling inputs.  The current population synthesis software used by CMAP is PopSynIII.
-
+                Using Census data and other socio-economic information, a complete set of households for the CMAP modeling area is developed. This dataset contains all of the relevant attributes about each household and for each individual living in those households that are required by the ABM. While this population is statistically representative of the Census data, the actual households and individuals are “synthetic” in that they do not represent identifiable people and an individual household in the Census data may be replicated numerous times in order to generate a complete distribution of households in the modeling inputs.</p>
+                <p>
+                The current population synthesis software used by CMAP is PopSynIII.  The socioeconomic data developed from CMAP’s regional forecasting and Local Area Allocation procedures provide the subzone-level control values for all ON TO 2050 model scenarios. CMAP has greatly enhanced the functionality of PopSyn to enforce these controls and generate a distribution of enumerated households that account for the distribution of adults, workers and children within the agency’s forecasting procedures.
               </p>
-          </div>
-        </div>
-
+          </div><!-- end -->
+        </div><!-- row end -->
+        <br>
         <div class="row">
-          <br/>
-          <br/>
-          <text_div class="col col-md-3">
-            <h5><b>Residential Households by <div id= "hhtitle"></div></b></h5>
-            <div class="small">
-              Select data type for comparison from dropdown
-              </div>
+          <div class="col-md-3">
+            <div class="colborder"></div><!-- end -->
+            <h4>Population by Person Type</h4>
+              <div id="hlegend"></div><!-- end -->
+              <br>
+              <p class="small">
+                <b>Sources</b><br>
+                Observed- Travel Tracker Survey, 2007-2008 <br>
+                Modeled- CMAP ABM - 2010 Scenario <br>
+              </p>
+              <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png" width="15px"><br>
+              <p class="small">Hover over population categories to reveal details</p>
+          </div> <!-- end -->
+          <div class="col-md-7">
+            <div class="colborder"></div><!-- end -->
+            <div id="PopPersonType" width="100%" ></div><!-- end -->
+          </div> <!-- end -->
+        </div> <!-- end -->
+        <br>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="colborder"></div><!-- end -->
+              <h4>Households by Size</h4>
+              <br>
+              <div id="hhlegend"></div><!-- end -->
+              <p class="small">
+                <b>Sources</b><br>
+                Observed- Travel Tracker Survey, 2007-2008 <br>
+                Modeled- CMAP ABM - 2010 Scenario <br>
+              </p>
+              <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png" width="15px"><br>
+              <p class="small">Hover over household size categories to reveal details</p>
+          </div> <!-- end -->
+          <div class="col-md-7">
+            <div class="colborder"></div><!-- end -->
+            <div id="HouseholdSize" width="100%" ></div><!-- end -->
+          </div> <!-- end -->
+        </div> <!-- end row-->
+        <br>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="colborder"></div><!-- end -->
+            <h4>Household Characteristics</h4>
+            <div id="pumsLegend"></div>
+            <p class="small">
+              <b>Sources</b><br>
+              Observed- PUMS 2007-2011 <br>
+              Modeled- CMAP ABM - 2010 Scenario <br>
+            </p>
             <br>
             <select id="catPopSyn">
-              <option value="size">Household Size</option>
               <option value="veh">Vehicles</option>
               <option value="income">Household Income</option>
-            </select>
-          </text_div>
-
-          <div class="col col-md-9">
-            <div id="PurposeChartpums"></div>
-            <div class="small">
-              PUMA - source: <br>
-              Modeled - CMAP, PopSynIII. <br>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <br/>
-            <br/>
-            <h3>Household Detail</h3>
-            <p>
-            </p>
-          </div>
-        </div>
-
-        <div class="row">
-          <br>
-          <div class="col col-md-4">
-            <h5><b>Adults by <div id= "dtitle"></div></b></h5>
-            <div class="small">
-              Select data type for comparison from dropdown
-              </div>
+              <option value="income">Household With Children</option>
+            </select><!-- end -->
             <br>
-            <select id="popsynCat">
-              <option value="Children">Children</option>
-              <option value="Workers">Workers</option>
-              <option value="Vehicles">Vehicles</option>
-            </select>
+            <br>
+            <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png" width="15px"><br>
+            <p class="small">Select household attribute from dropdown to view observed and model comparison</p>
+          </div><!-- end -->
+          <div class="col-md-7">
+            <div class="colborder" style="text-align:center">
+            <h4>Households by <div id= "hhtitle"></div></h4><!-- end -->
+            <div id="PurposeChartpums"></div><!-- end -->
+          </div><!-- end -->
+          </div> <!-- end -->
+        </div> <!-- end row-->
+
+        <div class="row">
+          <div class="col-md-3">
+            <div class="colborder"></div><!-- end -->
+            <h4>Household Details</h4>
+            <!--chart legend-->
+            <div id="bblegend"></div>
+            <p class="small">
+              <b>Sources</b><br>
+              Observed- ACS 2006-2010 <br>
+              Modeled- CMAP ABM - 2010 Scenario <br>
+            </p>
+            <br>
+            <br>
+            <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png" width="15px"><br>
+            <p class="small">Select household attribute from dropdown to view observed and model comparison</p>
+            <div></div>
+          </div> <!--end-->
+        <div class="col-md-7">
+          <div class="colborder" style="text-align:center">
+            <h4> Households by Number of Adults and Number of Children</h4>
           </div>
-          <div class="col col-md-8">
-              <div id="popsynstack"></div>
-            </div>
-        </div>
-
-            </div>
-
+          <div id="bubbletest"></div>
+        </div> <!--end-->
+        </div> <!-- end row -->
+      </div><!--end tab-->
 
         <!-- Auto Counts -->
       <div
@@ -367,8 +468,9 @@ A synthetic population provides the foundation for modeling individuals’ trave
             <br>
             <div id="auto_counts" style="width : 86%" align="center"></div>
             <div class="small">
-              Survey- source: <br>
-              Modeled- CMAP, PopSynIII. <br>
+              <b>Sources</b><br>
+              Survey - ACS 2006-2010. <br>
+              Modeled- CMAP ABM - 2010 Scenario. <br>
             </div>
           </div>
           <div class = "col col-md-8">
@@ -402,6 +504,11 @@ A synthetic population provides the foundation for modeling individuals’ trave
               <option value="income">Household Income</option>
               <option value="workers">Household Workers</option>
             </select>
+            <div class="small" style="margin-top: 130px;">
+                <b>Sources</b><br>
+                  Observed - ACS 2009-2013. <br>
+                  Modeled- CMAP ABM - 2010 Scenario. <br>
+                </div>
           </div>
           <div class="col col-md-8">
               <div id="stackedbar"></div>
@@ -434,8 +541,10 @@ A synthetic population provides the foundation for modeling individuals’ trave
       <div class="row">
           <div class="col col-md-6" align = "center">
             <h5><b>Observed Work Flows</b></h5>
+            <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
             <div id="obsChord"></div>
             <h5><b>Modeled Work Flows</b></h5>
+            <p style="font-size:small;">CMAP ABM - 2010 Scenario</p>
             <div id="modelChord"></div>
           </div>
           <div class="col col-md-6" align = "center">
@@ -472,6 +581,12 @@ A synthetic population provides the foundation for modeling individuals’ trave
                 <option value="IN">Indiana</option>
                 <option value="WI">Wisconsin</option>
               </select>
+              <div class="small" style="margin-top: 270px;">
+                  <b>Sources</b><br>
+                  Observed -Travel Tracker Survey, 2007-2008. <br>
+                  Modeled- CMAP ABM - 2010 Scenario. <br>
+                </div>
+
           </div>
           <div class="col-md-6">
             <br/>
@@ -512,14 +627,15 @@ A synthetic population provides the foundation for modeling individuals’ trave
               <option value="bike">Bike</option>
               <option value="taxi">Taxi</option>
             </select>
+            <div class="small" style="margin-top: 100px;">
+                <b>Sources</b><br>
+                Observed -Travel Tracker Survey, 2007-2008. <br>
+                Modeled- CMAP ABM - 2010 Scenario. <br>
+              </div>
           </div>
           <div class="col col-md-10">
             <div id="ModeByDistance"></div>
-            <div class="small">
-              <div id="modeDistDesc" ></div>
-              Survey - description <br>
-              Modeled- description <br>
-            </div>
+
           </div>
         </div>
         <div class="row">
@@ -555,14 +671,14 @@ A synthetic population provides the foundation for modeling individuals’ trave
               <option value="bike">Bike</option>
               <option value="taxi">Taxi</option>
             </select>
+            <div class="small" style="margin-top: 100px;">
+                <b>Sources</b><br>
+                Observed -Travel Tracker Survey, 2007-2008. <br>
+                Modeled- CMAP ABM - 2010 Scenario. <br>
+              </div>
           </div>
           <div class="col col-md-10">
             <div id="wbModeByDistance"></div>
-            <div class="small">
-              <div id="wbmodeDistDesc" ></div>
-              Survey - description <br>
-              Modeled- description <br>
-            </div>
           </div>
         </div>
       </div>
@@ -603,10 +719,12 @@ A synthetic population provides the foundation for modeling individuals’ trave
           </div>
           <div class="col col-md-5" align = "center">
             <h5><b>Observed Mode Share</b></h5>
+            <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
             <div id="pieMode1"></div>
           </div>
           <div class="col col-md-5" align = "center">
             <h5><b>Modeled Mode Share</b></h5>
+            <p style="font-size:small;">CMAP ABM - 2010 Scenario</p>
             <div id="pieMode2"></div>
           </div>
       </div>
@@ -647,15 +765,16 @@ A synthetic population provides the foundation for modeling individuals’ trave
             <option value="Work">Work</option>
             <option value="Work-based">Work-based</option>
           </select>
+          <div class="small" style="margin-top: 100px;">
+              <b>Sources</b><br>
+              Observed -Travel Tracker Survey, 2007-2008. <br>
+              Modeled- CMAP ABM - 2010 Scenario. <br>
+            </div>
         </div>
 
         <div class="col col-md-10">
           <div id="ModeByPurpose"></div>
-          <div class="small">
-            <div id="catModePurp" ></div>
-            Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-            Modeled - CMAP ABM. <br>
-          </div>
+
         </div>
       </div>
       <div class="row">
@@ -693,14 +812,16 @@ A synthetic population provides the foundation for modeling individuals’ trave
             <option value="Student under 16 years">Student under 16 years</option>
             <option value="University Student">University Student</option>
           </select>
+          <div class="small" style="margin-top: 100px;">
+              Single person trips only. <br>
+              <b>Sources</b><br>
+              Observed -Travel Tracker Survey, 2007-2008. <br>
+              Modeled- CMAP ABM - 2010 Scenario. <br>
+            </div>
         </div>
         <div class="col col-md-10">
           <div id="ModebyPerson"></div>
-          <div class="small">
-            Single person trips only. <br>
-            Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-            Modeled - CMAP ABM. <br>
-          </div>
+
         </div>
       </div>
       <div class="row">
@@ -735,14 +856,14 @@ A synthetic population provides the foundation for modeling individuals’ trave
             <option value="$75k to $100K">$75k to $100K</option>
             <option value="More than $100k">More than $100k</option>
           </select>
+          <div class="small" style="margin-top: 100px;">
+              <b>Sources</b><br>
+              Observed -Travel Tracker Survey, 2007-2008. <br>
+              Modeled- CMAP ABM - 2010 Scenario. <br>
+            </div>
         </div>
         <div class="col col-md-10">
           <div id="ModebyIncome"></div>
-          <div class="small">
-            <div id="modeIncrDesc" ></div>
-            Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-            Modeled - CMAP ABM. <br>
-          </div>
         </div>
       </div>
       </div>
@@ -783,10 +904,12 @@ A synthetic population provides the foundation for modeling individuals’ trave
           </div>
           <div class="col col-md-5" align = "center">
             <h5><b>Observed Trip Purpose</b></h5>
+            <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
             <div id="piePurpose1"></div>
           </div>
           <div class="col col-md-5" align = "center">
             <h5><b>Modeled Trip Purpose</b></h5>
+            <p style="font-size:small;">CMAP ABM - 2010 Scenario</p>
             <div id="piePurpose2"></div>
           </div>
       </div>
@@ -825,14 +948,16 @@ A synthetic population provides the foundation for modeling individuals’ trave
             <option value="Student under 16 years">Student under 16 years</option>
             <option value="University Student">University Student</option>
           </select>
+          <div class="small" style="margin-top: 100px;">
+            Single-person trips only.<br>
+              <b>Sources</b><br>
+              Observed -Travel Tracker Survey, 2007-2008. <br>
+              Modeled- CMAP ABM - 2010 Scenario. <br>
+            </div>
         </div>
         <div class="col col-md-10">
           <div id="PurposebyType"></div>
-          <div class="small">
-            Single-person trips only. <br>
-            Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-            Modeled - CMAP ABM. <br>
-          </div>
+
         </div>
       </div>
       <div class="row">
@@ -870,13 +995,15 @@ A synthetic population provides the foundation for modeling individuals’ trave
             <option value="25-30 Miles">25-30 Miles</option>
             <option value="30 Miles or More">30 Miles or More</option>
           </select>
+          <div class="small" style="margin-top: 100px;">
+              <b>Sources</b><br>
+              Observed -Travel Tracker Survey, 2007-2008. <br>
+              Modeled- CMAP ABM - 2010 Scenario. <br>
+            </div>
         </div>
         <div class="col col-md-10">
           <div id="PurposebyDist"></div>
-          <div class="small">
-              Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-              Modeled - CMAP ABM. <br>
-          </div>
+
         </div>
       </div>
       <div class="row">
@@ -915,13 +1042,15 @@ A synthetic population provides the foundation for modeling individuals’ trave
                 <option value="Work">Work</option>
                 <option value="Work-based">Work-based</option>
             </select>
+            <div class="small" style="margin-top: 100px;">
+                <b>Sources</b><br>
+                Observed -Travel Tracker Survey, 2007-2008. <br>
+                Modeled- CMAP ABM - 2010 Scenario. <br>
+              </div>
           </div>
           <div class="col col-md-10">
             <div id="DistbyPurpose"></div>
-            <div class="small">
-                Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-                Modeled - CMAP ABM. <br>
-            </div>
+
           </div>
         </div>
         <div class="row">
@@ -953,13 +1082,15 @@ A synthetic population provides the foundation for modeling individuals’ trave
                   <option value="M">Mandatory Activity</option>
                   <option value="N">Non-Mandatory Activity</option>
               </select>
+              <div class="small" style="margin-top: 100px;">
+                  <b>Sources</b><br>
+                  Observed -Travel Tracker Survey, 2007-2008. <br>
+                  Modeled- CMAP ABM - 2010 Scenario. <br>
+                </div>
             </div>
             <div class="col col-md-10">
               <div id="dap"></div>
-              <div class="small">
-                  Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-                  Modeled - CMAP ABM. <br>
-              </div>
+
             </div>
           </div>
       </div>
@@ -997,8 +1128,9 @@ A synthetic population provides the foundation for modeling individuals’ trave
 
           <div class="small">
               Express and local bus combined. <br>
-              Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-              Modeled - CMAP ABM. <br>
+              <b>Sources</b><br>
+              Survey - Travel Tracker Survey, 2007-2008.<br>
+              Modeled - CMAP ABM - 2010 Scenario. <br>
             </div>
           <br>
 
@@ -1023,10 +1155,12 @@ A synthetic population provides the foundation for modeling individuals’ trave
 
               <div class="col col-md-5" align = "center">
                 <h5><b>Observed Transit Access</b></h5>
+                <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
                 <div id="pieTransitSurveyMode"></div>
               </div>
               <div class="col col-md-5" align = "center">
                 <h5><b>Modeled Transit Access</b></h5>
+                <p style="font-size:small;">CMAP ABM - 2010 Scenario</p>
                 <div id="pieTransitModelMode"></div>
               </div>
             </div>
@@ -1060,13 +1194,15 @@ A synthetic population provides the foundation for modeling individuals’ trave
                     <option value="transit">Walk To Transit</option>
                     <option value="dtransit">Drive to Transit</option>
                 </select>
+                <div class="small" style="margin-top:100px;">
+                    <b>Sources</b><br>
+                    Survey - Travel Tracker Survey, 2007-2008.<br>
+                    Modeled - CMAP ABM - 2010 Scenario. <br>
+                  </div>
               </div>
               <div class="col col-md-10">
                 <div id="TranDist"></div>
-                <div class="small">
-                    Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-                    Modeled - CMAP ABM. <br>
-                </div>
+
               </div>
             </div>
             <div class="row">
@@ -1098,13 +1234,15 @@ A synthetic population provides the foundation for modeling individuals’ trave
                       <option value="transit">Walk To Transit</option>
                       <option value="dtransit">Drive to Transit</option>
                   </select>
+                  <div class="small" style="margin-top:100px;">
+                      <b>Sources</b><br>
+                      Survey - Travel Tracker Survey, 2007-2008.<br>
+                      Modeled - CMAP ABM - 2010 Scenario. <br>
+                    </div>
                 </div>
                 <div class="col col-md-10">
                   <div id="TranIncome"></div>
-                  <div class="small">
-                      Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-                      Modeled - CMAP ABM. <br>
-                  </div>
+
                 </div>
               </div>
               <div class="row">
@@ -1136,13 +1274,15 @@ A synthetic population provides the foundation for modeling individuals’ trave
                         <option value="transit">Walk To Transit</option>
                         <option value="dtransit">Drive to Transit</option>
                     </select>
+                    <div class="small" style="margin-top:100px;">
+                        <b>Sources</b><br>
+                        Survey - Travel Tracker Survey, 2007-2008.<br>
+                        Modeled - CMAP ABM - 2010 Scenario. <br>
+                      </div>
                   </div>
                   <div class="col col-md-10">
                     <div id="TranAutoAdult"></div>
-                    <div class="small">
-                        Survey - CMAP 2007-2008 Travel Tracker Survey.<br>
-                        Modeled - CMAP ABM. <br>
-                    </div>
+
                   </div>
                 </div>
         </div>
@@ -1153,26 +1293,85 @@ A synthetic population provides the foundation for modeling individuals’ trave
           <br/>
           <br/>
           <h3>Comparison of Daily VMT Shares by County</h3>
-          </div>
-        <div class="col-md-6">
         </div>
         <div class="col-md-6">
-          <div id="vmtcounty"></div>
+          <div id="vmt_county_tbl" style = "width: 50%"></div>
+        </div>
+        <div class="col-md-6">
+          <div id="vmtcounty" ></div>
+          <div class="small">
+              <b>Sources</b><br>
+              Survey - Illinois Travel Statistics 2015<br>
+              Modeled - CMAP ABM - 2015 Scenario. <br>
+            </div>
         </div>
        <div class="col-md-12">
           <h3>Comparison of Daily VMT Shares by County and Facility Type</h3>
           <br><br><br>
           <center><div id="cfstack"></div></center>
+          <div class="small">
+              <b>Sources</b><br>
+              Survey - Illinois Travel Statistics 2015<br>
+              Modeled - CMAP ABM - 2015 Scenario. <br>
+            </div>
         </div>
         <div class="col-md-12">
-          <h3>Comparison of Daily VMT Shares by County and Facility Type</h3>
+          <h3>Observed vs. Modeled Average Daily Link Volumes</h3>
           <br>
           <p style="text-align:right">r<sup>2</sup> = <text_div id="r2" style="padding-right: 100px"></text_div></p>
           <center><div id="scatter_vmt"></div></center>
-
-          <h3>Comparison of Interstate Daily VMT By Auto and Truck</h3>
-          <div id="interstateVMT"></div>
         </div>
+        <div class="col-md-12">
+          <h3>Comparison of Interstate Daily VMT By Auto and Truck</h3>
+        </div>
+        <div class="col-md-6">
+          <br>
+          <br>
+        <div id="interstate_map"></div>
+        </div>
+        <div class="col-md-3">
+        <center><div id="interstateVMTbar_obs"></div></center>
+        </div>
+        <div class="col-md-3">
+        <center><div id="interstateVMTbar_model"></div></center>
+        </div>
+
+        <div class="col-md-6">
+          <h3>Daily VMT Comparison by Volume Range (7 Counties)</h3>
+          <h4>Interstate</h4>
+          <center><div id="vrange_int"></div></center>
+          <h4>Arterial</h4>
+          <center><div id="vrange_art"></div></center>
+          <h4>Total</h4>
+          <center><div id="vrange_total"></div></center>
+
+
+          <h3>Root Mean Squared Error Analysis (7 Counties)</h3>
+          <center><div id="rmse_7"></div></center>
+        </div>
+
+        </div>
+
+
+        <!-- TRANSIT ASSIGNMENT -->
+        <div id="9" class="tab-pane container">
+          <div class="col-md-12">
+            <h3>Transit Boardings by Line</h3>
+          </div>
+          <div class="col-md-6">
+            <br>
+            <br>
+          <div id="transit_map"></div>
+          </div>
+          <div class="col-md-3">
+          <center><div id="transitBoardingsBar_obs"></div></center>
+          </div>
+          <div class="col-md-3">
+          <center><div id="transitBoardingsBar_model"></div></center>
+          </div>
+        </div>
+
+
       </div>
   </body>
 
@@ -1226,14 +1425,22 @@ A synthetic population provides the foundation for modeling individuals’ trave
     type="text/javascript">
   </script>
   <script
-    src="scripts/barchart_stack_h.js"
+    src="scripts/barchart_stack_h_v2.js"
     type="text/javascript">
   </script>
   <script
     src="scripts/scatter_plot.js"
     type="text/javascript">
   </script>
-  <script>makeGroupVBar("data/csv1_pop_syn.csv","#PurposeChartpums","#catPopSyn",2, "popsynDesc","hhtitle");</script>
+  <script
+    src="scripts/h_stacked.js"
+    type="text/javascript">
+  </script>
+  <script
+    src="scripts/bubblechart.js"
+    type="text/javascript">
+  </script>
+  <script>makeGroupVBar("data/csv1_pop_syn.csv","#PurposeChartpums","#catPopSyn",2, "popsynDesc","hhtitle","pumsLegend");</script>
   <script>makeGroupVBar("data/csv5_mode_purpose.csv","#ModeByPurpose","#catModePurp",2, "modePurpDesc","modeTitle");</script>
   <script>makeGroupHBar_dd("data/csv6_work_trips.csv","#VChart","#workFlowCat",2, "pDesc","pTitle");</script>
   <script>makeGroupVBar("data/csv7_work_mode_distance.csv","#ModeByDistance","#catModeDist",2, "modeDistDesc","modeDTitle");</script>
@@ -1248,7 +1455,7 @@ A synthetic population provides the foundation for modeling individuals’ trave
   <script>makeGroupVBar("data/csv21_transit_auto.csv","#TranAutoAdult","#catAutoAdult",2, "TranAutoAdultDesc","TranAutoAdultTitle");</script>
   <script>makeGroupVBar("data/csv22_dap.csv","#dap","#catdap",2, "dapDesc","dapTitle");</script>
   <script>makeGroupHBar("data/csv24_vmt_county.csv","#vmtcounty",2, "vmtDesc","vmtTitle");</script>
-  <script>makeScatter("data/raw/link_counts.csv","#scatter_vmt",2, "vmtScatterDesc","vmtScatterTitle");</script>
+  <script>makeScatter("data/raw/link_counts.csv","#scatter_vmt","AADT","vadt");</script>
 
   <script type="text/javascript" src='scripts/table.js'></script>
   <script>
@@ -1259,6 +1466,47 @@ A synthetic population provides the foundation for modeling individuals’ trave
     if (error) throw error;
     tabulate(data, ['# Veh','Model','Survey'],"#auto_counts"); // 2 column table
   });
+
+  d3.csv("data/csv29_vmt_county_table.csv", function(d, i, columns) {
+    for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+    return d;
+  }, function(error, data) {
+    if (error) throw error;
+    tabulate(data, ['County','Observed Share','Modeled Share','Observed','Model'],"#vmt_county_tbl"); // 2 column table
+  });
+
+  d3.csv("data/csv30_rmse_7.csv", function(d, i, columns) {
+    for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+    return d;
+  }, function(error, data) {
+    if (error) throw error;
+    tabulate(data, ['Vrange','Weight (Miles)','Links','AADT','Model Volumes','rmse','%rmse'],"#rmse_7"); // 2 column table
+  });
+
+  d3.csv("data/csv30_vrange_total.csv", function(d, i, columns) {
+    for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+    return d;
+  }, function(error, data) {
+    if (error) throw error;
+    tabulate(data, ['Vrange','Number of Links','Observed VMT','Model VMT','Percent Diff'],"#vrange_total"); // 2 column table
+  });
+
+  d3.csv("data/csv30_vrange_art.csv", function(d, i, columns) {
+    for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+    return d;
+  }, function(error, data) {
+    if (error) throw error;
+    tabulate(data, ['Vrange','Number of Links','Observed VMT','Model VMT','Percent Diff'],"#vrange_art"); // 2 column table
+  });
+
+  d3.csv("data/csv30_vrange_int.csv", function(d, i, columns) {
+    for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+    return d;
+  }, function(error, data) {
+    if (error) throw error;
+    tabulate(data, ['Vrange','Number of Links','Observed VMT','Model VMT','Percent Diff'],"#vrange_int"); // 2 column table
+  });
+
   d3.csv("data/aoCounts.csv", function(d, i, columns) {
     for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
     return d;
@@ -1269,17 +1517,27 @@ A synthetic population provides the foundation for modeling individuals’ trave
 
   </script>
   <script type="text/javascript" src="data/subzonegroups.js"></script>
+  <script type="text/javascript" src="data/hwy_interstates.js"></script>
   <script>makeStackedChart_3("data/csv3a_popsyn_crosstab.csv","#popsynCat","dtitle","popsynstack");</script>
   <script>makeStackedChart_nodd("data/csv23_vmt_county_facility.csv","cftitle","cfstack");</script>
   <script>makeStackedChart_4("data/csv3_aocrosstab_counts.csv","#aoCat","dtitle","stackedbar");</script>
   <script>makeChords('data/csv4_chord.csv', "modelChord", "obsChord");</script>
+
   <script type="text/javascript" src="scripts/modepies.js"></script>
-  <script>makeStackedChart_nodd_h("data/csv25_interstate_vmt.csv","intVMTTitle","interstateVMT");</script>
+  <script>hStackedBar("data/csv26_interstate_vmt_obs.csv","data/csv25_interstate_vmt_model.csv","interstateVMTbar_obs","interstateVMTbar_model");</script>
+  <script>hStackedBar("data/csv27_transit_boardings_obs.csv","data/csv28_transit_boardings_model.csv","transitBoardingsBar_obs","transitBoardingsBar_model");</script>
+  <script>make_h_stacked("data/htest.csv","PopPersonType", "hlegend")</script>
+  <script>make_h_stacked("data/htest2.csv","HouseholdSize", "hhlegend")</script>
+  <script>make_bubble("data/bubbletest.csv","bubbletest", "bblegend")</script>
+
 
   <script type="text/javascript" src="data/counties.js"></script>
   <script type="text/javascript" src="data/MetraLines.js"></script>
   <script type="text/javascript" src="data/ctalines.js"></script>
   <script type="text/javascript" src="data/mhn.js"></script>
+  <script type="text/javascript" src="data/cmaparea.js"></script>
   <script type="text/javascript" src="scripts/transitboardings.js"></script>
   <script type="text/javascript" src="scripts/intromap.js"></script>
+  <script type="text/javascript" src="scripts/transit_assignment_map.js"></script>
+  <script type="text/javascript" src="scripts/highway_assignment_map.js"></script>
 </html>

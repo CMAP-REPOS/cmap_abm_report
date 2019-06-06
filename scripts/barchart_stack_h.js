@@ -34,12 +34,14 @@ function makeStackedChart_nodd_h(csv_file,dataTitle,divID){
         .padding(0.05);
 
     var x = d3.scaleLinear()
-          .range([0, width]);
+          .rangeRound([0, width]);
 
     var y1 = d3.scaleBand()
 
     var z = d3.scaleOrdinal()
         .range(["#A6BACE", "#7896B4", "#4A729A", "#1C4E80", "#0D263F"]);
+
+    xAxis = d3.axisBottom(x)
 
     var stack = d3.stack();
 
@@ -86,8 +88,9 @@ function makeStackedChart_nodd_h(csv_file,dataTitle,divID){
     console.log("groupData", groupData)
 
     var stackData = stack
-      .keys(keys)(groupData)
-    d3.select("#" + dataTitle).text(divText);
+      .keys(keys)
+        //d3.select("#" + dataTitle).text(divText);
+      .offset(d3.stackOffsetNone)(groupData);
     //console.log("stackData", stackData)
 
     x.domain([0, d3.max(data, function(d){
@@ -104,6 +107,7 @@ function makeStackedChart_nodd_h(csv_file,dataTitle,divID){
           return z(d.key);
         });
 
+
     serie.selectAll("rect")
       .data(function(d) { return d; })
       .enter()
@@ -116,8 +120,13 @@ function makeStackedChart_nodd_h(csv_file,dataTitle,divID){
           ////console.log(d);
           return y1(d.data.SubGroup);
         })
-        .attr("x", 0)
+        .attr("x", function(d) {
+          ////console.log(d);
+          return x(d[1]);
+        })
         .attr("width", function(d) {
+          console.log(d)
+          console.log(d[1], d[0])
           return x(d[0]) - x(d[1]);
         })
         .attr("height", y1.bandwidth())
@@ -139,7 +148,7 @@ function makeStackedChart_nodd_h(csv_file,dataTitle,divID){
         .attr("dx", "0.32em")
         .attr("fill", "#000")
         .attr("font-weight", "bold")
-        .attr("text-anchor", "end")
+        .attr("text-anchor", "start")
 
         // Add the X Axis
        g.append("g")

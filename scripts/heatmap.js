@@ -25,7 +25,7 @@ function make_heatmap(csv_file,divID, divID2, divLegend){
          })/arr.length;
      }
 
-   var lPatchWidth=200;
+   var lPatchWidth=300;
    var itemSize = 65,
        cellSize = itemSize - 6,
        margin = {top: 10, right: 50, bottom: 120, left: 110};
@@ -88,7 +88,7 @@ function make_heatmap(csv_file,divID, divID2, divLegend){
       var xScale = d3.scaleBand()
           .domain(x_elements)
           .range([0, x_elements.length * itemSize])
-          .paddingInner(20).paddingOuter(cellSize/2)
+          .paddingInner(20).paddingOuter(cellSize)
 
       var xAxis = d3.axisBottom()
           .scale(xScale)
@@ -140,14 +140,14 @@ function make_heatmap(csv_file,divID, divID2, divLegend){
           .data(data)
           .enter().append('g').append('rect')
           .attr('class', 'cell')
-          .attr('width', cellSize)
+          .attr('width', cellSize*2)
           .attr('height', cellSize)
           .attr('y', function(d) { return yScale(d.country); })
-          .attr('x', function(d) { return xScale(d.product)-cellSize/2; })
+          .attr('x', function(d) { return (xScale(d.product)-cellSize/2)* cellSize; })
           .attr('fill', function(d) { return colorScale(bandClassifier(d.perChange,100));})
           .attr('stroke','white')
           .style("stroke-width","2px")
-          .attr("rx",3)
+          .attr("rx",6)
           .attr("ry",3)
           .on("mouseover",function(d){
               //console.log(d);
@@ -197,7 +197,7 @@ function make_heatmap(csv_file,divID, divID2, divLegend){
               });
     }
 
-    var legendwidth = 250,
+    var legendwidth = 300,
         legendheight = 50;
 
     var legends = d3.select("#"+divLegend).append("svg")

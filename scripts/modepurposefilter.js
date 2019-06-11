@@ -1,4 +1,4 @@
-function make_h_stacked_withfilter(csv_file,divID, legendID, filterID){
+function make_h_stacked_tripsbymode(csv_file,divID, legendID){
     var margin = {top: 80, right: 10, bottom: 0, left: 75},
       width = 700 - margin.left - margin.right,
       height = 300 - margin.top - margin.bottom;
@@ -11,7 +11,21 @@ function make_h_stacked_withfilter(csv_file,divID, legendID, filterID){
     .attr("align","center")
     .append("g")
     .attr("transform","translate(" + margin.left + "," + margin.top + ")");
-  
+
+
+    var typeobj = {
+      Drive_alone_free:'SOV',
+      Shared_ride_2_free:'HOV',
+      Shared_ride_3plus_free: 'HOV',
+      Walk: 'Non-motorized',
+      Walk_to_transit: 'Transit',
+      School_bus: 'HOV',
+      Bike: 'Non-motorized',
+      Drive_alone_pay: 'SOV',	
+      Drive_to_transit: 'Transit',	
+      Shared_ride_2plus_pay: 'HOV',	
+      Taxi: 'HOV'
+    }
   
       var y = d3.scaleBand()
           .rangeRound([0, height])
@@ -26,12 +40,13 @@ function make_h_stacked_withfilter(csv_file,divID, legendID, filterID){
   
       var stack = d3.stack()
           .offset(d3.stackOffsetExpand);
-  
+
+      var div = d3.select("#" + divID).append("div")
+      .attr("class", "bartooltip")
+      .style("opacity", 0);
+
       d3.csv(csv_file, type, function (error, data) {
           if (error) throw error;
-          
-          d3.select(filterID).on("click", testupdate)
-
   
           // List of subgroups = header of the csv files = soil condition here
           var subgroups = data.columns.slice(1)
@@ -56,27 +71,33 @@ function make_h_stacked_withfilter(csv_file,divID, legendID, filterID){
             var bardata = serie.selectAll("rect")
                 .data(function (d) {
                   if(d.key == subgroupName){
+                    //this csv is in the other order, so the names are switched!!
                     obsvalue =  (d[0].data[subgroupName])
                     modelvalue =  (d[1].data[subgroupName])
                   }
                   return d
                 })
   
-            //console.log(obsvalue)
-  
-            // Highlight all rects of this subgroup with opacity 0.8. It is possible to select them since they have a specific class = their name.
-            d3.selectAll("."+subgroupName)
-              .style("opacity", 1)
-              .append("text")
-                .attr("x", 60)
-                .attr("y", -30) // 100 is where the first dot appears. 25 is the distance between dots
-                .text(subgroupName.replace(/_/g, " ") + " - Observed Total = " + obsvalue + " | Modeled Total = "+modelvalue)
-                .attr("text-anchor", "left")
-                .style("alignment-baseline", "middle")
-                .style("fill","black")
-                .style("font-size","16px")
-          }
-  
+              //console.log(obsvalue)
+              div.transition()
+              .duration(200)
+              .style("opacity", .9);
+              div.html(
+                typeobj[subgroupName] + 
+                "<br><b><p style='font-size: 12px'; color: grey'>" + subgroupName.replace(/_/g, " ") + 
+                "</p></b><p style='color:rgb(28, 78, 128); font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(obsvalue) + 
+                "</p><p style='color:grey; font-size: 10px;'> modeled" +
+                "</p><p style='color:rgb(166, 186, 206); font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(modelvalue) +
+                "</p><p style='color:grey; font-size: 10px;'> observed </p>" 
+                )
+                .style("left", (d3.event.pageX - 300) + "px")
+                .style("top", (d3.event.pageY - 350) + "px");
+    
+              // Highlight all rects of this subgroup with opacity 0.8. It is possible to select them since they have a specific class = their name.
+              d3.selectAll("."+ subgroupName)
+                .style("opacity", 1)
+            }
+    
         // When user do not hover anymore
         var mouseleave = function(d) {
           // Back to normal opacity: 0.8
@@ -84,51 +105,41 @@ function make_h_stacked_withfilter(csv_file,divID, legendID, filterID){
             .style("opacity",0.8)
             .select("text").remove();
           }
-  
-  
-          var serie = g.selectAll(".serie")
-              .data(stack.keys(data.columns.slice(1))(data))
-              .enter().append("g")
-              .attr("class", "serie")
-              .attr("fill", function (d) {
-                  return z(d.key);
-              })
-              .attr("class", function(d){
-                return divID+"class " + d.key })
-  
-  
-  
-          var bar = serie.selectAll("rect")
-              .data(function (d) {
-                  return d;
-              })
-              .enter().append("rect")
-              .attr("id", "moderect")
-              .attr("y", function (d) {
-                  return y(d.data.Index);
-              })
-              .attr("x", function (d) {
-                  return x(d[1]);
-              })
-              .attr("width", function (d) {
-                  return x(d[0]) - x(d[1]);
-              })
-              .attr("height", y.bandwidth())
-              .on("mouseover", mouseover)
-              .on("mouseleave", mouseleave)
-  
-          bar.append("text")
-              .attr("x", function (d) {
-                  return x(d[1]);
-              })
-              .attr("dy", "1.35em")
-              .text(function (d) { return d; });
-  
-          g.append("g")
-              .attr("class", "axis axis--y")
-              .call(d3.axisLeft(y));
-  
-              // select the svg area
+    
+        var serie = g.selectAll(".serie")
+            .data(stack.keys(data.columns.slice(1))(data))
+            .enter().append("g")
+            .attr("class", "serie")
+            .attr("fill", function (d) {
+                return z(d.key);
+            })
+            .attr("class", function(d){
+              return divID+"class " + d.key })
+
+        var bar = serie.selectAll("rect")
+            .data(function (d) {
+                return d;
+            })
+            .enter().append("rect")
+            .attr("id", "moderect")
+            .attr("y", function (d) {
+                return y(d.data.Index);
+            })
+            .attr("x", function (d) {
+                return x(d[1]);
+            })
+            .attr("width", function (d) {
+                return x(d[0]) - x(d[1]);
+            })
+            .attr("height", y.bandwidth())
+            .on("mouseover", mouseover)
+            .on("mouseout", mouseleave)
+
+        g.append("g")
+            .attr("class", "axis axis--y")
+            .call(d3.axisLeft(y));
+
+      // select the svg area
       var legend = d3.select("#"+legendID).append("svg")
       .attr("height", 300)
       .attr("width", 250)
@@ -168,13 +179,6 @@ function make_h_stacked_withfilter(csv_file,divID, legendID, filterID){
           for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
           d.total = t;
           return d;
-      }
-
-      function testupdate() {
-          d3.selectAll(".Drive_alone_free,.Walk,.Walk_to_transit,.Bike,.Drive_alone_pay").attr("fill-opacity",function(d) {
-              
-            return 0.1
-          })
       }
 
 

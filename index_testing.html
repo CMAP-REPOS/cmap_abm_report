@@ -78,12 +78,13 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-3">
-      <h4> legend</h4>
-      <div id="bblegend"></div>
+      <div id="heatlegend"></div>
     </div>
-    <div class="col-md-7">
-      <h4> title</h4>
-      <div id="bubbletest"></div>
+    <div class="col-md-3">
+      <div id="heattest1"></div>
+    </div>
+    <div class="col-md-3">
+      <div id="heattest2"></div>
   </div>
 </div>
 </div>
@@ -106,10 +107,10 @@
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 
   <script
-    src="scripts/bubblechart.js"
+    src="scripts/heatmap.js"
     type="text/javascript">
   </script>
 
-  <script>make_bubble("data/bubbletest.csv","bubbletest", "bblegend")</script>
+  <script>make_heatmap("data/heatmaptest.csv","heattest1", "heattest2","heatlegend")</script>
 
 </html>

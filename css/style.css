@@ -21,7 +21,7 @@ div.bartooltip {
   background: white;
   border: 0px;
   pointer-events: none;
-  box-shadow: 1px 1px grey
+  box-shadow: 1px 1px grey;
 }
 
 .icon {

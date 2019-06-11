@@ -180,8 +180,8 @@ function makeChords(csv_file, modelDiv, obsDiv){
           };
         }
         function drawChords(matrix, mmap, obsMatrix, obs_mmap, odpairs) {
-            var w = 480,
-                h = 400,
+            var w = 400,
+                h = 380,
                 r1 = h / 2,
                 r0 = r1 - 80;
 

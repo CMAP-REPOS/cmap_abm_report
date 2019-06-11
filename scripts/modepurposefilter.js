@@ -24,7 +24,17 @@ function make_h_stacked_tripsbymode(csv_file,divID, legendID){
       Drive_alone_pay: 'SOV',
       Drive_to_transit: 'Transit',
       Shared_ride_2plus_pay: 'HOV',
-      Taxi: 'HOV'
+      Taxi: 'HOV',
+      work: 'Mandatory',
+      shop: 'Non-mandatory',
+      maintenance: 'Non-mandatory',
+      escort: 'Non-mandatory',
+      discretionary: 'Non-mandatory',
+      eating_out: 'Non-mandatory',
+      school: 'Mandatory',
+      visiting: 'Non-mandatory',
+      work_based: 'Non-mandatory',
+      university: 'Mandatory'
     }
 
       var y = d3.scaleBand()

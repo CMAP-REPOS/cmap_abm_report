@@ -3,7 +3,7 @@ svg {
     filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.25) );
 }
 
-svg#intromaplegend, svg#hlegend, svg#hhlegend, svg#bblegend, svg#pumsLegend {
+svg#intromaplegend, svg#hlegend, svg#hhlegend, svg#bblegend, svg#pumsLegend, svg#activitieslegend {
   -webkit-filter: drop-shadow( 0px 0px 0px rgba(0,0,0,.3) );
   filter: drop-shadow( 0px 0px 0px rgba(0,0,0,.25) );
 }
@@ -38,6 +38,10 @@ div.bartooltip {
 }
 
 #modelegend {
+  height: 300px;
+}
+
+#activitieslegend {
   height: 300px;
 }
 

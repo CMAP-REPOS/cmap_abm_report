@@ -698,7 +698,7 @@
       </div>
       <div
         id="5"
-        class="tab-pane container">
+        class="tab-pane container-fluid">
         <div class="row">
         <div class="col-md-12">
           <br/>
@@ -715,26 +715,25 @@
         </div>
         </div>
         <div class="row">
-          <div class="col col-md-2" align = "center">
+          <div class="col col-md-3">
+              <div class="colborder"></div><!-- end -->
+              <h3>Trips by Mode</h3>
+              <br>
+              <svg id="modelegend"></svg><!-- end -->
+
             <div class="small">
               <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              Hover over pie chart to compare trips by mode
+              <b>Sources</b><br>
+              Observed -Travel Tracker Survey, 2007-2008. <br>
+              Modeled- CMAP ABM - 2010 Scenario.
+            </p>
+            <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png" width="15px"><br>
+            <p>Hover over bars to compare trips by mode</p>
             </div>
           </div>
-          <div class="col col-md-5" align = "center">
-            <h5><b>Observed Mode Share</b></h5>
-            <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
-            <div id="pieMode1"></div>
+          <div class="col col-md-7">
+              <div class="colborder"></div><!-- end -->
+            <div id="stackedmode"></div>
           </div>
           <div class="col col-md-5" align = "center">
             <h5><b>Modeled Mode Share</b></h5>
@@ -883,7 +882,7 @@
       </div>
       <div
         id="6"
-        class="tab-pane container">
+        class="tab-pane container-fluid">
         <div class="row">
           <div class="col-md-12">
             <br/>
@@ -1000,8 +999,8 @@
           <br>
           <select id="catPurpDist">
             <option value="All">All</option>
-            <option value="Less than 1 Mile">Less than 1 Mile</option>
-            <option value="1-5 Mile">1-5 Mile</option>
+            <option value="Less than 2.5 Mile">Less than 2.5 Mile</option>
+            <option value="2.5-5 Mile">2.5-5 Mile</option>
             <option value="5-10 Miles">5-10 Miles</option>
             <option value="10-15 Miles">10-15 Miles</option>
             <option value="15-20 Miles">15-20 Miles</option>
@@ -1398,6 +1397,7 @@
 
   <!-- D3 scripts -->
   <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3-format.v1.min.js"></script>
 
   <script src="https://underscorejs.org/underscore-min.js"></script>
     <script src="https://rawgit.com/sghall/7859113/raw/422da4401f7d4fc0352a7c49961d24f03716be7a/gistfile1.js"></script>
@@ -1549,6 +1549,7 @@
   <script>hStackedBar("data/csv27_transit_boardings_obs.csv","data/csv28_transit_boardings_model.csv","transitBoardingsBar_obs","transitBoardingsBar_model");</script>
   <script>make_h_stacked("data/htest.csv","PopPersonType", "hlegend")</script>
   <script>make_h_stacked("data/htest2.csv","HouseholdSize", "hhlegend")</script>
+  <script>make_h_stacked_tripsbymode("data/csv1314_tripmode.csv","stackedmode", "modelegend")</script>
   <script>make_bubble("data/bubbletest.csv","bubbletest", "bblegend")</script>
 
 

@@ -3,13 +3,23 @@ svg {
     filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.25) );
 }
 
-svg#intromaplegend, svg#hlegend, svg#hhlegend, svg#bblegend, svg#pumsLegend, svg#activitieslegend {
+svg#intromaplegend, svg#hlegend, svg#hhlegend, svg#bblegend, svg#pumsLegend, svg#activitieslegend div#hhlegend {
   -webkit-filter: drop-shadow( 0px 0px 0px rgba(0,0,0,.3) );
   filter: drop-shadow( 0px 0px 0px rgba(0,0,0,.25) );
 }
 
 .icon:hover {
   fill:#337ab7;
+}
+
+a.calibration {
+  background-color: #1c5f83;
+  color: white;
+}
+
+a.validation {
+  background-color: #7ebea5;
+  color: white
 }
 
 div.bartooltip {
@@ -31,6 +41,10 @@ div.bartooltip {
 
 #hlegend {
   height: 250px;
+}
+
+#hhlegend {
+  height: 200px;
 }
 
 #bblegend {
@@ -185,3 +199,44 @@ width: 100px;
     position: relative;
     border: none;
 }
+
+.axis { font: 14px sans-serif; }
+
+
+.colborder {
+  border-top: 3px solid;
+}
+
+#wflowmap{
+    width: 100%;
+    height: 400px;
+    margin-left: 0px;
+    margin-right: 20px
+}
+#interstate_map{
+    width: 100%;
+    height: 475px;
+    margin-left: 20px;
+    margin-right: 20px
+}
+#main {
+  width: 960px;
+}
+.axis .domain {
+  display: none;
+}
+text_div
+{
+  display: inline-block;
+}
+
+div
+{
+  display:inherit;
+}
+
+table{ border:none; width:33%; display:inline-table}
+table {font-size: 12px;}
+
+td{text-align: right}
+th{text-align: center;}

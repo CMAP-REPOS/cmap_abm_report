@@ -19,63 +19,18 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <style>
-
-    .axis { font: 14px sans-serif; }
-
-
-    .colborder {
-      border-top: 3px solid;
-    }
-
-    #wflowmap{
-        width: 100%;
-        height: 400px;
-        margin-left: 0px;
-        margin-right: 20px
-    }
-    #interstate_map{
-        width: 100%;
-        height: 475px;
-        margin-left: 20px;
-        margin-right: 20px
-    }
-    #main {
-      width: 960px;
-    }
-    .axis .domain {
-      display: none;
-    }
-    text_div
-    {
-      display: inline-block;
-    }
-
-    div
-    {
-      display:inherit;
-    }
-
-    table{ border:none; width:33%; display:inline-table}
-    table {font-size: 12px;}
-
-    td{text-align: right}
-    th{text-align: center;}
-    </style>
-
   </head>
   <body>
     <div>
       <h3>
           <img src='data/cmap_shortid_margins_CMYK-01.png' height="70px">
-        <a href="https://www.cmap.illinois.gov/data/transportation/modeling?doAsUserId=fH2a30wm7Fk%3D%2F-%2Fasset_publisher%2FQ4En%2Fcontent%2Fid%2F322604" target="_blank" style="vertical-align: sub">
+        <a href="https://www.cmap.illinois.gov/data/transportation/modeling?doAsUserId=fH2a30wm7Fk%3D%2F-%2Fasset_publisher%2FQ4En%2Fcontent%2Fid%2F322604" target="_blank" style="vertical-align: sub; font-variant-caps: all-petite-caps">
          Modeling
         </a>
       </h3>
 
       <br/>
 
-      <br/>
 
       <ul class="nav nav-tabs">
         <li class="active">
@@ -89,6 +44,7 @@
 
         <li >
           <a
+            class="calibration"
             href="#2"
             role="tab"
             data-toggle="tab">
@@ -98,6 +54,7 @@
 
         <li>
           <a
+          class="calibration"
             href="#3"
             role="tab"
             data-toggle="tab">
@@ -108,6 +65,7 @@
 
         <li>
           <a
+          class="calibration"
             href="#5"
             role="tab"
             data-toggle="tab">
@@ -117,6 +75,7 @@
 
         <li>
           <a
+          class="calibration"
             href="#6"
             role="tab"
             data-toggle="tab">
@@ -126,6 +85,7 @@
 
         <li>
           <a
+          class="calibration"
             href="#4"
             role="tab"
             data-toggle="tab">
@@ -135,6 +95,7 @@
 
         <li>
           <a
+          class="calibration"
             href="#7"
             role="tab"
             data-toggle="tab">
@@ -144,6 +105,7 @@
 
         <li>
           <a
+          class="validation"
             href="#8"
             role="tab"
             data-toggle="tab">
@@ -153,6 +115,7 @@
 
         <li>
           <a
+          class="validation"
             href="#9"
             role="tab"
             data-toggle="tab">
@@ -485,9 +448,15 @@
           </div>
         </div> <!-- end row -->
         <div class="row">
-          <br/>
-          <br/>
-          <div class="col col-md-4">
+            <div class="col-md-3">
+                <div class="colborder"></div>
+                <h3>Auto Ownership</h3>
+                <p>
+                  Auto ownership plays an important role in individuals’ travel behavior decisions and helps define the set of travel mode options available to them.  “Auto sufficiency” is a concept often applied to understand constraints a household may have on travel choices -- generally categorizing household as having zero autos, having more workers in the household than autos, or having at least as many auto as workers in the household.  This is a key measure in determining which households may be transit-dependent.
+                </p>
+            </div>
+          <div class="col-md-4" style="width: 29.16666666666667%">
+              <div class="colborder"></div>
           <h5><b>Number of Households by Vehicles Owned</b></h5>
             <br>
             <div id="auto_counts" style="width : 86%" align="center"></div>
@@ -497,7 +466,8 @@
               Modeled- CMAP ABM - 2010 Scenario. <br>
             </div>
           </div>
-          <div class = "col col-md-8">
+          <div class = "col-md-4" style="width: 29.16666666666667%">
+              <div class="colborder"></div>
             <br>
             <br>
             <br>
@@ -506,18 +476,12 @@
                   preserveAspectRatio="xMidYMid meet"></svg>
             </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <br/>
-            <br/>
-            <h3>Household Detail</h3>
-            <p>
-            </p>
-          </div>
-        </div>
+
         <div class="row">
           <br>
-          <div class="col col-md-4">
+          <div class="col-md-3">
+              <div class="colborder"></div>
+                <h3>Household Detail</h3>
             <h5><b>Distribution of Auto Ownership by <div id= "dtitle"></div></b></h5>
             <div class="small">
               Select data type for comparison from dropdown
@@ -534,19 +498,10 @@
                   Modeled- CMAP ABM - 2010 Scenario. <br>
                 </div>
           </div>
-          <div class="col col-md-8">
+          <div class="col col-md-7">
+              <div class="colborder"></div>
               <div id="stackedbar"></div>
             </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <br/>
-            <br/>
-            <h3>PLACE HOLDER</h3>
-            <p>
-
-            </p>
-          </div>
         </div>
       </div>
       <!-- Work Flows -->
@@ -577,23 +532,23 @@
               <div id="wflowmap"></div>
            
           </div>
-          <div class="col col-md-4" align = "center">
+          <div class="col col-md-4" style="width: 29.16666666666667%" align = "center">
               <div class="colborder"></div>
               <h5><b>Observed Work Flows</b></h5>
               <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
               <div id="obsChord"></div>
           </div>
-          <div class="col col-md-4" align = "center">
+          <div class="col col-md-4" style="width: 29.16666666666667%" align = "center">
               <div class="colborder"></div>
               <h5><b>Modeled Work Flows</b></h5>
               <p style="font-size:small;">CMAP ABM - 2010 Scenario</p>
               <div id="modelChord"></div>
           </div>
         </div>
+        <br><br>
         <div class="row">
-          <div class="col-md-6">
-            <br/>
-            <br/>
+          <div class="col-md-3">
+              <div class="colborder"></div>
             <h3>Work Trips to <text_div id="pTitle"></text_div></h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis.
@@ -626,26 +581,21 @@
                 </div>
 
           </div>
-          <div class="col-md-6">
-            <br/>
-            <br/>
-            <br/>
+          <div class="col-md-7">
+              <div class="colborder"></div>
             <div id="VChart"></div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-12">
-            <h3>Work Trips by Mode and Distance</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis. Nullam scelerisque lorem at felis placerat, vel cursus neque imperdiet. Donec interdum elementum metus, et convallis est cursus ut. Nulla finibus lorem a imperdiet fringilla. Donec pharetra tristique ultrices. Pellentesque at arcu quis turpis blandit dictum. Fusce dignissim ut elit sed blandit. Nulla volutpat posuere sapien. Donec quis consectetur eros. Pellentesque sodales semper fermentum.
-            </p>
-            <!--HOLD FOR Work Trips by Mode & Distance-->
-          </div>
-        </div>
-        <div class="row">
           <br/>
           <br/>
-          <div class="col col-md-2">
+          <div class="col col-md-3">
+              <div class="colborder"></div>
+                  <h3>Work Trips by Mode and Distance</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis. Nullam scelerisque lorem at felis placerat, vel cursus neque imperdiet. Donec interdum elementum metus, et convallis est cursus ut. Nulla finibus lorem a imperdiet fringilla. Donec pharetra tristique ultrices. Pellentesque at arcu quis turpis blandit dictum. Fusce dignissim ut elit sed blandit. Nulla volutpat posuere sapien. Donec quis consectetur eros. Pellentesque sodales semper fermentum.
+                  </p>
+                  <!--HOLD FOR Work Trips by Mode & Distance-->
             <h5><b>Mean Distance To Work by <div id= "modeDTitle"></div></b></h5>
             <div class="small">
               Select data type for comparison from dropdown
@@ -671,25 +621,24 @@
                 Modeled- CMAP ABM - 2010 Scenario. <br>
               </div>
           </div>
-          <div class="col col-md-10">
+          <div class="col col-md-7">
+              <div class="colborder"></div>
             <div id="ModeByDistance"></div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <br/>
-            <br/>
-            <h3>Work-Based Walk Trips by Distance</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis. Nullam scelerisque lorem at felis placerat, vel cursus neque imperdiet. Donec interdum elementum metus, et convallis est cursus ut. Nulla finibus lorem a imperdiet fringilla. Donec pharetra tristique ultrices. Pellentesque at arcu quis turpis blandit dictum. Fusce dignissim ut elit sed blandit. Nulla volutpat posuere sapien. Donec quis consectetur eros. Pellentesque sodales semper fermentum.
-            </p>
-            <!--HOLD FOR Work-Based Trips by Mode & Distance-->
-          </div>
-        </div>
+
         <div class="row">
           <br/>
           <br/>
-          <div class="col col-md-2">
+          <div class="col col-md-3">
+              <div class="colborder"></div>
+              <br/>
+              <br/>
+              <h3>Work-Based Walk Trips by Distance</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis. Nullam scelerisque lorem at felis placerat, vel cursus neque imperdiet. Donec interdum elementum metus, et convallis est cursus ut. Nulla finibus lorem a imperdiet fringilla. Donec pharetra tristique ultrices. Pellentesque at arcu quis turpis blandit dictum. Fusce dignissim ut elit sed blandit. Nulla volutpat posuere sapien. Donec quis consectetur eros. Pellentesque sodales semper fermentum.
+              </p>
+              <!--HOLD FOR Work-Based Trips by Mode & Distance-->
             <h5><b>Mean Distance of Work-Based Trips by <div id= "wbmodeDTitle"></div></b></h5>
             <div class="small">
               Select data type for comparison from dropdown
@@ -714,7 +663,8 @@
                 Modeled- CMAP ABM - 2010 Scenario. <br>
               </div>
           </div>
-          <div class="col col-md-10">
+          <div class="col col-md-7">
+              <div class="colborder"></div>
             <div id="wbModeByDistance"></div>
           </div>
         </div>
@@ -1157,18 +1107,27 @@
       <div
         id="7"
         class="tab-pane container">
-        <div class="col-md-12">
+        <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-7">
           <br/>
           <br/>
 
-          <h3>Transit Boardings by Mode</h3>
-
+          <h3>Transit Trips</h3>
           <p>
-            For each transit mode (Metra, CTA Rail, or Bus), the map displays the distribution of boardings by ring sector.  Ring sectors sum to 100% for each transit mode. <p>
-            Choose the transit mode by clicking the Metra, CTA Rail, or Bus buttons.  Choose the data source (Model, Survey, or Difference) using the first dropdown button.
-            Hover over each ring sector to display data, and use the layer icon in the bottom left to activate CTA Rail and Metra line layers. </p><p>
-            <b>Example:</b> In the model, 19.7% of all Metra boardings occured in ring sector 2S.  In the survey, 7.8% of Metra boardings occured in ring sector 2S.  This is a difference of 11.9%. </p>
-          </p><br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+              improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+              sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+              factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+              qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+              formarum quam civis excellen
+            </p>
+          <br></div>
+        </div>
+          <div class="row">
+              <div class="col-md-3">
+                  <div class="colborder"></div><!-- end -->
+                  <h4>Transit Boardings by Mode</h4>
           <div class="btn-group" role="group">
           <div class="btn-group" role="group" style="margin-left: 20px">
           <button type="button" id="ModelSurvey" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1177,26 +1136,40 @@
           <ul class="dropdown-menu" aria-labelledby="ModelSurvey">
             <li><a class="dropdown-item">Model</a></li>
             <li><a class="dropdown-item">Survey</a></li>
-            <li><a class="dropdown-item">Difference</a></li>
+            <li><a class="dropdown-item">Diff</a></li>
           </ul>
           <button type="button" id="metra" class="btn btn-info">Metra</button>
-          <button type="button" id="cta" class="btn btn-light">CTA Rail</button>
+          <button type="button" id="cta" class="btn btn-light">CTA</button>
           <button type="button" id="pace" class="btn btn-light">Bus</button>
-        </div></div>
+        </div>
+      </div>
+      <div id='transitsidebar'></div>
+      <br>
+
+      <div class="small">
+          
+           Ring sectors sum to 100% for each transit mode. 
+          <b>Example:</b> In the model, 19.7% of all Metra boardings occured in ring sector 2S.  In the survey, 7.8% of Metra boardings occured in ring sector 2S.  This is a difference of 11.9%. 
+          <br>Choose the data source using the first dropdown button.  Hover over map to display data, and use the layer icon in the bottom left to activate CTA Rail and Metra line layers. 
+          Express and local bus combined. <br>
+          <b>Sources</b><br>
+          Survey - Travel Tracker Survey, 2007-2008.<br>
+          Modeled - CMAP ABM - 2010 Scenario. <br>
+        </div>
+      </div>
+      <div class="col-md-7">
+          <div class="colborder"></div><!-- end -->
         <div id="map"></div>
           <br/>
+        </div>
+        </div>
 
-          <div class="small">
-              Express and local bus combined. <br>
-              <b>Sources</b><br>
-              Survey - Travel Tracker Survey, 2007-2008.<br>
-              Modeled - CMAP ABM - 2010 Scenario. <br>
-            </div>
           <br>
-
-          <h3>Transit Access</h3>
           <div class="row">
-            <div class="col col-md-2" align="center">
+            <div class="col col-md-3" align="center">
+                <div class="colborder"></div><!-- end -->
+
+                <h3>Transit Access</h3>
               <div class="small">
                 <br>
                 <br>
@@ -1213,37 +1186,37 @@
                 </div>
               </div>
 
-              <div class="col col-md-5" align = "center">
+              <div class="col col-md-4" style="width: 29.16666666666667%" align = "center">
+                  <div class="colborder"></div><!-- end -->
+
                 <h5><b>Observed Transit Access</b></h5>
                 <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
                 <div id="pieTransitSurveyMode"></div>
               </div>
-              <div class="col col-md-5" align = "center">
+              <div class="col col-md-4" style="width: 29.16666666666667%" align = "center">
+                  <div class="colborder"></div><!-- end -->
+
                 <h5><b>Modeled Transit Access</b></h5>
                 <p style="font-size:small;">CMAP ABM - 2010 Scenario</p>
                 <div id="pieTransitModelMode"></div>
               </div>
             </div>
 
-          <div class="row">
-              <div class="col-md-12">
-                <br/>
-                <br/>
-                <h3>Transit Trips by Mode of Access and Distance</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
-                  improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
-                  sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
-                  factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-                  qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
-                  formarum quam civis excellen
-                </p>
-              </div>
-            </div>
+
             <div class="row">
               <br/>
               <br/>
-              <div class="col col-md-2">
+              <div class="col col-md-3">
+                  <div class="colborder"></div><!-- end -->
+                        <h3>Transit Trips by Mode of Access and Distance</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+                          improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+                          sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+                          factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+                          qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+                          formarum quam civis excellen
+                        </p>
                 <h5><b><div id= "TranDistTitle"></div> Trips</b></h5>
                 <div class="small">
                   Select data type for comparison from dropdown
@@ -1260,30 +1233,28 @@
                     Modeled - CMAP ABM - 2010 Scenario. <br>
                   </div>
               </div>
-              <div class="col col-md-10">
+              <div class="col col-md-7">
+                  <div class="colborder"></div><!-- end -->
+
                 <div id="TranDist"></div>
 
               </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                  <br/>
-                  <br/>
-                  <h3>Transit Trips by Income</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
-                    improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
-                    sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
-                    factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-                    qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
-                    formarum quam civis excellen
-                  </p>
-                </div>
-              </div>
+           
               <div class="row">
                 <br/>
                 <br/>
-                <div class="col col-md-2">
+                <div class="col col-md-3">
+                  <div class="colborder"></div><!-- end -->
+                          <h3>Transit Trips by Income</h3>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+                            improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+                            sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+                            factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+                            qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+                            formarum quam civis excellen
+                          </p>
                   <h5><b><div id= "TranIncomeTitle"></div> Trips</b></h5>
                   <div class="small">
                     Select data type for comparison from dropdown
@@ -1300,30 +1271,27 @@
                       Modeled - CMAP ABM - 2010 Scenario. <br>
                     </div>
                 </div>
-                <div class="col col-md-10">
+                <div class="col col-md-7">
+                    <div class="colborder"></div><!-- end -->
                   <div id="TranIncome"></div>
 
                 </div>
               </div>
-              <div class="row">
-                  <div class="col-md-12">
-                    <br/>
-                    <br/>
-                    <h3>Transit Trips by Ratio of Autos to Adults</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
-                      improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
-                      sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
-                      factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-                      qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
-                      formarum quam civis excellen
-                    </p>
-                  </div>
-                </div>
+             
                 <div class="row">
                   <br/>
                   <br/>
-                  <div class="col col-md-2">
+                  <div class="col col-md-3">
+                      <div class="colborder"></div><!-- end -->
+                            <h3>Transit Trips by Ratio of Autos to Adults</h3>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+                              improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+                              sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+                              factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+                              qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+                              formarum quam civis excellen
+                            </p>
                     <h5><b><div id= "TranAutoAdultTitle"></div> Trips</b></h5>
                     <div class="small">
                       Select data type for comparison from dropdown
@@ -1340,94 +1308,178 @@
                         Modeled - CMAP ABM - 2010 Scenario. <br>
                       </div>
                   </div>
-                  <div class="col col-md-10">
+                  <div class="col col-md-7">
+                      <div class="colborder"></div><!-- end -->
                     <div id="TranAutoAdult"></div>
 
                   </div>
                 </div>
-        </div>
       </div>
-      <div id="8" class="tab-pane container">
+      <div id="8" class="tab-pane container-fluid">
+          <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-7">
+                <br/>
+                <br/>
+      
+                <h3>Highway Assignment</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+                    improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+                    sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+                    factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+                    qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+                    formarum quam civis excellen
+                  </p>
+                <br></div>
+              </div>
+        <div class="row">
+        <div class="col-md-3">
+            <div class="colborder"></div><!-- end -->
 
-        <div class="col-md-12">
-          <br/>
-          <br/>
-          <h3>Comparison of Daily VMT Shares by County</h3>
+            <h3>Comparison of Daily VMT Shares by County</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+                improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+                sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+                factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+                qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+                formarum quam civis excellen
+              </p>
+
+              <div class="small">
+                  <b>Sources</b><br>
+                  Survey - Illinois Travel Statistics 2015<br>
+                  Modeled - CMAP ABM - 2015 Scenario. <br>
+                </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4" style="width: 29.16666666666667%">
+            <div class="colborder"></div><!-- end -->
+
           <div id="vmt_county_tbl" style = "width: 50%"></div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4" style="width: 29.16666666666667%">
+            <div class="colborder"></div><!-- end -->
+
           <div id="vmtcounty" ></div>
-          <div class="small">
-              <b>Sources</b><br>
-              Survey - Illinois Travel Statistics 2015<br>
-              Modeled - CMAP ABM - 2015 Scenario. <br>
-            </div>
+
         </div>
-       <div class="col-md-12">
+      </div>
+      <div class="row">
+       <div class="col-md-3">
+          <div class="colborder"></div><!-- end -->
+
           <h3>Comparison of Daily VMT Shares by County and Facility Type</h3>
           <br><br><br>
-          <center><div id="cfstack"></div></center>
           <div class="small">
               <b>Sources</b><br>
               Survey - Illinois Travel Statistics 2015<br>
               Modeled - CMAP ABM - 2015 Scenario. <br>
             </div>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-7">
+            <div class="colborder"></div><!-- end -->
+
+            <center><div id="cfstack"></div></center>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+            <div class="colborder"></div><!-- end -->
+
           <h3>Observed vs. Modeled Average Daily Link Volumes</h3>
           <br>
           <p style="text-align:right">r<sup>2</sup> = <text_div id="r2" style="padding-right: 100px"></text_div></p>
-          <center><div id="scatter_vmt"></div></center>
         </div>
-        <div class="col-md-12">
-          <h3>Comparison of Interstate Daily VMT By Auto and Truck</h3>
+        <div class="col-md-7">
+            <div class="colborder"></div><!-- end -->
+
+            <center><div id="scatter_vmt"></div></center>
         </div>
-        <div class="col-md-6">
-          <br>
-          <br>
-        <div id="interstate_map"></div>
-        </div>
+      </div>
+      <div class="row">
         <div class="col-md-3">
+            <div class="colborder"></div><!-- end -->
+
+          <h3>Comparison of Interstate Daily VMT By Auto and Truck</h3>
+          <div id="interstate_map"></div>
+        </div>
+        <div class="col-md-4" style="width: 29.16666666666667%">
+            <div class="colborder"></div><!-- end -->
+
         <center><div id="interstateVMTbar_obs"></div></center>
         </div>
-        <div class="col-md-3">
-        <center><div id="interstateVMTbar_model"></div></center>
-        </div>
+        <div class="col-md-4" style="width: 29.16666666666667%">
+            <div class="colborder"></div><!-- end -->
 
-        <div class="col-md-6">
+        <center><div id="interstateVMTbar_model"></div></center>
+        </div></div>
+        <div class="row">
+        <div class="col-md-3">
+            <div class="colborder"></div><!-- end -->
+
           <h3>Daily VMT Comparison by Volume Range (7 Counties)</h3>
+          </div>
+        <div class="col-md-7">
+            <div class="colborder"></div><!-- end -->
+
           <h4>Interstate</h4>
           <center><div id="vrange_int"></div></center>
           <h4>Arterial</h4>
           <center><div id="vrange_art"></div></center>
           <h4>Total</h4>
           <center><div id="vrange_total"></div></center>
-
-
-          <h3>Root Mean Squared Error Analysis (7 Counties)</h3>
-          <center><div id="rmse_7"></div></center>
+          </div>
         </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="colborder"></div><!-- end -->
+          <h3>Root Mean Squared Error Analysis (7 Counties)</h3>
+          </div>
+          <div class="col-md-7">
+              <div class="colborder"></div><!-- end -->
+          <center><div id="rmse_7"></div></center>
+        </div></div>
 
         </div>
 
 
         <!-- TRANSIT ASSIGNMENT -->
-        <div id="9" class="tab-pane container">
-          <div class="col-md-12">
-            <h3>Transit Boardings by Line</h3>
-          </div>
-          <div class="col-md-6">
-            <br>
-            <br>
-          <div id="transit_map"></div>
-          </div>
+        <div id="9" class="tab-pane container-fluid">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-7">
+                  <br/>
+                  <br/>
+        
+                  <h3>Transit Assignment</h3>
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+                      improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+                      sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+                      factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+                      qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+                      formarum quam civis excellen
+                    </p>
+                  <br></div>
+                </div>
+          <div class="row">
           <div class="col-md-3">
+              <div class="colborder"></div><!-- end -->
+
+            <h3>Transit Boardings by Line</h3>
+            <div id="transit_map"></div>
+          </div>
+          <div class="col-md-4" style="width: 29.16666666666667%">
+              <div class="colborder"></div><!-- end -->
+
           <center><div id="transitBoardingsBar_obs"></div></center>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4" style="width: 29.16666666666667%">
+              <div class="colborder"></div><!-- end -->
+
           <center><div id="transitBoardingsBar_model"></div></center>
+          </div>
           </div>
         </div>
 

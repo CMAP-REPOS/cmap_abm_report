@@ -1,12 +1,11 @@
 function make_h_stacked(csv_file,divID, legendID){
   var margin = {top: 80, right: 10, bottom: 0, left: 75},
-    width = 900 - margin.left - margin.right,
+    width = 700 - margin.left - margin.right,
     height = 300 - margin.top - margin.bottom;
 
 
-
   var g = d3.select("#"+divID).append("svg")
-  .attr("width", width + margin.left + margin.right)
+  .attr("width", "100%")
   .attr("height", height + margin.top + margin.bottom)
   .attr("align","center")
   .append("g")

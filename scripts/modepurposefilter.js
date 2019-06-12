@@ -24,7 +24,17 @@ function make_h_stacked_tripsbymode(csv_file,divID, legendID){
       Drive_alone_pay: 'SOV',
       Drive_to_transit: 'Transit',
       Shared_ride_2plus_pay: 'HOV',
-      Taxi: 'HOV'
+      Taxi: 'HOV',
+      work: 'Mandatory',
+      shop: 'Non-mandatory',
+      maintenance: 'Non-mandatory',
+      escort: 'Non-mandatory',
+      discretionary: 'Non-mandatory',
+      eating_out: 'Non-mandatory',
+      school: 'Mandatory',
+      visiting: 'Non-mandatory',
+      work_based: 'Non-mandatory',
+      university: 'Mandatory'
     }
 
       var y = d3.scaleBand()
@@ -60,6 +70,9 @@ function make_h_stacked_tripsbymode(csv_file,divID, legendID){
           z.domain(data.columns.slice(1));
 
           var mouseover = function(d, i) {
+            var coordinates = d3.mouse(this);
+            var x = coordinates[0];
+            var y = coordinates[1];
             // what subgroup are we hovering?
             var subgroupName = d3.select(this.parentNode).datum().key; // This was the tricky part
             var subgroupValue = d.data[subgroupName];
@@ -72,8 +85,8 @@ function make_h_stacked_tripsbymode(csv_file,divID, legendID){
                 .data(function (d) {
                   if(d.key == subgroupName){
                     //this csv is in the other order, so the names are switched!!
-                    obsvalue =  (d[0].data[subgroupName])
-                    modelvalue =  (d[1].data[subgroupName])
+                    modelvalue =  (d[0].data[subgroupName])
+                    obsvalue =  (d[1].data[subgroupName])
                   }
                   return d
                 })
@@ -85,13 +98,13 @@ function make_h_stacked_tripsbymode(csv_file,divID, legendID){
               div.html(
                 typeobj[subgroupName] +
                 "<br><b><p style='font-size: 12px'; color: grey'>" + subgroupName.replace(/_/g, " ") +
-                "</p></b><p style='color:rgb(28, 78, 128); font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(obsvalue) +
+                "</p></b><p style='color:rgb(28, 78, 128); font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(modelvalue) +
                 "</p><p style='color:grey; font-size: 10px;'> modeled" +
-                "</p><p style='color:rgb(166, 186, 206); font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(modelvalue) +
+                "</p><p style='color:rgb(166, 186, 206); font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(obsvalue) +
                 "</p><p style='color:grey; font-size: 10px;'> observed </p>"
                 )
-                .style("left", (d3.event.pageX - 300) + "px")
-                .style("top", (d3.event.pageY - 350) + "px");
+                .style("left", (x + 100) + "px")
+                .style("top", (y + 100) + "px");
 
               // Highlight all rects of this subgroup with opacity 0.8. It is possible to select them since they have a specific class = their name.
               d3.selectAll("."+ subgroupName)

@@ -27,6 +27,10 @@ function make_h_stacked(csv_file,divID, legendID){
     var stack = d3.stack()
         .offset(d3.stackOffsetExpand);
 
+    var div = d3.select("#" + divID).append("div")
+      .attr("class", "bartooltip")
+      .style("opacity", 0);
+
     d3.csv(csv_file, type, function (error, data) {
         if (error) throw error;
 
@@ -42,6 +46,9 @@ function make_h_stacked(csv_file,divID, legendID){
         z.domain(data.columns.slice(1));
 
         var mouseover = function(d, i) {
+          var coordinates = d3.mouse(this);
+          var x = coordinates[0];
+          var y = coordinates[1];
           // what subgroup are we hovering?
           var subgroupName = d3.select(this.parentNode).datum().key; // This was the tricky part
           var subgroupValue = d.data[subgroupName];
@@ -53,25 +60,29 @@ function make_h_stacked(csv_file,divID, legendID){
           var bardata = serie.selectAll("rect")
               .data(function (d) {
                 if(d.key == subgroupName){
-                  obsvalue =  (d[0].data[subgroupName])
-                  modelvalue =  (d[1].data[subgroupName])
+                  modelvalue =  (d[0].data[subgroupName])
+                  obsvalue =  (d[1].data[subgroupName])
                 }
                 return d
               })
 
           //console.log(obsvalue)
+          div.transition()
+          .duration(200)
+          .style("opacity", .9);
+          div.html(
+            "<br><b><p style='font-size: 12px'; color: grey'>" + subgroupName.replace(/_/g, " ") +
+            "</p></b><p style='color:rgb(28, 78, 128); font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(modelvalue) +
+            "</p><p style='color:grey; font-size: 10px;'> modeled" +
+            "</p><p style='color:rgb(166, 186, 206); font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(obsvalue) +
+            "</p><p style='color:grey; font-size: 10px;'> observed </p>"
+            )
+            .style("left", (x + 100) + "px")
+            .style("top",  (y + 100) + "px");
 
           // Highlight all rects of this subgroup with opacity 0.8. It is possible to select them since they have a specific class = their name.
           d3.selectAll("."+subgroupName)
             .style("opacity", 1)
-            .append("text")
-              .attr("x", 60)
-              .attr("y", -30) // 100 is where the first dot appears. 25 is the distance between dots
-              .text(subgroupName.replace(/_/g, " ") + " - Observed Total = " + obsvalue + " | Modeled Total = "+modelvalue)
-              .attr("text-anchor", "left")
-              .style("alignment-baseline", "middle")
-              .style("fill","black")
-              .style("font-size","16px")
         }
 
       // When user do not hover anymore

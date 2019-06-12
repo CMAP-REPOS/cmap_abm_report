@@ -30,8 +30,8 @@
 
     #wflowmap{
         width: 100%;
-        height: 800px;
-        margin-left: 20px;
+        height: 400px;
+        margin-left: 0px;
         margin-right: 20px
     }
     #interstate_map{
@@ -105,14 +105,6 @@
           </a>
         </li>
 
-        <li>
-          <a
-            href="#4"
-            role="tab"
-            data-toggle="tab">
-            Work Flows
-          </a>
-        </li>
 
         <li>
           <a
@@ -129,6 +121,15 @@
             role="tab"
             data-toggle="tab">
             Trip Activities
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#4"
+            role="tab"
+            data-toggle="tab">
+            Work Flows
           </a>
         </li>
 
@@ -190,7 +191,7 @@
             <div class="colborder"></div><!-- end -->
             <h4>CMAP Modeling Area and Network</h4>
             <svg id="intromaplegend" ></svg><br>
-            <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png" width="15px"><br>
+            <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
             <p>Click within modeling area to view county name</p>
           </div><!-- end -->
           <div class="col-md-7">
@@ -208,128 +209,137 @@
             <h4>Model Steps</h4>
             <p>The following provides a brief outline of the major steps involved in running CMAP’s ABM.  An initial set of procedures determines zonal accessibility measures and identifies network connectivity for transit trips.  Preliminary sets of highway and transit trip assignments are run to generate realistic congested travel times that are used by CT-RAMP when daily activities are scheduled.</p>
             <br>
-            <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png" width="15px"><br>
+            <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
             <p>Click on modeling step panel to reveal description</p>
           </div> <!-- end -->
           <div class="col-md-7">
             <div class="colborder"></div><!-- end -->
             <br>
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingOne">
-                    <h4 class="panel-title">
-                      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        <tabstyle>1 - Population Synthesis</tabstyle>
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
-                        A synthetic population provides the foundation for modeling individuals’ travel behavior within an activity-based model. Using Census data and other socio-economic information, a complete set of households for a modeling area is developed. This dataset contains all of the relevant attributes about each household and for each individual living in those households that are required by the ABM. While the synthetic population is statistically representative of the Census data, the actual households and individuals are “synthetic” in that they do not represent identifiable people and an individual household in the Census data may be replicated numerous times in order to generate a complete distribution of households in the modeling inputs.  All of the subsequent steps in the ABM rely on the data provided in the synthetic population.
-                    </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      <tabstyle>1 - Population Synthesis</tabstyle>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                      A synthetic population provides the foundation for modeling individuals’ travel behavior within an activity-based model. 
+                      Using Census data and other socio-economic information, a complete set of households for a modeling area is developed 
+                      (see <a href="#2" role="tab" data-toggle="tab">Population Synthesis</a> tab). This dataset contains all of the relevant attributes about each household and for each individual living in those households that are required by the ABM. While the synthetic population is statistically representative of the Census data, the actual households and individuals are “synthetic” in that they do not represent identifiable people and an individual household in the Census data may be replicated numerous times in order to generate a complete distribution of households in the modeling inputs.  All of the subsequent steps in the ABM rely on the data provided in the synthetic population.
                   </div>
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTwo">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <tabstyle>2 - Long Term Location Choices</tabstyle>
-                        </a>
-                    </h4>
-                  </div>
-                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                      <div class="panel-body">
-                          Two sub-models are included in this step: one that models the usual workplace locations for workers and one that models the usual school location for students.  The workplace location model accounts for the worker’s occupation, as identified by the industry category they are employed in within the synthetic person file.  This information is paired with jobs within the employment categories summarized at a fine geographic level to ensure that workers are sent to locations where they could be employed in their field.  Similarly, enrollment figures are provided for elementary schools, high schools and colleges to ensure students are sent to realistic school locations.
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            <tabstyle>3 - Individual Mobility Attributes</tabstyle>
-                        </a>
-                    </h4>
-                  </div>
-                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                      <div class="panel-body">
-                          These models simulate four mobility attributes that affect individual transport mode decisions: 1) free parking eligibility for workers in the Central Business District, i.e., a determination of whether workers will pay to park; 2) household auto ownership; 3) whether or not individuals hold transit passes; and 4) whether or not individuals have toll transponders.
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingFour">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            <tabstyle>4 - Daily Activity and Travel Pattern</tabstyle>
-                          </a>
-                        </h4>
-                      </div>
-                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                        <div class="panel-body">
-                            These models schedule activities and travel tours for all household members.  The first sub-model classifies daily travel patterns into three types: </li>
-                            <ul><li>Mandatory (work and school) – includes at least one out-of-home mandatory activity;</li>
-                            <li>Non-mandatory (other purposes) – includes at least one out-of-home non-mandatory activity but no out-of-home mandatory activities;</li>
-                            <li>Home – in-home activities only.</li></ul>
-
-                            <p>These activities are modeled as joint choices so that decisions made by household members affect the decisions of other members of the household.  The next sub-models estimate the frequency and time-of-day for mandatory activities.  These are given a higher priority for scheduling than non-mandatory and home activities.  Following the scheduling of mandatory activities, individuals have “residual time windows” which can be used to schedule other activities including joint travel with other household members.
-                            </p>
-                            <p>The next sub-model estimates joint travel for household members.  All characteristics of joint travel (travel purpose, individual household members traveling, destination and time-of-day) are simulated.  Joint travel is conditional upon the available time window for each household member following the scheduling of mandatory activities.
-                            </p><p>
-                            The next sub-model generates maintenance tours, which cover shopping and other household errands.  These tasks are allocated to a single household member to carry out, and the destinations and times-of-day are generated.  These tours are developed sequentially for individuals to ensure consistency in their personal schedule.
-                            </p><p>
-                            The next sub-model simulates discretionary tours which are modeled for individual, not joint, travel.  These are also modeled sequentially so that they could all realistically occur during an individual’s day.
-                            </p><p>
-                            The final sub-model simulates at-work tours – those tours that occur during the day with the workplace as the starting and ending location.
-                            </p>
-                            <center><img src="data/daily.JPG"></center>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingFive">
-                          <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                <tabstyle>5 - Tour Level Details</tabstyle>
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                          <div class="panel-body">
-                              These sub-models determine the transport mode used on tours, the locations of intermediate stops made on the tours and the purpose of each stop.
-                        </div>
-                    </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingSix">
-                          <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                <tabstyle>6 - Trip Level Details</tabstyle>
-                          </a>
-                        </h4>
-                      </div>
-                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix">
-                        <div class="panel-body">
-                            These sub-models add details about the trips occurring within the tours including the mode of travel, the departure time form each location and the parking location for auto trips.
-                            <center><img src="data/triplevel.JPG"></center>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingSeven">
-                          <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                <tabstyle>7 - Network Simulations</tabstyle>
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven">
-                          <div class="panel-body">
-                              Following development of the complete set of tours and trips, that information is assigned to the travel networks and network equilibrium based on route choice creates congested travel times.  Highway and transit trips are assigned through separate procedures.
-                        </div>
-                    </div>
-                    </div>
               </div>
+              <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <tabstyle>2 - Long Term Location Choices</tabstyle>
+                      </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                        Two sub-models are included in this step: one that models the usual workplace locations for workers and one that models the usual school location for students.  The workplace location model accounts for the worker’s occupation, as identified by the industry category they are employed in within the synthetic person file.  This information is paired with jobs within the employment categories summarized at a fine geographic level to ensure that workers are sent to locations where they could be employed in their field.  Similarly, enrollment figures are provided for elementary schools, high schools and colleges to ensure students are sent to realistic school locations.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <tabstyle>3 - Individual Mobility Attributes</tabstyle>
+                      </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                        These models simulate four mobility attributes that affect individual transport mode decisions: 1) free parking eligibility for workers in the Central Business District, i.e., a determination of whether workers will pay to park; 2) household auto ownership; 3) whether or not individuals hold transit passes; and 4) whether or not individuals have toll transponders.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingFour">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          <tabstyle>4 - Daily Activity and Travel Pattern</tabstyle>
+                        </a>
+                      </h4>
+                    </div>
+                  <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                      <div class="panel-body">
+                          These models schedule activities and travel tours for all household members.  The first sub-model classifies daily travel patterns into three types: </li>
+                          <ul><li>Mandatory (work and school) – includes at least one out-of-home mandatory activity;</li>
+                          <li>Non-mandatory (other purposes) – includes at least one out-of-home non-mandatory activity but no out-of-home mandatory activities;</li>
+                          <li>Home – in-home activities only.</li></ul>
+
+                          <p>These activities are modeled as joint choices so that decisions made by household members affect the decisions of other members of the household.  The next sub-models estimate the frequency and time-of-day for mandatory activities.  These are given a higher priority for scheduling than non-mandatory and home activities.  Following the scheduling of mandatory activities, individuals have “residual time windows” which can be used to schedule other activities including joint travel with other household members.
+                          </p>
+                          <p>The next sub-model estimates joint travel for household members.  All characteristics of joint travel (travel purpose, individual household members traveling, destination and time-of-day) are simulated.  Joint travel is conditional upon the available time window for each household member following the scheduling of mandatory activities.
+                          </p><p>
+                          The next sub-model generates maintenance tours, which cover shopping and other household errands.  These tasks are allocated to a single household member to carry out, and the destinations and times-of-day are generated.  These tours are developed sequentially for individuals to ensure consistency in their personal schedule.
+                          </p><p>
+                          The next sub-model simulates discretionary tours which are modeled for individual, not joint, travel.  These are also modeled sequentially so that they could all realistically occur during an individual’s day.
+                          </p><p>
+                          The final sub-model simulates at-work tours – those tours that occur during the day with the workplace as the starting and ending location.
+                          </p>
+                          <center><img src="data/daily.JPG"></center>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingFive">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                              <tabstyle>5 - Tour Level Details</tabstyle>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                        <div class="panel-body">
+                            These sub-models determine the transport mode used on tours, the locations of intermediate stops made on the tours and the purpose 
+                            of each stop.
+                      </div>
+                  </div>
+                  </div>
+                  <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingSix">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                              <tabstyle>6 - Trip Level Details</tabstyle>
+                        </a>
+                      </h4>
+                    </div>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix">
+                      <div class="panel-body">
+                          These sub-models add details about the trips occurring within the tours including the mode of travel, 
+                          the departure time form each location and the parking location for auto trips. 
+                          See <a href="#5" role="tab" data-toggle="tab">Trip Mode</a> tab and 
+                            <a href="#6" role="tab" data-toggle="tab">Trip Purpose</a> tab.
+                          <center><img src="data/triplevel.JPG"></center>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingSeven">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                              <tabstyle>7 - Network Simulations</tabstyle>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven">
+                        <div class="panel-body">
+                            Following development of the complete set of tours and trips, that information is assigned to the travel networks 
+                            and network equilibrium based on route choice creates congested travel times.  Highway and transit trips are 
+                            assigned through separate procedures.  See <a href="#8" role="tab" data-toggle="tab">Highway Assignment</a> tab and 
+                            <a href="#9" role="tab" data-toggle="tab">Transit Assignment</a> tab.
+                      </div>
+                  </div>
+                  </div>
+            </div>
           </div><!-- end -->
         </div> <!--end row-->
       </div><!--end tab-->
@@ -359,7 +369,7 @@
                 Observed- Travel Tracker Survey, 2007-2008 <br>
                 Modeled- CMAP ABM - 2010 Scenario <br>
               </p>
-              <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png" width="15px"><br>
+              <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Hover over population categories to reveal details</p>
           </div> <!-- end -->
           <div class="col-md-7">
@@ -379,7 +389,7 @@
                 Observed- Travel Tracker Survey, 2007-2008 <br>
                 Modeled- CMAP ABM - 2010 Scenario <br>
               </p>
-              <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png" width="15px"><br>
+              <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Hover over household size categories to reveal details</p>
           </div> <!-- end -->
           <div class="col-md-7">
@@ -407,7 +417,7 @@
             </select><!-- end -->
             <br>
             <br>
-            <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png" width="15px"><br>
+            <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
             <p class="small">Select household attribute from dropdown to view observed and model comparison</p>
           </div><!-- end -->
           <div class="col-md-7">
@@ -438,7 +448,7 @@
               Modeled- CMAP ABM - 2010 Scenario <br>
             </p>
             <br>
-            <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png" width="15px"><br>
+            <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
             <p class="small">Hover over squares to reveal value</p>
             <div></div>
           </div> <!--end-->
@@ -542,28 +552,42 @@
       <!-- Work Flows -->
       <div
         id="4"
-        class="tab-pane container">
+        class="tab-pane container-fluid">
         <div class="row">
-          <div class="col-md-12">
-            <br/>
-            <br/>
-            <h3>Work Flows</h3>
-            <p>
-            </p>
-          </div>
+          <div class="col-md-3"></div> <!-- end -->
+        <div class="col-md-7">
+          <br/>
+          <br/>
+          <h3>Work Flows</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+            improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+            sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+            factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+            qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+            formarum quam civis excellen
+          </p>
+          <br>
         </div>
+      </div>
       <div class="row">
-          <div class="col col-md-6" align = "center">
-            <h5><b>Observed Work Flows</b></h5>
-            <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
-            <div id="obsChord"></div>
-            <h5><b>Modeled Work Flows</b></h5>
-            <p style="font-size:small;">CMAP ABM - 2010 Scenario</p>
-            <div id="modelChord"></div>
+          <div class="col col-md-3" align = "center">
+              <div class="colborder"></div>
+              <h5><b>Origin and Destination Work Flows</b></h5>
+              <div id="wflowmap"></div>
+           
           </div>
-          <div class="col col-md-6" align = "center">
-            <h5><b>Origin and Destination Work Flows</b></h5>
-            <div id="wflowmap"></div>
+          <div class="col col-md-4" align = "center">
+              <div class="colborder"></div>
+              <h5><b>Observed Work Flows</b></h5>
+              <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
+              <div id="obsChord"></div>
+          </div>
+          <div class="col col-md-4" align = "center">
+              <div class="colborder"></div>
+              <h5><b>Modeled Work Flows</b></h5>
+              <p style="font-size:small;">CMAP ABM - 2010 Scenario</p>
+              <div id="modelChord"></div>
           </div>
         </div>
         <div class="row">
@@ -728,7 +752,7 @@
               Observed -Travel Tracker Survey, 2007-2008. <br>
               Modeled- CMAP ABM - 2010 Scenario.
             </p>
-            <img src="https://img.icons8.com/metro/26/000000/mouse-left-click.png" width="15px"><br>
+            <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
             <p>Hover over bars to compare trips by mode</p>
             </div>
           </div>
@@ -743,54 +767,7 @@
             <div id="pieMode2"></div>
           </div> -->
       </div>
-      <div class="row">
-        <br/>
-        <br/>
-        <div class="col col-md-3">
-            <div class="colborder"></div><!-- end -->
-            <h3>Trips by Purpose and Mode</h3>
 
-  <br>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
-    improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
-    sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
-    factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-    qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
-    formarum quam civis excellen
-  </p>
-          <h5><b><div id= "modeTitle"></div> Trips</b></h5>
-          <div class="small">
-            Select data type for comparison from dropdown
-            </div>
-          <br>
-          <select id="catModePurp">
-            <option value="All">All</option>
-            <option value="Discretionary">Discretionary</option>
-            <option value="Eating Out">Eating Out</option>
-            <option value="Escort">Escort</option>
-            <option value="Maintenance">Maintenance</option>
-            <option value="School">School</option>
-            <option value="Shop">Shop</option>
-            <option value="University">University</option>
-            <option value="Visiting">Visiting</option>
-            <option value="Work">Work</option>
-            <option value="Work-based">Work-based</option>
-          </select>
-          <div class="small" style="margin-top: 100px;">
-              <b>Sources</b><br>
-              Observed -Travel Tracker Survey, 2007-2008. <br>
-              Modeled- CMAP ABM - 2010 Scenario. <br>
-            </div>
-        </div>
-
-        <div class="col col-md-7">
-            <div class="colborder"></div><!-- end -->
-
-          <div id="ModeByPurpose"></div>
-
-        </div>
-      </div>
       <div class="row">
           <div class="col-md-3"></div> <!-- end -->
       <div class="col-md-7">
@@ -892,6 +869,49 @@
           <div id="ModebyIncome"></div>
         </div>
       </div>
+      <div class="row">
+        <br/>
+        <br/>
+        <div class="col col-md-3">
+            <div class="colborder"></div><!-- end -->
+            <h3>Trips by Purpose and Mode</h3>
+
+  <br>
+  <p>
+    See more about trip purpose in the <a href="#6" role="tab" data-toggle="tab">Trip Activities</a> tab.  
+  </p>
+          <h5><b><div id= "modeTitle"></div> Trips</b></h5>
+          <div class="small">
+            Select data type for comparison from dropdown
+            </div>
+          <br>
+          <select id="catModePurp">
+            <option value="All">All</option>
+            <option value="Discretionary">Discretionary</option>
+            <option value="Eating Out">Eating Out</option>
+            <option value="Escort">Escort</option>
+            <option value="Maintenance">Maintenance</option>
+            <option value="School">School</option>
+            <option value="Shop">Shop</option>
+            <option value="University">University</option>
+            <option value="Visiting">Visiting</option>
+            <option value="Work">Work</option>
+            <option value="Work-based">Work-based</option>
+          </select>
+          <div class="small" style="margin-top: 100px;">
+              <b>Sources</b><br>
+              Observed -Travel Tracker Survey, 2007-2008. <br>
+              Modeled- CMAP ABM - 2010 Scenario. <br>
+            </div>
+        </div>
+
+        <div class="col col-md-7">
+            <div class="colborder"></div><!-- end -->
+
+          <div id="ModeByPurpose"></div>
+
+        </div>
+      </div>
       </div>
       <div
         id="6"
@@ -901,7 +921,7 @@
           <div class="col-md-7">
             <br/>
             <br/>
-            <h3>Trips by Purpose</h3>
+            <h3>Trip Activities</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
               improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
@@ -914,44 +934,65 @@
           </div>
         </div>
         <div class="row">
-          <div class="col col-md-3" align = "center">
-              <div class="colborder"></div><!-- end -->
-            <div class="small">
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              Hover over pie chart to compare trips by purpose
-            </div>
-          </div>
-          <div class="col col-md-4" align = "center">
-              <div class="colborder"></div><!-- end -->
-            <h5><b>Observed Trip Purpose</b></h5>
-            <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
-            <div id="piePurpose1"></div>
-          </div>
-          <div class="col col-md-4" align = "center">
-              <div class="colborder"></div><!-- end -->
-            <h5><b>Modeled Trip Purpose</b></h5>
-            <p style="font-size:small;">CMAP ABM - 2010 Scenario</p>
-            <div id="piePurpose2"></div>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-md-3"></div> <!-- end -->
-        <div class="col-md-7">
-          <br/>
-          <br/>
+          <div class="col col-md-3">
+            <div class="colborder"></div><!-- end -->
+            <h3>Trip Activities</h3>
+            <br>
+            <svg id="activitieslegend"></svg><!-- end -->
 
+          <div class="small">
+            <br>
+            <b>Sources</b><br>
+            Observed -Travel Tracker Survey, 2007-2008. <br>
+            Modeled- CMAP ABM - 2010 Scenario.
+          </p>
+          <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+          <p>Hover over bars to compare trips by mode</p>
+          </div>
         </div>
+        <div class="col col-md-7">
+            <div class="colborder"></div><!-- end -->
+          <div id="stackedactivity"></div>
+        </div>
+    </div>
+    <div class="row">
+      <br/>
+      <br/>
+      <div class="col col-md-3">
+          <div class="colborder"></div><!-- end -->
+
+          <h3>Daily Activity Patterns By Person Type</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+            improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+            sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+            factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+            qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+            formarum quam civis excellen
+          </p>
+        <h5><b><div id= "dapTitle"></div></b></h5>
+        <div class="small">
+          Select data type for comparison from dropdown
+          </div>
+        <br>
+        <select id="catdap">
+            <option value="H">Home Activity</option>
+            <option value="M">Mandatory Activity</option>
+            <option value="N">Non-Mandatory Activity</option>
+        </select>
+        <div class="small" style="margin-top: 100px;">
+            <b>Sources</b><br>
+            Observed -Travel Tracker Survey, 2007-2008. <br>
+            Modeled- CMAP ABM - 2010 Scenario. <br>
+          </div>
       </div>
+      <div class="col col-md-7">
+          <div class="colborder"></div><!-- end -->
+
+        <div id="dap"></div>
+
+      </div>
+    </div>
       <div class="row">
         <br/>
         <br/>
@@ -1111,44 +1152,7 @@
 
             </div>
           </div>
-          <div class="row">
-            <br/>
-            <br/>
-            <div class="col col-md-3">
-                <div class="colborder"></div><!-- end -->
-
-                <h3>Daily Activity Patterns By Person Type</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
-                  improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
-                  sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
-                  factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-                  qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
-                  formarum quam civis excellen
-                </p>
-              <h5><b><div id= "dapTitle"></div></b></h5>
-              <div class="small">
-                Select data type for comparison from dropdown
-                </div>
-              <br>
-              <select id="catdap">
-                  <option value="H">Home Activity</option>
-                  <option value="M">Mandatory Activity</option>
-                  <option value="N">Non-Mandatory Activity</option>
-              </select>
-              <div class="small" style="margin-top: 100px;">
-                  <b>Sources</b><br>
-                  Observed -Travel Tracker Survey, 2007-2008. <br>
-                  Modeled- CMAP ABM - 2010 Scenario. <br>
-                </div>
-            </div>
-            <div class="col col-md-7">
-                <div class="colborder"></div><!-- end -->
-
-              <div id="dap"></div>
-
-            </div>
-          </div>
+ 
       </div>
       <div
         id="7"
@@ -1444,6 +1448,9 @@
 
   <script src="https://underscorejs.org/underscore-min.js"></script>
     <script src="https://rawgit.com/sghall/7859113/raw/422da4401f7d4fc0352a7c49961d24f03716be7a/gistfile1.js"></script>
+
+  <script src="scripts/internallinks.js"></script>
+
   <script
     src="scripts/h_barchart_dropdown.js"
     type="text/javascript">
@@ -1596,6 +1603,7 @@
   <script>make_h_stacked("data/htest.csv","PopPersonType", "hlegend")</script>
   <script>make_h_stacked("data/htest2.csv","HouseholdSize", "hhlegend")</script>
   <script>make_h_stacked_tripsbymode("data/csv1314_tripmode.csv","stackedmode", "modelegend")</script>
+  <script>make_h_stacked_tripsbymode("data/csv15_16_trippurpose.csv","stackedactivity", "activitieslegend")</script>
   <script>make_bubble("data/bubbletest.csv","bubbletest", "bblegend")</script>
 
   <script type="text/javascript" src="data/counties.js"></script>

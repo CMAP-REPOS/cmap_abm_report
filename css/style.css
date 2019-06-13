@@ -34,6 +34,19 @@ div.bartooltip {
   box-shadow: 1px 1px grey;
 }
 
+div.chordtooltip {
+  position: absolute;
+  text-align: center;
+  width: 120px;
+  min-height: 100px;
+  padding: 2px;
+  background: white;
+  border: 0px;
+  pointer-events: none;
+  box-shadow: 1px 1px grey;
+  z-index: 1;
+}
+
 .icon {
   height: 50px;
   width: 50px;

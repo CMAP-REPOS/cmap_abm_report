@@ -18,7 +18,7 @@ function make_h_stacked(csv_file,divID, legendID){
         .align(0.1);
 
     var x = d3.scaleLinear()
-        .rangeRound([width, 0]);
+        .rangeRound([0, width]);
 
     var z = d3.scaleOrdinal()
         .range(['#5cbddd','#1c5f83','#66666E','#fefefe','#7ebea5','#3c765f','#EFE9AE','#AFBE8F']);
@@ -114,10 +114,10 @@ function make_h_stacked(csv_file,divID, legendID){
                 return y(d.data.Index);
             })
             .attr("x", function (d) {
-                return x(d[1]);
+                return x(d[0]);
             })
             .attr("width", function (d) {
-                return x(d[0]) - x(d[1]);
+                return x(d[1]) - x(d[0]);
             })
             .attr("height", y.bandwidth())
             .on("mouseover", mouseover)

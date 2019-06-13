@@ -46,8 +46,8 @@ function makeChords(csv_file, modelDiv, obsDiv){
 
   var wflowmap = new L.Map("wflowmap", {
       zoomControl: false,
-      center: new L.LatLng(41.8781, -87.9298),
-      zoom: 8
+      center: new L.LatLng(41.7281, -87.9298),
+      zoom: 7
   });
 
   var baselayer1 = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
@@ -181,8 +181,8 @@ function makeChords(csv_file, modelDiv, obsDiv){
         }
         function drawChords(matrix, mmap, obsMatrix, obs_mmap, odpairs) {
             var w = 400,
-                h = 380,
-                r1 = h / 2,
+                h = 400,
+                r1 = (h - 30) / 2,
                 r0 = r1 - 80;
 
             var chord = d3.chord()
@@ -262,7 +262,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
                 })
                 .attr("dy", ".35em")
                 .style("font-family", "helvetica, arial, sans-serif")
-                .style("font-size", "9px")
+                .style("font-size", "11px")
                 .attr("text-anchor", function(d) {
                     return d.angle > Math.PI ? "end" : null;
                 })
@@ -357,7 +357,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
                     })
                     .attr("dy", ".35em")
                     .style("font-family", "helvetica, arial, sans-serif")
-                    .style("font-size", "9px")
+                    .style("font-size", "11px")
                     .attr("text-anchor", function(d) {
                         return d.angle > Math.PI ? "end" : null;
                     })

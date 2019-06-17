@@ -531,9 +531,9 @@
               <h5><b>Origin and Destination Work Flows</b></h5>
               From
               <!-- Split button -->
-            <div class="btn-group">
-                <button type="button" class="btn btn-danger">Action</button>
-                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="btn-group" id="workfrom">
+                <button type="button" id="WorkFrom" class="btn btn-info">CBD</button>
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <span class="caret"></span>
                   <span class="sr-only">Toggle Dropdown</span>
                 </button>
@@ -556,9 +556,9 @@
               </div>
                 To
              <!-- Split button -->
-            <div class="btn-group">
-                <button type="button" class="btn btn-danger">Action</button>
-                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="btn-group" id="workto">
+                <button type="button" id="WorkTo" class="btn btn-info">CBD</button>
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <span class="caret"></span>
                   <span class="sr-only">Toggle Dropdown</span>
                 </button>
@@ -1176,7 +1176,7 @@
                   <div class="colborder"></div><!-- end -->
                   <h4>Transit Boardings by Mode</h4>
           <div class="btn-group" role="group">
-          <div class="btn-group" role="group" style="margin-left: 20px">
+          <div class="btn-group" id="modelsurveygroup" role="group" style="margin-left: 20px">
           <button type="button" id="ModelSurvey" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Model
           </button>
@@ -1549,6 +1549,7 @@
     <script src="https://rawgit.com/sghall/7859113/raw/422da4401f7d4fc0352a7c49961d24f03716be7a/gistfile1.js"></script>
 
   <script src="scripts/internallinks.js"></script>
+  <script src="scripts/workflowdropdown.js"></script>
 
   <script
     src="scripts/h_barchart_dropdown.js"

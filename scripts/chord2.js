@@ -1,21 +1,4 @@
 function makeChords(csv_file, modelDiv, obsDiv){
-
-  var div = d3.select("#wflowinfo")
-    div.html(
-        "</p></b><p style='color:rgb(28, 78, 128); font-size: 20px; margin-bottom: 0px;'>" + 'ModVal' +
-        "</p><p style='color:grey; font-size: 10px;'> modeled" 
-        )
-        .style("left", 200 + "px")
-        .style("top",  100 + "px");
-
-    var div = d3.select("#wflowinfo2")
-    div.html(
-        "</p><p style='color:rgb(166, 186, 206); font-size: 20px; margin-bottom: 0px;'>" + 'ObsVal' +
-        "</p><p style='color:grey; font-size: 10px;'> observed </p>"
-        )
-        .style("left", 300 + "px")
-        .style("top",  100 + "px");
-
       
   var svg1;
   var svg2;

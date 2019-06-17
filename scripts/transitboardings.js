@@ -55,7 +55,7 @@ function updateview(buttonarg) {
     updatemap();
 }
 
-$('.dropdown-menu a').click(function () {
+$("#modelsurveygroup ul.dropdown-menu a").click(function () {
     $('#ModelSurvey').text($(this).text());
     updateview(($(this).text()));
 });

@@ -26,6 +26,11 @@ a.validation {
   color: white
 }
 
+.btn-danger {
+  background-color: white !important;
+  border-color: white !important;
+}
+
 div.bartooltip {
   position: absolute;
   text-align: center;

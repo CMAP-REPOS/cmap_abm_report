@@ -13,7 +13,7 @@ var isNumeric = function (n) {
 		    return !isNaN(parseFloat(n)) && isFinite(n);
 		};
 
-function tabulate(data, columns, loc) {
+function tabulate(data, columns, loc, percent) {
 	var table = d3.select(loc)
     .append('table')
     .attr("class", "table table-striped table-bordered table-hover table-responsive")
@@ -44,15 +44,23 @@ function tabulate(data, columns, loc) {
 	  .append('td')
 	    .text(function (d) {
 				var datavalue;
-				if(d.value <= 5 & d.value != 0){
-					datavalue = formatPercent(d.value)
-				}
-				else if(isNumeric(d.value)){
-					datavalue = formatDecimalComma(d.value)
-				}
-				else{
-					datavalue = d.value
-				}
+				if (percent == "percent") {
+					if(d.value <= 5 & d.value != 0){
+						datavalue = formatPercent(d.value)
+					}
+					else if(isNumeric(d.value)){
+						datavalue = formatDecimalComma(d.value)
+					}
+					else{
+						datavalue = d.value
+					}}
+				if (percent == "nopercent") {
+					if(isNumeric(d.value)){
+						datavalue = formatDecimalComma(d.value)
+					}
+					else{
+						datavalue = d.value
+					}}
 			//	console.log(d.value)
 				return datavalue;
 			});

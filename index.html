@@ -148,7 +148,6 @@
           </div> <!-- end -->
         </div> <!-- end row-->
         <br>
-        <br>
         <div class="row">
           <div class = "col-md-3">
             <div class="colborder"></div><!-- end -->
@@ -366,11 +365,6 @@
             <div class="colborder"></div><!-- end -->
             <h4>Household Characteristics</h4>
             <div id="pumsLegend"></div>
-            <p class="small">
-              <b>Sources</b><br>
-              Observed- PUMS 2007-2011 <br>
-              Modeled- CMAP ABM - 2010 Scenario <br>
-            </p>
             <br>
             <select id="catPopSyn">
               <option value="income">Household Income</option>
@@ -378,8 +372,14 @@
               <option value="income">Children Per Household</option>
               <option value="income">Workers Per Household</option>
             </select><!-- end -->
+            <br><br><br>
             <br>
             <br>
+            <p class="small">
+              <b>Sources</b><br>
+              Observed- PUMS 2007-2011 <br>
+              Modeled- CMAP ABM - 2010 Scenario <br>
+            </p>
             <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
             <p class="small">Select household attribute from dropdown to view observed and model comparison</p>
           </div><!-- end -->
@@ -445,33 +445,23 @@
             <p>
               Auto ownership plays an important role in individuals’ travel behavior decisions and helps define the set of travel mode options available to them.  “Auto sufficiency” is a concept often applied to understand constraints a household may have on travel choices -- generally categorizing household as having zero autos, having more workers in the household than autos, or having at least as many auto as workers in the household.  This is a key measure in determining which households may be transit-dependent.
             </p>
+            <br>
           </div>
         </div> <!-- end row -->
         <div class="row">
             <div class="col-md-3">
                 <div class="colborder"></div>
-                <h3>Auto Ownership</h3>
-                <p>
-                  Auto ownership plays an important role in individuals’ travel behavior decisions and helps define the set of travel mode options available to them.  “Auto sufficiency” is a concept often applied to understand constraints a household may have on travel choices -- generally categorizing household as having zero autos, having more workers in the household than autos, or having at least as many auto as workers in the household.  This is a key measure in determining which households may be transit-dependent.
-                </p>
+                <h4>Number of Households by Vehicles Owned</h4>
+                <div id="auto_counts" style="width : 86%" align="center"></div>
+                <div class="small">
+                  <b>Sources</b><br>
+                  Survey - ACS 2006-2010. <br>
+                  Modeled- CMAP ABM - 2010 Scenario. <br>
+                </div>
             </div>
-          <div class="col-md-4" style="width: 29.16666666666667%">
+          <div class="col-md-7">
               <div class="colborder"></div>
-          <h5><b>Number of Households by Vehicles Owned</b></h5>
-            <br>
-            <div id="auto_counts" style="width : 86%" align="center"></div>
-            <div class="small">
-              <b>Sources</b><br>
-              Survey - ACS 2006-2010. <br>
-              Modeled- CMAP ABM - 2010 Scenario. <br>
-            </div>
-          </div>
-          <div class = "col-md-4" style="width: 29.16666666666667%">
-              <div class="colborder"></div>
-            <br>
-            <br>
-            <br>
-            <br>
+              <br>
             <svg id="aoCountBar" width="700" height="300"
                   preserveAspectRatio="xMidYMid meet"></svg>
             </div>
@@ -483,20 +473,23 @@
               <div class="colborder"></div>
                 <h3>Household Detail</h3>
             <h5><b>Distribution of Auto Ownership by <div id= "dtitle"></div></b></h5>
-            <div class="small">
-              Select data type for comparison from dropdown
-              </div>
+
             <br>
             <select id="aoCat">
               <option value="size">Household Size</option>
               <option value="income">Household Income</option>
               <option value="workers">Household Workers</option>
             </select>
-            <div class="small" style="margin-top: 130px;">
+            <br><br><br>
+
+            <div class="small" style="margin-top: 0px;">
                 <b>Sources</b><br>
                   Observed - ACS 2009-2013. <br>
                   Modeled- CMAP ABM - 2010 Scenario. <br>
                 </div>
+                <br>
+                <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+                <p class="small">Select household attribute from dropdown to view observed and model comparison</p>
           </div>
           <div class="col col-md-7">
               <div class="colborder"></div>
@@ -529,7 +522,7 @@
           <div class="col col-md-3" id="chordinfodiv">
               <div class="colborder"></div>
               <h5><b>Origin and Destination Work Flows</b></h5>
-              From
+             From
               <!-- Split button -->
             <div class="btn-group" id="workfrom">
                 <button type="button" id="WorkFrom" class="btn btn-danger" style="color: rgb(171, 171, 171); font-size: 18px;">CBD</button>
@@ -585,7 +578,9 @@
               <div id="wflowinfo2" style="margin-left:70px;"></div>
               </div><br><br>
               <div id="wflowmap"></div>
-           
+              <br>
+              <img src="data/Cursor-Click-2-icon.png" width="20px">
+              <span class="small">Hover over the chord diagram to see area boundaries on the map.  Click on the map to see area name.  Choose work flow geographies in the drop down menu to view numerical values for work trips.</span>
           </div>
           <div class="col col-md-4" style="width: 29.16666666666667%" align = "center">
               <div class="colborder"></div>
@@ -605,11 +600,6 @@
           <div class="col-md-3">
               <div class="colborder"></div>
             <h3>Work Trips to <text_div id="pTitle"></text_div></h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis.
-              <div class="small">
-                Select data type for comparison from dropdown
-              </div>
               <br>
               <select id="workFlowCat">
                 <option value="CBD">CBD</option>
@@ -629,12 +619,13 @@
                 <option value="IN">Indiana</option>
                 <option value="WI">Wisconsin</option>
               </select>
-              <div class="small" style="margin-top: 270px;">
+              <div class="small" style="margin-top: 250px;">
                   <b>Sources</b><br>
                   Observed -Travel Tracker Survey, 2007-2008. <br>
                   Modeled- CMAP ABM - 2010 Scenario. <br>
-                </div>
-
+                </div><br>
+                <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+                <p class="small">Select trip destination from dropdown to view observed and model comparison</p>
           </div>
           <div class="col-md-7">
               <div class="colborder"></div>
@@ -647,14 +638,8 @@
           <div class="col col-md-3">
               <div class="colborder"></div>
                   <h3>Work Trips by Mode and Distance</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis. Nullam scelerisque lorem at felis placerat, vel cursus neque imperdiet. Donec interdum elementum metus, et convallis est cursus ut. Nulla finibus lorem a imperdiet fringilla. Donec pharetra tristique ultrices. Pellentesque at arcu quis turpis blandit dictum. Fusce dignissim ut elit sed blandit. Nulla volutpat posuere sapien. Donec quis consectetur eros. Pellentesque sodales semper fermentum.
-                  </p>
                   <!--HOLD FOR Work Trips by Mode & Distance-->
             <h5><b>Mean Distance To Work by <div id= "modeDTitle"></div></b></h5>
-            <div class="small">
-              Select data type for comparison from dropdown
-              </div>
             <br>
             <select id="catModeDist">
               <option value="all">All Modes</option>
@@ -664,7 +649,6 @@
               <option value="hov2pay">Shared ride 2 pay</option>
               <option value="hov3free">Shared ride 3+ free</option>
               <option value="hov3pay">Shared ride 3+ pay</option>
-              <option value="dtransit">Drive to transit</option>
               <option value="transit">Transit</option>
               <option value="walk">Walk</option>
               <option value="bike">Bike</option>
@@ -674,7 +658,9 @@
                 <b>Sources</b><br>
                 Observed -Travel Tracker Survey, 2007-2008. <br>
                 Modeled- CMAP ABM - 2010 Scenario. <br>
-              </div>
+              </div><br>
+              <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+              <p class="small">Select trip mode from dropdown to view observed and model comparison</p>
           </div>
           <div class="col col-md-7">
               <div class="colborder"></div>
@@ -687,17 +673,9 @@
           <br/>
           <div class="col col-md-3">
               <div class="colborder"></div>
-              <br/>
-              <br/>
               <h3>Work-Based Walk Trips by Distance</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor metus, fermentum id nibh tristique, sagittis aliquet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut semper eros eget est dignissim, sit amet placerat nunc consectetur. In luctus euismod lectus a semper. Nulla placerat id risus vitae sagittis. Nullam scelerisque lorem at felis placerat, vel cursus neque imperdiet. Donec interdum elementum metus, et convallis est cursus ut. Nulla finibus lorem a imperdiet fringilla. Donec pharetra tristique ultrices. Pellentesque at arcu quis turpis blandit dictum. Fusce dignissim ut elit sed blandit. Nulla volutpat posuere sapien. Donec quis consectetur eros. Pellentesque sodales semper fermentum.
-              </p>
               <!--HOLD FOR Work-Based Trips by Mode & Distance-->
             <h5><b>Mean Distance of Work-Based Trips by <div id= "wbmodeDTitle"></div></b></h5>
-            <div class="small">
-              Select data type for comparison from dropdown
-              </div>
             <br>
             <select id="wbcatModeDist">
               <option value="all">All Modes</option>
@@ -717,6 +695,8 @@
                 Observed -Travel Tracker Survey, 2007-2008. <br>
                 Modeled- CMAP ABM - 2010 Scenario. <br>
               </div>
+              <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+              <p class="small">Select trip mode from dropdown to view observed and model comparison</p>
           </div>
           <div class="col col-md-7">
               <div class="colborder"></div>
@@ -779,19 +759,9 @@
             <div class="colborder"></div><!-- end -->
             <h3>Trips by Person Type and Mode</h3>
 
-            <br>        <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
-                improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
-                sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
-                factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-                qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
-                formarum quam civis excellen
-              </p>
+            <br>   
 
           <h5><b><div id= "modePTitle"></div>Trips</b></h5>
-          <div class="small">
-            Select data type for comparison from dropdown
-            </div>
           <br>
           <select id="catModePer">
             <option value="All">All</option>
@@ -804,12 +774,14 @@
             <option value="Student under 16 years">Student under 16 years</option>
             <option value="University Student">University Student</option>
           </select>
-          <div class="small" style="margin-top: 100px;">
+          <div class="small" style="margin-top: 20px;">
               Single person trips only. <br>
               <b>Sources</b><br>
               Observed -Travel Tracker Survey, 2007-2008. <br>
               Modeled- CMAP ABM - 2010 Scenario. <br>
-            </div>
+            </div><br>
+            <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+            <p class="small">Select person type from dropdown to view observed and model comparison</p>
         </div>
         <div class="col col-md-7">
             <div class="colborder"></div><!-- end -->
@@ -832,19 +804,9 @@
             <div class="colborder"></div><!-- end -->
             <h3>Trips by Household Income and Mode</h3>
 
-            <br>        <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
-                improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
-                sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
-                factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-                qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
-                formarum quam civis excellen
-              </p>
+            <br> 
 
           <h5><b><div id= "modeITitle"></div> Trips</b></h5>
-          <div class="small">
-            Select data type for comparison from dropdown
-            </div>
           <br>
           <select id="catModeInc">
             <option value="All">All</option>
@@ -854,11 +816,13 @@
             <option value="$75k to $100K">$75k to $100K</option>
             <option value="More than $100k">More than $100k</option>
           </select>
-          <div class="small" style="margin-top: 100px;">
+          <div class="small" style="margin-top: 80px;">
               <b>Sources</b><br>
               Observed -Travel Tracker Survey, 2007-2008. <br>
               Modeled- CMAP ABM - 2010 Scenario. <br>
-            </div>
+            </div><br>
+            <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+            <p class="small">Select household income bracket from dropdown to view observed and model comparison</p>
         </div>
         <div class="col col-md-7">
             <div class="colborder"></div><!-- end -->
@@ -878,9 +842,6 @@
     See more about trip purpose in the <a href="#6" role="tab" data-toggle="tab">Trip Activities</a> tab.  
   </p>
           <h5><b><div id= "modeTitle"></div> Trips</b></h5>
-          <div class="small">
-            Select data type for comparison from dropdown
-            </div>
           <br>
           <select id="catModePurp">
             <option value="All">All</option>
@@ -895,11 +856,13 @@
             <option value="Work">Work</option>
             <option value="Work-based">Work-based</option>
           </select>
-          <div class="small" style="margin-top: 100px;">
+          <div class="small" style="margin-top: 80px;">
               <b>Sources</b><br>
               Observed -Travel Tracker Survey, 2007-2008. <br>
               Modeled- CMAP ABM - 2010 Scenario. <br>
-            </div>
+            </div><br>
+            <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+            <p class="small">Select trip purpose from dropdown to view observed and model comparison</p>
         </div>
 
         <div class="col col-md-7">
@@ -944,7 +907,7 @@
             Modeled- CMAP ABM - 2010 Scenario.
           </p>
           <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
-          <p>Hover over bars to compare trips by mode</p>
+          <p>Hover over bars to compare trips by activity</p>
           </div>
         </div>
         <div class="col col-md-7">
@@ -959,29 +922,20 @@
           <div class="colborder"></div><!-- end -->
 
           <h3>Daily Activity Patterns By Person Type</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
-            improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
-            sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
-            factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-            qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
-            formarum quam civis excellen
-          </p>
         <h5><b><div id= "dapTitle"></div></b></h5>
-        <div class="small">
-          Select data type for comparison from dropdown
-          </div>
         <br>
         <select id="catdap">
             <option value="H">Home Activity</option>
             <option value="M">Mandatory Activity</option>
             <option value="N">Non-Mandatory Activity</option>
         </select>
-        <div class="small" style="margin-top: 100px;">
+        <div class="small" style="margin-top: 80px;">
             <b>Sources</b><br>
             Observed -Travel Tracker Survey, 2007-2008. <br>
             Modeled- CMAP ABM - 2010 Scenario. <br>
-          </div>
+          </div><br>
+          <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+          <p class="small">Select activity type from dropdown to view observed and model comparison</p>
       </div>
       <div class="col col-md-7">
           <div class="colborder"></div><!-- end -->
@@ -998,17 +952,6 @@
           <h5><b><div id= "purpTypeTitle"></div> Trips</b></h5>
 
           <h3>Trips by Person Type and Purpose</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
-            improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
-            sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
-            factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-            qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
-            formarum quam civis excellen
-          </p>
-          <div class="small">
-            Select data type for comparison from dropdown
-            </div>
           <br>
           <select id="catPurpType">
             <option value="All">All</option>
@@ -1021,12 +964,14 @@
             <option value="Student under 16 years">Student under 16 years</option>
             <option value="University Student">University Student</option>
           </select>
-          <div class="small" style="margin-top: 100px;">
+          <div class="small" style="margin-top: 80px;">
             Single-person trips only.<br>
               <b>Sources</b><br>
               Observed -Travel Tracker Survey, 2007-2008. <br>
               Modeled- CMAP ABM - 2010 Scenario. <br>
-            </div>
+            </div><br>
+            <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+            <p class="small">Select person type from dropdown to view observed and model comparison</p>
         </div>
         <div class="col col-md-7">
             <div class="colborder"></div><!-- end -->
@@ -1049,17 +994,6 @@
 
           <h5><b><div id= "purpDistTitle"></div> Trips</b></h5>
           <h3>Trips by Distance and Purpose</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
-            improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
-            sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
-            factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-            qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
-            formarum quam civis excellen
-          </p>
-          <div class="small">
-            Select data type for comparison from dropdown
-            </div>
           <br>
           <select id="catPurpDist">
             <option value="All">All</option>
@@ -1072,11 +1006,13 @@
             <option value="25-30 Miles">25-30 Miles</option>
             <option value="30 Miles or More">30 Miles or More</option>
           </select>
-          <div class="small" style="margin-top: 100px;">
+          <div class="small" style="margin-top: 80px;">
               <b>Sources</b><br>
               Observed -Travel Tracker Survey, 2007-2008. <br>
               Modeled- CMAP ABM - 2010 Scenario. <br>
-            </div>
+            </div><br>
+            <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+            <p class="small">Select trip distance from dropdown to view observed and model comparison</p>
         </div>
         <div class="col col-md-7">
             <div class="colborder"></div><!-- end -->
@@ -1101,19 +1037,7 @@
               <div class="colborder"></div><!-- end -->
 
               <h3>Trips by Purpose and Distance</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
-                improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
-                sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
-                factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-                qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
-                formarum quam civis excellen
-              </p>
             <h5><b><div id= "DistpurpTitle"></div> Trips</b></h5>
-
-            <div class="small">
-              Select data type for comparison from dropdown
-              </div>
             <br>
             <select id="catDistPurp">
                 <option value="Discretionary">Discretionary</option>
@@ -1131,7 +1055,9 @@
                 <b>Sources</b><br>
                 Observed -Travel Tracker Survey, 2007-2008. <br>
                 Modeled- CMAP ABM - 2010 Scenario. <br>
-              </div>
+              </div><br>
+              <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+              <p class="small">Select trip purpose from dropdown to view observed and model comparison</p>
           </div>
           <div class="col col-md-7">
               <div class="colborder"></div><!-- end -->
@@ -1153,7 +1079,7 @@
       </div>
       <div
         id="7"
-        class="tab-pane container">
+        class="tab-pane container-fluid">
         <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-7">
@@ -1195,14 +1121,14 @@
 
       <div class="small">
           
-           Ring sectors sum to 100% for each transit mode. 
+           Ring sectors sum to 100% for each transit mode. Express and local bus combined.<br><br>
           <b>Example:</b> In the model, 19.7% of all Metra boardings occured in ring sector 2S.  In the survey, 7.8% of Metra boardings occured in ring sector 2S.  This is a difference of 11.9%. 
-          <br>Choose the data source using the first dropdown button.  Hover over map to display data, and use the layer icon in the bottom left to activate CTA Rail and Metra line layers. 
-          Express and local bus combined. <br>
-          <b>Sources</b><br>
+          <br><br><b>Sources</b><br>
           Survey - Travel Tracker Survey, 2007-2008.<br>
           Modeled - CMAP ABM - 2010 Scenario. <br>
-        </div>
+        </div><br>
+        <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+        <p class="small">Choose the data source using the first dropdown button.  Hover over map to display data, and use the layer icon in the bottom left to activate CTA Rail and Metra line layers. </p>
       </div>
       <div class="col-md-7">
           <div class="colborder"></div><!-- end -->
@@ -1213,24 +1139,13 @@
 
           <br>
           <div class="row">
-            <div class="col col-md-3" align="center">
+            <div class="col col-md-3">
                 <div class="colborder"></div><!-- end -->
 
                 <h3>Transit Access</h3>
-              <div class="small">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                Hover over pie chart to compare trips by mode
-                </div>
+                <br><br>
+                <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+                <p class="small">Hover over pie chart to compare transit access.</p>
               </div>
 
               <div class="col col-md-4" style="width: 29.16666666666667%" align = "center">
@@ -1256,18 +1171,8 @@
               <div class="col col-md-3">
                   <div class="colborder"></div><!-- end -->
                         <h3>Transit Trips by Mode of Access and Distance</h3>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
-                          improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
-                          sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
-                          factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-                          qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
-                          formarum quam civis excellen
-                        </p>
+
                 <h5><b><div id= "TranDistTitle"></div> Trips</b></h5>
-                <div class="small">
-                  Select data type for comparison from dropdown
-                  </div>
                 <br>
                 <select id="catTranDist">
                     <option value="all">All Access Modes</option>
@@ -1278,7 +1183,9 @@
                     <b>Sources</b><br>
                     Survey - Travel Tracker Survey, 2007-2008.<br>
                     Modeled - CMAP ABM - 2010 Scenario. <br>
-                  </div>
+                  </div><br>
+                  <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+                  <p class="small">Select transit access mode from dropdown to view observed and model comparison</p>
               </div>
               <div class="col col-md-7">
                   <div class="colborder"></div><!-- end -->
@@ -1294,18 +1201,7 @@
                 <div class="col col-md-3">
                   <div class="colborder"></div><!-- end -->
                           <h3>Transit Trips by Income</h3>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
-                            improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
-                            sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
-                            factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-                            qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
-                            formarum quam civis excellen
-                          </p>
                   <h5><b><div id= "TranIncomeTitle"></div> Trips</b></h5>
-                  <div class="small">
-                    Select data type for comparison from dropdown
-                    </div>
                   <br>
                   <select id="catIncomeDist">
                       <option value="all">All Access Modes</option>
@@ -1316,7 +1212,9 @@
                       <b>Sources</b><br>
                       Survey - Travel Tracker Survey, 2007-2008.<br>
                       Modeled - CMAP ABM - 2010 Scenario. <br>
-                    </div>
+                    </div><br>
+                    <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+                    <p class="small">Select transit access mode from dropdown to view observed and model comparison</p>
                 </div>
                 <div class="col col-md-7">
                     <div class="colborder"></div><!-- end -->
@@ -1331,29 +1229,21 @@
                   <div class="col col-md-3">
                       <div class="colborder"></div><!-- end -->
                             <h3>Transit Trips by Ratio of Autos to Adults</h3>
-                            <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
-                              improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
-                              sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
-                              factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-                              qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
-                              formarum quam civis excellen
-                            </p>
                     <h5><b><div id= "TranAutoAdultTitle"></div> Trips</b></h5>
-                    <div class="small">
-                      Select data type for comparison from dropdown
-                      </div>
                     <br>
                     <select id="catAutoAdult">
                         <option value="all">All Access Modes</option>
                         <option value="transit">Walk To Transit</option>
                         <option value="dtransit">Drive to Transit</option>
                     </select>
-                    <div class="small" style="margin-top:100px;">
+                    <div class="small" style="margin-top:80px;">
+                        Adults defined as 18 years and over.<br>
                         <b>Sources</b><br>
                         Survey - Travel Tracker Survey, 2007-2008.<br>
                         Modeled - CMAP ABM - 2010 Scenario. <br>
-                      </div>
+                      </div><br>
+                      <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+                      <p class="small">Select transit access mode from dropdown to view observed and model comparison</p>
                   </div>
                   <div class="col col-md-7">
                       <div class="colborder"></div><!-- end -->
@@ -1402,7 +1292,7 @@
         </div>
         <div class="col-md-4" style="width: 29.16666666666667%">
             <div class="colborder"></div><!-- end -->
-
+          <br>
           <div id="vmt_county_tbl" style = "width: 50%"></div>
         </div>
         <div class="col-md-4" style="width: 29.16666666666667%">
@@ -1638,7 +1528,7 @@
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['# Veh','Model','Survey'],"#auto_counts"); // 2 column table
+    tabulate(data, ['# Veh','Model','Survey'],"#auto_counts","nopercent"); // 2 column table
   });
 
   d3.csv("data/csv29_vmt_county_table.csv", function(d, i, columns) {
@@ -1646,7 +1536,7 @@
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['County','Observed Share','Modeled Share','Observed','Model'],"#vmt_county_tbl"); // 2 column table
+    tabulate(data, ['County','Observed Share','Modeled Share','Observed','Model'],"#vmt_county_tbl","percent"); // 2 column table
   });
 
   d3.csv("data/csv30_rmse_7.csv", function(d, i, columns) {
@@ -1654,7 +1544,7 @@
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Vrange','Weight (Miles)','Links','AADT','Model Volumes','rmse','%rmse'],"#rmse_7"); // 2 column table
+    tabulate(data, ['Vrange','Weight (Miles)','Links','AADT','Model Volumes','rmse','%rmse'],"#rmse_7","percent"); // 2 column table
   });
 
   d3.csv("data/csv30_vrange_total.csv", function(d, i, columns) {
@@ -1662,7 +1552,7 @@
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Vrange','Number of Links','Observed VMT','Model VMT','Percent Diff'],"#vrange_total"); // 2 column table
+    tabulate(data, ['Vrange','Number of Links','Observed VMT','Model VMT','Percent Diff'],"#vrange_total","percent"); // 2 column table
   });
 
   d3.csv("data/csv30_vrange_art.csv", function(d, i, columns) {
@@ -1670,7 +1560,7 @@
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Vrange','Number of Links','Observed VMT','Model VMT','Percent Diff'],"#vrange_art"); // 2 column table
+    tabulate(data, ['Vrange','Number of Links','Observed VMT','Model VMT','Percent Diff'],"#vrange_art","percent"); // 2 column table
   });
 
   d3.csv("data/csv30_vrange_int.csv", function(d, i, columns) {
@@ -1678,7 +1568,7 @@
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Vrange','Number of Links','Observed VMT','Model VMT','Percent Diff'],"#vrange_int"); // 2 column table
+    tabulate(data, ['Vrange','Number of Links','Observed VMT','Model VMT','Percent Diff'],"#vrange_int","percent"); // 2 column table
   });
 
   d3.csv("data/aoCounts.csv", function(d, i, columns) {

@@ -1,12 +1,12 @@
 function make_h_stacked_tripsbymode(csv_file,divID, legendID){
     var margin = {top: 80, right: 10, bottom: 0, left: 75},
-      width = 900 - margin.left - margin.right,
+      width = 700 - margin.left - margin.right,
       height = 300 - margin.top - margin.bottom;
 
 
 
     var g = d3.select("#"+divID).append("svg")
-    .attr("width", width + margin.left + margin.right)
+    .attr("width", "100%")
     .attr("height", height + margin.top + margin.bottom)
     .attr("align","center")
     .append("g")
@@ -18,11 +18,10 @@ function make_h_stacked_tripsbymode(csv_file,divID, legendID){
       Shared_ride_2_free:'HOV',
       Shared_ride_3plus_free: 'HOV',
       Walk: 'Non-motorized',
-      Walk_to_transit: 'Transit',
       School_bus: 'HOV',
       Bike: 'Non-motorized',
       Drive_alone_pay: 'SOV',
-      Drive_to_transit: 'Transit',
+      Transit: 'Transit',
       Shared_ride_2plus_pay: 'HOV',
       Taxi: 'HOV',
       work: 'Mandatory',
@@ -43,7 +42,7 @@ function make_h_stacked_tripsbymode(csv_file,divID, legendID){
           .align(0.1);
 
       var x = d3.scaleLinear()
-          .rangeRound([width, 0]);
+          .rangeRound([0,width]);
 
       var z = d3.scaleOrdinal()
           .range(['#5cbddd','#1c5f83','#66666E','#fefefe','#7ebea5','#3c765f','#EFE9AE','#AFBE8F']);
@@ -139,10 +138,10 @@ function make_h_stacked_tripsbymode(csv_file,divID, legendID){
                 return y(d.data.Index);
             })
             .attr("x", function (d) {
-                return x(d[1]);
+                return x(d[0]);
             })
             .attr("width", function (d) {
-                return x(d[0]) - x(d[1]);
+                return x(d[1]) - x(d[0]);
             })
             .attr("height", y.bandwidth())
             .on("mouseover", mouseover)

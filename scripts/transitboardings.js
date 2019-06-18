@@ -26,26 +26,36 @@ var firsttime = true
 drawmap()
 
 
+
 // dropdown button events
 function updateview(buttonarg) {
     if (buttonarg == 'Model') {
         whichone = 'modshare'
         difflegend.remove(map)
         legend.addTo(map)
+        $("#transitsidebar").empty();
+        movelegends("info legend leaflet-control")
+        legend.remove(map)
     } else if (buttonarg == 'Survey') {
         whichone = 'surveysh'
         difflegend.remove(map)
         legend.addTo(map)
-    } else if (buttonarg == 'Difference') {
+        $("#transitsidebar").empty();
+        movelegends("info legend leaflet-control")
+        legend.remove(map)
+    } else if (buttonarg == 'Diff') {
         whichone = 'sharedif'
         legend.remove(map)
         difflegend.addTo(map)
+        $("#transitsidebar").empty();
+        movelegends("diff difflegend leaflet-control")
+        difflegend.remove(map)
     }
     return whichone,
     updatemap();
 }
 
-$('.dropdown-menu a').click(function () {
+$("#modelsurveygroup ul.dropdown-menu a").click(function () {
     $('#ModelSurvey').text($(this).text());
     updateview(($(this).text()));
 });
@@ -276,7 +286,6 @@ function getColor(d) {
            d > 10  ? '#1C4E80' :
            d > 5  ?  '#4A729A	':
            d > 3   ?  '	#7896B4' :
-           d > 2   ? '#8FA8C1' :
            d > 1   ?  '	#A6BACE	':
            '#EBF0F5';
 }
@@ -287,14 +296,12 @@ function getDiffColor(d) {
     d > 10  ? '#1C4E80' :
     d > 5  ?  '#4A729A	':
     d > 3   ?  '	#7896B4' :
-    d > 2   ? '#8FA8C1' :
     d > 1   ?  '	#A6BACE	':
            d < -20  ? '#670000' :
            d < -15  ? '#910000' :
            d < -10  ? '#D00000' :
            d < -5   ? '#DA3434' :
            d < -3   ? '#E46868' :
-           d < -2   ? '	#EE9C9C' :
            d < -1   ? '#F8D0D0' :
            '#EBF0F5';
 }
@@ -348,15 +355,24 @@ function getsharevalue(props) {
 
 info.addTo(map);
 
+movelegends = function(elementtoremove) {
+    var newParent = document.getElementById("transitsidebar");
+    var oldParent = document.getElementsByClassName(elementtoremove)
+
+
+    while (oldParent[0].childNodes.length > 0) {
+        newParent.appendChild(oldParent[0].childNodes[0]);
+    }
+}
 
 // legend
 var legend = L.control({position: 'bottomright'});
 var difflegend = L.control({position: 'bottomright'});
 
 legend.onAdd = function (map) {
-    
+
     var div = L.DomUtil.create('div', 'info legend'),
-    grades = [0,1,2,3,5,10,15,20],
+    grades = [0,1,3,5,10,15,20],
     labels = [],
     from, to;
 
@@ -374,7 +390,7 @@ legend.onAdd = function (map) {
 
 difflegend.onAdd = function (map) {
     var div = L.DomUtil.create('div', 'diff difflegend'),
-    grades = [-20,-15,-10,-5,-3,-2,-1,0,1,2,3,5,10,15,20],
+    grades = [-20,-15,-10,-5,-3,-1,1,3,5,10,15,20],
     labels = [],
     from, to;
 
@@ -472,3 +488,6 @@ var overlayMaps = {
 var lines = L.control.layers(null, overlayMaps, {position: 'bottomleft'});
 
 lines.addTo(map);
+
+movelegends("info legend leaflet-control")
+legend.remove(map)

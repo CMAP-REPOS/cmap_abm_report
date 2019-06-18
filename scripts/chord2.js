@@ -1,5 +1,5 @@
 function makeChords(csv_file, modelDiv, obsDiv){
-
+      
   var svg1;
   var svg2;
   var newCurrentDistrict;
@@ -41,13 +41,18 @@ function makeChords(csv_file, modelDiv, obsDiv){
       };
   }
 
+
+//   var div = d3.select("#chordinfodiv").append("div")
+//   .attr("class", "chordtooltip")
+//   .style("opacity", 0);
+  
   // basic map
   var mapboxAccessToken = 'pk.eyJ1Ijoic2FyYWhjbWFwIiwiYSI6ImNqc3VzMDl0YzJocm80OXBnZjc2MGk4cGgifQ.S_UmPA1jm5pQPrCCLDs41Q';
 
   var wflowmap = new L.Map("wflowmap", {
       zoomControl: false,
-      center: new L.LatLng(41.8781, -87.9298),
-      zoom: 8
+      center: new L.LatLng(41.7281, -87.9298),
+      zoom: 7
   });
 
   var baselayer1 = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
@@ -70,6 +75,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
   }});
   rings.addTo(wflowmap);
 
+
   d3.csv(csv_file, function(error, data) {
 
             var modelData = data.filter(function(d){
@@ -78,16 +84,14 @@ function makeChords(csv_file, modelDiv, obsDiv){
                 return data;
               };
             });
-            //console.log(modelData)
+           //console.log(modelData)
 
             var obsData = data.filter(function(d){
-              ////console.log(d)
               if (d.Category == "Survey"){
                 d.count = parseInt(d.count)
                 return data;
               };
             });
-            //console.log(modelData)
             var mpr = chordMpr(modelData);
             mpr.addValuesToMap('root')
                 .addValuesToMap('node')
@@ -99,7 +103,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
                     return +recs[0].count;
                 });
 
-              //console.log(obsData)
+            //console.log(obsData)
               var ompr = chordMpr(obsData);
               ompr.addValuesToMap('root')
                   .addValuesToMap('node')
@@ -126,28 +130,42 @@ function makeChords(csv_file, modelDiv, obsDiv){
               }
             }
 
-            drawChords(mpr.getMatrix(), mpr.getMap(), ompr.getMatrix(), ompr.getMap(),odpairs);
+            drawChords(mpr.getMatrix(), mpr.getMap(), ompr.getMatrix(), ompr.getMap(), odpairs);
         });
 
 
-        function fade(opacity) {
-          return function(d, i) {
+
+        function handlemouseover(d, i) {
             var activeDistrict = i;
             var newCurrentDistrict = d.name;
+
+            // div.transition()
+            //     .duration(200)
+            //     .style("opacity", .9);
+            //     div.html(
+            //         "<br><b><p style='font-size: 12px'; color: grey'>" + newCurrentDistrict +
+            //         "</p></b><p style='color:rgb(28, 78, 128); font-size: 20px; margin-bottom: 0px;'>" + d.value +
+            //         "</p><p style='color:grey; font-size: 10px;'> modeled" +
+            //         "</p><p style='color:rgb(166, 186, 206); font-size: 20px; margin-bottom: 0px;'>" + 'hi' +
+            //         "</p><p style='color:grey; font-size: 10px;'> observed </p>"
+            //         )
+            //         .style("left", 200 + "px")
+            //         .style("top",  100 + "px");
+
             svg1.selectAll("path.chord")
                 .filter(function(d) {
                   return d.source.index != activeDistrict && d.target.index != activeDistrict; })
-        		.transition()
-                .style("stroke-opacity", opacity)
-                .style("fill-opacity", opacity);
+                .transition()
+                .style("stroke-opacity", 0)
+                .style("fill-opacity", 0);
 
             svg2.selectAll("path.chord")
                 .filter(function(d) {
                   return d.source.index != activeDistrict && d.target.index != activeDistrict;
                 })
         		.transition()
-                .style("stroke-opacity", opacity)
-                .style("fill-opacity", opacity);
+                .style("stroke-opacity", 0)
+                .style("fill-opacity", 0);
 
           var color_dict=[]
           svg1.selectAll("path")
@@ -177,12 +195,62 @@ function makeChords(csv_file, modelDiv, obsDiv){
             })
             }
           });
-          };
-        }
+          }
+
+
+          function handlemouseout(d, i) {
+            var activeDistrict = i;
+            var newCurrentDistrict = d.name;
+
+            svg1.selectAll("path.chord")
+                .filter(function(d) {
+                  return d.source.index != activeDistrict && d.target.index != activeDistrict; })
+        		.transition()
+                .style("stroke-opacity", 0.8)
+                .style("fill-opacity", 0.8);
+
+            svg2.selectAll("path.chord")
+                .filter(function(d) {
+                  return d.source.index != activeDistrict && d.target.index != activeDistrict;
+                })
+        		.transition()
+                .style("stroke-opacity", 0.8)
+                .style("fill-opacity", 0.8);
+
+          var color_dict=[]
+          svg1.selectAll("path")
+              .filter(function(d) {
+                return color_dict[d.name] = colors(d.index)
+              })
+          rings.eachLayer(function(layer) {
+            if(layer.NAME == newCurrentDistrict){
+              layer.setStyle({
+                weight: 2,
+                fillOpacity: 1,
+                fillColor:colors(i)
+            })
+            }
+            else if(odpairs[newCurrentDistrict].includes(layer.NAME)){
+              layer.setStyle({
+                weight: 2,
+                fillOpacity: .2,
+                fillColor: color_dict[layer.NAME],
+            })
+            }
+            else{
+              layer.setStyle({
+                weight: 2,
+                fillOpacity: 0,
+                color: 'grey',
+            })
+            }
+          });
+          }
+        
         function drawChords(matrix, mmap, obsMatrix, obs_mmap, odpairs) {
             var w = 400,
-                h = 380,
-                r1 = h / 2,
+                h = 400,
+                r1 = (h - 30) / 2,
                 r0 = r1 - 80;
 
             var chord = d3.chord()
@@ -216,8 +284,8 @@ function makeChords(csv_file, modelDiv, obsDiv){
                 })
                 .enter().append("svg:g")
                 .attr("class", "group")
-                .on("mouseover", fade(.02))
-              	.on("mouseout", fade(.80));
+                .on("mouseover", handlemouseover)
+              	.on("mouseout", handlemouseout);
 
             var colors = d3.scaleOrdinal()
                     .domain(d3.range(16))
@@ -262,7 +330,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
                 })
                 .attr("dy", ".35em")
                 .style("font-family", "helvetica, arial, sans-serif")
-                .style("font-size", "9px")
+                .style("font-size", "11px")
                 .attr("text-anchor", function(d) {
                     return d.angle > Math.PI ? "end" : null;
                 })
@@ -341,8 +409,8 @@ function makeChords(csv_file, modelDiv, obsDiv){
                     })
                     .enter().append("svg:g")
                     .attr("class", "group")
-                    .on("mouseover", fade(.02))
-                  	.on("mouseout", fade(.80));
+                    .on("mouseover", handlemouseover)
+                  	.on("mouseout", handlemouseout);
 
                 g2.append("svg:path")
                     .style("stroke", "grey")
@@ -357,7 +425,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
                     })
                     .attr("dy", ".35em")
                     .style("font-family", "helvetica, arial, sans-serif")
-                    .style("font-size", "9px")
+                    .style("font-size", "11px")
                     .attr("text-anchor", function(d) {
                         return d.angle > Math.PI ? "end" : null;
                     })

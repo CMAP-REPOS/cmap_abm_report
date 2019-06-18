@@ -3,13 +3,32 @@ svg {
     filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.25) );
 }
 
-svg#intromaplegend, svg#hlegend, svg#hhlegend, svg#bblegend, svg#pumsLegend, svg#activitieslegend {
+svg#intromaplegend, svg#hlegend, svg#hhlegend, svg#bblegend, svg#pumsLegend, svg#activitieslegend div#hhlegend {
   -webkit-filter: drop-shadow( 0px 0px 0px rgba(0,0,0,.3) );
   filter: drop-shadow( 0px 0px 0px rgba(0,0,0,.25) );
 }
 
-.icon:hover {
-  fill:#337ab7;
+a.validation:hover {
+  color:grey;
+}
+
+a.calibration:hover {
+  color:grey;
+}
+
+a.calibration {
+  background-color: #1c5f83;
+  color: white;
+}
+
+a.validation {
+  background-color: #7ebea5;
+  color: white
+}
+
+.btn-danger {
+  background-color: white !important;
+  border-color: white !important;
 }
 
 div.bartooltip {
@@ -24,6 +43,19 @@ div.bartooltip {
   box-shadow: 1px 1px grey;
 }
 
+div.chordtooltip {
+  position: absolute;
+  text-align: center;
+  width: 120px;
+  min-height: 100px;
+  padding: 2px;
+  background: white;
+  border: 0px;
+  pointer-events: none;
+  box-shadow: 1px 1px grey;
+  z-index: 1;
+}
+
 .icon {
   height: 50px;
   width: 50px;
@@ -33,12 +65,16 @@ div.bartooltip {
   height: 250px;
 }
 
+#hhlegend {
+  height: 200px;
+}
+
 #bblegend {
   height: 250px;
 }
 
 #modelegend {
-  height: 300px;
+  height: 270px;
 }
 
 #activitieslegend {
@@ -185,3 +221,47 @@ width: 100px;
     position: relative;
     border: none;
 }
+
+.axis { font: 14px sans-serif; }
+
+
+.colborder {
+  border-top: 3px solid;
+}
+
+#wflowmap{
+    width: 100%;
+    height: 300px;
+    margin-left: 0px;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px grey
+}
+
+#interstate_map{
+    width: 100%;
+    height: 475px;
+    margin-left: 20px;
+    margin-right: 20px
+}
+#main {
+  width: 960px;
+}
+.axis .domain {
+  display: none;
+}
+text_div
+{
+  display: inline-block;
+}
+
+div
+{
+  display:inherit;
+}
+
+table{ border:none; width:33%; display:inline-table}
+table {font-size: 12px;}
+
+td{text-align: right}
+th{text-align: center;}

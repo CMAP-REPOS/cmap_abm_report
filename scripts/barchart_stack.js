@@ -15,7 +15,7 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
     })
 
     var margin = {top: 35, right: 75, bottom: 100, left: 45},
-    width = 900 - margin.left - margin.right,
+    width = 800 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
     height2 = 575 - margin.top - margin.bottom;
 
@@ -35,12 +35,7 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
         .padding(0.05);
 
     var y = d3.scaleLinear()
-    .domain([d3.min(data, function(d){
-      return(d.lifeExp);
-    }),
-    d3.max(data, function(d){
-      return d.Value;
-     })]) //y range is reversed because svg
+    .domain([0,40]) //y range is reversed because svg // set custom domain instead of using max function since we are stacking!
      .range([height-padding, padding]);
 
     var y1 = d3.scaleBand()
@@ -55,6 +50,7 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
 
     x0.domain(data.map(function(d) {
       return d.MainGroup; }));
+
     x1.domain(data.map(function(d) {
 
       return d.SubGroup; }))
@@ -91,9 +87,7 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
     d3.select("#" + dataTitle).text(divText);
     //console.log("stackData", stackData)
 
-    y.domain([0, d3.max(data, function(d){
-      return d.Value;
-     })]).nice();
+    y.domain([0, 40]).nice();
 
     ////console.log("keys", keys)
 
@@ -116,7 +110,6 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
           return y(d[1]); })
         .attr("height", function(d) { return y(d[0]) - y(d[1]); })
         .attr("width", x1.bandwidth())
-        .on("click", function(d, i){ });
 
     g.append("g")
         .attr("class", "axis")
@@ -125,38 +118,33 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
 
     g.append("g")
         .attr("class", "axis")
-        .attr("transform", "translate(115," + height + ")")
+        .attr("transform", "translate(100," + height + ")")
         .call(d3.axisBottom(x1));
 
     g.append("g")
     .attr("class", "axis")
-    .attr("transform", "translate(230," + height + ")")
+    .attr("transform", "translate(200," + height + ")")
     .call(d3.axisBottom(x1));
 
     g.append("g")
     .attr("class", "axis")
-    .attr("transform", "translate(340," + height + ")")
+    .attr("transform", "translate(300," + height + ")")
     .call(d3.axisBottom(x1));
 
     g.append("g")
     .attr("class", "axis")
-    .attr("transform", "translate(450," + height + ")")
+    .attr("transform", "translate(400," + height + ")")
     .call(d3.axisBottom(x1));
 
     g.append("g")
     .attr("class", "axis")
-    .attr("transform", "translate(560," + height + ")")
+    .attr("transform", "translate(500," + height + ")")
     .call(d3.axisBottom(x1));
 
     g.append("g")
         .attr("class", "axis")
-        .attr("transform", "translate(680," + height + ")")
+        .attr("transform", "translate(600," + height + ")")
         .call(d3.axisBottom(x1));
-
-    // g.append("g")
-    //     .attr("class", "axis")
-    //     .attr("transform", "translate(0," + height * 1.1 + ")")
-    //     .call(d3.axisBottom(x0))
 
     g.append("g")
         .attr("class", "axis")
@@ -172,42 +160,17 @@ function makeStackedChart_nodd(csv_file,dataTitle,divID){
         // Add the X Axis
        g.append("g")
            .attr("class", "x axis")
-           .attr("transform", "translate(10," + height * 1.1 + ")")
+           .attr("transform", "translate(12," + height * 1.1 + ")")
            .call(d3.axisBottom(x0))
            .call(d3.axisBottom(x0).tickSize(0))
            .selectAll("text")
             .style("font-weight", "bold")
-            .style("font-size","larger")
             .style("text-anchor", "middle")
             .attr("dx", "-.8em")
             .attr("dy", ".15em")
             .attr("transform", function(d) {
                 return "rotate(0)"
                 });
-
-  /*
-    var legend = g.append("g")
-        .attr("font-family", "sans-serif")
-        .attr("font-size", 10)
-        .attr("text-anchor", "end")
-      .selectAll("g")
-      .data(keys.slice().reverse())
-      .enter().append("g")
-        .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
-
-    legend.append("rect")
-        .attr("x", width - 19)
-        .attr("width", 19)
-        .attr("height", 19)
-        .attr("fill", z);
-
-    legend.append("text")
-        .attr("x", width - 24)
-        .attr("y", 9.5)
-        .attr("dy", "0.32em")
-        .text(function(d) { return d; });
-
-        */
 
 
         var legend = serie.append("g")

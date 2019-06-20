@@ -1,13 +1,13 @@
 Index,Model 01,Survey 01,Category,Description,Title
-0,14460,9100.08035702,dtransit,Drive To Transit trips 0,Drive To Transit
-0,783285,663112.7850942774,transit,Walk To Transit trips 0,Walk To Transit
-Autos < Adults (18 yrs or older),50140,50040.62877522997,dtransit,Drive To Transit trips Autos < Adults (18 yrs or older),Drive To Transit
-Autos < Adults (18 yrs or older),479640,481119.7505144391,transit,Walk To Transit trips Autos < Adults (18 yrs or older),Walk To Transit
-Autos = Adults (18 yrs or older),73320,119906.41765346001,dtransit,Drive To Transit trips Autos = Adults (18 yrs or older),Drive To Transit
-Autos = Adults (18 yrs or older),166160,448416.3004576209,transit,Walk To Transit trips Autos = Adults (18 yrs or older),Walk To Transit
-Autos > Adults (18 yrs or older),36610,29909.38826859999,dtransit,Drive To Transit trips Autos > Adults (18 yrs or older),Drive To Transit
-Autos > Adults (18 yrs or older),67230,56900.445164,transit,Walk To Transit trips Autos > Adults (18 yrs or older),Walk To Transit
-0,797745,672212.8654512974,all,All trips 0,All
-Autos < Adults (18 yrs or older),529780,531160.379289669,all,All trips Autos < Adults (18 yrs or older),All
-Autos = Adults (18 yrs or older),239480,568322.7181110809,all,All trips Autos = Adults (18 yrs or older),All
-Autos > Adults (18 yrs or older),103840,86809.83343259999,all,All trips Autos > Adults (18 yrs or older),All
+0,14460,9100.080357,dtransit,Drive To Transit trips 0,Drive To Transit
+0,783285,663112.7851,transit,Walk To Transit trips 0,Walk To Transit
+Autos < Adults,50140,50040.62878,dtransit,Drive To Transit trips Autos < Adults (18 yrs or older),Drive To Transit
+Autos < Adults,479640,481119.7505,transit,Walk To Transit trips Autos < Adults (18 yrs or older),Walk To Transit
+Autos = Adults,73320,119906.4177,dtransit,Drive To Transit trips Autos = Adults (18 yrs or older),Drive To Transit
+Autos = Adults,166160,448416.3005,transit,Walk To Transit trips Autos = Adults (18 yrs or older),Walk To Transit
+Autos > Adults,36610,29909.38827,dtransit,Drive To Transit trips Autos > Adults (18 yrs or older),Drive To Transit
+Autos > Adults,67230,56900.44516,transit,Walk To Transit trips Autos > Adults (18 yrs or older),Walk To Transit
+0,797745,672212.8655,all,All trips 0,All
+Autos < Adults,529780,531160.3793,all,All trips Autos < Adults (18 yrs or older),All
+Autos = Adults,239480,568322.7181,all,All trips Autos = Adults (18 yrs or older),All
+Autos > Adults,103840,86809.83343,all,All trips Autos > Adults (18 yrs or older),All

@@ -18,3 +18,29 @@ $(function() {
     $('.nav-tabs a[href=\\'+hash+']').parent().addClass('active');
   });
 });
+
+var legend = d3.select("#vmtLegend").append("svg")
+.attr("height", 75)
+.attr("width", 250)
+
+legend.selectAll("mydots")
+  .data(["#98abc5", "#8a89a6"])
+  .enter()
+  .append("circle")
+    .attr("cx", 10)
+    .attr("cy", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+    .attr("r", 7)
+    .style("fill", function(d) { return d; })
+
+// Add one dot in the legend for each name.
+legend.selectAll("mylabels")
+  .data(["Auto", "Truck" ])
+  .enter()
+  .append("text")
+    .attr("x", 20)
+    .attr("y", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+    .text(function(d){
+      return d})
+    .attr("text-anchor", "left")
+    .style("alignment-baseline", "middle")
+    .style("fill","black")

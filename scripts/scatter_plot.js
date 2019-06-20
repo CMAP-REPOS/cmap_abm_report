@@ -1,6 +1,6 @@
 function makeScatter(csv_file, chart_id){
-  var margin = {top: 5, right: 5, bottom: 50, left: 90},
-	    width = 900 - margin.left - margin.right,
+  var margin = {top: 5, right: 5, bottom: 50, left: 80},
+	    width = 750 - margin.left - margin.right,
 	    height = 450 - margin.top - margin.bottom;
 
     var padding = 10;
@@ -27,16 +27,18 @@ function makeScatter(csv_file, chart_id){
        .range([height-padding, padding]);
 
   	  var xAxis = d3.axisBottom()
-  	      .scale(x);
+          .scale(x)
+          .tickFormat(d3.format(".0s"));
 
   	  var yAxis = d3.axisLeft()
-  	      .scale(y);
+          .scale(y)
+          .tickFormat(d3.format(".0s"));
 
 
           // colors for foo
       var color = d3.scaleOrdinal()
       .domain(["Arterial/Collector", "Interstate" ])
-      .range([ "#A6BACE", "#7896B4"])
+      .range(["#A6BACE", "#4A729A"])
 
       //x = survey
       //Y = Model
@@ -75,7 +77,7 @@ function makeScatter(csv_file, chart_id){
 
       svg.append("text")
       .attr("transform",
-            "translate(-40," +
+            "translate(-50," +
                             (height/2) + ") rotate(-90)")
       .style("text-anchor", "middle")
       .text("Model AADT");
@@ -142,3 +144,30 @@ function makeScatter(csv_file, chart_id){
 
 
 }
+
+
+var legend = d3.select("#scatterLegend").append("svg")
+.attr("height", 75)
+.attr("width", 250)
+
+legend.selectAll("mydots")
+  .data(["#A6BACE", "#4A729A"])
+  .enter()
+  .append("circle")
+    .attr("cx", 10)
+    .attr("cy", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+    .attr("r", 7)
+    .style("fill", function(d) { return d; })
+
+// Add one dot in the legend for each name.
+legend.selectAll("mylabels")
+  .data(["Arterial/Collector", "Interstate" ])
+  .enter()
+  .append("text")
+    .attr("x", 20)
+    .attr("y", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+    .text(function(d){
+      return d})
+    .attr("text-anchor", "left")
+    .style("alignment-baseline", "middle")
+    .style("fill","black")

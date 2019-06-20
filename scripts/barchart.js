@@ -1,6 +1,6 @@
 function BarChart(data,loc,title) {
   var svg = d3.select(loc),
-    margin = {top: 20, right: 20, bottom: 30, left: 40},
+    margin = {top: 20, right: 0, bottom: 50, left: 80},
     width = +svg.attr("width") - margin.left - margin.right,
     height = +svg.attr("height") - margin.top - margin.bottom,
     g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -45,6 +45,13 @@ function BarChart(data,loc,title) {
         .attr("transform", "translate(0," + height + ")")
         .call(d3.axisBottom(x0));
 
+    svg.append("text")
+    .attr("transform",
+          "translate(" + (width/2 + 40) + " ," +
+                          (height + margin.top + 40) + ")")
+    .style("text-anchor", "middle")
+    .text("Vehicles Owned");
+
     g.append("g")
         .attr("class", "y axis")
         .call(d3.axisLeft(y).ticks(null, "s"))
@@ -56,6 +63,13 @@ function BarChart(data,loc,title) {
         .attr("font-weight", "bold")
         .attr("text-anchor", "start")
         .text(title);
+
+    svg.append("text")
+      .attr("transform",
+            "translate(30," +
+                            (height/2) + ") rotate(-90)")
+      .style("text-anchor", "middle")
+      .text("Households");
 
     var legend = g.append("g")
         .attr("font-family", "sans-serif")

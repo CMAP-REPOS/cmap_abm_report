@@ -5,7 +5,7 @@ function makeStackedChart_4(csv_file,catID,dataTitle,divID){
   catInt = d3.select(catID).property('value');
   //console.log(catInt);
 
-  var margin = {top: 35, right: 75, bottom: 50, left: 45},
+  var margin = {top: 35, right: 50, bottom: 50, left: 80},
   width = 700 - margin.left - margin.right,
   height = 325 - margin.top - margin.bottom;
   height2 = 400 - margin.top - margin.bottom;
@@ -155,6 +155,13 @@ function makeStackedChart_4(csv_file,catID,dataTitle,divID){
         .attr("fill", "#000")
         .attr("font-weight", "bold")
         .attr("text-anchor", "start")
+
+    g.append("text")
+      .attr("transform",
+            "translate(-50," +
+                            (height/2) + ") rotate(-90)")
+      .style("text-anchor", "middle")
+      .text("Households");
   /*
     var legend = g.append("g")
         .attr("font-family", "sans-serif")

@@ -1,4 +1,4 @@
-function hStackedBar(obscsv_file,modelcsv_file,obsID,modelID, labelwidth, divwidth){
+function hStackedBar3(obscsv_file,modelcsv_file,obsID,modelID, labelwidth, divwidth){
 
   var formatValue = d3.format(".2s");
 
@@ -7,7 +7,7 @@ function hStackedBar(obscsv_file,modelcsv_file,obsID,modelID, labelwidth, divwid
 
 function makechart(csv_file, divID, axis, marginleftval, idval){
   var div = d3.select("body").append("div")
-  .attr("class", "vmttooltip")
+  .attr("class", "vmttooltip2")
   .style("opacity", 0);
 
   var margin = {top: 35, right: 20, bottom: 50, left: marginleftval},
@@ -69,10 +69,8 @@ function makechart(csv_file, divID, axis, marginleftval, idval){
           .duration(200)
           .style("opacity", .9);
           div.html(
-            "</b><p style='color:#98abc5; font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(d.data.Auto) +
-            "</p><p style='color:grey; font-size: 10px;'> auto" +
-            "</p><p style='color:#8a89a6; font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(d.data.Truck) +
-            "</p><p style='color:grey; font-size: 10px;'> truck </p>"
+            "<p style='color:#8a89a6; font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(d.data.Boardings) +
+            "</p><p style='color:grey; font-size: 10px;'> boardings </p>"
             )
             .style("left", (d3.event.pageX) + "px")
             .style("top",  (d3.event.pageY - 28) + "px");

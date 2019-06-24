@@ -238,49 +238,49 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle){
 
       // ======== Legend rects ========
 
-      var legend = g.selectAll(".legend")
-        .data(keysLegend);
+      // var legend = g.selectAll(".legend")
+      //   .data(keysLegend);
 
-      legend = legend
-        .enter()
-      .append("rect")
-        .attr("class","barlegend")
-        .attr("transform", function(d, i) {
-          return "translate(0," + i * 40 + ")";
-        })
-        .attr("x", width + 17) //location of legend
-        .attr("width", 15)
-        .attr("height", 15)
-        .attr("stroke-width",2)
-        .merge(legend)
+      // legend = legend
+      //   .enter()
+      // .append("rect")
+      //   .attr("class","barlegend")
+      //   .attr("transform", function(d, i) {
+      //     return "translate(0," + i * 40 + ")";
+      //   })
+      //   .attr("x", width + 17) //location of legend
+      //   .attr("width", 15)
+      //   .attr("height", 15)
+      //   .attr("stroke-width",2)
+      //   .merge(legend)
 
-      legend.transition().duration(durations)
-        .attr("fill", z)
-        .attr("stroke", z);
+      // legend.transition().duration(durations)
+      //   .attr("fill", z)
+      //   .attr("stroke", z);
 
-      // ======== Legend text ========
+      // // ======== Legend text ========
 
-      var legendText = g.selectAll(".legendText")
-        .data(keysLegend);
+      // var legendText = g.selectAll(".legendText")
+      //   .data(keysLegend);
 
-      legendText = legendText
-        .enter()
-        .append("text")
-        .attr("class","legendText")
-        .attr("transform", function(d, i) {
-          return "translate(0," + i * 40 + ")";
-        })
-        .attr("x", width + 40)
-        .attr("font-size",12)
-        .attr("y", 8)
-        .attr("dy", "0.32em")
-        .merge(legendText);
+      // legendText = legendText
+      //   .enter()
+      //   .append("text")
+      //   .attr("class","legendText")
+      //   .attr("transform", function(d, i) {
+      //     return "translate(0," + i * 40 + ")";
+      //   })
+      //   .attr("x", width + 40)
+      //   .attr("font-size",12)
+      //   .attr("y", 8)
+      //   .attr("dy", "0.32em")
+      //   .merge(legendText);
 
-      legendText.transition().duration(durations)
-        .text(function(d) {
-          var sliceLegend = d.slice(0, -1)
-          return sliceLegend;
-        });
+      // legendText.transition().duration(durations)
+      //   .text(function(d) {
+      //     var sliceLegend = d.slice(0, -1)
+      //     return sliceLegend;
+      //   });
 
     } // End of update function
 

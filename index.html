@@ -62,6 +62,15 @@
           </a>
         </li>
 
+        <li>
+            <a
+            class="calibration"
+              href="#10"
+              role="tab"
+              data-toggle="tab">
+              Tours
+            </a>
+          </li>
 
         <li>
           <a
@@ -70,16 +79,6 @@
             role="tab"
             data-toggle="tab">
             Trip Mode
-          </a>
-        </li>
-
-        <li>
-          <a
-          class="calibration"
-            href="#10"
-            role="tab"
-            data-toggle="tab">
-            Tours
           </a>
         </li>
 
@@ -252,7 +251,7 @@
                     </div>
                   <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                       <div class="panel-body">
-                          These models schedule activities and travel tours for all household members.  The first sub-model classifies daily travel patterns into three types: </li>
+                          These models schedule activities and travel tours for all household members  (see <a href="#10" role="tab" data-toggle="tab">Tours</a> tab).  The first sub-model classifies daily travel patterns into three types: </li>
                           <ul><li>Mandatory (work and school) – includes at least one out-of-home mandatory activity;</li>
                           <li>Non-mandatory (other purposes) – includes at least one out-of-home non-mandatory activity but no out-of-home mandatory activities;</li>
                           <li>Home – in-home activities only.</li></ul>
@@ -626,7 +625,7 @@
           <br/>
           <div class="col col-md-3">
               <div class="colborder"></div>
-              <h3>Work-Based Walk Trips by Distance</h3>
+              <h3>Work-Based Trips by Distance</h3>
               <!--HOLD FOR Work-Based Trips by Mode & Distance-->
             <br>
             <select id="wbcatModeDist">
@@ -838,6 +837,36 @@
             </div>
 
             <div class="row">
+                <br/>
+                <br/>
+                <div class="col col-md-3">
+                    <div class="colborder"></div><!-- end -->
+          
+                    <h3>Daily Activity Patterns By Person Type</h3>
+                  <select id="catdap">
+                      <option value="H">Home Activity</option>
+                      <option value="M">Mandatory Activity</option>
+                      <option value="N">Non-Mandatory Activity</option>
+                  </select>
+                  <div id="dapLegend"></div>
+                  <div class="small" style="margin-top: 80px;">
+                    Bars show number of trips that will be scheduled for each person type in the selected activity type (mandatory, non-mandatory, or home).  Home trips are stationary and not assigned a mode.
+                      <br><br><b>Sources</b><br>
+                      Observed -Travel Tracker Survey, 2007-2008. <br>
+                      Modeled- CMAP ABM - 2010 Scenario. <br>
+                    </div><br>
+                    <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+                    <p class="small">Select activity type from dropdown to view observed and model comparison</p>
+                </div>
+                <div class="col col-md-7">
+                    <div class="colborder"></div><!-- end -->
+          
+                  <div id="dap"></div>
+          
+                </div>
+              </div>
+
+            <div class="row">
               <div class="col col-md-3">
                 <div class="colborder"></div><!-- end -->
                 <h3>Tours by Person Type</h3>
@@ -944,35 +973,7 @@
           <div id="stackedactivity"></div>
         </div>
     </div>
-    <div class="row">
-      <br/>
-      <br/>
-      <div class="col col-md-3">
-          <div class="colborder"></div><!-- end -->
 
-          <h3>Daily Activity Patterns By Person Type</h3>
-        <select id="catdap">
-            <option value="H">Home Activity</option>
-            <option value="M">Mandatory Activity</option>
-            <option value="N">Non-Mandatory Activity</option>
-        </select>
-        <div id="dapLegend"></div>
-        <div class="small" style="margin-top: 80px;">
-          Bars show number of trips by each person type in the selected activity type (mandatory, non-mandatory, or home).
-            <br><br><b>Sources</b><br>
-            Observed -Travel Tracker Survey, 2007-2008. <br>
-            Modeled- CMAP ABM - 2010 Scenario. <br>
-          </div><br>
-          <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
-          <p class="small">Select activity type from dropdown to view observed and model comparison</p>
-      </div>
-      <div class="col col-md-7">
-          <div class="colborder"></div><!-- end -->
-
-        <div id="dap"></div>
-
-      </div>
-    </div>
       <div class="row">
         <br/>
         <br/>
@@ -1202,7 +1203,8 @@
                     <option value="dtransit">Drive to Transit</option>
                 </select>
                 <div id="transitaccessLegend"></div>
-                <div class="small" style="margin-top:100px;">
+                <div class="small" style="margin-top:80px;">
+                  Distance is the distance of the transit trip that occurred.  <br><br>
                     <b>Sources</b><br>
                     Survey - Travel Tracker Survey, 2007-2008.<br>
                     Modeled - CMAP ABM - 2010 Scenario. <br>
@@ -1257,8 +1259,10 @@
                         <option value="dtransit">Drive to Transit</option>
                     </select>
                     <div id="transittripsratioLegend"></div>
-                    <div class="small" style="margin-top:80px;">
-                        Adults defined as 18 years and over.<br>
+                    <div class="small" style="margin-top:70px;">
+                        Adults defined as 18 years and over. <br>
+                        See <a href="#3" role="tab" data-toggle="tab">Auto Ownership</a> tab as well.
+                        <br><br>
                         <b>Sources</b><br>
                         Survey - Travel Tracker Survey, 2007-2008.<br>
                         Modeled - CMAP ABM - 2010 Scenario. <br>

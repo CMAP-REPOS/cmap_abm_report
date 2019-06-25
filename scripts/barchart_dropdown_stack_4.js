@@ -7,7 +7,7 @@ function makeStackedChart_4(csv_file,catID,dataTitle,divID){
 
   var margin = {top: 35, right: 50, bottom: 50, left: 80},
   width = 700 - margin.left - margin.right,
-  height = 325 - margin.top - margin.bottom;
+  height = 375 - margin.top - margin.bottom;
   height2 = 400 - margin.top - margin.bottom;
 
 
@@ -186,28 +186,28 @@ function makeStackedChart_4(csv_file,catID,dataTitle,divID){
 
         */
 
-        var legend = serie.append("g")
-        .attr("font-family", "sans-serif")
-        .attr("font-size", 10)
-        .attr("text-anchor", "end")
-            .attr("class", "legend")
-            .attr("transform", function(d, i) { return "translate(50," + i * 15 + ")"; });
+      //   var legend = serie.append("g")
+      //   .attr("font-family", "sans-serif")
+      //   .attr("font-size", 10)
+      //   .attr("text-anchor", "end")
+      //       .attr("class", "legend")
+      //       .attr("transform", function(d, i) { return "translate(50," + i * 15 + ")"; });
 
-      legend.append("rect")
-            .attr("x", width - 19)
-            .attr("y", -20)
-            .attr("width", 19)
-            .attr("height", 19)
-            .attr("fill", function(d) { return z(d.key); });
+      // legend.append("rect")
+      //       .attr("x", width - 19)
+      //       .attr("y", -20)
+      //       .attr("width", 19)
+      //       .attr("height", 19)
+      //       .attr("fill", function(d) { return z(d.key); });
 
-      legend.append("text")
-        .attr("x", width - 24)
-        .attr("y", -10)
-        .attr("dy", "0.32em")
-        .style("fill","black")
-        .text(function(d) {
-          return d.key;
-        });
+      // legend.append("text")
+      //   .attr("x", width - 24)
+      //   .attr("y", -10)
+      //   .attr("dy", "0.32em")
+      //   .style("fill","black")
+      //   .text(function(d) {
+      //     return d.key;
+      //   });
 
 
         function update(){
@@ -330,28 +330,28 @@ function makeStackedChart_4(csv_file,catID,dataTitle,divID){
               .attr("fill", "#000")
               .attr("font-weight", "bold")
               .attr("text-anchor", "start")
-              var legend = new_layer.append("g")
-              .attr("font-family", "sans-serif")
-              .attr("font-size", 10)
-              .attr("text-anchor", "end")
-                  .attr("class", "legend")
-                  .attr("transform", function(d, i) { return "translate(50," + i * 15 + ")"; });
+            //   var legend = new_layer.append("g")
+            //   .attr("font-family", "sans-serif")
+            //   .attr("font-size", 10)
+            //   .attr("text-anchor", "end")
+            //       .attr("class", "legend")
+            //       .attr("transform", function(d, i) { return "translate(50," + i * 15 + ")"; });
 
-            legend.append("rect")
-                  .attr("x", width - 19)
-                  .attr("y", -20)
-                  .attr("width", 19)
-                  .attr("height", 19)
-                  .attr("fill", function(d) { return z(d.key); });
+            // legend.append("rect")
+            //       .attr("x", width - 19)
+            //       .attr("y", -20)
+            //       .attr("width", 19)
+            //       .attr("height", 19)
+            //       .attr("fill", function(d) { return z(d.key); });
 
-            legend.append("text")
-              .attr("x", width - 24)
-              .attr("y", -10)
-              .attr("dy", "0.32em")
-              .style("fill","black")
-              .text(function(d) {
-                return d.key;
-              });
+            // legend.append("text")
+            //   .attr("x", width - 24)
+            //   .attr("y", -10)
+            //   .attr("dy", "0.32em")
+            //   .style("fill","black")
+            //   .text(function(d) {
+            //     return d.key;
+            //   });
 
 
         }

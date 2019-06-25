@@ -71,29 +71,29 @@ function BarChart(data,loc,title) {
       .style("text-anchor", "middle")
       .text("Households");
 
-    var legend = g.append("g")
-        .attr("font-family", "sans-serif")
-        .attr("font-size", 10)
-        .attr("text-anchor", "end")
-      .selectAll("g")
-      .data(keys.slice().reverse())
-      .enter().append("g")
-        .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+    // var legend = g.append("g")
+    //     .attr("font-family", "sans-serif")
+    //     .attr("font-size", 10)
+    //     .attr("text-anchor", "end")
+    //   .selectAll("g")
+    //   .data(keys.slice().reverse())
+    //   .enter().append("g")
+    //     .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
-    legend.append("rect")
-        .attr("x", width - 17)
-        .attr("width", 15)
-        .attr("height", 15)
-        .attr("fill", z)
-        .attr("stroke", z)
-        .attr("stroke-width",2)
-        .on("click",function(d) { update(d) });
+    // legend.append("rect")
+    //     .attr("x", width - 17)
+    //     .attr("width", 15)
+    //     .attr("height", 15)
+    //     .attr("fill", z)
+    //     .attr("stroke", z)
+    //     .attr("stroke-width",2)
+    //     .on("click",function(d) { update(d) });
 
-    legend.append("text")
-        .attr("x", width - 24)
-        .attr("y", 9.5)
-        .attr("dy", "0.32em")
-        .text(function(d) { return d; });
+    // legend.append("text")
+    //     .attr("x", width - 24)
+    //     .attr("y", 9.5)
+    //     .attr("dy", "0.32em")
+    //     .text(function(d) { return d; });
 
     var filtered = [];
 

@@ -76,6 +76,16 @@
         <li>
           <a
           class="calibration"
+            href="#10"
+            role="tab"
+            data-toggle="tab">
+            Tours
+          </a>
+        </li>
+
+        <li>
+          <a
+          class="calibration"
             href="#6"
             role="tab"
             data-toggle="tab">
@@ -100,6 +110,16 @@
             role="tab"
             data-toggle="tab">
             Transit Trips
+          </a>
+        </li>
+
+        <li>
+          <a
+          class="validation"
+            href="#11"
+            role="tab"
+            data-toggle="tab">
+            Population Synthesis
           </a>
         </li>
 
@@ -360,77 +380,6 @@
           </div> <!-- end -->
         </div> <!-- end row-->
         <br>
-        <div class="row">
-          <div class="col-md-3">
-            <div class="colborder"></div><!-- end -->
-            <h4>Household Characteristics</h4>
-            <div id="pumsLegend"></div>
-            <br>
-            <select id="catPopSyn">
-              <option value="income">Household Income</option>
-              <option value="adults">Adults Per Household</option>
-              <option value="income">Children Per Household</option>
-              <option value="income">Workers Per Household</option>
-            </select><!-- end -->
-            <br><br><br>
-            <br>
-            <br>
-            <p class="small">
-              <b>Sources</b><br>
-              Observed- PUMS 2007-2011 <br>
-              Modeled- CMAP ABM - 2010 Scenario <br>
-            </p>
-            <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
-            <p class="small">Select household attribute from dropdown to view observed and model comparison</p>
-          </div><!-- end -->
-          <div class="col-md-7">
-            <div class="colborder" style="text-align:center">
-            <h4>Households by <div id= "hhtitle"></div></h4><!-- end -->
-            <div id="PurposeChartpums"></div><!-- end -->
-          </div><!-- end -->
-          </div> <!-- end -->
-        </div> <!-- end row-->
-        <div class="row"> <!--Household Details-->
-          <div class="col-md-3">
-            <div class="colborder"></div><!-- end -->
-            <h4>Household Details</h4>
-            <!--chart legend-->
-            <br>
-            <select id="hhDetail">
-              <option value="adults">Adults & Children</option>
-              <option value="income">Adults & Workers</option>
-              <option value="income">Adults & Vehicles</option>
-            </select><!-- end -->
-            <br>
-            <br>
-            <br>
-            <div id="heatlegend"></div>
-            <p class="small">
-              <b>Sources</b><br>
-              Observed- National Household Travel Survey 20??<br>
-              Modeled- CMAP ABM - 2010 Scenario <br>
-            </p>
-            <br>
-            <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
-            <p class="small">Hover over squares to reveal value</p>
-            <div></div>
-          </div> <!--end-->
-        <div class="row">
-          <div class="col-md-7">
-            <div class="colborder" style="text-align:center">
-              <h4> Households by Number of </h4>
-            </div><!--end-->
-              <div class="col-md-6" style="text-align:center">
-                <h4> Observed </h4>
-                <div id="heattest1" ></div>
-              </div>
-              <div class="col-md-6" style="text-align:center">
-                <h4> Modeled </h4>
-                <div id="heattest2"></div>
-              </div>
-            </div><!--end-->
-        </div><!--end row-->
-        </div> <!-- end row -->
       </div><!--end tab-->
         <!-- Auto Counts -->
       <div
@@ -452,6 +401,7 @@
             <div class="col-md-3">
                 <div class="colborder"></div>
                 <h4>Number of Households by Vehicles Owned</h4>
+                <div id="autoLegend"></div>
                 <div id="auto_counts" style="width : 86%" align="center"></div>
                 <div class="small">
                   <b>Sources</b><br>
@@ -462,8 +412,8 @@
           <div class="col-md-7">
               <div class="colborder"></div>
               <br>
-            <svg id="aoCountBar" width="700" height="300"
-                  preserveAspectRatio="xMidYMid meet"></svg>
+            <center><svg id="aoCountBar" width="700" height="375"
+                  preserveAspectRatio="xMidYMid meet"></svg></center>
             </div>
         </div>
 
@@ -480,7 +430,8 @@
               <option value="income">Household Income</option>
               <option value="workers">Household Workers</option>
             </select>
-            <br><br><br>
+            <br>
+            <div id="stackedAutoLegend"></div>
 
             <div class="small" style="margin-top: 0px;">
                 <b>Sources</b><br>
@@ -493,7 +444,7 @@
           </div>
           <div class="col col-md-7">
               <div class="colborder"></div>
-              <div id="stackedbar"></div>
+              <center><div id="stackedbar"></div></center>
             </div>
         </div>
       </div>
@@ -619,7 +570,9 @@
                 <option value="IN">Indiana</option>
                 <option value="WI">Wisconsin</option>
               </select>
-              <div class="small" style="margin-top: 250px;">
+              <div id="worktripsLegend"></div>
+              <div class="small" style="margin-top: 225px;">
+                Y-axis shows trip origin.<br><br>
                   <b>Sources</b><br>
                   Observed -Travel Tracker Survey, 2007-2008. <br>
                   Modeled- CMAP ABM - 2010 Scenario. <br>
@@ -639,7 +592,6 @@
               <div class="colborder"></div>
                   <h3>Work Trips by Mode and Distance</h3>
                   <!--HOLD FOR Work Trips by Mode & Distance-->
-            <h5><b>Mean Distance To Work by <div id= "modeDTitle"></div></b></h5>
             <br>
             <select id="catModeDist">
               <option value="all">All Modes</option>
@@ -654,6 +606,7 @@
               <option value="bike">Bike</option>
               <option value="taxi">Taxi</option>
             </select>
+            <div id="worktripsdistanceLegend"></div>
             <div class="small" style="margin-top: 100px;">
                 <b>Sources</b><br>
                 Observed -Travel Tracker Survey, 2007-2008. <br>
@@ -675,7 +628,6 @@
               <div class="colborder"></div>
               <h3>Work-Based Walk Trips by Distance</h3>
               <!--HOLD FOR Work-Based Trips by Mode & Distance-->
-            <h5><b>Mean Distance of Work-Based Trips by <div id= "wbmodeDTitle"></div></b></h5>
             <br>
             <select id="wbcatModeDist">
               <option value="all">All Modes</option>
@@ -690,6 +642,7 @@
               <option value="bike">Bike</option>
               <option value="taxi">Taxi</option>
             </select>
+            <div id="workbasedwalktripsLegend"></div>
             <div class="small" style="margin-top: 100px;">
                 <b>Sources</b><br>
                 Observed -Travel Tracker Survey, 2007-2008. <br>
@@ -758,11 +711,6 @@
         <div class="col col-md-3">
             <div class="colborder"></div><!-- end -->
             <h3>Trips by Person Type and Mode</h3>
-
-            <br>   
-
-          <h5><b><div id= "modePTitle"></div>Trips</b></h5>
-          <br>
           <select id="catModePer">
             <option value="All">All</option>
             <option value="Full-time Worker">Full-time Worker</option>
@@ -774,6 +722,7 @@
             <option value="Student under 16 years">Student under 16 years</option>
             <option value="University Student">University Student</option>
           </select>
+          <div id="tripspersonLegend"></div>
           <div class="small" style="margin-top: 20px;">
               Single person trips only. <br>
               <b>Sources</b><br>
@@ -803,11 +752,6 @@
         <div class="col col-md-3">
             <div class="colborder"></div><!-- end -->
             <h3>Trips by Household Income and Mode</h3>
-
-            <br> 
-
-          <h5><b><div id= "modeITitle"></div> Trips</b></h5>
-          <br>
           <select id="catModeInc">
             <option value="All">All</option>
             <option value="Less than $35k">Less than $35k</option>
@@ -816,6 +760,7 @@
             <option value="$75k to $100K">$75k to $100K</option>
             <option value="More than $100k">More than $100k</option>
           </select>
+          <div id="tripsbyincomeLegend"></div>
           <div class="small" style="margin-top: 80px;">
               <b>Sources</b><br>
               Observed -Travel Tracker Survey, 2007-2008. <br>
@@ -841,8 +786,6 @@
   <p>
     See more about trip purpose in the <a href="#6" role="tab" data-toggle="tab">Trip Activities</a> tab.  
   </p>
-          <h5><b><div id= "modeTitle"></div> Trips</b></h5>
-          <br>
           <select id="catModePurp">
             <option value="All">All</option>
             <option value="Discretionary">Discretionary</option>
@@ -856,6 +799,7 @@
             <option value="Work">Work</option>
             <option value="Work-based">Work-based</option>
           </select>
+          <div id="tripspurposemodeLegend"></div>
           <div class="small" style="margin-top: 80px;">
               <b>Sources</b><br>
               Observed -Travel Tracker Survey, 2007-2008. <br>
@@ -873,6 +817,91 @@
         </div>
       </div>
       </div>
+
+      <div id="10" class="tab-pane container-fluid">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-7">
+              <br/>
+              <br/>
+    
+              <h3>Tours</h3>
+              <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+                  improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+                  sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+                  factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+                  qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+                  formarum quam civis excellen
+                </p>
+              <br></div>
+            </div>
+
+            <div class="row">
+              <div class="col col-md-3">
+                <div class="colborder"></div><!-- end -->
+                <h3>Tours by Person Type</h3>
+                <br>
+                <div id="tourlegend"></div>
+              <div class="small">
+                <b>Sources</b><br>
+                Observed -Travel Tracker Survey, 2007-2008. <br>
+                Modeled- CMAP ABM - 2010 Scenario.
+              </p>
+              <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+              <p>Hover over bars to compare tours by person type.</p>
+              </div>
+            </div>
+            <div class="col col-md-7">
+                <div class="colborder"></div><!-- end -->
+                <div id="TourPersonType"></div>
+            </div>
+          </div>
+            
+            <div class="row">
+              <div class="col col-md-3">
+                <div class="colborder"></div><!-- end -->
+                <h3>Tour Rates by Person Type</h3>
+                <br>
+              <div id="tourRateLegend"></div>
+              <div class="small">
+                Tour Rate is the number of tours by person type (above) divided by the total number of people of that type (see <a href="#2" role="tab" data-toggle="tab">Population Synthesis</a> tab; note the observed data source is different).
+                <br><br>
+                <b>Sources</b><br>
+                Observed -Travel Tracker Survey, 2007-2008. <br>
+                Modeled- CMAP ABM - 2010 Scenario.
+              </p>
+              </div>
+            </div>
+            <div class="col col-md-7">
+                <div class="colborder"></div><!-- end -->
+                <div id="tourrates"></div>
+            </div>
+          </div>
+
+          <div class="row">
+              <div class="col col-md-3">
+                <div class="colborder"></div><!-- end -->
+                <h3>Tours by Purpose and Type</h3>
+                <br>
+              <div id="tourpurposeLegend"></div>
+              <div class="small">
+                <b>Sources</b><br>
+                Observed -Travel Tracker Survey, 2007-2008. <br>
+                Modeled- CMAP ABM - 2010 Scenario.
+              </p>
+              </div>
+            </div>
+            <div class="col col-md-7">
+                <div class="colborder"></div><!-- end -->
+                <div id="tourstack"></div>
+            </div>
+          </div>
+            
+            
+        </div>
+
+
       <div
         id="6"
         class="tab-pane container-fluid">
@@ -922,15 +951,15 @@
           <div class="colborder"></div><!-- end -->
 
           <h3>Daily Activity Patterns By Person Type</h3>
-        <h5><b><div id= "dapTitle"></div></b></h5>
-        <br>
         <select id="catdap">
             <option value="H">Home Activity</option>
             <option value="M">Mandatory Activity</option>
             <option value="N">Non-Mandatory Activity</option>
         </select>
+        <div id="dapLegend"></div>
         <div class="small" style="margin-top: 80px;">
-            <b>Sources</b><br>
+          Bars show number of trips by each person type in the selected activity type (mandatory, non-mandatory, or home).
+            <br><br><b>Sources</b><br>
             Observed -Travel Tracker Survey, 2007-2008. <br>
             Modeled- CMAP ABM - 2010 Scenario. <br>
           </div><br>
@@ -949,8 +978,6 @@
         <br/>
         <div class="col col-md-3">
             <div class="colborder"></div><!-- end -->
-          <h5><b><div id= "purpTypeTitle"></div> Trips</b></h5>
-
           <h3>Trips by Person Type and Purpose</h3>
           <br>
           <select id="catPurpType">
@@ -964,6 +991,7 @@
             <option value="Student under 16 years">Student under 16 years</option>
             <option value="University Student">University Student</option>
           </select>
+          <div id="tripsptypepurposeLegend"></div>
           <div class="small" style="margin-top: 80px;">
             Single-person trips only.<br>
               <b>Sources</b><br>
@@ -991,10 +1019,7 @@
         <br/>
         <div class="col col-md-3">
             <div class="colborder"></div><!-- end -->
-
-          <h5><b><div id= "purpDistTitle"></div> Trips</b></h5>
           <h3>Trips by Distance and Purpose</h3>
-          <br>
           <select id="catPurpDist">
             <option value="All">All</option>
             <option value="Less than 2.5 Mile">Less than 2.5 Mile</option>
@@ -1006,6 +1031,7 @@
             <option value="25-30 Miles">25-30 Miles</option>
             <option value="30 Miles or More">30 Miles or More</option>
           </select>
+          <div id="tripsDistancePurposeLegend"></div>
           <div class="small" style="margin-top: 80px;">
               <b>Sources</b><br>
               Observed -Travel Tracker Survey, 2007-2008. <br>
@@ -1037,8 +1063,6 @@
               <div class="colborder"></div><!-- end -->
 
               <h3>Trips by Purpose and Distance</h3>
-            <h5><b><div id= "DistpurpTitle"></div> Trips</b></h5>
-            <br>
             <select id="catDistPurp">
                 <option value="Discretionary">Discretionary</option>
                 <option value="Eating Out">Eating Out</option>
@@ -1051,6 +1075,7 @@
                 <option value="Work">Work</option>
                 <option value="Work-based">Work-based</option>
             </select>
+            <div id="tripspurposedistLegend"></div>
             <div class="small" style="margin-top: 100px;">
                 <b>Sources</b><br>
                 Observed -Travel Tracker Survey, 2007-2008. <br>
@@ -1171,14 +1196,12 @@
               <div class="col col-md-3">
                   <div class="colborder"></div><!-- end -->
                         <h3>Transit Trips by Mode of Access and Distance</h3>
-
-                <h5><b><div id= "TranDistTitle"></div> Trips</b></h5>
-                <br>
                 <select id="catTranDist">
                     <option value="all">All Access Modes</option>
                     <option value="transit">Walk To Transit</option>
                     <option value="dtransit">Drive to Transit</option>
                 </select>
+                <div id="transitaccessLegend"></div>
                 <div class="small" style="margin-top:100px;">
                     <b>Sources</b><br>
                     Survey - Travel Tracker Survey, 2007-2008.<br>
@@ -1200,14 +1223,13 @@
                 <br/>
                 <div class="col col-md-3">
                   <div class="colborder"></div><!-- end -->
-                          <h3>Transit Trips by Income</h3>
-                  <h5><b><div id= "TranIncomeTitle"></div> Trips</b></h5>
-                  <br>
+                          <h3>Transit Trips by Mode of Access and Household Income</h3>
                   <select id="catIncomeDist">
                       <option value="all">All Access Modes</option>
                       <option value="transit">Walk To Transit</option>
                       <option value="dtransit">Drive to Transit</option>
                   </select>
+                  <div id="transitincomeLegend"></div>
                   <div class="small" style="margin-top:100px;">
                       <b>Sources</b><br>
                       Survey - Travel Tracker Survey, 2007-2008.<br>
@@ -1228,14 +1250,13 @@
                   <br/>
                   <div class="col col-md-3">
                       <div class="colborder"></div><!-- end -->
-                            <h3>Transit Trips by Ratio of Autos to Adults</h3>
-                    <h5><b><div id= "TranAutoAdultTitle"></div> Trips</b></h5>
-                    <br>
+                            <h3>Transit Trips by Mode of Access and Ratio of Autos to Adults</h3>
                     <select id="catAutoAdult">
                         <option value="all">All Access Modes</option>
                         <option value="transit">Walk To Transit</option>
                         <option value="dtransit">Drive to Transit</option>
                     </select>
+                    <div id="transittripsratioLegend"></div>
                     <div class="small" style="margin-top:80px;">
                         Adults defined as 18 years and over.<br>
                         <b>Sources</b><br>
@@ -1252,6 +1273,28 @@
                   </div>
                 </div>
       </div>
+
+      <div id="11" class="tab-pane container-fluid">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-7">
+              <br/>
+              <br/>
+    
+              <h3>Population Synthesis</h3>
+              <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+                  improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+                  sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+                  factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+                  qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+                  formarum quam civis excellen
+                </p>
+              <br></div>
+            </div></div>
+
+
+
       <div id="8" class="tab-pane container-fluid">
           <div class="row">
               <div class="col-md-3"></div>
@@ -1275,6 +1318,8 @@
             <div class="colborder"></div><!-- end -->
 
             <h3>Comparison of Daily VMT Shares by County</h3>
+            <div id="highwayvmtLegend"></div>
+
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
                 improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
@@ -1283,7 +1328,7 @@
                 qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
                 formarum quam civis excellen
               </p>
-
+              
               <div class="small">
                   <b>Sources</b><br>
                   Survey - Illinois Travel Statistics 2015<br>
@@ -1307,7 +1352,7 @@
           <div class="colborder"></div><!-- end -->
 
           <h3>Comparison of Daily VMT Shares by County and Facility Type</h3>
-          <br><br><br>
+          <div id="vmtfacilityLegend"></div>
           <div class="small">
               <b>Sources</b><br>
               Survey - Illinois Travel Statistics 2015<br>
@@ -1440,7 +1485,7 @@
   <script src="https://underscorejs.org/underscore-min.js"></script>
     <script src="https://rawgit.com/sghall/7859113/raw/422da4401f7d4fc0352a7c49961d24f03716be7a/gistfile1.js"></script>
 
-  <script src="scripts/internallinks.js"></script>
+  <script src="scripts/internallinks_legends.js"></script>
   <script src="scripts/workflowdropdown.js"></script>
 
   <script
@@ -1479,6 +1524,10 @@
     src="scripts/barchart_stack.js"
     type="text/javascript">
   </script>
+    <script
+    src="scripts/barchart_stack2.js"
+    type="text/javascript">
+  </script>
   <script
     src="scripts/barchart_stack_h_v2.js"
     type="text/javascript">
@@ -1506,6 +1555,10 @@
   </script>
   <script
     src="scripts/modepurposefilter.js"
+    type="text/javascript">
+  </script>
+    <script
+    src="scripts/lollipop_dual.js"
     type="text/javascript">
   </script>
 
@@ -1590,6 +1643,7 @@
   <script type="text/javascript" src="data/hwy_interstates.js"></script>
   <script>makeStackedChart_3("data/csv3a_popsyn_crosstab.csv","#popsynCat","dtitle","popsynstack");</script>
   <script>makeStackedChart_nodd("data/csv23_vmt_county_facility.csv","cftitle","cfstack");</script>
+  <script>makeStackedChart_nodd2("data/csv33_tour_purposetype.csv","cftitle","tourstack");</script>
   <script>makeStackedChart_4("data/csv3_aocrosstab_counts.csv","#aoCat","dtitle","stackedbar");</script>
   <script>makeChords('data/csv4_chord.csv', "modelChord", "obsChord");</script>
 
@@ -1600,6 +1654,7 @@
   <script>make_h_stacked("data/htest2.csv","HouseholdSize", "hhlegend")</script>
   <script>make_h_stacked_tripsbymode("data/csv1314_tripmode.csv","stackedmode", "modelegend")</script>
   <script>make_h_stacked_tripsbymode("data/csv15_16_trippurpose.csv","stackedactivity", "activitieslegend")</script>
+  <script>make_h_stacked("data/csv32_tour_persontype.csv","TourPersonType", "tourlegend")</script>
   <script>make_bubble("data/bubbletest.csv","bubbletest", "bblegend")</script>
 
   <script type="text/javascript" src="data/counties.js"></script>

@@ -13,7 +13,7 @@ function make_bubble(csv_file,divID, legendID){
 
   d3.csv(csv_file, function(data) {
 
-    console.log(data)
+    //console.log(data)
     // ---------------------------//
     //       AXIS  AND SCALE      //
     // ---------------------------//

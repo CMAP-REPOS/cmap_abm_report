@@ -78,7 +78,7 @@ function makeStackedChart_nodd2(csv_file,dataTitle,divID){
       .entries(data)
       .map(function(d){ return d.value; });
 
-    console.log("groupData", groupData)
+    //console.log("groupData", groupData)
 
     var stackData = stack
       .keys(keys)(groupData)

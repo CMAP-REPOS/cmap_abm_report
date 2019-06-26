@@ -282,7 +282,8 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle,l
         .attr("cx", 10)
         .attr("cy", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
         .attr("r", 7)
-        .style("fill", function(d) { return z(d.key); })
+        .style("fill", function(i) { 
+          return z(i); })
 
     // Add one dot in the legend for each name.
     legend.selectAll("mylabels")
@@ -291,7 +292,7 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle,l
       .append("text")
         .attr("x", 20)
         .attr("y", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
-        .text(function(d){ console.log(d)
+        .text(function(d){ //console.log(d)
           return d})
         .attr("text-anchor", "left")
         .style("alignment-baseline", "middle")

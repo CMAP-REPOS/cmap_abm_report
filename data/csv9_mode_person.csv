@@ -57,8 +57,8 @@ Drive alone free,0,0,Preschool,,Preschool
 Drive alone free,0,0,Student under 16 years,,Student under 16 years
 Drive alone pay,0,0,Preschool,,Preschool
 Drive alone pay,0,0,Student under 16 years,,Student under 16 years
-School bus,0,1343.183707,Non worker,,Non worker
-School bus,0,8621.768071,Full-time Worker,fulltime School bus Trips,Full-time Worker
-School bus,0,254.6058301,Part-time Worker,parttime School bus Trips,Part-time Worker
-School bus,0,233.4839381,Retired,retired School bus Trips,Retired
-School bus,0,2911.928648,University Student,university School bus Trips,University Student
+School bus,0,0,Non worker,,Non worker
+School bus,0,0,Full-time Worker,fulltime School bus Trips,Full-time Worker
+School bus,0,0,Part-time Worker,parttime School bus Trips,Part-time Worker
+School bus,0,0,Retired,retired School bus Trips,Retired
+School bus,0,0,University Student,university School bus Trips,University Student

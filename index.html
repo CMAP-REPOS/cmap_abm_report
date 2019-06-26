@@ -160,7 +160,8 @@
                Modeling best practice dictates that different data sets be used to conduct calibration and
                validation activities; in the absence of other observed data, the sources used for model
                calibration may be used for validation as long as they examine different aspects of the
-               data or rely on alternate geographic scopes.  Model validation results in this report reflect 2015 conditions.
+               data or rely on alternate geographic scopes.  Model validation results in this report reflect 2015 conditions.<br><br>
+               Model calibration results are in blue tabs, and model validation results are in green tabs.  
                </p>
             </div><!-- end -->
           <div class="col-md-2">
@@ -172,6 +173,7 @@
             <div class="colborder"></div><!-- end -->
             <h4>CMAP Modeling Area and Network</h4>
             <svg id="intromaplegend" ></svg><br>
+            <p>Only portions of Lee, Ogle, and LaSalle counties are included in the modeling area.</p>
             <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
             <p>Click within modeling area to view county name</p>
           </div><!-- end -->
@@ -348,7 +350,7 @@
               <p class="small">
                 <b>Sources</b><br>
                 Observed- PUMS 2007-2011 <br>
-                Modeled- CMAP ABM - 2010 Scenario <br>
+                Modeled- PopSynIII <br>
               </p>
               <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Hover over population categories to reveal details</p>
@@ -368,7 +370,7 @@
               <p class="small">
                 <b>Sources</b><br>
                 Observed- PUMS 2007-2011 <br>
-                Modeled- CMAP ABM - 2010 Scenario <br>
+                Modeled- PopSynIII <br>
               </p>
               <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Hover over household size categories to reveal details</p>
@@ -378,6 +380,36 @@
             <div id="HouseholdSize" width="100%" ></div><!-- end -->
           </div> <!-- end -->
         </div> <!-- end row-->
+
+        <div class="row">
+            <div class="col-md-3">
+              <div class="colborder"></div><!-- end -->
+              <h4>Household Characteristics</h4>
+              <div id="pumsLegend"></div>
+              <br>
+              <select id="catPopSyn">
+                <option value="age">Head of Household Age</option>
+                <option value="workers">Household Workers</option>
+                <option value="income1">Household Income</option>
+              </select><!-- end -->
+              <br><br><br>
+              <br>
+              <br>
+              <p class="small">
+                <b>Sources</b><br>
+                Observed- PUMS 2007-2011 <br>
+                Modeled- PopSynIII <br>
+              </p>
+              <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+              <p class="small">Select household attribute from dropdown to view observed and model comparison</p>
+            </div><!-- end -->
+            <div class="col-md-7">
+                <div class="colborder" style="text-align:center">
+                <h4>Households by <div id= "hhtitle"></div></h4><!-- end -->
+                <div id="PurposeChartpums"></div><!-- end -->
+              </div><!-- end -->
+              </div> <!-- end -->
+            </div> <!-- end row-->
         <br>
       </div><!--end tab-->
         <!-- Auto Counts -->
@@ -404,8 +436,8 @@
                 <div id="auto_counts" style="width : 86%" align="center"></div>
                 <div class="small">
                   <b>Sources</b><br>
-                  Survey - ACS 2006-2010. <br>
-                  Modeled- CMAP ABM - 2010 Scenario. <br>
+                  Observed - ACS 2007-2011 <br>
+                  Modeled- PopSynIII <br>
                 </div>
             </div>
           <div class="col-md-7">
@@ -434,8 +466,8 @@
 
             <div class="small" style="margin-top: 0px;">
                 <b>Sources</b><br>
-                  Observed - ACS 2009-2013. <br>
-                  Modeled- CMAP ABM - 2010 Scenario. <br>
+                  Observed - ACS 2007-2011 <br>
+                  Modeled- PopSynIII <br>
                 </div>
                 <br>
                 <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
@@ -915,6 +947,7 @@
                 <br>
               <div id="tourpurposeLegend"></div>
               <div class="small">
+                Mandatory Tours (work, school, and university) are individual by definition.  <br><br>
                 <b>Sources</b><br>
                 Observed -Travel Tracker Survey, 2007-2008. <br>
                 Modeled- CMAP ABM - 2010 Scenario.
@@ -1572,7 +1605,7 @@
   </script>
 
   <script>make_heatmap("data/heatmaptest.csv","heattest1", "heattest2","heatlegend")</script>
-  <!-- <script>makeGroupVBar("data/csv1_pop_syn.csv","#PurposeChartpums","#catPopSyn",2, "popsynDesc","hhtitle","pumsLegend");</script> -->
+  <script>makeGroupVBar("data/csv1_pop_syn.csv","#PurposeChartpums","#catPopSyn",2, "popsynDesc","hhtitle","pumsLegend");</script>
   <script>makeGroupVBar("data/csv5_mode_purpose.csv","#ModeByPurpose","#catModePurp",2, "modePurpDesc","modeTitle");</script>
   <script>makeGroupHBar_dd("data/csv6_work_trips.csv","#VChart","#workFlowCat",2, "pDesc","pTitle");</script>
   <script>makeGroupVBar("data/csv7_work_mode_distance.csv","#ModeByDistance","#catModeDist",2, "modeDistDesc","modeDTitle");</script>

@@ -347,7 +347,7 @@
               <br>
               <p class="small">
                 <b>Sources</b><br>
-                Observed- Travel Tracker Survey, 2007-2008 <br>
+                Observed- PUMS 2007-2011 <br>
                 Modeled- CMAP ABM - 2010 Scenario <br>
               </p>
               <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
@@ -367,7 +367,7 @@
               <div id="hhlegend"></div><!-- end -->
               <p class="small">
                 <b>Sources</b><br>
-                Observed- Travel Tracker Survey, 2007-2008 <br>
+                Observed- PUMS 2007-2011 <br>
                 Modeled- CMAP ABM - 2010 Scenario <br>
               </p>
               <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
@@ -1177,16 +1177,16 @@
               <div class="col col-md-4" style="width: 29.16666666666667%" align = "center">
                   <div class="colborder"></div><!-- end -->
 
-                <h5><b>Observed Transit Access</b></h5>
-                <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
-                <div id="pieTransitSurveyMode"></div>
+                <h5><b>Modeled Transit Access</b></h5>
+                <p style="font-size:small;">CMAP ABM - 2010 Scenario</p>
+                <div id="pieTransitModelMode"></div>
               </div>
               <div class="col col-md-4" style="width: 29.16666666666667%" align = "center">
                   <div class="colborder"></div><!-- end -->
 
-                <h5><b>Modeled Transit Access</b></h5>
-                <p style="font-size:small;">CMAP ABM - 2010 Scenario</p>
-                <div id="pieTransitModelMode"></div>
+                <h5><b>Observed Transit Access</b></h5>
+                <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
+                <div id="pieTransitSurveyMode"></div>
               </div>
             </div>
 
@@ -1390,7 +1390,9 @@
 
           <h3>Comparison of Interstate Daily VMT By Auto and Truck</h3>
           <div id="vmtLegend"></div>
-          <div id="interstate_map"></div>
+          <div id="interstate_map"></div><br>
+          <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+          <p class="small">Hover over bars to display values and highlight segment on map.  Click on a highway segment on the map to show the name.</p>
         </div>
         <div class="col-md-4" style="width: 29.16666666666667%">
             <div class="colborder"></div><!-- end -->
@@ -1456,7 +1458,10 @@
               <div class="colborder"></div><!-- end -->
 
             <h3>Transit Boardings by Line</h3>
-            <div id="transit_map"></div>
+            <svg id="transitmaplegend" ></svg>
+            <div id="transit_map"></div><br>
+            <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+          <p class="small">Hover over bars to display values and highlight segment on map.  CTA segments are highlighted in red, and Metra segments are highlighted in green. Click on a transit segment on the map to show the name.</p>
           </div>
           <div class="col-md-4" style="width: 29.16666666666667%">
               <div class="colborder"></div><!-- end -->

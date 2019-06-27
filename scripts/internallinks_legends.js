@@ -201,3 +201,27 @@ legend.selectAll("mylabels")
     .attr("text-anchor", "left")
     .style("alignment-baseline", "middle")
     .style("fill","black")
+
+// select the svg area
+var svg = d3.select("#transitmaplegend")
+
+  // metra
+  svg.append("line").attr("x1",10).attr("y1",10).attr("x2",30).attr("y2",10).style("stroke", "grey").style("stroke-width",2)
+  svg.append("text")
+  .attr("x", 35)
+  .attr("y", 10)
+  .text("Metra Lines")
+  .style("font-size", "14px")
+  .style("font-family","sans-serif")
+  .attr("alignment-baseline","middle")
+
+  //cta
+  svg.append("line").attr("x1",10).attr("y1",30).attr("x2",30).attr("y2",30).style("stroke", "black").style("stroke-width",2)
+  svg.append("text")
+  .attr("x", 35)
+  .attr("y", 30)
+  .text("CTA Lines")
+  .style("font-size", "14px")
+  .style("font-family","sans-serif")
+  .attr("alignment-baseline","middle")
+

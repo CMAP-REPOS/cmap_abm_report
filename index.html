@@ -62,6 +62,15 @@
           </a>
         </li>
 
+        <li>
+            <a
+            class="calibration"
+              href="#10"
+              role="tab"
+              data-toggle="tab">
+              Tours
+            </a>
+          </li>
 
         <li>
           <a
@@ -70,16 +79,6 @@
             role="tab"
             data-toggle="tab">
             Trip Mode
-          </a>
-        </li>
-
-        <li>
-          <a
-          class="calibration"
-            href="#10"
-            role="tab"
-            data-toggle="tab">
-            Tours
           </a>
         </li>
 
@@ -161,7 +160,8 @@
                Modeling best practice dictates that different data sets be used to conduct calibration and
                validation activities; in the absence of other observed data, the sources used for model
                calibration may be used for validation as long as they examine different aspects of the
-               data or rely on alternate geographic scopes.  Model validation results in this report reflect 2015 conditions.
+               data or rely on alternate geographic scopes.  Model validation results in this report reflect 2015 conditions.<br><br>
+               Model calibration results are in blue tabs, and model validation results are in green tabs.  
                </p>
             </div><!-- end -->
           <div class="col-md-2">
@@ -173,6 +173,7 @@
             <div class="colborder"></div><!-- end -->
             <h4>CMAP Modeling Area and Network</h4>
             <svg id="intromaplegend" ></svg><br>
+            <p>Only portions of Lee, Ogle, and LaSalle counties are included in the modeling area.</p>
             <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
             <p>Click within modeling area to view county name</p>
           </div><!-- end -->
@@ -252,7 +253,7 @@
                     </div>
                   <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                       <div class="panel-body">
-                          These models schedule activities and travel tours for all household members.  The first sub-model classifies daily travel patterns into three types: </li>
+                          These models schedule activities and travel tours for all household members  (see <a href="#10" role="tab" data-toggle="tab">Tours</a> tab).  The first sub-model classifies daily travel patterns into three types: </li>
                           <ul><li>Mandatory (work and school) – includes at least one out-of-home mandatory activity;</li>
                           <li>Non-mandatory (other purposes) – includes at least one out-of-home non-mandatory activity but no out-of-home mandatory activities;</li>
                           <li>Home – in-home activities only.</li></ul>
@@ -348,8 +349,8 @@
               <br>
               <p class="small">
                 <b>Sources</b><br>
-                Observed- Travel Tracker Survey, 2007-2008 <br>
-                Modeled- CMAP ABM - 2010 Scenario <br>
+                Observed- PUMS 2007-2011 <br>
+                Modeled- PopSynIII <br>
               </p>
               <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Hover over population categories to reveal details</p>
@@ -368,8 +369,8 @@
               <div id="hhlegend"></div><!-- end -->
               <p class="small">
                 <b>Sources</b><br>
-                Observed- Travel Tracker Survey, 2007-2008 <br>
-                Modeled- CMAP ABM - 2010 Scenario <br>
+                Observed- PUMS 2007-2011 <br>
+                Modeled- PopSynIII <br>
               </p>
               <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Hover over household size categories to reveal details</p>
@@ -379,6 +380,36 @@
             <div id="HouseholdSize" width="100%" ></div><!-- end -->
           </div> <!-- end -->
         </div> <!-- end row-->
+
+        <div class="row">
+            <div class="col-md-3">
+              <div class="colborder"></div><!-- end -->
+              <h4>Household Characteristics</h4>
+              <div id="pumsLegend"></div>
+              <br>
+              <select id="catPopSyn">
+                <option value="age">Head of Household Age</option>
+                <option value="workers">Household Workers</option>
+                <option value="income1">Household Income</option>
+              </select><!-- end -->
+              <br><br><br>
+              <br>
+              <br>
+              <p class="small">
+                <b>Sources</b><br>
+                Observed- PUMS 2007-2011 <br>
+                Modeled- PopSynIII <br>
+              </p>
+              <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+              <p class="small">Select household attribute from dropdown to view observed and model comparison</p>
+            </div><!-- end -->
+            <div class="col-md-7">
+                <div class="colborder" style="text-align:center">
+                <h4>Households by <div id= "hhtitle"></div></h4><!-- end -->
+                <div id="PurposeChartpums"></div><!-- end -->
+              </div><!-- end -->
+              </div> <!-- end -->
+            </div> <!-- end row-->
         <br>
       </div><!--end tab-->
         <!-- Auto Counts -->
@@ -405,8 +436,8 @@
                 <div id="auto_counts" style="width : 86%" align="center"></div>
                 <div class="small">
                   <b>Sources</b><br>
-                  Survey - ACS 2006-2010. <br>
-                  Modeled- CMAP ABM - 2010 Scenario. <br>
+                  Observed - ACS 2007-2011 <br>
+                  Modeled- PopSynIII <br>
                 </div>
             </div>
           <div class="col-md-7">
@@ -435,8 +466,8 @@
 
             <div class="small" style="margin-top: 0px;">
                 <b>Sources</b><br>
-                  Observed - ACS 2009-2013. <br>
-                  Modeled- CMAP ABM - 2010 Scenario. <br>
+                  Observed - ACS 2007-2011 <br>
+                  Modeled- PopSynIII <br>
                 </div>
                 <br>
                 <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
@@ -626,7 +657,7 @@
           <br/>
           <div class="col col-md-3">
               <div class="colborder"></div>
-              <h3>Work-Based Walk Trips by Distance</h3>
+              <h3>Work-Based Trips by Distance</h3>
               <!--HOLD FOR Work-Based Trips by Mode & Distance-->
             <br>
             <select id="wbcatModeDist">
@@ -838,6 +869,36 @@
             </div>
 
             <div class="row">
+                <br/>
+                <br/>
+                <div class="col col-md-3">
+                    <div class="colborder"></div><!-- end -->
+          
+                    <h3>Daily Activity Patterns By Person Type</h3>
+                  <select id="catdap">
+                      <option value="H">Home Activity</option>
+                      <option value="M">Mandatory Activity</option>
+                      <option value="N">Non-Mandatory Activity</option>
+                  </select>
+                  <div id="dapLegend"></div>
+                  <div class="small" style="margin-top: 80px;">
+                    Bars show number of individual tours in the selected activity type (mandatory, non-mandatory, or home) that will be scheduled for each person type.  Home tours are stationary and not assigned a mode.
+                      <br><br><b>Sources</b><br>
+                      Observed -Travel Tracker Survey, 2007-2008. <br>
+                      Modeled- CMAP ABM - 2010 Scenario. <br>
+                    </div><br>
+                    <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+                    <p class="small">Select activity type from dropdown to view observed and model comparison</p>
+                </div>
+                <div class="col col-md-7">
+                    <div class="colborder"></div><!-- end -->
+          
+                  <div id="dap"></div>
+          
+                </div>
+              </div>
+
+            <div class="row">
               <div class="col col-md-3">
                 <div class="colborder"></div><!-- end -->
                 <h3>Tours by Person Type</h3>
@@ -886,6 +947,7 @@
                 <br>
               <div id="tourpurposeLegend"></div>
               <div class="small">
+                Mandatory Tours (work, school, and university) are individual by definition.  <br><br>
                 <b>Sources</b><br>
                 Observed -Travel Tracker Survey, 2007-2008. <br>
                 Modeled- CMAP ABM - 2010 Scenario.
@@ -944,35 +1006,7 @@
           <div id="stackedactivity"></div>
         </div>
     </div>
-    <div class="row">
-      <br/>
-      <br/>
-      <div class="col col-md-3">
-          <div class="colborder"></div><!-- end -->
 
-          <h3>Daily Activity Patterns By Person Type</h3>
-        <select id="catdap">
-            <option value="H">Home Activity</option>
-            <option value="M">Mandatory Activity</option>
-            <option value="N">Non-Mandatory Activity</option>
-        </select>
-        <div id="dapLegend"></div>
-        <div class="small" style="margin-top: 80px;">
-          Bars show number of trips by each person type in the selected activity type (mandatory, non-mandatory, or home).
-            <br><br><b>Sources</b><br>
-            Observed -Travel Tracker Survey, 2007-2008. <br>
-            Modeled- CMAP ABM - 2010 Scenario. <br>
-          </div><br>
-          <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
-          <p class="small">Select activity type from dropdown to view observed and model comparison</p>
-      </div>
-      <div class="col col-md-7">
-          <div class="colborder"></div><!-- end -->
-
-        <div id="dap"></div>
-
-      </div>
-    </div>
       <div class="row">
         <br/>
         <br/>
@@ -1176,16 +1210,16 @@
               <div class="col col-md-4" style="width: 29.16666666666667%" align = "center">
                   <div class="colborder"></div><!-- end -->
 
-                <h5><b>Observed Transit Access</b></h5>
-                <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
-                <div id="pieTransitSurveyMode"></div>
+                <h5><b>Modeled Transit Access</b></h5>
+                <p style="font-size:small;">CMAP ABM - 2010 Scenario</p>
+                <div id="pieTransitModelMode"></div>
               </div>
               <div class="col col-md-4" style="width: 29.16666666666667%" align = "center">
                   <div class="colborder"></div><!-- end -->
 
-                <h5><b>Modeled Transit Access</b></h5>
-                <p style="font-size:small;">CMAP ABM - 2010 Scenario</p>
-                <div id="pieTransitModelMode"></div>
+                <h5><b>Observed Transit Access</b></h5>
+                <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
+                <div id="pieTransitSurveyMode"></div>
               </div>
             </div>
 
@@ -1202,7 +1236,8 @@
                     <option value="dtransit">Drive to Transit</option>
                 </select>
                 <div id="transitaccessLegend"></div>
-                <div class="small" style="margin-top:100px;">
+                <div class="small" style="margin-top:80px;">
+                  Distance is the distance of the transit trip that occurred.  <br><br>
                     <b>Sources</b><br>
                     Survey - Travel Tracker Survey, 2007-2008.<br>
                     Modeled - CMAP ABM - 2010 Scenario. <br>
@@ -1257,8 +1292,10 @@
                         <option value="dtransit">Drive to Transit</option>
                     </select>
                     <div id="transittripsratioLegend"></div>
-                    <div class="small" style="margin-top:80px;">
-                        Adults defined as 18 years and over.<br>
+                    <div class="small" style="margin-top:70px;">
+                        Adults defined as 18 years and over. <br>
+                        See <a href="#3" role="tab" data-toggle="tab">Auto Ownership</a> tab as well.
+                        <br><br>
                         <b>Sources</b><br>
                         Survey - Travel Tracker Survey, 2007-2008.<br>
                         Modeled - CMAP ABM - 2010 Scenario. <br>
@@ -1386,7 +1423,9 @@
 
           <h3>Comparison of Interstate Daily VMT By Auto and Truck</h3>
           <div id="vmtLegend"></div>
-          <div id="interstate_map"></div>
+          <div id="interstate_map"></div><br>
+          <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+          <p class="small">Hover over bars to display values and highlight segment on map.  Click on a highway segment on the map to show the name.</p>
         </div>
         <div class="col-md-4" style="width: 29.16666666666667%">
             <div class="colborder"></div><!-- end -->
@@ -1452,7 +1491,10 @@
               <div class="colborder"></div><!-- end -->
 
             <h3>Transit Boardings by Line</h3>
-            <div id="transit_map"></div>
+            <svg id="transitmaplegend" ></svg>
+            <div id="transit_map"></div><br>
+            <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
+          <p class="small">Hover over bars to display values and highlight segment on map.  CTA segments are highlighted in red, and Metra segments are highlighted in green. Click on a transit segment on the map to show the name.</p>
           </div>
           <div class="col-md-4" style="width: 29.16666666666667%">
               <div class="colborder"></div><!-- end -->
@@ -1641,7 +1683,7 @@
   </script>
   <script type="text/javascript" src="data/subzonegroups.js"></script>
   <script type="text/javascript" src="data/hwy_interstates.js"></script>
-  <script>makeStackedChart_3("data/csv3a_popsyn_crosstab.csv","#popsynCat","dtitle","popsynstack");</script>
+  <!-- <script>makeStackedChart_3("data/csv3a_popsyn_crosstab.csv","#popsynCat","dtitle","popsynstack");</script> -->
   <script>makeStackedChart_nodd("data/csv23_vmt_county_facility.csv","cftitle","cfstack");</script>
   <script>makeStackedChart_nodd2("data/csv33_tour_purposetype.csv","cftitle","tourstack");</script>
   <script>makeStackedChart_4("data/csv3_aocrosstab_counts.csv","#aoCat","dtitle","stackedbar");</script>

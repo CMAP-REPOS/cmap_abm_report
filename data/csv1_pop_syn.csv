@@ -1,15 +1,16 @@
-Index,Model 01,PUMA 01,Category,Description,Title
-1 Person HH,1101471,1075934,size,Number of Households by size,Size
-2 Person HH,1140295,1173104,size,Number of Households by size,Size
-3 Person HH,625110,607813,size,Number of Households by size,Size
-4 Person HH,609070,554243,size,Number of Households by size,Size
-5+ Person HH,369435,458689,size,Number of Households by size,Size
-0 - vehicles,351389,434552,veh,Number of Households by vehicles in household,Vehicles
-1 - vehicle,1287104,1362074,veh,Number of Households by vehicles in household,Vehicles
-2 - vehicles,1476870,1424204,veh,Number of Households by vehicles in household,Vehicles
-3 - vehicles,538067,466352,veh,Number of Households by vehicles in household,Vehicles
-4 or more vehicles,191951,182601,veh,Number of Households by vehicles in household,Vehicles
-0-30K,894383,998137,income,Number of Households by household income (median?),Income
-30K-60K,1093581,1009578,income,Number of Households by household income (median?),Income
-60K-100K,1034862,922951,income,Number of Households by household income (median?),Income
-100K+,822555,939117,income,Number of Households by household income (median?),Income
+Index,Model,Observed,Category,Title
+Less than 65,5,2994244,age,Age
+65 and older,5,875539,age,Age
+0 workers,5,709396,workers,Workers
+1 worker,5,1475512,workers,Workers
+2 workers,5,1287892,workers,Workers
+3+ workers,5,396983,workers,Workers
+0-35K,5,5,income1,Income
+35K-50K,5,5,income1,Income
+50-75k,5,5,income1,Income
+75k-100k,5,5,income1,Income
+100K+,5,5,income1,Income
+0-35K,5,5,income2,Income
+35K-65K,5,5,income2,Income
+65k-100k,5,5,income2,Income
+100K+,5,5,income2,Income

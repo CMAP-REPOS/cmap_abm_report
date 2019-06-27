@@ -1,89 +1,89 @@
 Index,Model 01,Survey 01,Category,Description,Title,order
-Less than 1 Mile,70135,68448.03428,all,All trips Less than 1 Mile,All,1
- 1-5 Mile,328225,299891.7402,all,All trips  1-5 Mile,All,2
-5-10 Miles,258125,216385.606,all,All trips 5-10 Miles,All,3
-10-15 Miles,151805,120056.5689,all,All trips 10-15 Miles,All,4
-15-20 Miles,71575,68761.24204,all,All trips 15-20 Miles,All,5
-20-25 Miles,34110,58699.52985,all,All trips 20-25 Miles,All,6
-25-30 Miles,19360,40656.17575,all,All trips 25-30 Miles,All,7
-30 Miles or More,24895,84006.70154,all,All trips 30 Miles or More,All,8
-Less than 1 Mile,685,662.9137587,bike,Bike trips Less than 1 Mile,Bike,1
- 1-5 Mile,2700,3756.426462,bike,Bike trips  1-5 Mile,Bike,2
-5-10 Miles,1650,1062.899731,bike,Bike trips 5-10 Miles,Bike,3
+Less than 2.5 Miles,209985,68448.03428,all,All trips Less than 1 Mile,All,1
+2.5-5 Mile,187975,299891.7402,all,All trips  1-5 Mile,All,2
+5-10 Miles,254425,216385.606,all,All trips 5-10 Miles,All,3
+10-15 Miles,149795,120056.5689,all,All trips 10-15 Miles,All,4
+15-20 Miles,70535,68761.24204,all,All trips 15-20 Miles,All,5
+20-25 Miles,33825,58699.52985,all,All trips 20-25 Miles,All,6
+25-30 Miles,18380,40656.17575,all,All trips 25-30 Miles,All,7
+30 Miles or More,24220,84006.70154,all,All trips 30 Miles or More,All,8
+Less than 2.5 Miles,1860,662.9137587,bike,Bike trips Less than 1 Mile,Bike,1
+2.5-5 Mile,1445,3756.426462,bike,Bike trips  1-5 Mile,Bike,2
+5-10 Miles,1500,1062.899731,bike,Bike trips 5-10 Miles,Bike,3
 10-15 Miles,195,390.0266652,bike,Bike trips 10-15 Miles,Bike,4
-15-20 Miles,15,0,bike,Bike trips 15-20 Miles,Bike,5
+15-20 Miles,0,0,bike,Bike trips 15-20 Miles,Bike,5
 20-25 Miles,0,0,bike,Bike trips 20-25 Miles,Bike,
 25-30 Miles,0,0,bike,Bike trips 25-30 Miles,Bike,
 30 Miles or More,0,0,bike,Bike trips 30 Miles or More,Bike,
-Less than 1 Mile,16525,33686.7708,sovfree,Drive Alone Free trips Less than 1 Mile,Drive Alone Free,1
- 1-5 Mile,189030,239127.0313,sovfree,Drive Alone Free trips  1-5 Mile,Drive Alone Free,2
-5-10 Miles,202315,190431.478,sovfree,Drive Alone Free trips 5-10 Miles,Drive Alone Free,3
-10-15 Miles,117575,100807.9394,sovfree,Drive Alone Free trips 10-15 Miles,Drive Alone Free,4
-15-20 Miles,55445,56233.97979,sovfree,Drive Alone Free trips 15-20 Miles,Drive Alone Free,5
-20-25 Miles,25495,49666.9599,sovfree,Drive Alone Free trips 20-25 Miles,Drive Alone Free,6
-25-30 Miles,13695,22877.40066,sovfree,Drive Alone Free trips 25-30 Miles,Drive Alone Free,7
-30 Miles or More,14945,58802.22534,sovfree,Drive Alone Free trips 30 Miles or More,Drive Alone Free,8
-Less than 1 Mile,0,0,sovpay,Drive Alone Pay trips  Less than 1 Mile,Drive Alone Pay,
- 1-5 Mile,45,0,sovpay,Drive Alone Pay trips  1-5 Mile,Drive Alone Pay,2
-5-10 Miles,1360,1270.913119,sovpay,Drive Alone Pay trips 5-10 Miles,Drive Alone Pay,3
-10-15 Miles,3225,2982.035153,sovpay,Drive Alone Pay trips 10-15 Miles,Drive Alone Pay,4
-15-20 Miles,3485,1621.221483,sovpay,Drive Alone Pay trips 15-20 Miles,Drive Alone Pay,5
-20-25 Miles,2855,4622.100206,sovpay,Drive Alone Pay trips 20-25 Miles,Drive Alone Pay,6
-25-30 Miles,2055,8969.095218,sovpay,Drive Alone Pay trips 25-30 Miles,Drive Alone Pay,7
-30 Miles or More,4210,16848.63786,sovpay,Drive Alone Pay trips 30 Miles or More,Drive Alone Pay,8
-Less than 1 Mile,455,2546.396689,hov2free,Shared Ride 2 Free trips Less than 1 Mile,Shared Ride 2 Free,1
- 1-5 Mile,9035,15619.8863,hov2free,Shared Ride 2 Free trips  1-5 Mile,Shared Ride 2 Free,2
-5-10 Miles,17090,12838.14351,hov2free,Shared Ride 2 Free trips 5-10 Miles,Shared Ride 2 Free,3
-10-15 Miles,14295,6885.810312,hov2free,Shared Ride 2 Free trips 10-15 Miles,Shared Ride 2 Free,4
-15-20 Miles,7035,2426.497579,hov2free,Shared Ride 2 Free trips 15-20 Miles,Shared Ride 2 Free,5
-20-25 Miles,3415,3407.867916,hov2free,Shared Ride 2 Free trips 20-25 Miles,Shared Ride 2 Free,6
-25-30 Miles,1910,4389.222765,hov2free,Shared Ride 2 Free trips 25-30 Miles,Shared Ride 2 Free,7
-30 Miles or More,1855,2021.230772,hov2free,Shared Ride 2 Free trips 30 Miles or More,Shared Ride 2 Free,8
-Less than 1 Mile,0,0,hov2pay,Shared Ride 2 Pay trips Less than 1 Mile,Shared Ride 2 Pay,
- 1-5 Mile,0,0,hov2pay,Shared Ride 2 Pay trips 1-5 Miles,Shared Ride 2 Pay,
-5-10 Miles,45,0,hov2pay,Shared Ride 2 Pay trips 5-10 Miles,Shared Ride 2 Pay,3
-10-15 Miles,175,689.4606474,hov2pay,Shared Ride 2 Pay trips 10-15 Miles,Shared Ride 2 Pay,4
-15-20 Miles,175,0,hov2pay,Shared Ride 2 Pay trips 15-20 Miles,Shared Ride 2 Pay,5
-20-25 Miles,115,0,hov2pay,Shared Ride 2 Pay trips 20-25 Miles,Shared Ride 2 Pay,6
-25-30 Miles,140,0,hov2pay,Shared Ride 2 Pay trips 25-30 Miles,Shared Ride 2 Pay,7
-30 Miles or More,245,651.8183266,hov2pay,Shared Ride 2 Pay trips 30 Miles or More,Shared Ride 2 Pay,8
-Less than 1 Mile,80,183.5326857,hov3free,Shared Ride 3+ Free trips Less than 1 Mile,Shared Ride 3+ Free,1
- 1-5 Mile,1960,4308.765618,hov3free,Shared Ride 3+ Free trips  1-5 Mile,Shared Ride 3+ Free,2
-5-10 Miles,4110,2237.08786,hov3free,Shared Ride 3+ Free trips 5-10 Miles,Shared Ride 3+ Free,3
-10-15 Miles,3060,1680.803388,hov3free,Shared Ride 3+ Free trips 10-15 Miles,Shared Ride 3+ Free,4
-15-20 Miles,1660,5513.446534,hov3free,Shared Ride 3+ Free trips 15-20 Miles,Shared Ride 3+ Free,5
-20-25 Miles,925,335.6678118,hov3free,Shared Ride 3+ Free trips 20-25 Miles,Shared Ride 3+ Free,6
-25-30 Miles,595,3486.411272,hov3free,Shared Ride 3+ Free trips 25-30 Miles,Shared Ride 3+ Free,7
-30 Miles or More,680,2994.537825,hov3free,Shared Ride 3+ Free trips 30 Miles or More,Shared Ride 3+ Free,8
-Less than 1 Mile,0,0,hov3pay,Shared Ride 3+ Pay trips Less than 1 Mile,Shared Ride 3+ Pay,
- 1-5 Mile,0,0,hov3pay,Shared Ride 3+ Pay trips 1-5 Miles,Shared Ride 3+ Pay,
-5-10 Miles,15,0,hov3pay,Shared Ride 3+ Pay trips 5-10 Miles,Shared Ride 3+ Pay,3
-10-15 Miles,25,0,hov3pay,Shared Ride 3+ Pay trips 10-15 Miles,Shared Ride 3+ Pay,4
-15-20 Miles,100,0,hov3pay,Shared Ride 3+ Pay trips 15-20 Miles,Shared Ride 3+ Pay,5
-20-25 Miles,50,0,hov3pay,Shared Ride 3+ Pay trips 20-25 Miles,Shared Ride 3+ Pay,6
-25-30 Miles,65,0,hov3pay,Shared Ride 3+ Pay trips 25-30 Miles,Shared Ride 3+ Pay,7
-30 Miles or More,110,0,hov3pay,Shared Ride 3+ Pay trips 30 Miles or More,Shared Ride 3+ Pay,8
-Less than 1 Mile,25,134.7990937,taxi,Taxi trips Less than 1 Mile,Taxi,1
- 1-5 Mile,405,4547.562094,taxi,Taxi trips  1-5 Mile,Taxi,2
-5-10 Miles,1705,296.2078523,taxi,Taxi trips 5-10 Miles,Taxi,3
-10-15 Miles,1310,0,taxi,Taxi trips 10-15 Miles,Taxi,4
-15-20 Miles,725,657.2374722,taxi,Taxi trips 15-20 Miles,Taxi,5
-20-25 Miles,460,0,taxi,Taxi trips 20-25 Miles,Taxi,6
-25-30 Miles,545,0,taxi,Taxi trips 25-30 Miles,Taxi,7
-30 Miles or More,2510,778.1001275,taxi,Taxi trips 30 Miles or More,Taxi,8
-Less than 1 Mile,50875,28952.51677,walk,Walk trips Less than 1 Mile,Walk,1
- 1-5 Mile,115330,24083.76404,walk,Walk trips  1-5 Mile,Walk,2
-5-10 Miles,6875,2635.117131,walk,Walk trips 5-10 Miles,Walk,3
-10-15 Miles,215,93.02901805,walk,Walk trips 10-15 Miles,Walk,4
+Less than 2.5 Miles,77695,33686.7708,sovfree,Drive Alone Free trips Less than 1 Mile,Drive Alone Free,1
+2.5-5 Mile,126965,239127.0313,sovfree,Drive Alone Free trips  1-5 Mile,Drive Alone Free,2
+5-10 Miles,199320,190431.478,sovfree,Drive Alone Free trips 5-10 Miles,Drive Alone Free,3
+10-15 Miles,115210,100807.9394,sovfree,Drive Alone Free trips 10-15 Miles,Drive Alone Free,4
+15-20 Miles,53910,56233.97979,sovfree,Drive Alone Free trips 15-20 Miles,Drive Alone Free,5
+20-25 Miles,25145,49666.9599,sovfree,Drive Alone Free trips 20-25 Miles,Drive Alone Free,6
+25-30 Miles,12985,22877.40066,sovfree,Drive Alone Free trips 25-30 Miles,Drive Alone Free,7
+30 Miles or More,14585,58802.22534,sovfree,Drive Alone Free trips 30 Miles or More,Drive Alone Free,8
+Less than 2.5 Miles,0,0,sovpay,Drive Alone Pay trips  Less than 1 Mile,Drive Alone Pay,
+2.5-5 Mile,55,0,sovpay,Drive Alone Pay trips  1-5 Mile,Drive Alone Pay,2
+5-10 Miles,1275,1270.913119,sovpay,Drive Alone Pay trips 5-10 Miles,Drive Alone Pay,3
+10-15 Miles,3370,2982.035153,sovpay,Drive Alone Pay trips 10-15 Miles,Drive Alone Pay,4
+15-20 Miles,3515,1621.221483,sovpay,Drive Alone Pay trips 15-20 Miles,Drive Alone Pay,5
+20-25 Miles,2615,4622.100206,sovpay,Drive Alone Pay trips 20-25 Miles,Drive Alone Pay,6
+25-30 Miles,1855,8969.095218,sovpay,Drive Alone Pay trips 25-30 Miles,Drive Alone Pay,7
+30 Miles or More,3840,16848.63786,sovpay,Drive Alone Pay trips 30 Miles or More,Drive Alone Pay,8
+Less than 2.5 Miles,2860,2546.396689,hov2free,Shared Ride 2 Free trips Less than 1 Mile,Shared Ride 2 Free,1
+2.5-5 Mile,6555,15619.8863,hov2free,Shared Ride 2 Free trips  1-5 Mile,Shared Ride 2 Free,2
+5-10 Miles,16670,12838.14351,hov2free,Shared Ride 2 Free trips 5-10 Miles,Shared Ride 2 Free,3
+10-15 Miles,13575,6885.810312,hov2free,Shared Ride 2 Free trips 10-15 Miles,Shared Ride 2 Free,4
+15-20 Miles,6920,2426.497579,hov2free,Shared Ride 2 Free trips 15-20 Miles,Shared Ride 2 Free,5
+20-25 Miles,3305,3407.867916,hov2free,Shared Ride 2 Free trips 20-25 Miles,Shared Ride 2 Free,6
+25-30 Miles,1860,4389.222765,hov2free,Shared Ride 2 Free trips 25-30 Miles,Shared Ride 2 Free,7
+30 Miles or More,1840,2021.230772,hov2free,Shared Ride 2 Free trips 30 Miles or More,Shared Ride 2 Free,8
+Less than 2.5 Miles,0,0,hov2pay,Shared Ride 2 Pay trips Less than 1 Mile,Shared Ride 2 Pay,
+2.5-5 Mile,0,0,hov2pay,Shared Ride 2 Pay trips 1-5 Miles,Shared Ride 2 Pay,
+5-10 Miles,55,0,hov2pay,Shared Ride 2 Pay trips 5-10 Miles,Shared Ride 2 Pay,3
+10-15 Miles,135,689.4606474,hov2pay,Shared Ride 2 Pay trips 10-15 Miles,Shared Ride 2 Pay,4
+15-20 Miles,170,0,hov2pay,Shared Ride 2 Pay trips 15-20 Miles,Shared Ride 2 Pay,5
+20-25 Miles,105,0,hov2pay,Shared Ride 2 Pay trips 20-25 Miles,Shared Ride 2 Pay,6
+25-30 Miles,105,0,hov2pay,Shared Ride 2 Pay trips 25-30 Miles,Shared Ride 2 Pay,7
+30 Miles or More,305,651.8183266,hov2pay,Shared Ride 2 Pay trips 30 Miles or More,Shared Ride 2 Pay,8
+Less than 2.5 Miles,585,183.5326857,hov3free,Shared Ride 3+ Free trips Less than 1 Mile,Shared Ride 3+ Free,1
+2.5-5 Mile,1525,4308.765618,hov3free,Shared Ride 3+ Free trips  1-5 Mile,Shared Ride 3+ Free,2
+5-10 Miles,3970,2237.08786,hov3free,Shared Ride 3+ Free trips 5-10 Miles,Shared Ride 3+ Free,3
+10-15 Miles,2805,1680.803388,hov3free,Shared Ride 3+ Free trips 10-15 Miles,Shared Ride 3+ Free,4
+15-20 Miles,1560,5513.446534,hov3free,Shared Ride 3+ Free trips 15-20 Miles,Shared Ride 3+ Free,5
+20-25 Miles,905,335.6678118,hov3free,Shared Ride 3+ Free trips 20-25 Miles,Shared Ride 3+ Free,6
+25-30 Miles,445,3486.411272,hov3free,Shared Ride 3+ Free trips 25-30 Miles,Shared Ride 3+ Free,7
+30 Miles or More,575,2994.537825,hov3free,Shared Ride 3+ Free trips 30 Miles or More,Shared Ride 3+ Free,8
+Less than 2.5 Miles,0,0,hov3pay,Shared Ride 3+ Pay trips Less than 1 Mile,Shared Ride 3+ Pay,
+2.5-5 Mile,0,0,hov3pay,Shared Ride 3+ Pay trips 1-5 Miles,Shared Ride 3+ Pay,
+5-10 Miles,20,0,hov3pay,Shared Ride 3+ Pay trips 5-10 Miles,Shared Ride 3+ Pay,3
+10-15 Miles,75,0,hov3pay,Shared Ride 3+ Pay trips 10-15 Miles,Shared Ride 3+ Pay,4
+15-20 Miles,85,0,hov3pay,Shared Ride 3+ Pay trips 15-20 Miles,Shared Ride 3+ Pay,5
+20-25 Miles,70,0,hov3pay,Shared Ride 3+ Pay trips 20-25 Miles,Shared Ride 3+ Pay,6
+25-30 Miles,95,0,hov3pay,Shared Ride 3+ Pay trips 25-30 Miles,Shared Ride 3+ Pay,7
+30 Miles or More,135,0,hov3pay,Shared Ride 3+ Pay trips 30 Miles or More,Shared Ride 3+ Pay,8
+Less than 2.5 Miles,90,134.7990937,taxi,Taxi trips Less than 1 Mile,Taxi,1
+2.5-5 Mile,390,4547.562094,taxi,Taxi trips  1-5 Mile,Taxi,2
+5-10 Miles,1615,296.2078523,taxi,Taxi trips 5-10 Miles,Taxi,3
+10-15 Miles,1330,0,taxi,Taxi trips 10-15 Miles,Taxi,4
+15-20 Miles,605,657.2374722,taxi,Taxi trips 15-20 Miles,Taxi,5
+20-25 Miles,530,0,taxi,Taxi trips 20-25 Miles,Taxi,6
+25-30 Miles,500,0,taxi,Taxi trips 25-30 Miles,Taxi,7
+30 Miles or More,2330,778.1001275,taxi,Taxi trips 30 Miles or More,Taxi,8
+Less than 2.5 Miles,122305,28952.51677,walk,Walk trips Less than 1 Mile,Walk,1
+2.5-5 Mile,45325,24083.76404,walk,Walk trips  1-5 Mile,Walk,2
+5-10 Miles,6735,2635.117131,walk,Walk trips 5-10 Miles,Walk,3
+10-15 Miles,220,93.02901805,walk,Walk trips 10-15 Miles,Walk,4
 15-20 Miles,0,0,walk,Walk trips 15-20 Miles,Walk,
 20-25 Miles,0,0,walk,Walk trips 20-25 Miles,Walk,
 25-30 Miles,0,0,walk,Walk trips 25-30 Miles,Walk,
-30 Miles or More,5,810.3146473,walk,Walk trips 30 Miles or More,Walk,8
-Less than 1 Mile,1490,2281.10448,transit,Walk To Transit trips Less than 1 Mile,Walk To Transit,1
- 1-5 Mile,9720,8448.304367,transit,Walk To Transit trips  1-5 Mile,Walk To Transit,2
-5-10 Miles,22960,5613.75879,transit,Walk To Transit trips 5-10 Miles,Walk To Transit,3
-10-15 Miles,11730,6527.464317,transit,Walk To Transit trips 10-15 Miles,Walk To Transit,4
-15-20 Miles,2935,2308.859176,transit,Walk To Transit trips 15-20 Miles,Walk To Transit,5
-20-25 Miles,795,666.9340186,transit,Walk To Transit trips 20-25 Miles,Walk To Transit,6
-25-30 Miles,355,934.0458328,transit,Walk To Transit trips 25-30 Miles,Walk To Transit,7
-30 Miles or More,335,1099.836638,transit,Walk To Transit trips 30 Miles or More,Walk To Transit,8
+30 Miles or More,15,810.3146473,walk,Walk trips 30 Miles or More,Walk,8
+Less than 2.5 Miles,4590,2281.10448,transit,Walk To Transit trips Less than 1 Mile,Walk To Transit,1
+2.5-5 Mile,5715,8448.304367,transit,Walk To Transit trips  1-5 Mile,Walk To Transit,2
+5-10 Miles,23265,5613.75879,transit,Walk To Transit trips 5-10 Miles,Walk To Transit,3
+10-15 Miles,12880,6527.464317,transit,Walk To Transit trips 10-15 Miles,Walk To Transit,4
+15-20 Miles,3770,2308.859176,transit,Walk To Transit trips 15-20 Miles,Walk To Transit,5
+20-25 Miles,1150,666.9340186,transit,Walk To Transit trips 20-25 Miles,Walk To Transit,6
+25-30 Miles,535,934.0458328,transit,Walk To Transit trips 25-30 Miles,Walk To Transit,7
+30 Miles or More,595,1099.836638,transit,Walk To Transit trips 30 Miles or More,Walk To Transit,8

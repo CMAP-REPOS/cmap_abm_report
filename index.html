@@ -1490,20 +1490,26 @@
               <div class="colborder"></div><!-- end -->
 
             <h3>Transit Boardings by Line</h3>
-            <svg id="transitmaplegend" ></svg>
+            <section class="container" style="display: -webkit-box">
+            <svg id="transitmaplegend" style="padding-top:10px"></svg>
+            <div id="transitboardingLegend"></div>
+            </section>
             <div id="transit_map"></div><br>
             <img src="data/Cursor-Click-2-icon.png" width="20px"><br>
-          <p class="small">Hover over bars to display values and highlight segment on map.  CTA segments are highlighted in red, and Metra segments are highlighted in green. Click on a transit segment on the map to show the name.</p>
+          <p class="small">Hover over bars to display values and highlight segment on map.  CTA segments are highlighted in red, and Metra segments are highlighted in green. 
+            Click on a transit segment on the map to show the name.</p>
           </div>
           <div class="col-md-4" style="width: 29.16666666666667%">
               <div class="colborder"></div><!-- end -->
-              <h4>Model</h4>
-          <div id="transitBoardingsBar_model"></div>
+              <h4>CTA</h4>
+              <div id="transitassignment"></div>
+          <!-- <div id="transitBoardingsBar_model"></div> -->
           </div>
           <div class="col-md-4" style="width: 29.16666666666667%">
               <div class="colborder"></div><!-- end -->
-            <h4>Observed</h4>
-          <div id="transitBoardingsBar_obs"></div>
+            <h4>Metra</h4>
+          <!-- <div id="transitBoardingsBar_obs"></div> -->
+          <div id="transitassignmentmetra"></div>
           </div>
           </div>
         </div>
@@ -1618,7 +1624,9 @@
   <script>makeGroupVBar("data/csv20_transit_income.csv","#TranIncome","#catIncomeDist",2, "TranIncomeDesc","TranIncomeTitle");</script>
   <script>makeGroupVBar("data/csv21_transit_auto.csv","#TranAutoAdult","#catAutoAdult",2, "TranAutoAdultDesc","TranAutoAdultTitle");</script>
   <script>makeGroupVBar("data/csv22_dap.csv","#dap","#catdap",2, "dapDesc","dapTitle");</script>
-  <script>makeGroupHBar("data/csv24_vmt_county.csv","#vmtcounty",2, "vmtDesc","vmtTitle");</script>
+  <script>makeGroupHBar("data/csv24_vmt_county.csv","#vmtcounty",2, "vmtDesc","vmtTitle", 800, 'percent');</script>
+  <script>makeGroupHBar("data/csv34.csv","#transitassignment",2, "vmtDesc","vmtTitle", 600, 'boardings');</script>
+  <script>makeGroupHBar("data/csv35.csv","#transitassignmentmetra",2, "vmtDesc","vmtTitle", 600, 'boardings');</script>
   <script>makeScatter("data/raw/link_counts.csv","#scatter_vmt","AADT","vadt");</script>
 
   <script type="text/javascript" src='scripts/table.js'></script>
@@ -1690,7 +1698,7 @@
 
   <script type="text/javascript" src="scripts/modepies.js"></script>
   <script>hStackedBar("data/csv26_interstate_vmt_obs.csv","data/csv25_interstate_vmt_model.csv","interstateVMTbar_obs","interstateVMTbar_model", 230, 300);</script>
-  <script>hStackedBar3("data/csv27_transit_boardings_obs.csv","data/csv28_transit_boardings_model.csv","transitBoardingsBar_obs","transitBoardingsBar_model", 150, 400);</script>
+  <!-- <script>hStackedBar3("data/csv27_transit_boardings_obs.csv","data/csv28_transit_boardings_model.csv","transitBoardingsBar_obs","transitBoardingsBar_model", 150, 400);</script> -->
   <script>make_h_stacked("data/htest.csv","PopPersonType", "hlegend")</script>
   <script>make_h_stacked("data/htest2.csv","HouseholdSize", "hhlegend")</script>
   <script>make_h_stacked_tripsbymode("data/csv1314_tripmode.csv","stackedmode", "modelegend")</script>

@@ -82,7 +82,7 @@ function updatemap() {
 }
 
 function drawmap() {
-var promise = $.getJSON("data/ringsectorswtransitboarding.json");
+var promise = $.getJSON("data/json/ringsectorswtransitboarding.json");
 promise.then(function(data) {
     var pacestop = L.geoJson(data, {
         style:pacestyle,

@@ -1,9 +1,0 @@
-[
-  { "# Veh" : 0, "Census" : 45, "Survey" : 45, "Model" : 45 },
-  { "# Veh" : 1, "Census" : 45, "Survey" : 45, "Model" : 45 },
-  { "# Veh" : 2, "Census" : 45, "Survey" : 45, "Model" : 45 },
-  { "# Veh" : 3, "Census" : 45, "Survey" : 45, "Model" : 45 },
-  { "# Veh" : 4, "Census" : 45, "Survey" : 45, "Model" : 45 },
-  { "# Veh" : "Total", "Census" : 45, "Survey" : 45, "Model" : 45 }
-
-]

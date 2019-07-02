@@ -3,40 +3,89 @@ svg {
     filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.25) );
 }
 
-#piePurpose1 {
+svg#intromaplegend, svg#hlegend, svg#hhlegend, svg#bblegend, svg#pumsLegend, svg#activitieslegend div#hhlegend, svg#transitmaplegend {
+  -webkit-filter: drop-shadow( 0px 0px 0px rgba(0,0,0,.3) );
+  filter: drop-shadow( 0px 0px 0px rgba(0,0,0,.25) );
+}
+
+svg#transitmaplegend {
+  height: 50px;
+  width: 120px;
+}
+
+a.validation:hover {
+  color:grey;
+}
+
+a.calibration:hover {
+  color:grey;
+}
+
+a.calibration {
+  background-color: #1c5f83;
+  color: white;
+}
+
+a.validation {
+  background-color: #7ebea5;
+  color: white
+}
+
+.btn-danger {
+  background-color: white !important;
+  border-color: white !important;
+}
+
+div.bartooltip {
+  position: absolute;
+  text-align: center;
+  width: 120px;
+  min-height: 100px;
+  padding: 2px;
+  background: white;
+  border: 0px;
+  pointer-events: none;
+  box-shadow: 1px 1px grey;
+}
+
+div.chordtooltip {
+  position: absolute;
+  text-align: center;
+  width: 120px;
+  min-height: 100px;
+  padding: 2px;
+  background: white;
+  border: 0px;
+  pointer-events: none;
+  box-shadow: 1px 1px grey;
+  z-index: 1;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+#hlegend, #tourlegend, #bblegend {
+  height: 250px;
+}
+
+#hhlegend {
+  height: 200px;
+}
+
+#modelegend {
+  height: 270px;
+}
+
+#activitieslegend {
+  height: 300px;
+}
+
+#piePurpose1, #piePurpose2, #pieMode1, #pieMode2, #pieTransitModelMode, #pieTransitSurveyMode {
     height: 360px;
     position: relative;
     width: 360px;
-}
-
-#piePurpose2 {
-  height: 360px;
-  position: relative;
-  width: 360px;
-}
-
-#pieMode1 {
-  height: 360px;
-  position: relative;
-  width: 360px;
-}
-
-#pieMode2 {
-  height: 360px;
-  position: relative;
-  width: 360px;
-}
-
-#pieTransitModelMode {
-  height: 360px;
-  position: relative;
-  width: 360px;
-}
-
-#pieTransitSurveyMode {
-  height: 360px;
-  position: relative;
-  width: 360px;
 }
 
 .modepurposetooltip {
@@ -44,59 +93,23 @@ svg {
   position: absolute;
 }
 
-#tooltip1 {
+#tooltip1, #tooltip2, #tooltip3, #tooltip4, #tooltip5, #tooltip6 {
 bottom: 290px;
 left: 20px;
 position: relative;
 width: 100px;
 }
 
-#tooltip2 {
-  bottom: 290px;
-  left: 20px;
-  position: relative;
-  width: 100px;
+h3 {
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
 }
 
-#tooltip3 {
-  bottom: 290px;
-  left: 20px;
-  position: relative;
-  width: 100px;
-
-  }
-
-#tooltip4 {
-  bottom: 290px;
-  left: 20px;
-  position: relative;
-  width: 100px;
-  }
-
-#tooltip5 {
-  bottom: 290px;
-  left: 20px;
-  position: relative;
-  width: 100px;
-  }
-
-#tooltip6 {
-  bottom: 290px;
-  left: 20px;
-  position: relative;
-  width: 100px;
-  }
-
-  h3 {
-    font-size: 16px;
-    color: #000;
-    font-weight: bold;
-  }
-
-  #accordion .panel{
-    border: none;
-    box-shadow: none;
-    margin-bottom: 5px;
+#accordion .panel{
+  border: none;
+  box-shadow: none;
+  margin-bottom: 5px;
 }
 
 #accordion .panel-heading{
@@ -143,3 +156,88 @@ width: 100px;
     position: relative;
     border: none;
 }
+
+.axis { font: 14px sans-serif; }
+
+
+.colborder {
+  border-top: 3px solid;
+}
+
+#wflowmap{
+    width: 100%;
+    height: 300px;
+    margin-left: 0px;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px grey
+}
+
+div.vmttooltip {
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  padding: 2px;
+  padding-top: 10px;
+  font: 12px sans-serif;
+  background: white;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+div.vmttooltip2 {
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  height: 50px;
+  padding: 2px;
+  padding-top: 10px;
+  font: 12px sans-serif;
+  background: white;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+#interstate_map{
+    width: 100%;
+    height: 375px;
+    margin-left: 0px;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px grey
+}
+
+#transit_map {
+    width: 100%;
+    height: 375px;
+    margin-left: 0px;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px grey
+}
+
+
+#main {
+  width: 960px;
+}
+.axis .domain {
+  display: none;
+}
+text_div
+{
+  display: inline-block;
+}
+
+div
+{
+  display:inherit;
+}
+
+table{ border:none; width:33%; display:inline-table}
+table {font-size: 12px;}
+
+td{text-align: right}
+th{text-align: center;}

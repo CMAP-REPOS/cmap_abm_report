@@ -7,8 +7,8 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle,l
   var maxvalue = 0;
   var bartotal = 0;
   var margin = {top: 35, right: 80, bottom: 120, left: 45},
-    width = 900 - margin.left - margin.right,
-    height = 300 - margin.top - margin.bottom;
+    width = 800 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
 
   var g = d3.select(chartID).append("svg")
   .attr("width", width + margin.left + margin.right)
@@ -282,7 +282,8 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle,l
         .attr("cx", 10)
         .attr("cy", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
         .attr("r", 7)
-        .style("fill", function(d) { return z(d.key); })
+        .style("fill", function(i) { 
+          return z(i); })
 
     // Add one dot in the legend for each name.
     legend.selectAll("mylabels")
@@ -291,7 +292,7 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle,l
       .append("text")
         .attr("x", 20)
         .attr("y", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
-        .text(function(d){ console.log(d)
+        .text(function(d){ //console.log(d)
           return d})
         .attr("text-anchor", "left")
         .style("alignment-baseline", "middle")

@@ -1,8 +1,6 @@
 root,node,count,Category,color
 CBD,CBD,112785,Model,#c26ac21
 CBD,DuPage,9310,Model,#c26ac21
-CBD,IL,95,Model,#c26ac21
-CBD,IN,4405,Model,#c26ac21
 CBD,Kane,1255,Model,#c26ac21
 CBD,Kendall,255,Model,#c26ac21
 CBD,Lake,2500,Model,#c26ac21
@@ -16,8 +14,6 @@ CBD,West Cook,22620,Model,#c26ac21
 CBD,Will,4820,Model,#c26ac21
 DuPage,CBD,11970,Model,#9aaf3e
 DuPage,DuPage,479770,Model,#9aaf3e
-DuPage,IL,2240,Model,#9aaf3e
-DuPage,IN,125,Model,#9aaf3e
 DuPage,Kane,39595,Model,#9aaf3e
 DuPage,Kendall,8875,Model,#9aaf3e
 DuPage,Lake,2095,Model,#9aaf3e
@@ -29,36 +25,8 @@ DuPage,South Cook,7555,Model,#9aaf3e
 DuPage,West Chicago,6110,Model,#9aaf3e
 DuPage,West Cook,70500,Model,#9aaf3e
 DuPage,Will,43650,Model,#9aaf3e
-IL,CBD,115,Model,#726cd22
-IL,DuPage,2425,Model,#726cd22
-IL,IL,345390,Model,#726cd22
-IL,IN,785,Model,#726cd22
-IL,Kane,9130,Model,#726cd22
-IL,Kendall,2790,Model,#726cd22
-IL,Lake,110,Model,#726cd22
-IL,McHenry,7140,Model,#726cd22
-IL,North Chicago,35,Model,#726cd22
-IL,North Cook,295,Model,#726cd22
-IL,South Chicago,145,Model,#726cd22
-IL,South Cook,1580,Model,#726cd22
-IL,West Chicago,10,Model,#726cd22
-IL,West Cook,730,Model,#726cd22
-IL,Will,9400,Model,#726cd22
-IN,CBD,5475,Model,#5bbc86
-IN,DuPage,105,Model,#5bbc86
-IN,IL,815,Model,#5bbc86
-IN,IN,333435,Model,#5bbc86
-IN,Lake,5,Model,#5bbc86
-IN,North Chicago,625,Model,#5bbc86
-IN,North Cook,105,Model,#5bbc86
-IN,South Chicago,8820,Model,#5bbc86
-IN,South Cook,24800,Model,#5bbc86
-IN,West Chicago,1345,Model,#5bbc86
-IN,West Cook,255,Model,#5bbc86
-IN,Will,3060,Model,#5bbc86
 Kane,CBD,1470,Model,#573702
 Kane,DuPage,44120,Model,#573702
-Kane,IL,8360,Model,#573702
 Kane,Kane,173745,Model,#573702
 Kane,Kendall,8220,Model,#573702
 Kane,Lake,2335,Model,#573702
@@ -72,7 +40,6 @@ Kane,West Cook,15165,Model,#573702
 Kane,Will,4510,Model,#573702
 Kendall,CBD,305,Model,#c99048
 Kendall,DuPage,10475,Model,#c99048
-Kendall,IL,3170,Model,#c99048
 Kendall,Kane,8755,Model,#c99048
 Kendall,Kendall,20375,Model,#c99048
 Kendall,McHenry,5,Model,#c99048
@@ -85,8 +52,6 @@ Kendall,West Cook,695,Model,#c99048
 Kendall,Will,5295,Model,#c99048
 Lake,CBD,3010,Model,#5083de
 Lake,DuPage,2185,Model,#5083de
-Lake,IL,175,Model,#5083de
-Lake,IN,5,Model,#5083de
 Lake,Kane,1925,Model,#5083de
 Lake,Lake,300320,Model,#5083de
 Lake,McHenry,15590,Model,#5083de
@@ -99,7 +64,6 @@ Lake,West Cook,3575,Model,#5083de
 Lake,Will,25,Model,#5083de
 McHenry,CBD,280,Model,#698d3c
 McHenry,DuPage,1910,Model,#698d3c
-McHenry,IL,6140,Model,#698d3c
 McHenry,Kane,12200,Model,#698d3c
 McHenry,Lake,18040,Model,#698d3c
 McHenry,McHenry,86670,Model,#698d3c
@@ -109,8 +73,6 @@ McHenry,West Chicago,35,Model,#698d3c
 McHenry,West Cook,4035,Model,#698d3c
 North Chicago,CBD,121645,Model,#d971b15
 North Chicago,DuPage,10920,Model,#d971b15
-North Chicago,IL,35,Model,#d971b15
-North Chicago,IN,535,Model,#d971b15
 North Chicago,Kane,1355,Model,#d971b15
 North Chicago,Kendall,65,Model,#d971b15
 North Chicago,Lake,4665,Model,#d971b15
@@ -124,8 +86,6 @@ North Chicago,West Cook,29200,Model,#d971b15
 North Chicago,Will,845,Model,#d971b15
 North Cook,CBD,12125,Model,#43c8ac
 North Cook,DuPage,24000,Model,#43c8ac
-North Cook,IL,340,Model,#43c8ac
-North Cook,IN,120,Model,#43c8ac
 North Cook,Kane,9225,Model,#43c8ac
 North Cook,Kendall,40,Model,#43c8ac
 North Cook,Lake,62670,Model,#43c8ac
@@ -139,8 +99,6 @@ North Cook,West Cook,43415,Model,#43c8ac
 North Cook,Will,650,Model,#43c8ac
 South Chicago,CBD,67695,Model,#8c2b83
 South Chicago,DuPage,2280,Model,#8c2b83
-South Chicago,IL,125,Model,#8c2b83
-South Chicago,IN,9285,Model,#8c2b83
 South Chicago,Kane,20,Model,#8c2b83
 South Chicago,Kendall,15,Model,#8c2b83
 South Chicago,Lake,110,Model,#8c2b83
@@ -153,8 +111,6 @@ South Chicago,West Cook,8500,Model,#8c2b83
 South Chicago,Will,1585,Model,#8c2b83
 South Cook,CBD,17905,Model,#b98064
 South Cook,DuPage,9500,Model,#b98064
-South Cook,IL,1660,Model,#b98064
-South Cook,IN,28715,Model,#b98064
 South Cook,Kane,75,Model,#b98064
 South Cook,Kendall,110,Model,#b98064
 South Cook,Lake,20,Model,#b98064
@@ -167,8 +123,6 @@ South Cook,West Cook,20910,Model,#b98064
 South Cook,Will,29765,Model,#b98064
 West Chicago,CBD,62720,Model,#848bd16
 West Chicago,DuPage,6500,Model,#848bd16
-West Chicago,IL,45,Model,#848bd16
-West Chicago,IN,1275,Model,#848bd16
 West Chicago,Kane,360,Model,#848bd16
 West Chicago,Kendall,90,Model,#848bd16
 West Chicago,Lake,615,Model,#848bd16
@@ -182,8 +136,6 @@ West Chicago,West Cook,32135,Model,#848bd16
 West Chicago,Will,1795,Model,#848bd16
 West Cook,CBD,28010,Model,#b44946
 West Cook,DuPage,76545,Model,#b44946
-West Cook,IL,660,Model,#b44946
-West Cook,IN,295,Model,#b44946
 West Cook,Kane,14025,Model,#b44946
 West Cook,Kendall,510,Model,#b44946
 West Cook,Lake,3645,Model,#b44946
@@ -197,8 +149,6 @@ West Cook,West Cook,217380,Model,#b44946
 West Cook,Will,9515,Model,#b44946
 Will,CBD,5725,Model,#bc4865
 Will,DuPage,51645,Model,#bc4865
-Will,IL,9805,Model,#bc4865
-Will,IN,3740,Model,#bc4865
 Will,Kane,4930,Model,#bc4865
 Will,Kendall,5005,Model,#bc4865
 Will,Lake,40,Model,#bc4865
@@ -211,7 +161,6 @@ Will,West Cook,11830,Model,#bc4865
 Will,Will,188970,Model,#bc4865
 CBD,CBD,149521,Survey,#c26ac21
 CBD,DuPage,45170,Survey,#c26ac21
-CBD,IN,526,Survey,#c26ac21
 CBD,Kane,7657,Survey,#c26ac21
 CBD,Kendall,1687,Survey,#c26ac21
 CBD,Lake,23900,Survey,#c26ac21
@@ -225,8 +174,6 @@ CBD,West Cook,31838,Survey,#c26ac21
 CBD,Will,16230,Survey,#c26ac21
 DuPage,CBD,51117,Survey,#9aaf3e
 DuPage,DuPage,403007,Survey,#9aaf3e
-DuPage,IL,843,Survey,#9aaf3e
-DuPage,IN,590,Survey,#9aaf3e
 DuPage,Kane,48903,Survey,#9aaf3e
 DuPage,Kendall,8631,Survey,#9aaf3e
 DuPage,Lake,13726,Survey,#9aaf3e
@@ -238,30 +185,8 @@ DuPage,South Cook,14272,Survey,#9aaf3e
 DuPage,West Chicago,18307,Survey,#9aaf3e
 DuPage,West Cook,73149,Survey,#9aaf3e
 DuPage,Will,50512,Survey,#9aaf3e
-IL,DuPage,1050,Survey,#726cd22
-IL,IL,21107,Survey,#726cd22
-IL,IN,0,Survey,#726cd22
-IL,Kendall,249,Survey,#726cd22
-IL,McHenry,317,Survey,#726cd22
-IL,South Cook,182,Survey,#726cd22
-IL,West Cook,540,Survey,#726cd22
-IL,Will,6707,Survey,#726cd22
-IN,CBD,379,Survey,#5bbc86
-IN,DuPage,413,Survey,#5bbc86
-IN,IL,0,Survey,#5bbc86
-IN,IN,1622,Survey,#5bbc86
-IN,Kane,353,Survey,#5bbc86
-IN,Lake,0,Survey,#5bbc86
-IN,North Chicago,633,Survey,#5bbc86
-IN,North Cook,110,Survey,#5bbc86
-IN,South Chicago,2075,Survey,#5bbc86
-IN,South Cook,8164,Survey,#5bbc86
-IN,West Chicago,0,Survey,#5bbc86
-IN,West Cook,121,Survey,#5bbc86
-IN,Will,1007,Survey,#5bbc86
 Kane,CBD,6943,Survey,#573702
 Kane,DuPage,56232,Survey,#573702
-Kane,IN,0,Survey,#573702
 Kane,Kane,155457,Survey,#573702
 Kane,Kendall,3693,Survey,#573702
 Kane,Lake,7183,Survey,#573702
@@ -274,7 +199,6 @@ Kane,West Cook,10644,Survey,#573702
 Kane,Will,8718,Survey,#573702
 Kendall,CBD,1164,Survey,#c99048
 Kendall,DuPage,8714,Survey,#c99048
-Kendall,IL,249,Survey,#c99048
 Kendall,Kane,2031,Survey,#c99048
 Kendall,Kendall,6157,Survey,#c99048
 Kendall,North Chicago,173,Survey,#c99048
@@ -285,7 +209,6 @@ Kendall,West Cook,264,Survey,#c99048
 Kendall,Will,2332,Survey,#c99048
 Lake,CBD,28960,Survey,#5083de
 Lake,DuPage,15399,Survey,#5083de
-Lake,IN,0,Survey,#5083de
 Lake,Kane,7218,Survey,#5083de
 Lake,Kendall,206,Survey,#5083de
 Lake,Lake,353366,Survey,#5083de
@@ -310,8 +233,6 @@ McHenry,West Chicago,843,Survey,#698d3c
 McHenry,West Cook,7756,Survey,#698d3c
 North Chicago,CBD,137026,Survey,#d971b15
 North Chicago,DuPage,18217,Survey,#d971b15
-North Chicago,IL,182,Survey,#d971b15
-North Chicago,IN,125,Survey,#d971b15
 North Chicago,Kane,5440,Survey,#d971b15
 North Chicago,Lake,17231,Survey,#d971b15
 North Chicago,McHenry,3655,Survey,#d971b15
@@ -324,7 +245,6 @@ North Chicago,West Cook,32720,Survey,#d971b15
 North Chicago,Will,6436,Survey,#d971b15
 North Cook,CBD,43946,Survey,#43c8ac
 North Cook,DuPage,49717,Survey,#43c8ac
-North Cook,IN,0,Survey,#43c8ac
 North Cook,Kane,9540,Survey,#43c8ac
 North Cook,Lake,67923,Survey,#43c8ac
 North Cook,McHenry,18326,Survey,#43c8ac
@@ -337,7 +257,6 @@ North Cook,West Cook,43382,Survey,#43c8ac
 North Cook,Will,9466,Survey,#43c8ac
 South Chicago,CBD,74391,Survey,#8c2b83
 South Chicago,DuPage,7213,Survey,#8c2b83
-South Chicago,IN,1413,Survey,#8c2b83
 South Chicago,Kane,633,Survey,#8c2b83
 South Chicago,Kendall,579,Survey,#8c2b83
 South Chicago,Lake,1539,Survey,#8c2b83
@@ -351,8 +270,6 @@ South Chicago,West Cook,18189,Survey,#8c2b83
 South Chicago,Will,6543,Survey,#8c2b83
 South Cook,CBD,37712,Survey,#b98064
 South Cook,DuPage,18103,Survey,#b98064
-South Cook,IL,182,Survey,#b98064
-South Cook,IN,5063,Survey,#b98064
 South Cook,Kane,396,Survey,#b98064
 South Cook,Kendall,988,Survey,#b98064
 South Cook,Lake,1850,Survey,#b98064
@@ -366,7 +283,6 @@ South Cook,West Cook,25618,Survey,#b98064
 South Cook,Will,36320,Survey,#b98064
 West Chicago,CBD,51188,Survey,#848bd16
 West Chicago,DuPage,21552,Survey,#848bd16
-West Chicago,IN,0,Survey,#848bd16
 West Chicago,Kane,1047,Survey,#848bd16
 West Chicago,Lake,1514,Survey,#848bd16
 West Chicago,McHenry,735,Survey,#848bd16
@@ -379,8 +295,6 @@ West Chicago,West Cook,32515,Survey,#848bd16
 West Chicago,Will,5469,Survey,#848bd16
 West Cook,CBD,39685,Survey,#b44946
 West Cook,DuPage,70017,Survey,#b44946
-West Cook,IL,270,Survey,#b44946
-West Cook,IN,0,Survey,#b44946
 West Cook,Kane,10110,Survey,#b44946
 West Cook,Kendall,264,Survey,#b44946
 West Cook,Lake,7819,Survey,#b44946
@@ -394,8 +308,6 @@ West Cook,West Cook,190318,Survey,#b44946
 West Cook,Will,8689,Survey,#b44946
 Will,CBD,20924,Survey,#bc4865
 Will,DuPage,55337,Survey,#bc4865
-Will,IL,5448,Survey,#bc4865
-Will,IN,1007,Survey,#bc4865
 Will,Kane,8146,Survey,#bc4865
 Will,Kendall,1955,Survey,#bc4865
 Will,Lake,1115,Survey,#bc4865

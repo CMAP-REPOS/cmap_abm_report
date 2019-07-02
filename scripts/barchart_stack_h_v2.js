@@ -1,21 +1,23 @@
-function hStackedBar(obscsv_file,modelcsv_file,obsID,modelID, mapID){
+function hStackedBar(obscsv_file,modelcsv_file,obsID,modelID, labelwidth, divwidth){
 
   var formatValue = d3.format(".2s");
-  var margin = {top: 35, right: 20, bottom: 100, left: 160},
-    width = 300 - margin.left - margin.right,
+
+  makechart(modelcsv_file, modelID, true, labelwidth, "modelchart");
+  makechart(obscsv_file, obsID, false, 20, "obschart");
+
+function makechart(csv_file, divID, axis, marginleftval, idval){
+  var div = d3.select("body").append("div")
+  .attr("class", "vmttooltip")
+  .style("opacity", 0);
+
+  var margin = {top: 35, right: 20, bottom: 50, left: marginleftval},
+    width = divwidth - 160 - margin.right,
     height = 600 - margin.top - margin.bottom;
-
-
-
-  makechart(modelcsv_file, modelID, false);
-  makechart(obscsv_file, obsID, true);
-
-function makechart(csv_file, divID, axis){
 
   var g = d3.select("#"+divID).append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-    .attr("align","center")
+    .attr("id",idval)
     .append("g")
       .attr("transform","translate(" + margin.left + "," + margin.top + ")");
 
@@ -63,6 +65,18 @@ function makechart(csv_file, divID, axis){
         .attr("class", function(d) {return d.data.Index.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "")})
         // this highlights the same line on the two bar charts
         .on("mouseover", function(d) {
+          div.transition()
+          .duration(200)
+          .style("opacity", .9);
+          div.html(
+            "</b><p style='color:#98abc5; font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(d.data.Auto) +
+            "</p><p style='color:grey; font-size: 10px;'> auto" +
+            "</p><p style='color:#8a89a6; font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(d.data.Truck) +
+            "</p><p style='color:grey; font-size: 10px;'> truck </p>"
+            )
+            .style("left", (d3.event.pageX) + "px")
+            .style("top",  (d3.event.pageY - 28) + "px");
+
           d3.selectAll("." + d.data.Index.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, ""))
             .attr("fill", "#cf4446");
           selectedline = d.data.Index.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "")
@@ -90,6 +104,11 @@ function makechart(csv_file, divID, axis){
           })
           })
         .on("mouseout", function(d) {
+          div.transition()
+          .duration(500)
+          .style("opacity", 0);
+        
+
           d3.selectAll("." + d.data.Index.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, ""))
             .attr("fill", function(d) {
             return z[1]; });
@@ -144,29 +163,6 @@ function makechart(csv_file, divID, axis){
   	  .attr("transform", "translate("+ (-width) +",30)");   	// Newline
 
     if(axis == false){
-
-      var legend = g.append("g")
-          .attr("font-family", "sans-serif")
-          .attr("font-size", 10)
-          .attr("text-anchor", "end")
-        .selectAll("g")
-        .data(keys.slice().reverse())
-        .enter().append("g")
-        //.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
-    	 .attr("transform", function(d, i) { return "translate(10," + (300 + i * 20) + ")"; });
-
-      legend.append("rect")
-          .attr("x", width)
-          .attr("width", 19)
-          .attr("height", 19)
-          .attr("fill", z);
-
-      legend.append("text")
-          .attr("x", width - 24)
-          .attr("y", 9.5)
-          .attr("dy", "0.32em")
-          .text(function(d) { return d; });
-
     }
   });
 

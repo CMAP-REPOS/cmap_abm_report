@@ -1,43 +1,43 @@
 MainGroup,StackGroup,SubGroup,Value,Category,Title
-Chicago,Arterial,Model,8.2155663,CMAP Region,CMAP Region
-Chicago,Interstate,Model,7.341216924,CMAP Region,CMAP Region
-Chicago,Local,Model,1.846694348,CMAP Region,CMAP Region
-DuPage,Arterial,Model,7.547326262,CMAP Region,CMAP Region
-DuPage,Interstate,Model,4.855549366,CMAP Region,CMAP Region
-DuPage,Local,Model,1.576828834,CMAP Region,CMAP Region
-Kane,Arterial,Model,5.763458764,CMAP Region,CMAP Region
-Kane,Interstate,Model,2.006481266,CMAP Region,CMAP Region
-Kane,Local,Model,0.842857371,CMAP Region,CMAP Region
-Lake,Arterial,Model,6.807341807,CMAP Region,CMAP Region
-Lake,Interstate,Model,3.620185921,CMAP Region,CMAP Region
-Lake,Local,Model,1.308902155,CMAP Region,CMAP Region
-McHenry,Arterial,Model,5.13632433,CMAP Region,CMAP Region
-McHenry,Local,Model,0.653464159,CMAP Region,CMAP Region
-McHenry,Interstate,Model,0.529102409,CMAP Region,CMAP Region
-Suburban Cook,Arterial,Model,16.73972889,CMAP Region,CMAP Region
-Suburban Cook,Interstate,Model,11.03501049,CMAP Region,CMAP Region
-Suburban Cook,Local,Model,3.197166166,CMAP Region,CMAP Region
-Will,Arterial,Model,5.870467042,CMAP Region,CMAP Region
-Will,Interstate,Model,3.781151607,CMAP Region,CMAP Region
-Will,Local,Model,1.325175578,CMAP Region,CMAP Region
-Chicago,Arterial,Observed,9.29559557,CMAP Region,CMAP Region
-Chicago,Interstate,Observed,7.029500038,CMAP Region,CMAP Region
-Chicago,Local,Observed,2.131895318,CMAP Region,CMAP Region
-DuPage,Arterial,Observed,7.838419846,CMAP Region,CMAP Region
-DuPage,Interstate,Observed,4.90225548,CMAP Region,CMAP Region
-DuPage,Local,Observed,1.986249617,CMAP Region,CMAP Region
-Kane,Arterial,Observed,4.06024566,CMAP Region,CMAP Region
-Kane,Local,Observed,1.273197273,CMAP Region,CMAP Region
-Kane,Interstate,Observed,1.362342921,CMAP Region,CMAP Region
-Lake,Arterial,Observed,6.387778451,CMAP Region,CMAP Region
-Lake,Interstate,Observed,1.936026961,CMAP Region,CMAP Region
-Lake,Local,Observed,1.57363222,CMAP Region,CMAP Region
-McHenry,Arterial,Observed,2.789796486,CMAP Region,CMAP Region
-McHenry,Local,Observed,1.020889621,CMAP Region,CMAP Region
-McHenry,Interstate,Observed,0.231779379,CMAP Region,CMAP Region
-Suburban Cook,Arterial,Observed,17.81297955,CMAP Region,CMAP Region
-Suburban Cook,Interstate,Observed,13.47583918,CMAP Region,CMAP Region
-Suburban Cook,Local,Observed,4.517546117,CMAP Region,CMAP Region
-Will,Arterial,Observed,4.679678669,CMAP Region,CMAP Region
-Will,Interstate,Observed,3.599535687,CMAP Region,CMAP Region
-Will,Local,Observed,2.094815965,CMAP Region,CMAP Region
+Chicago,Local,Mod,1.846694348,CMAP Region,CMAP Region
+Chicago,Arterial,Mod,8.2155663,CMAP Region,CMAP Region
+Chicago,Interstate,Mod,7.341216924,CMAP Region,CMAP Region
+DuPage,Local,Mod,1.576828834,CMAP Region,CMAP Region
+DuPage,Arterial,Mod,7.547326262,CMAP Region,CMAP Region
+DuPage,Interstate,Mod,4.855549366,CMAP Region,CMAP Region
+Kane,Local,Mod,0.842857371,CMAP Region,CMAP Region
+Kane,Arterial,Mod,5.763458764,CMAP Region,CMAP Region
+Kane,Interstate,Mod,2.006481266,CMAP Region,CMAP Region
+Lake,Local,Mod,1.308902155,CMAP Region,CMAP Region
+Lake,Arterial,Mod,6.807341807,CMAP Region,CMAP Region
+Lake,Interstate,Mod,3.620185921,CMAP Region,CMAP Region
+McHenry,Local,Mod,0.653464159,CMAP Region,CMAP Region
+McHenry,Arterial,Mod,5.13632433,CMAP Region,CMAP Region
+McHenry,Interstate,Mod,0.529102409,CMAP Region,CMAP Region
+Suburban Cook,Local,Mod,3.197166166,CMAP Region,CMAP Region
+Suburban Cook,Arterial,Mod,16.73972889,CMAP Region,CMAP Region
+Suburban Cook,Interstate,Mod,11.03501049,CMAP Region,CMAP Region
+Will,Local,Mod,1.325175578,CMAP Region,CMAP Region
+Will,Arterial,Mod,5.870467042,CMAP Region,CMAP Region
+Will,Interstate,Mod,3.781151607,CMAP Region,CMAP Region
+Chicago,Local,Obs,2.131895318,CMAP Region,CMAP Region
+Chicago,Arterial,Obs,9.29559557,CMAP Region,CMAP Region
+Chicago,Interstate,Obs,7.029500038,CMAP Region,CMAP Region
+DuPage,Local,Obs,1.986249617,CMAP Region,CMAP Region
+DuPage,Arterial,Obs,7.838419846,CMAP Region,CMAP Region
+DuPage,Interstate,Obs,4.90225548,CMAP Region,CMAP Region
+Kane,Local,Obs,1.273197273,CMAP Region,CMAP Region
+Kane,Arterial,Obs,4.06024566,CMAP Region,CMAP Region
+Kane,Interstate,Obs,1.362342921,CMAP Region,CMAP Region
+Lake,Local,Obs,1.57363222,CMAP Region,CMAP Region
+Lake,Arterial,Obs,6.387778451,CMAP Region,CMAP Region
+Lake,Interstate,Obs,1.936026961,CMAP Region,CMAP Region
+McHenry,Local,Obs,1.020889621,CMAP Region,CMAP Region
+McHenry,Arterial,Obs,2.789796486,CMAP Region,CMAP Region
+McHenry,Interstate,Obs,0.231779379,CMAP Region,CMAP Region
+Suburban Cook,Local,Obs,4.517546117,CMAP Region,CMAP Region
+Suburban Cook,Arterial,Obs,17.81297955,CMAP Region,CMAP Region
+Suburban Cook,Interstate,Obs,13.47583918,CMAP Region,CMAP Region
+Will,Local,Obs,2.094815965,CMAP Region,CMAP Region
+Will,Arterial,Obs,4.679678669,CMAP Region,CMAP Region
+Will,Interstate,Obs,3.599535687,CMAP Region,CMAP Region

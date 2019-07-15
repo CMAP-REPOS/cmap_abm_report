@@ -1,52 +1,6 @@
 // adapted from: https://stackoverflow.com/questions/35090256/mouseover-event-on-two-charts-at-the-same-time-d3-js
 
 // data
-d3.csv("data/csv13_model_trip_mode.csv", function(data) {
-  var data2 = [];
-
-  for (var i = 0; i < data.length; i++) {
-  data2.push({selectorid: data[i].selectorid,
-                count: parseInt(data[i].QUANTITY, 10),
-              label: data[i].trip_mode})
-}
-  drawPieChartFunction(data2, '#pieMode2', 'tooltip2', 'colorscale1');
-
-});
-
-d3.csv("data/csv14_survey_trip_mode.csv", function(data) {
-  var data1 = [];
-
-  for (var i = 0; i < data.length; i++) {
-  data1.push({selectorid: data[i].selectorid,
-                count: parseInt(data[i].QUANTITY, 10),
-              label: data[i].trip_mode})
-}
-  drawPieChartFunction(data1, '#pieMode1', 'tooltip1', 'colorscale2');
-});
-
-d3.csv("data/csv15_survey_trip_purpose.csv", function(data) {
-  var data3 = [];
-
-  for (var i = 0; i < data.length; i++) {
-  data3.push({selectorid: data[i].selectorid,
-                count: parseInt(data[i].QUANTITY, 10),
-              label: data[i].trip_purpose})
-}
-  drawPieChartFunction(data3, '#piePurpose1', 'tooltip3', 'colorscale2');
-
-});
-
-d3.csv("data/csv16_model_trip_purpose.csv", function(data) {
-  var data4 = [];
-
-  for (var i = 0; i < data.length; i++) {
-  data4.push({selectorid: data[i].selectorid,
-                count: parseInt(data[i].QUANTITY, 10),
-              label: data[i].trip_purpose})
-}
-  drawPieChartFunction(data4, "#piePurpose2", 'tooltip4', 'colorscale2');
-});
-
 d3.csv("data/csv17_model_transit_access.csv", function(data) {
   var data5 = [];
 

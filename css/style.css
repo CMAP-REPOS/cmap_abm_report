@@ -10,6 +10,7 @@ svg#intromaplegend, svg#hlegend, svg#hhlegend, svg#bblegend, svg#pumsLegend, svg
 
 svg#transitmaplegend {
   height: 50px;
+  width: 120px;
 }
 
 a.validation:hover {

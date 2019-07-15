@@ -89,6 +89,7 @@ modelsurveylegend("#transitaccessLegend")
 modelsurveylegend("#transitincomeLegend")
 modelsurveylegend("#transittripsratioLegend")
 modelsurveylegend("#highwayvmtLegend")
+modelsurveylegend("#transitboardingLegend")
 
 
 

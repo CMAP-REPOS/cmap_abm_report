@@ -1,16 +1,12 @@
 Index,Model,Observed,Category,Title
-Less than 65,5,2994244,age,Age
-65 and older,5,875539,age,Age
-0 workers,5,709396,workers,Workers
-1 worker,5,1475512,workers,Workers
-2 workers,5,1287892,workers,Workers
-3+ workers,5,396983,workers,Workers
-0-35K,5,5,income1,Income
+Less than 65,3111195,2994244,age,Age
+65 and older,734185,875539,age,Age
+0 workers,860090,709396,workers,Workers
+1 worker,1631160,1475512,workers,Workers
+2 workers,976695,1287892,workers,Workers
+3+ workers,377435,396983,workers,Workers
+0-35K,1616150,5,income1,Income
 35K-50K,5,5,income1,Income
 50-75k,5,5,income1,Income
 75k-100k,5,5,income1,Income
-100K+,5,5,income1,Income
-0-35K,5,5,income2,Income
-35K-65K,5,5,income2,Income
-65k-100k,5,5,income2,Income
-100K+,5,5,income2,Income
+100K+,465225,5,income1,Income

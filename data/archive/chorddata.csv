@@ -1,9 +1,0 @@
-root,node,count,Category
-district 1,district 1,4,Model
-district 2,district 2,2,Model
-district 1,district 2,2,Model
-district 2,district 1,2,Model
-district 1,district 1,10,Survey
-district 2,district 2,10,Survey
-district 1,district 2,10,Survey
-district 2,district 1,10,Survey

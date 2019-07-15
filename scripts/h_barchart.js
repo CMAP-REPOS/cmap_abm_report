@@ -1,4 +1,4 @@
-function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle){
+function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height, word){
 
   var barChartConfig = {
        mainDiv: "#chart",
@@ -18,7 +18,7 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle){
   var formatValue = d3.format(".2s");
   var margin = {top: 35, right: 80, bottom: 100, left: 100},
     width = 400 - margin.left - margin.right,
-    height = 800 - margin.top - margin.bottom;
+    height = height - margin.top - margin.bottom;
 
   var g = d3.select(chartID).append("svg")
   .attr("width", width + margin.left + margin.right)
@@ -26,6 +26,10 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle){
   .attr("align","center")
   .append("g")
   .attr("transform","translate(" + margin.left + "," + margin.top + ")");
+
+  var div = d3.select("body").append("div")
+  .attr("class", "vmttooltip2")
+  .style("opacity", 0);
 
   // let x0 = d3.scaleBand().rangeRound([0, width]).paddingInner(0.1),
   //   x1 = d3.scaleBand(),
@@ -154,11 +158,13 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle){
 
       var barGroups = g.selectAll(".layer") // Bargroups initialized here for proper sorting
         .data(data, function(d) {
-          //console.log(d)
           return d.Index }); // DON'T FORGET KEY FUNCTION
 
       barGroups.enter().append("g")
-        .classed('layer', true);
+        .classed('layer', true)
+        .attr('line', function(d) {
+          return d.Index;
+        })
 
       barGroups.exit().remove();
 
@@ -188,9 +194,8 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle){
       let bars = g.selectAll(".layer").selectAll("rect")
         .data(function(d) {
           return copy.map(function(key) {
-            //console.log( d[key])
             return {
-              key: key, value: d[key]
+              key: key, value: d[key], lines: d.Index
             };
           });
         });
@@ -204,7 +209,66 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle){
             return x(d.value);})
           .attr("height", y1.bandwidth())
           .attr("fill", function(d) { return z(d.key); })
-          .merge(bars);
+          .merge(bars)
+          .on("mouseover", function(d) {
+            div.transition()
+            .duration(200)
+            .style("opacity", .9);
+            div.html(
+              "<p style='color:#8a89a6; font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(d.value) +
+              "</p><p style='color:grey; font-size: 10px;'>" + word + "</p>"
+              )
+              .style("left", (d3.event.pageX) + "px")
+              .style("top",  (d3.event.pageY - 28) + "px")
+            
+            
+          d3.selectAll("." + d.lines.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, ""))
+          .attr("fill", "#cf4446");
+        selectedline = d.lines.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "")
+        // this highlights the line on the map!
+        metra.eachLayer(function(layer) {
+          if(layer.LINE.includes(selectedline)){
+            layer.setStyle({
+              color:"#d7d55c",
+              weight: 3
+          })
+          }})
+        cta.eachLayer(function(layer) {
+          if(layer.LINE.includes(selectedline)){
+            layer.setStyle({
+              color:"#cf4446",
+              weight: 3
+          })
+          }})
+            
+            })
+
+        .on("mouseout", function(d) {
+          div.transition()
+          .duration(500)
+          .style("opacity", 0);
+        
+
+          d3.selectAll("." + d.lines.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, ""))
+            .attr("fill", function(d) {
+            return z[1]; });
+          selectedline = d.lines.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "")
+          // this highlights the line on the map!
+          metra.eachLayer(function(layer) {
+            if(layer.LINE.includes(selectedline)){
+              layer.setStyle({
+                color:'#696969',
+                weight: 2
+            })
+            }})
+          cta.eachLayer(function(layer) {
+            if(layer.LINE.includes(selectedline)){
+              layer.setStyle({
+                color:"black",
+                weight: 2
+            })
+            }})
+            });
 
           bars.transition().duration(durations)
             .attr("x", 0)

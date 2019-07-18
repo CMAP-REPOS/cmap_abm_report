@@ -1,25 +1,25 @@
 Index,Model 01,Survey 01,Category,Description,Title
-Full-time worker,2764645,2977165.654,M,Person Type by Mandatory Activity,Mandatory Activity
-Non-worker,1208285,836338.4848,N,Person Type by Non-Mandatory Activity,Non-Mandatory Activity
-Student < 16 years,1016950,1052573.301,M,Person Type by Mandatory Activity,Mandatory Activity
-Non-worker,582610,257746.8621,H,Person Type by Home Activity,Home Activity
-Retired,578240,946650.7994,N,Person Type by Non-Mandatory Activity,Non-Mandatory Activity
-Part-time worker,522880,439383.8401,M,Person Type by Mandatory Activity,Mandatory Activity
-Full-time worker,462880,541665.8334,N,Person Type by Non-Mandatory Activity,Non-Mandatory Activity
-Preschool,384915,465914.9827,N,Person Type by Non-Mandatory Activity,Non-Mandatory Activity
-Part-time worker,332955,227382.0363,N,Person Type by Non-Mandatory Activity,Non-Mandatory Activity
-Student < 16 years,327275,340912.8961,N,Person Type by Non-Mandatory Activity,Non-Mandatory Activity
-Student 16+,289775,271627.8291,M,Person Type by Mandatory Activity,Mandatory Activity
-University student,267880,167770.6422,M,Person Type by Mandatory Activity,Mandatory Activity
-Retired,252010,355273.544,H,Person Type by Home Activity,Home Activity
-Preschool,240075,176705.1311,H,Person Type by Home Activity,Home Activity
-Full-time worker,226000,176667.8321,H,Person Type by Home Activity,Home Activity
-Preschool,188945,232287.4241,M,Person Type by Mandatory Activity,Mandatory Activity
-University student,159580,99146.97487,N,Person Type by Non-Mandatory Activity,Non-Mandatory Activity
-Student < 16 years,145730,128847.8942,H,Person Type by Home Activity,Home Activity
-Part-time worker,125240,55338.80267,H,Person Type by Home Activity,Home Activity
-Student 16+,72990,64039.79354,N,Person Type by Non-Mandatory Activity,Non-Mandatory Activity
-University student,55920,35037.45331,H,Person Type by Home Activity,Home Activity
-Student 16+,34480,25562.3246,H,Person Type by Home Activity,Home Activity
-Non-worker,0,0,M,Person Type by Mandatory Activity,Mandatory Activity
-Retired,0,0,M,Person Type by Mandatory Activity,Mandatory Activity
+Child too young for school,240460,225088.53,H,,
+Full-time worker,226590,211523.08,H,,
+Non-worker,583635,263097.07,H,,
+Part-time worker,125270,124222.05,H,,
+Retired,252070,227963.44,H,,
+Student of driving age,34595,22577.2,H,,
+Student of non-driving age,145780,114187.86,H,,
+University student,55955,41477.34,H,,
+Child too young for school,189050,241519.1,M,,
+Full-time worker,2764285,3249366.7,M,,
+Non-worker,0,0,M,,
+Part-time worker,523065,522800.7,M,,
+Retired,0,0,M,,
+Student of driving age,289650,233693,M,,
+Student of non-driving age,1016685,1054944.4,M,,
+University student,267955,222604.5,M,,
+Child too young for school,384425,417365.23,N,,
+Full-time worker,462650,521295.77,N,,
+Non-worker,1207260,842290.82,N,,
+Part-time worker,332740,250566.69,N,,
+Retired,578180,553790.14,N,,
+Student of driving age,73000,54764.05,N,,
+Student of non-driving age,327490,321082.52,N,,
+University student,159470,123828.77,N,,

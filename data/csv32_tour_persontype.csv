@@ -1,3 +1,3 @@
-Index,Full_time_worker,Part_time_worker,Non_worker,Retired,Preschool,Student_under_16_years,Student_16_and_over,University_student
-Modeled,4991080,1112585,1636180,1007510,936270,1868595,445910,473850
-Observed,4869585.761,1249748.66,906595.3658,827883.363,527292.7834,1417943.99,386402.5308,411264.2737
+Index,Full_time_worker,Part_time_worker,University_student,Non_worker,Retired,Student_16_and_over,Student_under_16_years,Preschool
+Observed,3982185.5,897589.4,387910.6,1105387.9,781753.6,311034.3,1490214.8,883972.8
+Modeled,3453525,981075,483380,1790895,830250,397245,1489955,813935

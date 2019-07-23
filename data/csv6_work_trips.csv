@@ -1,170 +1,165 @@
-Index, Model , Survey ,Category,Description,Title
-DuPage,11970,51117,CBD,Work Trips To CBD,CBD
-Kane,1470,6943,CBD,Work Trips To CBD,CBD
-Kendall,305,1164,CBD,Work Trips To CBD,CBD
-CBD,112785,149521,CBD,Work Trips To CBD,CBD
-Lake,3010,28960,CBD,Work Trips To CBD,CBD
-McHenry,280,3845,CBD,Work Trips To CBD,CBD
-North Chicago,132205,144735,CBD,Work Trips To CBD,CBD
-North Cook,12125,43946,CBD,Work Trips To CBD,CBD
-South Chicago,67695,74391,CBD,Work Trips To CBD,CBD
-South Cook,17905,37712,CBD,Work Trips To CBD,CBD
-West Chicago,52160,43478,CBD,Work Trips To CBD,CBD
-West Cook,28010,39685,CBD,Work Trips To CBD,CBD
-Will,5725,20924,CBD,Work Trips To CBD,CBD
-DuPage,479770,403007,DuPage,Work Trips To DuPage County,DuPage County
-Kane,44120,56232,DuPage,Work Trips To DuPage County,DuPage County
-Kendall,10475,8714,DuPage,Work Trips To DuPage County,DuPage County
-CBD,9310,45170,DuPage,Work Trips To DuPage County,DuPage County
-Lake,2185,15399,DuPage,Work Trips To DuPage County,DuPage County
-McHenry,1910,1999,DuPage,Work Trips To DuPage County,DuPage County
-North Chicago,11815,22467,DuPage,Work Trips To DuPage County,DuPage County
-North Cook,24000,49717,DuPage,Work Trips To DuPage County,DuPage County
-South Chicago,2280,7213,DuPage,Work Trips To DuPage County,DuPage County
-South Cook,9500,18103,DuPage,Work Trips To DuPage County,DuPage County
-West Chicago,5605,17301,DuPage,Work Trips To DuPage County,DuPage County
-West Cook,76545,70017,DuPage,Work Trips To DuPage County,DuPage County
-Will,51645,55337,DuPage,Work Trips To DuPage County,DuPage County
-DuPage,39595,48903,Kane,Work Trips To Kane County,Kane County
-Kane,173745,155457,Kane,Work Trips To Kane County,Kane County
-Kendall,8755,2031,Kane,Work Trips To Kane County,Kane County
-CBD,1255,7657,Kane,Work Trips To Kane County,Kane County
-Lake,1925,7218,Kane,Work Trips To Kane County,Kane County
-McHenry,12200,12548,Kane,Work Trips To Kane County,Kane County
-North Chicago,1390,5440,Kane,Work Trips To Kane County,Kane County
-North Cook,9225,9540,Kane,Work Trips To Kane County,Kane County
-South Chicago,20,633,Kane,Work Trips To Kane County,Kane County
-South Cook,75,396,Kane,Work Trips To Kane County,Kane County
-West Chicago,325,1047,Kane,Work Trips To Kane County,Kane County
-West Cook,14025,10110,Kane,Work Trips To Kane County,Kane County
-Will,4930,8146,Kane,Work Trips To Kane County,Kane County
-DuPage,8875,8631,Kendall,Work Trips To Kendall County,Kendall County
-Kane,8220,3693,Kendall,Work Trips To Kendall County,Kendall County
-Kendall,20375,6157,Kendall,Work Trips To Kendall County,Kendall County
-CBD,255,1687,Kendall,Work Trips To Kendall County,Kendall County
-Lake,0,0,Kendall,Work Trips To Kendall County,Kendall County
-McHenry,0,0,Kendall,Work Trips To Kendall County,Kendall County
-North Chicago,70,0,Kendall,Work Trips To Kendall County,Kendall County
-North Cook,40,0,Kendall,Work Trips To Kendall County,Kendall County
-South Chicago,15,579,Kendall,Work Trips To Kendall County,Kendall County
-South Cook,110,988,Kendall,Work Trips To Kendall County,Kendall County
-West Chicago,85,0,Kendall,Work Trips To Kendall County,Kendall County
-West Cook,510,264,Kendall,Work Trips To Kendall County,Kendall County
-Will,5005,1955,Kendall,Work Trips To Kendall County,Kendall County
-DuPage,2095,13726,Lake,Work Trips To Lake County,Lake County
-Kane,2335,7183,Lake,Work Trips To Lake County,Lake County
-Kendall,0,0,Lake,Work Trips To Lake County,Lake County
-CBD,2500,23900,Lake,Work Trips To Lake County,Lake County
-Lake,300320,353366,Lake,Work Trips To Lake County,Lake County
-McHenry,18040,21750,Lake,Work Trips To Lake County,Lake County
-North Chicago,4685,17671,Lake,Work Trips To Lake County,Lake County
-North Cook,62670,67923,Lake,Work Trips To Lake County,Lake County
-South Chicago,110,1539,Lake,Work Trips To Lake County,Lake County
-South Cook,20,1850,Lake,Work Trips To Lake County,Lake County
-West Chicago,595,1074,Lake,Work Trips To Lake County,Lake County
-West Cook,3645,7819,Lake,Work Trips To Lake County,Lake County
-Will,40,1115,Lake,Work Trips To Lake County,Lake County
-DuPage,1460,2375,McHenry,Work Trips To McHenry County,McHenry County
-Kane,10835,12319,McHenry,Work Trips To McHenry County,McHenry County
-Kendall,5,0,McHenry,Work Trips To McHenry County,McHenry County
-CBD,210,4107,McHenry,Work Trips To McHenry County,McHenry County
-Lake,15590,18748,McHenry,Work Trips To McHenry County,McHenry County
-McHenry,86670,142281,McHenry,Work Trips To McHenry County,McHenry County
-North Chicago,705,3655,McHenry,Work Trips To McHenry County,McHenry County
-North Cook,10055,18326,McHenry,Work Trips To McHenry County,McHenry County
-South Chicago,0,0,McHenry,Work Trips To McHenry County,McHenry County
-South Cook,0,0,McHenry,Work Trips To McHenry County,McHenry County
-West Chicago,40,735,McHenry,Work Trips To McHenry County,McHenry County
-West Cook,3235,6656,McHenry,Work Trips To McHenry County,McHenry County
-Will,0,0,McHenry,Work Trips To McHenry County,McHenry County
-DuPage,13045,20798,NChicago,Work Trips To North Chicago,North Chicago
-Kane,1870,5184,NChicago,Work Trips To North Chicago,North Chicago
-Kendall,140,1163,NChicago,Work Trips To North Chicago,North Chicago
-CBD,107450,117662,NChicago,Work Trips To North Chicago,North Chicago
-Lake,4640,13235,NChicago,Work Trips To North Chicago,North Chicago
-McHenry,855,3898,NChicago,Work Trips To North Chicago,North Chicago
-North Chicago,359880,303339,NChicago,Work Trips To North Chicago,North Chicago
-North Cook,73840,84099,NChicago,Work Trips To North Chicago,North Chicago
-South Chicago,15235,31782,NChicago,Work Trips To North Chicago,North Chicago
-South Cook,4535,16443,NChicago,Work Trips To North Chicago,North Chicago
-West Chicago,63245,78769,NChicago,Work Trips To North Chicago,North Chicago
-West Cook,36095,40180,NChicago,Work Trips To North Chicago,North Chicago
-Will,1435,5434,NChicago,Work Trips To North Chicago,North Chicago
-DuPage,24655,50333,NCook,Work Trips To North Cook County,North Cook County
-Kane,11265,16591,NCook,Work Trips To North Cook County,North Cook County
-Kendall,70,249,NCook,Work Trips To North Cook County,North Cook County
-CBD,9790,39006,NCook,Work Trips To North Cook County,North Cook County
-Lake,63040,71100,NCook,Work Trips To North Cook County,North Cook County
-McHenry,12930,20633,NCook,Work Trips To North Cook County,North Cook County
-North Chicago,79485,91680,NCook,Work Trips To North Cook County,North Cook County
-North Cook,419705,435666,NCook,Work Trips To North Cook County,North Cook County
-South Chicago,1775,12582,NCook,Work Trips To North Cook County,North Cook County
-South Cook,1035,9878,NCook,Work Trips To North Cook County,North Cook County
-West Chicago,5865,15004,NCook,Work Trips To North Cook County,North Cook County
-West Cook,47150,44060,NCook,Work Trips To North Cook County,North Cook County
-Will,845,8804,NCook,Work Trips To North Cook County,North Cook County
-DuPage,1705,6635,SChicago,Work Trips To South Chicago,South Chicago
-Kane,30,0,SChicago,Work Trips To South Chicago,South Chicago
-Kendall,5,579,SChicago,Work Trips To South Chicago,South Chicago
-CBD,52210,59737,SChicago,Work Trips To South Chicago,South Chicago
-Lake,80,1868,SChicago,Work Trips To South Chicago,South Chicago
-McHenry,0,0,SChicago,Work Trips To South Chicago,South Chicago
-North Chicago,13140,32329,SChicago,Work Trips To South Chicago,South Chicago
-North Cook,1320,13715,SChicago,Work Trips To South Chicago,South Chicago
-South Chicago,129330,151714,SChicago,Work Trips To South Chicago,South Chicago
-South Cook,30780,40953,SChicago,Work Trips To South Chicago,South Chicago
-West Chicago,31725,41220,SChicago,Work Trips To South Chicago,South Chicago
-West Cook,6975,16704,SChicago,Work Trips To South Chicago,South Chicago
-Will,1740,9416,SChicago,Work Trips To South Chicago,South Chicago
-DuPage,7555,14272,SCook,Work Trips To South Cook County,South Cook County
-Kane,95,2621,SCook,Work Trips To South Cook County,South Cook County
-Kendall,145,308,SCook,Work Trips To South Cook County,South Cook County
-CBD,13485,34523,SCook,Work Trips To South Cook County,South Cook County
-Lake,20,1910,SCook,Work Trips To South Cook County,South Cook County
-McHenry,0,0,SCook,Work Trips To South Cook County,South Cook County
-North Chicago,3650,12691,SCook,Work Trips To South Cook County,South Cook County
-North Cook,810,10957,SCook,Work Trips To South Cook County,South Cook County
-South Chicago,32580,36182,SCook,Work Trips To South Cook County,South Cook County
-South Cook,256370,238957,SCook,Work Trips To South Cook County,South Cook County
-West Chicago,9725,18136,SCook,Work Trips To South Cook County,South Cook County
-West Cook,18395,26459,SCook,Work Trips To South Cook County,South Cook County
-Will,29475,38719,SCook,Work Trips To South Cook County,South Cook County
-DuPage,5245,15618,WChicago,Work Trips To West Chicago,West Chicago
-Kane,390,1296,WChicago,Work Trips To West Chicago,West Chicago
-Kendall,90,0,WChicago,Work Trips To West Chicago,West Chicago
-CBD,39925,35276,WChicago,Work Trips To West Chicago,West Chicago
-Lake,575,1021,WChicago,Work Trips To West Chicago,West Chicago
-McHenry,35,843,WChicago,Work Trips To West Chicago,West Chicago
-North Chicago,66480,76263,WChicago,Work Trips To West Chicago,West Chicago
-North Cook,4690,13315,WChicago,Work Trips To West Chicago,West Chicago
-South Chicago,36865,42393,WChicago,Work Trips To West Chicago,West Chicago
-South Cook,11335,17332,WChicago,Work Trips To West Chicago,West Chicago
-West Chicago,131065,103425,WChicago,Work Trips To West Chicago,West Chicago
-West Cook,26660,25847,WChicago,Work Trips To West Chicago,West Chicago
-Will,1830,6094,WChicago,Work Trips To West Chicago,West Chicago
-DuPage,70500,73149,WCook,Work Trips To West Cook County,West Cook County
-Kane,15165,10644,WCook,Work Trips To West Cook County,West Cook County
-Kendall,695,264,WCook,Work Trips To West Cook County,West Cook County
-CBD,22620,31838,WCook,Work Trips To West Cook County,West Cook County
-Lake,3575,6965,WCook,Work Trips To West Cook County,West Cook County
-McHenry,4035,7756,WCook,Work Trips To West Cook County,West Cook County
-North Chicago,34190,41378,WCook,Work Trips To West Cook County,West Cook County
-North Cook,43415,43382,WCook,Work Trips To West Cook County,West Cook County
-South Chicago,8500,18189,WCook,Work Trips To West Cook County,West Cook County
-South Cook,20910,25618,WCook,Work Trips To West Cook County,West Cook County
-West Chicago,27145,23858,WCook,Work Trips To West Cook County,West Cook County
-West Cook,217380,190318,WCook,Work Trips To West Cook County,West Cook County
-Will,11830,12523,WCook,Work Trips To West Cook County,West Cook County
-DuPage,43650,50512,Will,Work Trips To Will County,Will County
-Kane,4510,8718,Will,Work Trips To Will County,Will County
-Kendall,5295,2332,Will,Work Trips To Will County,Will County
-CBD,4820,16230,Will,Work Trips To Will County,Will County
-Lake,25,1448,Will,Work Trips To Will County,Will County
-McHenry,0,0,Will,Work Trips To Will County,Will County
-North Chicago,1130,7603,Will,Work Trips To Will County,Will County
-North Cook,650,9466,Will,Work Trips To Will County,Will County
-South Chicago,1585,6543,Will,Work Trips To Will County,Will County
-South Cook,29765,36320,Will,Work Trips To Will County,Will County
-West Chicago,1510,4301,Will,Work Trips To Will County,Will County
-West Cook,9515,8689,Will,Work Trips To Will County,Will County
-Will,188970,223683,Will,Work Trips To Will County,Will County
+root,Model,Survey,category,Description,Title
+DuPage,28583815.00,16064013.34,DuPage,Work trips to DuPage,DuPage
+DuPage,3576840.00,3105436.61,Kane,Work trips to Kane,Kane
+DuPage,2811900.00,1331507.58,Kendall,Work trips to Kendall,Kendall
+DuPage,139440.00,241063.62,CBD,Work trips to CBD,CBD
+DuPage,194800.00,950332.04,Lake,Work trips to Lake,Lake
+DuPage,171100.00,354140.26,McHenry,Work trips to McHenry,McHenry
+DuPage,486465.00,327248.02,North Chicago,Work trips to North Chicago,North Chicago
+DuPage,754250.00,927899.50,North Cook,Work trips to North Cook,North Cook
+DuPage,43720.00,123571.72,South Chicago,Work trips to South Chicago,South Chicago
+DuPage,420045.00,505919.75,South Cook,Work trips to South Cook,South Cook
+DuPage,116730.00,318999.35,West Chicago,Work trips to West Chicago,West Chicago
+DuPage,2994745.00,2721975.29,West Cook,Work trips to West Cook,West Cook
+DuPage,4563240.00,3358395.04,Will,Work trips to Will,Will
+Kane,3879080.00,3335548.03,DuPage,Work trips to DuPage,DuPage
+Kane,30604965.00,18224621.54,Kane,Work trips to Kane,Kane
+Kane,3518930.00,887761.75,Kendall,Work trips to Kendall,Kendall
+Kane,30975.00,73628.25,CBD,Work trips to CBD,CBD
+Kane,525040.00,884914.80,Lake,Work trips to Lake,Lake
+Kane,2987040.00,2722700.83,McHenry,Work trips to McHenry,McHenry
+Kane,200815.00,162161.14,North Chicago,Work trips to North Chicago,North Chicago
+Kane,822960.00,641928.27,North Cook,Work trips to North Cook,North Cook
+Kane,2685.00,0.00,South Chicago,Work trips to South Chicago,South Chicago
+Kane,6520.00,110663.98,South Cook,Work trips to South Cook,South Cook
+Kane,12540.00,31046.29,West Chicago,Work trips to West Chicago,West Chicago
+Kane,1777370.00,1513406.46,West Cook,Work trips to West Cook,West Cook
+Kane,487960.00,640364.10,Will,Work trips to Will,Will
+Kendall,3420100.00,2145007.26,DuPage,Work trips to DuPage,DuPage
+Kendall,4145225.00,363311.98,Kane,Work trips to Kane,Kane
+Kendall,60453480.00,3721370.48,Kendall,Work trips to Kendall,Kendall
+Kendall,29340.00,120918.26,CBD,Work trips to CBD,CBD
+Kendall,7760.00,0.00,Lake,Work trips to Lake,Lake
+Kendall,6480.00,0.00,McHenry,Work trips to McHenry,McHenry
+Kendall,47845.00,23540.80,North Chicago,Work trips to North Chicago,North Chicago
+Kendall,8500.00,35848.93,North Cook,Work trips to North Cook,North Cook
+Kendall,5000.00,186597.22,South Chicago,Work trips to South Chicago,South Chicago
+Kendall,91650.00,44328.52,South Cook,Work trips to South Cook,South Cook
+Kendall,24230.00,110833.65,West Chicago,Work trips to West Chicago,West Chicago
+Kendall,249490.00,269144.14,West Cook,Work trips to West Cook,West Cook
+Kendall,4904560.00,1237556.21,Will,Work trips to Will,Will
+CBD,120920.00,180092.13,DuPage,Work trips to DuPage,DuPage
+CBD,28730.00,81253.16,Kane,Work trips to Kane,Kane
+CBD,25215.00,125626.12,Kendall,Work trips to Kendall,Kendall
+CBD,114890.00,115816.59,CBD,Work trips to CBD,CBD
+CBD,23410.00,199283.93,Lake,Work trips to Lake,Lake
+CBD,4310.00,69656.54,McHenry,Work trips to McHenry,McHenry
+CBD,348900.00,336837.95,North Chicago,Work trips to North Chicago,North Chicago
+CBD,44420.00,144302.32,North Cook,Work trips to North Cook,North Cook
+CBD,208015.00,201037.70,South Chicago,Work trips to South Chicago,South Chicago
+CBD,90720.00,187625.66,South Cook,Work trips to South Cook,South Cook
+CBD,156705.00,121629.16,West Chicago,Work trips to West Chicago,West Chicago
+CBD,112735.00,141582.68,West Cook,Work trips to West Cook,West Cook
+CBD,81120.00,207435.24,Will,Work trips to Will,Will
+Lake,215100.00,896694.74,DuPage,Work trips to DuPage,DuPage
+Lake,409040.00,711700.32,Kane,Work trips to Kane,Kane
+Lake,2880.00,3714.81,Kendall,Work trips to Kendall,Kendall
+Lake,28500.00,226279.30,CBD,Work trips to CBD,CBD
+Lake,52215880.00,46564562.23,Lake,Work trips to Lake,Lake
+Lake,3994500.00,4248701.02,McHenry,Work trips to McHenry,McHenry
+Lake,310170.00,484322.59,North Chicago,Work trips to North Chicago,North Chicago
+Lake,3839360.00,3618411.96,North Cook,Work trips to North Cook,North Cook
+Lake,3140.00,67041.37,South Chicago,Work trips to South Chicago,South Chicago
+Lake,480.00,74882.34,South Cook,Work trips to South Cook,South Cook
+Lake,15905.00,40181.35,West Chicago,Work trips to West Chicago,West Chicago
+Lake,450250.00,513031.67,West Cook,Work trips to West Cook,West Cook
+Lake,3600.00,203259.44,Will,Work trips to Will,Will
+McHenry,224440.00,337824.51,DuPage,Work trips to DuPage,DuPage
+McHenry,3106080.00,2872851.91,Kane,Work trips to Kane,Kane
+McHenry,5070.00,62882.02,CBD,Work trips to CBD,CBD
+McHenry,4622820.00,5407356.47,Lake,Work trips to Lake,Lake
+McHenry,34977500.00,43896511.77,McHenry,Work trips to McHenry,McHenry
+McHenry,111680.00,253373.85,North Chicago,Work trips to North Chicago,North Chicago
+McHenry,1102350.00,1410221.63,North Cook,Work trips to North Cook,North Cook
+McHenry,320.00,5074.27,South Cook,Work trips to South Cook,South Cook
+McHenry,960.00,21461.67,West Chicago,Work trips to West Chicago,West Chicago
+McHenry,734470.00,1141162.51,West Cook,Work trips to West Cook,West Cook
+North Chicago,374305.00,336639.50,DuPage,Work trips to DuPage,DuPage
+North Chicago,155830.00,161632.59,Kane,Work trips to Kane,Kane
+North Chicago,23180.00,0.00,Kendall,Work trips to Kendall,Kendall
+North Chicago,424465.00,409458.03,CBD,Work trips to CBD,CBD
+North Chicago,277690.00,635971.75,Lake,Work trips to Lake,Lake
+North Chicago,87400.00,229589.02,McHenry,Work trips to McHenry,McHenry
+North Chicago,6029045.00,2958004.36,North Chicago,Work trips to North Chicago,North Chicago
+North Chicago,1447110.00,1158849.52,North Cook,Work trips to North Cook,North Cook
+North Chicago,170950.00,307947.75,South Chicago,Work trips to South Chicago,South Chicago
+North Chicago,107335.00,204267.68,South Cook,Work trips to South Cook,South Cook
+North Chicago,684725.00,846303.81,West Chicago,Work trips to West Chicago,West Chicago
+North Chicago,686445.00,631620.09,West Cook,Work trips to West Cook,West Cook
+North Chicago,75030.00,269775.14,Will,Work trips to Will,Will
+North Cook,707960.00,954025.01,DuPage,Work trips to DuPage,DuPage
+North Cook,688860.00,532119.23,Kane,Work trips to Kane,Kane
+North Cook,9660.00,0.00,Kendall,Work trips to Kendall,Kendall
+North Cook,53855.00,161088.75,CBD,Work trips to CBD,CBD
+North Cook,3886500.00,3430577.69,Lake,Work trips to Lake,Lake
+North Cook,888430.00,1160533.49,McHenry,Work trips to McHenry,McHenry
+North Cook,1493460.00,1039612.44,North Chicago,Work trips to North Chicago,North Chicago
+North Cook,9477415.00,7421273.67,North Cook,Work trips to North Cook,North Cook
+North Cook,23330.00,193295.08,South Chicago,Work trips to South Chicago,South Chicago
+North Cook,17570.00,186531.54,South Cook,Work trips to South Cook,South Cook
+North Cook,68355.00,255068.66,West Chicago,Work trips to West Chicago,West Chicago
+North Cook,1458610.00,1365781.47,West Cook,Work trips to West Cook,West Cook
+North Cook,35020.00,253382.74,Will,Work trips to Will,Will
+South Chicago,57775.00,122418.38,DuPage,Work trips to DuPage,DuPage
+South Chicago,1500.00,73039.16,Kane,Work trips to Kane,Kane
+South Chicago,7035.00,207350.20,Kendall,Work trips to Kendall,Kendall
+South Chicago,266080.00,255970.01,CBD,Work trips to CBD,CBD
+South Chicago,3460.00,71276.94,Lake,Work trips to Lake,Lake
+South Chicago,80.00,8336.66,McHenry,Work trips to McHenry,McHenry
+South Chicago,197365.00,286986.05,North Chicago,Work trips to North Chicago,North Chicago
+South Chicago,31090.00,180425.65,North Cook,Work trips to North Cook,North Cook
+South Chicago,2352895.00,2281417.12,South Chicago,Work trips to South Chicago,South Chicago
+South Chicago,640515.00,635328.52,South Cook,Work trips to South Cook,South Cook
+South Chicago,512510.00,584778.79,West Chicago,Work trips to West Chicago,West Chicago
+South Chicago,145455.00,284109.00,West Cook,Work trips to West Cook,West Cook
+South Chicago,115690.00,318405.62,Will,Work trips to Will,Will
+South Cook,531205.00,611712.03,DuPage,Work trips to DuPage,DuPage
+South Cook,6980.00,56957.73,Kane,Work trips to Kane,Kane
+South Cook,81770.00,125639.35,Kendall,Work trips to Kendall,Kendall
+South Cook,113065.00,213449.10,CBD,Work trips to CBD,CBD
+South Cook,580.00,126564.60,Lake,Work trips to Lake,Lake
+South Cook,136660.00,218140.97,North Chicago,Work trips to North Chicago,North Chicago
+South Cook,25245.00,246930.00,North Cook,Work trips to North Cook,North Cook
+South Cook,622725.00,669843.44,South Chicago,Work trips to South Chicago,South Chicago
+South Cook,12748950.00,9709461.27,South Cook,Work trips to South Cook,South Cook
+South Cook,234070.00,445622.40,West Chicago,Work trips to West Chicago,West Chicago
+South Cook,750770.00,738111.25,West Cook,Work trips to West Cook,West Cook
+South Cook,3995860.00,3516057.03,Will,Work trips to Will,Will
+West Chicago,126570.00,358746.01,DuPage,Work trips to DuPage,DuPage
+West Chicago,8720.00,13121.83,Kane,Work trips to Kane,Kane
+West Chicago,22670.00,0.00,Kendall,Work trips to Kendall,Kendall
+West Chicago,198590.00,140274.89,CBD,Work trips to CBD,CBD
+West Chicago,14325.00,47799.63,Lake,Work trips to Lake,Lake
+West Chicago,1220.00,19729.73,McHenry,Work trips to McHenry,McHenry
+West Chicago,684715.00,869068.34,North Chicago,Work trips to North Chicago,North Chicago
+West Chicago,83425.00,291642.28,North Cook,Work trips to North Cook,North Cook
+West Chicago,449985.00,571764.95,South Chicago,Work trips to South Chicago,South Chicago
+West Chicago,198335.00,360585.44,South Cook,Work trips to South Cook,South Cook
+West Chicago,2089815.00,1977623.44,West Chicago,Work trips to West Chicago,West Chicago
+West Chicago,470445.00,451111.38,West Cook,Work trips to West Cook,West Cook
+West Chicago,88830.00,254496.80,Will,Work trips to Will,Will
+West Cook,3266840.00,2386183.41,DuPage,Work trips to DuPage,DuPage
+West Cook,1657430.00,1073681.10,Kane,Work trips to Kane,Kane
+West Cook,184090.00,154204.02,Kendall,Work trips to Kendall,Kendall
+West Cook,136815.00,171355.12,CBD,Work trips to CBD,CBD
+West Cook,486115.00,954439.92,Lake,Work trips to Lake,Lake
+West Cook,580790.00,1055075.43,McHenry,Work trips to McHenry,McHenry
+West Cook,841845.00,722714.94,North Chicago,Work trips to North Chicago,North Chicago
+West Cook,1562965.00,1317790.50,North Cook,Work trips to North Cook,North Cook
+West Cook,123130.00,236904.97,South Chicago,Work trips to South Chicago,South Chicago
+West Cook,664030.00,793785.58,South Cook,Work trips to South Cook,South Cook
+West Cook,477700.00,444183.19,West Chicago,Work trips to West Chicago,West Chicago
+West Cook,7848165.00,4887487.59,West Cook,Work trips to West Cook,West Cook
+West Cook,1024880.00,528601.05,Will,Work trips to Will,Will
+Will,5293360.00,3937359.45,DuPage,Work trips to DuPage,DuPage
+Will,583000.00,555591.53,Kane,Work trips to Kane,Kane
+Will,4458600.00,1169723.00,Kendall,Work trips to Kendall,Kendall
+Will,91710.00,252988.57,CBD,Work trips to CBD,CBD
+Will,5440.00,178469.50,Lake,Work trips to Lake,Lake
+Will,104540.00,157282.01,North Chicago,Work trips to North Chicago,North Chicago
+Will,43820.00,305278.15,North Cook,Work trips to North Cook,North Cook
+Will,125820.00,396658.65,South Chicago,Work trips to South Chicago,South Chicago
+Will,3912640.00,3767717.69,South Cook,Work trips to South Cook,South Cook
+Will,103320.00,340529.01,West Chicago,Work trips to West Chicago,West Chicago
+Will,1154040.00,683658.62,West Cook,Work trips to West Cook,West Cook
+Will,48151540.00,34932794.92,Will,Work trips to Will,Will

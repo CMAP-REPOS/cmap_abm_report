@@ -6,7 +6,7 @@ function makeStackedChart_4(csv_file,catID,dataTitle,divID){
   //console.log(catInt);
 
   var margin = {top: 35, right: 50, bottom: 50, left: 80},
-  width = 700 - margin.left - margin.right,
+  width = 900 - margin.left - margin.right,
   height = 375 - margin.top - margin.bottom;
   height2 = 400 - margin.top - margin.bottom;
 

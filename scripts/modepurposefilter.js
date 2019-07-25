@@ -1,6 +1,6 @@
 function make_h_stacked_tripsbymode(csv_file,divID, legendID){
     var margin = {top: 80, right: 10, bottom: 0, left: 75},
-      width = 700 - margin.left - margin.right,
+      width = 900 - margin.left - margin.right,
       height = 300 - margin.top - margin.bottom;
 
 

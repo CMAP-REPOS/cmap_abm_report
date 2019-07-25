@@ -1,67 +1,67 @@
 Index,Model 01,Survey 01,Category,Description,Title
-Drive alone free,12708320,12222867,All,Drive alone free All,All
-Shared ride 2 free,5663205,6009703,All,Shared ride 2 free All,All
-Shared ride 3+ free,5159155,5115529,All,Shared ride 3+ free All,All
-Walk,4358370,2986980,All,Walk All,All
-Drive alone free,3683345,1776832,Less than $35k,Drive alone free lt36,Less than $35k
-Drive alone free,2829940,1646612,$35k to $50k,Drive alone free $35k to $50k,$35k to $50k
-Drive alone free,2458880,2550735,$50k to $75k,Drive alone free $50k to $75k,$50k to $75k
-Walk,2218235,1019728,Less than $35k,Walk lt45,Less than $35k
-Drive alone free,2168725,3832433,More than $100k,Drive alone free More than $100k,More than $100k
-Shared ride 2 free,1898235,925402,Less than $35k,Shared ride 2 free lt40,Less than $35k
-Shared ride 3+ free,1864135,839190,Less than $35k,Shared ride 3+ free lt42,Less than $35k
-Transit,1588370,1411502,All,Transit,All
-Drive alone free,1567430,2416255,$75k to $100K,Drive alone free $75k to $100K,$75k to $100K
-Shared ride 2 free,1203765,780263,$35k to $50k,Shared ride 2 free $35k to $50k,$35k to $50k
-Shared ride 2 free,1109505,1173373,$50k to $75k,Shared ride 2 free $50k to $75k,$50k to $75k
-Shared ride 3+ free,1028780,618170,$35k to $50k,Shared ride 3+ free $35k to $50k,$35k to $50k
-Shared ride 3+ free,950005,952093,$50k to $75k,Shared ride 3+ free $50k to $75k,$50k to $75k
-School bus,878180,699298,All,School bus All,All
-Shared ride 2 free,841370,1905964,More than $100k,Shared ride 2 free More than $100k,More than $100k
-Transit,810635,514518,Less than $35k,Walk to transit lt46,Less than $35k
-Shared ride 3+ free,784850,1658140,More than $100k,Shared ride 3+ free More than $100k,More than $100k
-Walk,745775,380596,$35k to $50k,Walk $35k to $50k,$35k to $50k
-Shared ride 2 free,610330,1224701,$75k to $100K,Shared ride 2 free $75k to $100K,$75k to $100K
-Walk,592390,436040,$50k to $75k,Walk $50k to $75k,$50k to $75k
-Shared ride 3+ free,531385,1047936,$75k to $100K,Shared ride 3+ free $75k to $100K,$75k to $100K
-Walk,473550,758642,More than $100k,Walk More than $100k,More than $100k
-School bus,389670,127589,Less than $35k,School bus lt39,Less than $35k
-Walk,328420,391974,$75k to $100K,Walk $75k to $100K,$75k to $100K
-Bike,325385,253072,All,Bike All,All
-Transit,279105,194248,$35k to $50k,Walk to transit $35k to $50k,$35k to $50k
-Drive alone pay,262355,369637,All,Drive alone pay All,All
-Transit,202040,299990,More than $100k,Walk to transit More than $100k,More than $100k
-Transit,178425,233846,$50k to $75k,Walk to transit $50k to $75k,$50k to $75k
-School bus,158020,99023,$35k to $50k,School bus $35k to $50k,$35k to $50k
-School bus,151030,120419,$50k to $75k,School bus $50k to $75k,$50k to $75k
-Bike,150645,46706,Less than $35k,Bike lt35,Less than $35k
-Transit,118165,168900,$75k to $100K,Walk to transit $75k to $100K,$75k to $100K
-Taxi,96205,64726,All,Taxi All,All
-School bus,92160,204281,More than $100k,School bus More than $100k,More than $100k
-School bus,87300,147986,$75k to $100K,School bus $75k to $100K,$75k to $100K
-Drive alone pay,69490,173976,More than $100k,Drive alone pay More than $100k,More than $100k
-Shared ride 3+ pay,63750,20611,All,Shared ride 3+ pay All,All
-Bike,62445,31013,$35k to $50k,Bike $35k to $50k,$35k to $50k
-Drive alone pay,57325,66233,$50k to $75k,Drive alone pay $50k to $75k,$50k to $75k
-Drive alone pay,53610,30759,$35k to $50k,Drive alone pay $35k to $50k,$35k to $50k
-Bike,45045,60658,$50k to $75k,Bike $50k to $75k,$50k to $75k
-Drive alone pay,44865,81512,$75k to $100K,Drive alone pay $75k to $100K,$75k to $100K
-Shared ride 2 pay,40520,40827,All,Shared ride 2 pay All,All
-Bike,39990,70557,More than $100k,Bike More than $100k,More than $100k
-Drive alone pay,37065,17157,Less than $35k,Drive alone pay lt37,Less than $35k
-Bike,27260,44138,$75k to $100K,Bike $75k to $100K,$75k to $100K
-Taxi,24810,6921,$35k to $50k,Taxi $35k to $50k,$35k to $50k
-Taxi,21735,17381,Less than $35k,Taxi lt44,Less than $35k
-Taxi,20020,8514,$50k to $75k,Taxi $50k to $75k,$50k to $75k
-Taxi,17095,27879,More than $100k,Taxi More than $100k,More than $100k
-Shared ride 3+ pay,14430,7349,More than $100k,Shared ride 3+ pay More than $100k,More than $100k
-Shared ride 3+ pay,14150,3943,$50k to $75k,Shared ride 3+ pay $50k to $75k,$50k to $75k
-Shared ride 3+ pay,14120,3402,Less than $35k,Shared ride 3+ pay lt43,Less than $35k
-Taxi,12545,4031,$75k to $100K,Taxi $75k to $100K,$75k to $100K
-Shared ride 3+ pay,12395,973,$35k to $50k,Shared ride 3+ pay $35k to $50k,$35k to $50k
-Shared ride 2 pay,9765,11846,Less than $35k,Shared ride 2 pay lt41,Less than $35k
-Shared ride 2 pay,8860,7851,$50k to $75k,Shared ride 2 pay $50k to $75k,$50k to $75k
-Shared ride 3+ pay,8655,4944,$75k to $100K,Shared ride 3+ pay $75k to $100K,$75k to $100K
-Shared ride 2 pay,8365,9188,More than $100k,Shared ride 2 pay More than $100k,More than $100k
-Shared ride 2 pay,7830,4647,$35k to $50k,Shared ride 2 pay $35k to $50k,$35k to $50k
-Shared ride 2 pay,5700,7295,$75k to $100K,Shared ride 2 pay $75k to $100K,$75k to $100K
+Drive alone free,12704350,12222867,All,Drive alone free All,All
+Shared ride 2 free,5663740,6009703,All,Shared ride 2 free All,All
+Shared ride 3+ free,5162545,5115529,All,Shared ride 3+ free All,All
+Walk,4358330,2986980,All,Walk All,All
+Drive alone free,3680540,1776832,Less than $35k,Drive alone free lt36,Less than $35k
+Drive alone free,2831890,1646612,$35k to $50k,Drive alone free $35k to $50k,$35k to $50k
+Drive alone free,2456760,2550735,$50k to $75k,Drive alone free $50k to $75k,$50k to $75k
+Walk,2218365,1019728,Less than $35k,Walk lt45,Less than $35k
+Drive alone free,2168115,3832433,More than $100k,Drive alone free More than $100k,More than $100k
+Shared ride 2 free,1897870,925402,Less than $35k,Shared ride 2 free lt40,Less than $35k
+Shared ride 3+ free,1866130,839190,Less than $35k,Shared ride 3+ free lt42,Less than $35k
+Transit,1587935,1411502,All,Transit,All
+Drive alone free,1567045,2416255,$75k to $100K,Drive alone free $75k to $100K,$75k to $100K
+Shared ride 2 free,1203895,780263,$35k to $50k,Shared ride 2 free $35k to $50k,$35k to $50k
+Shared ride 2 free,1110160,1173373,$50k to $75k,Shared ride 2 free $50k to $75k,$50k to $75k
+Shared ride 3+ free,1029340,618170,$35k to $50k,Shared ride 3+ free $35k to $50k,$35k to $50k
+Shared ride 3+ free,950035,952093,$50k to $75k,Shared ride 3+ free $50k to $75k,$50k to $75k
+School bus,878340,699298,All,School bus All,All
+Shared ride 2 free,841245,1905964,More than $100k,Shared ride 2 free More than $100k,More than $100k
+Transit,810745,514518,Less than $35k,Walk to transit lt46,Less than $35k
+Shared ride 3+ free,785375,1658140,More than $100k,Shared ride 3+ free More than $100k,More than $100k
+Walk,744590,380596,$35k to $50k,Walk $35k to $50k,$35k to $50k
+Shared ride 2 free,610570,1224701,$75k to $100K,Shared ride 2 free $75k to $100K,$75k to $100K
+Walk,593515,436040,$50k to $75k,Walk $50k to $75k,$50k to $75k
+Shared ride 3+ free,531665,1047936,$75k to $100K,Shared ride 3+ free $75k to $100K,$75k to $100K
+Walk,473070,758642,More than $100k,Walk More than $100k,More than $100k
+School bus,389710,127589,Less than $35k,School bus lt39,Less than $35k
+Walk,328790,391974,$75k to $100K,Walk $75k to $100K,$75k to $100K
+Bike,324455,253072,All,Bike All,All
+Transit,278660,194248,$35k to $50k,Walk to transit $35k to $50k,$35k to $50k
+Drive alone pay,261210,369637,All,Drive alone pay All,All
+Transit,202280,299990,More than $100k,Walk to transit More than $100k,More than $100k
+Transit,178500,233846,$50k to $75k,Walk to transit $50k to $75k,$50k to $75k
+School bus,158060,99023,$35k to $50k,School bus $35k to $50k,$35k to $50k
+School bus,151010,120419,$50k to $75k,School bus $50k to $75k,$50k to $75k
+Bike,150075,46706,Less than $35k,Bike lt35,Less than $35k
+Transit,117750,168900,$75k to $100K,Walk to transit $75k to $100K,$75k to $100K
+Taxi,96740,64726,All,Taxi All,All
+School bus,92220,204281,More than $100k,School bus More than $100k,More than $100k
+School bus,87340,147986,$75k to $100K,School bus $75k to $100K,$75k to $100K
+Drive alone pay,69055,173976,More than $100k,Drive alone pay More than $100k,More than $100k
+Shared ride 3+ pay,63710,20611,All,Shared ride 3+ pay All,All
+Bike,61965,31013,$35k to $50k,Bike $35k to $50k,$35k to $50k
+Drive alone pay,57195,66233,$50k to $75k,Drive alone pay $50k to $75k,$50k to $75k
+Drive alone pay,53600,30759,$35k to $50k,Drive alone pay $35k to $50k,$35k to $50k
+Bike,44860,60658,$50k to $75k,Bike $50k to $75k,$50k to $75k
+Drive alone pay,44530,81512,$75k to $100K,Drive alone pay $75k to $100K,$75k to $100K
+Shared ride 2 pay,40620,40827,All,Shared ride 2 pay All,All
+Bike,39880,70557,More than $100k,Bike More than $100k,More than $100k
+Drive alone pay,36830,17157,Less than $35k,Drive alone pay lt37,Less than $35k
+Bike,27675,44138,$75k to $100K,Bike $75k to $100K,$75k to $100K
+Taxi,24955,6921,$35k to $50k,Taxi $35k to $50k,$35k to $50k
+Taxi,21525,17381,Less than $35k,Taxi lt44,Less than $35k
+Taxi,20110,8514,$50k to $75k,Taxi $50k to $75k,$50k to $75k
+Taxi,17420,27879,More than $100k,Taxi More than $100k,More than $100k
+Shared ride 3+ pay,14500,7349,More than $100k,Shared ride 3+ pay More than $100k,More than $100k
+Shared ride 3+ pay,14240,3402,Less than $35k,Shared ride 3+ pay lt43,Less than $35k
+Shared ride 3+ pay,14195,3943,$50k to $75k,Shared ride 3+ pay $50k to $75k,$50k to $75k
+Taxi,12730,4031,$75k to $100K,Taxi $75k to $100K,$75k to $100K
+Shared ride 3+ pay,12185,973,$35k to $50k,Shared ride 3+ pay $35k to $50k,$35k to $50k
+Shared ride 2 pay,9885,11846,Less than $35k,Shared ride 2 pay lt41,Less than $35k
+Shared ride 2 pay,8780,7851,$50k to $75k,Shared ride 2 pay $50k to $75k,$50k to $75k
+Shared ride 3+ pay,8590,4944,$75k to $100K,Shared ride 3+ pay $75k to $100K,$75k to $100K
+Shared ride 2 pay,8530,9188,More than $100k,Shared ride 2 pay More than $100k,More than $100k
+Shared ride 2 pay,7865,4647,$35k to $50k,Shared ride 2 pay $35k to $50k,$35k to $50k
+Shared ride 2 pay,5560,7295,$75k to $100K,Shared ride 2 pay $75k to $100K,$75k to $100K

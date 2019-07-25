@@ -1,3 +1,3 @@
-Index,Bike,Drive_alone_free,Drive_alone_pay,School_bus,Shared_ride_2_free,Shared_ride_2plus_pay,Shared_ride_3plus_free,Taxi,Walk,Transit,,
-Modeled,324455,12704350,261210,878340,5663740,104330,5162545,96740,4358330,1587935,,
-Observed,274811,13410726,389805,753391,6540903,63866,5500885,70084,3218236,1525503,,
+Index,Drive_alone_free,Shared_ride_2_free,Shared_ride_3plus_free,Walk,Transit,School_bus,Bike,Drive_alone_pay,Shared_ride_2plus_pay,Taxi
+Modeled,12704350,5663740,5162545,4358330,1587935,878340,324455,261210,104330,96740
+Observed,13410726,6540903,5500885,3218236,1525503,753391,274811,389805,63866,70084

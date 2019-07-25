@@ -17,7 +17,7 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
   var ngroups= nogroups+1
   var formatValue = d3.format(".2s");
   var margin = {top: 35, right: 80, bottom: 100, left: 100},
-    width = 400 - margin.left - margin.right,
+    width = 900 - margin.left - margin.right,
     height = height - margin.top - margin.bottom;
 
   var g = d3.select(chartID).append("svg")
@@ -220,8 +220,8 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
               )
               .style("left", (d3.event.pageX) + "px")
               .style("top",  (d3.event.pageY - 28) + "px")
-            
-            
+
+
           d3.selectAll("." + d.lines.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, ""))
           .attr("fill", "#cf4446");
         selectedline = d.lines.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "")
@@ -240,14 +240,14 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
               weight: 3
           })
           }})
-            
+
             })
 
         .on("mouseout", function(d) {
           div.transition()
           .duration(500)
           .style("opacity", 0);
-        
+
 
           d3.selectAll("." + d.lines.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, ""))
             .attr("fill", function(d) {

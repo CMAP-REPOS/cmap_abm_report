@@ -1,6 +1,6 @@
 function makeScatter(csv_file, chart_id){
   var margin = {top: 5, right: 5, bottom: 50, left: 80},
-	    width = 750 - margin.left - margin.right,
+	    width = 900 - margin.left - margin.right,
 	    height = 450 - margin.top - margin.bottom;
 
     var padding = 10;

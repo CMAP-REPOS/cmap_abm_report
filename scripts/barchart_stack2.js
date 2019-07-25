@@ -10,7 +10,7 @@ function makeStackedChart_nodd2(csv_file,dataTitle,divID){
     })
 
     var margin = {top: 35, right: 75, bottom: 100, left: 45},
-    width = 800 - margin.left - margin.right,
+    width = 900 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
     height2 = 575 - margin.top - margin.bottom;
 

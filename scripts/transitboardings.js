@@ -342,11 +342,11 @@ function getsharevalue(props) {
     }}
     else {
         if ($("#metra").hasClass("btn-info")) {
-            var sharevalue = -parseFloat(props['m_' + whichone]) + "%"
+            var sharevalue = -parseFloat(props['m_' + whichone]) 
         } else if ($("#pace").hasClass("btn-info")) {
-            var sharevalue = -parseFloat(props['b_' + whichone]) + "%"
+            var sharevalue = -parseFloat(props['b_' + whichone]) 
         } else if ($("#cta").hasClass("btn-info")) {
-            var sharevalue = -parseFloat(props['c_' + whichone]) + "%"
+            var sharevalue = -parseFloat(props['c_' + whichone]) 
         } else {
             var sharevalue = 0
     }}

@@ -17,7 +17,7 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
   var ngroups= nogroups+1
   var formatValue = d3.format(".2s");
   var margin = {top: 35, right: 80, bottom: 100, left: 100},
-    width = 900 - margin.left - margin.right,
+    width = 400 - margin.left - margin.right,
     height = height - margin.top - margin.bottom;
 
   var g = d3.select(chartID).append("svg")

@@ -17,6 +17,10 @@ function makeScatter(csv_file, chart_id){
         })])
        .range([padding,width - padding*2]);
 
+      console.log(d3.max(data, function(d){
+        return d.AADT;
+      }));
+
   	  var y = d3.scaleLinear()
       .domain([d3.min(data, function(d){
         return(d.vadt);

@@ -1,0 +1,613 @@
+res_gs,work_gs,Residence,Workplace,SUM_Total_means_of_transportation
+gs01,gs01,Central,Central,121919
+gs01,gs02,Central,Inner North,10119
+gs01,gs03,Central,Inner Northwest,6322
+gs01,gs04,Central,Inner South,7240
+gs01,gs05,Central,Inner Southwest,4820
+gs01,gs06,Central,Inner West,3891
+gs01,gs07,Central,Inner Upper West,1777
+gs01,gs08,Central,Inner Lower West,2973
+gs01,gs09,Central,Northwest Indiana,981
+gs01,gs10,Central,Middle North,2532
+gs01,gs11,Central,Middle Northwest,2455
+gs01,gs12,Central,Middle/Outer South,1016
+gs01,gs13,Central,Middle Southwest,2177
+gs01,gs14,Central,Middle West,2220
+gs01,gs15,Central,Middle Upper West,2037
+gs01,gs16,Central,Middle Lower West,4229
+gs01,gs17,Central,Outer North,1532
+gs01,gs18,Central,Outer Northwest,1646
+gs01,gs19,Central,Outer Southwest,733
+gs01,gs20,Central,Outer West,115
+gs01,gs21,Central,Outer Upper West,103
+gs01,gs22,Central,Outer Lower West,179
+gs01,gs23,Central,External Illinois,62
+gs01,gs24,Central,External Indiana,99
+gs01,gs25,Central,External Wisconsin,38
+gs02,gs01,Inner North,Central,132214
+gs02,gs02,Inner North,Inner North,114658
+gs02,gs03,Inner North,Inner Northwest,22734
+gs02,gs04,Inner North,Inner South,7468
+gs02,gs05,Inner North,Inner Southwest,4556
+gs02,gs06,Inner North,Inner West,4444
+gs02,gs07,Inner North,Inner Upper West,4343
+gs02,gs08,Inner North,Inner Lower West,3223
+gs02,gs09,Inner North,Northwest Indiana,324
+gs02,gs10,Inner North,Middle North,12653
+gs02,gs11,Inner North,Middle Northwest,7305
+gs02,gs12,Inner North,Middle/Outer South,791
+gs02,gs13,Inner North,Middle Southwest,1885
+gs02,gs14,Inner North,Middle West,2380
+gs02,gs15,Inner North,Middle Upper West,4490
+gs02,gs16,Inner North,Middle Lower West,3243
+gs02,gs17,Inner North,Outer North,4463
+gs02,gs18,Inner North,Outer Northwest,5085
+gs02,gs19,Inner North,Outer Southwest,596
+gs02,gs20,Inner North,Outer West,200
+gs02,gs21,Inner North,Outer Upper West,272
+gs02,gs22,Inner North,Outer Lower West,171
+gs02,gs23,Inner North,External Illinois,231
+gs02,gs24,Inner North,External Indiana,44
+gs02,gs25,Inner North,External Wisconsin,142
+gs03,gs01,Inner Northwest,Central,48147
+gs03,gs02,Inner Northwest,Inner North,24339
+gs03,gs03,Inner Northwest,Inner Northwest,59815
+gs03,gs04,Inner Northwest,Inner South,3813
+gs03,gs05,Inner Northwest,Inner Southwest,3374
+gs03,gs06,Inner Northwest,Inner West,6758
+gs03,gs07,Inner Northwest,Inner Upper West,8214
+gs03,gs08,Inner Northwest,Inner Lower West,2880
+gs03,gs09,Inner Northwest,Northwest Indiana,123
+gs03,gs10,Inner Northwest,Middle North,6781
+gs03,gs11,Inner Northwest,Middle Northwest,10719
+gs03,gs12,Inner Northwest,Middle/Outer South,769
+gs03,gs13,Inner Northwest,Middle Southwest,1428
+gs03,gs14,Inner Northwest,Middle West,2966
+gs03,gs15,Inner Northwest,Middle Upper West,8444
+gs03,gs16,Inner Northwest,Middle Lower West,3257
+gs03,gs17,Inner Northwest,Outer North,2401
+gs03,gs18,Inner Northwest,Outer Northwest,4642
+gs03,gs19,Inner Northwest,Outer Southwest,568
+gs03,gs20,Inner Northwest,Outer West,183
+gs03,gs21,Inner Northwest,Outer Upper West,315
+gs03,gs22,Inner Northwest,Outer Lower West,219
+gs03,gs23,Inner Northwest,External Illinois,97
+gs03,gs24,Inner Northwest,External Indiana,35
+gs03,gs25,Inner Northwest,External Wisconsin,78
+gs04,gs01,Inner South,Central,67837
+gs04,gs02,Inner South,Inner North,9626
+gs04,gs03,Inner South,Inner Northwest,7418
+gs04,gs04,Inner South,Inner South,81861
+gs04,gs05,Inner South,Inner Southwest,17346
+gs04,gs06,Inner South,Inner West,5761
+gs04,gs07,Inner South,Inner Upper West,2301
+gs04,gs08,Inner South,Inner Lower West,6738
+gs04,gs09,Inner South,Northwest Indiana,4380
+gs04,gs10,Inner South,Middle North,1929
+gs04,gs11,Inner South,Middle Northwest,3025
+gs04,gs12,Inner South,Middle/Outer South,7268
+gs04,gs13,Inner South,Middle Southwest,10408
+gs04,gs14,Inner South,Middle West,1746
+gs04,gs15,Inner South,Middle Upper West,2494
+gs04,gs16,Inner South,Middle Lower West,3346
+gs04,gs17,Inner South,Outer North,419
+gs04,gs18,Inner South,Outer Northwest,881
+gs04,gs19,Inner South,Outer Southwest,2692
+gs04,gs20,Inner South,Outer West,48
+gs04,gs21,Inner South,Outer Upper West,306
+gs04,gs22,Inner South,Outer Lower West,179
+gs04,gs23,Inner South,External Illinois,391
+gs04,gs24,Inner South,External Indiana,461
+gs04,gs25,Inner South,External Wisconsin,44
+gs05,gs01,Inner Southwest,Central,40007
+gs05,gs02,Inner Southwest,Inner North,5506
+gs05,gs03,Inner Southwest,Inner Northwest,5722
+gs05,gs04,Inner Southwest,Inner South,15257
+gs05,gs05,Inner Southwest,Inner Southwest,51410
+gs05,gs06,Inner Southwest,Inner West,5959
+gs05,gs07,Inner Southwest,Inner Upper West,3331
+gs05,gs08,Inner Southwest,Inner Lower West,11345
+gs05,gs09,Inner Southwest,Northwest Indiana,662
+gs05,gs10,Inner Southwest,Middle North,1205
+gs05,gs11,Inner Southwest,Middle Northwest,2665
+gs05,gs12,Inner Southwest,Middle/Outer South,1754
+gs05,gs13,Inner Southwest,Middle Southwest,11342
+gs05,gs14,Inner Southwest,Middle West,2932
+gs05,gs15,Inner Southwest,Middle Upper West,3121
+gs05,gs16,Inner Southwest,Middle Lower West,5569
+gs05,gs17,Inner Southwest,Outer North,268
+gs05,gs18,Inner Southwest,Outer Northwest,739
+gs05,gs19,Inner Southwest,Outer Southwest,2039
+gs05,gs20,Inner Southwest,Outer West,172
+gs05,gs21,Inner Southwest,Outer Upper West,191
+gs05,gs22,Inner Southwest,Outer Lower West,246
+gs05,gs23,Inner Southwest,External Illinois,198
+gs05,gs24,Inner Southwest,External Indiana,137
+gs05,gs25,Inner Southwest,External Wisconsin,29
+gs06,gs01,Inner West,Central,25029
+gs06,gs02,Inner West,Inner North,4634
+gs06,gs03,Inner West,Inner Northwest,6809
+gs06,gs04,Inner West,Inner South,2734
+gs06,gs05,Inner West,Inner Southwest,2821
+gs06,gs06,Inner West,Inner West,32860
+gs06,gs07,Inner West,Inner Upper West,4880
+gs06,gs08,Inner West,Inner Lower West,6321
+gs06,gs09,Inner West,Northwest Indiana,210
+gs06,gs10,Inner West,Middle North,907
+gs06,gs11,Inner West,Middle Northwest,2775
+gs06,gs12,Inner West,Middle/Outer South,448
+gs06,gs13,Inner West,Middle Southwest,1585
+gs06,gs14,Inner West,Middle West,6846
+gs06,gs15,Inner West,Middle Upper West,4753
+gs06,gs16,Inner West,Middle Lower West,5966
+gs06,gs17,Inner West,Outer North,400
+gs06,gs18,Inner West,Outer Northwest,630
+gs06,gs19,Inner West,Outer Southwest,503
+gs06,gs20,Inner West,Outer West,275
+gs06,gs21,Inner West,Outer Upper West,134
+gs06,gs22,Inner West,Outer Lower West,235
+gs06,gs23,Inner West,External Illinois,119
+gs06,gs24,Inner West,External Indiana,35
+gs06,gs25,Inner West,External Wisconsin,10
+gs07,gs01,Inner Upper West,Central,20025
+gs07,gs02,Inner Upper West,Inner North,8353
+gs07,gs03,Inner Upper West,Inner Northwest,15338
+gs07,gs04,Inner Upper West,Inner South,2028
+gs07,gs05,Inner Upper West,Inner Southwest,2259
+gs07,gs06,Inner Upper West,Inner West,7726
+gs07,gs07,Inner Upper West,Inner Upper West,15948
+gs07,gs08,Inner Upper West,Inner Lower West,2548
+gs07,gs09,Inner Upper West,Northwest Indiana,84
+gs07,gs10,Inner Upper West,Middle North,1894
+gs07,gs11,Inner Upper West,Middle Northwest,3046
+gs07,gs12,Inner Upper West,Middle/Outer South,368
+gs07,gs13,Inner Upper West,Middle Southwest,861
+gs07,gs14,Inner Upper West,Middle West,3076
+gs07,gs15,Inner Upper West,Middle Upper West,4463
+gs07,gs16,Inner Upper West,Middle Lower West,2399
+gs07,gs17,Inner Upper West,Outer North,465
+gs07,gs18,Inner Upper West,Outer Northwest,1080
+gs07,gs19,Inner Upper West,Outer Southwest,205
+gs07,gs20,Inner Upper West,Outer West,203
+gs07,gs21,Inner Upper West,Outer Upper West,122
+gs07,gs22,Inner Upper West,Outer Lower West,163
+gs07,gs23,Inner Upper West,External Illinois,39
+gs07,gs24,Inner Upper West,External Indiana,20
+gs07,gs25,Inner Upper West,External Wisconsin,10
+gs08,gs01,Inner Lower West,Central,22064
+gs08,gs02,Inner Lower West,Inner North,3734
+gs08,gs03,Inner Lower West,Inner Northwest,4265
+gs08,gs04,Inner Lower West,Inner South,3192
+gs08,gs05,Inner Lower West,Inner Southwest,7467
+gs08,gs06,Inner Lower West,Inner West,9902
+gs08,gs07,Inner Lower West,Inner Upper West,2776
+gs08,gs08,Inner Lower West,Inner Lower West,29613
+gs08,gs09,Inner Lower West,Northwest Indiana,248
+gs08,gs10,Inner Lower West,Middle North,1236
+gs08,gs11,Inner Lower West,Middle Northwest,1993
+gs08,gs12,Inner Lower West,Middle/Outer South,554
+gs08,gs13,Inner Lower West,Middle Southwest,3138
+gs08,gs14,Inner Lower West,Middle West,3932
+gs08,gs15,Inner Lower West,Middle Upper West,2701
+gs08,gs16,Inner Lower West,Middle Lower West,8145
+gs08,gs17,Inner Lower West,Outer North,182
+gs08,gs18,Inner Lower West,Outer Northwest,719
+gs08,gs19,Inner Lower West,Outer Southwest,1070
+gs08,gs20,Inner Lower West,Outer West,194
+gs08,gs21,Inner Lower West,Outer Upper West,140
+gs08,gs22,Inner Lower West,Outer Lower West,277
+gs08,gs23,Inner Lower West,External Illinois,172
+gs08,gs24,Inner Lower West,External Indiana,58
+gs09,gs01,Northwest Indiana,Central,8432
+gs09,gs02,Northwest Indiana,Inner North,699
+gs09,gs03,Northwest Indiana,Inner Northwest,946
+gs09,gs04,Northwest Indiana,Inner South,9732
+gs09,gs05,Northwest Indiana,Inner Southwest,1874
+gs09,gs06,Northwest Indiana,Inner West,562
+gs09,gs07,Northwest Indiana,Inner Upper West,200
+gs09,gs08,Northwest Indiana,Inner Lower West,885
+gs09,gs09,Northwest Indiana,Northwest Indiana,90782
+gs09,gs10,Northwest Indiana,Middle North,111
+gs09,gs11,Northwest Indiana,Middle Northwest,415
+gs09,gs12,Northwest Indiana,Middle/Outer South,6974
+gs09,gs13,Northwest Indiana,Middle Southwest,1920
+gs09,gs14,Northwest Indiana,Middle West,385
+gs09,gs15,Northwest Indiana,Middle Upper West,417
+gs09,gs16,Northwest Indiana,Middle Lower West,860
+gs09,gs17,Northwest Indiana,Outer North,66
+gs09,gs18,Northwest Indiana,Outer Northwest,101
+gs09,gs19,Northwest Indiana,Outer Southwest,1426
+gs09,gs20,Northwest Indiana,Outer West,15
+gs09,gs21,Northwest Indiana,Outer Upper West,55
+gs09,gs22,Northwest Indiana,Outer Lower West,10
+gs09,gs23,Northwest Indiana,External Illinois,353
+gs09,gs24,Northwest Indiana,External Indiana,17208
+gs10,gs01,Middle North,Central,13391
+gs10,gs02,Middle North,Inner North,6312
+gs10,gs03,Middle North,Inner Northwest,3088
+gs10,gs04,Middle North,Inner South,549
+gs10,gs05,Middle North,Inner Southwest,435
+gs10,gs06,Middle North,Inner West,450
+gs10,gs07,Middle North,Inner Upper West,349
+gs10,gs08,Middle North,Inner Lower West,302
+gs10,gs09,Middle North,Northwest Indiana,45
+gs10,gs10,Middle North,Middle North,17973
+gs10,gs11,Middle North,Middle Northwest,3013
+gs10,gs12,Middle North,Middle/Outer South,115
+gs10,gs13,Middle North,Middle Southwest,278
+gs10,gs14,Middle North,Middle West,295
+gs10,gs15,Middle North,Middle Upper West,817
+gs10,gs16,Middle North,Middle Lower West,510
+gs10,gs17,Middle North,Outer North,2346
+gs10,gs18,Middle North,Outer Northwest,2062
+gs10,gs19,Middle North,Outer Southwest,44
+gs10,gs20,Middle North,Outer West,30
+gs10,gs21,Middle North,Outer Upper West,60
+gs10,gs22,Middle North,Outer Lower West,4
+gs10,gs25,Middle North,External Wisconsin,139
+gs11,gs01,Middle Northwest,Central,12219
+gs11,gs02,Middle Northwest,Inner North,5554
+gs11,gs03,Middle Northwest,Inner Northwest,13239
+gs11,gs04,Middle Northwest,Inner South,1607
+gs11,gs05,Middle Northwest,Inner Southwest,1443
+gs11,gs06,Middle Northwest,Inner West,2220
+gs11,gs07,Middle Northwest,Inner Upper West,2001
+gs11,gs08,Middle Northwest,Inner Lower West,1133
+gs11,gs09,Middle Northwest,Northwest Indiana,39
+gs11,gs10,Middle Northwest,Middle North,8486
+gs11,gs11,Middle Northwest,Middle Northwest,57158
+gs11,gs12,Middle Northwest,Middle/Outer South,536
+gs11,gs13,Middle Northwest,Middle Southwest,959
+gs11,gs14,Middle Northwest,Middle West,3690
+gs11,gs15,Middle Northwest,Middle Upper West,15680
+gs11,gs16,Middle Northwest,Middle Lower West,3378
+gs11,gs17,Middle Northwest,Outer North,4809
+gs11,gs18,Middle Northwest,Outer Northwest,16344
+gs11,gs19,Middle Northwest,Outer Southwest,135
+gs11,gs20,Middle Northwest,Outer West,275
+gs11,gs21,Middle Northwest,Outer Upper West,1321
+gs11,gs22,Middle Northwest,Outer Lower West,271
+gs11,gs23,Middle Northwest,External Illinois,240
+gs11,gs25,Middle Northwest,External Wisconsin,164
+gs12,gs01,Middle/Outer South,Central,12429
+gs12,gs02,Middle/Outer South,Inner North,1550
+gs12,gs03,Middle/Outer South,Inner Northwest,1791
+gs12,gs04,Middle/Outer South,Inner South,11602
+gs12,gs05,Middle/Outer South,Inner Southwest,3052
+gs12,gs06,Middle/Outer South,Inner West,1371
+gs12,gs07,Middle/Outer South,Inner Upper West,426
+gs12,gs08,Middle/Outer South,Inner Lower West,1405
+gs12,gs09,Middle/Outer South,Northwest Indiana,4127
+gs12,gs10,Middle/Outer South,Middle North,380
+gs12,gs11,Middle/Outer South,Middle Northwest,1083
+gs12,gs12,Middle/Outer South,Middle/Outer South,29920
+gs12,gs13,Middle/Outer South,Middle Southwest,6099
+gs12,gs14,Middle/Outer South,Middle West,896
+gs12,gs15,Middle/Outer South,Middle Upper West,895
+gs12,gs16,Middle/Outer South,Middle Lower West,1661
+gs12,gs17,Middle/Outer South,Outer North,60
+gs12,gs18,Middle/Outer South,Outer Northwest,252
+gs12,gs19,Middle/Outer South,Outer Southwest,5213
+gs12,gs20,Middle/Outer South,Outer West,60
+gs12,gs21,Middle/Outer South,Outer Upper West,44
+gs12,gs22,Middle/Outer South,Outer Lower West,53
+gs12,gs23,Middle/Outer South,External Illinois,828
+gs12,gs24,Middle/Outer South,External Indiana,746
+gs13,gs01,Middle Southwest,Central,18823
+gs13,gs02,Middle Southwest,Inner North,3077
+gs13,gs03,Middle Southwest,Inner Northwest,3464
+gs13,gs04,Middle Southwest,Inner South,9204
+gs13,gs05,Middle Southwest,Inner Southwest,15413
+gs13,gs06,Middle Southwest,Inner West,3697
+gs13,gs07,Middle Southwest,Inner Upper West,921
+gs13,gs08,Middle Southwest,Inner Lower West,7030
+gs13,gs09,Middle Southwest,Northwest Indiana,1304
+gs13,gs10,Middle Southwest,Middle North,1186
+gs13,gs11,Middle Southwest,Middle Northwest,1992
+gs13,gs12,Middle Southwest,Middle/Outer South,5457
+gs13,gs13,Middle Southwest,Middle Southwest,45218
+gs13,gs14,Middle Southwest,Middle West,3639
+gs13,gs15,Middle Southwest,Middle Upper West,2632
+gs13,gs16,Middle Southwest,Middle Lower West,10876
+gs13,gs17,Middle Southwest,Outer North,254
+gs13,gs18,Middle Southwest,Outer Northwest,505
+gs13,gs19,Middle Southwest,Outer Southwest,9595
+gs13,gs20,Middle Southwest,Outer West,105
+gs13,gs21,Middle Southwest,Outer Upper West,115
+gs13,gs22,Middle Southwest,Outer Lower West,310
+gs13,gs23,Middle Southwest,External Illinois,739
+gs13,gs24,Middle Southwest,External Indiana,298
+gs13,gs25,Middle Southwest,External Wisconsin,40
+gs14,gs01,Middle West,Central,12660
+gs14,gs02,Middle West,Inner North,1566
+gs14,gs03,Middle West,Inner Northwest,4221
+gs14,gs04,Middle West,Inner South,843
+gs14,gs05,Middle West,Inner Southwest,1057
+gs14,gs06,Middle West,Inner West,5000
+gs14,gs07,Middle West,Inner Upper West,1326
+gs14,gs08,Middle West,Inner Lower West,2244
+gs14,gs09,Middle West,Northwest Indiana,177
+gs14,gs10,Middle West,Middle North,889
+gs14,gs11,Middle West,Middle Northwest,5217
+gs14,gs12,Middle West,Middle/Outer South,267
+gs14,gs13,Middle West,Middle Southwest,1899
+gs14,gs14,Middle West,Middle West,61344
+gs14,gs15,Middle West,Middle Upper West,17171
+gs14,gs16,Middle West,Middle Lower West,24032
+gs14,gs17,Middle West,Outer North,483
+gs14,gs18,Middle West,Outer Northwest,2068
+gs14,gs19,Middle West,Outer Southwest,753
+gs14,gs20,Middle West,Outer West,3518
+gs14,gs21,Middle West,Outer Upper West,1944
+gs14,gs22,Middle West,Outer Lower West,1409
+gs14,gs23,Middle West,External Illinois,263
+gs14,gs24,Middle West,External Indiana,39
+gs14,gs25,Middle West,External Wisconsin,10
+gs15,gs01,Middle Upper West,Central,10768
+gs15,gs02,Middle Upper West,Inner North,3230
+gs15,gs03,Middle Upper West,Inner Northwest,10803
+gs15,gs04,Middle Upper West,Inner South,1201
+gs15,gs05,Middle Upper West,Inner Southwest,1400
+gs15,gs06,Middle Upper West,Inner West,4117
+gs15,gs07,Middle Upper West,Inner Upper West,2275
+gs15,gs08,Middle Upper West,Inner Lower West,2098
+gs15,gs09,Middle Upper West,Northwest Indiana,105
+gs15,gs10,Middle Upper West,Middle North,2068
+gs15,gs11,Middle Upper West,Middle Northwest,23971
+gs15,gs12,Middle Upper West,Middle/Outer South,387
+gs15,gs13,Middle Upper West,Middle Southwest,1337
+gs15,gs14,Middle Upper West,Middle West,17437
+gs15,gs15,Middle Upper West,Middle Upper West,57668
+gs15,gs16,Middle Upper West,Middle Lower West,10050
+gs15,gs17,Middle Upper West,Outer North,1262
+gs15,gs18,Middle Upper West,Outer Northwest,5329
+gs15,gs19,Middle Upper West,Outer Southwest,556
+gs15,gs20,Middle Upper West,Outer West,2358
+gs15,gs21,Middle Upper West,Outer Upper West,6380
+gs15,gs22,Middle Upper West,Outer Lower West,1276
+gs15,gs23,Middle Upper West,External Illinois,397
+gs15,gs24,Middle Upper West,External Indiana,45
+gs15,gs25,Middle Upper West,External Wisconsin,95
+gs16,gs01,Middle Lower West,Central,27631
+gs16,gs02,Middle Lower West,Inner North,2173
+gs16,gs03,Middle Lower West,Inner Northwest,5032
+gs16,gs04,Middle Lower West,Inner South,2596
+gs16,gs05,Middle Lower West,Inner Southwest,3251
+gs16,gs06,Middle Lower West,Inner West,5861
+gs16,gs07,Middle Lower West,Inner Upper West,897
+gs16,gs08,Middle Lower West,Inner Lower West,6159
+gs16,gs09,Middle Lower West,Northwest Indiana,399
+gs16,gs10,Middle Lower West,Middle North,1212
+gs16,gs11,Middle Lower West,Middle Northwest,4794
+gs16,gs12,Middle Lower West,Middle/Outer South,701
+gs16,gs13,Middle Lower West,Middle Southwest,8414
+gs16,gs14,Middle Lower West,Middle West,23820
+gs16,gs15,Middle Lower West,Middle Upper West,8761
+gs16,gs16,Middle Lower West,Middle Lower West,119693
+gs16,gs17,Middle Lower West,Outer North,500
+gs16,gs18,Middle Lower West,Outer Northwest,1503
+gs16,gs19,Middle Lower West,Outer Southwest,8321
+gs16,gs20,Middle Lower West,Outer West,2920
+gs16,gs21,Middle Lower West,Outer Upper West,927
+gs16,gs22,Middle Lower West,Outer Lower West,6100
+gs16,gs23,Middle Lower West,External Illinois,1095
+gs16,gs24,Middle Lower West,External Indiana,30
+gs16,gs25,Middle Lower West,External Wisconsin,35
+gs17,gs01,Outer North,Central,5942
+gs17,gs02,Outer North,Inner North,1992
+gs17,gs03,Outer North,Inner Northwest,1739
+gs17,gs04,Outer North,Inner South,274
+gs17,gs05,Outer North,Inner Southwest,160
+gs17,gs06,Outer North,Inner West,324
+gs17,gs07,Outer North,Inner Upper West,238
+gs17,gs08,Outer North,Inner Lower West,206
+gs17,gs09,Outer North,Northwest Indiana,130
+gs17,gs10,Outer North,Middle North,4706
+gs17,gs11,Outer North,Middle Northwest,2041
+gs17,gs12,Outer North,Middle/Outer South,59
+gs17,gs13,Outer North,Middle Southwest,143
+gs17,gs14,Outer North,Middle West,284
+gs17,gs15,Outer North,Middle Upper West,824
+gs17,gs16,Outer North,Middle Lower West,423
+gs17,gs17,Outer North,Outer North,38498
+gs17,gs18,Outer North,Outer Northwest,23738
+gs17,gs19,Outer North,Outer Southwest,38
+gs17,gs20,Outer North,Outer West,30
+gs17,gs21,Outer North,Outer Upper West,219
+gs17,gs22,Outer North,Outer Lower West,18
+gs17,gs23,Outer North,External Illinois,19
+gs17,gs25,Outer North,External Wisconsin,2182
+gs18,gs01,Outer Northwest,Central,13658
+gs18,gs02,Outer Northwest,Inner North,4854
+gs18,gs03,Outer Northwest,Inner Northwest,8324
+gs18,gs04,Outer Northwest,Inner South,848
+gs18,gs05,Outer Northwest,Inner Southwest,915
+gs18,gs06,Outer Northwest,Inner West,1882
+gs18,gs07,Outer Northwest,Inner Upper West,1272
+gs18,gs08,Outer Northwest,Inner Lower West,895
+gs18,gs09,Outer Northwest,Northwest Indiana,111
+gs18,gs10,Outer Northwest,Middle North,8986
+gs18,gs11,Outer Northwest,Middle Northwest,25645
+gs18,gs12,Outer Northwest,Middle/Outer South,289
+gs18,gs13,Outer Northwest,Middle Southwest,745
+gs18,gs14,Outer Northwest,Middle West,3762
+gs18,gs15,Outer Northwest,Middle Upper West,11028
+gs18,gs16,Outer Northwest,Middle Lower West,3804
+gs18,gs17,Outer Northwest,Outer North,27822
+gs18,gs18,Outer Northwest,Outer Northwest,194515
+gs18,gs19,Outer Northwest,Outer Southwest,280
+gs18,gs20,Outer Northwest,Outer West,1437
+gs18,gs21,Outer Northwest,Outer Upper West,8556
+gs18,gs22,Outer Northwest,Outer Lower West,699
+gs18,gs23,Outer Northwest,External Illinois,2292
+gs18,gs25,Outer Northwest,External Wisconsin,4009
+gs19,gs01,Outer Southwest,Central,11281
+gs19,gs02,Outer Southwest,Inner North,1071
+gs19,gs03,Outer Southwest,Inner Northwest,1757
+gs19,gs04,Outer Southwest,Inner South,3372
+gs19,gs05,Outer Southwest,Inner Southwest,5329
+gs19,gs06,Outer Southwest,Inner West,2140
+gs19,gs07,Outer Southwest,Inner Upper West,904
+gs19,gs08,Outer Southwest,Inner Lower West,3166
+gs19,gs09,Outer Southwest,Northwest Indiana,988
+gs19,gs10,Outer Southwest,Middle North,433
+gs19,gs11,Outer Southwest,Middle Northwest,1648
+gs19,gs12,Outer Southwest,Middle/Outer South,5019
+gs19,gs13,Outer Southwest,Middle Southwest,16274
+gs19,gs14,Outer Southwest,Middle West,5099
+gs19,gs15,Outer Southwest,Middle Upper West,2453
+gs19,gs16,Outer Southwest,Middle Lower West,25838
+gs19,gs17,Outer Southwest,Outer North,181
+gs19,gs18,Outer Southwest,Outer Northwest,666
+gs19,gs19,Outer Southwest,Outer Southwest,79848
+gs19,gs20,Outer Southwest,Outer West,378
+gs19,gs21,Outer Southwest,Outer Upper West,443
+gs19,gs22,Outer Southwest,Outer Lower West,2712
+gs19,gs23,Outer Southwest,External Illinois,4476
+gs19,gs24,Outer Southwest,External Indiana,129
+gs19,gs25,Outer Southwest,External Wisconsin,55
+gs20,gs01,Outer West,Central,2959
+gs20,gs02,Outer West,Inner North,173
+gs20,gs03,Outer West,Inner Northwest,832
+gs20,gs04,Outer West,Inner South,63
+gs20,gs05,Outer West,Inner Southwest,119
+gs20,gs06,Outer West,Inner West,455
+gs20,gs07,Outer West,Inner Upper West,178
+gs20,gs08,Outer West,Inner Lower West,195
+gs20,gs09,Outer West,Northwest Indiana,4
+gs20,gs10,Outer West,Middle North,111
+gs20,gs11,Outer West,Middle Northwest,1747
+gs20,gs12,Outer West,Middle/Outer South,100
+gs20,gs13,Outer West,Middle Southwest,368
+gs20,gs14,Outer West,Middle West,5610
+gs20,gs15,Outer West,Middle Upper West,3066
+gs20,gs16,Outer West,Middle Lower West,5162
+gs20,gs17,Outer West,Outer North,114
+gs20,gs18,Outer West,Outer Northwest,759
+gs20,gs19,Outer West,Outer Southwest,233
+gs20,gs20,Outer West,Outer West,22748
+gs20,gs21,Outer West,Outer Upper West,3889
+gs20,gs22,Outer West,Outer Lower West,4095
+gs20,gs23,Outer West,External Illinois,962
+gs20,gs25,Outer West,External Wisconsin,43
+gs21,gs01,Outer Upper West,Central,2285
+gs21,gs02,Outer Upper West,Inner North,763
+gs21,gs03,Outer Upper West,Inner Northwest,2190
+gs21,gs04,Outer Upper West,Inner South,228
+gs21,gs05,Outer Upper West,Inner Southwest,333
+gs21,gs06,Outer Upper West,Inner West,599
+gs21,gs07,Outer Upper West,Inner Upper West,493
+gs21,gs08,Outer Upper West,Inner Lower West,141
+gs21,gs09,Outer Upper West,Northwest Indiana,95
+gs21,gs10,Outer Upper West,Middle North,540
+gs21,gs11,Outer Upper West,Middle Northwest,7411
+gs21,gs12,Outer Upper West,Middle/Outer South,149
+gs21,gs13,Outer Upper West,Middle Southwest,147
+gs21,gs14,Outer Upper West,Middle West,3683
+gs21,gs15,Outer Upper West,Middle Upper West,9769
+gs21,gs16,Outer Upper West,Middle Lower West,2321
+gs21,gs17,Outer Upper West,Outer North,330
+gs21,gs18,Outer Upper West,Outer Northwest,7087
+gs21,gs19,Outer Upper West,Outer Southwest,273
+gs21,gs20,Outer Upper West,Outer West,5690
+gs21,gs21,Outer Upper West,Outer Upper West,30125
+gs21,gs22,Outer Upper West,Outer Lower West,1756
+gs21,gs23,Outer Upper West,External Illinois,953
+gs21,gs25,Outer Upper West,External Wisconsin,70
+gs22,gs01,Outer Lower West,Central,3793
+gs22,gs02,Outer Lower West,Inner North,214
+gs22,gs03,Outer Lower West,Inner Northwest,1161
+gs22,gs04,Outer Lower West,Inner South,414
+gs22,gs05,Outer Lower West,Inner Southwest,364
+gs22,gs06,Outer Lower West,Inner West,761
+gs22,gs07,Outer Lower West,Inner Upper West,229
+gs22,gs08,Outer Lower West,Inner Lower West,430
+gs22,gs09,Outer Lower West,Northwest Indiana,45
+gs22,gs10,Outer Lower West,Middle North,184
+gs22,gs11,Outer Lower West,Middle Northwest,927
+gs22,gs12,Outer Lower West,Middle/Outer South,189
+gs22,gs13,Outer Lower West,Middle Southwest,1427
+gs22,gs14,Outer Lower West,Middle West,7055
+gs22,gs15,Outer Lower West,Middle Upper West,2285
+gs22,gs16,Outer Lower West,Middle Lower West,24580
+gs22,gs17,Outer Lower West,Outer North,100
+gs22,gs18,Outer Lower West,Outer Northwest,518
+gs22,gs19,Outer Lower West,Outer Southwest,3615
+gs22,gs20,Outer Lower West,Outer West,11484
+gs22,gs21,Outer Lower West,Outer Upper West,3157
+gs22,gs22,Outer Lower West,Outer Lower West,47063
+gs22,gs23,Outer Lower West,External Illinois,3052
+gs22,gs24,Outer Lower West,External Indiana,55
+gs23,gs01,External Illinois,Central,1642
+gs23,gs02,External Illinois,Inner North,331
+gs23,gs03,External Illinois,Inner Northwest,972
+gs23,gs04,External Illinois,Inner South,773
+gs23,gs05,External Illinois,Inner Southwest,647
+gs23,gs06,External Illinois,Inner West,384
+gs23,gs07,External Illinois,Inner Upper West,170
+gs23,gs08,External Illinois,Inner Lower West,363
+gs23,gs09,External Illinois,Northwest Indiana,495
+gs23,gs10,External Illinois,Middle North,89
+gs23,gs11,External Illinois,Middle Northwest,1563
+gs23,gs12,External Illinois,Middle/Outer South,2435
+gs23,gs13,External Illinois,Middle Southwest,1333
+gs23,gs14,External Illinois,Middle West,2351
+gs23,gs15,External Illinois,Middle Upper West,1684
+gs23,gs16,External Illinois,Middle Lower West,3866
+gs23,gs17,External Illinois,Outer North,115
+gs23,gs18,External Illinois,Outer Northwest,4160
+gs23,gs19,External Illinois,Outer Southwest,8430
+gs23,gs20,External Illinois,Outer West,3418
+gs23,gs21,External Illinois,Outer Upper West,3601
+gs23,gs22,External Illinois,Outer Lower West,6998
+gs23,gs23,External Illinois,External Illinois,229018
+gs23,gs24,External Illinois,External Indiana,61
+gs23,gs25,External Illinois,External Wisconsin,507
+gs24,gs01,External Indiana,Central,3224
+gs24,gs02,External Indiana,Inner North,262
+gs24,gs03,External Indiana,Inner Northwest,346
+gs24,gs04,External Indiana,Inner South,2424
+gs24,gs05,External Indiana,Inner Southwest,737
+gs24,gs06,External Indiana,Inner West,107
+gs24,gs07,External Indiana,Inner Upper West,125
+gs24,gs08,External Indiana,Inner Lower West,242
+gs24,gs09,External Indiana,Northwest Indiana,32071
+gs24,gs10,External Indiana,Middle North,81
+gs24,gs11,External Indiana,Middle Northwest,141
+gs24,gs12,External Indiana,Middle/Outer South,2194
+gs24,gs13,External Indiana,Middle Southwest,528
+gs24,gs14,External Indiana,Middle West,188
+gs24,gs15,External Indiana,Middle Upper West,124
+gs24,gs16,External Indiana,Middle Lower West,261
+gs24,gs17,External Indiana,Outer North,69
+gs24,gs18,External Indiana,Outer Northwest,74
+gs24,gs19,External Indiana,Outer Southwest,534
+gs24,gs21,External Indiana,Outer Upper West,4
+gs24,gs22,External Indiana,Outer Lower West,4
+gs24,gs23,External Indiana,External Illinois,278
+gs24,gs24,External Indiana,External Indiana,87316
+gs24,gs25,External Indiana,External Wisconsin,30
+gs25,gs01,External Wisconsin,Central,830
+gs25,gs02,External Wisconsin,Inner North,408
+gs25,gs03,External Wisconsin,Inner Northwest,734
+gs25,gs04,External Wisconsin,Inner South,132
+gs25,gs05,External Wisconsin,Inner Southwest,112
+gs25,gs06,External Wisconsin,Inner West,155
+gs25,gs07,External Wisconsin,Inner Upper West,190
+gs25,gs08,External Wisconsin,Inner Lower West,78
+gs25,gs10,External Wisconsin,Middle North,413
+gs25,gs11,External Wisconsin,Middle Northwest,659
+gs25,gs12,External Wisconsin,Middle/Outer South,29
+gs25,gs13,External Wisconsin,Middle Southwest,46
+gs25,gs14,External Wisconsin,Middle West,150
+gs25,gs15,External Wisconsin,Middle Upper West,342
+gs25,gs16,External Wisconsin,Middle Lower West,299
+gs25,gs17,External Wisconsin,Outer North,5469
+gs25,gs18,External Wisconsin,Outer Northwest,12460
+gs25,gs19,External Wisconsin,Outer Southwest,23
+gs25,gs20,External Wisconsin,Outer West,41
+gs25,gs21,External Wisconsin,Outer Upper West,141
+gs25,gs22,External Wisconsin,Outer Lower West,22
+gs25,gs23,External Wisconsin,External Illinois,453
+gs25,gs24,External Wisconsin,External Indiana,10
+gs25,gs25,External Wisconsin,External Wisconsin,127119

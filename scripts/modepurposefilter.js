@@ -6,8 +6,8 @@ function make_h_stacked_tripsbymode(csv_file,divID, legendID){
 
 
     var g = d3.select("#"+divID).append("svg")
-    .attr("width", "100%")
-    .attr("height", height + margin.top + margin.bottom)
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "0 0 960 400")
     .attr("align","center")
     .append("g")
     .attr("transform","translate(" + margin.left + "," + margin.top + ")");

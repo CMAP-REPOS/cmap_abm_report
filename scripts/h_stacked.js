@@ -9,7 +9,7 @@ function make_h_stacked(csv_file,divID, legendID){
 
   var g = d3.select("#"+divID).append("svg")
   .attr("preserveAspectRatio", "xMinYMin meet")
-  .attr("viewBox", "0 0 960 400")
+  .attr("viewBox", "0 0 960 500")
   .attr("align","center")
   .append("g")
   .attr("transform","translate(" + margin.left + "," + margin.top + ")");
@@ -138,39 +138,39 @@ function make_h_stacked(csv_file,divID, legendID){
             .call(d3.axisLeft(y));
 
             // select the svg area
-    var legend = d3.select("#"+legendID).append("svg")
-    .attr("height", 300)
-    .attr("width", 250)
-
-    // create a list of keys
-    var keys = data.columns.slice(1)
-
-    // Usually you have a color scale in your chart already
-    var color = d3.scaleOrdinal()
-      .domain(keys)
-      .range(['#5cbddd','#1c5f83','#66666E','#fefefe','#7ebea5','#3c765f','#EFE9AE','#AFBE8F']);
-
-    // Add one dot in the legend for each name.
-    legend.selectAll("mydots")
-      .data(keys)
-      .enter()
-      .append("circle")
-        .attr("cx", 10)
-        .attr("cy", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
-        .attr("r", 7)
-        .style("fill", function(d){ return color(d)})
-
-    // Add one dot in the legend for each name.
-    legend.selectAll("mylabels")
-      .data(keys)
-      .enter()
-      .append("text")
-        .attr("x", 20)
-        .attr("y", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
-        .text(function(d){ return d.replace(/_/g, " ")})
-        .attr("text-anchor", "left")
-        .style("alignment-baseline", "middle")
-        });
+    // var legend = d3.select("#"+legendID).append("svg")
+    // .attr("height", 300)
+    // .attr("width", 250)
+    //
+    // // create a list of keys
+    // var keys = data.columns.slice(1)
+    //
+    // // Usually you have a color scale in your chart already
+    // var color = d3.scaleOrdinal()
+    //   .domain(keys)
+    //   .range(['#5cbddd','#1c5f83','#66666E','#fefefe','#7ebea5','#3c765f','#EFE9AE','#AFBE8F']);
+    //
+    // // Add one dot in the legend for each name.
+    // legend.selectAll("mydots")
+    //   .data(keys)
+    //   .enter()
+    //   .append("circle")
+    //     .attr("cx", 10)
+    //     .attr("cy", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+    //     .attr("r", 7)
+    //     .style("fill", function(d){ return color(d)})
+    //
+    // // Add one dot in the legend for each name.
+    // legend.selectAll("mylabels")
+    //   .data(keys)
+    //   .enter()
+    //   .append("text")
+    //     .attr("x", 20)
+    //     .attr("y", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+    //     .text(function(d){ return d.replace(/_/g, " ")})
+    //     .attr("text-anchor", "left")
+    //     .style("alignment-baseline", "middle")
+    //     });
 
     function type(d, i, columns) {
         var t;

@@ -21,8 +21,8 @@ function makeGroupHBar_dd(csv_file,chartID,catID, nogroups,dataDescription,dtitl
     height = 600 - margin.top - margin.bottom;
 
   var g = d3.select(chartID).append("svg")
-  .attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
+  .attr("preserveAspectRatio", "xMinYMin meet")
+  .attr("viewBox", "0 0 800 600")
   .attr("align","center")
   .append("g")
   .attr("transform","translate(" + margin.left + "," + margin.top + ")");
@@ -246,49 +246,49 @@ function makeGroupHBar_dd(csv_file,chartID,catID, nogroups,dataDescription,dtitl
 
       // ======== Legend rects ========
 
-      var legend = g.selectAll(".legend")
-        .data(keysLegend);
-
-      legend = legend
-        .enter()
-      .append("rect")
-        .attr("class","barlegend")
-        .attr("transform", function(d, i) {
-          return "translate(0," + i * 40 + ")";
-        })
-        .attr("x", width + 17) //location of legend
-        .attr("width", 15)
-        .attr("height", 15)
-        .attr("stroke-width",2)
-        .merge(legend)
-
-      legend.transition().duration(durations)
-        .attr("fill", z)
-        .attr("stroke", z);
-
-      // ======== Legend text ========
-
-      var legendText = g.selectAll(".legendText")
-        .data(keysLegend);
-
-      legendText = legendText
-        .enter()
-        .append("text")
-        .attr("class","legendText")
-        .attr("transform", function(d, i) {
-          return "translate(0," + i * 40 + ")";
-        })
-        .attr("x", width + 40)
-        .attr("font-size",12)
-        .attr("y", 8)
-        .attr("dy", "0.32em")
-        .merge(legendText);
-
-      legendText.transition().duration(durations)
-        .text(function(d) {
-          var sliceLegend = d.slice(0, -1)
-          return sliceLegend;
-        });
+      // var legend = g.selectAll(".legend")
+      //   .data(keysLegend);
+      //
+      // legend = legend
+      //   .enter()
+      // .append("rect")
+      //   .attr("class","barlegend")
+      //   .attr("transform", function(d, i) {
+      //     return "translate(0," + i * 40 + ")";
+      //   })
+      //   .attr("x", width + 17) //location of legend
+      //   .attr("width", 15)
+      //   .attr("height", 15)
+      //   .attr("stroke-width",2)
+      //   .merge(legend)
+      //
+      // legend.transition().duration(durations)
+      //   .attr("fill", z)
+      //   .attr("stroke", z);
+      //
+      // // ======== Legend text ========
+      //
+      // var legendText = g.selectAll(".legendText")
+      //   .data(keysLegend);
+      //
+      // legendText = legendText
+      //   .enter()
+      //   .append("text")
+      //   .attr("class","legendText")
+      //   .attr("transform", function(d, i) {
+      //     return "translate(0," + i * 40 + ")";
+      //   })
+      //   .attr("x", width + 40)
+      //   .attr("font-size",12)
+      //   .attr("y", 8)
+      //   .attr("dy", "0.32em")
+      //   .merge(legendText);
+      //
+      // legendText.transition().duration(durations)
+      //   .text(function(d) {
+      //     var sliceLegend = d.slice(0, -1)
+      //     return sliceLegend;
+      //   });
 
     } // End of update function
 

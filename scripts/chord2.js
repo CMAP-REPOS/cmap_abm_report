@@ -1,5 +1,5 @@
 function makeChords(csv_file, modelDiv, obsDiv){
-      
+
   var svg1;
   var svg2;
   var newCurrentDistrict;
@@ -45,7 +45,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
 //   var div = d3.select("#chordinfodiv").append("div")
 //   .attr("class", "chordtooltip")
 //   .style("opacity", 0);
-  
+
   // basic map
   var mapboxAccessToken = 'pk.eyJ1Ijoic2FyYWhjbWFwIiwiYSI6ImNqc3VzMDl0YzJocm80OXBnZjc2MGk4cGgifQ.S_UmPA1jm5pQPrCCLDs41Q';
 
@@ -246,7 +246,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
             }
           });
           }
-        
+
         function drawChords(matrix, mmap, obsMatrix, obs_mmap, odpairs) {
             var w = 400,
                 h = 400,

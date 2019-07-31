@@ -5,8 +5,8 @@ function makeScatter(csv_file, chart_id){
 
     var padding = 10;
 	  var svg = d3.select(chart_id).append("svg")
-	      .attr("width", width + margin.left + margin.right)
-	      .attr("height", height + margin.top + margin.bottom)
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "0 -100 800 600")
 	    .append("g")
 	      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 

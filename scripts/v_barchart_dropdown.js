@@ -12,7 +12,7 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle,l
 
   var g = d3.select(chartID).append("svg")
   .attr("preserveAspectRatio", "xMinYMin meet")
-  .attr("viewBox", "0 0 960 500")
+  .attr("viewBox", "0 -100 960 500")
   .attr("align","center")
   .append("g")
   .attr("transform","translate(" + margin.left + "," + margin.top + ")");

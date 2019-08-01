@@ -19,12 +19,12 @@ Maintenance,886865,1260043.376,Full-time Worker,temp1,Full-time Worker
 Work-based,780585,829370.2033,Full-time Worker,temp1,Full-time Worker
 Maintenance,749655,772640.6197,Non worker,temp1,Non worker
 Discretionary,662775,628271.742,Full-time Worker,temp1,Full-time Worker
-Shop,569860,603409.2956,Retired,temp1,Retired
-Maintenance,515335,540782.0031,Retired,temp1,Retired
+Shop,569860,603409.2956,Non-working senior,temp1,Non-working senior
+Maintenance,515335,540782.0031,Non-working senior,temp1,Non-working senior
 School,504875,422785.3515,Student 16+,temp1,Student 16+
 Discretionary,493555,416146.341,Student under 16 years,temp1,Student under 16 years
 Eating Out,472765,781092.5904,Full-time Worker,temp1,Full-time Worker
-Discretionary,385700,292959.2547,Retired,temp1,Retired
+Discretionary,385700,292959.2547,Non-working senior,temp1,Non-working senior
 University,381315,333810.6387,All,temp1,All
 Escort,376935,434679.3016,Part-time Worker,temp1,Part-time Worker
 University,356785,254091.9631,University Student,temp1,University Student
@@ -36,17 +36,17 @@ Escort,286890,375347.9903,Preschool,temp1,Preschool
 Escort,286865,77772.09031,Student 16+,temp1,Student 16+
 Shop,277630,128152.7303,Student under 16 years,temp1,Student under 16 years
 Discretionary,276875,322042.3517,Non worker,temp1,Non worker
-Eating Out,251440,184259.7762,Retired,temp1,Retired
+Eating Out,251440,184259.7762,Non-working senior,temp1,Non-working senior
 Eating Out,251245,220827.8826,Non worker,temp1,Non worker
 Maintenance,235720,181022.2882,Student under 16 years,temp1,Student under 16 years
 Maintenance,235040,352098.4,Part-time Worker,temp1,Part-time Worker
 Work,201195,122380.4394,University Student,temp1,University Student
 Visiting,186880,227356.4727,Student under 16 years,temp1,Student under 16 years
 Eating Out,182540,87963.91288,Student under 16 years,temp1,Student under 16 years
-Visiting,179365,169848.1824,Retired,temp1,Retired
+Visiting,179365,169848.1824,Non-working senior,temp1,Non-working senior
 Shop,171830,63202.3671,Preschool,temp1,Preschool
 Escort,168445,243647.2922,Student under 16 years,temp1,Student under 16 years
-Escort,160480,210490.3326,Retired,temp1,Retired
+Escort,160480,210490.3326,Non-working senior,temp1,Non-working senior
 Discretionary,137645,161908.8828,Part-time Worker,temp1,Part-time Worker
 Discretionary,136795,127848.6773,Preschool,temp1,Preschool
 Discretionary,136505,131903.0859,Student 16+,temp1,Student 16+
@@ -80,10 +80,10 @@ University,0,0,Part-time Worker,temp1,Part-time Worker
 University,0,0,Preschool,temp1,Preschool
 Work,0,0,Preschool,temp1,Preschool
 Work-based,0,0,Preschool,temp1,Preschool
-School,0,0,Retired,temp1,Retired
-University,0,0,Retired,temp1,Retired
-Work,0,0,Retired,temp1,Retired
-Work-based,0,0,Retired,temp1,Retired
+School,0,0,Non-working senior,temp1,Non-working senior
+University,0,0,Non-working senior,temp1,Non-working senior
+Work,0,0,Non-working senior,temp1,Non-working senior
+Work-based,0,0,Non-working senior,temp1,Non-working senior
 University,0,0,Student 16+,temp1,Student 16+
 University,0,0,Student under 16 years,temp1,Student under 16 years
 Work,0,0,Student under 16 years,temp1,Student under 16 years

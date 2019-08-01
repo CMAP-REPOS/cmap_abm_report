@@ -5,7 +5,7 @@ Walk,3810225,2779967.096,All,All Walk Trips,All
 Drive alone free,1835950,1836287.696,Non worker,nonworker Drive alone free Trips,Non worker
 Transit,1572735,1420150.417,All,All Walk to transit Trips,All
 Drive alone free,1513240,1497646.71,Part-time Worker,parttime Drive alone free Trips,Part-time Worker
-Drive alone free,1501060,1456670.205,Retired,retired Drive alone free Trips,Retired
+Drive alone free,1501060,1456670.205,Non-working senior,Non-working senior Drive alone free Trips,Non-working senior
 Walk,1084200,885631.2348,Full-time Worker,fulltime Walk Trips,Full-time Worker
 Transit,1022435,794475.3406,Full-time Worker,fulltime Walk to transit Trips,Full-time Worker
 Walk,962300,637431.6475,Student under 16 years,nondrivingstudent Walk Trips,Student under 16 years
@@ -17,7 +17,7 @@ Walk,319515,184819.3745,Part-time Worker,parttime Walk Trips,Part-time Worker
 Bike,309425,253806.2036,All,All Bike Trips,All
 Walk,266650,171002.818,Preschool,preschool Walk Trips,Preschool
 Drive alone pay,261210,389588.7272,All,All Drive alone pay Trips,All
-Walk,254505,182468.6518,Retired,retired Walk Trips,Retired
+Walk,254505,182468.6518,Non-working senior,Non-working senior Walk Trips,Non-working senior
 Drive alone free,238195,322156.0737,Student 16+,driveagestudent Drive alone free Trips,Student 16+
 Transit,198335,144673.4327,Part-time Worker,parttime Walk to transit Trips,Part-time Worker
 Walk,190800,116841.9202,Student 16+,driveagestudent Walk Trips,Student 16+
@@ -37,18 +37,18 @@ Taxi,33940,5966.57591,University Student,university Taxi Trips,University Studen
 Bike,33015,26230.85318,Part-time Worker,parttime Bike Trips,Part-time Worker
 Bike,31120,21145.34937,University Student,university Bike Trips,University Student
 Bike,28720,19284.53668,Non worker,nonworker Bike Trips,Non worker
-Transit,27085,64354.23022,Retired,retired Walk to transit Trips,Retired
+Transit,27085,64354.23022,Non-working senior,Non-working senior Walk to transit Trips,Non-working senior
 Drive alone pay,22730,22452.84252,Part-time Worker,parttime Drive alone pay Trips,Part-time Worker
 Drive alone pay,20740,15381.04916,Non worker,nonworker Drive alone pay Trips,Non worker
-Drive alone pay,19320,8082.381018,Retired,retired Drive alone pay Trips,Retired
+Drive alone pay,19320,8082.381018,Non-working senior,Non-working senior Drive alone pay Trips,Non-working senior
 Bike,14425,4978.354652,Preschool,preschool Bike Trips,Preschool
-Bike,13765,10399.00663,Retired,retired Bike Trips,Retired
+Bike,13765,10399.00663,Non-working senior,Non-working senior Bike Trips,Non-working senior
 Bike,10180,10472.02858,Student 16+,driveagestudent Bike Trips,Student 16+
 Drive alone pay,9555,10526.96233,University Student,university Drive alone pay Trips,University Student
 Transit,6985,8938.580296,Preschool,preschool Walk to transit Trips,Preschool
 Taxi,6250,2386.339932,Part-time Worker,parttime Taxi Trips,Part-time Worker
 Taxi,6210,7227.88295,Non worker,nonworker Taxi Trips,Non worker
-Taxi,4275,9094.552212,Retired,retired Taxi Trips,Retired
+Taxi,4275,9094.552212,Non-working senior,Non-working senior Taxi Trips,Non-working senior
 Drive alone pay,3275,689.4606474,Student 16+,driveagestudent Drive alone pay Trips,Student 16+
 Taxi,2190,982.7395533,Student under 16 years,nondrivingstudent Taxi Trips,Student under 16 years
 Taxi,1485,624.5517692,Preschool,preschool Taxi Trips,Preschool
@@ -58,7 +58,7 @@ School bus,0,0,Non worker,,Non worker
 School bus,0,0,Part-time Worker,parttime School bus Trips,Part-time Worker
 Drive alone free,0,0,Preschool,,Preschool
 Drive alone pay,0,0,Preschool,,Preschool
-School bus,0,0,Retired,retired School bus Trips,Retired
+School bus,0,0,Non-working senior,Non-working senior School bus Trips,Non-working senior
 Drive alone free,0,0,Student under 16 years,,Student under 16 years
 Drive alone pay,0,0,Student under 16 years,,Student under 16 years
 School bus,0,0,University Student,university School bus Trips,University Student

@@ -22,7 +22,7 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
 
   var g = d3.select(chartID).append("svg")
   .attr("preserveAspectRatio", "xMinYMin meet")
-  .attr("viewBox", "0 -100 900 900")
+  .attr("viewBox", "0 -10 300 960")
   .attr("align","center")
   .append("g")
   .attr("transform","translate(" + margin.left + "," + margin.top + ")");

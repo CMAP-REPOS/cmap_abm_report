@@ -166,7 +166,7 @@
     </div>
 
     <div class="tab-content ">
-      <div id="1" class="tab-pane active container-fluid">
+      <div id="1" class="tab-pane container-fluid">
         <div class="row">
           <br/>
           <br/>
@@ -1324,7 +1324,7 @@
               <br></div>
             </div></div>
 
-      <div id="8" class="tab-pane container-fluid">
+      <div id="8" class="tab-pane  active container-fluid">
           <div class="row">
               <div class="col-md-3"></div>
               <div class="col-md-6">
@@ -1347,30 +1347,17 @@
             <div class="colborder"></div><!-- end -->
 
             <h3>Comparison of Daily VMT Shares by County</h3>
-            <div id="highwayvmtLegend"></div>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
-                improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
-                sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
-                factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-                qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
-                formarum quam civis excellen
-              </p>
-
-              <div class="small">
-                  <b>Sources</b><br>
-                  Survey - Illinois Travel Statistics 2015<br>
-                  Modeled - CMAP ABM - 2015 Scenario. <br>
-                </div>
+            <!-- <div id="highwayvmtLegend"></div> -->
+            <div class="small">
+                <b>Sources</b><br>
+                Survey - Illinois Travel Statistics 2015<br>
+                Modeled - CMAP ABM - 2015 Scenario. <br>
+              </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
             <div class="colborder"></div><!-- end -->
-          <br>
-          <div id="vmt_county_tbl" style = "width: 50%"></div>
-        </div>
-        <div class="col-md-4">
-            <div class="colborder"></div><!-- end -->
-          <div id="vmtcounty" ></div>
+              <div id="vmt_county_tbl"></div>
+              <!-- <div id="vmtcounty" ></div> -->
         </div>
       </div>
       <div class="row">
@@ -1503,8 +1490,39 @@
           </div>
         </div>
 
+        <!-- Work FLow Validation -->
+      <div id="12" class="tab-pane container-fluid">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <br/>
+              <br/>
 
+              <h3>Work Flow Validation</h3>
+              <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
+                  improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
+                  sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
+                  factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
+                  qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
+                  formarum quam civis excellen
+                </p>
+              <br></div>
+            </div>
+        <div class="row">
+          <div class="col-md-3">
+              <div class="colborder"></div><!-- end -->
+                <h3>Journey to Work</h3>
+                <p><b>r<sup>2</sup></b> = <text_div id="jtwr2"></text_div></p>
+                <br>
+              </div>
+              <div class="col-md-6">
+                  <div class="colborder"></div><!-- end -->
+                  <div id="scatter_jtw"></div>
+              </div>
+        </div>
       </div>
+    </div>
   </body>
 
   <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
@@ -1536,6 +1554,7 @@
   <script src="scripts/workflowdropdown.js"></script>
   <script src="scripts/h_barchart_dropdown.js" type="text/javascript"></script>
   <script src="scripts/h_barchart.js" type="text/javascript"></script>
+  <script src="scripts/h_barchart_hover.js" type="text/javascript"></script>
   <script src="scripts/v_barchart_dropdown.js" type="text/javascript"></script>
   <script src="scripts/barchart_dropdown_stack_4.js" type="text/javascript"></script>
   <script src="scripts/barchart.js" type="text/javascript"></script>
@@ -1565,10 +1584,11 @@
   <script>makeGroupVBar("data/csv20_transit_income.csv","#TranIncome","#catIncomeDist",2, "TranIncomeDesc","TranIncomeTitle");</script>
   <script>makeGroupVBar("data/csv21_transit_auto.csv","#TranAutoAdult","#catAutoAdult",2, "TranAutoAdultDesc","TranAutoAdultTitle");</script>
   <script>makeGroupVBar("data/csv22_dap.csv","#dap","#catdap",2, "dapDesc","dapTitle");</script>
-  <script>makeGroupHBar("data/csv24_vmt_county.csv","#vmtcounty",2, "vmtDesc","vmtTitle", 800, 'percent');</script>
+  <script>makeGroupHBar_hover("data/csv24_vmt_county.csv","#vmtcounty",2, "vmtDesc","vmtTitle", 800, 'percent');</script>
   <script>makeGroupHBar("data/csv34.csv","#transitassignment",2, "vmtDesc","vmtTitle", 600, 'boardings');</script>
   <script>makeGroupHBar("data/csv35.csv","#transitassignmentmetra",2, "vmtDesc","vmtTitle", 600, 'boardings');</script>
-  <script>makeScatter("data/raw/link_counts.csv","#scatter_vmt","AADT","vadt");</script>
+  <script>makeScatter("data/raw/link_counts.csv","#scatter_vmt","vadt","AADT","FacilityType","r2");</script>
+  <script>makeScatter("data/csv36_jtw.csv","#scatter_jtw","Model","CTPP","rs","jtwr2");</script>
   <script>makeStackedChart_nodd2("data/csv23_vmt_county_facility.csv","cftitle","cfstack");</script>
   <script>makeStackedChart_nodd2("data/csv33_tour_purposetype.csv","cftitle","tourstack");</script>
   <script>makeStackedChart_4("data/csv3_aocrosstab_counts.csv","#aoCat","dtitle","stackedbar");</script>

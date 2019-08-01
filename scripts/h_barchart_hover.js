@@ -1,4 +1,4 @@
-function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height, word){
+function makeGroupHBar_hover(csv_file,chartID, nogroups,dataDescription,dtitle,height, word){
 
   var barChartConfig = {
        mainDiv: "#chart",
@@ -21,13 +21,13 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
     height = height - margin.top - margin.bottom;
 
   var g = d3.select(chartID).append("svg")
-  .attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
+  .attr("preserveAspectRatio", "xMinYMin meet")
+  .attr("viewBox", "0 -100 900 900")
   .attr("align","center")
   .append("g")
   .attr("transform","translate(" + margin.left + "," + margin.top + ")");
 
-  var div = d3.select(chartID).append("div")
+  var div = d3.select("body").append("div")
   .attr("class", "vmttooltip2")
   .style("opacity", 0);
 
@@ -210,14 +210,22 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
           .attr("height", y1.bandwidth())
           .attr("fill", function(d) { return z(d.key); })
           .merge(bars)
-          .on("mouseover", function(d) { })
-        .on("mouseout", function(d) {});
+          .on("mouseover", function(d) {})
+
+        .on("mouseout", function(d) { });
 
           bars.transition().duration(durations)
             .attr("x", 0)
             .attr("width", function(d) {
               return x(d["value"]);
             });
+        bars
+        .append('text')
+        .attr('y', function (d) {return y1(d.key)})
+        .attr('x', function (d) {
+          return x(d.value);})
+        .attr('text-anchor', 'middle')
+        .text((d))
 
       // ======== Grouped bar text ========
 

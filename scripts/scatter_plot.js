@@ -1,4 +1,4 @@
-function makeScatter(csv_file, chart_id){
+function makeScatter(csv_file, chart_id, modelvalue,obsvalue,category_value,rsquared){
   var margin = {top: 5, right: 5, bottom: 50, left: 80},
 	    width = 900 - margin.left - margin.right,
 	    height = 450 - margin.top - margin.bottom;
@@ -6,37 +6,37 @@ function makeScatter(csv_file, chart_id){
     var padding = 10;
 	  var svg = d3.select(chart_id).append("svg")
     .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "0 -100 800 600")
+    .attr("viewBox", "0 -100 900 600")
 	    .append("g")
 	      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 	  d3.csv(csv_file, types, function(error, data){
       var x = d3.scaleLinear()
        .domain([0,d3.max(data, function(d){
-         return d.AADT;
+         return d[obsvalue];
         })])
        .range([padding,width - padding*2]);
 
       console.log(d3.max(data, function(d){
-        return d.AADT;
+        return d[obsvalue];
       }));
 
   	  var y = d3.scaleLinear()
       .domain([d3.min(data, function(d){
-        return(d.vadt);
+        return(d[modelvalue]);
       }),
       d3.max(data, function(d){
-        return d.vadt;
+        return d[modelvalue];
        })]) //y range is reversed because svg
        .range([height-padding, padding]);
 
   	  var xAxis = d3.axisBottom()
           .scale(x)
-          .tickFormat(d3.format(".0s"));
+          .tickFormat(d3.format(",.0f"));
 
   	  var yAxis = d3.axisLeft()
           .scale(y)
-          .tickFormat(d3.format(".0s"));
+          .tickFormat(d3.format(",.0f"));
 
 
           // colors for foo
@@ -46,15 +46,15 @@ function makeScatter(csv_file, chart_id){
 
       //x = survey
       //Y = Model
-	    y.domain(d3.extent(data, function(d){ return parseFloat(d.vadt)}));
-	    x.domain(d3.extent(data, function(d){ return parseFloat(d.AADT)}));
+	    y.domain(d3.extent(data, function(d){ return parseFloat(d[modelvalue])}));
+	    x.domain(d3.extent(data, function(d){ return parseFloat(d[obsvalue])}));
 
 	    // see below for an explanation of the calcLinear function
-      var yval = data.map(function (d) { return parseFloat(d.vadt); });
-      var xval = data.map(function (d) { return parseFloat(d.AADT); });
+      var yval = data.map(function (d) { return parseFloat(d[modelvalue]); });
+      var xval = data.map(function (d) { return parseFloat(d[obsvalue]); });
 	    var lr = linearRegression(yval,xval);
-      d3.select("#r2").text(parseFloat(lr.r2).toPrecision(4));
-      var max = d3.max(data, function (d) { return d.AADT; });
+      d3.select("#"+rsquared).text(parseFloat(lr.r2).toPrecision(4));
+      var max = d3.max(data, function (d) { return d[obsvalue]; });
       var myLine = svg.append("line")
                   .attr("x1", x(0))
                   .attr("y1", y(lr.intercept))
@@ -72,7 +72,7 @@ function makeScatter(csv_file, chart_id){
               "translate(" + (width/2) + " ," +
                               (height + margin.top + 20) + ")")
         .style("text-anchor", "middle")
-        .text("Survey AADT");
+        .text("Observed: " + obsvalue);
 
       svg.append("g")
           .attr("class", "y axis")
@@ -84,17 +84,17 @@ function makeScatter(csv_file, chart_id){
             "translate(-50," +
                             (height/2) + ") rotate(-90)")
       .style("text-anchor", "middle")
-      .text("Model AADT");
+      .text("Model");
 
 	    svg.selectAll(".point")
 	        .data(data)
 	      .enter().append("circle")
 	        .attr("class", "point")
 	        .attr("r", 3)
-	        .attr("cy", function(d){ return y(d.vadt)})
-	        .attr("cx", function(d){ return x(d.AADT)})
+	        .attr("cy", function(d){ return y(d[modelvalue])})
+	        .attr("cx", function(d){ return x(d[obsvalue])})
           .style("fill",function(d){
-            return color(d.FacilityType)
+            return color(d[category_value])
           })
           .style("stroke","#f0f0f0")
           .style("stroke-width", .25) ;
@@ -102,8 +102,8 @@ function makeScatter(csv_file, chart_id){
 	  });
 
 	  function types(d){
-	    d.AADT = +d.AADT;
-	    d.vadt = +d.vadt;
+	    d[obsvalue] = +d[obsvalue];
+	    d[modelvalue] = +d[modelvalue];
 
 	    return d;
 	  }

@@ -10,18 +10,19 @@ function makeStackedChart_nodd2(csv_file,dataTitle,divID){
     })
 
     var margin = {top: 35, right: 75, bottom: 100, left: 45},
-    width = 900 - margin.left - margin.right,
+    width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
     height2 = 575 - margin.top - margin.bottom;
 
     var padding = 10;
 
     var g = d3.select("#" + divID).append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "0 -100 800 600")
     .attr("align","center")
     .append("g")
     .attr("transform","translate(" + margin.left + "," + margin.top + ")");
+
     var x0 = d3.scaleBand()
         .rangeRound([0, width])
         .paddingInner(0.1);
@@ -30,18 +31,14 @@ function makeStackedChart_nodd2(csv_file,dataTitle,divID){
         .padding(0.05);
 
     var y = d3.scaleLinear()
-    .domain([0,
-      d3.max(data, function(d){
-        return d.Value;
-    })]) //y range is reversed because svg // set custom domain instead of using max function since we are stacking!
-     .range([height-padding, padding]);
+        .rangeRound([height, 0]);
 
-    var y1 = d3.scaleBand()
 
     var z = d3.scaleOrdinal()
         .range(["#A6BACE", "#7896B4", "#4A729A", "#1C4E80", "#0D263F"]);
 
-    var stack = d3.stack();
+        var stack = d3.stack()
+        .offset(d3.stackOffsetExpand);
 
     ////console.log("data", data);
     ////console.log("data", newdata);
@@ -50,7 +47,6 @@ function makeStackedChart_nodd2(csv_file,dataTitle,divID){
       return d.MainGroup; }));
 
     x1.domain(data.map(function(d) {
-
       return d.SubGroup; }))
       .rangeRound([0, x0.bandwidth()])
       .padding(0.2);
@@ -100,9 +96,7 @@ function makeStackedChart_nodd2(csv_file,dataTitle,divID){
         .attr("x", function(d) {
           ////console.log(d);
           return x1(d.data.SubGroup); })
-        .attr("y", function(d) {
-          ////console.log(d);
-          return y(d[1]); })
+        .attr("y", function(d) {return y(d[1]); })
         .attr("height", function(d) { return y(d[0]) - y(d[1]); })
         .attr("width", x1.bandwidth())
 

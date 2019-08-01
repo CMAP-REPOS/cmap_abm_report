@@ -45,7 +45,7 @@
              validation activities; in the absence of other observed data, the sources used for model
              calibration may be used for validation as long as they examine different aspects of the
              data or rely on alternate geographic scopes.  Model validation results in this report reflect 2015 conditions.<br><br>
-             Model calibration results are in blue tabs, and model validation results are in green tabs.
+              <b><font color = #1c5f83>Model calibration results are in blue tabs</font>, and <font color = #7ebea5>model validation results are in green tabs</font></b>.
         </p>
       </div>
     </div>
@@ -991,11 +991,19 @@
             <br/>
             <h3>Trip Activities</h3>
             <p>
-              The CMAP ABM uses ten activity types.
-              Activities can be grouped into general categories according to their priority: mandatory and non-mandatory.
-              Mandatory activities include work, university, and school.
-              Non-mandatory activities include maintenance (with shopping, escorting, and eating out separated out), discretionary (with visiting separated out), and work-based trips.
-            </p>
+              o	The CMAP ABM classifies trips into ten activity types.
+              Activities can be grouped into general categories according to their
+              priority in determining an individual’s schedule: mandatory and non-mandatory.
+              Mandatory activities include work, university, and school trips.  The remaining activities 
+              are all considered non-mandatory.  While some of these activities (like shopping, eating out
+              and visiting) are self-explanatory, the remaining ones require definitions to ensure clarity
+              of what is being measured.  Work-based activities are a subset of activities (such as going to
+              lunch or traveling to meet a client) that occur with the place of work as the anchor location.
+              Escort activities are picking up or dropping off passengers.  Maintenance activities include
+              medical appointments and other personal business or services that people engage in, excluding
+              shopping and escorting activities.  Finally, discretionary activities cover the reaming activities,
+               which include engaging in social or recreational activities; attending sporting or cultural events;
+               and attending religious activities or performing volunteer activities.</p>
             <br>
           </div>
         </div>
@@ -1111,7 +1119,7 @@
           <div class="col col-md-3">
               <div class="colborder"></div><!-- end -->
 
-              <h3>Trips by Purpose and Distance</h3>
+              <h3>Trips by Purpose and Distance (Miles)</h3>
             <select id="catDistPurp">
                 <option value="Discretionary">Discretionary</option>
                 <option value="Eating Out">Eating Out</option>
@@ -1244,7 +1252,7 @@
               <br/>
               <div class="col col-md-3">
                   <div class="colborder"></div><!-- end -->
-                        <h3>Transit Trips by Mode of Access and Distance</h3>
+                        <h3>Transit Trips by Mode of Access and Distance (Miles)</h3>
                 <select id="catTranDist">
                     <option value="all">All Access Modes</option>
                     <option value="transit">Walk To Transit</option>

@@ -1,5 +1,5 @@
 //https://stackoverflow.com/questions/26352181/link-to-specific-tab-bootstrap
-//https://stackoverflow.com/questions/1343178/change-active-li-when-clicking-a-link-jquery 
+//https://stackoverflow.com/questions/1343178/change-active-li-when-clicking-a-link-jquery
 
 $(function() {
   // Javascript to enable link to tab
@@ -52,7 +52,7 @@ function modelsurveylegend(divID) {
   .attr("width", 250)
 
   legend.selectAll("mydots")
-    .data(["rgb(28, 78, 128)", "rgb(166, 186, 206)"])
+    .data(["#0E84AC","#548E3F"])
     .enter()
     .append("circle")
       .attr("cx", 10)
@@ -182,7 +182,7 @@ var legend = d3.select("#vmtfacilityLegend").append("svg")
 .attr("width", 250)
 
 legend.selectAll("mydots")
-  .data(["rgb(166, 186, 206)", "rgb(120, 150, 180)", "rgb(74, 114, 154)"])
+  .data(["#0E84AC", "#548E3F", "#D8BA37", "#5F7B88"])
   .enter()
   .append("circle")
     .attr("cx", 10)
@@ -225,4 +225,3 @@ var svg = d3.select("#transitmaplegend")
   .style("font-size", "14px")
   .style("font-family","sans-serif")
   .attr("alignment-baseline","middle")
-

@@ -32,7 +32,7 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle,l
   // .attr("class", "axis axis--y");
 
   var z = d3.scaleOrdinal()
-  .range(["#1C4E80", "#A6BACE"]);
+  .range(["#0E84AC","#548E3F"]);
 
   var durations = 0;
 
@@ -282,8 +282,7 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle,l
         .attr("cx", 10)
         .attr("cy", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
         .attr("r", 7)
-        .style("fill", function(i) {
-          return z(i); })
+        .style("fill",function(d, i) { return z(i); })
 
     // Add one dot in the legend for each name.
     legend.selectAll("mylabels")

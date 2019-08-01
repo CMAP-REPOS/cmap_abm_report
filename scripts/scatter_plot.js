@@ -42,7 +42,7 @@ function makeScatter(csv_file, chart_id, modelvalue,obsvalue,category_value,rsqu
           // colors for foo
       var color = d3.scaleOrdinal()
       .domain(["Arterial/Collector", "Interstate" ])
-      .range(["#A6BACE", "#4A729A"])
+      .range(["#0E84AC","#548E3F"])
 
       //x = survey
       //Y = Model
@@ -155,7 +155,7 @@ var legend = d3.select("#scatterLegend").append("svg")
 .attr("width", 250)
 
 legend.selectAll("mydots")
-  .data(["#A6BACE", "#4A729A"])
+  .data(["#0E84AC", "#548E3F"])
   .enter()
   .append("circle")
     .attr("cx", 10)

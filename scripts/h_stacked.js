@@ -24,7 +24,7 @@ function make_h_stacked(csv_file,divID, legendID){
         .rangeRound([0, width]);
 
     var z = d3.scaleOrdinal()
-        .range(['#5cbddd','#1c5f83','#66666E','#fefefe','#7ebea5','#3c765f','#EFE9AE','#AFBE8F']);
+        .range(['#0E84AC',	'#548E3F','#E9A7A7',	'#FBFBFB',	'#E57272',	'#D8BA37',	'#84C87E',	'#5F7B88',	'#9675B4',	'#5F5121']);
 
     var stack = d3.stack()
         .offset(d3.stackOffsetExpand);
@@ -148,7 +148,7 @@ function make_h_stacked(csv_file,divID, legendID){
     // Usually you have a color scale in your chart already
     var color = d3.scaleOrdinal()
       .domain(keys)
-      .range(['#5cbddd','#1c5f83','#66666E','#fefefe','#7ebea5','#3c765f','#EFE9AE','#AFBE8F']);
+        .range(['#0E84AC',	'#548E3F','#E9A7A7',	'#FBFBFB',	'#E57272',	'#D8BA37',	'#84C87E',	'#5F7B88',	'#9675B4',	'#5F5121']);
 
     // Add one dot in the legend for each name.
     legend.selectAll("mydots")

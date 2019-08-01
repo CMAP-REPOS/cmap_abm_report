@@ -35,7 +35,7 @@ function makeStackedChart_nodd2(csv_file,dataTitle,divID){
 
 
     var z = d3.scaleOrdinal()
-        .range(["#A6BACE", "#7896B4", "#4A729A", "#1C4E80", "#0D263F"]);
+        .range(["#0E84AC", "#548E3F", "#D8BA37", "#5F7B88"]);
 
         var stack = d3.stack()
         .offset(d3.stackOffsetExpand);

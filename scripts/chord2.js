@@ -1,5 +1,6 @@
 function makeChords(csv_file, modelDiv, obsDiv){
-
+  var lat=41.7281;
+  var long = -87.9298;
   var svg1;
   var svg2;
   var newCurrentDistrict;
@@ -51,7 +52,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
 
   var wflowmap = new L.Map("wflowmap", {
       zoomControl: false,
-      center: new L.LatLng(41.7281, -87.9298),
+      center: new L.LatLng(lat, long),
       zoom: 7
   });
 
@@ -75,6 +76,11 @@ function makeChords(csv_file, modelDiv, obsDiv){
   }});
   rings.addTo(wflowmap);
 
+  var wcenter = new L.LatLng(lat, long);
+
+  function zoomTo(location, map) {
+  	map.setView(location, 7);
+  	}
 
   d3.csv(csv_file, function(error, data) {
 

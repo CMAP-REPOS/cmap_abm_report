@@ -28,14 +28,18 @@
             <img src='data/images/modeling.JPG' height="40px" style="padding-bottom: 10px;">
           </a> -->
           <h3>Activity Based Model (ABM) Calibration and Validation Report</h3>
+          <p>August 2019 Release </p>
           <br>
           <p>
-            CMAP is developing a set of advanced models under the "activity-based"
-            modeling framework. This is a multi-year effort outlined in our Strategic Plan
-            for Advanced Modeling at CMAP. Activity-Based Modeling (ABM) is increasingly viewed as
-            a superior method to better understand the socioeconomic determinants of travel
-            choice and for evaluating modern transportation solutions. The research effort to
-            implement advanced models for metropolitan planning is still comparatively young.
+          Activity-based models (ABMs) are founded on the idea that people’s travel behavior is a result of their daily activities; i.e., the things people need to accomplish dictate where, when, and how they travel, and with whom.  These models are more advanced than standard travel demand models because they seek to represent the choices made by individual travelers.  In order to do this, the models must generate a schedule of daily activities for members of every household in the region, and then transform that information into sequences of trips that occur throughout the day.  To accomplish this, ABMs use detailed information about the factors that affect travel decisions, including:</p>
+          <ul>
+          <li>Households – the number of adults, children and workers; household income; the number of vehicles available</li>
+          <li>People – age; work or school status; occupation</li>
+          <li>Trips – purpose; destination; who is taking the trip; is it part of a sequence of trips that must be completed in a specific orde</li>
+        </ul>
+          Having all of this data available for individual travelers allows for more-detailed analyses of travelers’ choices than is possible with standard travel demand models.
+          ABMs were developed as a way to better analyze the impacts
+          of policy decisions like managed lanes, congestion pricing and alternative transit fare structures.
           For more information visit <a href="https://www.cmap.illinois.gov/data/transportation/modeling#CMAPs_Activity_Based_Models">CMAP's Activity Based Models.</a> </p>
           <p style="margin-bottom:50px">
             This report represents the results of model calibration and validation activities completed over the last several years by CMAP staff and their consultants.
@@ -194,6 +198,8 @@
             <p>Only portions of Lee, Ogle, and LaSalle counties are included in the modeling area.</p>
             <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
             <p>Click within modeling area to view county name</p>
+            <!-- <input name="introrecenter" type="button" value="Re-center map" onClick="zoomTo(center);" /> -->
+            <button type="button" class="btn btn-default btn-xs" id="introrecenter" value="Re-center map" onClick="zoomTo(center,regionmap)">Recenter Map</button>
           </div><!-- end -->
           <div class="col-md-6">
             <div class="colborder"></div><!-- end -->
@@ -588,6 +594,7 @@
               <div id="wflowinfo2" style="margin-left:70px;"></div>
               </div><br><br>
               <div id="wflowmap"></div>
+              <button type="button" class="btn btn-default btn-xs" id="wcenter" value="Re-center map" onClick="zoomTo(wcenter,wflowmap)">Recenter Map</button>
               <br>
               <img src="data/images/Cursor-Click-2-icon.png" width="20px">
               <span class="small">Hover over the chord diagram to see area boundaries on the map.  Click on the map to see area name.  Choose work flow geographies in the drop down menu to view numerical values for work trips.</span>
@@ -635,6 +642,7 @@
                 </div><br>
                 <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
                 <p class="small">Select trip destination from dropdown to view observed and model comparison</p>
+
           </div>
           <div class="col-md-6">
               <div class="colborder"></div>
@@ -1169,20 +1177,18 @@
           <br/>
 
           <h3>Transit Trips</h3>
-          <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.               Non igitur de
-              improbo, sed de callido improbo quaerimus,               qualis Q. Ampulla enim sit necne
-              sit, quis non iure               irrideatur, si laboret? formarum quam civis excellens ad
-              factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-              qualis Q. Ampulla enim sit necne sit, quis non iure               irrideatur, si laboret?
-              formarum quam civis excellen
+          <p>Transit is a vital part of the transportation system in
+            northeastern Illinois and more than 600 million transit trips are made annually.
+            It is important to properly calibrate such a key travel mode to ensure that the modeled
+            transit trips reflect the travel sheds actually served by transit.
             </p>
           <br></div>
         </div>
           <div class="row">
               <div class="col-md-3">
                   <div class="colborder"></div><!-- end -->
-                  <h4>Transit Boardings by Mode</h4>
+                  <h4>Transit Boardings by Mode and Ring Sector</h4>
+
           <div class="btn-group" role="group">
           <div class="btn-group" id="modelsurveygroup" role="group" style="margin-left: 20px">
           <button type="button" id="ModelSurvey" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1203,6 +1209,7 @@
 
       <div class="small">
 
+
            Ring sectors sum to 100% for each transit mode. Express and local bus combined.<br><br>
           <b>Example:</b> In the model, 19.7% of all Metra boardings occured in ring sector 2S.  In the survey, 7.8% of Metra boardings occured in ring sector 2S.  This is a difference of 11.9 percentage points.
           <br><br><b>Sources</b><br>
@@ -1211,15 +1218,28 @@
         </div><br>
         <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
         <p class="small">Choose the data source using the first dropdown button.  Hover over map to display data, and use the layer icon in the bottom left to activate CTA Rail and Metra line layers. </p>
+        <button type="button" class="btn btn-default btn-xs" id="transitcenter" value="Re-center map" onClick="zoomTo(transitcenter, map)">Recenter Map</button>
       </div>
       <div class="col-md-6">
           <div class="colborder"></div><!-- end -->
         <div id="map"></div>
           <br/>
-        </div>
-        </div>
-
-          <br>
+    </div>
+    <div class="col-md-3">
+        <div class="colborder"></div><!-- end -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="small">Ring sectors are geographic divisions of the CMAP
+        modeling area used for calibrating the ABM.  Each ring sector is
+        intended to represent relatively homogenous transit markets.
+        Sectors are clustered around key CTA rail or Metra lines, while
+        the rings are defined by urban form/density.</p>
+    </div>
+    </div>
           <div class="row">
             <div class="col col-md-3">
                 <div class="colborder"></div><!-- end -->
@@ -1466,7 +1486,25 @@
               <div class="colborder"></div><!-- end -->
           <center><div id="rmse_7"></div></center>
           <!-- <div id="rmse_line"></div> -->
-        </div></div>
+        </div>
+        <div class="col-md-3">
+            <div class="colborder"></div><!-- end -->
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p  class="small">Links were stratified into volume bins
+              based on AADT and linear regression analyses
+              (weighted by link length) were completed for
+              each stratum. The root mean squared error (RMSE)
+              measures the average difference between the observed
+               values and the modeled volume predicted by the linear
+                regression. The percent RMSE standardizes the RMSE
+                 by dividing it by the mean of the AADT (observed value).
+            </p>
+        </div>
+      </div>
 
         </div>
 
@@ -1504,17 +1542,47 @@
           <p class="small">Hover over bars to display values and highlight segment on map.  CTA segments are highlighted in red, and Metra segments are highlighted in green.
             Click on a transit segment on the map to show the name.</p>
           </div>
-          <div class="col-md-4" style="width: 29.16666666666667%">
+          <div class="col-md-6">
               <div class="colborder"></div><!-- end -->
-              <h4>CTA</h4>
-              <div id="transitassignment"></div>
+              <div class="col-md-3" style="width: 45%; text-align:center">
+                <br>
+                <h4>CTA</h4>
+                <div id="transitassignment"></div>
+              </div>
           <!-- <div id="transitBoardingsBar_model"></div> -->
+            <div class="col-md-3" style="width: 45%; text-align:center">
+              <br>
+                <h4>Metra</h4>
+                <!-- <div id="transitBoardingsBar_obs"></div> -->
+              <div id="transitassignmentmetra"></div>
+            </div>
           </div>
-          <div class="col-md-4" style="width: 29.16666666666667%">
+          <div class="col-md-3">
               <div class="colborder"></div><!-- end -->
-            <h4>Metra</h4>
-          <!-- <div id="transitBoardingsBar_obs"></div> -->
-          <div id="transitassignmentmetra"></div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <p  class="small">The analysis of transit assignment results
+                generally focus on comparing the number of transit
+                boardings estimated by the model to observed boardings.
+                The CMAP model transit network includes the following modes:
+
+                <ul class="small">
+                <li>Heavy Rail – operated by the Chicago Transit Authority (CTA)
+                  in Chicago and some surrounding communities.</li>
+                <li>Commuter Rail – operated by Metra throughout
+                  the CMAP region. The Northern Indiana Commuter
+                  Transportation District (NICTD) also operates
+                  the South Shore Railroad between Chicago and
+                  South Bend, IN.</li>
+                <li>Bus – operated by CTA
+                  (in Chicago and some surrounding communities)
+                  and by Pace Suburban Bus (in northeastern Illinois,
+                  mostly outside of Chicago).</li>
+              </ul>
+              </p>
           </div>
           </div>
         </div>
@@ -1553,10 +1621,25 @@
                     Modeled - CMAP ABM - 2015 Scenario. <br>
                   </div>
               </div>
-              <div class="col-md-6">
-                  <div class="colborder"></div><!-- end -->
-                  <div id="scatter_jtw"></div>
-              </div>
+            <div class="col-md-6">
+                <div class="colborder"></div><!-- end -->
+                <div id="scatter_jtw"></div>
+            </div>
+          <div class="col-md-3">
+              <div class="colborder"></div><!-- end -->
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <p  class="small">The graph shows an extremely strong relationship between
+                 the data sets, which is verified by the R2 value of 0.9008.
+                 This coefficient of determination indicates that the
+                 regression line is a nearly perfect fit with the
+                 observed data and accounts for more than 90% of
+                 the variation in the data.
+              </p>
+          </div>
         </div>
       </div>
     </div>

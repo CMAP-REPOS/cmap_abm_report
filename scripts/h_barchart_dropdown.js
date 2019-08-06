@@ -62,6 +62,7 @@ function makeGroupHBar_dd(csv_file,chartID,catID, nogroups,dataDescription,dtitl
   var keysLegend = [];
 
   catInt = d3.select(catID).property('value');
+  catText = $(catID + " option:selected").text();
 
 
   //makeChart();
@@ -101,6 +102,7 @@ function makeGroupHBar_dd(csv_file,chartID,catID, nogroups,dataDescription,dtitl
     }
 
     function update() {
+      catText = $(catID + " option:selected").text();
       // ======== Initial/Sliced values ========
       catInt = d3.select(catID).property('value');
 
@@ -139,7 +141,7 @@ function makeGroupHBar_dd(csv_file,chartID,catID, nogroups,dataDescription,dtitl
         return d;
       })
       d3.select("#" + dataDescription).text(divText);
-      d3.select("#" + dtitle).text(divTitle);
+      d3.select("#" + dtitle).text(catText);
       // ======== Domain, Axis & Sort ========
 
       //console.log(newdata);

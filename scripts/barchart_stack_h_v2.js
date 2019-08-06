@@ -80,6 +80,7 @@ function makechart(csv_file, divID, axis, marginleftval, idval){
           d3.selectAll("." + d.data.Index.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, ""))
             .attr("fill", "#cf4446");
           selectedline = d.data.Index.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "")
+          selectednumber = d.data.order;
           // this highlights the line on the map!
           metra.eachLayer(function(layer) {
             if(layer.LINE.includes(selectedline)){
@@ -96,7 +97,7 @@ function makechart(csv_file, divID, axis, marginleftval, idval){
             })
             }})
           hwy_lyr.eachLayer(function(layer) {
-            if(layer.LINE.includes(selectedline)){
+            if(layer.feature.properties.abmnum == selectednumber){
               layer.setStyle({
                 color:"#cf4446"
               })
@@ -113,6 +114,7 @@ function makechart(csv_file, divID, axis, marginleftval, idval){
             .attr("fill", function(d) {
             return z[1]; });
           selectedline = d.data.Index.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "")
+          selectednumber = d.data.order;
           // this highlights the line on the map!
           metra.eachLayer(function(layer) {
             if(layer.LINE.includes(selectedline)){
@@ -129,9 +131,9 @@ function makechart(csv_file, divID, axis, marginleftval, idval){
             })
             }})
           hwy_lyr.eachLayer(function(layer) {
-            if(layer.LINE.includes(selectedline)){
+            if(layer.feature.properties.abmnum == selectednumber){
               layer.setStyle({
-                color:"#3388ff"
+                color:"grey"
               })
             }
           })

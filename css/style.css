@@ -1,3 +1,13 @@
+line#limit {
+  stroke: grey;
+  stroke-width: 3;
+  stroke-dasharray: 3 6;
+}
+
+text.divergence {
+  font-size: 14px;
+}
+
 /* .axis path,
 .axis line {
     fill: none;

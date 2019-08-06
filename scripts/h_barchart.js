@@ -1,5 +1,6 @@
 function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height, word){
 
+  var formatValue = d3.format(".2s");
   var barChartConfig = {
        mainDiv: "#chart",
        colorRange: ["#2a98cd", "#df7247"],
@@ -44,7 +45,7 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
             .rangeRound([0, width]);
 
   //Review axis labels
-  let xAxis = d3.axisBottom(x),
+  let xAxis = d3.axisBottom(x).ticks(5).tickFormat(d3.format(".2s")),
     yAxis = d3.axisLeft(y0).ticks(null, "s");
 
   g.append("g")

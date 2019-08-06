@@ -1,5 +1,5 @@
 function makeChords(csv_file, modelDiv, obsDiv){
-  var lat=41.7281;
+  var lat= 41.7281;
   var long = -87.9298;
   var svg1;
   var svg2;
@@ -78,9 +78,6 @@ function makeChords(csv_file, modelDiv, obsDiv){
 
   var wcenter = new L.LatLng(lat, long);
 
-  function zoomTo(location, map) {
-  	map.setView(location, 7);
-  	}
 
   d3.csv(csv_file, function(error, data) {
 

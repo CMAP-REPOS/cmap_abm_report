@@ -3,6 +3,7 @@ function makeScatter(csv_file, chart_id, modelvalue,obsvalue,category_value,rsqu
 	    width = 900 - margin.left - margin.right,
 	    height = 450 - margin.top - margin.bottom;
 
+  var formatValue = d3.format(".2s");
     var padding = 10;
 	  var svg = d3.select(chart_id).append("svg")
     .attr("preserveAspectRatio", "xMinYMin meet")
@@ -53,7 +54,7 @@ function makeScatter(csv_file, chart_id, modelvalue,obsvalue,category_value,rsqu
       var yval = data.map(function (d) { return parseFloat(d[modelvalue]); });
       var xval = data.map(function (d) { return parseFloat(d[obsvalue]); });
 	    var lr = linearRegression(yval,xval);
-      d3.select("#"+rsquared).text(parseFloat(lr.r2).toPrecision(4));
+      d3.select("#"+rsquared).text(parseFloat(lr.r2).toPrecision(2));
       var max = d3.max(data, function (d) { return d[obsvalue]; });
       var myLine = svg.append("line")
                   .attr("x1", x(0))

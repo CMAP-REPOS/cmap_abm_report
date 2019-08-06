@@ -5,12 +5,14 @@ function makeStackedChart_4(csv_file,catID,dataTitle,divID){
   catInt = d3.select(catID).property('value');
   //console.log(catInt);
 
-  var margin = {top: 35, right: 50, bottom: 50, left: 80},
+  var margin = {top: 80, right: 50, bottom: 50, left: 80},
   width = 900 - margin.left - margin.right,
   height = 375 - margin.top - margin.bottom;
   height2 = 400 - margin.top - margin.bottom;
 
+  var durations = 0;
 
+  let afterLoad = () => durations = 750;
   var g = d3.select("#" + divID).append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
@@ -30,7 +32,7 @@ function makeStackedChart_4(csv_file,catID,dataTitle,divID){
   var y1 = d3.scaleBand()
 
   var z = d3.scaleOrdinal()
-      .range(["#A6BACE", "#7896B4", "#4A729A", "#1C4E80", "#0D263F"]);
+      .range(['#0E84AC',	'#D8BA37',	'#5F7B88',	'#9675B4',	'#548E3F']);
 
   var stack = d3.stack();
 

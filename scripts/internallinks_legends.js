@@ -148,6 +148,31 @@ legend.selectAll("mylabels")
     .style("fill","black")
 
 
+  var legend = d3.select("#stackedAdultLegend").append("svg")
+    .attr("height", 140)
+    .attr("width", 250)
+
+    legend.selectAll("mydots")
+      .data(['#0E84AC',	'#D8BA37',	'#5F7B88',	'#9675B4'])
+      .enter()
+      .append("circle")
+        .attr("cx", 10)
+        .attr("cy", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+        .attr("r", 7)
+        .style("fill", function(d) { return d; })
+
+    // Add one dot in the legend for each name.
+    legend.selectAll("mylabels")
+      .data(["1 Adult", "1 Adult", "3 Adults", "4+ Adults"])
+      .enter()
+      .append("text")
+        .attr("x", 20)
+        .attr("y", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+        .text(function(d){
+          return d})
+        .attr("text-anchor", "left")
+        .style("alignment-baseline", "middle")
+        .style("fill","black")
 
 
 var legend = d3.select("#stackedAutoLegend").append("svg")
@@ -155,7 +180,7 @@ var legend = d3.select("#stackedAutoLegend").append("svg")
 .attr("width", 250)
 
 legend.selectAll("mydots")
-  .data(["#A6BACE", "#7896B4", "#4A729A", "#1C4E80", "#0D263F"])
+  .data(['#0E84AC',	'#D8BA37',	'#5F7B88',	'#9675B4',	'#548E3F'])
   .enter()
   .append("circle")
     .attr("cx", 10)

@@ -39,7 +39,7 @@
         <ul>
           <li>Households – the number of adults, children and workers; household income; the number of vehicles available</li>
           <li>People – age; work or school status; occupation</li>
-          <li>Trips – purpose; destination; who is taking the trip; is it part of a sequence of trips that must be completed in a specific orde</li>
+          <li>Trips – purpose; destination; who is taking the trip; is it part of a sequence of trips that must be completed in a specific order</li>
         </ul>
         Having all of this data available for individual travelers allows for more-detailed analyses of travelers’ choices than is possible with standard travel demand models.
         ABMs were developed as a way to better analyze the impacts
@@ -409,7 +409,9 @@
           <select id="catPopSyn">
             <option value="age">Head of Household Age</option>
             <option value="workers">Household Workers</option>
-            <option value="income1">Household Income</option>
+            <option value="income">Household Income</option>
+            <option value="size">Household Size</option>
+            <option value="veh">Vehicles in Household</option>
           </select><!-- end -->
           <br><br><br>
           <br>
@@ -431,6 +433,36 @@
         </div> <!-- end -->
       </div> <!-- end row-->
       <br>
+      <div class="row">
+        <br>
+        <div class="col-md-3">
+          <div class="colborder"></div>
+          <h3>Household Detail</h3>
+          <h5><b>Distribution of Adults Per Household by <div id="popcttitle"></div></b></h5>
+          <br>
+          <select id="popsyn_ct">
+            <option value="children">Children</option>
+            <option value="workers">Workers</option>
+          </select>
+          <br>
+          <div id="stackedAutoLegend"></div>
+
+          <div class="small" style="margin-top: 0px;">
+            <b>Sources</b><br>
+            Observed - PUMS 2007-11 <br>
+            Modeled- PopSynIII <br>
+          </div>
+          <br>
+          <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
+          <p class="small">Select household attribute from dropdown to view observed and model comparison</p>
+        </div>
+        <div class="col col-md-6">
+          <div class="colborder"></div>
+          <center>
+            <div id="popsyncrosstab"></div>
+          </center>
+        </div>
+      </div>
     </div>
     <!--end tab-->
     <!-- Auto Counts -->
@@ -476,7 +508,6 @@
           <div class="colborder"></div>
           <h3>Household Detail</h3>
           <h5><b>Distribution of Auto Ownership by <div id="dtitle"></div></b></h5>
-
           <br>
           <select id="aoCat">
             <option value="size">Household Size</option>
@@ -1793,16 +1824,19 @@
   makeStackedChart_4("data/csv3_aocrosstab_counts.csv", "#aoCat", "dtitle", "stackedbar");
 </script>
 <script>
+  makeStackedChart_4("data/csv40_PopSyn_CrossTab.csv", "#popsyn_ct", "popcttitle", "popsyncrosstab");
+</script>
+<script>
   makeChords('data/csv4_chord.csv', "modelChord", "obsChord");
 </script>
 <script>
   hStackedBar("data/csv26_interstate_vmt_obs.csv", "data/csv25_interstate_vmt_model.csv", "interstateVMTbar_obs", "interstateVMTbar_model", 230, 300);
 </script>
 <script>
-  make_h_stacked("data/htest.csv", "PopPersonType", "hlegend")
+  make_h_stacked("data/csv38_popsyn_person.csv", "PopPersonType", "hlegend")
 </script>
 <script>
-  make_h_stacked("data/htest2.csv", "HouseholdSize", "hhlegend")
+  make_h_stacked("data/csv39_popsyn_hhsize.csv", "HouseholdSize", "hhlegend")
 </script>
 <script>
   make_h_stacked_tripsbymode("data/csv1314_tripmode.csv", "stackedmode", "modelegend")
@@ -1832,7 +1866,7 @@
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['# Veh', 'Model', 'Survey'], "#auto_counts", "nopercent"); // 2 column table
+    tabulate(data, ['# Vehicles', 'Model', 'Observed'], "#auto_counts", "nopercent"); // 2 column table
   });
 
   d3.csv("data/csv29_vmt_county_table.csv", function(d, i, columns) {

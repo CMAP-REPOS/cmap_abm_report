@@ -55,7 +55,7 @@ function make_multi_line_dd(csv, divID, catID, legendID) {
   var svg = d3.select("#" + divID)
     .append("svg")
     .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "0 0 800 600")
+    .attr("viewBox", "0 0 700 600")
     .append("g")
     .attr("transform",
       "translate(" + margin.left + "," + margin.top + ")");

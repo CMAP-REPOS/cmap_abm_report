@@ -6,7 +6,7 @@ function makeStackedChart_4(csv_file,catID,dataTitle,divID){
   //console.log(catInt);
 
   var margin = {top: 80, right: 50, bottom: 50, left: 80},
-  width = 900 - margin.left - margin.right,
+  width = 800 - margin.left - margin.right,
   height = 375 - margin.top - margin.bottom;
   height2 = 400 - margin.top - margin.bottom;
 
@@ -58,7 +58,6 @@ function makeStackedChart_4(csv_file,catID,dataTitle,divID){
     x0.domain(newdata.map(function(d) {
       return d.MainGroup; }));
     x1.domain(newdata.map(function(d) {
-
       return d.SubGroup; }))
       .rangeRound([0, x0.bandwidth()])
       .padding(0.2);
@@ -123,29 +122,16 @@ function makeStackedChart_4(csv_file,catID,dataTitle,divID){
         .on("click", function(d, i){ });
 
     g.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(0," + height + ")")
-        .call(d3.axisBottom(x1));
+      .attr("class", "x axis")
+      .attr("transform","translate(0," + height + ")")
+      .call(d3.axisBottom(x0));
 
-    g.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(150," + height + ")")
-        .call(d3.axisBottom(x1));
-
-    g.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(300," + height + ")")
-        .call(d3.axisBottom(x1));
-
-    g.append("g")
-    .attr("class", "axis")
-    .attr("transform", "translate(450," + height + ")")
-    .call(d3.axisBottom(x1));
-
-    g.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(0," + height * 1.1 + ")")
-        .call(d3.axisBottom(x0));
+      g.append("g")
+        .attr("class", "x axis")
+        .attr("transform","translate(0," + (height+25) + ")")
+        .call(d3.axisBottom(function(d){
+          return d.data.SubGroup
+        }));
 
     g.append("g")
         .attr("class", "axis")

@@ -15,8 +15,8 @@ function makechart(csv_file, divID, axis, marginleftval, idval){
     height = 600 - margin.top - margin.bottom;
 
   var g = d3.select("#"+divID).append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+  .attr("preserveAspectRatio", "xMinYMin meet")
+  .attr("viewBox", "0 0 500 600")
     .attr("id",idval)
     .append("g")
       .attr("transform","translate(" + margin.left + "," + margin.top + ")");
@@ -107,7 +107,7 @@ function makechart(csv_file, divID, axis, marginleftval, idval){
           div.transition()
           .duration(500)
           .style("opacity", 0);
-        
+
 
           d3.selectAll("." + d.data.Index.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, ""))
             .attr("fill", function(d) {

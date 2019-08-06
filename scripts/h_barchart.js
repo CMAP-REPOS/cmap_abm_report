@@ -1,5 +1,6 @@
 function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height, word){
 
+  var formatValue = d3.format(".2s");
   var barChartConfig = {
        mainDiv: "#chart",
        colorRange: ["#2a98cd", "#df7247"],
@@ -17,12 +18,12 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
   var ngroups= nogroups+1
   var formatValue = d3.format(".2s");
   var margin = {top: 35, right: 80, bottom: 100, left: 100},
-    width = 900 - margin.left - margin.right,
+    width = 400 - margin.left - margin.right,
     height = height - margin.top - margin.bottom;
 
   var g = d3.select(chartID).append("svg")
-  .attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
+  .attr("preserveAspectRatio", "xMinYMin meet")
+  .attr("viewBox", "0 -10 350 960")
   .attr("align","center")
   .append("g")
   .attr("transform","translate(" + margin.left + "," + margin.top + ")");
@@ -44,7 +45,7 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
             .rangeRound([0, width]);
 
   //Review axis labels
-  let xAxis = d3.axisBottom(x),
+  let xAxis = d3.axisBottom(x).ticks(5).tickFormat(d3.format(".2s")),
     yAxis = d3.axisLeft(y0).ticks(null, "s");
 
   g.append("g")
@@ -55,7 +56,7 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
   .attr("class", "axis axis--y");
 
   var z = d3.scaleOrdinal()
-  .range(["#1C4E80", "#A6BACE","#159398","#20BEA7","#5BE8A7","#23202F"]);
+  .range(["#0E84AC", "#548E3F"]);
 
   var durations = 0;
 

@@ -1,9 +1,11 @@
 // select the svg area
-var svg = d3.select("#intromaplegend")
+var svg_intro = d3.select("#intromaplegend").append("svg")
+var lat = 41.8781;
+var long = -87.8298;
 
 // Modeling Area
-svg.append("line").attr("x1",10).attr("y1",20).attr("x2",30).attr("y2",20).style("stroke", "#1c4e80").style("stroke-dasharray","5,5")
-svg.append("text")
+svg_intro.append("line").attr("x1",10).attr("y1",20).attr("x2",30).attr("y2",20).style("stroke", "#1c4e80").style("stroke-dasharray","5,5")
+svg_intro.append("text")
 .attr("x", 35)
 .attr("y", 20)
 .text("Modeling Area")
@@ -12,8 +14,8 @@ svg.append("text")
 .attr("alignment-baseline","middle")
 
 // CMAP
-svg.append("line").attr("x1",10).attr("y1",40).attr("x2",30).attr("y2",40).style("stroke", "#233D4D").style("stroke-width",5)
-svg.append("text")
+svg_intro.append("line").attr("x1",10).attr("y1",40).attr("x2",30).attr("y2",40).style("stroke", "#233D4D").style("stroke-width",5)
+svg_intro.append("text")
 .attr("x", 35)
 .attr("y", 40)
 .text("CMAP Region")
@@ -22,8 +24,8 @@ svg.append("text")
 .attr("alignment-baseline","middle")
 
 //hwy_interstates
-svg.append("line").attr("x1",10).attr("y1",60).attr("x2",30).attr("y2",60).style("stroke", "#337AB7").style("stroke-width",5)
-svg.append("text")
+svg_intro.append("line").attr("x1",10).attr("y1",60).attr("x2",30).attr("y2",60).style("stroke", "#337AB7").style("stroke-width",5)
+svg_intro.append("text")
 .attr("x", 35)
 .attr("y", 60)
 .text("Interstates")
@@ -32,8 +34,8 @@ svg.append("text")
 .attr("alignment-baseline","middle")
 
 //arterials
-svg.append("line").attr("x1",10).attr("y1",80).attr("x2",30).attr("y2",80).style("stroke", "#87BBA2").style("stroke-width",5)
-svg.append("text")
+svg_intro.append("line").attr("x1",10).attr("y1",80).attr("x2",30).attr("y2",80).style("stroke", "#87BBA2").style("stroke-width",5)
+svg_intro.append("text")
 .attr("x", 35)
 .attr("y", 80)
 .text("Arterials")
@@ -47,9 +49,16 @@ var mapboxAccessToken = 'pk.eyJ1Ijoic2FyYWhjbWFwIiwiYSI6ImNqc3VzMDl0YzJocm80OXBn
 
 var regionmap = new L.Map("regionmap", {
     zoomControl: false,
-    center: new L.LatLng(41.8781, -87.8298),
+    center: new L.LatLng(lat, long),
     zoom: 8
 });
+
+var center = new L.LatLng(lat, long);
+
+function zoomTo(location, map) {
+	map.setView(location, 8);
+	}
+
 
 // var regionbaselayer = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
 //     id: 'mapbox.streets',

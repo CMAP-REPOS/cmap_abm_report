@@ -5,15 +5,17 @@ function makeStackedChart_4(csv_file,catID,dataTitle,divID){
   catInt = d3.select(catID).property('value');
   //console.log(catInt);
 
-  var margin = {top: 35, right: 50, bottom: 50, left: 80},
-  width = 900 - margin.left - margin.right,
+  var margin = {top: 80, right: 50, bottom: 50, left: 80},
+  width = 800 - margin.left - margin.right,
   height = 375 - margin.top - margin.bottom;
   height2 = 400 - margin.top - margin.bottom;
 
+  var durations = 0;
 
+  let afterLoad = () => durations = 750;
   var g = d3.select("#" + divID).append("svg")
-  .attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
+  .attr("preserveAspectRatio", "xMinYMin meet")
+  .attr("viewBox", "0 0 760 800")
   .attr("align","center")
   .append("g")
   .attr("transform","translate(" + margin.left + "," + margin.top + ")");
@@ -30,7 +32,7 @@ function makeStackedChart_4(csv_file,catID,dataTitle,divID){
   var y1 = d3.scaleBand()
 
   var z = d3.scaleOrdinal()
-      .range(["#A6BACE", "#7896B4", "#4A729A", "#1C4E80", "#0D263F"]);
+      .range(['#0E84AC',	'#D8BA37',	'#5F7B88',	'#9675B4',	'#548E3F']);
 
   var stack = d3.stack();
 
@@ -56,7 +58,6 @@ function makeStackedChart_4(csv_file,catID,dataTitle,divID){
     x0.domain(newdata.map(function(d) {
       return d.MainGroup; }));
     x1.domain(newdata.map(function(d) {
-
       return d.SubGroup; }))
       .rangeRound([0, x0.bandwidth()])
       .padding(0.2);
@@ -121,29 +122,16 @@ function makeStackedChart_4(csv_file,catID,dataTitle,divID){
         .on("click", function(d, i){ });
 
     g.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(0," + height + ")")
-        .call(d3.axisBottom(x1));
+      .attr("class", "x axis")
+      .attr("transform","translate(0," + height + ")")
+      .call(d3.axisBottom(x0));
 
-    g.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(150," + height + ")")
-        .call(d3.axisBottom(x1));
-
-    g.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(300," + height + ")")
-        .call(d3.axisBottom(x1));
-
-    g.append("g")
-    .attr("class", "axis")
-    .attr("transform", "translate(450," + height + ")")
-    .call(d3.axisBottom(x1));
-
-    g.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(0," + height * 1.1 + ")")
-        .call(d3.axisBottom(x0));
+      g.append("g")
+        .attr("class", "x axis")
+        .attr("transform","translate(0," + (height+25) + ")")
+        .call(d3.axisBottom(function(d){
+          return d.data.SubGroup
+        }));
 
     g.append("g")
         .attr("class", "axis")

@@ -1,3 +1,32 @@
+line#limit {
+  stroke: grey;
+  stroke-width: 3;
+  stroke-dasharray: 3 6;
+}
+
+text.divergence {
+  font-size: 14px;
+}
+
+/* .axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+path {
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+} */
+
+#PopPersonType {
+  width: 100%;
+  position: absolute;
+}
+
 svg {
     -webkit-filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.3) );
     filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.25) );

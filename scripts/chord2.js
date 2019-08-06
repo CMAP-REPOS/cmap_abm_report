@@ -1,5 +1,6 @@
 function makeChords(csv_file, modelDiv, obsDiv){
-      
+  var lat= 41.7281;
+  var long = -87.9298;
   var svg1;
   var svg2;
   var newCurrentDistrict;
@@ -45,13 +46,13 @@ function makeChords(csv_file, modelDiv, obsDiv){
 //   var div = d3.select("#chordinfodiv").append("div")
 //   .attr("class", "chordtooltip")
 //   .style("opacity", 0);
-  
+
   // basic map
   var mapboxAccessToken = 'pk.eyJ1Ijoic2FyYWhjbWFwIiwiYSI6ImNqc3VzMDl0YzJocm80OXBnZjc2MGk4cGgifQ.S_UmPA1jm5pQPrCCLDs41Q';
 
   var wflowmap = new L.Map("wflowmap", {
       zoomControl: false,
-      center: new L.LatLng(41.7281, -87.9298),
+      center: new L.LatLng(lat, long),
       zoom: 7
   });
 
@@ -74,6 +75,8 @@ function makeChords(csv_file, modelDiv, obsDiv){
         layer.NAME = feature.properties.AREANAME;
   }});
   rings.addTo(wflowmap);
+
+  var wcenter = new L.LatLng(lat, long);
 
 
   d3.csv(csv_file, function(error, data) {
@@ -246,7 +249,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
             }
           });
           }
-        
+
         function drawChords(matrix, mmap, obsMatrix, obs_mmap, odpairs) {
             var w = 400,
                 h = 400,

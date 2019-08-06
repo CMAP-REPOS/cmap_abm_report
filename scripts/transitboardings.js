@@ -1,9 +1,12 @@
 // basic map
 var mapboxAccessToken = 'pk.eyJ1Ijoic2FyYWhjbWFwIiwiYSI6ImNqc3VzMDl0YzJocm80OXBnZjc2MGk4cGgifQ.S_UmPA1jm5pQPrCCLDs41Q';
+var lat = 41.8781;
+var long = -87.6298;
+
 
 var map = new L.Map("map", {
     zoomControl: false,
-    center: new L.LatLng(41.8781, -87.6298),
+    center: new L.LatLng(lat, long),
     zoom: 8
 });
 
@@ -19,12 +22,17 @@ $("a[href='#7']").on('shown.bs.tab',function(e) {
 });
 map.addLayer(baselayer);
 
+var transitcenter = new L.LatLng(lat, long);
+//
+// function zoomTo(location, map) {
+// 	map.setView(location, 8);
+// 	}
+
 
 // settings for initial page load
 var whichone = 'modshare'
 var firsttime = true
 drawmap()
-
 
 
 // dropdown button events
@@ -71,7 +79,7 @@ function updatemap() {
     if (map.hasLayer(cta)) {
         map.removeLayer(cta);
         map.addLayer(cta);
-    } 
+    }
 
     if (map.hasLayer(metra)) {
         map.removeLayer(metra);
@@ -98,7 +106,7 @@ promise.then(function(data) {
         onEachFeature: function(feature, layer) {
             layer.on({
                 'mouseover': highlightFeature,
-                'mouseout': resetHighlightmetra 
+                'mouseout': resetHighlightmetra
             });
         }
     });
@@ -107,7 +115,7 @@ promise.then(function(data) {
         onEachFeature: function(feature, layer) {
             layer.on({
                 'mouseover': highlightFeature,
-                'mouseout': resetHighlightcta 
+                'mouseout': resetHighlightcta
             });
         }
     });
@@ -153,8 +161,8 @@ promise.then(function(data) {
         if (map.hasLayer(cta)) {
             map.removeLayer(cta);
             map.addLayer(cta);
-        } 
-    
+        }
+
         if (map.hasLayer(metra)) {
             map.removeLayer(metra);
             map.addLayer(metra);
@@ -177,8 +185,8 @@ promise.then(function(data) {
         if (map.hasLayer(cta)) {
             map.removeLayer(cta);
             map.addLayer(cta);
-        } 
-    
+        }
+
         if (map.hasLayer(metra)) {
             map.removeLayer(metra);
             map.addLayer(metra);
@@ -200,8 +208,8 @@ promise.then(function(data) {
         if (map.hasLayer(cta)) {
             map.removeLayer(cta);
             map.addLayer(cta);
-        } 
-    
+        }
+
         if (map.hasLayer(metra)) {
             map.removeLayer(metra);
             map.addLayer(metra);
@@ -317,7 +325,7 @@ info.onAdd = function(map) {
 };
 
 info.update = function(props) {
-    if (whichone !== 'sharedif') { 
+    if (whichone !== 'sharedif') {
     this._div.innerHTML = '<h6>Share of Boardings</h6>' + (props ?
     '<b>' + 'ring sector: ' + props.ringsector + '</b><br />' + 'share: ' + getsharevalue(props)
     :'Hover over a ring sector');
@@ -342,11 +350,11 @@ function getsharevalue(props) {
     }}
     else {
         if ($("#metra").hasClass("btn-info")) {
-            var sharevalue = -parseFloat(props['m_' + whichone]) + "%"
+            var sharevalue = -parseFloat(props['m_' + whichone])
         } else if ($("#pace").hasClass("btn-info")) {
-            var sharevalue = -parseFloat(props['b_' + whichone]) + "%"
+            var sharevalue = -parseFloat(props['b_' + whichone])
         } else if ($("#cta").hasClass("btn-info")) {
-            var sharevalue = -parseFloat(props['c_' + whichone]) + "%"
+            var sharevalue = -parseFloat(props['c_' + whichone])
         } else {
             var sharevalue = 0
     }}
@@ -381,7 +389,7 @@ legend.onAdd = function (map) {
         to = grades[i + 1];
 
         labels.push(
-            '<i style="background:' + getColor(from + 1) + '"></i> ' + 
+            '<i style="background:' + getColor(from + 1) + '"></i> ' +
             from + (to ? '&ndash;' + to : '+'));
     }
     div.innerHTML = "<h6>Percent</h6>" + labels.join('<br>');
@@ -399,7 +407,7 @@ difflegend.onAdd = function (map) {
         to = grades[i + 1];
 
         labels.push(
-            '<i style="background:' + getDiffColor(from + 1) + '"></i> ' + 
+            '<i style="background:' + getDiffColor(from + 1) + '"></i> ' +
             from + (to ? '&ndash;' + to: '+'));
     }
     div.innerHTML = "<h6>Share Difference</h6>" + labels.join('<br>');

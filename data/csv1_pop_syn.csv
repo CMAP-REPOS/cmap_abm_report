@@ -1,12 +1,22 @@
 Index,Model,Observed,Category,Title
-Less than 65,3111195,2994244,age,Age
-65 and older,734185,875539,age,Age
-0 workers,860090,709396,workers,Workers
-1 worker,1631160,1475512,workers,Workers
-2 workers,976695,1287892,workers,Workers
-3+ workers,377435,396983,workers,Workers
-0-35K,1616150,5,income1,Income
-35K-50K,5,5,income1,Income
-50-75k,5,5,income1,Income
-75k-100k,5,5,income1,Income
-100K+,465225,5,income1,Income
+1 Person HH,991960,1062464,size,Size
+2 Person HH,1008873,1153713,size,Size
+3 Person HH,837313,599919,size,Size
+4 Person HH,659707,547628,size,Size
+5+ Person HH,347528,454568,size,Size
+0 Vehicles,456430,431792,veh,Vehicles
+1 Vehicle,1473030,1346716,veh,Vehicles
+2 Vehicles,1366928,1403079,veh,Vehicles
+3 Vehicles,405741,457783,veh,Vehicles
+4+ Vehicles,143252,178924,veh,Vehicles
+0-35k,1617735,1513141,income,Income
+100k+,464079,573862,income,Income
+35k-65k,1204100,1060577,income,Income
+65k-100k,559467,670714,income,Income
+0 Workers,862369,1571444,workers,Workers
+1 Worker,1631918,814013,workers,Workers
+2 Workers,976021,1091736,workers,Workers
+3+ Workers,375073,341101,workers,Workers
+16-34,1001178,783582,age,Age
+35-64,2209084,2262014,age,Age
+65 and older,634954,744752,age,Age

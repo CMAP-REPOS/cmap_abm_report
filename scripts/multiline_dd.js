@@ -120,8 +120,8 @@ function make_multi_line_dd(csv, divID, catID, legendID) {
 
     //Create legend
     var ml_legend = d3.select("#" + legendID).append("svg")
-                      .attr('width', 300)
-                      .attr('height', 100)
+      .attr('width', 300)
+      .attr('height', 100)
 
     ml_legend.append("line").attr("x1", 10).attr("y1", 20).attr("x2", 30).attr("y2", 20).style("stroke", "#548E3F").style("stroke-dasharray", "5,5")
     ml_legend.append("text")
@@ -217,7 +217,7 @@ function make_multi_line_dd(csv, divID, catID, legendID) {
           return h[d]
         }))
         .selectAll("text")
-        .attr("y",5)
+        .attr("y", 5)
         .attr("x", 9)
         .attr("dy", ".35em")
         .attr("transform", "rotate(55)")

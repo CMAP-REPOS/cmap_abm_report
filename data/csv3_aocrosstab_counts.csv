@@ -1,131 +1,131 @@
-MainGroup,StackGroup,SubGroup,Value,Category,Title
-0 Workers,0 Vehicles,Model,158888,workers,Number of Workers
-0 Workers,0 Vehicles,Observed,334760,workers,Number of Workers
-0-35k,0 Vehicles,Model,330492,income,Household Income
-0-35k,0 Vehicles,Observed,345019,income,Household Income
-1 Person HH,0 Vehicles,Model,187164,size,Household Size
-1 Person HH,0 Vehicles,Observed,258159,size,Household Size
-1 Worker,0 Vehicles,Model,220404,workers,Number of Workers
-1 Worker,0 Vehicles,Observed,62349,workers,Number of Workers
-100k+,0 Vehicles,Model,16287,income,Household Income
-100k+,0 Vehicles,Observed,12136,income,Household Income
-2 Person HH,0 Vehicles,Model,81684,size,Household Size
-2 Person HH,0 Vehicles,Observed,86495,size,Household Size
-2 Workers,0 Vehicles,Model,55854,workers,Number of Workers
-2 Workers,0 Vehicles,Observed,29260,workers,Number of Workers
-3 Person HH,0 Vehicles,Model,67882,size,Household Size
-3 Person HH,0 Vehicles,Observed,38328,size,Household Size
-3+ Workers,0 Vehicles,Model,21284,workers,Number of Workers
-3+ Workers,0 Vehicles,Observed,5421,workers,Number of Workers
-35k-65k,0 Vehicles,Model,87033,income,Household Income
-35k-65k,0 Vehicles,Observed,55743,income,Household Income
-4 Person HH,0 Vehicles,Model,59490,size,Household Size
-4 Person HH,0 Vehicles,Observed,25241,size,Household Size
-5+ Person HH,0 Vehicles,Model,60210,size,Household Size
-5+ Person HH,0 Vehicles,Observed,23566,size,Household Size
-65k-100k,0 Vehicles,Model,22618,income,Household Income
-65k-100k,0 Vehicles,Observed,18892,income,Household Income
-0 Workers,1 Vehicle,Model,331095,workers,Number of Workers
-0 Workers,1 Vehicle,Observed,873783,workers,Number of Workers
-0-35k,1 Vehicle,Model,785330,income,Household Income
-0-35k,1 Vehicle,Observed,769938,income,Household Income
-1 Person HH,1 Vehicle,Model,684453,size,Household Size
-1 Person HH,1 Vehicle,Observed,694868,size,Household Size
-1 Worker,1 Vehicle,Model,858895,workers,Number of Workers
-1 Worker,1 Vehicle,Observed,288183,workers,Number of Workers
-100k+,1 Vehicle,Model,98185,income,Household Income
-100k+,1 Vehicle,Observed,84398,income,Household Income
-2 Person HH,1 Vehicle,Model,303772,size,Household Size
-2 Person HH,1 Vehicle,Observed,343404,size,Household Size
-2 Workers,1 Vehicle,Model,221617,workers,Number of Workers
-2 Workers,1 Vehicle,Observed,164731,workers,Number of Workers
-3 Person HH,1 Vehicle,Model,229931,size,Household Size
-3 Person HH,1 Vehicle,Observed,143408,size,Household Size
-3+ Workers,1 Vehicle,Model,61423,workers,Number of Workers
-3+ Workers,1 Vehicle,Observed,20018,workers,Number of Workers
-35k-65k,1 Vehicle,Model,447819,income,Household Income
-35k-65k,1 Vehicle,Observed,369190,income,Household Income
-4 Person HH,1 Vehicle,Model,158292,size,Household Size
-4 Person HH,1 Vehicle,Observed,89872,size,Household Size
-5+ Person HH,1 Vehicle,Model,96582,size,Household Size
-5+ Person HH,1 Vehicle,Observed,75161,size,Household Size
-65k-100k,1 Vehicle,Model,141696,income,Household Income
-65k-100k,1 Vehicle,Observed,123189,income,Household Income
-0 Workers,2 Vehicles,Model,265103,workers,Number of Workers
-0 Workers,2 Vehicles,Observed,298606,workers,Number of Workers
-0-35k,2 Vehicles,Model,373716,income,Household Income
-0-35k,2 Vehicles,Observed,319023,income,Household Income
-1 Person HH,2 Vehicles,Model,96219,size,Household Size
-1 Person HH,2 Vehicles,Observed,90688,size,Household Size
-1 Worker,2 Vehicles,Model,439251,workers,Number of Workers
-1 Worker,2 Vehicles,Observed,366117,workers,Number of Workers
-100k+,2 Vehicles,Model,216765,income,Household Income
-100k+,2 Vehicles,Observed,286124,income,Household Income
-2 Person HH,2 Vehicles,Model,535309,size,Household Size
-2 Person HH,2 Vehicles,Observed,602798,size,Household Size
-2 Workers,2 Vehicles,Model,559749,workers,Number of Workers
-2 Workers,2 Vehicles,Observed,659239,workers,Number of Workers
-3 Person HH,2 Vehicles,Model,368218,size,Household Size
-3 Person HH,2 Vehicles,Observed,247613,size,Household Size
-3+ Workers,2 Vehicles,Model,102825,workers,Number of Workers
-3+ Workers,2 Vehicles,Observed,79116,workers,Number of Workers
-35k-65k,2 Vehicles,Model,506261,income,Household Income
-35k-65k,2 Vehicles,Observed,462313,income,Household Income
-4 Person HH,2 Vehicles,Model,259195,size,Household Size
-4 Person HH,2 Vehicles,Observed,268944,size,Household Size
-5+ Person HH,2 Vehicles,Model,107987,size,Household Size
-5+ Person HH,2 Vehicles,Observed,193034,size,Household Size
-65k-100k,2 Vehicles,Model,270186,income,Household Income
-65k-100k,2 Vehicles,Observed,335618,income,Household Income
-0 Workers,3 Vehicles,Model,80337,workers,Number of Workers
-0 Workers,3 Vehicles,Observed,49199,workers,Number of Workers
-0-35k,3 Vehicles,Model,94652,income,Household Income
-0-35k,3 Vehicles,Observed,61993,income,Household Income
-1 Person HH,3 Vehicles,Model,16289,size,Household Size
-1 Person HH,3 Vehicles,Observed,13541,size,Household Size
-1 Worker,3 Vehicles,Model,87132,workers,Number of Workers
-1 Worker,3 Vehicles,Observed,78652,workers,Number of Workers
-100k+,3 Vehicles,Model,87100,income,Household Income
-100k+,3 Vehicles,Observed,127729,income,Household Income
-2 Person HH,3 Vehicles,Model,71420,size,Household Size
-2 Person HH,3 Vehicles,Observed,98012,size,Household Size
-2 Workers,3 Vehicles,Model,110572,workers,Number of Workers
-2 Workers,3 Vehicles,Observed,190923,workers,Number of Workers
-3 Person HH,3 Vehicles,Model,144140,size,Household Size
-3 Person HH,3 Vehicles,Observed,141125,size,Household Size
-3+ Workers,3 Vehicles,Model,127700,workers,Number of Workers
-3+ Workers,3 Vehicles,Observed,139007,workers,Number of Workers
-35k-65k,3 Vehicles,Model,127644,income,Household Income
-35k-65k,3 Vehicles,Observed,132407,income,Household Income
-4 Person HH,3 Vehicles,Model,124889,size,Household Size
-4 Person HH,3 Vehicles,Observed,107816,size,Household Size
-5+ Person HH,3 Vehicles,Model,49003,size,Household Size
-5+ Person HH,3 Vehicles,Observed,97287,size,Household Size
-65k-100k,3 Vehicles,Model,96345,income,Household Income
-65k-100k,3 Vehicles,Observed,135652,income,Household Income
-0 Workers,4+ Vehicles,Model,26946,workers,Number of Workers
-0 Workers,4+ Vehicles,Observed,15094,workers,Number of Workers
-0-35k,4+ Vehicles,Model,33545,income,Household Income
-0-35k,4+ Vehicles,Observed,17166,income,Household Income
-1 Person HH,4+ Vehicles,Model,7835,size,Household Size
-1 Person HH,4+ Vehicles,Observed,5205,size,Household Size
-1 Worker,4+ Vehicles,Model,26236,workers,Number of Workers
-1 Worker,4+ Vehicles,Observed,18710,workers,Number of Workers
-100k+,4+ Vehicles,Model,45742,income,Household Income
-100k+,4+ Vehicles,Observed,63473,income,Household Income
-2 Person HH,4+ Vehicles,Model,16688,size,Household Size
-2 Person HH,4+ Vehicles,Observed,23003,size,Household Size
-2 Workers,4+ Vehicles,Model,28229,workers,Number of Workers
-2 Workers,4+ Vehicles,Observed,47581,workers,Number of Workers
-3 Person HH,4+ Vehicles,Model,27142,size,Household Size
-3 Person HH,4+ Vehicles,Observed,29443,size,Household Size
-3+ Workers,4+ Vehicles,Model,61841,workers,Number of Workers
-3+ Workers,4+ Vehicles,Observed,97538,workers,Number of Workers
-35k-65k,4+ Vehicles,Model,35343,income,Household Income
-35k-65k,4+ Vehicles,Observed,40922,income,Household Income
-4 Person HH,4+ Vehicles,Model,57841,size,Household Size
-4 Person HH,4+ Vehicles,Observed,55753,size,Household Size
-5+ Person HH,4+ Vehicles,Model,33746,size,Household Size
-5+ Person HH,4+ Vehicles,Observed,65517,size,Household Size
-65k-100k,4+ Vehicles,Model,28622,income,Household Income
-65k-100k,4+ Vehicles,Observed,57361,income,Household Income
+MainGroup,StackGroup,SubGroup,Value,Category,Title,xlabel
+0-35k,0 Vehicles,Model,330492,income,Household Income,0
+0-35k,0 Vehicles,Observed,345019,income,Household Income,1
+100k+,0 Vehicles,Model,16287,income,Household Income,2
+100k+,0 Vehicles,Observed,12136,income,Household Income,3
+35k-65k,0 Vehicles,Model,87033,income,Household Income,4
+35k-65k,0 Vehicles,Observed,55743,income,Household Income,5
+65k-100k,0 Vehicles,Model,22618,income,Household Income,6
+65k-100k,0 Vehicles,Observed,18892,income,Household Income,7
+1 Person HH,0 Vehicles,Model,187164,size,Household Size,0
+1 Person HH,0 Vehicles,Observed,258159,size,Household Size,1
+2 Person HH,0 Vehicles,Model,81684,size,Household Size,2
+2 Person HH,0 Vehicles,Observed,86495,size,Household Size,3
+3 Person HH,0 Vehicles,Model,67882,size,Household Size,4
+3 Person HH,0 Vehicles,Observed,38328,size,Household Size,5
+4 Person HH,0 Vehicles,Model,59490,size,Household Size,6
+4 Person HH,0 Vehicles,Observed,25241,size,Household Size,7
+5+ Person HH,0 Vehicles,Model,60210,size,Household Size,8
+5+ Person HH,0 Vehicles,Observed,23566,size,Household Size,9
+0 Workers,0 Vehicles,Model,158888,workers,Number of Workers,0
+0 Workers,0 Vehicles,Observed,334760,workers,Number of Workers,1
+1 Worker,0 Vehicles,Model,220404,workers,Number of Workers,2
+1 Worker,0 Vehicles,Observed,62349,workers,Number of Workers,3
+2 Workers,0 Vehicles,Model,55854,workers,Number of Workers,4
+2 Workers,0 Vehicles,Observed,29260,workers,Number of Workers,5
+3+ Workers,0 Vehicles,Model,21284,workers,Number of Workers,6
+3+ Workers,0 Vehicles,Observed,5421,workers,Number of Workers,7
+0-35k,1 Vehicle,Model,785330,income,Household Income,0
+0-35k,1 Vehicle,Observed,769938,income,Household Income,1
+100k+,1 Vehicle,Model,98185,income,Household Income,2
+100k+,1 Vehicle,Observed,84398,income,Household Income,3
+35k-65k,1 Vehicle,Model,447819,income,Household Income,4
+35k-65k,1 Vehicle,Observed,369190,income,Household Income,5
+65k-100k,1 Vehicle,Model,141696,income,Household Income,6
+65k-100k,1 Vehicle,Observed,123189,income,Household Income,7
+1 Person HH,1 Vehicle,Model,684453,size,Household Size,0
+1 Person HH,1 Vehicle,Observed,694868,size,Household Size,1
+2 Person HH,1 Vehicle,Model,303772,size,Household Size,2
+2 Person HH,1 Vehicle,Observed,343404,size,Household Size,3
+3 Person HH,1 Vehicle,Model,229931,size,Household Size,4
+3 Person HH,1 Vehicle,Observed,143408,size,Household Size,5
+4 Person HH,1 Vehicle,Model,158292,size,Household Size,6
+4 Person HH,1 Vehicle,Observed,89872,size,Household Size,7
+5+ Person HH,1 Vehicle,Model,96582,size,Household Size,8
+5+ Person HH,1 Vehicle,Observed,75161,size,Household Size,9
+0 Workers,1 Vehicle,Model,331095,workers,Number of Workers,0
+0 Workers,1 Vehicle,Observed,873783,workers,Number of Workers,1
+1 Worker,1 Vehicle,Model,858895,workers,Number of Workers,2
+1 Worker,1 Vehicle,Observed,288183,workers,Number of Workers,3
+2 Workers,1 Vehicle,Model,221617,workers,Number of Workers,4
+2 Workers,1 Vehicle,Observed,164731,workers,Number of Workers,5
+3+ Workers,1 Vehicle,Model,61423,workers,Number of Workers,6
+3+ Workers,1 Vehicle,Observed,20018,workers,Number of Workers,7
+0-35k,2 Vehicles,Model,373716,income,Household Income,0
+0-35k,2 Vehicles,Observed,319023,income,Household Income,1
+100k+,2 Vehicles,Model,216765,income,Household Income,2
+100k+,2 Vehicles,Observed,286124,income,Household Income,3
+35k-65k,2 Vehicles,Model,506261,income,Household Income,4
+35k-65k,2 Vehicles,Observed,462313,income,Household Income,5
+65k-100k,2 Vehicles,Model,270186,income,Household Income,6
+65k-100k,2 Vehicles,Observed,335618,income,Household Income,7
+1 Person HH,2 Vehicles,Model,96219,size,Household Size,0
+1 Person HH,2 Vehicles,Observed,90688,size,Household Size,1
+2 Person HH,2 Vehicles,Model,535309,size,Household Size,2
+2 Person HH,2 Vehicles,Observed,602798,size,Household Size,3
+3 Person HH,2 Vehicles,Model,368218,size,Household Size,4
+3 Person HH,2 Vehicles,Observed,247613,size,Household Size,5
+4 Person HH,2 Vehicles,Model,259195,size,Household Size,6
+4 Person HH,2 Vehicles,Observed,268944,size,Household Size,7
+5+ Person HH,2 Vehicles,Model,107987,size,Household Size,8
+5+ Person HH,2 Vehicles,Observed,193034,size,Household Size,9
+0 Workers,2 Vehicles,Model,265103,workers,Number of Workers,0
+0 Workers,2 Vehicles,Observed,298606,workers,Number of Workers,1
+1 Worker,2 Vehicles,Model,439251,workers,Number of Workers,2
+1 Worker,2 Vehicles,Observed,366117,workers,Number of Workers,3
+2 Workers,2 Vehicles,Model,559749,workers,Number of Workers,4
+2 Workers,2 Vehicles,Observed,659239,workers,Number of Workers,5
+3+ Workers,2 Vehicles,Model,102825,workers,Number of Workers,6
+3+ Workers,2 Vehicles,Observed,79116,workers,Number of Workers,7
+0-35k,3 Vehicles,Model,94652,income,Household Income,0
+0-35k,3 Vehicles,Observed,61993,income,Household Income,1
+100k+,3 Vehicles,Model,87100,income,Household Income,2
+100k+,3 Vehicles,Observed,127729,income,Household Income,3
+35k-65k,3 Vehicles,Model,127644,income,Household Income,4
+35k-65k,3 Vehicles,Observed,132407,income,Household Income,5
+65k-100k,3 Vehicles,Model,96345,income,Household Income,6
+65k-100k,3 Vehicles,Observed,135652,income,Household Income,7
+1 Person HH,3 Vehicles,Model,16289,size,Household Size,0
+1 Person HH,3 Vehicles,Observed,13541,size,Household Size,1
+2 Person HH,3 Vehicles,Model,71420,size,Household Size,2
+2 Person HH,3 Vehicles,Observed,98012,size,Household Size,3
+3 Person HH,3 Vehicles,Model,144140,size,Household Size,4
+3 Person HH,3 Vehicles,Observed,141125,size,Household Size,5
+4 Person HH,3 Vehicles,Model,124889,size,Household Size,6
+4 Person HH,3 Vehicles,Observed,107816,size,Household Size,7
+5+ Person HH,3 Vehicles,Model,49003,size,Household Size,8
+5+ Person HH,3 Vehicles,Observed,97287,size,Household Size,9
+0 Workers,3 Vehicles,Model,80337,workers,Number of Workers,0
+0 Workers,3 Vehicles,Observed,49199,workers,Number of Workers,1
+1 Worker,3 Vehicles,Model,87132,workers,Number of Workers,2
+1 Worker,3 Vehicles,Observed,78652,workers,Number of Workers,3
+2 Workers,3 Vehicles,Model,110572,workers,Number of Workers,4
+2 Workers,3 Vehicles,Observed,190923,workers,Number of Workers,5
+3+ Workers,3 Vehicles,Model,127700,workers,Number of Workers,6
+3+ Workers,3 Vehicles,Observed,139007,workers,Number of Workers,7
+0-35k,4+ Vehicles,Model,33545,income,Household Income,0
+0-35k,4+ Vehicles,Observed,17166,income,Household Income,1
+100k+,4+ Vehicles,Model,45742,income,Household Income,2
+100k+,4+ Vehicles,Observed,63473,income,Household Income,3
+35k-65k,4+ Vehicles,Model,35343,income,Household Income,4
+35k-65k,4+ Vehicles,Observed,40922,income,Household Income,5
+65k-100k,4+ Vehicles,Model,28622,income,Household Income,6
+65k-100k,4+ Vehicles,Observed,57361,income,Household Income,7
+1 Person HH,4+ Vehicles,Model,7835,size,Household Size,0
+1 Person HH,4+ Vehicles,Observed,5205,size,Household Size,1
+2 Person HH,4+ Vehicles,Model,16688,size,Household Size,2
+2 Person HH,4+ Vehicles,Observed,23003,size,Household Size,3
+3 Person HH,4+ Vehicles,Model,27142,size,Household Size,4
+3 Person HH,4+ Vehicles,Observed,29443,size,Household Size,5
+4 Person HH,4+ Vehicles,Model,57841,size,Household Size,6
+4 Person HH,4+ Vehicles,Observed,55753,size,Household Size,7
+5+ Person HH,4+ Vehicles,Model,33746,size,Household Size,8
+5+ Person HH,4+ Vehicles,Observed,65517,size,Household Size,9
+0 Workers,4+ Vehicles,Model,26946,workers,Number of Workers,0
+0 Workers,4+ Vehicles,Observed,15094,workers,Number of Workers,1
+1 Worker,4+ Vehicles,Model,26236,workers,Number of Workers,2
+1 Worker,4+ Vehicles,Observed,18710,workers,Number of Workers,3
+2 Workers,4+ Vehicles,Model,28229,workers,Number of Workers,4
+2 Workers,4+ Vehicles,Observed,47581,workers,Number of Workers,5
+3+ Workers,4+ Vehicles,Model,61841,workers,Number of Workers,6
+3+ Workers,4+ Vehicles,Observed,97538,workers,Number of Workers,7

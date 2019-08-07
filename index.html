@@ -32,7 +32,7 @@
             </div>
             <div class="col-md-6" style="display: flex; align-items:center;">
               <!-- <h3><img src='data/images/cmap_shortid_margins_CMYK-01.png' height="70px" style="float:left"></h3> -->
-              <h3>Activity Based Model (ABM) Calibration and Validation Report</h3> 
+              <h3>Activity Based Model (ABM) Calibration and Validation Report</h3>
               </div>
             <div class="col-md-4" style="display: flex; align-items:center; margin-top: 5px;">
               August 2019 Release
@@ -43,7 +43,7 @@
               </div>
         </nav>
         <div class="col-md-12">
-        
+
           <br><br<br><br><br>
           <br>
           <div class="row">
@@ -434,7 +434,6 @@
         <div class="col-md-3">
           <div class="colborder"></div><!-- end -->
           <h4>Household Characteristics</h4>
-          <div id="pumsLegend"></div>
           <br>
           <select id="catPopSyn">
             <option value="age">Head of Household Age</option>
@@ -443,7 +442,9 @@
             <option value="size">Household Size</option>
             <option value="veh">Vehicles in Household</option>
           </select><!-- end -->
-          <br><br><br>
+          <br><br>
+          <div id="pumsLegend"></div>
+          <br>
           <br>
           <br>
           <p class="small">
@@ -474,6 +475,7 @@
             <option value="children">Children</option>
             <option value="workers">Workers</option>
           </select>
+          <br>
           <br>
           <div id="stackedAdultLegend"></div>
 
@@ -1890,10 +1892,10 @@
   makeStackedChart_nodd2("data/csv33_tour_purposetype.csv", "cftitle", "tourstack");
 </script>
 <script>
-  makeStackedChart_4("data/csv3_aocrosstab_counts.csv", "#aoCat", "dtitle", "stackedbar");
+  makeStackedChart_4("data/csv3_aocrosstab_counts.csv", "#aoCat", "dtitle", "stackedbar","stackedAutoLegend");
 </script>
 <script>
-  makeStackedChart_4("data/csv40_PopSyn_CrossTab.csv", "#popsyn_ct", "popcttitle", "popsyncrosstab");
+  makeStackedChart_4("data/csv40_PopSyn_CrossTab.csv", "#popsyn_ct", "popcttitle", "popsyncrosstab","stackedAdultLegend");;
 </script>
 <script>
   makeChords('data/csv4_chord.csv', "modelChord", "obsChord");

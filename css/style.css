@@ -200,48 +200,18 @@ h3 {
   margin-bottom: 5px;
 }
 
-#accordionintro .panel-heading{
-    padding: 0;
-    border: none;
-    background: transparent;
-}
-
-#accordionintro .panel-title a{
-    display: block;
-    padding: 0px 50px 14px 30px;
-    font-size: 16px;
-    font-weight: bold;
-    color: black;
-    background: white;
-    position: relative;
-    border-bottom: none;
-    border-radius: 20px 20px 0 0;
-}
-
-#accordionintro .panel-title a.collapsed{
-    border-radius: 20px;
-}
-
-#accordionintro .panel-title a:before,
-#accordionintro .panel-title a.collapsed:before{
+#abouttoggle a:before,
+#abouttoggle a.collapsed:before{
     content: "\f106";
     font-family: fontawesome;
     font-size: 20px;
-    top: 12px;
-    right: 30px;
+    position: absolute;
+    top: 21px;
+    left: 60px;
 }
 
-#accordionintro .panel-title a.collapsed:before{
-    content: "\f107";
-}
-
-#accordionintro .panel-body{
-    font-size: 14px;
-    color: #555;
-    line-height: 25px;
-    padding: 20px 25px;
-    position: relative;
-    border: none;
+#abouttoggle a.collapsed:before{
+  content: "\f107";
 }
 
 .axis { font: 14px sans-serif; }

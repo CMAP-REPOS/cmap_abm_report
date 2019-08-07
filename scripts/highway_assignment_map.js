@@ -20,13 +20,25 @@
   });
     interstate_map.addLayer(baselayer2);
   
-  var hwy_lyr = L.geoJSON(hwy_fc, {
+  var hwy_lyr = L.geoJSON(hwy_clean, {
+    style: {
+      color: "grey",
+      weight: 3
+    },
     // style: baseStyle,
     onEachFeature: function(feature, layer) {
-        layer.bindPopup(feature.properties.intcorr_RDNM_TOLL_SEG_m),
-        layer.LINE = feature.properties.intcorr_RDNM_TOLL_SEG_m.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "");
+        layer.bindPopup(feature.properties.ROADNAME)
   }
   });
   hwy_lyr.addTo(interstate_map);
+
+  var cmap2 = L.geoJSON(cmaparea, {
+    style: {
+        color: "darkgrey",
+        fillOpacity: 0,
+        weight: 2
+    },
+    interactive: false
+}).addTo(interstate_map);
   
   

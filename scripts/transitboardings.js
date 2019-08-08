@@ -290,11 +290,9 @@ function metrastyle(feature) {
 // style: difference colors
 function getColor(d) {
     return d > 20 ?  '	#0D263F' :
-           d > 15  ? '		#163E66' :
-           d > 10  ? '#1C4E80' :
-           d > 5  ?  '#4A729A	':
-           d > 3   ?  '	#7896B4' :
-           d > 1   ?  '	#A6BACE	':
+           d > 15  ? '#1C4E80' :
+           d > 10  ?  '#4A729A	':
+           d > 5   ?  '	#A6BACE	':
            '#EBF0F5';
 }
 
@@ -302,16 +300,12 @@ function getDiffColor(d) {
     return d > 20 ?  '	#0D263F' :
     d > 15  ? '		#163E66' :
     d > 10  ? '#1C4E80' :
-    d > 5  ?  '#4A729A	':
-    d > 3   ?  '	#7896B4' :
-    d > 1   ?  '	#A6BACE	':
+    d > 5   ?  '	#A6BACE	':
            d < -20  ? '#670000' :
            d < -15  ? '#910000' :
            d < -10  ? '#D00000' :
-           d < -5   ? '#DA3434' :
-           d < -3   ? '#E46868' :
-           d < -1   ? '#F8D0D0' :
-           '#EBF0F5';
+           d < -5   ? '#F8D0D0' :
+           '#FAFCFF';
 }
 
 
@@ -380,7 +374,7 @@ var difflegend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
-    grades = [0,1,3,5,10,15,20],
+    grades = [0,5,10,15,20],
     labels = [],
     from, to;
 
@@ -398,17 +392,17 @@ legend.onAdd = function (map) {
 
 difflegend.onAdd = function (map) {
     var div = L.DomUtil.create('div', 'diff difflegend'),
-    grades = [-20,-15,-10,-5,-3,-1,1,3,5,10,15,20],
+    grades = [-20,-15,-10,-5,5,10,15,20],
     labels = [],
     from, to;
 
-    for (var i=0; i< grades.length; i++) {
+    for (var i=0; i< grades.length - 1; i++) {
         from = grades[i];
         to = grades[i + 1];
 
         labels.push(
             '<i style="background:' + getDiffColor(from + 1) + '"></i> ' +
-            from + (to ? '&ndash;' + to: '+'));
+            from + ' &ndash; ' + to);
     }
     div.innerHTML = "<h6>Share Difference</h6>" + labels.join('<br>');
     return div;

@@ -18,7 +18,7 @@ function makeStackedChart_nodd2(csv_file,dataTitle,divID){
 
     var g = d3.select("#" + divID).append("svg")
     .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "0 -100 800 600")
+    .attr("viewBox", "0 -10 900 500")
     .attr("align","center")
     .append("g")
     .attr("transform","translate(" + margin.left + "," + margin.top + ")");
@@ -35,7 +35,7 @@ function makeStackedChart_nodd2(csv_file,dataTitle,divID){
 
 
     var z = d3.scaleOrdinal()
-        .range(["#0E84AC", "#548E3F", "#D8BA37", "#5F7B88"]);
+        .range(["#0E84AC", "#548E3F", "#D8BA37"]);
 
         var stack = d3.stack()
         .offset(d3.stackOffsetExpand);
@@ -92,9 +92,9 @@ function makeStackedChart_nodd2(csv_file,dataTitle,divID){
       .data(function(d) { return d; })
       .enter().append("rect")
         .attr("class", "serie-rect")
-        .attr("transform", function(d) { return "translate(" + x0(d.data.MainGroup) + ",0)"; })
+        .attr("transform", function(d) { 
+          return "translate(" + x0(d.data.MainGroup) + ",0)"; })
         .attr("x", function(d) {
-          ////console.log(d);
           return x1(d.data.SubGroup); })
         .attr("y", function(d) {return y(d[1]); })
         .attr("height", function(d) { return y(d[0]) - y(d[1]); })
@@ -107,13 +107,8 @@ function makeStackedChart_nodd2(csv_file,dataTitle,divID){
 
     g.append("g")
         .attr("class", "axis")
-        .attr("transform", "translate(80," + height + ")")
+        .attr("transform", "translate(120," + height + ")")
         .call(d3.axisBottom(x1));
-
-    g.append("g")
-    .attr("class", "axis")
-    .attr("transform", "translate(160," + height + ")")
-    .call(d3.axisBottom(x1));
 
     g.append("g")
     .attr("class", "axis")
@@ -122,27 +117,22 @@ function makeStackedChart_nodd2(csv_file,dataTitle,divID){
 
     g.append("g")
     .attr("class", "axis")
-    .attr("transform", "translate(310," + height + ")")
+    .attr("transform", "translate(360," + height + ")")
     .call(d3.axisBottom(x1));
 
     g.append("g")
     .attr("class", "axis")
-    .attr("transform", "translate(385," + height + ")")
+    .attr("transform", "translate(485," + height + ")")
     .call(d3.axisBottom(x1));
 
     g.append("g")
         .attr("class", "axis")
-        .attr("transform", "translate(460," + height + ")")
+        .attr("transform", "translate(600," + height + ")")
         .call(d3.axisBottom(x1));
 
     g.append("g")
     .attr("class", "axis")
-    .attr("transform", "translate(535," + height + ")")
-    .call(d3.axisBottom(x1));
-
-    g.append("g")
-    .attr("class", "axis")
-    .attr("transform", "translate(610," + height + ")")
+    .attr("transform", "translate(725," + height + ")")
     .call(d3.axisBottom(x1));
 
     g.append("g")
@@ -165,7 +155,7 @@ function makeStackedChart_nodd2(csv_file,dataTitle,divID){
            .selectAll("text")
             .style("font-weight", "bold")
             .style("text-anchor", "middle")
-            .style("font-size","12px")
+            .style("font-size","16px")
             .attr("dx", "-.8em")
             .attr("dy", ".15em")
             .attr("transform", function(d) {

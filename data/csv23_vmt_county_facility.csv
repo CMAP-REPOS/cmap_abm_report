@@ -9,29 +9,26 @@ DuPage,Arterial,Mod,12828602.95,CMAP Region,CMAP Region
 DuPage,Interstate,Mod,8897885.05,CMAP Region,CMAP Region
 DuPage,Local,Mod,3353537.97,CMAP Region,CMAP Region
 Kane,Arterial,Mod,7963498.28,CMAP Region,CMAP Region
-Kane,Interstate,Mod,2312526.10,CMAP Region,CMAP Region
+Kane,Interstate,Mod,2312526.1,CMAP Region,CMAP Region
 Kane,Local,Mod,1743627.03,CMAP Region,CMAP Region
 Lake,Arterial,Mod,9815364.34,CMAP Region,CMAP Region
 Lake,Interstate,Mod,5413121.62,CMAP Region,CMAP Region
 Lake,Local,Mod,2568419.51,CMAP Region,CMAP Region
 McHenry,Arterial,Mod,5127833.81,CMAP Region,CMAP Region
 McHenry,Interstate,Mod,458320.05,CMAP Region,CMAP Region
-McHenry,Local,Mod,1238488.70,CMAP Region,CMAP Region
-Will,Arterial,Mod,8504508.30,CMAP Region,CMAP Region
+McHenry,Local,Mod,1238488.7,CMAP Region,CMAP Region
+Will,Arterial,Mod,8504508.3,CMAP Region,CMAP Region
 Will,Interstate,Mod,6385362.54,CMAP Region,CMAP Region
 Will,Local,Mod,2765053.74,CMAP Region,CMAP Region
-"Lake, IN",Interstate,Mod,6306226.83,Model Region,Model Region
-LaPorte,Interstate,Mod,2051547.72,Model Region,Model Region
-Porter,Interstate,Mod,2480801.88,Model Region,Model Region
 Chicago,Arterial,obs,14670101.37,CMAP Region,CMAP Region
-Chicago,Interstate,obs,11093800.00,CMAP Region,CMAP Region
+Chicago,Interstate,obs,11093800,CMAP Region,CMAP Region
 Chicago,Local,obs,3364509.59,CMAP Region,CMAP Region
 Suburban Cook,Arterial,obs,28112046.58,CMAP Region,CMAP Region
 Suburban Cook,Interstate,obs,21267268.49,CMAP Region,CMAP Region
 Suburban Cook,Local,obs,7129490.41,CMAP Region,CMAP Region
 DuPage,Arterial,obs,12370419.18,CMAP Region,CMAP Region
 DuPage,Interstate,obs,7736630.14,CMAP Region,CMAP Region
-DuPage,Local,obs,3134654.80,CMAP Region,CMAP Region
+DuPage,Local,obs,3134654.8,CMAP Region,CMAP Region
 Kane,Arterial,obs,6407789.04,CMAP Region,CMAP Region
 Kane,Interstate,obs,2150019.18,CMAP Region,CMAP Region
 Kane,Local,obs,2009331.51,CMAP Region,CMAP Region
@@ -44,6 +41,3 @@ McHenry,Local,obs,1611145.21,CMAP Region,CMAP Region
 Will,Arterial,obs,7385364.38,CMAP Region,CMAP Region
 Will,Interstate,obs,5680706.85,CMAP Region,CMAP Region
 Will,Local,obs,3305991.78,CMAP Region,CMAP Region
-"Lake, IN",Interstate,obs,4852200.00,Model Region,Model Region
-LaPorte,Interstate,obs,1255600.00,Model Region,Model Region
-Porter,Interstate,obs,1536100.00,Model Region,Model Region

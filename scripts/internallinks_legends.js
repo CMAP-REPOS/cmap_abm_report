@@ -182,7 +182,7 @@ var legend = d3.select("#vmtfacilityLegend").append("svg")
   .attr("width", 250)
 
 legend.selectAll("mydots")
-  .data(["#0E84AC", "#548E3F", "#D8BA37", "#5F7B88"])
+  .data(["#0E84AC", "#548E3F", "#D8BA37"])
   .enter()
   .append("circle")
   .attr("cx", 10)

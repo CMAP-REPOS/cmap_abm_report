@@ -30,10 +30,10 @@
             <div class="col-md-2" style="display: flex; align-items:center;">
               <img src='data/images/cmap_shortid_margins_RGB-01-01.png' height="30px">
             </div>
-            <div class="col-md-5" style="display: flex; align-items:center;">
+            <div class="col-md-6" style="display: flex; align-items:center;">
               <h3>Activity Based Model (ABM) Calibration and Validation Report</h3>
             </div>
-            <div class="col-md-3" style="display: flex; align-items:center; margin-top: 5px;">
+            <div class="col-md-2" style="display: flex; align-items:center; margin-top: 5px;">
             </div>
             <div class="col-md-2" style="display: flex; align-items:center;margin-top: 5px;">
               August 2019 Release &nbsp;&nbsp;
@@ -51,7 +51,7 @@
             <div class="col-md-10">
               <div class="panel-group" id="accordionintro" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-default">
-                  <div id="collapseIntro" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div id="collapseIntro" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
                       <p>
                         Activity-based models (ABMs) are founded on the idea that people’s travel behavior is a result of their daily activities; i.e., the things people need to accomplish dictate where, when, and how they travel, and with whom.
@@ -785,11 +785,11 @@
         </div>
         <div id="5" class="tab-pane container-fluid">
           <div class="row">
-            <div class="col-md-3"></div> <!-- end -->
+            <div class="col-md-1"></div> 
             <div class="col-md-6">
               <br />
               <br />
-              <h3>Trips by Mode</h3>
+              <h2>Trips by Mode</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non igitur de
                 improbo, sed de callido improbo quaerimus, qualis Q. Ampulla enim sit necne
@@ -801,37 +801,37 @@
               <br>
             </div>
           </div>
+          <br>
           <div class="row">
-            <div class="col col-md-3">
-              <div class="colborder"></div><!-- end -->
-              <h3>Trips by Mode</h3>
-              <svg id="modelegend"></svg><!-- end -->
-              <div class="small">
-                See more about transit in the <a href="#7" role="tab" data-toggle="tab">Transit</a> tab. <br>
-                <b>Sources</b><br>
-                Observed -Travel Tracker Survey, 2007-2008. <br>
-                Modeled- CMAP ABM - 2010 Scenario.
-                </p>
-                <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
-                <p>Hover over bars to compare trips by mode</p>
-              </div>
-            </div>
+              <div class="col-md-1"></div> 
+              <!-- <div class="col-md-2"></div> end -->
+              <div class="col-md-6">
+
+                </div>
+                </div>
+          <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col col-md-2">
+                  <br><br><br><br>
+                  <h3>Trips by Mode</h3>
+  
+                  <!-- <div class="colborder"></div>end -->
+                  <p>
+                      While the model tends to overestimate walk trips,
+                      all other modes match observed trips fairly well. The model maintains relative shares among mode categories.
+                    </p>
+                  <!-- <svg id="modelegend"></svg>end -->
+                  <div class="small">
+                    See more about transit in the <a href="#7" role="tab" data-toggle="tab">Transit</a> tab. <br>
+                  </div>
+                </div>
             <div class="col col-md-6">
-              <div class="colborder"></div><!-- end -->
+
+              <!-- <div class="colborder"></div>end -->
               <div id="stackedmode"></div>
             </div>
-            <div class="col col-md-3">
-              <div class="colborder"></div>
-              <div class="small">
-                <br />
-                <br />
-                <br />
-                <br />
-                <p>
-                  While the model tends to overestimate walk trips,
-                  all other modes match observed trips fairly well. The model maintains relative shares among mode categories.
-                </p>
-              </div>
+
+            <div class="col col-md-2">
             </div>
             <!-- <div class="col col-md-4" align = "center">
             <div class="colborder"></div>
@@ -842,151 +842,132 @@
           </div>
 
           <div class="row">
-            <br />
-            <br />
-            <div class="col col-md-3">
-              <div class="colborder"></div><!-- end -->
-              <h3>Trips by Person Type and Mode</h3>
-              <select id="catModePer">
-                <option value="All">All</option>
-                <option value="Full-time Worker">Full-time Worker</option>
-                <option value="Part-time Worker">Part-time Worker</option>
-                <option value="Non worker">Non worker</option>
-                <option value="Non-working senior">Non-working senior</option>
-                <option value="Preschool">Preschool</option>
-                <option value="Student 16+">Student 16+</option>
-                <option value="Student under 16 years">Student under 16 years</option>
-                <option value="University Student">University Student</option>
-              </select>
-              <div id="tripspersonLegend"></div>
-              <div class="small" style="margin-top: 20px;">
-                Single person trips only. <br>
-                <b>Sources</b><br>
-                Observed -Travel Tracker Survey, 2007-2008. <br>
-                Modeled- CMAP ABM - 2010 Scenario. <br>
-              </div><br>
-              <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
-              <p class="small">Select person type from dropdown to view observed and model comparison</p>
-            </div>
+              <div class="col-md-1"></div> <!-- end -->
+              <div class="col-md-6">
+
+                </div>
+                </div>
+          <div class="row">
+              <div class="col col-md-1">
+                </div>
+                <div class="col col-md-2">
+                    <!-- <div class="colborder"></div>end -->
+                    <br><br><br><br><br>
+                    <h3>Trips by Person Type and Mode</h3>
+    
+                    <p>
+                        Modeled trip modes for non-student person types appear to be
+                        very close to observed trips modes. Though student trips do not
+                        seem to be reflected as accurately, they make up a small fraction
+                        of all trips. In many cases, modeled student trips are closer to the
+                        observed trips, in terms of number of trips, than other person types.
+                      </p>
+                      <select id="catModePer">
+                          <option value="All">All</option>
+                          <option value="Full-time Worker">Full-time Worker</option>
+                          <option value="Part-time Worker">Part-time Worker</option>
+                          <option value="Non worker">Non worker</option>
+                          <option value="Non-working senior">Non-working senior</option>
+                          <option value="Preschool">Preschool</option>
+                          <option value="Student 16+">Student 16+</option>
+                          <option value="Student under 16 years">Student under 16 years</option>
+                          <option value="University Student">University Student</option>
+                        </select>
+                    <div id="tripspersonLegend"></div>
+                    <div class="small" style="margin-top: 20px;">
+                      Single person trips only. <br>
+                    </div><br>
+                  </div>
             <div class="col col-md-6">
               <div class="colborder"></div><!-- end -->
+
               <div id="ModebyPerson"></div>
             </div>
-            <div class="col col-md-3">
-              <div class="colborder"></div>
-              <div class="small">
-                <br />
-                <br />
-                <br />
-                <br />
-                <p>
-                  Modeled trip modes for non-student person types appear to be
-                  very close to observed trips modes. Though student trips do not
-                  seem to be reflected as accurately, they make up a small fraction
-                  of all trips. In many cases, modeled student trips are closer to the
-                  observed trips, in terms of number of trips, than other person types.
-                </p>
-              </div>
-            </div>
+
+
           </div>
+
           <div class="row">
-            <div class="col-md-3"></div> <!-- end -->
-            <div class="col-md-6">
-              <br />
-              <br />
-            </div>
-          </div>
+              <div class="col-md-1"></div> <!-- end -->
+              <div class="col-md-6">
+
+                </div>
+                </div>
           <div class="row">
-            <br />
-            <br />
-            <div class="col col-md-3">
-              <div class="colborder"></div><!-- end -->
-              <h3>Trips by Household Income and Mode</h3>
-              <select id="catModeInc">
-                <option value="All">All</option>
-                <option value="Less than $35k">Less than $35k</option>
-                <option value="$35k to $50k">$35k to $50k</option>
-                <option value="$50k to $75k">$50k to $75k</option>
-                <option value="$75k to $100K">$75k to $100K</option>
-                <option value="More than $100k">More than $100k</option>
-              </select>
-              <div id="tripsbyincomeLegend"></div>
-              <div class="small" style="margin-top: 80px;">
-                <b>Sources</b><br>
-                Observed -Travel Tracker Survey, 2007-2008. <br>
-                Modeled- CMAP ABM - 2010 Scenario. <br>
-              </div><br>
-              <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
-              <p class="small">Select household income bracket from dropdown to view observed and model comparison</p>
-            </div>
+              <div class="col col-md-1">
+                </div>
+                <div class="col col-md-2">
+                    <br><br><br><br><br>
+                  <!-- <div class="colborder"></div>end -->
+                  <h3>Trips by Household Income and Mode</h3>
+    
+                  <p>
+                      The model does overestimate lower income trips and underestimate higher income trips, but middle income trips compare well to the observed trips. For all household income categories, the mode trends are in agreement with the
+                      observed data.
+                    </p>
+                  <div id="tripsbyincomeLegend"></div>
+                  <div class="small" style="margin-top: 80px;">
+                  </div><br>
+                </div>
             <div class="col col-md-6">
               <div class="colborder"></div><!-- end -->
+              <select id="catModeInc">
+                  <option value="All">All</option>
+                  <option value="Less than $35k">Less than $35k</option>
+                  <option value="$35k to $50k">$35k to $50k</option>
+                  <option value="$50k to $75k">$50k to $75k</option>
+                  <option value="$75k to $100K">$75k to $100K</option>
+                  <option value="More than $100k">More than $100k</option>
+                </select>
               <div id="ModebyIncome"></div>
             </div>
-            <div class="col col-md-3">
-              <div class="colborder"></div>
-              <div class="small">
-                <br />
-                <br />
-                <br />
-                <br />
-                <p>
-                  The model does overestimate lower income trips and underestimate higher income trips, but middle income trips compare well to the observed trips. For all household income categories, the mode trends are in agreement with the
-                  observed data.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <br />
-            <br />
-            <div class="col col-md-3">
-              <div class="colborder"></div><!-- end -->
-              <h3>Trips by Purpose and Mode</h3>
 
-              <br>
-              <p>
-                See more about trip purpose in the <a href="#6" role="tab" data-toggle="tab">Trip Activities</a> tab.
-              </p>
-              <select id="catModePurp">
-                <option value="All">All</option>
-                <option value="Discretionary">Discretionary</option>
-                <option value="Eating Out">Eating Out</option>
-                <option value="Escort">Escort</option>
-                <option value="Maintenance">Maintenance</option>
-                <option value="School">School</option>
-                <option value="Shop">Shop</option>
-                <option value="University">University</option>
-                <option value="Visiting">Visiting</option>
-                <option value="Work">Work</option>
-                <option value="Work-based">Work-based</option>
-              </select>
-              <div id="tripspurposemodeLegend"></div>
-              <div class="small" style="margin-top: 80px;">
-                <b>Sources</b><br>
-                Observed -Travel Tracker Survey, 2007-2008. <br>
-                Modeled- CMAP ABM - 2010 Scenario. <br>
-              </div><br>
-              <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
-              <p class="small">Select trip purpose from dropdown to view observed and model comparison</p>
-            </div>
+
+          </div>
+
+          <div class="row">
+              <div class="col-md-1"></div> <!-- end -->
+              <div class="col-md-6">
+
+                </div>
+                </div>
+          <div class="row">
+              <div class="col-md-1"></div> <!-- end -->
+              <div class="col col-md-2">
+                  <!-- <div class="colborder"></div>end -->
+    
+                  <br>
+                  <h3>Trips by Purpose and Mode</h3>
+                  <p>
+                      Aside from a few, less impactful outliers such as transit and taxi trips for university activities, the model produces generally reasonable results for each trip purpose. The mode distributions of work and shop trips – the most
+                      common trip purposes and nearly half of all trips – have strong correlations to the observed trips.
+                    </p>
+                  <p>
+                    See more about trip purpose in the <a href="#6" role="tab" data-toggle="tab">Trip Activities</a> tab.
+                  </p>
+  
+                  <div id="tripspurposemodeLegend"></div>
+                  <div class="small" style="margin-top: 80px;">
+                  </div><br>
+                </div>
             <div class="col col-md-6">
               <div class="colborder"></div><!-- end -->
+              <select id="catModePurp">
+                  <option value="All">All</option>
+                  <option value="Discretionary">Discretionary</option>
+                  <option value="Eating Out">Eating Out</option>
+                  <option value="Escort">Escort</option>
+                  <option value="Maintenance">Maintenance</option>
+                  <option value="School">School</option>
+                  <option value="Shop">Shop</option>
+                  <option value="University">University</option>
+                  <option value="Visiting">Visiting</option>
+                  <option value="Work">Work</option>
+                  <option value="Work-based">Work-based</option>
+                </select>
               <div id="ModeByPurpose"></div>
             </div>
-            <div class="col col-md-3">
-              <div class="colborder"></div>
-              <div class="small">
-                <br />
-                <br />
-                <br />
-                <br />
-                <p>
-                  Aside from a few, less impactful outliers such as transit and taxi trips for university activities, the model produces generally reasonable results for each trip purpose. The mode distributions of work and shop trips – the most
-                  common trip purposes and nearly half of all trips – have strong correlations to the observed trips.
-                </p>
-              </div>
-            </div>
+
           </div>
         </div>
 

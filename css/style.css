@@ -200,6 +200,10 @@ h3 {
   margin-left: 10px;
 }
 
+.row {
+  margin-left: 10px !important;
+}
+
 #accordionintro .panel{
   border: none;
   box-shadow: none;

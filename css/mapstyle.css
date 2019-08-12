@@ -1,4 +1,4 @@
-#map {
+#map,#hhvalidationmap {
     width: 100%;
     height: 500px;
 }
@@ -49,8 +49,19 @@
     background: rgba(255,255,255,0.8);
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     padding: 6px 8px;
-
 }
+
+.difflegend1 {
+    width: 100px;
+    height: 170px;
+    line-height: 18px;
+    color: #555;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    padding: 6px 8px;
+}
+
 .difflegend i {
     width: 18px;
     height: 17px;

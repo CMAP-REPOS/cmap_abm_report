@@ -44,7 +44,7 @@ var h = ["", "03:00 AM to 05:00 AM",
 function make_multi_line_dd(csv, divID, catID, legendID) {
   var margin = {
       top: 50,
-      right: 30,
+      right: 100,
       bottom: 30,
       left: 60
     },
@@ -59,6 +59,8 @@ function make_multi_line_dd(csv, divID, catID, legendID) {
     .append("g")
     .attr("transform",
       "translate(" + margin.left + "," + margin.top + ")");
+
+
 
   //Read the data
   d3.csv(csv, function(data) {
@@ -87,17 +89,15 @@ function make_multi_line_dd(csv, divID, catID, legendID) {
     svg.append("g")
       .attr("class", "xaxis")
       .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x).ticks(40).tickFormat(function(d) {
-        return h[d]
+      .call(d3.axisBottom(x).ticks(40).tickFormat(function(d,i) {
+        return i%3 ? "" : h[d]
       }))
       .selectAll("text")
       .attr("y", 5)
       .attr("x", 9)
       .attr("dy", ".35em")
-      .attr("transform", "rotate(55)")
+      .attr("transform", "rotate(35)")
       .style("text-anchor", "start");
-
-
 
     // Add Y axis
     var y = d3.scaleLinear()
@@ -107,7 +107,7 @@ function make_multi_line_dd(csv, divID, catID, legendID) {
       .range([height, 0]);
     svg.append("g")
       .attr("class", "yaxis")
-      .call(d3.axisLeft(y));
+      .call(d3.axisLeft(y).tickFormat(d3.format(".0%")));
 
     // color palette
     var res = sumstat.map(function(d) {
@@ -115,15 +115,15 @@ function make_multi_line_dd(csv, divID, catID, legendID) {
     }) // list of group names
     var color = d3.scaleOrdinal()
       .domain(res)
-      .range(["#0E84AC", "#548E3F"])
+      .range(["#0E84AC","#2a4d59", "#6fdb48","#519c36"])
 
 
     //Create legend
     var ml_legend = d3.select("#" + legendID).append("svg")
-                      .attr('width', 300)
-                      .attr('height', 100)
+      .attr('width', 300)
+      .attr('height', 100)
 
-    ml_legend.append("line").attr("x1", 10).attr("y1", 20).attr("x2", 30).attr("y2", 20).style("stroke", "#548E3F").style("stroke-dasharray", "5,5")
+    ml_legend.append("line").attr("x1", 10).attr("y1", 20).attr("x2", 30).attr("y2", 20).style("stroke", "#519c36").style("stroke-width", 5).style("stroke-dasharray", "5,5")
     ml_legend.append("text")
       .attr("x", 35)
       .attr("y", 20)
@@ -132,20 +132,20 @@ function make_multi_line_dd(csv, divID, catID, legendID) {
       .style("font-family", "sans-serif")
       .attr("alignment-baseline", "middle")
 
-    ml_legend.append("line").attr("x1", 10).attr("y1", 40).attr("x2", 30).attr("y2", 40).style("stroke", "#548E3F").style("stroke-width", 5)
+    ml_legend.append("line").attr("x1", 10).attr("y1", 40).attr("x2", 30).attr("y2", 40).style("stroke", "#6fdb48").style("stroke-width", 5).style("stroke-dasharray", "5,5")
     ml_legend.append("text")
       .attr("x", 35)
       .attr("y", 40)
-      .text("Modeled Departure Time")
+      .text("Observed Arrival Time")
       .style("font-size", "14px")
       .style("font-family", "sans-serif")
       .attr("alignment-baseline", "middle")
 
-    ml_legend.append("line").attr("x1", 10).attr("y1", 60).attr("x2", 30).attr("y2", 60).style("stroke", "#0E84AC").style("stroke-dasharray", "5,5")
+    ml_legend.append("line").attr("x1", 10).attr("y1", 60).attr("x2", 30).attr("y2", 60).style("stroke", "#2a4d59").style("stroke-width", 5)
     ml_legend.append("text")
       .attr("x", 35)
       .attr("y", 60)
-      .text("Observed Arrival Time")
+      .text("Modeled Departure Time")
       .style("font-size", "14px")
       .style("font-family", "sans-serif")
       .attr("alignment-baseline", "middle")
@@ -213,11 +213,11 @@ function make_multi_line_dd(csv, divID, catID, legendID) {
       svg.append("g")
         .attr("class", "xaxis")
         .attr("transform", "translate(0," + height + ")")
-        .call(d3.axisBottom(x).ticks(40).tickFormat(function(d) {
-          return h[d]
+        .call(d3.axisBottom(x).ticks(40).tickFormat(function(d,i) {
+          return i%3 ? "" : h[d]
         }))
         .selectAll("text")
-        .attr("y",5)
+        .attr("y", 5)
         .attr("x", 9)
         .attr("dy", ".35em")
         .attr("transform", "rotate(55)")
@@ -232,7 +232,7 @@ function make_multi_line_dd(csv, divID, catID, legendID) {
 
       svg.append("g")
         .attr("class", "yaxis")
-        .call(d3.axisLeft(y));
+        .call(d3.axisLeft(y).tickFormat(d3.format(".0%")));
 
       // color palette
       var res = sumstat.map(function(d) {
@@ -240,7 +240,7 @@ function make_multi_line_dd(csv, divID, catID, legendID) {
       }) // list of group names
       var color = d3.scaleOrdinal()
         .domain(res)
-        .range(["#0E84AC", "#548E3F"])
+        .range(["#0E84AC","#2a4d59", "#6fdb48","#519c36"])
 
       // Draw the line
       var new_layer = svg.selectAll(".line")

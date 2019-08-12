@@ -1,64 +1,78 @@
-Index,Model 01,Survey 01,Category,Description,Title
-Drive alone free,12704350,13383548.76,All,All Drive alone free Trips,All
-Drive alone free,7179340,7718743.882,Full-time Worker,fulltime Drive alone free Trips,Full-time Worker
-Walk,3810225,2779967.096,All,All Walk Trips,All
-Drive alone free,1835950,1836287.696,Non worker,nonworker Drive alone free Trips,Non worker
-Transit,1572735,1420150.417,All,All Walk to transit Trips,All
-Drive alone free,1513240,1497646.71,Part-time Worker,parttime Drive alone free Trips,Part-time Worker
-Drive alone free,1501060,1456670.205,Non-working senior,Non-working senior Drive alone free Trips,Non-working senior
-Walk,1084200,885631.2348,Full-time Worker,fulltime Walk Trips,Full-time Worker
-Transit,1022435,794475.3406,Full-time Worker,fulltime Walk to transit Trips,Full-time Worker
-Walk,962300,637431.6475,Student under 16 years,nondrivingstudent Walk Trips,Student under 16 years
-School bus,878340,753207.1912,All,All School bus Trips,All
-School bus,718380,605154.6332,Student under 16 years,nondrivingstudent School bus Trips,Student under 16 years
-Walk,563595,463052.2411,Non worker,nonworker Walk Trips,Non worker
-Drive alone free,436565,552044.1971,University Student,university Drive alone free Trips,University Student
-Walk,319515,184819.3745,Part-time Worker,parttime Walk Trips,Part-time Worker
-Bike,309425,253806.2036,All,All Bike Trips,All
-Walk,266650,171002.818,Preschool,preschool Walk Trips,Preschool
-Drive alone pay,261210,389588.7272,All,All Drive alone pay Trips,All
-Walk,254505,182468.6518,Non-working senior,Non-working senior Walk Trips,Non-working senior
-Drive alone free,238195,322156.0737,Student 16+,driveagestudent Drive alone free Trips,Student 16+
-Transit,198335,144673.4327,Part-time Worker,parttime Walk to transit Trips,Part-time Worker
-Walk,190800,116841.9202,Student 16+,driveagestudent Walk Trips,Student 16+
-Drive alone pay,185590,332456.0315,Full-time Worker,fulltime Drive alone pay Trips,Full-time Worker
-Walk,168660,138719.208,University Student,university Walk Trips,University Student
-School bus,124490,98525.02145,Student 16+,driveagestudent School bus Trips,Student 16+
-Bike,123650,95009.70793,Full-time Worker,fulltime Bike Trips,Full-time Worker
-Transit,99100,151368.9298,Non worker,nonworker Walk to transit Trips,Non worker
-Taxi,89430,60047.86298,All,All Taxi Trips,All
-Transit,83250,112257.9503,University Student,university Walk to transit Trips,University Student
-Transit,76325,76713.13235,Student under 16 years,nondrivingstudent Walk to transit Trips,Student under 16 years
-Transit,59220,67368.82172,Student 16+,driveagestudent Walk to transit Trips,Student 16+
-Bike,54550,66286.3666,Student under 16 years,nondrivingstudent Bike Trips,Student under 16 years
-School bus,35470,36162.56639,Preschool,preschool School bus Trips,Preschool
-Taxi,34410,32379.97521,Full-time Worker,fulltime Taxi Trips,Full-time Worker
-Taxi,33940,5966.57591,University Student,university Taxi Trips,University Student
-Bike,33015,26230.85318,Part-time Worker,parttime Bike Trips,Part-time Worker
-Bike,31120,21145.34937,University Student,university Bike Trips,University Student
-Bike,28720,19284.53668,Non worker,nonworker Bike Trips,Non worker
-Transit,27085,64354.23022,Non-working senior,Non-working senior Walk to transit Trips,Non-working senior
-Drive alone pay,22730,22452.84252,Part-time Worker,parttime Drive alone pay Trips,Part-time Worker
-Drive alone pay,20740,15381.04916,Non worker,nonworker Drive alone pay Trips,Non worker
-Drive alone pay,19320,8082.381018,Non-working senior,Non-working senior Drive alone pay Trips,Non-working senior
-Bike,14425,4978.354652,Preschool,preschool Bike Trips,Preschool
-Bike,13765,10399.00663,Non-working senior,Non-working senior Bike Trips,Non-working senior
-Bike,10180,10472.02858,Student 16+,driveagestudent Bike Trips,Student 16+
-Drive alone pay,9555,10526.96233,University Student,university Drive alone pay Trips,University Student
-Transit,6985,8938.580296,Preschool,preschool Walk to transit Trips,Preschool
-Taxi,6250,2386.339932,Part-time Worker,parttime Taxi Trips,Part-time Worker
-Taxi,6210,7227.88295,Non worker,nonworker Taxi Trips,Non worker
-Taxi,4275,9094.552212,Non-working senior,Non-working senior Taxi Trips,Non-working senior
-Drive alone pay,3275,689.4606474,Student 16+,driveagestudent Drive alone pay Trips,Student 16+
-Taxi,2190,982.7395533,Student under 16 years,nondrivingstudent Taxi Trips,Student under 16 years
-Taxi,1485,624.5517692,Preschool,preschool Taxi Trips,Preschool
-Taxi,670,1385.245438,Student 16+,driveagestudent Taxi Trips,Student 16+
-School bus,0,0,Full-time Worker,fulltime School bus Trips,Full-time Worker
-School bus,0,0,Non worker,,Non worker
-School bus,0,0,Part-time Worker,parttime School bus Trips,Part-time Worker
-Drive alone free,0,0,Preschool,,Preschool
-Drive alone pay,0,0,Preschool,,Preschool
-School bus,0,0,Non-working senior,Non-working senior School bus Trips,Non-working senior
-Drive alone free,0,0,Student under 16 years,,Student under 16 years
-Drive alone pay,0,0,Student under 16 years,,Student under 16 years
-School bus,0,0,University Student,university School bus Trips,University Student
+Index,Model 01,Survey 01,Category,Title
+Drive alone free,13271835,13373886.92,All,All
+Drive alone free,7586910,7717476.286,Full-time worker,Full-time worker
+Walk,3880330,2780561.287,All,All
+Shared ride 3+ free,3074575,2608534.892,All,All
+Shared ride 2 free,2674540,3802078.973,All,All
+Drive alone free,1840760,1945980.201,Non-worker,Non-worker
+Drive alone free,1645480,1524442.243,Part-time worker,Part-time worker
+Drive alone free,1499625,1343515.81,Retired,Retired
+Walk,1134190,885631.2348,Full-time worker,Full-time worker
+Walk,965425,638025.8385,Student of non-driving age,Student of non-driving age
+Shared ride 3+ free,929840,874888.1419,Student of non-driving age,Student of non-driving age
+School bus,878250,747652.4905,All,All
+Shared ride 2 free,826335,1238486.815,Full-time worker,Full-time worker
+School bus,718260,605154.6332,Student of non-driving age,Student of non-driving age
+Shared ride 2 free,648380,767951.2675,Student of non-driving age,Student of non-driving age
+Shared ride 3+ free,611295,355150.1735,Non-worker,Non-worker
+Shared ride 3+ free,564530,449798.187,Full-time worker,Full-time worker
+Walk,563625,473230.1348,Non-worker,Non-worker
+Shared ride 3+ free,551040,581519.2534,Child too young for school,Child too young for school
+Drive alone free,455475,551444.5896,University student,University student
+Walk,332450,185639.6604,Part-time worker,Part-time worker
+Shared ride 2 free,331405,361277.8919,Child too young for school,Child too young for school
+Bike,315020,253806.2036,All,All
+Shared ride 2 free,307645,527127.2444,Non-worker,Non-worker
+Walk,266165,170342.7207,Child too young for school,Child too young for school
+Drive alone pay,256355,389588.7272,All,All
+Walk,255190,168806.433,Retired,Retired
+Drive alone free,243585,291027.7948,Student of driving age,Student of driving age
+Shared ride 2 free,192990,318733.055,Part-time worker,Part-time worker
+Walk,191030,120166.0567,Student of driving age,Student of driving age
+Drive alone pay,180390,332456.0315,Full-time worker,Full-time worker
+Walk,172255,138719.208,University student,University student
+Shared ride 3+ free,162770,161164.3014,Part-time worker,Part-time worker
+Shared ride 2 free,139415,210020.7735,Student of driving age,Student of driving age
+Shared ride 2 free,132050,227791.8211,Retired,Retired
+Bike,126300,95009.70793,Full-time worker,Full-time worker
+Shared ride 3+ free,125270,28681.93572,Retired,Retired
+School bus,124500,95395.85392,Student of driving age,Student of driving age
+Shared ride 2 free,96320,150690.1043,University student,University student
+Taxi,92530,60047.86298,All,All
+Shared ride 3+ free,78640,100286.2255,Student of driving age,Student of driving age
+Bike,54895,66286.3666,Student of non-driving age,Student of non-driving age
+Shared ride 3+ free,51190,57046.67408,University student,University student
+Taxi,36760,32379.97521,Full-time worker,Full-time worker
+School bus,35490,36162.56639,Child too young for school,Child too young for school
+Bike,34405,26230.85318,Part-time worker,Part-time worker
+Taxi,34000,5966.57591,University student,University student
+Shared ride 3+ pay,33070,6817.462447,All,All
+Bike,32155,21145.34937,University student,University student
+Shared ride 2 pay,31970,29145.81541,All,All
+Bike,28615,20288.39791,Non-worker,Non-worker
+Drive alone pay,22755,22452.84252,Part-time worker,Part-time worker
+Drive alone pay,20840,15758.58302,Non-worker,Non-worker
+Drive alone pay,19280,7704.84716,Retired,Retired
+Bike,14585,4978.354652,Child too young for school,Child too young for school
+Bike,13945,9395.145395,Retired,Retired
+Shared ride 2 pay,11235,20874.96088,Full-time worker,Full-time worker
+Bike,10120,10472.02858,Student of driving age,Student of driving age
+Drive alone pay,9795,10526.96233,University student,University student
+Shared ride 3+ pay,8215,2721.384563,Full-time worker,Full-time worker
+Taxi,7060,2386.339932,Part-time worker,Part-time worker
+Taxi,6195,10612.36534,Non-worker,Non-worker
+Shared ride 2 pay,5920,737.0899781,Student of non-driving age,Student of non-driving age
+Shared ride 3+ pay,5260,1254.984775,Non-worker,Non-worker
+Taxi,4245,5710.069822,Retired,Retired
+Shared ride 2 pay,3440,2154.531687,Non-worker,Non-worker
+Drive alone pay,3295,689.4606474,Student of driving age,Student of driving age
+Shared ride 2 pay,2780,1359.303241,University student,University student
+Taxi,2105,982.7395533,Student of non-driving age,Student of non-driving age
+Shared ride 2 pay,1975,1706.197499,Retired,Retired
+Shared ride 2 pay,1615,2020.045045,Part-time worker,Part-time worker
+Shared ride 2 pay,1600,293.6870818,Student of driving age,Student of driving age
+Taxi,1515,624.5517692,Child too young for school,Child too young for school
+Shared ride 3+ pay,1490,845.7524136,Part-time worker,Part-time worker
+Shared ride 3+ pay,1480,6.72572,Retired,Retired
+Shared ride 3+ pay,1355,1988.614975,University student,University student
+Taxi,650,1385.245438,Student of driving age,Student of driving age

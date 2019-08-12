@@ -79,8 +79,15 @@ function make_h_stacked(csv_file,divID, legendID){
             "</p><p style='color:rgb(166, 186, 206); font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(obsvalue) +
             "</p><p style='color:grey; font-size: 10px;'> observed </p>"
             )
-            .style("left", (x + 100) + "px")
-            .style("top",  (y + 100) + "px");
+            .style("left", x*0.7 + "px")
+            .style("top",  function() {
+              if (y < 120){
+                return (y*2  + "px")}
+              else {
+                return (y) + "px"
+            }
+          })
+
 
           // Highlight all rects of this subgroup with opacity 0.8. It is possible to select them since they have a specific class = their name.
           d3.selectAll("."+subgroupName)

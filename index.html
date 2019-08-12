@@ -1634,12 +1634,7 @@
 
               <h3>Highway Assignment</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non igitur de
-                improbo, sed de callido improbo quaerimus, qualis Q. Ampulla enim sit necne
-                sit, quis non iure irrideatur, si laboret? formarum quam civis excellens ad
-                factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-                qualis Q. Ampulla enim sit necne sit, quis non iure irrideatur, si laboret?
-                formarum quam civis excellen
+                During Highway Assignment, the individual trips developed by CT-RAMP are routed along the model network from origin to destination in order to estimate traffic flows and network conditions. When equilibrium is reached within the highway assignment (meaning that vehicles cannot change paths without negatively impacting travel times), vehicle class volumes for each link are retained to determine the demand on each link. These vehicle class volumes are then used to calculate standard measures such as vehicle miles of travel (VMT).
               </p>
               <br>
             </div>
@@ -1905,7 +1900,9 @@
           <div class="row">
             <div class="col-md-6">
               <div class="colborder"></div>
-              <table id="commute_model"></table>
+              <br />
+              <br />
+              <table id="commute_model" style="width:100%;"></table>
             </div>
           </div>
         </div>
@@ -2052,7 +2049,7 @@
   make_multi_line("rmse_line", "data/rmse.csv")
 </script>
 <script>
-  make_multi_line_dd("data/csv37_tours_todv2.csv", "tod_line", "#todcat", "tourtod_legend")
+  make_multi_line_dd("data/csv37_tours_todv3.csv", "tod_line", "#todcat", "tourtod_legend")
 </script>
 
 <script type="text/javascript" src="data/json/Combined_WGS.js"></script>

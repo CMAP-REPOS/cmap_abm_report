@@ -1,16 +1,16 @@
 Index,Model 01,Survey 01,Category,Description,Title
-$35k to $50k,34720.0,11628.589725460002,dtransit,Drive to transit $35k to $50k,Drive to transit
-$35k to $50k,374085.0,182618.87681420468,transit,Walk to transit $35k to $50k,Walk to transit
-$50k to $75k,24920.0,35374.38445650999,dtransit,Drive to transit $50k to $75k,Drive to transit
-$50k to $75k,174585.0,198471.74317316493,transit,Walk to transit $50k to $75k,Walk to transit
-$75k to $100K,21040.0,31652.431432749992,dtransit,Drive to transit $75k to $100K,Drive to transit
-$75k to $100K,105860.0,137248.4098940754,transit,Walk to transit $75k to $100K,Walk to transit
-Less than $35k,34230.0,15263.848377690001,dtransit,Drive to transit Less than $35k,Drive to transit
-Less than $35k,537740.0,499254.4578759689,transit,Walk to transit Less than $35k,Walk to transit
-More than $100k,55370.0,68141.11949170493,dtransit,Drive to transit More than $100k,Drive to transit
-More than $100k,225385.0,231848.85386114498,transit,Walk to transit More than $100k,Walk to transit
-$35k to $50k,408805.0,194247.46653966472,all,All $35k to $50k,All
-$50k to $75k,199505.0,233846.12762967485,all,All $50k to $75k,All
-$75k to $100K,126900.0,168900.8413268251,all,All $75k to $100K,All
-Less than $35k,571970.0,514518.3062536588,all,All Less than $35k,All
-More than $100k,280755.0,299989.9733528499,all,All More than $100k,All
+Less than $35k,34230,15263.84838,dtransit,Drive to transit Less than $35k,Drive to transit
+Less than $35k,537740,499254.4579,transit,Walk to transit Less than $35k,Walk to transit
+$35k to $50k,34720,11628.58973,dtransit,Drive to transit $35k to $50k,Drive to transit
+$35k to $50k,374085,182618.8768,transit,Walk to transit $35k to $50k,Walk to transit
+$50k to $75k,24920,35374.38446,dtransit,Drive to transit $50k to $75k,Drive to transit
+$50k to $75k,174585,198471.7432,transit,Walk to transit $50k to $75k,Walk to transit
+$75k to $100K,21040,31652.43143,dtransit,Drive to transit $75k to $100K,Drive to transit
+$75k to $100K,105860,137248.4099,transit,Walk to transit $75k to $100K,Walk to transit
+More than $100k,55370,68141.11949,dtransit,Drive to transit More than $100k,Drive to transit
+More than $100k,225385,231848.8539,transit,Walk to transit More than $100k,Walk to transit
+Less than $35k,571970,514518.3063,all,All Less than $35k,All
+$35k to $50k,408805,194247.4665,all,All $35k to $50k,All
+$50k to $75k,199505,233846.1276,all,All $50k to $75k,All
+$75k to $100K,126900,168900.8413,all,All $75k to $100K,All
+More than $100k,280755,299989.9734,all,All More than $100k,All

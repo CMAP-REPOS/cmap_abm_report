@@ -849,14 +849,14 @@
               <h3>Trips by Person Type and Mode</h3>
               <select id="catModePer">
                 <option value="All">All</option>
-                <option value="Full-time Worker">Full-time Worker</option>
-                <option value="Part-time Worker">Part-time Worker</option>
-                <option value="Non worker">Non worker</option>
-                <option value="Non-working senior">Non-working senior</option>
-                <option value="Preschool">Preschool</option>
-                <option value="Student 16+">Student 16+</option>
-                <option value="Student under 16 years">Student under 16 years</option>
-                <option value="University Student">University Student</option>
+                <option value="Full-time worker">Full-time Worker</option>
+                <option value="Part-time worker">Part-time Worker</option>
+                <option value="Non-worker">Non worker</option>
+                <option value="Retired">Non-working senior</option>
+                <option value="Child too young for school">Preschool</option>
+                <option value="Student of driving age">Student 16+</option>
+                <option value="Student of non-driving age">Student under 16 years</option>
+                <option value="University student">University Student</option>
               </select>
               <div id="tripspersonLegend"></div>
               <div class="small" style="margin-top: 20px;">
@@ -1520,7 +1520,7 @@
               </select>
               <div id="transittripsratioLegend"></div>
               <div class="small" style="margin-top:70px;">
-                Adults defined as 18 years and over. <br>
+                Adults defined as 16 years and over. <br>
                 See <a href="#3" role="tab" data-toggle="tab">Auto Ownership</a> tab as well.
                 <br><br>
                 <b>Sources</b><br>
@@ -1898,11 +1898,6 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-3" style="50%">
-              <div class="colborder"></div>
-              <br />
-              <br />
-            </div>
             <div class="col-md-6">
               <div class="colborder"></div>
               <br />
@@ -2057,11 +2052,7 @@
   make_multi_line_dd("data/csv37_tours_todv3.csv", "tod_line", "#todcat", "tourtod_legend")
 </script>
 
-<<<<<<< HEAD
-
-=======
 <script type="text/javascript" src="data/json/Combined_WGS.js"></script>
->>>>>>> 30628602e7d922300106fb684e80a42e76f1667f
 <script type="text/javascript" src="scripts/transitboardings.js"></script>
 <script type="text/javascript" src="scripts/hhvalidationmap.js"></script>
 <script type="text/javascript" src="scripts/intromap.js"></script>

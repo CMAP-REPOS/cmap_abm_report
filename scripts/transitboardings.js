@@ -3,10 +3,11 @@ var mapboxAccessToken = 'pk.eyJ1Ijoic2FyYWhjbWFwIiwiYSI6ImNqc3VzMDl0YzJocm80OXBn
 var lat = 41.8781;
 var long = -87.6298;
 
+var transitcenter = new L.LatLng(lat, long);
 
 var map = new L.Map("map", {
     zoomControl: false,
-    center: new L.LatLng(lat, long),
+    center: transitcenter,
     zoom: 8
 });
 
@@ -22,18 +23,11 @@ $("a[href='#7']").on('shown.bs.tab',function(e) {
 });
 map.addLayer(baselayer);
 
-var transitcenter = new L.LatLng(lat, long);
-//
-// function zoomTo(location, map) {
-// 	map.setView(location, 8);
-// 	}
-
 
 // settings for initial page load
 var whichone = 'modshare'
 var firsttime = true
 drawmap()
-
 
 // dropdown button events
 function updateview(buttonarg) {

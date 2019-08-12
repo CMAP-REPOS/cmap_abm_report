@@ -1544,20 +1544,87 @@
               <br />
               <br />
 
-              <h3>Population Synthesis</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non igitur de
-                improbo, sed de callido improbo quaerimus, qualis Q. Ampulla enim sit necne
-                sit, quis non iure irrideatur, si laboret? formarum quam civis excellens ad
-                factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-                qualis Q. Ampulla enim sit necne sit, quis non iure irrideatur, si laboret?
-                formarum quam civis excellen
-              </p>
-              <br>
-            </div>
+              <h3>Synthetic Household Validation</h3>
+
+            <p>
+              This map displays the difference between selected household attributes for modeled and observed data by U.S. Census Public Use Microdata Areas (PUMAs). <p>
+            </div></div>
+            <br><br>
+          <div class="row">  
+            <div class="col-md-3">
+                <div class="colborder"></div><!-- end -->
+                <br>
+              Choose from auto sufficiency, household size, household income and workers in household by clicking the category button and selecting the specific household type from the
+              dropdown.  Hover over each PUMA to display the values for modeled and observed data. </p><p>
+              <b>Example:</b> In the model, 22.7% of households in northeast Lake County are 1-person households.  According to PUMS, 27.2% of households in northeast Lake County are 1-person households.
+              This is a difference of -4.5%. </p>
+            </p>
+            <button type="button" class="btn btn-default btn-xs" id="introrecenter" value="Re-center map" onClick="zoomTo(center,map)" style="margin-left: 0px">Recenter Map</button>
+
+            <br><br>
+        <div class="small">
+            <b>Sources</b><br>
+            Observed – U.S. Census Bureau; American Community Survey (ACS); Five-Year Public Use Microdata Sample (PUMS) 2013-2017<br>
+            Modeled - CMAP ABM - 2010 Scenario. <br>
+          </div>
+      
+      </div>
+        <div class="col-md-7">
+            <div class="colborder"></div><!-- end -->
+            <div class="btn-group" role="group">
+            <div class="btn-group" role="group">
+            <button type="button" id="hhval1" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Household Size
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="hhval1">
+              <li><a class="dropdown-item">1-person households</a></li>
+              <li><a class="dropdown-item">2-person households</a></li>
+              <li><a class="dropdown-item">3-person households</a></li>
+              <li><a class="dropdown-item">4+ person households</a></li>
+            </ul>
+          </div></div>
+            <div class="btn-group" role="group">
+            <div class="btn-group" role="group">
+            <button type="button" id="hhval2" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Household Income
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="hhval2">
+              <li><a class="dropdown-item">Household income <35k</a></li>
+              <li><a class="dropdown-item">Household income 35k - 60k</a></li>
+              <li><a class="dropdown-item">Household income 60k - 100k</a></li>
+              <li><a class="dropdown-item">Household income > 100k</a></li>
+            </ul>
+          </div></div>
+            <div class="btn-group" role="group">
+            <div class="btn-group" role="group">
+            <button type="button" id="hhval3" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Workers in Household
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="hhval3">
+              <li><a class="dropdown-item">0-worker households</a></li>
+              <li><a class="dropdown-item">1-worker households</a></li>
+              <li><a class="dropdown-item">2-worker households</a></li>
+              <li><a class="dropdown-item">3+ worker households</a></li>
+            </ul>
+          </div></div>
+          <div class="btn-group" role="group">
+          <div class="btn-group" role="group">
+          <button type="button" id="hhval4" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Auto Sufficiency
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="hhval4">
+            <li><a class="dropdown-item">Households with 0 vehicles</a></li>
+            <li><a class="dropdown-item">Households where # vehicles < # workers</a></li>
+            <li><a class="dropdown-item">Households where # vehicles >= # workers</a></li>
+          </ul>
+        </div></div>
+        <div id="hhvalidationmap"></div>
+        <br/>
+
+
           </div>
         </div>
-
+</div>
         <div id="8" class="tab-pane container-fluid">
           <div class="row">
             <div class="col-md-3"></div>
@@ -1864,6 +1931,7 @@
 <script type="text/javascript" src="data/json/subzonegroups.js"></script>
 <script type="text/javascript" src="data/json/hwy_interstates.js"></script>
 <script type="text/javascript" src="data/json/counties.js"></script>
+<script type="text/javascript" src="data/json/countiesmini.js"></script>
 <script type="text/javascript" src="data/json/highways.js"></script>
 <script type="text/javascript" src="data/json/MetraLines.js"></script>
 <script type="text/javascript" src="data/json/ctalines.js"></script>
@@ -1989,8 +2057,13 @@
   make_multi_line_dd("data/csv37_tours_todv3.csv", "tod_line", "#todcat", "tourtod_legend")
 </script>
 
+<<<<<<< HEAD
 
+=======
+<script type="text/javascript" src="data/json/Combined_WGS.js"></script>
+>>>>>>> 30628602e7d922300106fb684e80a42e76f1667f
 <script type="text/javascript" src="scripts/transitboardings.js"></script>
+<script type="text/javascript" src="scripts/hhvalidationmap.js"></script>
 <script type="text/javascript" src="scripts/intromap.js"></script>
 <script type="text/javascript" src="scripts/transit_assignment_map.js"></script>
 <script type="text/javascript" src="scripts/highway_assignment_map.js"></script>

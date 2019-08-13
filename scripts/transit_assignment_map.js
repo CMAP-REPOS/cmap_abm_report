@@ -26,7 +26,7 @@ $("a[href='#9']").on('shown.bs.tab',function(e) {
 transit_map.addLayer(baselayer3);
 
 
-var metra = L.geoJson(metradata, {
+var metra1 = L.geoJson(metradata, {
     color: '#696969',
     opacity: 0.8,
     weight: 2,
@@ -36,7 +36,7 @@ var metra = L.geoJson(metradata, {
     }
 });
 
-var cta = L.geoJson(ctalines, {
+var cta1 = L.geoJson(ctalines, {
     color: "black",
     opacity: 0.8,
     weight: 2,
@@ -46,5 +46,11 @@ var cta = L.geoJson(ctalines, {
     }
 });
 
+<<<<<<< HEAD
 metra.addTo(transit_map);
 cta.addTo(transit_map);
+=======
+metra1.addTo(transit_map);
+cta1.addTo(transit_map);
+  
+>>>>>>> e996b70f9e2e3fb72ca5f4007c7a1be6391381ce

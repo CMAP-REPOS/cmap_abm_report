@@ -7,6 +7,15 @@
   width: 25%;
   max-width: 600px;
 }
+.image {
+  margin: 0;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 3.5%;
+}
 /* The overlay effect - lays on top of the container and over the image */
 .overlay {
   position: absolute;
@@ -26,6 +35,10 @@
 /* When you mouse over the container, fade in the overlay title */
 .container:hover .overlay {
   opacity: 1;
+}
+
+.container:hover .image {
+  opacity: 0;
 }
 
 table#commute_model{

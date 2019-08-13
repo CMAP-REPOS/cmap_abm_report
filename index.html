@@ -651,7 +651,7 @@
                 <div id="wflowinfo2" style="margin-left:70px;"></div>
               </div><br><br>
               <div id="wflowmap"></div>
-              <button type="button" class="btn btn-default btn-xs" id="wrecenter" value="Re-center map" onClick="zoomTo(wcenter,wflowmap)">Recenter Map</button>
+              <button type="button" class="btn btn-default btn-xs" id="wrecenter" value="Re-center map" onClick="zoomTo(center,wflowmap)">Recenter Map</button>
               <br>
               <img src="data/images/Cursor-Click-2-icon.png" width="20px">
               <span class="small">Hover over the chord diagram to see area boundaries on the map. Click on the map to see area name. Choose work flow geographies in the drop down menu to view numerical values for work trips.</span>
@@ -1546,85 +1546,89 @@
 
               <h3>Synthetic Household Validation</h3>
 
-            <p>
-              This map displays the difference between selected household attributes for modeled and observed data by U.S. Census Public Use Microdata Areas (PUMAs). <p>
-            </div></div>
-            <br><br>
-          <div class="row">  
-            <div class="col-md-3">
-                <div class="colborder"></div><!-- end -->
-                <br>
-              Choose from auto sufficiency, household size, household income and workers in household by clicking the category button and selecting the specific household type from the
-              dropdown.  Hover over each PUMA to display the values for modeled and observed data. </p><p>
-              <b>Example:</b> In the model, 22.7% of households in northeast Lake County are 1-person households.  According to PUMS, 27.2% of households in northeast Lake County are 1-person households.
-              This is a difference of -4.5%. </p>
-            </p>
-            <button type="button" class="btn btn-default btn-xs" id="introrecenter" value="Re-center map" onClick="zoomTo(center,map)" style="margin-left: 0px">Recenter Map</button>
-
-            <br><br>
-        <div class="small">
-            <b>Sources</b><br>
-            Observed – U.S. Census Bureau; American Community Survey (ACS); Five-Year Public Use Microdata Sample (PUMS) 2013-2017<br>
-            Modeled - CMAP ABM - 2010 Scenario. <br>
+              <p>
+                This map displays the difference between selected household attributes for modeled and observed data by U.S. Census Public Use Microdata Areas (PUMAs). <p>
+            </div>
           </div>
-      
-      </div>
-        <div class="col-md-7">
-            <div class="colborder"></div><!-- end -->
-            <div class="btn-group" role="group">
-            <div class="btn-group" role="group">
-            <button type="button" id="hhval1" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Household Size
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="hhval1">
-              <li><a class="dropdown-item">1-person households</a></li>
-              <li><a class="dropdown-item">2-person households</a></li>
-              <li><a class="dropdown-item">3-person households</a></li>
-              <li><a class="dropdown-item">4+ person households</a></li>
-            </ul>
-          </div></div>
-            <div class="btn-group" role="group">
-            <div class="btn-group" role="group">
-            <button type="button" id="hhval2" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Household Income
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="hhval2">
-              <li><a class="dropdown-item">Household income <35k</a></li>
-              <li><a class="dropdown-item">Household income 35k - 60k</a></li>
-              <li><a class="dropdown-item">Household income 60k - 100k</a></li>
-              <li><a class="dropdown-item">Household income > 100k</a></li>
-            </ul>
-          </div></div>
-            <div class="btn-group" role="group">
-            <div class="btn-group" role="group">
-            <button type="button" id="hhval3" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Workers in Household
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="hhval3">
-              <li><a class="dropdown-item">0-worker households</a></li>
-              <li><a class="dropdown-item">1-worker households</a></li>
-              <li><a class="dropdown-item">2-worker households</a></li>
-              <li><a class="dropdown-item">3+ worker households</a></li>
-            </ul>
-          </div></div>
-          <div class="btn-group" role="group">
-          <div class="btn-group" role="group">
-          <button type="button" id="hhval4" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Auto Sufficiency
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="hhval4">
-            <li><a class="dropdown-item">Households with 0 vehicles</a></li>
-            <li><a class="dropdown-item">Households where # vehicles < # workers</a></li>
-            <li><a class="dropdown-item">Households where # vehicles >= # workers</a></li>
-          </ul>
-        </div></div>
-        <div id="hhvalidationmap"></div>
-        <br/>
+          <br><br>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="colborder"></div><!-- end -->
+              <br>
+              Choose from auto sufficiency, household size, household income and workers in household by clicking the category button and selecting the specific household type from the
+              dropdown. Hover over each PUMA to display the values for modeled and observed data. </p>
+              <p>
+                <b>Example:</b> In the model, 22.7% of households in northeast Lake County are 1-person households. According to PUMS, 27.2% of households in northeast Lake County are 1-person households.
+                This is a difference of -4.5%. </p>
+              </p>
+              <button type="button" class="btn btn-default btn-xs" id="introrecenter" value="Re-center map" onClick="zoomTo(center,map1)" style="margin-left: 0px">Recenter Map</button>
+
+              <br><br>
+              <div class="small">
+                <b>Sources</b><br>
+                Observed – U.S. Census Bureau; American Community Survey (ACS); Five-Year Public Use Microdata Sample (PUMS) 2013-2017<br>
+                Modeled - CMAP ABM - 2010 Scenario. <br>
+              </div>
+
+            </div>
+            <div class="col-md-7">
+              <div class="colborder"></div><!-- end -->
+              <div class="btn-group" role="group">
+                <div class="btn-group" role="group">
+                  <button type="button" id="hhval1" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Household Size
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="hhval1">
+                    <li><a class="dropdown-item">1-person households</a></li>
+                    <li><a class="dropdown-item">2-person households</a></li>
+                    <li><a class="dropdown-item">3-person households</a></li>
+                    <li><a class="dropdown-item">4+ person households</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="btn-group" role="group">
+                <div class="btn-group" role="group">
+                  <button type="button" id="hhval2" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Household Income
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="hhval2">
+                    <li><a class="dropdown-item">Household income <35k</a> </li> <li><a class="dropdown-item">Household income 35k - 60k</a></li>
+                    <li><a class="dropdown-item">Household income 60k - 100k</a></li>
+                    <li><a class="dropdown-item">Household income > 100k</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="btn-group" role="group">
+                <div class="btn-group" role="group">
+                  <button type="button" id="hhval3" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Workers in Household
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="hhval3">
+                    <li><a class="dropdown-item">0-worker households</a></li>
+                    <li><a class="dropdown-item">1-worker households</a></li>
+                    <li><a class="dropdown-item">2-worker households</a></li>
+                    <li><a class="dropdown-item">3+ worker households</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="btn-group" role="group">
+                <div class="btn-group" role="group">
+                  <button type="button" id="hhval4" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Auto Sufficiency
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="hhval4">
+                    <li><a class="dropdown-item">Households with 0 vehicles</a></li>
+                    <li><a class="dropdown-item">Households where # vehicles < # workers</a> </li> <li><a class="dropdown-item">Households where # vehicles >= # workers</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div id="hhvalidationmap"></div>
+              <br />
 
 
+            </div>
           </div>
         </div>
-</div>
         <div id="8" class="tab-pane container-fluid">
           <div class="row">
             <div class="col-md-3"></div>
@@ -1634,7 +1638,9 @@
 
               <h3>Highway Assignment</h3>
               <p>
-                During Highway Assignment, the individual trips developed by CT-RAMP are routed along the model network from origin to destination in order to estimate traffic flows and network conditions. When equilibrium is reached within the highway assignment (meaning that vehicles cannot change paths without negatively impacting travel times), vehicle class volumes for each link are retained to determine the demand on each link. These vehicle class volumes are then used to calculate standard measures such as vehicle miles of travel (VMT).
+                During Highway Assignment, the individual trips developed by CT-RAMP are routed along the model network from origin to destination in order to estimate traffic flows and network conditions. When equilibrium is reached within the
+                highway assignment (meaning that vehicles cannot change paths without negatively impacting travel times), vehicle class volumes for each link are retained to determine the demand on each link. These vehicle class volumes are then used
+                to calculate standard measures such as vehicle miles of travel (VMT).
               </p>
               <br>
             </div>
@@ -1698,6 +1704,7 @@
               <h3>Comparison of Interstate Daily VMT By Auto and Truck</h3>
               <div id="vmtLegend"></div>
               <div id="interstate_map"></div><br>
+              <button type="button" class="btn btn-default btn-xs" id="wrecenter" value="Re-center map" onClick="zoomTo(center,interstate_map)">Recenter Map</button><br />
               <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Hover over bars to display values and highlight segment on map. Click on a highway segment on the map to show the name.</p>
             </div>
@@ -1810,6 +1817,7 @@
                 <div id="transitboardingLegend"></div>
               </section>
               <div id="transit_map"></div><br>
+              <button type="button" class="btn btn-default btn-xs" id="wrecenter" value="Re-center map" onClick="zoomTo(center,transit_map)">Recenter Map</button><br />
               <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Hover over bars to display values and highlight segment on map. CTA segments are highlighted in red, and Metra segments are highlighted in green.
                 Click on a transit segment on the map to show the name.</p>
@@ -2057,11 +2065,7 @@
   make_multi_line_dd("data/csv37_tours_todv3.csv", "tod_line", "#todcat", "tourtod_legend")
 </script>
 
-<<<<<<< HEAD
-
-=======
 <script type="text/javascript" src="data/json/Combined_WGS.js"></script>
->>>>>>> 30628602e7d922300106fb684e80a42e76f1667f
 <script type="text/javascript" src="scripts/transitboardings.js"></script>
 <script type="text/javascript" src="scripts/hhvalidationmap.js"></script>
 <script type="text/javascript" src="scripts/intromap.js"></script>
@@ -2123,7 +2127,7 @@
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Origin',	'1', '2','3','4',	'External',	'Total'], "#commute_model", "nopercent");
+    tabulate(data, ['Origin', '1', '2', '3', '4', 'External', 'Total'], "#commute_model", "nopercent");
   });
 
   d3.csv("data/aoCounts.csv", function(d, i, columns) {

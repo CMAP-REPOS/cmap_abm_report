@@ -1603,7 +1603,7 @@
               dropdown. Hover over each PUMA to display the values for modeled and observed data. </p>
               <p>
                 <b>Example:</b> In the model, 22.7% of households in northeast Lake County are 1-person households. According to PUMS, 27.2% of households in northeast Lake County are 1-person households.
-                This is a difference of -4.5%. </p>
+                This is a difference of -4.5 percentage points. </p>
               </p>
               <button type="button" class="btn btn-default btn-xs" id="introrecenter" value="Re-center map" onClick="zoomTo(center,map1)" style="margin-left: 0px">Recenter Map</button>
 
@@ -1611,7 +1611,7 @@
               <div class="small">
                 <b>Sources</b><br>
                 Observed – U.S. Census Bureau; American Community Survey (ACS); Five-Year Public Use Microdata Sample (PUMS) 2013-2017<br>
-                Modeled - CMAP ABM - 2010 Scenario. <br>
+                Modeled - CMAP ABM - 2015 Scenario. <br>
               </div>
 
             </div>
@@ -1636,7 +1636,8 @@
                     Household Income
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="hhval2">
-                    <li><a class="dropdown-item">Household income <35k</a> </li> <li><a class="dropdown-item">Household income 35k - 60k</a></li>
+                    <li><a class="dropdown-item">Household income <35k</a> </li> 
+                    <li><a class="dropdown-item">Household income 35k - 60k</a></li>
                     <li><a class="dropdown-item">Household income 60k - 100k</a></li>
                     <li><a class="dropdown-item">Household income > 100k</a></li>
                   </ul>
@@ -1662,7 +1663,8 @@
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="hhval4">
                     <li><a class="dropdown-item">Households with 0 vehicles</a></li>
-                    <li><a class="dropdown-item">Households where # vehicles < # workers</a> </li> <li><a class="dropdown-item">Households where # vehicles >= # workers</a></li>
+                    <li><a class="dropdown-item">Households where # vehicles < # workers</a> </li> 
+                    <li><a class="dropdown-item">Households where # vehicles >= # workers</a></li>
                   </ul>
                 </div>
               </div>
@@ -2119,7 +2121,7 @@
   make_multi_line_dd("data/csv37_tours_todv3.csv", "tod_line", "#todcat", "tourtod_legend")
 </script>
 
-<script type="text/javascript" src="data/json/Combined_WGS.js"></script>
+<script type="text/javascript" src="data/json/Combined_WGS_Updated.js"></script>
 <script type="text/javascript" src="scripts/transitboardings.js"></script>
 <script type="text/javascript" src="scripts/hhvalidationmap.js"></script>
 <script type="text/javascript" src="scripts/intromap.js"></script>

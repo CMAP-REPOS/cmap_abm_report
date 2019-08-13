@@ -46,11 +46,5 @@ var cta1 = L.geoJson(ctalines, {
     }
 });
 
-<<<<<<< HEAD
-metra.addTo(transit_map);
-cta.addTo(transit_map);
-=======
 metra1.addTo(transit_map);
 cta1.addTo(transit_map);
-  
->>>>>>> e996b70f9e2e3fb72ca5f4007c7a1be6391381ce

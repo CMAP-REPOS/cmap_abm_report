@@ -27,7 +27,7 @@ function makeGroupHBar_hover(csv_file,chartID, nogroups,dataDescription,dtitle,h
   .append("g")
   .attr("transform","translate(" + margin.left + "," + margin.top + ")");
 
-  var div = d3.select("body").append("div")
+  var div = d3.select(chartID).append("div")
   .attr("class", "vmttooltip2")
   .style("opacity", 0);
 

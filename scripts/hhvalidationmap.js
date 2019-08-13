@@ -64,7 +64,7 @@ var baseLayers1 = {
   	};
 
 var overlays1 = {
-  "Counties1": countiesmini
+  "Counties": countiesmini
 };
 
 

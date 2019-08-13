@@ -1,22 +1,22 @@
-Index,Model,Observed,Category,Title
-1 Person HH,991960,1062464,size,Size
-2 Person HH,1008873,1153713,size,Size
-3 Person HH,837313,599919,size,Size
-4 Person HH,659707,547628,size,Size
-5+ Person HH,347528,454568,size,Size
-0 Vehicles,456430,431792,veh,Vehicles
-1 Vehicle,1473030,1346716,veh,Vehicles
-2 Vehicles,1366928,1403079,veh,Vehicles
-3 Vehicles,405741,457783,veh,Vehicles
-4+ Vehicles,143252,178924,veh,Vehicles
-0-35k,1617735,1513141,income,Income
-100k+,464079,573862,income,Income
-35k-65k,1204100,1060577,income,Income
-65k-100k,559467,670714,income,Income
-0 Workers,862369,1571444,workers,Workers
-1 Worker,1631918,814013,workers,Workers
-2 Workers,976021,1091736,workers,Workers
-3+ Workers,375073,341101,workers,Workers
-16-34,1001178,783582,age,Age
-35-64,2209084,2262014,age,Age
-65 and older,634954,744752,age,Age
+Index,Model,Observed,Category,Description,Title
+1 Person HH,991960,1062464,size,Number of Households by size,Size
+2 Person HH,1008873,1153713,size,Number of Households by size,Size
+3 Person HH,837313,599919,size,Number of Households by size,Size
+4 Person HH,659707,547628,size,Number of Households by size,Size
+5+ Person HH,347528,454568,size,Number of Households by size,Size
+0 Vehicles,456430,431792,veh,Number of Households by vehicles in household,Vehicles
+1 Vehicle,1473030,1346716,veh,Number of Households by vehicles in household,Vehicles
+2 Vehicles,1366928,1403079,veh,Number of Households by vehicles in household,Vehicles
+3 Vehicles,405741,457783,veh,Number of Households by vehicles in household,Vehicles
+4+ Vehicles,143252,178924,veh,Number of Households by vehicles in household,Vehicles
+0-35k,1617735,1513141,income,Number of Households by household income,Income
+35k-65k,1204100,1060577,income,Number of Households by household income,Income
+65k-100k,559467,670714,income,Number of Households by household income,Income
+100k+,464079,573862,income,Number of Households by household income,Income
+0 Workers,862369,859222,workers,Number of Households by workers in household,Workers
+1 Worker,1631918,1529389,workers,Number of Households by workers in household,Workers
+2 Workers,976021,1141786,workers,Number of Households by workers in household,Workers
+3+ Workers,375073,287897,workers,Number of Households by workers in household,Workers
+16-34,1001178,783582,age,Number of Households by age of householder,Age
+35-64,2209084,2262014,age,Number of Households by age of householder,Age
+65 and older,634954,744752,age,Number of Households by age of householder,Age

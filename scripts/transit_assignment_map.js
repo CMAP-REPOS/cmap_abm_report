@@ -1,5 +1,11 @@
 // basic map
 var mapboxAccessToken = 'pk.eyJ1Ijoic2FyYWhjbWFwIiwiYSI6ImNqc3VzMDl0YzJocm80OXBnZjc2MGk4cGgifQ.S_UmPA1jm5pQPrCCLDs41Q';
+var lat= 41.8781;
+var long = -87.9298;
+var center = new L.LatLng(lat, long);
+function zoomTo(location, map) {
+  map.setView(location, 9);
+  }
 
 var transit_map = new L.Map("transit_map", {
     zoomControl: false,
@@ -20,7 +26,7 @@ $("a[href='#9']").on('shown.bs.tab',function(e) {
 transit_map.addLayer(baselayer3);
 
 
-var metra = L.geoJson(metradata, {
+var metra1 = L.geoJson(metradata, {
     color: '#696969',
     opacity: 0.8,
     weight: 2,
@@ -30,7 +36,7 @@ var metra = L.geoJson(metradata, {
     }
 });
 
-var cta = L.geoJson(ctalines, {
+var cta1 = L.geoJson(ctalines, {
     color: "black",
     opacity: 0.8,
     weight: 2,
@@ -40,6 +46,5 @@ var cta = L.geoJson(ctalines, {
     }
 });
 
-metra.addTo(transit_map);
-cta.addTo(transit_map);
-  
+metra1.addTo(transit_map);
+cta1.addTo(transit_map);

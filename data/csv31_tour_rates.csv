@@ -1,9 +1,9 @@
-group,model,survey,,,,,,,,,
-Part-time worker,0.91,1.34,,,,,,,,,
-Driving age student,0.88,1.19,,,,,,,,,
-University student,0.75,1.25,,,,,,,,,
-Full-time worker,1.13,1.23,,,,,,,,,
-Non-driving student,0.99,0.94,,,,,,,,,
-Non-working adult,0.79,0.97,,,,,,,,,
-Pre-school,0.62,0.6,,,,,,,,,
-Non-working senior,1.02,0.78,,,,,,,,,
+group,model,survey
+Part-time worker,0.92,1.34
+Driving age student,0.88,1.19
+University student,0.75,1.25
+Full-time worker,1.13,1.23
+Non-driving student,1,0.94
+Non-working adult,0.8,0.97
+Pre-school,0.62,0.6
+Non-working senior,1.02,0.78

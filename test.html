@@ -1,252 +1,526 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="css/chordStyles.css" rel="stylesheet">
+    </link>
+    <link rel="stylesheet" href="css/mapstyle.css">
+    </link>
+    <link rel="stylesheet" href="css/intromapstyle.css">
+    </link>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="">
+    </link>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- Load d3.js -->
-<script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+    <!-- jquery and bootstrap scripts -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<!-- Create a div where the graph will take place -->
-<select id="todcat">
-  <option value="all">All</option>
-  <option value="discretionary">Discretionary</option>
-  <option value="escort">Escort</option>
-  <option value="maintenance">Maintenance</option>
-  <option value="school">School</option>
-  <option value="university">University</option>
-  <option value="work">Work</option>
-  <option value="work-based">Work-based</option>
-</select><!-- end -->
-<div id="my_dataviz"></div>
+    <!-- D3 scripts -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-format.v1.min.js"></script>
 
+    <script src="https://underscorejs.org/underscore-min.js"></script>
+    <script src="https://rawgit.com/sghall/7859113/raw/422da4401f7d4fc0352a7c49961d24f03716be7a/gistfile1.js"></script>
 
-<script>
-  var h = ["", "03:00 AM to 05:00 AM",
-    "05:00 AM to 05:30 AM",
-    "05:30 AM to 06:00 AM",
-    "06:00 AM to 06:30 AM",
-    "06:30 AM to 07:00 AM",
-    "07:00 AM to 07:30 AM",
-    "07:30 AM to 08:00 AM",
-    "08:00 AM to 08:30 AM",
-    "08:30 AM to 09:00 AM",
-    "09:00 AM to 09:30 AM",
-    "09:30 AM to 10:00 AM",
-    "10:00 AM to 10:30 AM",
-    "10:30 AM to 11:00 AM",
-    "11:00 AM to 11:30 AM",
-    "11:30 AM to 12:00 PM",
-    "12:00 PM to 12:30 PM",
-    "12:30 PM to 01:00 PM",
-    "01:00 PM to 01:30 PM",
-    "01:30 PM to 02:00 PM",
-    "02:00 PM to 02:30 PM",
-    "02:30 PM to 03:00 PM",
-    "03:00 PM to 03:30 PM",
-    "03:30 PM to 04:00 PM",
-    "04:00 PM to 04:30 PM",
-    "04:30 PM to 05:00 PM",
-    "05:00 PM to 05:30 PM",
-    "05:30 PM to 06:00 PM",
-    "06:00 PM to 06:30 PM",
-    "06:30 PM to 07:00 PM",
-    "07:00 PM to 07:30 PM",
-    "07:30 PM to 08:00 PM",
-    "08:00 PM to 08:30 PM",
-    "08:30 PM to 09:00 PM",
-    "09:00 PM to 09:30 PM",
-    "09:30 PM to 10:00 PM",
-    "10:00 PM to 10:30 PM",
-    "10:30 PM to 11:00 PM",
-    "11:00 PM to 11:30 PM",
-    "11:30 PM to 12:00 AM",
-    "12:00 PM to 03:00 AM"
-  ]
-  //make_multi_line_dd("data/csv37_tours_tod.csv", "my_dataviz", "#todcat")
+  </head>
+  <body>
+    <div class="row">
+      <br>
+      <div class="col-md-3">
+        <div class="colborder"></div>
+        <h3>Household Detail</h3>
+        <h5><b>Distribution of Adults Per Household by <div id="popcttitle"></div></b></h5>
+        <br>
+        <select id="popsyn_ct">
+          <option value="children">Children</option>
+          <option value="workers">Workers</option>
+        </select>
+        <br>
+        <div id="stackedAdultLegend"></div>
 
-  function make_multi_line_dd(csv, divID, catID) {
+        <div class="small" style="margin-top: 0px;">
+          <b>Sources</b><br>
+          Observed - PUMS 2007-11 <br>
+          Modeled- PopSynIII <br>
+        </div>
+        <br>
+        <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
+        <p class="small">Select household attribute from dropdown to view observed and model comparison</p>
+      </div>
+      <div class="col col-md-6">
+        <div class="colborder"></div>
+        <center>
+          <div id="popsyncrosstab"></div>
+        </center>
+      </div>
+    </div>
+  </body>
+
+  <script>
+
+  var legendID = "stackedAdultLegend"
+
+  makeStackedChart_4("data/csv40_PopSyn_CrossTab.csv", "#popsyn_ct", "popcttitle", "popsyncrosstab","stackedAdultLegend");
+
+  // sets up a stacked barchart with dropdown and 4 categories/8 bars
+  function makeStackedChart_4(csv_file, catID, dataTitle, divID,legendID) {
+
+    var divText = document.getElementById(dataTitle);
+    catInt = d3.select(catID).property('value');
+    //console.log(catInt);
+
     var margin = {
-        top: 10,
-        right: 30,
-        bottom: 30,
-        left: 60
+        top: 80,
+        right: 50,
+        bottom: 50,
+        left: 80
       },
-      width = 700 - margin.left - margin.right,
-      height = 400 - margin.top - margin.bottom;
+      width = 800 - margin.left - margin.right,
+      height = 375 - margin.top - margin.bottom;
+    height2 = 400 - margin.top - margin.bottom;
 
-    // append the svg object to the body of the page
-    var svg = d3.select("#" + divID)
-      .append("svg")
+    var durations = 0;
+
+    var xlabel = ["Model","Observed","Model","Observed","Model","Observed","Model","Observed"]
+
+    let afterLoad = () => durations = 750;
+    var g = d3.select("#" + divID).append("svg")
       .attr("preserveAspectRatio", "xMinYMin meet")
-      .attr("viewBox", "0 0 800 600")
+      .attr("viewBox", "0 0 760 800")
+      .attr("align", "center")
       .append("g")
-      .attr("transform",
-        "translate(" + margin.left + "," + margin.top + ")");
 
-    //Read the data
-    d3.csv(csv, function(data) {
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    var x0 = d3.scaleBand()
+      .rangeRound([0, width])
+      .paddingInner(0.1);
 
+    var x1 = d3.scaleBand()
+      .padding(0.05);
+
+    var y = d3.scaleLinear()
+      .rangeRound([height, 0]);
+
+    var y1 = d3.scaleBand()
+
+    var z = d3.scaleOrdinal()
+      .range(['#0E84AC', '#D8BA37', '#5F7B88', '#9675B4', '#548E3F']);
+
+    var stack = d3.stack();
+
+
+    d3.csv(csv_file, function(error, data) {
+      if (error) throw error;
       catInt = d3.select(catID).property('value');
       d3.select(catID).on('change', update);
 
       var newdata = data.filter(function(d) {
-        return d.cat == catInt;
+        d.label = d.SubGroup
+        if (d.Category == catInt) {
+          return data;
+        };
       });
 
-      // group the data: I want to draw one line per group
-      var sumstat = d3.nest() // nest function allows to group the calculation per level of a factor
-        .key(function(d) {
-          if (d.cat == catInt) {
-            return d.subgroup
-          }
-        })
-        .entries(newdata);
+      newdata.forEach(function(d) {
+        d.Value = +d.Value;
+      })
 
-      // Add X axis --> it is a date format
-      var x = d3.scaleLinear()
-        .domain([1, 40])
-        .range([0, width]);
+      ////console.log("data", data);
+      ////console.log("data", newdata);
 
-      svg.append("g")
-        .attr("class", "xaxis")
-        .attr("transform", "translate(0," + height + ")")
-        .call(d3.axisBottom(x).ticks(40).tickFormat(function(d) {
-          return h[d]
+      x0.domain(newdata.map(function(d) {
+        return d.MainGroup;
+      }));
+      x1.domain(newdata.map(function(d) {
+          return d.SubGroup;
         }))
-        .selectAll("text")
-        .attr("y",5)
-        .attr("x", 9)
-        .attr("dy", ".35em")
-        .attr("transform", "rotate(55)")
-        .style("text-anchor", "start");
+        .rangeRound([0, x0.bandwidth()])
+        .padding(0.2);
 
+      var x2 = d3.scaleLinear()
+          .domain([0,d3.max(newdata,function(d){
+            return +d.xlabel
+          })]).range([40,width-30]);
 
+      z.domain(newdata.map(function(d) {
+        return d.StackGroup;
+      }))
 
-      // Add Y axis
-      var y = d3.scaleLinear()
-        .domain([0, d3.max(newdata, function(d) {
-          return +d.value;
-        })])
-        .range([height, 0]);
-      svg.append("g")
-        .attr("class", "yaxis")
-        .call(d3.axisLeft(y));
+      var keys = z.domain()
 
-      // color palette
-      var res = sumstat.map(function(d) {
-        return d.key
-      }) // list of group names
-      var color = d3.scaleOrdinal()
-        .domain(res)
-        .range(['#e41a1c', '#377eb8'])
-
-      // Draw the line
-      svg.selectAll(".line")
-        .data(sumstat)
-        .enter()
-        .append("path")
-        .attr("class", "line")
-        .attr("fill", "none")
-        .attr("stroke", function(d) {
-          return color(d.key)
+      var groupData = d3.nest()
+        .key(function(d) {
+          return d.SubGroup + d.MainGroup;
         })
-        .attr("stroke-width", 1.5)
-        .attr("stroke-dasharray", function(d) {
-          return d.key.startsWith('Survey') ? ("10,3") : ("1,0")
+        .rollup(function(d, i) {
+          ////console.log(d[0].Category)
+          ////console.log(d)
+          if (d[0].Category == catInt) {
+            var d2 = {
+              SubGroup: d[0].SubGroup,
+              MainGroup: d[0].MainGroup
+            }
+          }
+          d.forEach(function(d) {
+            if (d.Category == catInt) {
+              d2[d.StackGroup] = d.Value;
+              divText = d.Title;
+            }
+          })
+          //console.log("rollup d", d, d2);
+          return d2;
         })
-        .attr("d", function(d) {
-          return d3.line()
-            .x(function(d) {
-              return x(d.xaxis);
-            })
-            .y(function(d) {
-              return y(+d.value);
-            })
-            (d.values)
+        .entries(newdata)
+        .map(function(d) {
+          return d.value;
+        });
+
+      ////console.log("groupData", groupData)
+
+      var stackData = stack
+        .keys(keys)(groupData)
+      d3.select("#" + dataTitle).text(divText);
+      //console.log("stackData", stackData)
+
+      y.domain([0, 1500000]).nice();
+
+      ////console.log("keys", keys)
+
+      var serie = g.selectAll(".serie")
+        .data(stackData)
+        .enter().append("g")
+        .attr("class", "serie")
+        .attr("fill", function(d) {
+          return z(d.key);
+        });
+
+      serie.selectAll("rect")
+        .data(function(d) {
+          return d;
         })
+        .enter().append("rect")
+        .attr("class", "serie-rect")
+        .attr("transform", function(d) {
+          return "translate(" + x0(d.data.MainGroup) + ",0)";
+        })
+        .attr("x", function(d) {
+          ////console.log(d);
+          return x1(d.data.SubGroup);
+        })
+        .attr("y", function(d) {
+          ////console.log(d);
+          return y(d[1]);
+        })
+        .attr("height", function(d) {
+          return y(d[0]) - y(d[1]);
+        })
+        .attr("width", x1.bandwidth())
+        .on("click", function(d, i) {});
+
+      g.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x0));
+
+      g.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + (height + 25) + ")")
+        .call(d3.axisBottom(x2).ticks(d3.max(newdata,function(d){
+          return +d.xlabel
+        })).tickFormat(function(d){
+          return xlabel[parseInt(d)]
+        }));
+
+      g.append("g")
+        .attr("class", "axis")
+        .call(d3.axisLeft(y).ticks(null, "s"))
+        .append("text")
+        .attr("x", 2)
+        .attr("y", y(y.ticks().pop()) + 0.5)
+        .attr("dy", "0.32em")
+        .attr("fill", "#000")
+        .attr("font-weight", "bold")
+        .attr("text-anchor", "start")
+
+      g.append("text")
+        .attr("transform",
+          "translate(-50," +
+          (height / 2) + ") rotate(-90)")
+        .style("text-anchor", "middle")
+        .text("Households");
+
+        var legend = d3.select("#"+legendID).append("svg")
+        .attr("class","stackedlegend")
+        .attr("height", 125)
+        .attr("width", 250)
+
+        // legend.selectAll("legendrecs")
+        //   .data(keysLegend)
+        //   .enter()
+        // .append("rect")
+        //   .attr("x", 17)
+        //   .attr("y", 8)
+        //   .attr("width", 15)
+        //   .attr("height", 15)
+        //   .attr("stroke-width",2)
+        //   .merge(legend)
+        //
+        // // ======== Legend text ========
+        //
+        // legend.selectAll("textonlegend")
+        //   .data(keysLegend)
+        //   .enter()
+        // .append("text")
+        //   .attr("x", 30)
+        //   .attr("font-size",12)
+        //   .attr("y", 8)
+        //   .attr("dy", "0.32em");
+
+
+        legend.selectAll("mydots")
+          .data(keys)
+          .enter()
+          .append("circle")
+          .attr("class","stackeddots")
+            .attr("cx", 10)
+            .attr("cy", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+            .attr("r", 7)
+            .style("fill",function(d, i) { return z(i); })
+
+        // Add one dot in the legend for each name.
+        legend.selectAll("mylabels")
+          .data(keys)
+          .enter()
+          .append("text")
+            .attr("x", 20)
+            .attr("y", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+            .text(function(d){ //console.log(d)
+              return d})
+            .attr("text-anchor", "left")
+            .style("alignment-baseline", "middle")
+            .style("fill","black")
+
+        var filtered = [];
+
+        // Function by Andrew Reid
+        // @link: https://bl.ocks.org/andrew-reid/64a6c1892d1893009d2b99b8abee75a7
+
+
+
 
       function update() {
 
+
         catInt = d3.select(catID).property('value');
         var newdata = data.filter(function(d) {
-          return d.cat == catInt;
+          if (d.Category == catInt) {
+            return data;
+          };
         });
+        newdata.forEach(function(d) {
+          d.Value = +d.Value;
+        })
 
-        // group the data: I want to draw one line per group
-        var sumstat = d3.nest() // nest function allows to group the calculation per level of a factor
-          .key(function(d) {
-            if (d.cat == catInt) {
-              return d.subgroup
-            }
-          })
-          .entries(newdata);
+        ////console.log("data", data);
+        ////console.log("data", newdata);
 
-        // Add X axis --> it is a date format
-        var x = d3.scaleLinear()
-          .domain([1, 40])
-          .range([0, width]);
+        x0.domain(newdata.map(function(d) {
+          return d.MainGroup;
+        }));
+        x1.domain(newdata.map(function(d) {
 
-        svg.selectAll(".line").remove();
-        svg.selectAll(".xaxis").remove();
-        svg.selectAll(".yaxis").remove();
-
-        svg.append("g")
-          .attr("class", "xaxis")
-          .attr("transform", "translate(0," + height + ")")
-          .call(d3.axisBottom(x).ticks(40).tickFormat(function(d) {
-            return h[d]
+            return d.SubGroup;
           }))
-          .selectAll("text")
-          .attr("y",5)
-          .attr("x", 9)
-          .attr("dy", ".35em")
-          .attr("transform", "rotate(55)")
-          .style("text-anchor", "start");
+          .rangeRound([0, x0.bandwidth()])
+          .padding(0.2);
 
-        // Add Y axis
-        var y = d3.scaleLinear()
-          .domain([0, d3.max(newdata, function(d) {
-            return +d.value;
-          })])
-          .range([height, 0]);
+        var x2 = d3.scaleLinear()
+            .domain([0,d3.max(newdata,function(d){
+              return +d.xlabel
+            })]).range([40,width-30]);
 
-        svg.append("g")
-          .attr("class", "yaxis")
-          .call(d3.axisLeft(y));
+        z.domain(newdata.map(function(d) {
+          return d.StackGroup;
+        }))
 
-        // color palette
-        var res = sumstat.map(function(d) {
-          return d.key
-        }) // list of group names
-        var color = d3.scaleOrdinal()
-          .domain(res)
-          .range(['#e41a1c', '#377eb8'])
+        var keys = z.domain()
 
-        // Draw the line
-        var new_layer = svg.selectAll(".line")
-          .data(sumstat)
+        var groupData = d3.nest()
+          .key(function(d) {
+            return d.SubGroup + d.MainGroup;
+          })
+          .rollup(function(d, i) {
+            //console.log(d[0].Category)
+            //console.log(d)
+            if (d[0].Category == catInt) {
+              var d2 = {
+                SubGroup: d[0].SubGroup,
+                MainGroup: d[0].MainGroup
+              }
+            }
+            d.forEach(function(d) {
+              if (d.Category == catInt) {
+                d2[d.StackGroup] = d.Value;
+                divText = d.Title;
+              }
+            })
+            //console.log("rollup d", d, d2);
+            return d2;
+          })
+          .entries(newdata)
+          .map(function(d) {
+            return d.value;
+          });
+
+        ////console.log("groupData", groupData)
+
+        var stackData = stack
+          .keys(keys)(groupData)
+        d3.select("#" + dataTitle).text(divText);
+        //console.log("stackData", stackData)
+
+        y.domain([0, 1500000]).nice();
+
+        //console.log("keys", keys)
+        g.selectAll(".serie").remove();
+
+        var new_layer = g.selectAll(".serie")
+          .data(stackData)
+          .enter().append("g")
+          .attr("class", "serie")
+          .attr("fill", function(d) {
+            return z(d.key);
+          });
+
+        new_layer.selectAll("rect")
+          .data(function(d) {
+            return d;
+          })
+          .enter().append("rect")
+          .attr("class", "serie-rect")
+          .attr("transform", function(d) {
+            return "translate(" + x0(d.data.MainGroup) + ",0)";
+          })
+          .attr("x", function(d) {
+            ////console.log(d);
+            return x1(d.data.SubGroup);
+          })
+          .attr("y", function(d) {
+            return y(d[1]);
+          })
+          .attr("height", function(d) {
+            return y(d[0]) - y(d[1]);
+          })
+          .attr("width", x1.bandwidth())
+          .on("click", function(d, i) {});
+
+        g.selectAll(".axis").remove();
+
+        g.append("g")
+          .attr("class", "x axis")
+          .attr("transform", "translate(0," + height + ")")
+          .call(d3.axisBottom(x0));
+
+        g.append("g")
+          .attr("class", "x axis")
+          .attr("transform", "translate(0," + (height + 25) + ")")
+          .call(d3.axisBottom(x2).ticks(d3.max(newdata,function(d){
+            return +d.xlabel
+          })).tickFormat(function(d){
+            return xlabel[parseInt(d)]
+          }));
+
+        g.append("g")
+          .attr("class", "axis")
+          .call(d3.axisLeft(y).ticks(null, "s"))
+          .append("text")
+          .attr("x", 2)
+          .attr("y", y(y.ticks().pop()) + 0.5)
+          .attr("dy", "0.32em")
+          .attr("fill", "#000")
+          .attr("font-weight", "bold")
+          .attr("text-anchor", "start")
+
+        g.append("text")
+          .attr("transform",
+            "translate(-50," +
+            (height / 2) + ") rotate(-90)")
+          .style("text-anchor", "middle")
+          .text("Households");
+
+          var legend = d3.select("#"+legendID).append("svg")
+          .attr("class","stackedlegend")
+          .attr("height", 125)
+          .attr("width", 250)
+
+        //legend.selectAll("stackedlegend").remove()
+        //legend.selectAll(".stackeddots").remove()
+        //legend.selectAll("text").remove()
+
+        //Update legend
+        legend.selectAll(".stackedlegend")
+        .attr("height", 75)
+        .attr("width", 250)
+
+        legend.selectAll("text").remove()
+        legend.selectAll("mydots").remove()
+        // legend.selectAll("legendrecs")
+        //   .data(keysLegend)
+        //   .enter()
+        // .append("rect")
+        //   .attr("x", 17)
+        //   .attr("y", 8)
+        //   .attr("width", 15)
+        //   .attr("height", 15)
+        //   .attr("stroke-width",2)
+        //   .merge(legend)
+        //
+        // // ======== Legend text ========
+        //
+        // legend.selectAll("textonlegend")
+        //   .data(keysLegend)
+        //   .enter()
+        // .append("text")
+        //   .attr("x", 30)
+        //   .attr("font-size",12)
+        //   .attr("y", 8)
+        //   .attr("dy", "0.32em");
+
+        legend.selectAll("mydots")
+          .data(keys)
           .enter()
-          .append("path")
-          .attr("class", "line")
-          .attr("fill", "none")
-          .attr("stroke", function(d) {
-            return color(d.key)
-          })
-          .attr("stroke-width", 1.5)
-          .attr("stroke-dasharray", function(d) {
-            return d.key.startsWith('Survey') ? ("10,3") : ("1,0")
-          })
-          .attr("d", function(d) {
-            return d3.line()
-              .x(function(d) {
-                return x(d.xaxis);
-              })
-              .y(function(d) {
-                return y(+d.value);
-              })
-              (d.values)
-          })
-      }
+          .append("circle")
+          .attr("class","stackeddots")
+            .attr("cx", 10)
+            .attr("cy", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+            .attr("r", 7)
+            .style("fill",function(d, i) { return z(i); })
 
-    })
+        // Add one dot in the legend for each name.
+        legend.selectAll("mylabels")
+          .data(keys)
+          .enter()
+          .append("text")
+            .attr("x", 20)
+            .attr("y", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+            .text(function(d){ //console.log(d)
+              return d})
+            .attr("text-anchor", "left")
+            .style("alignment-baseline", "middle")
+            .style("fill","black")
+
+        var filtered = [];
+
+
+      }
+    });
+
   }
-</script>
-<script></script>
+  </script>
+</html>

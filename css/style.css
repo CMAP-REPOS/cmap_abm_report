@@ -6,20 +6,20 @@
   display:block;
   width: 25%;
   max-width: 600px;
+  width: 100% !important;
 }
 .image {
   margin: 0;
   position: absolute;
-  top: 5%;
+  top: 150%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  width: 3.5%;
+  width: 12%;
 }
 /* The overlay effect - lays on top of the container and over the image */
 .overlay {
   position: absolute;
-  bottom: 0;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.1); /* Black see-through */
   color: #f1f1f1;
@@ -30,6 +30,7 @@
   font-size: 12px;
   padding: 20px;
   text-align: center;
+  top: 50%
 }
 
 /* When you mouse over the container, fade in the overlay title */
@@ -46,6 +47,9 @@ table#commute_model{
   font:5px
 }
 
+.navbar-inverse {
+  background-color: #373737 !important;
+}
 
 line#limit {
   stroke: grey;
@@ -100,12 +104,10 @@ a.calibration:hover {
 }
 
 a.calibration {
-  background-color: #1c5f83;
-  color: white;
+  color: #1c5f83;
 }
 
 a.validation {
-  background-color: #7ebea5;
   color: white
 }
 
@@ -271,7 +273,7 @@ h3 {
 
 
 .colborder {
-  border-top: 3px solid;
+  border-top: 1px solid grey;
 }
 
 #wflowmap{

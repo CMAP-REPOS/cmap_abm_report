@@ -1,3 +1,46 @@
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position:relative;
+  display:block;
+  width: 25%;
+  max-width: 600px;
+}
+.image {
+  margin: 0;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 3.5%;
+}
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.1); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: black;
+  font-size: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.container:hover .image {
+  opacity: 0;
+}
+
 table#commute_model{
   table-layout:auto;
   font:5px

@@ -1,8 +1,55 @@
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position:relative;
+  display:block;
+  width: 25%;
+  max-width: 600px;
+  width: 100% !important;
+}
+.image {
+  margin: 0;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 12%;
+}
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.1); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: black;
+  font-size: 12px;
+  padding: 20px;
+  text-align: center;
+  top: 50%
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.container:hover .image {
+  opacity: 0;
+}
+
 table#commute_model{
   table-layout:auto;
   font:5px
 }
 
+.navbar-inverse {
+  background-color: #373737 !important;
+}
 
 line#limit {
   stroke: grey;
@@ -57,12 +104,10 @@ a.calibration:hover {
 }
 
 a.calibration {
-  background-color: #1c5f83;
-  color: white;
+  color: #1c5f83;
 }
 
 a.validation {
-  background-color: #7ebea5;
   color: white
 }
 
@@ -200,6 +245,10 @@ h3 {
   margin-left: 10px;
 }
 
+.row {
+  margin-left: 10px !important;
+}
+
 #accordionintro .panel{
   border: none;
   box-shadow: none;
@@ -224,7 +273,7 @@ h3 {
 
 
 .colborder {
-  border-top: 3px solid;
+  border-top: 1px solid grey;
 }
 
 #wflowmap{

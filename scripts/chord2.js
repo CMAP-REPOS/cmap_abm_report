@@ -1,6 +1,59 @@
+
+var mapboxAccessToken = 'pk.eyJ1Ijoic2FyYWhjbWFwIiwiYSI6ImNqc3VzMDl0YzJocm80OXBnZjc2MGk4cGgifQ.S_UmPA1jm5pQPrCCLDs41Q';
+var lat= 41.7281;
+var long = -87.9298;
+var wflowmap = new L.Map("wflowmap", {
+    zoomControl: false,
+    center: new L.LatLng(lat, long),
+    zoom: 7
+});
+function baseStyle(feature) {
+    return {
+    weight: 2,
+    fillOpacity: 0,
+    color: 'grey',
+    dashArray: '3',
+    className: feature.properties.AREANAME
+    };
+}
+
+
+//   var div = d3.select("#chordinfodiv").append("div")
+//   .attr("class", "chordtooltip")
+//   .style("opacity", 0);
+
+// basic map
+
+
+
+var baselayer1 = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
+    id: 'mapbox.light',
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+    '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+    'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
+})
+
+$("a[href='#4']").on('shown.bs.tab',function(e) {
+    wflowmap.invalidateSize();
+});
+wflowmap.addLayer(baselayer1);
+
+var rings = L.geoJSON(workflow_geo, {
+  style: baseStyle,
+  onEachFeature: function(feature, layer) {
+      layer.bindPopup(feature.properties.AREANAME)
+      layer.NAME = feature.properties.AREANAME;
+}});
+rings.addTo(wflowmap);
+
+var center = new L.LatLng(lat, long);
+function zoomTo(location, map) {
+  map.setView(location, 7);
+  }
+
+
 function makeChords(csv_file, modelDiv, obsDiv){
-  var lat= 41.7281;
-  var long = -87.9298;
+
   var svg1;
   var svg2;
   var newCurrentDistrict;
@@ -32,51 +85,8 @@ function makeChords(csv_file, modelDiv, obsDiv){
             '#3D3C0E',
           ])
 
-  function baseStyle(feature) {
-      return {
-      weight: 2,
-      fillOpacity: 0,
-      color: 'grey',
-      dashArray: '3',
-      className: feature.properties.AREANAME
-      };
-  }
 
 
-//   var div = d3.select("#chordinfodiv").append("div")
-//   .attr("class", "chordtooltip")
-//   .style("opacity", 0);
-
-  // basic map
-  var mapboxAccessToken = 'pk.eyJ1Ijoic2FyYWhjbWFwIiwiYSI6ImNqc3VzMDl0YzJocm80OXBnZjc2MGk4cGgifQ.S_UmPA1jm5pQPrCCLDs41Q';
-
-  var wflowmap = new L.Map("wflowmap", {
-      zoomControl: false,
-      center: new L.LatLng(lat, long),
-      zoom: 7
-  });
-
-  var baselayer1 = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
-      id: 'mapbox.light',
-      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-      '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-      'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
-  })
-
-  $("a[href='#4']").on('shown.bs.tab',function(e) {
-      wflowmap.invalidateSize();
-  });
-  wflowmap.addLayer(baselayer1);
-
-  var rings = L.geoJSON(workflow_geo, {
-    style: baseStyle,
-    onEachFeature: function(feature, layer) {
-        layer.bindPopup(feature.properties.AREANAME)
-        layer.NAME = feature.properties.AREANAME;
-  }});
-  rings.addTo(wflowmap);
-
-  var wcenter = new L.LatLng(lat, long);
 
 
   d3.csv(csv_file, function(error, data) {

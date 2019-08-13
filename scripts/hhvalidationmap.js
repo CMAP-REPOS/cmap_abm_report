@@ -9,8 +9,9 @@ var map1 = new L.Map("hhvalidationmap", {
     zoom: 8
 });
 
-function zoomTo(location, map1) {
-	map1.setView(location, 8);
+var center = new L.LatLng(lat, long);
+function zoomTo(location, map) {
+	map.setView(location, 8);
 	}
 
 var baselayer1 = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
@@ -63,7 +64,7 @@ var baseLayers1 = {
   	};
 
 var overlays1 = {
-  "Counties1": countiesmini
+  "Counties": countiesmini
 };
 
 

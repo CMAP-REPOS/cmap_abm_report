@@ -1,5 +1,11 @@
 // basic map
 var mapboxAccessToken = 'pk.eyJ1Ijoic2FyYWhjbWFwIiwiYSI6ImNqc3VzMDl0YzJocm80OXBnZjc2MGk4cGgifQ.S_UmPA1jm5pQPrCCLDs41Q';
+var lat= 41.8781;
+var long = -87.9298;
+var center = new L.LatLng(lat, long);
+function zoomTo(location, map) {
+  map.setView(location, 9);
+  }
 
 var transit_map = new L.Map("transit_map", {
     zoomControl: false,
@@ -42,4 +48,3 @@ var cta1 = L.geoJson(ctalines, {
 
 metra1.addTo(transit_map);
 cta1.addTo(transit_map);
-  

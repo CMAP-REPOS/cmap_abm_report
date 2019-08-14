@@ -70,6 +70,7 @@ function make_h_stacked(csv_file,divID, legendID){
 
           //console.log(obsvalue)
           div.transition()
+          //.attr("class","popuptext")
           .duration(200)
           .style("opacity", .9);
           div.html(
@@ -100,6 +101,8 @@ function make_h_stacked(csv_file,divID, legendID){
         d3.selectAll("."+divID+"class")
           .style("opacity",0.8)
           .select("text").remove();
+
+        d3.selectAll(".bartooltip").style("opacity", 0);
         }
 
 
@@ -131,7 +134,7 @@ function make_h_stacked(csv_file,divID, legendID){
             })
             .attr("height", y.bandwidth())
             .on("mouseover", mouseover)
-            .on("mouseleave", mouseleave)
+            .on("mouseout", mouseleave)
 
         bar.append("text")
             .attr("x", function (d) {

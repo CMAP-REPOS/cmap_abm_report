@@ -10,6 +10,7 @@ var map1 = new L.Map("hhvalidationmap", {
 });
 
 var center = new L.LatLng(lat, long);
+
 function zoomTo(location, map) {
 	map.setView(location, 8);
 	}
@@ -72,13 +73,13 @@ var overlays1 = {
 	var info1 = L.control();
 
 	info1.onAdd = function () {
-		this._div = L.DomUtil.create('div', 'info');
+		this._div = L.DomUtil.create('div', 'infoval');
 		this.update();
 		return this._div;
 	};
   info1.update = function (props) {
 		this._div.innerHTML =  (props ?
-        '<b>' + props.NAMELSAD10 + '</b><br />' + 'Difference in ' + whichone_name1 + ": " + Math.round((100*props[whichone1]) * 100) / 100 + ' p.p.' + '<br />' + 'Model Count: ' + props[model_count_var1] + '<br />' + 'Census Count: ' + props[census_count_var1]
+            '<table id="datatable"> <tr> <td style="width:105px">PUMA </td> <td>' + props.NAME_NEW + '</td> </tr> <tr> <td> Variable </td> <td>' + whichone_name1 + '</td> </tr> <tr> <td>Difference</td> <td>'+ Math.round((100*props[whichone1]) * 100) / 100 + ' p.p.' + '</td> </tr> <tr> <td>Model Count</td> <td>' + props[model_count_var1] +'</td> </tr> <tr> <td>Census Count</td> <td>' + props[census_count_var1] + '</td> </tr></table>'
 			: 'Hover over a PUMA');
 	};
 
@@ -190,7 +191,6 @@ function updateview1(buttonarg) {
 }
 
 $('.dropdown-menu a').click(function () {
-    // $('#hhval').text($(this).text());
     updateview1(($(this).text()));
 });
 
@@ -207,7 +207,7 @@ function updatemap1() {
 
 
 function drawmap1() {
-  L.geoJson(chicagoMap, {style: style1, onEachFeature: onEachFeature1}).addTo(map1);
+  L.geoJson(chicagoMapNew, {style: style1, onEachFeature: onEachFeature1}).addTo(map1);
   map1.addLayer(countiesmini)
 }
 
@@ -249,7 +249,7 @@ function highlightFeaturePuma1(e) {
 }
 
 var geojson;
-geojson = L.geoJson(chicagoMap, {style: style1});
+geojson = L.geoJson(chicagoMapNew, {style: style1});
 
 function resetHighlightPuma1(e) {
   geojson.resetStyle(e.target);

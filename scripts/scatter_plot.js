@@ -1,6 +1,6 @@
 function makeScatter(csv_file, chart_id, modelvalue,obsvalue,category_value,rsquared){
   var margin = {top: 5, right: 5, bottom: 50, left: 80},
-	    width = 900 - margin.left - margin.right,
+	    width = 500 - margin.left - margin.right,
 	    height = 450 - margin.top - margin.bottom;
 
   var formatValue = d3.format(".2s");
@@ -33,11 +33,11 @@ function makeScatter(csv_file, chart_id, modelvalue,obsvalue,category_value,rsqu
 
   	  var xAxis = d3.axisBottom()
           .scale(x)
-          .tickFormat(d3.format(",.0f"));
+          .tickFormat(d3.format(".2s"));
 
   	  var yAxis = d3.axisLeft()
           .scale(y)
-          .tickFormat(d3.format(",.0f"));
+          .tickFormat(d3.format(".2s"));
 
 
           // colors for foo
@@ -64,11 +64,13 @@ function makeScatter(csv_file, chart_id, modelvalue,obsvalue,category_value,rsqu
                   .style("stroke", "black");
 
         svg.append("g")
+          .style("font", "10px sans-serif")
           .attr("class", "x axis")
           .attr("transform", "translate(0," + (height-padding) + ")")
           .call(xAxis);
 
         svg.append("text")
+        .style("font", "10px sans-serif")
         .attr("transform",
               "translate(" + (width/2) + " ," +
                               (height + margin.top + 20) + ")")
@@ -76,11 +78,13 @@ function makeScatter(csv_file, chart_id, modelvalue,obsvalue,category_value,rsqu
         .text("Observed: " + obsvalue);
 
       svg.append("g")
+          .style("font", "10px sans-serif")
           .attr("class", "y axis")
           .attr("transform", "translate(" + padding + ",0)")
           .call(yAxis);
 
       svg.append("text")
+      .style("font", "10px sans-serif")
       .attr("transform",
             "translate(-50," +
                             (height/2) + ") rotate(-90)")

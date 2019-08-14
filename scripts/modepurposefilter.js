@@ -122,7 +122,11 @@ function make_h_stacked_tripsbymode(csv_file,divID, legendID){
           d3.selectAll("."+divID+"class")
             .style("opacity",0.8)
             .select("text").remove();
+
+            d3.selectAll(".bartooltip").style("opacity", 0);
           }
+
+
 
         var serie = g.selectAll(".serie")
             .data(stack.keys(data.columns.slice(1))(data))

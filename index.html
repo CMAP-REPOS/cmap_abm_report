@@ -166,7 +166,7 @@
       </div>
 
       <div class="tab-content ">
-        <div id="1" class="tab-pane active container-fluid">
+        <div id="1" class="tab-pane container-fluid">
           <div class="row">
             <br />
             <br />
@@ -579,9 +579,9 @@
           </div>
         </div>
         <!-- Work Flows -->
-        <div id="4" class="tab-pane container-fluid">
+        <div id="4" class="tab-pane active container-fluid">
           <div class="row">
-            <div class="col-md-3"></div> <!-- end -->
+            <div class="col-md-1"></div> <!-- end -->
             <div class="col-md-6">
               <br />
               <br />
@@ -598,12 +598,18 @@
             </div>
           </div>
           <div class="row">
-            <div class="col col-md-3" id="chordinfodiv">
-              <div class="colborder"></div>
-              <h5><b>Origin and Destination Work Flows</b></h5>
+            <div class="col-md-1"></div>
+            <div class="col-md-8 colborder"> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div> <!-- end -->
+            <div class="col-md-3" style="text-align:center">
+              <br />
+              <div id="chordinfodiv"></div>
+              <h3>Origin and Destination Work Flows</h3>
               From
               <!-- Split button -->
-              <div class="btn-group" id="workfrom">
+              <div class="btn-group" id="workfrom" style="margin:auto;width:auto">
                 <button type="button" id="WorkFrom" class="btn btn-danger" style="color: rgb(171, 171, 171); font-size: 18px;">CBD</button>
                 <button type="button" class="btn btn-info dropdown-toggle" style="background-color: rgb(207, 207, 207) !important; border-color: rgb(207, 207, 207) !important" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <span class="caret"></span>
@@ -649,17 +655,21 @@
                   <li><a href="#">Will</a></li>
                 </ul>
               </div>
-              <br>
-              <div id="wflowinfocontainer" style="display:inline-block">
-                <div id="wflowinfo" style="margin-left:30px;"></div>
-                <div id="wflowinfo2" style="margin-left:70px;"></div>
-              </div><br><br>
-              <div id="wflowmap"></div>
-              <button type="button" class="btn btn-default btn-xs" id="wrecenter" value="Re-center map" onClick="zoomTo(center,wflowmap)">Recenter Map</button>
-              <br>
-              <img src="data/images/Cursor-Click-2-icon.png" width="20px">
-              <span class="small">Hover over the chord diagram to see area boundaries on the map. Click on the map to see area name. Choose work flow geographies in the drop down menu to view numerical values for work trips.</span>
-            </div>
+
+            <br>
+            <div id="wflowinfocontainer" style="display:inline-block">
+              <div id="wflowinfo" style="margin-left:30px;"></div>
+              <div id="wflowinfo2" style="margin-left:70px;"></div>
+            </div><br><br>
+            <div id="wflowmap"></div>
+            <button type="button" class="btn btn-default btn-xs" id="wrecenter" value="Re-center map" onClick="zoomTo(center,wflowmap)">Recenter Map</button>
+            <br>
+            <img src="data/images/Cursor-Click-2-icon.png" width="20px">
+            <span class="small">Hover over the chord diagram to see area boundaries on the map. Click on the map to see area name. Choose work flow geographies in the drop down menu to view numerical values for work trips.</span>
+          </div>
+
+
+              </div>
             <div class="col col-md-4" style="width: 29.16666666666667%" align="center">
               <div class="colborder"></div>
               <h5><b>Modeled Work Flows</b></h5>

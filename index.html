@@ -52,49 +52,49 @@
                 Introduction
               </a>
             </li>
-  
+
             <li>
               <a class="calibration" href="#2" role="tab" data-toggle="tab">
                 Population Synthesis
               </a>
             </li>
-  
+
             <li>
               <a class="calibration" href="#3" role="tab" data-toggle="tab">
                 Auto Ownership
               </a>
             </li>
-  
+
             <li>
               <a class="calibration" href="#10" role="tab" data-toggle="tab">
                 Tours
               </a>
             </li>
-  
+
             <li>
               <a class="calibration" href="#5" role="tab" data-toggle="tab">
                 Trip Mode
               </a>
             </li>
-  
+
             <li>
               <a class="calibration" href="#6" role="tab" data-toggle="tab">
                 Trip Activities
               </a>
             </li>
-  
+
             <li>
               <a class="calibration" href="#4" role="tab" data-toggle="tab">
                 Work Flows
               </a>
             </li>
-  
+
             <li>
               <a class="calibration" href="#7" role="tab" data-toggle="tab">
                 Transit Trips
               </a>
             </li>
-  
+
             <li>
               <a class="validation" href="#11" role="tab" data-toggle="tab">
                 Household Attributes
@@ -110,7 +110,7 @@
                 Highway Assignment
               </a>
             </li>
-  
+
             <li>
               <a class="validation" href="#9" role="tab" data-toggle="tab">
                 Transit Assignment
@@ -162,7 +162,7 @@
             </div>
           </div>
         </div>
-      
+
       </div>
 
       <div class="tab-content ">
@@ -789,7 +789,7 @@
         </div>
         <div id="5" class="tab-pane container-fluid">
           <div class="row">
-            <div class="col-md-1"></div> 
+            <div class="col-md-1"></div>
             <div class="col-md-6">
               <br />
               <br />
@@ -807,7 +807,7 @@
           </div>
           <br>
           <div class="row">
-              <div class="col-md-1"></div> 
+              <div class="col-md-1"></div>
               <!-- <div class="col-md-2"></div> end -->
               <div class="col-md-8">
               <div class="colborder"></div>
@@ -817,7 +817,7 @@
               <div class="col-md-1"></div>
               <div class="col col-md-2">
                   <h3>Trips by Mode</h3>
-  
+
                   <!-- <div class="colborder"></div>end -->
                   <!-- <p>
                       While the model tends to overestimate walk trips,
@@ -1001,7 +1001,7 @@
                   <p>
                     See more about trip purpose in the <a href="#6" role="tab" data-toggle="tab">Trip Activities</a> tab.
                   </p>
-  
+
                   <div id="tripspurposemodeLegend"></div>
                   <div class="small" style="margin-top: 80px;">
                   </div><br>
@@ -1551,11 +1551,11 @@
             </div>
           </div>
 
-          <div class="row">
+          <!-- <div class="row">
             <br />
             <br />
             <div class="col col-md-3">
-              <div class="colborder"></div><!-- end -->
+              <div class="colborder"></div>
               <h3>Transit Trips by Mode of Access and Ratio of Autos to Adults</h3>
               <select id="catAutoAdult">
                 <option value="all">All Access Modes</option>
@@ -1575,10 +1575,10 @@
               <p class="small">Select transit access mode from dropdown to view observed and model comparison</p>
             </div>
             <div class="col col-md-6">
-              <div class="colborder"></div><!-- end -->
+              <div class="colborder"></div>
               <div id="TranAutoAdult"></div>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <div id="11" class="tab-pane container-fluid">
@@ -2149,7 +2149,7 @@
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Vrange', 'Weight (Miles)', 'Links', 'AADT', 'Model Volumes', 'rmse', '%rmse'], "#rmse_7", "percent"); // 2 column table
+    tabulate(data, ['Vrange', 'Weight (Miles)', 'Links', 'AADT', 'Model Volumes', 'rmse', '%rmse','Florida DOT'], "#rmse_7", "percent"); // 2 column table
   });
 
   d3.csv("data/csv30_vrange_total.csv", function(d, i, columns) {
@@ -2165,7 +2165,7 @@
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Vrange', 'Number of Links', 'Observed VMT', 'Model VMT', 'Percent Diff'], "#vrange_art", "nopercent"); // 2 column table
+    tabulate(data, ['Vrange', 'Number of Links', 'Observed VMT', 'Model VMT', 'Percent Diff'], "#vrange_art", "percent"); // 2 column table
   });
 
   d3.csv("data/csv30_vrange_int.csv", function(d, i, columns) {

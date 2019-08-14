@@ -1,25 +1,25 @@
 MainGroup,StackGroup,SubGroup,Value,Category,Title
-Chicago,Arterial,Mod,13027854.37,CMAP Region,CMAP Region
-Chicago,Interstate,Mod,12492778.83,CMAP Region,CMAP Region
-Chicago,Local,Mod,3851755.13,CMAP Region,CMAP Region
-Suburban Cook,Arterial,Mod,27191291.72,CMAP Region,CMAP Region
-Suburban Cook,Interstate,Mod,18371897.05,CMAP Region,CMAP Region
-Suburban Cook,Local,Mod,6612918.32,CMAP Region,CMAP Region
-DuPage,Arterial,Mod,12828602.95,CMAP Region,CMAP Region
-DuPage,Interstate,Mod,8897885.05,CMAP Region,CMAP Region
-DuPage,Local,Mod,3353537.97,CMAP Region,CMAP Region
-Kane,Arterial,Mod,7963498.28,CMAP Region,CMAP Region
-Kane,Interstate,Mod,2312526.1,CMAP Region,CMAP Region
-Kane,Local,Mod,1743627.03,CMAP Region,CMAP Region
-Lake,Arterial,Mod,9815364.34,CMAP Region,CMAP Region
-Lake,Interstate,Mod,5413121.62,CMAP Region,CMAP Region
-Lake,Local,Mod,2568419.51,CMAP Region,CMAP Region
-McHenry,Arterial,Mod,5127833.81,CMAP Region,CMAP Region
-McHenry,Interstate,Mod,458320.05,CMAP Region,CMAP Region
-McHenry,Local,Mod,1238488.7,CMAP Region,CMAP Region
-Will,Arterial,Mod,8504508.3,CMAP Region,CMAP Region
-Will,Interstate,Mod,6385362.54,CMAP Region,CMAP Region
-Will,Local,Mod,2765053.74,CMAP Region,CMAP Region
+Chicago,Arterial,Mod,13054264.53,CMAP Region,CMAP Region
+Chicago,Interstate,Mod,13161988.67,CMAP Region,CMAP Region
+Chicago,Local,Mod,3931955.531,CMAP Region,CMAP Region
+Suburban Cook,Arterial,Mod,27650578.07,CMAP Region,CMAP Region
+Suburban Cook,Interstate,Mod,19061730.89,CMAP Region,CMAP Region
+Suburban Cook,Local,Mod,6764904.134,CMAP Region,CMAP Region
+DuPage,Arterial,Mod,12971500.81,CMAP Region,CMAP Region
+DuPage,Interstate,Mod,9320160.883,CMAP Region,CMAP Region
+DuPage,Local,Mod,3434687.249,CMAP Region,CMAP Region
+Kane,Arterial,Mod,7973911.308,CMAP Region,CMAP Region
+Kane,Interstate,Mod,2340660.475,CMAP Region,CMAP Region
+Kane,Local,Mod,1764628.831,CMAP Region,CMAP Region
+Lake,Arterial,Mod,9856722.144,CMAP Region,CMAP Region
+Lake,Interstate,Mod,5605247.869,CMAP Region,CMAP Region
+Lake,Local,Mod,2612208.362,CMAP Region,CMAP Region
+McHenry,Arterial,Mod,5158396.866,CMAP Region,CMAP Region
+McHenry,Interstate,Mod,463613.6146,CMAP Region,CMAP Region
+McHenry,Local,Mod,1264988.435,CMAP Region,CMAP Region
+Will,Arterial,Mod,8516426.45,CMAP Region,CMAP Region
+Will,Interstate,Mod,6510539.621,CMAP Region,CMAP Region
+Will,Local,Mod,2810698.426,CMAP Region,CMAP Region
 Chicago,Arterial,obs,14670101.37,CMAP Region,CMAP Region
 Chicago,Interstate,obs,11093800,CMAP Region,CMAP Region
 Chicago,Local,obs,3364509.59,CMAP Region,CMAP Region

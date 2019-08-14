@@ -28,7 +28,7 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
   .append("g")
   .attr("transform","translate(" + margin.left + "," + margin.top + ")");
 
-  var div = d3.select(chartID).append("div")
+  var div = d3.select("body").append("div")
   .attr("class", "vmttooltip2")
   .style("opacity", 0);
 
@@ -227,14 +227,14 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
           .attr("fill", "#cf4446");
         selectedline = d.lines.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "")
         // this highlights the line on the map!
-        metra.eachLayer(function(layer) {
+        metra1.eachLayer(function(layer) {
           if(layer.LINE.includes(selectedline)){
             layer.setStyle({
               color:"#d7d55c",
               weight: 3
           })
           }})
-        cta.eachLayer(function(layer) {
+        cta1.eachLayer(function(layer) {
           if(layer.LINE.includes(selectedline)){
             layer.setStyle({
               color:"#cf4446",
@@ -255,14 +255,14 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
             return z[1]; });
           selectedline = d.lines.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "")
           // this highlights the line on the map!
-          metra.eachLayer(function(layer) {
+          metra1.eachLayer(function(layer) {
             if(layer.LINE.includes(selectedline)){
               layer.setStyle({
                 color:'#696969',
                 weight: 2
             })
             }})
-          cta.eachLayer(function(layer) {
+          cta1.eachLayer(function(layer) {
             if(layer.LINE.includes(selectedline)){
               layer.setStyle({
                 color:"black",

@@ -166,7 +166,7 @@
       </div>
 
       <div class="tab-content ">
-        <div id="1" class="tab-pane active  container-fluid">
+        <div id="1" class="tab-pane  container-fluid">
           <div class="row">
             <br />
             <br />
@@ -1677,13 +1677,12 @@
             </div>
           </div>
         </div>
-        <div id="8" class="tab-pane container-fluid">
+        <div id="8" class="tab-pane container-fluid active">
           <div class="row">
-            <div class="col-md-3"></div>
+            <div class="col-md-1"></div>
             <div class="col-md-6">
               <br />
               <br />
-
               <h3>Highway Assignment</h3>
               <p>
                 During Highway Assignment, the individual trips developed by CT-RAMP are routed along the model network from origin to destination in order to estimate traffic flows and network conditions. When equilibrium is reached within the
@@ -1694,9 +1693,13 @@
             </div>
           </div>
           <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8 colborder"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
             <div class="col-md-3">
-              <div class="colborder"></div><!-- end -->
-
+              <!-- end -->
               <h3>Comparison of Daily VMT Shares by County</h3>
               <!-- <div id="highwayvmtLegend"></div> -->
               <div class="small">
@@ -1705,17 +1708,23 @@
                 Modeled - CMAP ABM - 2015 Scenario. <br>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="colborder"></div><!-- end -->
-              <div id="vmt_county_tbl"></div>
+            <div class="col-md-8" style="margin:auto;width:auto">
+              <br>
+              <table id="vmt_county_tbl"></table>
               <!-- <div id="vmtcounty" ></div> -->
             </div>
+          </div><!-- end row-->
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8 colborder"></div>
           </div>
           <div class="row">
+            <div class="col-md-1"></div>
             <div class="col-md-3">
-              <div class="colborder"></div><!-- end -->
               <h3>Comparison of Daily VMT Shares by County and Facility Type</h3>
+              <br />
               <div id="vmtfacilityLegend"></div>
+              <br />
               <div class="small">
                 <b>Sources</b><br>
                 Observed - Illinois Travel Statistics 2015<br>
@@ -1723,32 +1732,31 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="colborder"></div><!-- end -->
               <center>
                 <div id="cfstack"></div>
               </center>
             </div>
+          </div><!-- end row-->
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8 colborder"></div>
           </div>
           <div class="row">
+            <div class="col-md-1"></div>
             <div class="col-md-3">
-              <div class="colborder"></div><!-- end -->
-
               <h3>Modeled vs. Observed Average Daily Link Volumes</h3>
               <br>
               <div id="scatterLegend"></div>
               <p><b>r<sup>2</sup></b> = <text_div id="r2"></text_div>
               </p>
             </div>
-            <div class="col-md-6">
-              <div class="colborder"></div><!-- end -->
-
+            <div class="col-md-8">
               <div id="scatter_vmt"></div>
             </div>
           </div>
           <div class="row">
             <div class="col-md-3">
               <div class="colborder"></div><!-- end -->
-
               <h3>Comparison of Interstate Daily VMT By Auto and Truck</h3>
               <div id="vmtLegend"></div>
               <div id="interstate_map"></div><br>

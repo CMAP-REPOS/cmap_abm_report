@@ -45,7 +45,7 @@ function tabulate(data, columns, loc, percent) {
 	    .text(function (d) {
 				var datavalue;
 				if (percent == "percent") {
-					if(d.value <= 5){
+					if(d.value <= 5 & d.value >= -1){
 						datavalue = formatPercent(parseFloat(d.value))
 					}
 					else if(isNumeric(d.value)){

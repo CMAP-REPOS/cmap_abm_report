@@ -6,7 +6,7 @@ function hStackedBar(obscsv_file,modelcsv_file,obsID,modelID, labelwidth, divwid
   makechart(obscsv_file, obsID, false, 20, "obschart");
 
 function makechart(csv_file, divID, axis, marginleftval, idval){
-  var div = d3.select(divID).append("div")
+  var div = d3.select("body").append("div")
   .attr("class", "vmttooltip")
   .style("opacity", 0);
 

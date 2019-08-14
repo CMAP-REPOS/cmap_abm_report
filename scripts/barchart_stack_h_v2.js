@@ -82,20 +82,6 @@ function makechart(csv_file, divID, axis, marginleftval, idval){
           selectedline = d.data.Index.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "")
           selectednumber = d.data.order;
           // this highlights the line on the map!
-          metra.eachLayer(function(layer) {
-            if(layer.LINE.includes(selectedline)){
-              layer.setStyle({
-                color:"#d7d55c",
-                weight: 3
-            })
-            }})
-          cta.eachLayer(function(layer) {
-            if(layer.LINE.includes(selectedline)){
-              layer.setStyle({
-                color:"#cf4446",
-                weight: 3
-            })
-            }})
           hwy_lyr.eachLayer(function(layer) {
             if(layer.feature.properties.abmnum == selectednumber){
               layer.setStyle({
@@ -116,20 +102,6 @@ function makechart(csv_file, divID, axis, marginleftval, idval){
           selectedline = d.data.Index.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "")
           selectednumber = d.data.order;
           // this highlights the line on the map!
-          metra.eachLayer(function(layer) {
-            if(layer.LINE.includes(selectedline)){
-              layer.setStyle({
-                color:'#696969',
-                weight: 2
-            })
-            }})
-          cta.eachLayer(function(layer) {
-            if(layer.LINE.includes(selectedline)){
-              layer.setStyle({
-                color:"black",
-                weight: 2
-            })
-            }})
           hwy_lyr.eachLayer(function(layer) {
             if(layer.feature.properties.abmnum == selectednumber){
               layer.setStyle({

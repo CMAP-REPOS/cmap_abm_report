@@ -21,7 +21,7 @@ function makeStackedChart_4(csv_file, catID, dataTitle, divID,legendID) {
   let afterLoad = () => durations = 750;
   var g = d3.select("#" + divID).append("svg")
     .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "0 0 760 800")
+    .attr("viewBox", "0 0 760 500")
     .attr("align", "center")
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");

@@ -123,8 +123,8 @@ function makeStackedChart_4(csv_file, catID, dataTitle, divID,legendID) {
       .data(stackData)
       .enter().append("g")
       .attr("class", "serie")
-      .attr("fill", function(d) {
-        return z(d.key);
+      .attr("fill", function(d, i) {
+        return z(i);
       });
 
     serie.selectAll("rect")
@@ -321,8 +321,8 @@ function makeStackedChart_4(csv_file, catID, dataTitle, divID,legendID) {
         .data(stackData)
         .enter().append("g")
         .attr("class", "serie")
-        .attr("fill", function(d) {
-          return z(d.key);
+        .attr("fill", function(d,i) {
+          return z(i);
         });
 
       new_layer.selectAll("rect")

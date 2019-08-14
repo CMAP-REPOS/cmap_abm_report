@@ -76,3 +76,16 @@ Shared ride 3+ pay,1490,845.7524136,Part-time worker,Part-time worker
 Shared ride 3+ pay,1480,6.72572,Retired,Retired
 Shared ride 3+ pay,1355,1988.614975,University student,University student
 Taxi,650,1385.245438,Student of driving age,Student of driving age
+Drive alone free,0,0,Child too young for school,Child too young for school
+Drive alone pay,0,0,Child too young for school,Child too young for school
+Shared ride 2 pay,0,0,Child too young for school,Child too young for school
+Shared ride 3+ pay,0,0,Child too young for school,Child too young for school
+School bus,0,0,Full-time worker,Full-time worker
+School bus,0,0,Non-worker,Non-worker
+School bus,0,0,Part-time worker,Part-time worker
+School bus,0,0,Retired,Retired
+Shared ride 3+ pay,0,0,Student of driving age,Student of driving age
+Shared ride 3+ pay,0,0,Student of non-driving age,Student of non-driving age
+Drive alone free,0,0,Student of non-driving age,Student of non-driving age
+Drive alone pay,0,0,Student of non-driving age,Student of non-driving age
+School bus,0,0,University student,University student

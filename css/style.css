@@ -1,5 +1,5 @@
 * {box-sizing: border-box}
-
+.img-center {margin:0 auto;}
 /* Container needed to position the overlay. Adjust the width as needed */
 .container {
   position:relative;
@@ -11,7 +11,7 @@
 }
 
 .image {
-  margin: 0;
+  margin:0 auto;
   position: absolute;
   top: 150%;
   left: 50%;

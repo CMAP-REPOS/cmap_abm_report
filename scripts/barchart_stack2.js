@@ -1,3 +1,4 @@
+
 // set up stacked barchart with no dropdown (no dd) and 7 categories/14 bars
 function makeStackedChart_nodd2(csv_file,dataTitle,divID){
 
@@ -10,11 +11,12 @@ function makeStackedChart_nodd2(csv_file,dataTitle,divID){
     })
 
     var margin = {top: 35, right: 75, bottom: 100, left: 45},
-    width = 960 - margin.left - margin.right,
+    width = 800 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
     height2 = 575 - margin.top - margin.bottom;
 
     var padding = 10;
+    var xlabel = ["Model","Obs","Model","Obs","Model","Obs","Model","Obs","Model","Obs","Model","Obs","Model","Obs","Model","Obs"]
 
     var g = d3.select("#" + divID).append("svg")
     .attr("preserveAspectRatio", "xMinYMin meet")
@@ -50,6 +52,11 @@ function makeStackedChart_nodd2(csv_file,dataTitle,divID){
       return d.SubGroup; }))
       .rangeRound([0, x0.bandwidth()])
       .padding(0.2);
+
+    var x2 = d3.scaleLinear()
+        .domain([0,d3.max(data,function(d){
+          return +d.xlabel
+        })]).range([25,width-30]);
 
     z.domain(data.map(function(d) {
       return d.StackGroup; }))
@@ -92,7 +99,7 @@ function makeStackedChart_nodd2(csv_file,dataTitle,divID){
       .data(function(d) { return d; })
       .enter().append("rect")
         .attr("class", "serie-rect")
-        .attr("transform", function(d) { 
+        .attr("transform", function(d) {
           return "translate(" + x0(d.data.MainGroup) + ",0)"; })
         .attr("x", function(d) {
           return x1(d.data.SubGroup); })
@@ -100,40 +107,14 @@ function makeStackedChart_nodd2(csv_file,dataTitle,divID){
         .attr("height", function(d) { return y(d[0]) - y(d[1]); })
         .attr("width", x1.bandwidth())
 
-    g.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(0," + height + ")")
-        .call(d3.axisBottom(x1));
-
-    g.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(120," + height + ")")
-        .call(d3.axisBottom(x1));
-
-    g.append("g")
-    .attr("class", "axis")
-    .attr("transform", "translate(240," + height + ")")
-    .call(d3.axisBottom(x1));
-
-    g.append("g")
-    .attr("class", "axis")
-    .attr("transform", "translate(360," + height + ")")
-    .call(d3.axisBottom(x1));
-
-    g.append("g")
-    .attr("class", "axis")
-    .attr("transform", "translate(485," + height + ")")
-    .call(d3.axisBottom(x1));
-
-    g.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(600," + height + ")")
-        .call(d3.axisBottom(x1));
-
-    g.append("g")
-    .attr("class", "axis")
-    .attr("transform", "translate(725," + height + ")")
-    .call(d3.axisBottom(x1));
+        g.append("g")
+          .attr("class", "x axis")
+          .attr("transform", "translate(0," + (height + 5) + ")")
+          .call(d3.axisBottom(x2).ticks(d3.max(data,function(d){
+            return +d.xlabel
+          })).tickFormat(function(d){
+            return xlabel[parseInt(d)]
+          }));
 
     g.append("g")
         .attr("class", "axis")

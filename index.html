@@ -166,7 +166,7 @@
       </div>
 
       <div class="tab-content ">
-        <div id="1" class="tab-pane container-fluid">
+        <div id="1" class="tab-pane active container-fluid">
           <div class="row">
             <br />
             <br />
@@ -613,7 +613,7 @@
           </div>
         </div>
         <!-- Work Flows -->
-        <div id="4" class="tab-pane active container-fluid">
+        <div id="4" class="tab-pane  container-fluid">
           <div class="row">
             <div class="col-md-1"></div> <!-- end -->
             <div class="col-md-6">
@@ -696,28 +696,38 @@
                 <div id="wflowinfo2" style="margin-left:70px;"></div>
               </div><br><br>
               <div id="wflowmap"></div>
-              <button type="button" class="btn btn-default btn-xs" id="wrecenter" value="Re-center map" onClick="zoomTo(center,wflowmap)">Recenter Map</button>
-              <br>
-              <img src="data/images/Cursor-Click-2-icon.png" width="20px">
-              <span class="small">Hover over the chord diagram to see area boundaries on the map. Click on the map to see area name. Choose work flow geographies in the drop down menu to view numerical values for work trips.</span>
+              <div style="text-align:left">
+                <button type="button" class="btn btn-default btn-xs" id="wrecenter" value="Re-center map" onClick="zoomTo(center,wflowmap)">Recenter Map</button>
+                <br>
+                <br/>
+                <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br/>
+                <span class="small" style="text-align:left">Hover over the chord diagram to see area boundaries on the map. Click on the map to see area name. Choose work flow geographies in the drop down menu to view numerical values for work trips.</span>
+              </div>
             </div>
+            <div class="col col-md-3" align="center">
+              <br/>
+              <h3>Modeled</h3>
+              <p style="font-size:small;">CMAP ABM - 2010 Scenario</p>
+              <br/>
+              <br/>
+              <div id="modelChord"></div>
+            </div>
+            <div class="col col-md-3" align="center">
+              <br/>
+              <h3>Observed</h3>
+              <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
+              <br/>
+              <br/>
+              <div id="obsChord"></div>
+            </div>
+          </div><!--- Row End -->
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8 colborder"> </div>
           </div>
-          <div class="col col-md-4" style="width: 29.16666666666667%" align="center">
-            <div class="colborder"></div>
-            <h5><b>Modeled Work Flows</b></h5>
-            <p style="font-size:small;">CMAP ABM - 2010 Scenario</p>
-            <div id="modelChord"></div>
-          </div>
-          <div class="col col-md-4" style="width: 29.16666666666667%" align="center">
-            <div class="colborder"></div>
-            <h5><b>Observed Work Flows</b></h5>
-            <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
-            <div id="obsChord"></div>
-          </div>
-        <br><br>
         <div class="row">
+          <div class="col-md-1"></div>
           <div class="col-md-3">
-            <div class="colborder"></div>
             <h3>Work Trips to <text_div id="pTitle"></text_div>
             </h3>
             <br>
@@ -736,8 +746,10 @@
               <option value="McHenry">McHenry County</option>
               <option value="Will">Will County</option>
             </select>
+            <br>
+            <br>
             <div id="worktripsLegend"></div>
-            <div class="small" style="margin-top: 225px;">
+            <div class="small" style="margin-top: 225px; text-align:left">
               Y-axis shows trip origin.<br><br>
               <b>Sources</b><br>
               Observed -Travel Tracker Survey, 2007-2008. <br>
@@ -745,18 +757,18 @@
             </div><br>
             <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
             <p class="small">Select trip destination from dropdown to view observed and model comparison</p>
-
           </div>
           <div class="col-md-6">
-            <div class="colborder"></div>
             <div id="VChart"></div>
           </div>
         </div>
         <div class="row">
-          <br />
-          <br />
+          <div class="col-md-1"></div>
+          <div class="col-md-8 colborder"> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1"></div>
           <div class="col col-md-3">
-            <div class="colborder"></div>
             <h3>Work Trips by Mode and Distance</h3>
             <!--HOLD FOR Work Trips by Mode & Distance-->
             <br>
@@ -773,6 +785,7 @@
               <option value="bike">Bike</option>
               <option value="taxi">Taxi</option>
             </select>
+            <br><br>
             <div id="worktripsdistanceLegend"></div>
             <div class="small" style="margin-top: 100px;">
               Bins include the starting value and go up to the ending value (e.g. 2.5-5 Mile contains trips starting at 2.5 miles and up to but not including 5 miles).
@@ -785,16 +798,16 @@
             <p class="small">Select trip mode from dropdown to view observed and model comparison</p>
           </div>
           <div class="col col-md-6">
-            <div class="colborder"></div>
             <div id="ModeByDistance"></div>
           </div>
         </div>
-
         <div class="row">
-          <br />
-          <br />
+          <div class="col-md-1"></div>
+          <div class="col-md-8 colborder"> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1"></div>
           <div class="col col-md-3">
-            <div class="colborder"></div>
             <h3>Work-Based Trips by Distance</h3>
             <!--HOLD FOR Work-Based Trips by Mode & Distance-->
             <br>
@@ -811,6 +824,7 @@
               <option value="bike">Bike</option>
               <option value="taxi">Taxi</option>
             </select>
+            <br><br>
             <div id="workbasedwalktripsLegend"></div>
             <div class="small" style="margin-top: 100px;">
               Bins include the starting value and go up to the ending value (e.g. 2.5-5 Mile contains trips starting at 2.5 miles and up to but not including 5 miles).
@@ -823,7 +837,6 @@
             <p class="small">Select trip mode from dropdown to view observed and model comparison</p>
           </div>
           <div class="col col-md-6">
-            <div class="colborder"></div>
             <div id="wbModeByDistance"></div>
           </div>
         </div>

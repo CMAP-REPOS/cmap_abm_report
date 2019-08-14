@@ -1755,80 +1755,103 @@
             </div>
           </div>
           <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8 colborder"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
             <div class="col-md-3">
-              <div class="colborder"></div><!-- end -->
               <h3>Comparison of Interstate Daily VMT By Auto and Truck</h3>
+              <br>
               <div id="vmtLegend"></div>
+              <br>
               <div id="interstate_map"></div><br>
+              <br>
               <button type="button" class="btn btn-default btn-xs" id="wrecenter" value="Re-center map" onClick="zoomTo(center,interstate_map)">Recenter Map</button><br />
-              <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
+              <img src="data/images/Cursor-Click-2-icon.png" width="12px"><br>
               <p class="small">Hover over bars to display values and highlight segment on map. Click on a highway segment on the map to show the name.</p>
             </div>
-            <div class="col-md-4" style="width: 29.16666666666667%">
-              <div class="colborder"></div><!-- end -->
+            <div class="col-md-4" style="width: 29.16666666666667%;text-align:center">
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
               <h4>Model</h4>
               <div id="interstateVMTbar_model"></div>
             </div>
             <div class="col-md-4" style="width: 29.16666666666667%">
-              <div class="colborder"></div><!-- end -->
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
               <h4>Observed</h4>
               <div id="interstateVMTbar_obs"></div>
             </div>
           </div>
           <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8 colborder"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
             <div class="col-md-3">
-              <div class="colborder"></div><!-- end -->
-
               <h3>Daily VMT Comparison by Volume Range</h3>
             </div>
-            <div class="col-md-6">
-              <div class="colborder"></div><!-- end -->
-
+            <div class="col-md-6" style="margin:auto;width:auto">
               <h4>Interstate</h4>
               <center>
-                <div id="vrange_int"></div>
+                <table id="vrange_int"></table>
               </center>
               <h4>Arterial</h4>
               <center>
-                <div id="vrange_art"></div>
+                <table id="vrange_art"></table>
               </center>
               <h4>Total</h4>
               <center>
-                <div id="vrange_total"></div>
+                <table id="vrange_total"></table>
               </center>
             </div>
           </div>
           <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8 colborder"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
             <div class="col-md-3">
-              <div class="colborder"></div><!-- end -->
               <h3>Root Mean Squared Error Analysis</h3>
             </div>
-            <div class="col-md-6">
-              <div class="colborder"></div><!-- end -->
-              <center>
-                <div id="rmse_7"></div>
-              </center>
+            <div class="col-md-6" style="margin:auto;width:auto">
+              <br/>
+                <table id="rmse_7"></table>
               <!-- <div id="rmse_line"></div> -->
             </div>
-            <div class="col-md-3">
-              <div class="colborder"></div><!-- end -->
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <p class="small">Links were stratified into volume bins
-                based on AADT and linear regression analyses
-                (weighted by link length) were completed for
-                each stratum. The root mean squared error (RMSE)
-                measures the average difference between the observed
-                values and the modeled volume predicted by the linear
-                regression. The percent RMSE standardizes the RMSE
-                by dividing it by the mean of the AADT (observed value).
-              </p>
+            <div class="col col-md-2 ">
+              <div class="container">
+                <br />
+                <br />
+                <br />
+                <br /><br />
+                <img src="data/images/icons8-add-50.png"  class="img-fluid image">
+                <div class="overlay">
+                  <p>
+                    Links were stratified into volume bins
+                      based on AADT and linear regression analyses
+                      (weighted by link length) were completed for
+                      each stratum. The root mean squared error (RMSE)
+                      measures the average difference between the observed
+                      values and the modeled volume predicted by the linear
+                      regression. The percent RMSE standardizes the RMSE
+                      by dividing it by the mean of the AADT (observed value).
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
 
 

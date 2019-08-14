@@ -1677,7 +1677,7 @@
             </div>
           </div>
         </div>
-        <div id="8" class="tab-pane container-fluid active">
+        <div id="8" class="tab-pane container-fluid">
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-6">
@@ -1826,8 +1826,8 @@
               <h3>Root Mean Squared Error Analysis</h3>
             </div>
             <div class="col-md-6" style="margin:auto;width:auto">
-              <br/>
-                <table id="rmse_7"></table>
+              <br />
+              <table id="rmse_7"></table>
               <!-- <div id="rmse_line"></div> -->
             </div>
             <div class="col col-md-2 ">
@@ -1836,17 +1836,17 @@
                 <br />
                 <br />
                 <br /><br />
-                <img src="data/images/icons8-add-50.png"  class="img-fluid image">
+                <img src="data/images/icons8-add-50.png" class="img-fluid image">
                 <div class="overlay">
                   <p>
                     Links were stratified into volume bins
-                      based on AADT and linear regression analyses
-                      (weighted by link length) were completed for
-                      each stratum. The root mean squared error (RMSE)
-                      measures the average difference between the observed
-                      values and the modeled volume predicted by the linear
-                      regression. The percent RMSE standardizes the RMSE
-                      by dividing it by the mean of the AADT (observed value).
+                    based on AADT and linear regression analyses
+                    (weighted by link length) were completed for
+                    each stratum. The root mean squared error (RMSE)
+                    measures the average difference between the observed
+                    values and the modeled volume predicted by the linear
+                    regression. The percent RMSE standardizes the RMSE
+                    by dividing it by the mean of the AADT (observed value).
                   </p>
                 </div>
               </div>
@@ -1859,7 +1859,7 @@
         <div id="9" class="tab-pane container-fluid">
           <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-8">
+            <div class="col-md-6">
               <br />
               <br />
 
@@ -1893,8 +1893,8 @@
               <div class="colborder"></div>
               <br />
               <div class="col-md-3">
-              <h3>Transit Boarding by Mode</h3>
-            </div>
+                <h3>Transit Boarding by Mode</h3>
+              </div>
               <div class="col-md-6">
                 <br />
                 <br />
@@ -1939,14 +1939,13 @@
           </div>
         </div>
         <!-- Work FLow Validation -->
-        <div id="12" class="tab-pane container-fluid">
+        <div id="12" class="tab-pane container-fluid active">
           <div class="row">
-            <div class="col-md-3"></div>
+            <div class="col-md-1"></div>
             <div class="col-md-6">
               <br />
               <br />
-
-              <h3>Work Flow Validation</h3>
+              <h3>Commute Trips Validation</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non igitur de
                 improbo, sed de callido improbo quaerimus, qualis Q. Ampulla enim sit necne
@@ -1959,8 +1958,12 @@
             </div>
           </div>
           <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8 colborder"> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
             <div class="col-md-3">
-              <div class="colborder"></div><!-- end -->
               <h3>Comparison of Observed and Modeled Journey to Work Flows</h3>
               <p class="small">R-squared is calculated to determine the peformance of the model predicability.
                 It is used to compare the regionwide observed and modeled journey to work trips between ring sectors.
@@ -1975,14 +1978,15 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="colborder"></div><!-- end -->
               <div id="scatter_jtw"></div>
+            </div>
+            <div class="col col-md-2 ">
               <div class="container">
                 <br />
                 <br />
                 <br />
                 <br />
-                <img src="data/images/icons8-add-50.png" style="align:center" class="image">
+                <img src="data/images/icons8-add-50.png" style="align:center" class="img-fluid image">
                 <div class="overlay">
                   <p>
                     The graph shows an extremely strong relationship between
@@ -1996,29 +2000,21 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="colborder"></div>
-              <br />
-              <br />
-              <table id="commute_model" style="width:100%;"></table>
-            </div>
-          </div>
         </div>
-      </div>
 
-      <!-- Footer -->
-      <nav class="navbar navbar-inverse navbar-static-bottom">
-        <div class="container-fluid">
-          <div id="source">
-            <p class="navbar-text navbar-left">
-              Observed Data: Travel Tracker Survey
-            </p>
+
+        <!-- Footer -->
+        <nav class="navbar navbar-inverse navbar-static-bottom">
+          <div class="container-fluid">
+            <div id="source">
+              <p class="navbar-text navbar-left">
+                Observed Data: Travel Tracker Survey
+              </p>
+            </div>
+            <p class="navbar-text navbar-right" style="margin-right:0px !important">GitHub</p>
           </div>
-          <p class="navbar-text navbar-right" style="margin-right:0px !important">GitHub</p>
-        </div>
-      </nav>
-      <!-- Footer -->
+        </nav>
+        <!-- Footer -->
 </body>
 
 <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>

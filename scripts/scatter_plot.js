@@ -54,7 +54,7 @@ function makeScatter(csv_file, chart_id, modelvalue,obsvalue,category_value,rsqu
       var yval = data.map(function (d) { return parseFloat(d[modelvalue]); });
       var xval = data.map(function (d) { return parseFloat(d[obsvalue]); });
 	    var lr = linearRegression(yval,xval);
-      d3.select("#"+rsquared).text(parseFloat(lr.r2).toPrecision(2));
+      d3.select("#"+rsquared).text(parseFloat(lr.r2).toPrecision(3));
       var max = d3.max(data, function (d) { return d[obsvalue]; });
       var myLine = svg.append("line")
                   .attr("x1", x(0))

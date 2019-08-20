@@ -27,34 +27,18 @@
 
 </head>
 
-<body>
+<body style="height:100%">
   <div>
     <div>
       <div>
+        <!-- Header -->
         <nav class="navbar navbar-default navbar-fixed-top" id="header">
           <div class="row" style="height: 76px;">
-            <div class="col-md-2" style="display: flex; align-items:center;">
-              <img src='data/images/cmap_shortid_margins_RGB-01-01.png' height="30px">
-            </div>
-            <div class="col-md-6" style="display: flex; align-items:center;">
-              <h3>Activity Based Model (ABM) Calibration and Validation Report</h3>
-            </div>
-            <div class="col-md-2" style="display: flex; align-items:center; margin-top: 5px;">
-            </div>
-            <div class="col-md-2" style="display: flex; align-items:center;margin-top: 5px;">
-              August 2019 Release &nbsp;&nbsp;
-              <div id="abouttoggle">
-                <a role="button" data-toggle="collapse" data-target="#collapseIntro" aria-expanded="true" aria-controls="collapseIntro">About</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <!-- Footer -->
-        <nav class="navbar navbar-default navbar-fixed-top" id="header">
-          <div class="row" style="height: 76px;">
-            <div class="col-md-2" style="display: flex; align-items:center;">
-              <img src='data/images/cmap_shortid_margins_RGB-01-01.png' height="30px">
-            </div>
+              <div class="col-md-2" style="display: flex; align-items:center;">
+                  <a href="https://www.cmap.illinois.gov/" target="_blank">
+                    <img src='data/images/cmap_shortid_margins_RGB-01-01.png' height="30px">
+                  </a>
+                </div>
             <div class="col-md-5" style="display: flex; align-items:center;">
               <h3>Activity Based Model (ABM) Calibration and Validation Report</h3>
             </div>
@@ -1207,7 +1191,7 @@
                 <br />
                 <br />
                 <br />
-                <img src="data/images/icons8-add-50.png" style="align:center" class="image">
+                <img src="data/images/icons8-add-50.png" class="image">
                 <div class="overlay">
                   <p>
                     The model does a good job of matching the number of mandatory tours especially for Full-Time Workers and Non-Driving students,
@@ -1370,7 +1354,7 @@
                 <br />
                 <br />
                 <br />
-                <img src="data/images/icons8-add-50.png" style="align:center" class="image">
+                <img src="data/images/icons8-add-50.png" class="image">
                 <div class="overlay">
                   <p>
                     The model overestimates work activities and underestimates maintenance and escort activities. The frequencies of all other activities are well represented. The difference in modeled and observed work activities could be related to
@@ -1421,7 +1405,7 @@
                 <br />
                 <br />
                 <br />
-                <img src="data/images/icons8-add-50.png" style="align:center" class="image">
+                <img src="data/images/icons8-add-50.png" class="image">
                 <div class="overlay">
                   <p>
                     With the exception of students under 16 years, the model does a better job matching observed non-student trip purposes. The one major difference among the non-student trips shows that the overestimation of work trip activities is
@@ -1468,7 +1452,7 @@
                 <br />
                 <br />
                 <br />
-                <img src="data/images/icons8-add-50.png" style="align:center" class="image">
+                <img src="data/images/icons8-add-50.png" class="image">
                 <div class="overlay">
                   <p>
                     The model is capable of capturing trip purposes for most trip distances, but tends to overestimate short trips and underestimate long trips. This behavior mostly applies to work trips. </p>
@@ -1592,7 +1576,7 @@
               <br />
               <br />
               <div class="container">
-                <img src="data/images/icons8-add-50.png" style="align:center" class="image">
+                <img src="data/images/icons8-add-50.png" class="image">
                 <div class="overlay">
                   <p>
                     Ring sectors are geographic divisions of the CMAP
@@ -1713,7 +1697,7 @@
           </div> -->
         </div>
 
-        <div id="11" class="tab-pane  container-fluid">
+        <div id="11" class="tab-pane  container-fluid" style="min-height:80vh">
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-6">
@@ -2107,7 +2091,7 @@
                 <br />
                 <br />
                 <br />
-                <img src="data/images/icons8-add-50.png" style="align:center" class="img-fluid image">
+                <img src="data/images/icons8-add-50.png" class="img-fluid image">
                 <div class="overlay">
                   <p>
                     The graph shows an extremely strong relationship between
@@ -2131,7 +2115,7 @@
               <h3>Modeled Journey to Work Flows</h3>
               <br>
             </div>
-            <div class="col-md-6" style="width:auto">
+            <div class="col-md-6">
               <br />
               <table id="modelcountyflow"> </table>
             </div>
@@ -2146,7 +2130,7 @@
               <h3>Observed Journey to Work Flows</h3>
               <br>
             </div>
-            <div class="col-md-6" style="width:auto">
+            <div class="col-md-6">
               <br />
               <table id="ctpp2012countyflow"> </table>
             </div>
@@ -2161,7 +2145,7 @@
               <h3>Difference Model and Observed Journey to Work Flows</h3>
               <br>
             </div>
-            <div class="col-md-6" style="width:auto">
+            <div class="col-md-6">
               <br />
               <table id="valdiffcountyflow"> </table>
             </div>
@@ -2171,7 +2155,7 @@
 
 
       <!-- Footer -->
-      <nav class="navbar navbar-inverse navbar-static-bottom">
+      <nav class="navbar navbar-inverse navbar-static-bottom" style="margin-bottom: 0px">
         <div class="container-fluid">
           <div id="source">
             <p class="navbar-text navbar-left">
@@ -2220,7 +2204,9 @@
               </script>
             </p>
           </div>
-          <p class="navbar-text navbar-right" style="margin-right:0px !important">GitHub</p>
+          <a class="navbar-text navbar-right" style="margin-right:0px !important" href="https://github.com/brittaneyross/abm_viz_report" target="_blank">
+            <img src="data/images/GitHub-Mark-Light-32px.png">
+          </a>
         </div>
       </nav>
       <!-- Footer -->
@@ -2309,9 +2295,6 @@
 </script>
 <script>
   makeGroupVBar("data/csv22_dap.csv", "#dap", "#catdap", 2, "dapDesc", "dapTitle");
-</script>
-<script>
-  makeGroupHBar_hover("data/csv24_vmt_county.csv", "#vmtcounty", 2, "vmtDesc", "vmtTitle", 800, 'percent');
 </script>
 <script>
   makeGroupHBar("data/csv34.csv", "#transitassignment", 2, "vmtDesc", "vmtTitle", 600, 'boardings');

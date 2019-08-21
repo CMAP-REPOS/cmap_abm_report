@@ -215,7 +215,7 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
             .duration(200)
             .style("opacity", .9);
             div.html(
-              "<p style='color:#8a89a6; font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(d.value) +
+              "<p style='color:#8a89a6; font-size: 20px; margin-bottom: 0px;'>" + d3.formatPrefix(".2s",1e6)(d.value) +
               "</p><p style='color:grey; font-size: 10px;'>" + word + "</p>"
               )
               .style("left", (d3.event.pageX) + "px")

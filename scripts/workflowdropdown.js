@@ -1,7 +1,5 @@
-
-
 function updateworkdata(origin, destination) {
-    d3.csv("data/csv4_chord.csv", function(data) {
+    d3.csv("data/csv4_chord_dropdown.csv", function(data) {
         var observed = data.filter(function(d) {
             return (d.root == origin) & (d.node == destination) & (d.Category == "Survey");
         });

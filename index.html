@@ -39,28 +39,115 @@
                     <img src='data/images/cmap_shortid_margins_RGB-01-01.png' height="30px">
                   </a>
                 </div>
-            <div class="col-md-5" style="display: flex; align-items:center;">
+            <div class="col-md-8" style="display: flex; align-items:center;">
               <h3>Activity Based Model (ABM) Calibration and Validation Report</h3>
-            </div>
-            <div class="col-md-3" style="display: flex; align-items:center; margin-top: 5px;">
             </div>
             <div class="col-md-2" style="display: flex; align-items:center;margin-top: 5px;">
               August 2019 Release &nbsp;&nbsp;
               <div id="abouttoggle">
-                <a role="button" data-toggle="collapse" data-target="#collapseIntro" aria-expanded="true" aria-controls="collapseIntro">About</a>
+                <a role="button" data-toggle="collapse" data-target="#collapseIntro" aria-expanded="true" aria-controls="collapseIntro" class="collapsed">About</a>
               </div>
             </div>
           </div>
         </nav>
-        <div class="col-md-12">
 
-          <br><br><br><br>
-          <br>
+        <nav class="navbar navbar-inverse navbar-top" style="margin-bottom:0px">
+            <div class="container-fluid" style="margin-top: 80px">
+              <ul class="nav navbar-nav">
+                <li class="active">
+                  <a href="#1" role="tab" data-toggle="tab">
+                    Introduction
+                  </a>
+                </li>
+  
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Calibration 
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>  
+                    <a class="calibration" href="#2" role="tab" data-toggle="tab">
+                          Population Synthesis
+                        </a>
+                      </li>
+                      <li>
+                          <a class="calibration" href="#3" role="tab" data-toggle="tab">
+                            Auto Ownership
+                          </a>
+                        </li>
+          
+                        <li>
+                          <a class="calibration" href="#10" role="tab" data-toggle="tab">
+                            Tours
+                          </a>
+                        </li>
+          
+                        <li>
+                          <a class="calibration" href="#5" role="tab" data-toggle="tab">
+                            Trip Mode
+                          </a>
+                        </li>
+          
+                        <li>
+                          <a class="calibration" href="#6" role="tab" data-toggle="tab">
+                            Trip Activities
+                          </a>
+                        </li>
+          
+                        <li>
+                          <a class="calibration" href="#4" role="tab" data-toggle="tab">
+                            Work Flows
+                          </a>
+                        </li>
+          
+                        <li>
+                          <a class="calibration" href="#7" role="tab" data-toggle="tab">
+                            Transit Trips
+                          </a>
+                        </li>
+                  </ul>
+                  </li>
+  
+              <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Validation
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+    
+                  <li>
+                    <a class="validation" href="#11" role="tab" data-toggle="tab">
+                      Household Attributes
+                    </a>
+                  </li>
+                  <li>
+                    <a class="validation" href="#12" role="tab" data-toggle="tab">
+                      Commute Trips
+                    </a>
+                  </li>
+                  <li>
+                    <a class="validation" href="#8" role="tab" data-toggle="tab">
+                      Highway Assignment
+                    </a>
+                  </li>
+    
+                  <li>
+                    <a class="validation" href="#9" role="tab" data-toggle="tab">
+                      Transit Assignment
+                    </a>
+                  </li>
+              </ul>
+              </li>
+            </div>
+          </nav>
+
+        <div class="col-md-12">
           <div class="row">
             <div class="col-md-10">
               <div class="panel-group" id="accordionintro" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-default">
-                  <div id="collapseIntro" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div id="collapseIntro" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
                       <p>
                         Activity-based models (ABMs) are founded on the idea that people’s travel behavior is a result of their daily activities; i.e., the things people need to accomplish dictate where, when, and how they travel, and with whom.
@@ -85,9 +172,7 @@
                         validation activities; in the absence of other observed data, the sources used for model
                         calibration may be used for validation as long as they examine different aspects of the
                         data or rely on alternate geographic scopes. Model validation results in this report reflect 2015 conditions.<br><br>
-                        <b>
-                          <font color=#1c5f83>Model calibration results are in blue tabs</font> and <font color=#7ebea5>model validation results are in green tabs</font>
-                        </b>.<br>
+                       <br>
                         <font style="font-style:italic; font-size:small;">Click "About" in the header to hide this text</font>
                       </p>
                     </div>
@@ -97,7 +182,7 @@
             </div>
           </div>
         </div>
-        <ul class="nav nav-tabs">
+        <!-- <ul class="nav nav-tabs">
           <li class="active">
             <a href="#1" role="tab" data-toggle="tab">
               Introduction
@@ -167,14 +252,12 @@
               Transit Assignment
             </a>
           </li>
-        </ul>
+        </ul> -->
       </div>
 
       <div class="tab-content ">
         <div id="1" class="tab-pane active container-fluid">
           <div class="row">
-            <br />
-            <br />
             <div class="col-md-1"></div> <!-- end -->
             <div class="col-md-7">
               <h2>Introduction</h2>

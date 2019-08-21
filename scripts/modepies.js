@@ -33,7 +33,7 @@ d3.csv("data/csv18_survey_transit_access.csv", function(data) {
         bottom: 0,
         left: 0
       },
-      width = 400 - margin.right - margin.left,
+      width = 300 - margin.right - margin.left,
       height = 400 - margin.top - margin.bottom;
 
     var radius = Math.min(width/1.5, height/1.5) / 2;

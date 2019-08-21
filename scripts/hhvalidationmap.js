@@ -285,4 +285,4 @@ difflegend1.onAdd = function (map) {
 };
 
 difflegend1.addTo(map1);
-L.control.layers(baseLayers1,overlays1, {hideSingleBase:true}).addTo(map1);
+L.control.layers(baseLayers1,overlays1, {hideSingleBase:true, position: 'bottomleft'} ).addTo(map1);

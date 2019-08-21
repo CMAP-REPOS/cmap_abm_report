@@ -1,7 +1,5 @@
-
-
 function updateworkdata(origin, destination) {
-    d3.csv("data/csv4_chord.csv", function(data) {
+    d3.csv("data/csv4_chord_dropdown.csv", function(data) {
         var observed = data.filter(function(d) {
             return (d.root == origin) & (d.node == destination) & (d.Category == "Survey");
         });
@@ -14,14 +12,14 @@ function updateworkdata(origin, destination) {
     $("#wflowinfo2").empty()
 
     d3.select("#wflowinfo").html(
-        "</p></b><p style='color:rgb(28, 78, 128); font-size: 30px; margin-bottom: 0px;'>" + d3.format(".4~s")(modeled[0].count) +
+        "</p></b><p style='color:rgb(28, 78, 128); font-size: 30px; margin-bottom: 0px;'>" + d3.formatPrefix(".2s",1e6)(modeled[0].count) +
         "</p><p style='color:grey; font-size: 12px;'> modeled" 
         )
         .style("left", 200 + "px")
         .style("top",  100 + "px");    
 
     d3.select("#wflowinfo2").html(
-        "</p></b><p style='color:rgb(166, 186, 206); font-size: 30px; margin-bottom: 0px;'>" + d3.format(".4~s")(observed[0].count) +
+        "</p></b><p style='color:rgb(166, 186, 206); font-size: 30px; margin-bottom: 0px;'>" + d3.formatPrefix(".2s",1e6)(observed[0].count) +
         "</p><p style='color:grey; font-size: 12px;'> observed" 
         )
         .style("left", 200 + "px")

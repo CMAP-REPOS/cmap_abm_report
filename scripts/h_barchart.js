@@ -28,10 +28,6 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
   .append("g")
   .attr("transform","translate(" + margin.left + "," + margin.top + ")");
 
-  var div = d3.select("body").append("div")
-  .attr("class", "vmttooltip2")
-  .style("opacity", 0);
-
   // let x0 = d3.scaleBand().rangeRound([0, width]).paddingInner(0.1),
   //   x1 = d3.scaleBand(),
   //   y = d3.scaleLinear().rangeRound([height, 0]);
@@ -212,11 +208,14 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
           .attr("fill", function(d) { return z(d.key); })
           .merge(bars)
           .on("mouseover", function(d) {
+            var div = d3.select("body").append("div")
+            .attr("class", "vmttooltip2")
+            .style("opacity", 0);
             div.transition()
             .duration(200)
             .style("opacity", .9);
             div.html(
-              "<p style='color:#8a89a6; font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(d.value) +
+              "<p style='color:#8a89a6; font-size: 20px; margin-bottom: 0px;'>" + d3.formatPrefix(".2s",1e5)(d.value) +
               "</p><p style='color:grey; font-size: 10px;'>" + word + "</p>"
               )
               .style("left", (d3.event.pageX) + "px")
@@ -230,7 +229,7 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
         metra1.eachLayer(function(layer) {
           if(layer.LINE.includes(selectedline)){
             layer.setStyle({
-              color:"#d7d55c",
+              color:"#0052a7",
               weight: 3
           })
           }})
@@ -245,10 +244,8 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
             })
 
         .on("mouseout", function(d) {
-          div.transition()
-          .duration(500)
-          .style("opacity", 0);
-
+          d3.selectAll(".vmttooltip2")
+          .remove();
 
           d3.selectAll("." + d.lines.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, ""))
             .attr("fill", function(d) {

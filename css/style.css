@@ -108,7 +108,7 @@ a.calibration:hover {
 }
 
 a.calibration {
-  color: #1c5f83;
+  color: white;
 }
 
 a.validation {
@@ -179,7 +179,7 @@ div.chordtooltip {
 
 #tooltip1, #tooltip2, #tooltip3, #tooltip4, #tooltip5, #tooltip6 {
 bottom: 290px;
-left: 20px;
+left: 2px;
 position: relative;
 width: 100px;
 }

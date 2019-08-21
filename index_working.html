@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-
-<!-- jquery and bootstrap scripts -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 <html lang="en" dir="ltr">
 
 <head>
@@ -27,127 +21,56 @@
 
 </head>
 
-<body style="height:100%">
+<body>
   <div>
     <div>
       <div>
-        <!-- Header -->
         <nav class="navbar navbar-default navbar-fixed-top" id="header">
           <div class="row" style="height: 76px;">
-              <div class="col-md-2" style="display: flex; align-items:center;">
-                  <a href="https://www.cmap.illinois.gov/" target="_blank">
-                    <img src='data/images/cmap_shortid_margins_RGB-01-01.png' height="30px">
-                  </a>
-                </div>
-            <div class="col-md-8" style="display: flex; align-items:center;">
+            <div class="col-md-2" style="display: flex; align-items:center;">
+              <img src='data/images/cmap_shortid_margins_RGB-01-01.png' height="30px">
+            </div>
+            <div class="col-md-6" style="display: flex; align-items:center;">
               <h3>Activity Based Model (ABM) Calibration and Validation Report</h3>
+            </div>
+            <div class="col-md-2" style="display: flex; align-items:center; margin-top: 5px;">
             </div>
             <div class="col-md-2" style="display: flex; align-items:center;margin-top: 5px;">
               August 2019 Release &nbsp;&nbsp;
               <div id="abouttoggle">
-                <a role="button" data-toggle="collapse" data-target="#collapseIntro" aria-expanded="true" aria-controls="collapseIntro" class="collapsed">About</a>
+                <a role="button" data-toggle="collapse" data-target="#collapseIntro" aria-expanded="true" aria-controls="collapseIntro">About</a>
               </div>
             </div>
           </div>
         </nav>
-
-        <nav class="navbar navbar-inverse navbar-top" style="margin-bottom:0px">
-            <div class="container-fluid" style="margin-top: 80px">
-              <ul class="nav navbar-nav">
-                <li class="active">
-                  <a href="#1" role="tab" data-toggle="tab">
-                    Introduction
-                  </a>
-                </li>
-  
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Calibration 
-                    <span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>  
-                    <a class="calibration" href="#2" role="tab" data-toggle="tab">
-                          Population Synthesis
-                        </a>
-                      </li>
-                      <li>
-                          <a class="calibration" href="#3" role="tab" data-toggle="tab">
-                            Auto Ownership
-                          </a>
-                        </li>
-          
-                        <li>
-                          <a class="calibration" href="#10" role="tab" data-toggle="tab">
-                            Tours
-                          </a>
-                        </li>
-          
-                        <li>
-                          <a class="calibration" href="#5" role="tab" data-toggle="tab">
-                            Trip Mode
-                          </a>
-                        </li>
-          
-                        <li>
-                          <a class="calibration" href="#6" role="tab" data-toggle="tab">
-                            Trip Activities
-                          </a>
-                        </li>
-          
-                        <li>
-                          <a class="calibration" href="#4" role="tab" data-toggle="tab">
-                            Work Flows
-                          </a>
-                        </li>
-          
-                        <li>
-                          <a class="calibration" href="#7" role="tab" data-toggle="tab">
-                            Transit Trips
-                          </a>
-                        </li>
-                  </ul>
-                  </li>
-  
-              <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Validation
-                    <span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu">
-    
-                  <li>
-                    <a class="validation" href="#11" role="tab" data-toggle="tab">
-                      Household Attributes
-                    </a>
-                  </li>
-                  <li>
-                    <a class="validation" href="#12" role="tab" data-toggle="tab">
-                      Commute Trips
-                    </a>
-                  </li>
-                  <li>
-                    <a class="validation" href="#8" role="tab" data-toggle="tab">
-                      Highway Assignment
-                    </a>
-                  </li>
-    
-                  <li>
-                    <a class="validation" href="#9" role="tab" data-toggle="tab">
-                      Transit Assignment
-                    </a>
-                  </li>
-              </ul>
-              </li>
+        <!-- Footer -->
+        <nav class="navbar navbar-default navbar-fixed-top" id="header">
+          <div class="row" style="height: 76px;">
+            <div class="col-md-2" style="display: flex; align-items:center;">
+              <img src='data/images/cmap_shortid_margins_RGB-01-01.png' height="30px">
             </div>
-          </nav>
-
+            <div class="col-md-5" style="display: flex; align-items:center;">
+              <h3>Activity Based Model (ABM) Calibration and Validation Report</h3>
+            </div>
+            <div class="col-md-3" style="display: flex; align-items:center; margin-top: 5px;">
+            </div>
+            <div class="col-md-2" style="display: flex; align-items:center;margin-top: 5px;">
+              August 2019 Release &nbsp;&nbsp;
+              <div id="abouttoggle">
+                <a role="button" data-toggle="collapse" data-target="#collapseIntro" aria-expanded="true" aria-controls="collapseIntro">About</a>
+              </div>
+            </div>
+          </div>
+        </nav>
         <div class="col-md-12">
+
+          <br><br><br><br>
+          <br>
           <div class="row">
             <div class="col-md-10">
               <div class="panel-group" id="accordionintro" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-default">
-                  <div id="collapseIntro" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div id="collapseIntro" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
                       <p>
                         Activity-based models (ABMs) are founded on the idea that people’s travel behavior is a result of their daily activities; i.e., the things people need to accomplish dictate where, when, and how they travel, and with whom.
@@ -172,7 +95,9 @@
                         validation activities; in the absence of other observed data, the sources used for model
                         calibration may be used for validation as long as they examine different aspects of the
                         data or rely on alternate geographic scopes. Model validation results in this report reflect 2015 conditions.<br><br>
-                       <br>
+                        <b>
+                          <font color=#1c5f83>Model calibration results are in blue tabs</font> and <font color=#7ebea5>model validation results are in green tabs</font>
+                        </b>.<br>
                         <font style="font-style:italic; font-size:small;">Click "About" in the header to hide this text</font>
                       </p>
                     </div>
@@ -182,7 +107,7 @@
             </div>
           </div>
         </div>
-        <!-- <ul class="nav nav-tabs">
+        <ul class="nav nav-tabs">
           <li class="active">
             <a href="#1" role="tab" data-toggle="tab">
               Introduction
@@ -252,12 +177,14 @@
               Transit Assignment
             </a>
           </li>
-        </ul> -->
+        </ul>
       </div>
 
       <div class="tab-content ">
         <div id="1" class="tab-pane active container-fluid">
           <div class="row">
+            <br />
+            <br />
             <div class="col-md-1"></div> <!-- end -->
             <div class="col-md-7">
               <h2>Introduction</h2>
@@ -327,11 +254,10 @@
                     <div class="panel-body">
                       A synthetic population provides the foundation for modeling individuals’ travel behavior within an activity-based model.
                       Using Census data and other socio-economic information, a complete set of households for a modeling area is developed
-                      (see <a href="#2" role="tab" data-toggle="tab">Population Synthesis</a> tab). This dataset contains all of the relevant attributes about each household and individual that are required by the
+                      (see <a href="#2" role="tab" data-toggle="tab">Population Synthesis</a> tab). This dataset contains all of the relevant attributes about each household and for each individual living in those households that are required by the
                       ABM.
-                      Since the Census Bureau does not release detailed information about every household and individual, household and person records are replicated in order to generate a complete set of households for the modeling area.  Target totals for various household 
-                      and population attributes guide this process so the final population is representative of the region.  
-                      All of the subsequent steps in the ABM rely on the data provided in the synthetic population.
+                      While the synthetic population is statistically representative of the Census data, the actual households and individuals are “synthetic” in that they do not represent identifiable people and an individual household in the Census
+                      data may be replicated numerous times in order to generate a complete distribution of households in the modeling inputs. All of the subsequent steps in the ABM rely on the data provided in the synthetic population.
                     </div>
                   </div>
                 </div>
@@ -465,7 +391,7 @@
           <!--end row-->
         </div>
         <!--end tab-->
-        <div id="2" class="tab-pane  container-fluid">
+        <div id="2" class="tab-pane   container-fluid">
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-7">
@@ -729,6 +655,10 @@
             <div class="col-md-3">
               <h3>Modeled Journey to Work Flows</h3>
               <br>
+              <!-- <div class="small">
+                <b>Sources</b><br>
+                Modeled - CMAP ABM - 2010 Scenario <br>
+              </div> -->
             </div>
             <div class="col-md-6" style="width:auto">
               <br />
@@ -744,6 +674,10 @@
             <div class="col-md-3">
               <h3>Observed Journey to Work Flows</h3>
               <br>
+              <!-- <div class="small">
+                <b>Sources</b><br>
+                Observed - CTPP (2009-2013)<br>
+              </div> -->
             </div>
             <div class="col-md-6" style="width:auto">
               <br />
@@ -759,6 +693,10 @@
             <div class="col-md-3">
               <h3>Difference Model and Observed Journey to Work Flows</h3>
               <br>
+              <!-- <div class="small">
+                <b>Sources</b><br>
+                Observed - CTPP (2009-2013)<br>
+              </div> -->
             </div>
             <div class="col-md-6" style="width:auto">
               <br />
@@ -784,20 +722,19 @@
                   <span class="sr-only">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a>All</a></li>
-                  <li><a>CBD</a></li>
-                  <li><a>DuPage</a></li>
-                  <li><a>Kane</a></li>
-                  <li><a>Kendall</a></li>
-                  <li><a>Lake</a></li>
-                  <li><a>McHenry</a></li>
-                  <li><a>North Chicago</a></li>
-                  <li><a>North Cook</a></li>
-                  <li><a>South Chicago</a></li>
-                  <li><a>South Cook</a></li>
-                  <li><a>West Chicago</a></li>
-                  <li><a>West Cook</a></li>
-                  <li><a>Will</a></li>
+                  <li><a href="#">CBD</a></li>
+                  <li><a href="#">DuPage</a></li>
+                  <li><a href="#">Kane</a></li>
+                  <li><a href="#">Kendall</a></li>
+                  <li><a href="#">Lake</a></li>
+                  <li><a href="#">McHenry</a></li>
+                  <li><a href="#">North Chicago</a></li>
+                  <li><a href="#">North Cook</a></li>
+                  <li><a href="#">South Chicago</a></li>
+                  <li><a href="#">South Cook</a></li>
+                  <li><a href="#">West Chicago</a></li>
+                  <li><a href="#">West Cook</a></li>
+                  <li><a href="#">Will</a></li>
                 </ul>
               </div>
               To
@@ -809,20 +746,19 @@
                   <span class="sr-only">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a>All</a></li>
-                  <li><a>CBD</a></li>
-                  <li><a>DuPage</a></li>
-                  <li><a>Kane</a></li>
-                  <li><a>Kendall</a></li>
-                  <li><a>Lake</a></li>
-                  <li><a>McHenry</a></li>
-                  <li><a>North Chicago</a></li>
-                  <li><a>North Cook</a></li>
-                  <li><a>South Chicago</a></li>
-                  <li><a>South Cook</a></li>
-                  <li><a>West Chicago</a></li>
-                  <li><a>West Cook</a></li>
-                  <li><a>Will</a></li>
+                  <li><a href="#">CBD</a></li>
+                  <li><a href="#">DuPage</a></li>
+                  <li><a href="#">Kane</a></li>
+                  <li><a href="#">Kendall</a></li>
+                  <li><a href="#">Lake</a></li>
+                  <li><a href="#">McHenry</a></li>
+                  <li><a href="#">North Chicago</a></li>
+                  <li><a href="#">North Cook</a></li>
+                  <li><a href="#">South Chicago</a></li>
+                  <li><a href="#">South Cook</a></li>
+                  <li><a href="#">West Chicago</a></li>
+                  <li><a href="#">West Cook</a></li>
+                  <li><a href="#">Will</a></li>
                 </ul>
               </div>
 
@@ -844,6 +780,7 @@
             <div class="col col-md-3" align="center">
               <br />
               <h3>Modeled</h3>
+              <p style="font-size:small;">CMAP ABM - 2010 Scenario</p>
               <br />
               <br />
               <div id="modelChord"></div>
@@ -851,6 +788,7 @@
             <div class="col col-md-3" align="center">
               <br />
               <h3>Observed</h3>
+              <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
               <br />
               <br />
               <div id="obsChord"></div>
@@ -885,6 +823,12 @@
               <br>
               <br>
               <div id="worktripsLegend"></div>
+              <div class="small" style="margin-top: 225px; text-align:left">
+                Y-axis shows trip origin.<br><br>
+                <!-- <b>Sources</b><br>
+                Observed -Travel Tracker Survey, 2007-2008. <br>
+                Modeled- CMAP ABM - 2010 Scenario. <br> -->
+              </div><br>
               <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Select trip destination from dropdown to view observed and model comparison</p>
             </div>
@@ -920,6 +864,9 @@
               <div class="small" style="margin-top: 100px;">
                 Bins include the starting value and go up to the ending value (e.g. 2.5-5 Mile contains trips starting at 2.5 miles and up to but not including 5 miles).
                 <br><br>
+                <!-- <b>Sources</b><br>
+                Observed -Travel Tracker Survey, 2007-2008. <br>
+                Modeled- CMAP ABM - 2010 Scenario. <br> -->
               </div><br>
               <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Select trip mode from dropdown to view observed and model comparison</p>
@@ -956,6 +903,9 @@
               <div class="small" style="margin-top: 100px;">
                 Bins include the starting value and go up to the ending value (e.g. 2.5-5 Mile contains trips starting at 2.5 miles and up to but not including 5 miles).
                 <br><br>
+                <!-- <b>Sources</b><br>
+                Observed -Travel Tracker Survey, 2007-2008. <br>
+                Modeled- CMAP ABM - 2010 Scenario. <br> -->
               </div>
               <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Select trip mode from dropdown to view observed and model comparison</p>
@@ -1274,7 +1224,7 @@
                 <br />
                 <br />
                 <br />
-                <img src="data/images/icons8-add-50.png" class="image">
+                <img src="data/images/icons8-add-50.png" style="align:center" class="image">
                 <div class="overlay">
                   <p>
                     The model does a good job of matching the number of mandatory tours especially for Full-Time Workers and Non-Driving students,
@@ -1437,7 +1387,7 @@
                 <br />
                 <br />
                 <br />
-                <img src="data/images/icons8-add-50.png" class="image">
+                <img src="data/images/icons8-add-50.png" style="align:center" class="image">
                 <div class="overlay">
                   <p>
                     The model overestimates work activities and underestimates maintenance and escort activities. The frequencies of all other activities are well represented. The difference in modeled and observed work activities could be related to
@@ -1488,7 +1438,7 @@
                 <br />
                 <br />
                 <br />
-                <img src="data/images/icons8-add-50.png" class="image">
+                <img src="data/images/icons8-add-50.png" style="align:center" class="image">
                 <div class="overlay">
                   <p>
                     With the exception of students under 16 years, the model does a better job matching observed non-student trip purposes. The one major difference among the non-student trips shows that the overestimation of work trip activities is
@@ -1535,7 +1485,7 @@
                 <br />
                 <br />
                 <br />
-                <img src="data/images/icons8-add-50.png" class="image">
+                <img src="data/images/icons8-add-50.png" style="align:center" class="image">
                 <div class="overlay">
                   <p>
                     The model is capable of capturing trip purposes for most trip distances, but tends to overestimate short trips and underestimate long trips. This behavior mostly applies to work trips. </p>
@@ -1627,7 +1577,7 @@
                     <li><a class="dropdown-item">Diff</a></li>
                   </ul>
                   <button type="button" id="metra" class="btn btn-info">Metra</button>
-                  <button type="button" id="cta" class="btn btn-light">CTA Rail</button>
+                  <button type="button" id="cta" class="btn btn-light">CTA</button>
                   <button type="button" id="pace" class="btn btn-light">Bus</button>
                 </div>
               </div>
@@ -1638,7 +1588,10 @@
 
 
                 Ring sectors sum to 100% for each transit mode. Express and local bus combined.<br><br>
-                <b>Example:</b> In the model, 6.5% of all Metra boardings occured in ring sector 2S. In the survey, 7.8% of Metra boardings occured in ring sector 2S. This is a difference of 1.3 percentage points.
+                <b>Example:</b> In the model, 19.7% of all Metra boardings occured in ring sector 2S. In the survey, 7.8% of Metra boardings occured in ring sector 2S. This is a difference of 11.9 percentage points.
+                <!-- <br><br><b>Sources</b><br>
+                Observed - Travel Tracker Survey, 2007-2008.<br>
+                Modeled - CMAP ABM - 2010 Scenario. <br> -->
               </div><br>
               <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Choose the data source using the first dropdown button. Hover over map to display data, and use the layer icon in the bottom left to activate CTA Rail and Metra line layers. </p>
@@ -1659,7 +1612,7 @@
               <br />
               <br />
               <div class="container">
-                <img src="data/images/icons8-add-50.png" class="image">
+                <img src="data/images/icons8-add-50.png" style="align:center" class="image">
                 <div class="overlay">
                   <p>
                     Ring sectors are geographic divisions of the CMAP
@@ -1716,6 +1669,9 @@
               <div id="transitaccessLegend"></div>
               <div class="small" style="margin-top:80px;">
                 Distance is the distance of the transit trip that occurred. <br><br>
+                <!-- <b>Sources</b><br>
+                Observed - Travel Tracker Survey, 2007-2008.<br>
+                Modeled - CMAP ABM - 2010 Scenario. <br> -->
               </div><br>
               <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Select transit access mode from dropdown to view observed and model comparison</p>
@@ -1741,6 +1697,11 @@
                 <option value="dtransit">Drive to Transit</option>
               </select>
               <div id="transitincomeLegend"></div>
+              <div class="small" style="margin-top:100px;">
+                <!-- <b>Sources</b><br>
+                Observed - Travel Tracker Survey, 2007-2008.<br>
+                Modeled - CMAP ABM - 2010 Scenario. <br> -->
+              </div><br>
               <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Select transit access mode from dropdown to view observed and model comparison</p>
             </div>
@@ -1780,7 +1741,7 @@
           </div> -->
         </div>
 
-        <div id="11" class="tab-pane  container-fluid" style="min-height:80vh">
+        <div id="11" class="tab-pane  container-fluid">
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-6">
@@ -1813,6 +1774,11 @@
               <button type="button" class="btn btn-default btn-xs" id="introrecenter" value="Re-center map" onClick="zoomTo(center,map1)" style="margin-left: 0px">Recenter Map</button>
 
               <br><br>
+              <!-- <div class="small">
+                <b>Sources</b><br>
+                Observed – U.S. Census Bureau; American Community Survey (ACS); Five-Year Public Use Microdata Sample (PUMS) 2013-2017<br>
+                Modeled - CMAP ABM - 2015 Scenario. <br>
+              </div> -->
 
             </div>
             <div class="col-md-6" style="width:40%">
@@ -1897,6 +1863,11 @@
               <!-- end -->
               <h3>Comparison of Daily VMT Shares by County</h3>
               <!-- <div id="highwayvmtLegend"></div> -->
+              <!-- <div class="small">
+                <b>Sources</b><br>
+                Observed - Illinois Travel Statistics 2015<br>
+                Modeled - CMAP ABM - 2015 Scenario. <br>
+              </div> -->
             </div>
             <div class="col-md-8" style="margin:auto;width:auto">
               <br>
@@ -1915,6 +1886,11 @@
               <br />
               <div id="vmtfacilityLegend"></div>
               <br />
+              <!-- <div class="small">
+                <b>Sources</b><br>
+                Observed - Illinois Travel Statistics 2015<br>
+                Modeled - CMAP ABM - 2015 Scenario. <br>
+              </div> -->
             </div>
             <div class="col-md-6">
               <center>
@@ -2066,7 +2042,10 @@
                   <li>Heavy Rail – operated by the Chicago Transit Authority (CTA)
                     in Chicago and some surrounding communities.</li>
                   <li>Commuter Rail – operated by Metra throughout
-                    the CMAP region.</li>
+                    the CMAP region. The Northern Indiana Commuter
+                    Transportation District (NICTD) also operates
+                    the South Shore Railroad between Chicago and
+                    South Bend, IN.</li>
                   <li>Bus – operated by CTA
                     (in Chicago and some surrounding communities)
                     and by Pace Suburban Bus (in northeastern Illinois,
@@ -2083,18 +2062,12 @@
               <div class="colborder"></div>
               <br />
               <div class="col-md-3">
-                <h3>Transit Boardings by Mode</h3>
-                <p>
-                  Transit boardings include average weekeday
-                  boardings for fixed-route service. Demand
-                  responsive dial-a-ride, call and ride,
-                  or ADA paratransit services are not included.
-                </p>
+                <h3>Transit Boarding by Mode</h3>
               </div>
               <div class="col-md-6">
                 <br />
                 <br />
-                <!-- <table id="busboardings" style="width:100%"></table> -->
+                <table id="busboardings" style="width:100%"></table>
                 <table id="railboardings" style="width:100%"></table>
               </div>
             </div>
@@ -2167,6 +2140,11 @@
               <p><b>r<sup>2</sup></b> = <text_div id="jtwr2"></text_div>
               </p>
               <br>
+              <!-- <div class="small">
+                <b>Sources</b><br>
+                Observed - CTPP (2012 - 2016)<br>
+                Modeled - CMAP ABM - 2015 Scenario. <br>
+              </div> -->
             </div>
             <div class="col-md-6">
               <div id="scatter_jtw"></div>
@@ -2177,7 +2155,7 @@
                 <br />
                 <br />
                 <br />
-                <img src="data/images/icons8-add-50.png" class="img-fluid image">
+                <img src="data/images/icons8-add-50.png" style="align:center" class="img-fluid image">
                 <div class="overlay">
                   <p>
                     The graph shows an extremely strong relationship between
@@ -2200,8 +2178,12 @@
             <div class="col-md-3">
               <h3>Modeled Journey to Work Flows</h3>
               <br>
+              <!-- <div class="small">
+                <b>Sources</b><br>
+                Modeled - CMAP ABM - 2015 Scenario. <br>
+              </div> -->
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" style="width:auto">
               <br />
               <table id="modelcountyflow"> </table>
             </div>
@@ -2215,8 +2197,12 @@
             <div class="col-md-3">
               <h3>Observed Journey to Work Flows</h3>
               <br>
+              <!-- <div class="small">
+                <b>Sources</b><br>
+                Observed - CTPP (2012 - 2016)<br>
+              </div> -->
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" style="width:auto">
               <br />
               <table id="ctpp2012countyflow"> </table>
             </div>
@@ -2230,8 +2216,12 @@
             <div class="col-md-3">
               <h3>Difference Model and Observed Journey to Work Flows</h3>
               <br>
+              <!-- <div class="small">
+                <b>Sources</b><br>
+                Observed - CTPP (2012 - 2016)<br>
+              </div> -->
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" style="width:auto">
               <br />
               <table id="valdiffcountyflow"> </table>
             </div>
@@ -2239,66 +2229,67 @@
         </div>
       </div>
 
-
       <!-- Footer -->
-      <nav class="navbar navbar-inverse navbar-static-bottom" style="margin-bottom: 0px">
+      <nav class="navbar navbar-inverse navbar-static-bottom">
         <div class="container-fluid">
           <div id="source">
             <p class="navbar-text navbar-left">
               <script>
-              $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-                var target = $(e.target).attr("href"); // activated tab
-                if (target == '#1'){
-                  text = ""
-                }
-                if (target == '#2'){
-                  text = 'Observed: PUMS 2007-11 <br> Modeled: PopSynIII'
-                }
-                if (target == '#3'){
-                  text = 'Observed: PUMS 2007-11 <br> Modeled: PopSynIII'
-                }
-                if (target == '#10'){
-                  text = 'Observed: Travel Tracker Survey, 2007-2008. <br> Modeled: CMAP ABM - 2010 Scenario.'
-                }
-                if  (target == '#5'){
-                  text = 'Observed: Travel Tracker Survey, 2007-2008. <br> Modeled: CMAP ABM - 2010 Scenario.'
-                }
-                if (target == '#6'){
-                  text = 'Observed: Travel Tracker Survey, 2007-2008. <br> Modeled: CMAP ABM - 2010 Scenario.'
-                }
-                if (target == '#4'){
-                  text = 'Observed: Tables: CTPP (2009-2013), Graphs: Travel Tracker Survey, 2007-2008. <br> Modeled: CMAP ABM - 2010 Scenario.'
-                }
-                if (target == '#7'){
-                  text = 'Observed: Travel Tracker Survey, 2007-2008. <br> Modeled: CMAP ABM - 2010 Scenario.'
-                }
-                if (target == '#11'){
-                  text = 'Observed: U.S. Census Bureau; American Community Survey (ACS); Five-Year Public Use Microdata Sample (PUMS) 2013-2017 <br> Modeled: CMAP ABM - 2015 Scenario.'
-                }
-                if (target == '#12'){
-                  text = 'Observed: CTPP (2012 - 2016). <br> Modeled: CMAP ABM - 2015 Scenario.'
-                }
-                if (target == '#8'){
-                  text = 'Observed: Illinois Travel Statistics 2015 <br> Modeled: CMAP ABM - 2015 Scenario.'
-                }
-                if (target == '#9'){
-                  text = 'Observed: Regional Transportation Authority Mapping and Statistics (RTAMS, 2015-2016) <br> Modeled: CMAP ABM - 2015 Scenario.'
-                }
-                var textObj = document.getElementsByClassName("navbar-text navbar-left")[0]
-                textObj.innerHTML = text;
-              });
+                $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+                  var target = $(e.target).attr("href"); // activated tab
+                  if (target == '#1') {
+                    text = ""
+                  }
+                  if (target == '#2') {
+                    text = 'Observed: PUMS 2007-11 <br> Modeled: PopSynIII'
+                  }
+                  if (target == '#3') {
+                    text = 'Observed: PUMS 2007-11 <br> Modeled: PopSynIII'
+                  }
+                  if (target == '#10') {
+                    text = 'Observed: Travel Tracker Survey, 2007-2008. <br> Modeled: CMAP ABM - 2010 Scenario.'
+                  }
+                  if (target == '#5') {
+                    text = 'Observed: Travel Tracker Survey, 2007-2008. <br> Modeled: CMAP ABM - 2010 Scenario.'
+                  }
+                  if (target == '#6') {
+                    text = 'Observed: Travel Tracker Survey, 2007-2008. <br> Modeled: CMAP ABM - 2010 Scenario.'
+                  }
+                  if (target == '#4') {
+                    text = 'Observed: Tables: CTPP (2009-2013), Graphs: Travel Tracker Survey, 2007-2008. <br> Modeled: CMAP ABM - 2010 Scenario.'
+                  }
+                  if (target == '#7') {
+                    text = 'Observed: Travel Tracker Survey, 2007-2008. <br> Modeled: CMAP ABM - 2010 Scenario.'
+                  }
+                  if (target == '#11') {
+                    text = 'Observed: U.S. Census Bureau; American Community Survey (ACS); Five-Year Public Use Microdata Sample (PUMS) 2013-2017 <br> Modeled: CMAP ABM - 2015 Scenario.'
+                  }
+                  if (target == '#12') {
+                    text = 'Observed: CTPP (2012 - 2016). <br> Modeled: CMAP ABM - 2015 Scenario.'
+                  }
+                  if (target == '#8') {
+                    text = 'Observed: Illinois Travel Statistics 2015 <br> Modeled: CMAP ABM - 2015 Scenario.'
+                  }
+                  if (target == '#9') {
+                    text = 'Observed: Regional Transportation Authority Mapping and Statistics (RTAMS, 2015-2016) <br> Modeled: CMAP ABM - 2015 Scenario.'
+                  }
+                  var textObj = document.getElementsByClassName("navbar-text navbar-left")[0]
+                  textObj.innerHTML = text;
+                });
               </script>
             </p>
           </div>
-          <a class="navbar-text navbar-right" style="margin-right:0px !important" href="https://github.com/brittaneyross/abm_viz_report" target="_blank">
-            <img src="data/images/GitHub-Mark-Light-32px.png">
-          </a>
+          <p class="navbar-text navbar-right" style="margin-right:0px !important">GitHub</p>
         </div>
       </nav>
       <!-- Footer -->
 </body>
 
 <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+<!-- jquery and bootstrap scripts -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <!-- D3 scripts -->
 <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -2383,6 +2374,9 @@
   makeGroupVBar("data/csv22_dap.csv", "#dap", "#catdap", 2, "dapDesc", "dapTitle");
 </script>
 <script>
+  makeGroupHBar_hover("data/csv24_vmt_county.csv", "#vmtcounty", 2, "vmtDesc", "vmtTitle", 800, 'percent');
+</script>
+<script>
   makeGroupHBar("data/csv34.csv", "#transitassignment", 2, "vmtDesc", "vmtTitle", 600, 'boardings');
 </script>
 <script>
@@ -2443,13 +2437,13 @@
 
 <!-- making tables -->
 <script>
-d3.csv("data/csv49_calworkflows_diff.csv", function(d, i, columns) {
-  for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
-  return d;
-}, function(error, data) {
-  if (error) throw error;
-  tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#caldiffcountyflow", "percent"); // 2 column table
-});
+  d3.csv("data/csv49_calworkflows_diff.csv", function(d, i, columns) {
+    for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+    return d;
+  }, function(error, data) {
+    if (error) throw error;
+    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#caldiffcountyflow", "percent"); // 2 column table
+  });
   d3.csv("data/csv47_modelworkflows_cal.csv", function(d, i, columns) {
     for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
     return d;
@@ -2465,13 +2459,13 @@ d3.csv("data/csv49_calworkflows_diff.csv", function(d, i, columns) {
     tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#ctppcountyflow_cal", "nopercent"); // 2 column table
   });
 
-d3.csv("data/csv46_valworkflows_diff.csv", function(d, i, columns) {
-  for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
-  return d;
-}, function(error, data) {
-  if (error) throw error;
-  tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#valdiffcountyflow", "percent"); // 2 column table
-});
+  d3.csv("data/csv46_valworkflows_diff.csv", function(d, i, columns) {
+    for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+    return d;
+  }, function(error, data) {
+    if (error) throw error;
+    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#valdiffcountyflow", "percent"); // 2 column table
+  });
   d3.csv("data/csv44_modelworkflows.csv", function(d, i, columns) {
     for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
     return d;
@@ -2492,7 +2486,7 @@ d3.csv("data/csv46_valworkflows_diff.csv", function(d, i, columns) {
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Transit Agency', 'Observed', 'Model', 'Diff', 'Percent Diff'], "#busboardings", "percent"); // 2 column table
+    tabulate(data, ['Mode', 'Observed', 'Model', 'Diff', 'Percent Diff'], "#busboardings", "percent"); // 2 column table
   });
 
   d3.csv("data/csv43_railboardings.csv", function(d, i, columns) {

@@ -381,7 +381,7 @@
           <!--end row-->
         </div>
         <!--end tab-->
-        <div id="2" class="tab-pane   container-fluid">
+        <div id="2" class="tab-pane  container-fluid">
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-7">
@@ -1983,10 +1983,7 @@
                   <li>Heavy Rail – operated by the Chicago Transit Authority (CTA)
                     in Chicago and some surrounding communities.</li>
                   <li>Commuter Rail – operated by Metra throughout
-                    the CMAP region. The Northern Indiana Commuter
-                    Transportation District (NICTD) also operates
-                    the South Shore Railroad between Chicago and
-                    South Bend, IN.</li>
+                    the CMAP region.</li>
                   <li>Bus – operated by CTA
                     (in Chicago and some surrounding communities)
                     and by Pace Suburban Bus (in northeastern Illinois,
@@ -2003,12 +2000,18 @@
               <div class="colborder"></div>
               <br />
               <div class="col-md-3">
-                <h3>Transit Boarding by Mode</h3>
+                <h3>Transit Boardings by Mode</h3>
+                <p>
+                  Transit boardings include average weekeday
+                  boardings for fixed-route service. Demand
+                  responsive dial-a-ride, call and ride,
+                  or ADA paratransit services are not included.
+                </p>
               </div>
               <div class="col-md-6">
                 <br />
                 <br />
-                <table id="busboardings" style="width:100%"></table>
+                <!-- <table id="busboardings" style="width:100%"></table> -->
                 <table id="railboardings" style="width:100%"></table>
               </div>
             </div>
@@ -2406,7 +2409,7 @@ d3.csv("data/csv46_valworkflows_diff.csv", function(d, i, columns) {
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Mode', 'Observed', 'Model', 'Diff', 'Percent Diff'], "#busboardings", "percent"); // 2 column table
+    tabulate(data, ['Transit Agency', 'Observed', 'Model', 'Diff', 'Percent Diff'], "#busboardings", "percent"); // 2 column table
   });
 
   d3.csv("data/csv43_railboardings.csv", function(d, i, columns) {

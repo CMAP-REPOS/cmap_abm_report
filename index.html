@@ -244,10 +244,11 @@
                     <div class="panel-body">
                       A synthetic population provides the foundation for modeling individuals’ travel behavior within an activity-based model.
                       Using Census data and other socio-economic information, a complete set of households for a modeling area is developed
-                      (see <a href="#2" role="tab" data-toggle="tab">Population Synthesis</a> tab). This dataset contains all of the relevant attributes about each household and for each individual living in those households that are required by the
+                      (see <a href="#2" role="tab" data-toggle="tab">Population Synthesis</a> tab). This dataset contains all of the relevant attributes about each household and individual that are required by the
                       ABM.
-                      While the synthetic population is statistically representative of the Census data, the actual households and individuals are “synthetic” in that they do not represent identifiable people and an individual household in the Census
-                      data may be replicated numerous times in order to generate a complete distribution of households in the modeling inputs. All of the subsequent steps in the ABM rely on the data provided in the synthetic population.
+                      Since the Census Bureau does not release detailed information about every household and individual, household and person records are replicated in order to generate a complete set of households for the modeling area.  Target totals for various household 
+                      and population attributes guide this process so the final population is representative of the region.  
+                      All of the subsequent steps in the ABM rely on the data provided in the synthetic population.
                     </div>
                   </div>
                 </div>
@@ -700,19 +701,20 @@
                   <span class="sr-only">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a href="#">CBD</a></li>
-                  <li><a href="#">DuPage</a></li>
-                  <li><a href="#">Kane</a></li>
-                  <li><a href="#">Kendall</a></li>
-                  <li><a href="#">Lake</a></li>
-                  <li><a href="#">McHenry</a></li>
-                  <li><a href="#">North Chicago</a></li>
-                  <li><a href="#">North Cook</a></li>
-                  <li><a href="#">South Chicago</a></li>
-                  <li><a href="#">South Cook</a></li>
-                  <li><a href="#">West Chicago</a></li>
-                  <li><a href="#">West Cook</a></li>
-                  <li><a href="#">Will</a></li>
+                  <li><a>All</a></li>
+                  <li><a>CBD</a></li>
+                  <li><a>DuPage</a></li>
+                  <li><a>Kane</a></li>
+                  <li><a>Kendall</a></li>
+                  <li><a>Lake</a></li>
+                  <li><a>McHenry</a></li>
+                  <li><a>North Chicago</a></li>
+                  <li><a>North Cook</a></li>
+                  <li><a>South Chicago</a></li>
+                  <li><a>South Cook</a></li>
+                  <li><a>West Chicago</a></li>
+                  <li><a>West Cook</a></li>
+                  <li><a>Will</a></li>
                 </ul>
               </div>
               To
@@ -724,19 +726,20 @@
                   <span class="sr-only">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a href="#">CBD</a></li>
-                  <li><a href="#">DuPage</a></li>
-                  <li><a href="#">Kane</a></li>
-                  <li><a href="#">Kendall</a></li>
-                  <li><a href="#">Lake</a></li>
-                  <li><a href="#">McHenry</a></li>
-                  <li><a href="#">North Chicago</a></li>
-                  <li><a href="#">North Cook</a></li>
-                  <li><a href="#">South Chicago</a></li>
-                  <li><a href="#">South Cook</a></li>
-                  <li><a href="#">West Chicago</a></li>
-                  <li><a href="#">West Cook</a></li>
-                  <li><a href="#">Will</a></li>
+                  <li><a>All</a></li>
+                  <li><a>CBD</a></li>
+                  <li><a>DuPage</a></li>
+                  <li><a>Kane</a></li>
+                  <li><a>Kendall</a></li>
+                  <li><a>Lake</a></li>
+                  <li><a>McHenry</a></li>
+                  <li><a>North Chicago</a></li>
+                  <li><a>North Cook</a></li>
+                  <li><a>South Chicago</a></li>
+                  <li><a>South Cook</a></li>
+                  <li><a>West Chicago</a></li>
+                  <li><a>West Cook</a></li>
+                  <li><a>Will</a></li>
                 </ul>
               </div>
 
@@ -1544,7 +1547,7 @@
                     <li><a class="dropdown-item">Diff</a></li>
                   </ul>
                   <button type="button" id="metra" class="btn btn-info">Metra</button>
-                  <button type="button" id="cta" class="btn btn-light">CTA</button>
+                  <button type="button" id="cta" class="btn btn-light">CTA Rail</button>
                   <button type="button" id="pace" class="btn btn-light">Bus</button>
                 </div>
               </div>
@@ -1555,7 +1558,7 @@
 
 
                 Ring sectors sum to 100% for each transit mode. Express and local bus combined.<br><br>
-                <b>Example:</b> In the model, 19.7% of all Metra boardings occured in ring sector 2S. In the survey, 7.8% of Metra boardings occured in ring sector 2S. This is a difference of 11.9 percentage points.
+                <b>Example:</b> In the model, 6.5% of all Metra boardings occured in ring sector 2S. In the survey, 7.8% of Metra boardings occured in ring sector 2S. This is a difference of 1.3 percentage points.
               </div><br>
               <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Choose the data source using the first dropdown button. Hover over map to display data, and use the layer icon in the bottom left to activate CTA Rail and Metra line layers. </p>

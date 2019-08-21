@@ -100,9 +100,9 @@ function make_h_stacked_tripsbymode(csv_file,divID, legendID){
               .style("opacity", .9);
             div.html(
                 "<br><b><p style='font-size: 12px'; color: grey'>" + subgroupName.replace(/_/g, " ") +
-                "</p></b><p style='color:rgb(28, 78, 128); font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(modelvalue) +
+                "</p></b><p style='color:rgb(28, 78, 128); font-size: 20px; margin-bottom: 0px;'>" + d3.formatPrefix(".2s",1e6)(modelvalue) +
                 "</p><p style='color:grey; font-size: 10px;'> modeled" +
-                "</p><p style='color:rgb(166, 186, 206); font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(obsvalue) +
+                "</p><p style='color:rgb(166, 186, 206); font-size: 20px; margin-bottom: 0px;'>" + d3.formatPrefix(".2s",1e6)(obsvalue) +
                 "</p><p style='color:grey; font-size: 10px;'> observed </p>"
               )
               .style("left", x * 0.7 + "px")

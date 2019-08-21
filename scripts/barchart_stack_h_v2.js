@@ -1,7 +1,5 @@
 function hStackedBar(obscsv_file,modelcsv_file,obsID,modelID, labelwidth, divwidth){
 
-  var formatValue = d3.format(".2s");
-
   makechart(modelcsv_file, modelID, true, labelwidth, "modelchart");
   makechart(obscsv_file, obsID, false, 20, "obschart");
 
@@ -71,9 +69,9 @@ function makechart(csv_file, divID, axis, marginleftval, idval){
           .duration(200)
           .style("opacity", .9);
           div.html(
-            "</b><p style='color:#98abc5; font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(d.data.Auto) +
+            "</b><p style='color:#98abc5; font-size: 20px; margin-bottom: 0px;'>" + d3.formatPrefix(".2s",1e6)(d.data.Auto) +
             "</p><p style='color:grey; font-size: 10px;'> auto" +
-            "</p><p style='color:#8a89a6; font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(d.data.Truck) +
+            "</p><p style='color:#8a89a6; font-size: 20px; margin-bottom: 0px;'>" + d3.formatPrefix(".2s",1e6)(d.data.Truck) +
             "</p><p style='color:grey; font-size: 10px;'> truck </p>"
             )
             .style("left", (d3.event.pageX) + "px")

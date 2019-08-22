@@ -32,34 +32,26 @@
     <div>
       <div>
         <!-- Header -->
-        <nav class="navbar navbar-default navbar-fixed-top" id="header">
-          <div class="row" style="height: 76px;">
-              <div class="col-md-2" style="display: flex; align-items:center;">
-                  <a href="https://www.cmap.illinois.gov/" target="_blank">
+        <nav class="navbar navbar-default navbar-fixed-top" id="header" style="padding-top:10px; padding-right:10px; padding-bottom:5px; z-index:9999">
+          <div class="container-fluid">
+                  <a class="navbar-brand" href="https://www.cmap.illinois.gov/" target="_blank">
                     <img src='data/images/cmap_shortid_margins_RGB-01-01.png' height="30px">
                   </a>
-                </div>
-            <div class="col-md-8" style="display: flex; align-items:center;">
-              <h3>Activity Based Model (ABM) Calibration and Validation Report</h3>
+              <h3 class="navbar-text">Activity Based Model (ABM) Calibration and Validation Report</h3>
+              <p class="navbar-text navbar-right">August 2019 Release </p>
             </div>
-            <div class="col-md-2" style="display: flex; align-items:center;margin-top: 5px;">
-              August 2019 Release &nbsp;&nbsp;
-              <div id="abouttoggle">
-                <a role="button" data-toggle="collapse" data-target="#collapseIntro" aria-expanded="true" aria-controls="collapseIntro" class="collapsed">About</a>
-              </div>
-            </div>
-          </div>
         </nav>
 
-        <nav class="navbar navbar-inverse navbar-top" style="margin-bottom:0px">
-            <div class="container-fluid" style="margin-top: 80px">
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom:0px">
+            <div class="container-fluid" style="margin-top: 70px">
               <ul class="nav navbar-nav">
                 <li class="active">
                   <a href="#1" role="tab" data-toggle="tab">
                     Introduction
                   </a>
                 </li>
-  
+                </ul>
+              <ul class="nav navbar-nav">
                 <li class="dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     Calibration 
@@ -108,7 +100,8 @@
                         </li>
                   </ul>
                   </li>
-  
+                  
+                  
               <li class="dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     Validation
@@ -139,50 +132,18 @@
                   </li>
               </ul>
               </li>
+            </ul>
+
+              <ul class="nav navbar-nav navbar-right" id="abouttoggle">
+              <li>
+                    <a role="button" data-toggle="collapse" data-target="#collapseIntro" aria-expanded="true" aria-controls="collapseIntro" class="collapsed">About</a>
+                  </li> 
+                </ul>
             </div>
           </nav>
 
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-md-10">
-              <div class="panel-group" id="accordionintro" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                  <div id="collapseIntro" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
-                      <p>
-                        Activity-based models (ABMs) are founded on the idea that people’s travel behavior is a result of their daily activities; i.e., the things people need to accomplish dictate where, when, and how they travel, and with whom.
-                        These models are
-                        more advanced than standard travel demand models because they seek to represent the choices made by individual travelers. In order to do this, the models must generate a schedule of daily activities for members of every
-                        household in the
-                        region, and then transform that information into sequences of trips that occur throughout the day. To accomplish this, ABMs use detailed information about the factors that affect travel decisions, including:</p>
-                      <ul>
-                        <li>Households – the number of adults, children and workers; household income; the number of vehicles available</li>
-                        <li>People – age; work or school status; occupation</li>
-                        <li>Trips – purpose; destination; who is taking the trip; is it part of a sequence of trips that must be completed in a specific order</li>
-                      </ul>
-                      Having all of this data available for individual travelers allows for more-detailed analyses of travelers’ choices than is possible with standard travel demand models.
-                      ABMs were developed as a way to better analyze the impacts
-                      of policy decisions like managed lanes, congestion pricing and alternative transit fare structures.
-                      For more information visit <a href="https://www.cmap.illinois.gov/data/transportation/modeling#CMAPs_Activity_Based_Models">CMAP's Activity Based Models.</a> </p>
-                      <p style="margin-bottom:10px">
-                        This report represents the results of model calibration and validation activities completed over the last several years by CMAP staff and their consultants.
-                        Model calibration is defined as the adjustment of model parameters and constants so that the models better replicate observed data for a base year. CMAP's ABM is calibrated to a base year of 2010.
-                        Model validation is defined as comparing the results of the calibrated models to observed data.
-                        Modeling best practice dictates that different data sets be used to conduct calibration and
-                        validation activities; in the absence of other observed data, the sources used for model
-                        calibration may be used for validation as long as they examine different aspects of the
-                        data or rely on alternate geographic scopes. Model validation results in this report reflect 2015 conditions.<br><br>
-                       <br>
-                        <font style="font-style:italic; font-size:small;">Click "About" in the header to hide this text</font>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- <ul class="nav nav-tabs">
+
+       <!-- <ul class="nav nav-tabs">
           <li class="active">
             <a href="#1" role="tab" data-toggle="tab">
               Introduction
@@ -255,7 +216,46 @@
         </ul> -->
       </div>
 
-      <div class="tab-content ">
+      <div class="tab-content">
+          <div class="row" >
+              <div class="col-md-10">
+                <div class="panel-group" id="accordionintro" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div id="collapseIntro" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        <p>
+                          Activity-based models (ABMs) are founded on the idea that people’s travel behavior is a result of their daily activities; i.e., the things people need to accomplish dictate where, when, and how they travel, and with whom.
+                          These models are
+                          more advanced than standard travel demand models because they seek to represent the choices made by individual travelers. In order to do this, the models must generate a schedule of daily activities for members of every
+                          household in the
+                          region, and then transform that information into sequences of trips that occur throughout the day. To accomplish this, ABMs use detailed information about the factors that affect travel decisions, including:</p>
+                        <ul>
+                          <li>Households – the number of adults, children and workers; household income; the number of vehicles available</li>
+                          <li>People – age; work or school status; occupation</li>
+                          <li>Trips – purpose; destination; who is taking the trip; is it part of a sequence of trips that must be completed in a specific order</li>
+                        </ul>
+                        Having all of this data available for individual travelers allows for more-detailed analyses of travelers’ choices than is possible with standard travel demand models.
+                        ABMs were developed as a way to better analyze the impacts
+                        of policy decisions like managed lanes, congestion pricing and alternative transit fare structures.
+                        For more information visit <a href="https://www.cmap.illinois.gov/data/transportation/modeling#CMAPs_Activity_Based_Models">CMAP's Activity Based Models.</a> </p>
+                        <p style="margin-bottom:10px">
+                          This report represents the results of model calibration and validation activities completed over the last several years by CMAP staff and their consultants.
+                          Model calibration is defined as the adjustment of model parameters and constants so that the models better replicate observed data for a base year. CMAP's ABM is calibrated to a base year of 2010.
+                          Model validation is defined as comparing the results of the calibrated models to observed data.
+                          Modeling best practice dictates that different data sets be used to conduct calibration and
+                          validation activities; in the absence of other observed data, the sources used for model
+                          calibration may be used for validation as long as they examine different aspects of the
+                          data or rely on alternate geographic scopes. Model validation results in this report reflect 2015 conditions.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
         <div id="1" class="tab-pane active container-fluid">
           <div class="row">
             <div class="col-md-1"></div> <!-- end -->
@@ -465,12 +465,10 @@
           <!--end row-->
         </div>
         <!--end tab-->
-        <div id="2" class="tab-pane  container-fluid">
+        <div id="2" class="tab-pane container-fluid">
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-7">
-              <br />
-              <br />
               <h2>Population Synthesis</h2>
               <p>
                 Using Census data and other socio-economic information, a complete set of households for the CMAP modeling area is developed. This dataset contains all of the relevant attributes about each household and for each individual living in
@@ -630,8 +628,6 @@
             <div class="col-md-1"></div>
             <!--end-->
             <div class="col-md-7">
-              <br />
-              <br />
               <h2>Auto Ownership</h2>
               <p>
                 Auto ownership plays an important role in individuals’ travel behavior decisions and helps define the set of travel mode options available to them. “Auto sufficiency” is a concept often applied to understand constraints a household
@@ -706,9 +702,7 @@
           <div class="row">
             <div class="col-md-1"></div> <!-- end -->
             <div class="col-md-6">
-              <br />
-              <br />
-              <h3>Work Flows</h3>
+              <h2>Work Flows</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non igitur de
                 improbo, sed de callido improbo quaerimus, qualis Q. Ampulla enim sit necne
@@ -969,8 +963,6 @@
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-7">
-              <br />
-              <br />
               <h2>Trips by Mode</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non igitur de
@@ -1214,9 +1206,6 @@
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-7">
-              <br />
-              <br />
-
               <h2>Tours</h2>
               <p>
                 Tours are chains of trips that start at one location and return
@@ -1384,8 +1373,6 @@
           <div class="row">
             <div class="col-md-1"></div> <!-- end -->
             <div class="col-md-7">
-              <br />
-              <br />
               <h2>Trip Activities</h2>
               <p>
                 The CMAP ABM classifies trips into ten activity types.
@@ -1594,9 +1581,7 @@
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-6">
-              <br />
-              <br />
-              <h3>Transit Trips</h3>
+              <h2>Transit Trips</h2>
               <p>Transit is a vital part of the transportation system in
                 northeastern Illinois and more than 600 million transit trips are made annually.
                 It is important to properly calibrate such a key travel mode to ensure that the modeled
@@ -1784,10 +1769,7 @@
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-6">
-              <br />
-              <br />
-
-              <h3>Synthetic Household Validation</h3>
+              <h2>Synthetic Household Validation</h2>
 
               <p>
                 This map displays the difference between selected household attributes for modeled and observed data by U.S. Census Public Use Microdata Areas (PUMAs). <p>
@@ -1876,9 +1858,7 @@
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-6">
-              <br />
-              <br />
-              <h3>Highway Assignment</h3>
+              <h2>Highway Assignment</h2>
               <p>
                 During Highway Assignment, the individual trips developed by CT-RAMP are routed along the model network from origin to destination in order to estimate traffic flows and network conditions. When equilibrium is reached within the
                 highway assignment (meaning that vehicles cannot change paths without negatively impacting travel times), vehicle class volumes for each link are retained to determine the demand on each link. These vehicle class volumes are then used
@@ -2053,10 +2033,7 @@
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-6">
-              <br />
-              <br />
-
-              <h3>Transit Assignment</h3>
+              <h2>Transit Assignment</h2>
               <p>The analysis of transit assignment results
                 generally focus on comparing the number of transit
                 boardings estimated by the model to observed boardings.
@@ -2139,9 +2116,7 @@
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-6">
-              <br />
-              <br />
-              <h3>Commute Trips Validation</h3>
+              <h2>Commute Trips Validation</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non igitur de
                 improbo, sed de callido improbo quaerimus, qualis Q. Ampulla enim sit necne

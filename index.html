@@ -724,7 +724,7 @@
               <h3>Modeled Journey to Work Flows</h3>
               <br>
             </div>
-            <div class="col-md-6" style="width:auto">
+            <div class="col-md-6">
               <br />
               <table id="modelcountyflow_cal"> </table>
             </div>
@@ -739,7 +739,7 @@
               <h3>Observed Journey to Work Flows</h3>
               <br>
             </div>
-            <div class="col-md-6" style="width:auto">
+            <div class="col-md-6">
               <br />
               <table id="ctppcountyflow_cal"> </table>
             </div>
@@ -754,7 +754,7 @@
               <h3>Difference Model and Observed Journey to Work Flows</h3>
               <br>
             </div>
-            <div class="col-md-6" style="width:auto">
+            <div class="col-md-6">
               <br />
               <table id="caldiffcountyflow"> </table>
             </div>
@@ -861,6 +861,9 @@
               <h3>Work Trips to <text_div id="pTitle"></text_div>
               </h3>
               <br>
+              <p>
+                  <span id="worktrips_p"></span>
+                  of all work trips</p>   
               <select id="workFlowCat">
                 <option value="CBD">CBD</option>
                 <option value="NChicago">North Chicago</option>
@@ -896,6 +899,10 @@
               <h3>Work Trips by Mode and Distance</h3>
               <!--HOLD FOR Work Trips by Mode & Distance-->
               <br>
+              <p>
+                  <span id="worktripsmodedistance_p"></span>
+                  of all work trips</p>       
+
               <select id="catModeDist">
                 <option value="all">All Modes</option>
                 <option value="sovfree">Drive Alone Free</option>
@@ -929,9 +936,13 @@
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col col-md-3">
-              <h3>Work-Based Trips by Distance</h3>
+              <h3>Work-Based Trips by Mode and Distance</h3>
               <!--HOLD FOR Work-Based Trips by Mode & Distance-->
               <br>
+              <p>
+                  <span id="workbtripsmodedistance_p"></span>
+                  of all work-based trips</p>       
+
               <select id="wbcatModeDist">
                 <option value="all">All Modes</option>
                 <option value="sovfree">Drive Alone Free</option>
@@ -1048,6 +1059,9 @@
                         of all trips. In many cases, modeled student trips are closer to the
                         observed trips, in terms of number of trips, than other person types.
                       </p> -->
+              <p>
+                  <span id="tripspersonmode_p"></span>
+                  of all trips</p>       
               <select id="catModePer">
                 <option value="All">All</option>
                 <option value="Full-time worker">Full-time Worker</option>
@@ -1107,6 +1121,9 @@
                       The model does overestimate lower income trips and underestimate higher income trips, but middle income trips compare well to the observed trips. For all household income categories, the mode trends are in agreement with the
                       observed data.
                     </p> -->
+                    <p>
+                        <span id="tripsincomemode_p"></span>
+                        of all trips</p>       
               <select id="catModeInc">
                 <option value="All">All</option>
                 <option value="Less than $35k">Less than $35k</option>
@@ -1158,6 +1175,9 @@
                       Aside from a few, less impactful outliers such as transit and taxi trips for university activities, the model produces generally reasonable results for each trip purpose. The mode distributions of work and shop trips – the most
                       common trip purposes and nearly half of all trips – have strong correlations to the observed trips.
                     </p> -->
+              <p>
+                  <span id="tripspurposemode_p"></span>
+                  of all trips</p>       
               <select id="catModePurp">
                 <option value="All">All</option>
                 <option value="Discretionary">Discretionary</option>
@@ -1238,12 +1258,14 @@
             <div class="col-md-1"></div>
             <div class="col col-md-2">
               <h3>Daily Activity Patterns By Person Type</h3>
-              <br />
+              <p>
+                <span id="dap_p"></span>
+                of all tours</p>
               <br />
               <select id="catdap">
-                <option value="H">Home Activity</option>
                 <option value="M">Mandatory Activity</option>
                 <option value="N">Non-Mandatory Activity</option>
+                <option value="H">Home Activity</option>
               </select>
               <div id="dapLegend"></div>
               <div class="small" style="margin-top: 80px;">
@@ -1445,6 +1467,9 @@
             <div class="col col-md-2">
               <h3>Trips by Person Type and Purpose</h3>
               <br>
+              <p>
+                  <span id="tripspersonpurpose_p"></span>
+                  of all trips</p>       
               <select id="catPurpType">
                 <option value="All">All</option>
                 <option value="Full-time Worker">Full-time Worker</option>
@@ -1495,6 +1520,10 @@
             <div class="col-md-1"></div> <!-- end -->
             <div class="col col-md-2">
               <h3>Trips by Distance and Purpose</h3>
+              <br>
+              <p>
+                  <span id="tripsdistancepurpose_p"></span>
+                  of all trips</p>       
               <select id="catPurpDist">
                 <option value="All">All</option>
                 <option value="Less than 2.5 Mile">Less than 2.5 Mile</option>
@@ -1543,6 +1572,10 @@
             <div class="col col-md-2">
 
               <h3>Trips by Purpose and Distance (Miles)</h3>
+              <br>
+              <p>
+                  <span id="tripspurposedistance_p"></span>
+                  of all trips</p>       
               <select id="catDistPurp">
                 <option value="Discretionary">Discretionary</option>
                 <option value="Eating Out">Eating Out</option>
@@ -1693,6 +1726,10 @@
             <div class="col-md-1"></div>
             <div class="col col-md-3">
               <h3>Transit Trips by Mode of Access and Distance (Miles)</h3>
+              <p>
+                  <span id="transitmodedistance_p"></span>
+                  of all transit trips</p>       
+
               <select id="catTranDist">
                 <option value="all">All Access Modes</option>
                 <option value="transit">Walk To Transit</option>
@@ -1720,6 +1757,10 @@
             <div class="col-md-1"></div>
             <div class="col col-md-3">
               <h3>Transit Trips by Mode of Access and Household Income</h3>
+              <p>
+                  <span id="transitmodeincome_p"></span>
+                  of all transit trips</p>       
+
               <select id="catIncomeDist">
                 <option value="all">All Access Modes</option>
                 <option value="transit">Walk To Transit</option>
@@ -2314,48 +2355,49 @@
 <script type="text/javascript" src="scripts/modepies.js"></script>
 <script type="text/javascript" src="scripts/multiline.js"></script>
 <script type="text/javascript" src="scripts/multiline_dd.js"></script>
+<script type="text/javascript" src="scripts/portion.js"></script>
 <!-- calling functions -->
 <script>
   makeGroupVBar("data/csv1_pop_syn.csv", "#PurposeChartpums", "#catPopSyn", 2, "popsynDesc", "hhtitle", "pumsLegend");
 </script>
 <script>
-  makeGroupVBar("data/csv5_mode_purpose.csv", "#ModeByPurpose", "#catModePurp", 2, "modePurpDesc", "modeTitle");
+  makeGroupVBar("data/csv5_mode_purpose.csv", "#ModeByPurpose", "#catModePurp", 2, "modePurpDesc", "modeTitle", "", "tripspurposemode_p");
 </script>
 <script>
-  makeGroupHBar_dd("data/csv6_work_trips.csv", "#VChart", "#workFlowCat", 2, "pDesc", "pTitle");
+  makeGroupHBar_dd("data/csv6_work_trips.csv", "#VChart", "#workFlowCat", 2, "pDesc", "pTitle", "worktrips_p");
 </script>
 <script>
-  makeGroupVBar("data/csv7_work_mode_distance.csv", "#ModeByDistance", "#catModeDist", 2, "modeDistDesc", "modeDTitle");
+  makeGroupVBar("data/csv7_work_mode_distance.csv", "#ModeByDistance", "#catModeDist", 2, "modeDistDesc", "modeDTitle", "", "worktripsmodedistance_p");
 </script>
 <script>
-  makeGroupVBar("data/csv8_wbmode_distance.csv", "#wbModeByDistance", "#wbcatModeDist", 2, "wbmodeDistDesc", "wbmodeDTitle");
+  makeGroupVBar("data/csv8_wbmode_distance.csv", "#wbModeByDistance", "#wbcatModeDist", 2, "wbmodeDistDesc", "wbmodeDTitle", "", "workbtripsmodedistance_p");
 </script>
 <script>
-  makeGroupVBar("data/csv9_mode_person.csv", "#ModebyPerson", "#catModePer", 2, "modePerDesc", "modePTitle");
+  makeGroupVBar("data/csv9_mode_person.csv", "#ModebyPerson", "#catModePer", 2, "modePerDesc", "modePTitle", "", "tripspersonmode_p");
 </script>
 <script>
-  makeGroupVBar("data/csv10_mode_income.csv", "#ModebyIncome", "#catModeInc", 2, "modeinDesc", "modeITitle");
+  makeGroupVBar("data/csv10_mode_income.csv", "#ModebyIncome", "#catModeInc", 2, "modeinDesc", "modeITitle", "", "tripsincomemode_p");
 </script>
 <script>
-  makeGroupVBar("data/csv11_purpose_type.csv", "#PurposebyType", "#catPurpType", 2, "purpTypeDesc", "purpTypeTitle");
+  makeGroupVBar("data/csv11_purpose_type.csv", "#PurposebyType", "#catPurpType", 2, "purpTypeDesc", "purpTypeTitle", "", "tripspersonpurpose_p");
 </script>
 <script>
-  makeGroupVBar("data/csv12_purpose_distance.csv", "#PurposebyDist", "#catPurpDist", 2, "purpDistDesc", "purpDistTitle");
+  makeGroupVBar("data/csv12_purpose_distance.csv", "#PurposebyDist", "#catPurpDist", 2, "purpDistDesc", "purpDistTitle", "", "tripsdistancepurpose_p");
 </script>
 <script>
-  makeGroupVBar("data/csv12b_purpose_distance.csv", "#DistbyPurpose", "#catDistPurp", 2, "DistpurpDesc", "DistpurpTitle");
+  makeGroupVBar("data/csv12b_purpose_distance.csv", "#DistbyPurpose", "#catDistPurp", 2, "DistpurpDesc", "DistpurpTitle", "", "tripspurposedistance_p");
 </script>
 <script>
-  makeGroupVBar("data/csv19_transit_distance.csv", "#TranDist", "#catTranDist", 2, "TranDistDesc", "TranDistTitle");
+  makeGroupVBar("data/csv19_transit_distance.csv", "#TranDist", "#catTranDist", 2, "TranDistDesc", "TranDistTitle", "", "transitmodedistance_p");
 </script>
 <script>
-  makeGroupVBar("data/csv20_transit_income.csv", "#TranIncome", "#catIncomeDist", 2, "TranIncomeDesc", "TranIncomeTitle");
+  makeGroupVBar("data/csv20_transit_income.csv", "#TranIncome", "#catIncomeDist", 2, "TranIncomeDesc", "TranIncomeTitle", "", "transitmodeincome_p");
 </script>
 <script>
   makeGroupVBar("data/csv21_transit_auto.csv", "#TranAutoAdult", "#catAutoAdult", 2, "TranAutoAdultDesc", "TranAutoAdultTitle");
 </script>
 <script>
-  makeGroupVBar("data/csv22_dap.csv", "#dap", "#catdap", 2, "dapDesc", "dapTitle");
+  makeGroupVBar("data/csv22_dap.csv", "#dap", "#catdap", 2, "dapDesc", "dapTitle", "", portionID="dap_p");
 </script>
 <script>
   makeGroupHBar("data/csv34.csv", "#transitassignment", 2, "vmtDesc", "vmtTitle", 600, 'boardings');

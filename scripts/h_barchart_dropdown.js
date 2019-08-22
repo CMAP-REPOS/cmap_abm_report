@@ -1,4 +1,4 @@
-function makeGroupHBar_dd(csv_file, chartID, catID, nogroups, dataDescription, dtitle) {
+function makeGroupHBar_dd(csv_file, chartID, catID, nogroups, dataDescription, dtitle, portionID) {
 
   var barChartConfig = {
     mainDiv: "#chart",
@@ -153,10 +153,14 @@ function makeGroupHBar_dd(csv_file, chartID, catID, nogroups, dataDescription, d
           d.totalSlice = test;
           divText = "Table Description: " + d.Description;
           divTitle = d.Title;
+          portion = d.Portion;
+
           return d;
         })
         d3.select("#" + dataDescription).text(divText);
         d3.select("#" + dtitle).text(catText);
+        d3.select("#" + portionID).text(portion);
+
         // ======== Domain, Axis & Sort ========
 
         //console.log(newdata);

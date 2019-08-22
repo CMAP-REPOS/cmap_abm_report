@@ -1,4 +1,4 @@
-function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle,legendID){
+function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle, legendID, portionID){
 
   var divText = document.getElementById(dataDescription);
   var divTitle = document.getElementById(dtitle);
@@ -115,10 +115,13 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle,l
           //console.log(d);
           divText =  "Table Description: " + d.Description;
           divTitle =  d.Title;
+          portion = d.Portion;
         return d;
       })
       d3.select("#" + dataDescription).text(divText);
       d3.select("#" + dtitle).text(divTitle);
+      d3.select("#" + portionID).text(portion);
+
       //console.log(divText)
       //console.log(divTitle)
       // ======== Domain, Axis & Sort ========
@@ -248,9 +251,9 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle,l
 
     } // End of update function
 
-    var legend = d3.select("#"+legendID).append("svg")
-    .attr("height", 75)
-    .attr("width", 250)
+    // var legend = d3.select("#"+legendID).append("svg")
+    // .attr("height", 75)
+    // .attr("width", 250)
 
 
     // legend.selectAll("legendrecs")

@@ -79,7 +79,7 @@ var overlays1 = {
 	};
   info1.update = function (props) {
 		this._div.innerHTML =  (props ?
-            '<table id="datatable"> <tr> <td style="width:105px">PUMA </td> <td>' + props.NAME_NEW + '</td> </tr> <tr> <td> Variable </td> <td>' + whichone_name1 + '</td> </tr> <tr> <td>Difference</td> <td>'+ Math.round((100*props[whichone1]) * 100) / 100 + ' p.p.' + '</td> </tr> <tr> <td>Model Count</td> <td>' + props[model_count_var1] +'</td> </tr> <tr> <td>Census Count</td> <td>' + props[census_count_var1] + '</td> </tr></table>'
+            '<table id="datatable"> <tr> <td style="width:105px">PUMA </td> <td>' + props.NAME_NEW + '</td> </tr> <tr> <td> Variable </td> <td>' + whichone_name1 + '</td> </tr> <tr> <td>Difference</td> <td>'+ Math.round((100*props[whichone1]) * 100) / 100 + '<br> percentage points' + '</td> </tr> <tr> <td>Model Count</td> <td>' + props[model_count_var1] +'</td> </tr> <tr> <td>Census Count</td> <td>' + props[census_count_var1] + '</td> </tr></table>'
 			: 'Hover over a PUMA');
 	};
 

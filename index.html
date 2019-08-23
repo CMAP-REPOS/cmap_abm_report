@@ -134,11 +134,11 @@
               </li>
             </ul>
 
-              <ul class="nav navbar-nav navbar-right" id="abouttoggle">
+              <!-- <ul class="nav navbar-nav navbar-right" id="abouttoggle">
               <li>
                     <a role="button" data-toggle="collapse" data-target="#collapseIntro" aria-expanded="true" aria-controls="collapseIntro" class="collapsed">About</a>
                   </li> 
-                </ul>
+                </ul> -->
             </div>
           </nav>
 
@@ -217,42 +217,34 @@
       </div>
 
       <div class="tab-content">
-          <div class="row" >
+          <div class="alert alert-info alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                           
+        <p style="margin-bottom:10px">
+            <strong>About:</strong> This report represents the results of model calibration and validation activities completed over the last several years by CMAP staff and their consultants.
+          <strong>Model calibration</strong> is defined as the adjustment of model parameters and constants so that the models better replicate observed data for a base year. CMAP's ABM is calibrated to a base year of 2010.
+          <strong>Model validation</strong> is defined as comparing the results of the calibrated models to observed data.
+          Modeling best practice dictates that different data sets be used to conduct calibration and
+          validation activities; in the absence of other observed data, the sources used for model
+          calibration may be used for validation as long as they examine different aspects of the
+          data or rely on alternate geographic scopes. Model validation results in this report reflect 2015 conditions.
+        </p>
+      </div>
+
+
+          <!-- <div class="row" >
               <div class="col-md-10">
                 <div class="panel-group" id="accordionintro" role="tablist" aria-multiselectable="true">
                   <div class="panel panel-default">
                     <div id="collapseIntro" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                       <div class="panel-body">
-                        <p>
-                          Activity-based models (ABMs) are founded on the idea that people’s travel behavior is a result of their daily activities; i.e., the things people need to accomplish dictate where, when, and how they travel, and with whom.
-                          These models are
-                          more advanced than standard travel demand models because they seek to represent the choices made by individual travelers. In order to do this, the models must generate a schedule of daily activities for members of every
-                          household in the
-                          region, and then transform that information into sequences of trips that occur throughout the day. To accomplish this, ABMs use detailed information about the factors that affect travel decisions, including:</p>
-                        <ul>
-                          <li>Households – the number of adults, children and workers; household income; the number of vehicles available</li>
-                          <li>People – age; work or school status; occupation</li>
-                          <li>Trips – purpose; destination; who is taking the trip; is it part of a sequence of trips that must be completed in a specific order</li>
-                        </ul>
-                        Having all of this data available for individual travelers allows for more-detailed analyses of travelers’ choices than is possible with standard travel demand models.
-                        ABMs were developed as a way to better analyze the impacts
-                        of policy decisions like managed lanes, congestion pricing and alternative transit fare structures.
-                        For more information visit <a href="https://www.cmap.illinois.gov/data/transportation/modeling#CMAPs_Activity_Based_Models">CMAP's Activity Based Models.</a> </p>
-                        <p style="margin-bottom:10px">
-                          This report represents the results of model calibration and validation activities completed over the last several years by CMAP staff and their consultants.
-                          Model calibration is defined as the adjustment of model parameters and constants so that the models better replicate observed data for a base year. CMAP's ABM is calibrated to a base year of 2010.
-                          Model validation is defined as comparing the results of the calibrated models to observed data.
-                          Modeling best practice dictates that different data sets be used to conduct calibration and
-                          validation activities; in the absence of other observed data, the sources used for model
-                          calibration may be used for validation as long as they examine different aspects of the
-                          data or rely on alternate geographic scopes. Model validation results in this report reflect 2015 conditions.
-                        </p>
+
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
 
 
@@ -262,7 +254,22 @@
             <div class="col-md-7">
               <h2>Introduction</h2>
               <p>
-                CMAP's activity based model (ABM) platform is CT-RAMP (Coordinated Travel and Regional activity based Modeling Platform), which was developed open source by a consultant under contract to CMAP. activity based Modeling is increasingly
+                  Activity-based models (ABMs) are founded on the idea that people’s travel behavior is a result of their daily activities; i.e., the things people need to accomplish dictate where, when, and how they travel, and with whom.
+                  These models are
+                  more advanced than standard travel demand models because they seek to represent the choices made by individual travelers. In order to do this, the models must generate a schedule of daily activities for members of every
+                  household in the
+                  region, and then transform that information into sequences of trips that occur throughout the day. To accomplish this, ABMs use detailed information about the factors that affect travel decisions, including:</p>
+                <ul>
+                  <li>Households – the number of adults, children and workers; household income; the number of vehicles available</li>
+                  <li>People – age; work or school status; occupation</li>
+                  <li>Trips – purpose; destination; who is taking the trip; is it part of a sequence of trips that must be completed in a specific order</li>
+                </ul>
+                Having all of this data available for individual travelers allows for more-detailed analyses of travelers’ choices than is possible with standard travel demand models.
+                ABMs were developed as a way to better analyze the impacts
+                of policy decisions like managed lanes, congestion pricing and alternative transit fare structures.
+                For more information visit <a href="https://www.cmap.illinois.gov/data/transportation/modeling#CMAPs_Activity_Based_Models">CMAP's Activity Based Models.</a> </p>
+
+                CMAP's ABM platform is CT-RAMP (Coordinated Travel and Regional activity based Modeling Platform), which was developed open source by a consultant under contract to CMAP. activity based Modeling is increasingly
                 viewed as a superior method to better understand the socioeconomic determinants of travel choice and for evaluating modern transportation solutions. CMAP's ABM has been developed to demonstrate sensitivity to highway pricing scenarios
                 based on each traveler's individual value of time and to improve model sensitivity to a wider range of nontraditional transit attributes, i.e., attributes such as service reliability, personal safety, station and vehicle cleanliness,
                 and
@@ -858,40 +865,6 @@
           </div>
           <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-3">
-              <h3>Work Trips to <text_div id="pTitle"></text_div>
-              </h3>
-              <br>
-              <p>
-                  <span id="worktrips_p"></span>
-                  of all work trips</p>   
-              <select id="workFlowCat">
-                <option value="CBD">CBD</option>
-                <option value="NChicago">North Chicago</option>
-                <option value="SChicago">South Chicago</option>
-                <option value="WChicago">West Chicago</option>
-                <option value="NCook">North Cook County</option>
-                <option value="SCook">South Cook County</option>
-                <option value="WCook">West Cook County</option>
-                <option value="DuPage">DuPage County</option>
-                <option value="Kane">Kane County</option>
-                <option value="Kendall">Kendall County</option>
-                <option value="Lake">Lake County</option>
-                <option value="McHenry">McHenry County</option>
-                <option value="Will">Will County</option>
-              </select>
-              <br>
-              <br>
-              <div id="worktripsLegend"></div>
-              <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
-              <p class="small">Select trip destination from dropdown to view observed and model comparison.</p>
-            </div>
-            <div class="col-md-6">
-              <div id="VChart"></div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-1"></div>
             <div class="col-md-8 colborder"> </div>
           </div>
           <div class="row">
@@ -1266,12 +1239,12 @@
               <select id="catdap">
                 <option value="M">Mandatory Activity</option>
                 <option value="N">Non-Mandatory Activity</option>
-                <option value="H">Home Activity</option>
               </select>
               <div id="dapLegend"></div>
               <div class="small" style="margin-top: 80px;">
                 Bars show number of individual tours in the selected activity type
-                (mandatory, nonmandatory, or home) that will be scheduled for each person type.
+                (mandatory, nonmandatory) that will be scheduled for each person type.  
+                Activities that occur at home make up the remaining 16.3% of all tours, and these are not assigned a travel mode.  
                 <!-- <br><br><b>Sources</b><br>
                 Observed -Travel Tracker Survey, 2007-2008. <br>
                 Modeled- CMAP ABM - 2010 Scenario. <br> -->
@@ -1328,25 +1301,6 @@
             <!-- <div class="col-md-2"></div> end -->
             <div class="col-md-8">
               <div class="colborder"></div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col col-md-2">
-              <h3>Tour Rates by Person Type</h3>
-              <br>
-              <div id="tourRateLegend"></div>
-              <div class="small">
-                Tour Rate is the number of tours by person type (above) divided by the total number of people of that type (see <a href="#2" role="tab" data-toggle="tab">Population Synthesis</a> tab; note the observed data source is different).
-                <br><br>
-                <!-- <b>Sources</b><br>
-                Observed -Travel Tracker Survey, 2007-2008. <br>
-                Modeled- CMAP ABM - 2010 Scenario.
-                </p> -->
-              </div>
-            </div>
-            <div class="col col-md-6">
-              <div id="tourrates"></div>
             </div>
           </div>
           <div class="row">
@@ -1520,57 +1474,6 @@
           <div class="row">
             <div class="col-md-1"></div> <!-- end -->
             <div class="col col-md-2">
-              <h3>Trips by Distance and Purpose</h3>
-              <br>
-              <p>
-                  <span id="tripsdistancepurpose_p"></span>
-                  of all trips</p>       
-              <select id="catPurpDist">
-                <option value="All">All</option>
-                <option value="Less than 2.5 Mile">Less than 2.5 Mile</option>
-                <option value="2.5-5 Mile">2.5-5 Mile</option>
-                <option value="5-10 Miles">5-10 Miles</option>
-                <option value="10-15 Miles">10-15 Miles</option>
-                <option value="15-20 Miles">15-20 Miles</option>
-                <option value="20-25 Miles">20-25 Miles</option>
-                <option value="25-30 Miles">25-30 Miles</option>
-                <option value="30 Miles or More">30 Miles or More</option>
-              </select>
-              <div id="tripsDistancePurposeLegend"></div>
-              <!-- <div class="small" style="margin-top: 80px;">
-                <b>Sources</b><br>
-                Observed -Travel Tracker Survey, 2007-2008. <br>
-                Modeled- CMAP ABM - 2010 Scenario. <br>
-              </div><br> -->
-            </div>
-            <div class="col col-md-6">
-              <div id="PurposebyDist"></div>
-            </div>
-            <div class="col col-md-2">
-              <div class="container">
-                <br />
-                <br />
-                <br />
-                <br />
-                <img src="data/images/icons8-add-50.png" class="image">
-                <div class="overlay">
-                  <p>
-                    The model is capable of capturing trip purposes for most trip distances, but tends to overestimate short trips and underestimate long trips. This behavior mostly applies to work trips. </p>
-
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-1"></div> <!-- end -->
-            <div class="col-md-8">
-              <div class="colborder"></div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-1"></div> <!-- end -->
-            <div class="col col-md-2">
 
               <h3>Trips by Purpose and Distance (Miles)</h3>
               <br>
@@ -1599,6 +1502,21 @@
             <div class="col col-md-6">
               <div id="DistbyPurpose"></div>
             </div>
+            <div class="col col-md-2">
+                <div class="container">
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <img src="data/images/icons8-add-50.png" class="image">
+                  <div class="overlay">
+                    <p>
+                      The model is capable of capturing trip purposes for most trip distances, but tends to overestimate short trips and underestimate long trips. This behavior mostly applies to work trips. </p>
+  
+                    </p>
+                  </div>
+                </div>
+              </div>
           </div>
           <div class="row">
             <div class="col-md-3"></div> <!-- end -->
@@ -1726,19 +1644,16 @@
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col col-md-3">
-              <h3>Transit Trips by Mode of Access and Distance (Miles)</h3>
-              <p>
-                  <span id="transitmodedistance_p"></span>
-                  of all transit trips</p>       
-
+              <h3>Transit Trips by <span id="transitname"></span></h3>
+              <p>Total transit trips: 1.626M (model), <span id="surveytransit"></span> (survey)</p>
               <select id="catTranDist">
-                <option value="all">All Access Modes</option>
-                <option value="transit">Walk To Transit</option>
-                <option value="dtransit">Drive to Transit</option>
+                <option value="Distance">Distance</option>
+                <option value="Income">Income</option>
               </select>
               <div id="transitaccessLegend"></div>
               <div class="small" style="margin-top:80px;">
-                Distance is the distance of the transit trip that occurred. <br><br>
+                Distance is the distance of the transit trip that occurred. 
+                Survey has fewer total transit trips when viewed by income since not all respondents reported an income value.  <br><br>
               </div><br>
               <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Select transit access mode from dropdown to view observed and model comparison</p>
@@ -1748,63 +1663,6 @@
             </div>
 
           </div>
-          <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-8">
-              <div class="colborder"></div><!-- end -->
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col col-md-3">
-              <h3>Transit Trips by Mode of Access and Household Income</h3>
-              <p>
-                  <span id="transitmodeincome_p"></span>
-                  of all transit trips</p>       
-
-              <select id="catIncomeDist">
-                <option value="all">All Access Modes</option>
-                <option value="transit">Walk To Transit</option>
-                <option value="dtransit">Drive to Transit</option>
-              </select>
-              <div id="transitincomeLegend"></div>
-              <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
-              <p class="small">Select transit access mode from dropdown to view observed and model comparison</p>
-            </div>
-            <div class="col col-md-6">
-              <div id="TranIncome"></div>
-
-            </div>
-          </div>
-
-          <!-- <div class="row">
-            <br />
-            <br />
-            <div class="col col-md-3">
-              <div class="colborder"></div>
-              <h3>Transit Trips by Mode of Access and Ratio of Autos to Adults</h3>
-              <select id="catAutoAdult">
-                <option value="all">All Access Modes</option>
-                <option value="transit">Walk To Transit</option>
-                <option value="dtransit">Drive to Transit</option>
-              </select>
-              <div id="transittripsratioLegend"></div>
-              <div class="small" style="margin-top:70px;">
-                Adults defined as 16 years and over. <br>
-                See <a href="#3" role="tab" data-toggle="tab">Auto Ownership</a> tab as well.
-                <br><br>
-                <b>Sources</b><br>
-                Observed - Travel Tracker Survey, 2007-2008.<br>
-                Modeled - CMAP ABM - 2010 Scenario. <br>
-              </div><br>
-              <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
-              <p class="small">Select transit access mode from dropdown to view observed and model comparison</p>
-            </div>
-            <div class="col col-md-6">
-              <div class="colborder"></div>
-              <div id="TranAutoAdult"></div>
-            </div>
-          </div> -->
         </div>
 
         <div id="11" class="tab-pane  container-fluid" style="min-height:80vh">

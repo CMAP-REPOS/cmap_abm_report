@@ -34,11 +34,11 @@
         <!-- Header -->
         <nav class="navbar navbar-default navbar-fixed-top" id="header">
           <div class="row" style="height: 76px;">
-              <div class="col-md-2" style="display: flex; align-items:center;">
-                  <a href="https://www.cmap.illinois.gov/" target="_blank">
-                    <img src='data/images/cmap_shortid_margins_RGB-01-01.png' height="30px">
-                  </a>
-                </div>
+            <div class="col-md-2" style="display: flex; align-items:center;">
+              <a href="https://www.cmap.illinois.gov/" target="_blank">
+                <img src='data/images/cmap_shortid_margins_RGB-01-01.png' height="30px">
+              </a>
+            </div>
             <div class="col-md-5" style="display: flex; align-items:center;">
               <h3>Activity Based Model (ABM) Calibration and Validation Report</h3>
             </div>
@@ -63,7 +63,7 @@
                   <div id="collapseIntro" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
                       <p>
-                        Activity-based models (ABMs) are founded on the idea that people’s travel behavior is a result of their daily activities; i.e., the things people need to accomplish dictate where, when, and how they travel, and with whom.
+                        activity based models (ABMs) are founded on the idea that people’s travel behavior is a result of their daily activities; i.e., the things people need to accomplish dictate where, when, and how they travel, and with whom.
                         These models are
                         more advanced than standard travel demand models because they seek to represent the choices made by individual travelers. In order to do this, the models must generate a schedule of daily activities for members of every
                         household in the
@@ -73,7 +73,7 @@
                         <li>People – age; work or school status; occupation</li>
                         <li>Trips – purpose; destination; who is taking the trip; is it part of a sequence of trips that must be completed in a specific order</li>
                       </ul>
-                      Having all of this data available for individual travelers allows for more-detailed analyses of travelers’ choices than is possible with standard travel demand models.
+                      Having all of this data available for individual travelers allows for more detailed analyses of travelers’ choices than is possible with standard travel demand models.
                       ABMs were developed as a way to better analyze the impacts
                       of policy decisions like managed lanes, congestion pricing and alternative transit fare structures.
                       For more information visit <a href="https://www.cmap.illinois.gov/data/transportation/modeling#CMAPs_Activity_Based_Models">CMAP's Activity Based Models.</a> </p>
@@ -179,11 +179,11 @@
             <div class="col-md-7">
               <h2>Introduction</h2>
               <p>
-                CMAP's activity-based model (ABM) platform is CT-RAMP (Coordinated Travel and Regional Activity-Based Modeling Platform), which was developed open source by a consultant under contract to CMAP. Activity-Based Modeling is increasingly
+                CMAP's activity based model (ABM) platform is CT-RAMP (Coordinated Travel and Regional activity based Modeling Platform), which was developed open source by a consultant under contract to CMAP. activity based Modeling is increasingly
                 viewed as a superior method to better understand the socioeconomic determinants of travel choice and for evaluating modern transportation solutions. CMAP's ABM has been developed to demonstrate sensitivity to highway pricing scenarios
-                based on each traveler's individual value of time and to improve model sensitivity to a wider range of non-traditional transit attributes, i.e., attributes such as service reliability, personal safety, station and vehicle cleanliness,
+                based on each traveler's individual value of time and to improve model sensitivity to a wider range of nontraditional transit attributes, i.e., attributes such as service reliability, personal safety, station and vehicle cleanliness,
                 and
-                crowding that do not typically inform transit Level-of-Service calculations. Subsequent work on the ABM has focused on the calibration of selected sub-models and the overall validation of the model results.
+                crowding that do not typically inform transit Level of Service calculations. Subsequent work on the ABM has focused on the calibration of selected submodels and the overall validation of the model results.
 
               </p>
             </div><!-- end -->
@@ -242,11 +242,12 @@
                   </div>
                   <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
-                      A synthetic population provides the foundation for modeling individuals’ travel behavior within an activity-based model.
-                      Using Census data and other socio-economic information, a complete set of households for a modeling area is developed
+                      A synthetic population provides the foundation for modeling individuals’ travel behavior within an activity based model.
+                      Using Census data and other socioeconomic information, a complete set of households for a modeling area is developed
                       (see <a href="#2" role="tab" data-toggle="tab">Population Synthesis</a> tab). This dataset contains all of the relevant attributes about each household and individual that are required by the
                       ABM.
-                      Since the Census Bureau does not release detailed information about every household and individual, household and person records are replicated in order to generate a complete set of households for the modeling area.  Target totals for various household
+                      Since the Census Bureau does not release detailed information about every household and individual, household and person records are replicated in order to generate a complete set of households for the modeling area. Target
+                      totals for various household
                       and population attributes guide this process so the final population is representative of the region.
                       All of the subsequent steps in the ABM rely on the data provided in the synthetic population.
                     </div>
@@ -262,7 +263,7 @@
                   </div>
                   <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div class="panel-body">
-                      Two sub-models are included in this step: one that models the usual workplace locations for workers and one that models the usual school location for students. The workplace location model accounts for the worker’s occupation,
+                      Two submodels are included in this step: one that models the usual workplace locations for workers and one that models the usual school location for students. The workplace location model accounts for the worker’s occupation,
                       as
                       identified by the industry category they are employed in within the synthetic person file. This information is paired with jobs within the employment categories summarized at a fine geographic level to ensure that workers are
                       sent
@@ -296,31 +297,31 @@
                   </div>
                   <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                     <div class="panel-body">
-                      These models schedule activities and travel tours for all household members (see <a href="#10" role="tab" data-toggle="tab">Tours</a> tab). The first sub-model classifies daily travel patterns into three types: </li>
+                      These models schedule activities and travel tours for all household members (see <a href="#10" role="tab" data-toggle="tab">Tours</a> tab). The first submodel classifies daily travel patterns into three types: </li>
                       <ul>
-                        <li>Mandatory (work and school) – includes at least one out-of-home mandatory activity;</li>
-                        <li>Non-mandatory (other purposes) – includes at least one out-of-home non-mandatory activity but no out-of-home mandatory activities;</li>
-                        <li>Home – in-home activities only.</li>
+                        <li>Mandatory (work and school) – includes at least one out of home mandatory activity;</li>
+                        <li>nonmandatory (other purposes) – includes at least one out of home nonmandatory activity but no out of home mandatory activities;</li>
+                        <li>Home – in home activities only.</li>
                       </ul>
 
-                      <p>These activities are modeled as joint choices so that decisions made by household members affect the decisions of other members of the household. The next sub-models estimate the frequency and time-of-day for mandatory
-                        activities. These are given a higher priority for scheduling than non-mandatory and home activities. Following the scheduling of mandatory activities, individuals have “residual time windows” which can be used to schedule
+                      <p>These activities are modeled as joint choices so that decisions made by household members affect the decisions of other members of the household. The next submodels estimate the frequency and time of day for mandatory
+                        activities. These are given a higher priority for scheduling than nonmandatory and home activities. Following the scheduling of mandatory activities, individuals have “residual time windows” which can be used to schedule
                         other
                         activities including joint travel with other household members.
                       </p>
-                      <p>The next sub-model estimates joint travel for household members. All characteristics of joint travel (travel purpose, individual household members traveling, destination and time-of-day) are simulated. Joint travel is
+                      <p>The next submodel estimates joint travel for household members. All characteristics of joint travel (travel purpose, individual household members traveling, destination and time of day) are simulated. Joint travel is
                         conditional
                         upon the available time window for each household member following the scheduling of mandatory activities.
                       </p>
                       <p>
-                        The next sub-model generates maintenance tours, which cover shopping and other household errands. These tasks are allocated to a single household member to carry out, and the destinations and times-of-day are generated. These
+                        The next submodel generates maintenance tours, which cover shopping and other household errands. These tasks are allocated to a single household member to carry out, and the destinations and times of day are generated. These
                         tours are developed sequentially for individuals to ensure consistency in their personal schedule.
                       </p>
                       <p>
-                        The next sub-model simulates discretionary tours which are modeled for individual, not joint, travel. These are also modeled sequentially so that they could all realistically occur during an individual’s day.
+                        The next submodel simulates discretionary tours which are modeled for individual, not joint, travel. These are also modeled sequentially so that they could all realistically occur during an individual’s day.
                       </p>
                       <p>
-                        The final sub-model simulates at-work tours – those tours that occur during the day with the workplace as the starting and ending location.
+                        The final submodel simulates at-work tours – those tours that occur during the day with the workplace as the starting and ending location.
                       </p>
                       <center><img src="data/images/daily.JPG"></center>
                     </div>
@@ -336,7 +337,7 @@
                   </div>
                   <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                     <div class="panel-body">
-                      These sub-models determine the transport mode used on tours, the locations of intermediate stops made on the tours and the purpose
+                      These submodels determine the transport mode used on tours, the locations of intermediate stops made on the tours and the purpose
                       of each stop.
                     </div>
                   </div>
@@ -351,7 +352,7 @@
                   </div>
                   <div id="collapseSix" class="collapse" aria-labelledby="headingSix">
                     <div class="panel-body">
-                      These sub-models add details about the trips occurring within the tours including the mode of travel,
+                      These submodels add details about the trips occurring within the tours including the mode of travel,
                       the departure time form each location and the parking location for auto trips.
                       See <a href="#5" role="tab" data-toggle="tab">Trip Mode</a> tab and
                       <a href="#6" role="tab" data-toggle="tab">Trip Purpose</a> tab.
@@ -390,16 +391,17 @@
               <br />
               <h2>Population Synthesis</h2>
               <p>
-                Using Census data and other socio-economic information, a complete set of households for the CMAP modeling area is developed. This dataset contains all of the relevant attributes about each household and for each individual living in
+                Using Census data and other socioeconomic information, a complete set of households for the CMAP modeling area is developed. This dataset contains all of the relevant attributes about each household and for each individual living in
                 those households that are required by the ABM. While this population is statistically representative of the Census data, the actual households and individuals are “synthetic” in that they do not represent identifiable people and an
                 individual household in the Census data may be replicated numerous times in order to generate a complete distribution of households in the modeling inputs.</p>
               <p>
                 The current population synthesis software used by CMAP is PopSynIII. The socioeconomic data developed from CMAP’s regional forecasting and Local Area Allocation procedures provide the subzone-level control values for all ON TO 2050
-                model scenarios. CMAP has greatly enhanced the functionality of PopSyn to enforce these controls and generate a distribution of enumerated households that account for the distribution of adults, workers and children within the agency’s
+                model scenarios. CMAP has greatly enhanced the functionality of PopSyn to enforce these controls and generate a distribution of enumerated households that account for the distribution of adults, workers and children within the
+                agency’s
                 forecasting procedures.
               </p>
 
-              <p> Individuals are classified into one of eight mutually-exclusive categories:</p>
+              <p> Individuals are classified into one of eight mutually exclusive categories:</p>
               <ul>
                 <li>Full-time worker: Age 16+ working at least 35 hours per week for more than 30 weeks out of the year.</li>
                 <li>University student: Age 18+ and school enrollment is college undergraduate or graduate school.</li>
@@ -889,12 +891,12 @@
               <br />
               <h2>Trips by Mode</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non igitur de
-                improbo, sed de callido improbo quaerimus, qualis Q. Ampulla enim sit necne
-                sit, quis non iure irrideatur, si laboret? formarum quam civis excellens ad
-                factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-                qualis Q. Ampulla enim sit necne sit, quis non iure irrideatur, si laboret?
-                formarum quam civis excellen
+                The CT-RAMP model includes eleven options for travel modes.
+                These include the non-motorized options of walking or cycling, as well as transit,
+                taxis and school bus. There are six options for auto trips, which are categorized by
+                the number of vehicle occupants and whether or not the trip includes a toll. Vehicle
+                occupancy categories include single occupants, two people sharing a vehicle or more than
+                two people sharing a vehicle.
               </p>
               <br>
             </div>
@@ -1143,11 +1145,11 @@
                 Tours may be completed by an individual or can include multiple people traveling together.
               </p>
               <p>
-                Daily activities are categorized into three types: mandatory, non-mandatory or home.
+                Daily activities are categorized into three types: mandatory, nonmandatory or home.
                 Activities are placed within these three categories based on the relative importance
                 of the role they play in defining one’s day. Mandatory activities
                 (which include work and school) are the most inflexible in terms of
-                when they occur and where they are located. Non-mandatory activities
+                when they occur and where they are located. nonmandatory activities
                 have greater flexibility in when they occur and where their locations are.
                 Home tours are stationary and are not assigned a travel mode.
               </p>
@@ -1170,12 +1172,12 @@
               <select id="catdap">
                 <option value="H">Home Activity</option>
                 <option value="M">Mandatory Activity</option>
-                <option value="N">Non-Mandatory Activity</option>
+                <option value="N">nonmandatory Activity</option>
               </select>
               <div id="dapLegend"></div>
               <div class="small" style="margin-top: 80px;">
                 Bars show number of individual tours in the selected activity type
-                (mandatory, non-mandatory, or home) that will be scheduled for each person type.
+                (mandatory, nonmandatory, or home) that will be scheduled for each person type.
                 <!-- <br><br><b>Sources</b><br>
                 Observed -Travel Tracker Survey, 2007-2008. <br>
                 Modeled- CMAP ABM - 2010 Scenario. <br> -->
@@ -1194,7 +1196,7 @@
                 <div class="overlay">
                   <p>
                     The model does a good job of matching the number of mandatory tours especially for Full-Time Workers and Non-Driving students,
-                    which account for nearly 80% of these kinds of tours. The modeled data also closely match the pattern of non-mandatory and home
+                    which account for nearly 80% of these kinds of tours. The modeled data also closely match the pattern of nonmandatory and home
                     activities, with the notable exception being that the model is overestimating of the number of these kinds of tours for Non-working Adults.
                   </p>
                 </div>
@@ -1306,15 +1308,15 @@
               <p>
                 The CMAP ABM classifies trips into ten activity types.
                 Activities can be grouped into general categories according to their
-                priority in determining an individual’s schedule: mandatory and non-mandatory.
+                priority in determining an individual’s schedule: mandatory and nonmandatory.
                 Mandatory activities include work, university, and school trips. The remaining activities
-                are all considered non-mandatory. While some of these activities (like shopping, eating out
-                and visiting) are self-explanatory, the remaining ones require definitions to ensure clarity
+                are all considered nonmandatory. While some of these activities (like shopping, eating out
+                and visiting) are self explanatory, the remaining ones require definitions to ensure clarity
                 of what is being measured. Work-based activities are a subset of activities (such as going to
                 lunch or traveling to meet a client) that occur with the place of work as the anchor location.
                 Escort activities are picking up or dropping off passengers. Maintenance activities include
                 medical appointments and other personal business or services that people engage in, excluding
-                shopping and escorting activities. Finally, discretionary activities cover the reaming activities,
+                shopping and escorting activities. Finally, discretionary activities cover the remaining activities,
                 which include engaging in social or recreational activities; attending sporting or cultural events;
                 and attending religious activities or performing volunteer activities.</p>
               <br>
@@ -2156,47 +2158,47 @@
           <div id="source">
             <p class="navbar-text navbar-left">
               <script>
-              $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-                var target = $(e.target).attr("href"); // activated tab
-                if (target == '#1'){
-                  text = ""
-                }
-                if (target == '#2'){
-                  text = 'Observed: PUMS 2007-11 <br> Modeled: PopSynIII'
-                }
-                if (target == '#3'){
-                  text = 'Observed: PUMS 2007-11 <br> Modeled: PopSynIII'
-                }
-                if (target == '#10'){
-                  text = 'Observed: Travel Tracker Survey, 2007-2008. <br> Modeled: CMAP ABM - 2010 Scenario.'
-                }
-                if  (target == '#5'){
-                  text = 'Observed: Travel Tracker Survey, 2007-2008. <br> Modeled: CMAP ABM - 2010 Scenario.'
-                }
-                if (target == '#6'){
-                  text = 'Observed: Travel Tracker Survey, 2007-2008. <br> Modeled: CMAP ABM - 2010 Scenario.'
-                }
-                if (target == '#4'){
-                  text = 'Observed: Tables: CTPP (2009-2013), Graphs: Travel Tracker Survey, 2007-2008. <br> Modeled: CMAP ABM - 2010 Scenario.'
-                }
-                if (target == '#7'){
-                  text = 'Observed: Travel Tracker Survey, 2007-2008. <br> Modeled: CMAP ABM - 2010 Scenario.'
-                }
-                if (target == '#11'){
-                  text = 'Observed: U.S. Census Bureau; American Community Survey (ACS); Five-Year Public Use Microdata Sample (PUMS) 2013-2017 <br> Modeled: CMAP ABM - 2015 Scenario.'
-                }
-                if (target == '#12'){
-                  text = 'Observed: CTPP (2012 - 2016). <br> Modeled: CMAP ABM - 2015 Scenario.'
-                }
-                if (target == '#8'){
-                  text = 'Observed: Illinois Travel Statistics 2015 <br> Modeled: CMAP ABM - 2015 Scenario.'
-                }
-                if (target == '#9'){
-                  text = 'Observed: Regional Transportation Authority Mapping and Statistics (RTAMS, 2015-2016) <br> Modeled: CMAP ABM - 2015 Scenario.'
-                }
-                var textObj = document.getElementsByClassName("navbar-text navbar-left")[0]
-                textObj.innerHTML = text;
-              });
+                $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+                  var target = $(e.target).attr("href"); // activated tab
+                  if (target == '#1') {
+                    text = ""
+                  }
+                  if (target == '#2') {
+                    text = 'Observed: PUMS 2007-11 <br> Modeled: PopSynIII'
+                  }
+                  if (target == '#3') {
+                    text = 'Observed: PUMS 2007-11 <br> Modeled: PopSynIII'
+                  }
+                  if (target == '#10') {
+                    text = 'Observed: Travel Tracker Survey, 2007-2008. <br> Modeled: CMAP ABM - 2010 Scenario.'
+                  }
+                  if (target == '#5') {
+                    text = 'Observed: Travel Tracker Survey, 2007-2008. <br> Modeled: CMAP ABM - 2010 Scenario.'
+                  }
+                  if (target == '#6') {
+                    text = 'Observed: Travel Tracker Survey, 2007-2008. <br> Modeled: CMAP ABM - 2010 Scenario.'
+                  }
+                  if (target == '#4') {
+                    text = 'Observed: Tables: CTPP (2009-2013), Graphs: Travel Tracker Survey, 2007-2008. <br> Modeled: CMAP ABM - 2010 Scenario.'
+                  }
+                  if (target == '#7') {
+                    text = 'Observed: Travel Tracker Survey, 2007-2008. <br> Modeled: CMAP ABM - 2010 Scenario.'
+                  }
+                  if (target == '#11') {
+                    text = 'Observed: U.S. Census Bureau; American Community Survey (ACS); Five-Year Public Use Microdata Sample (PUMS) 2013-2017 <br> Modeled: CMAP ABM - 2015 Scenario.'
+                  }
+                  if (target == '#12') {
+                    text = 'Observed: CTPP (2012 - 2016). <br> Modeled: CMAP ABM - 2015 Scenario.'
+                  }
+                  if (target == '#8') {
+                    text = 'Observed: Illinois Travel Statistics 2015 <br> Modeled: CMAP ABM - 2015 Scenario.'
+                  }
+                  if (target == '#9') {
+                    text = 'Observed: Regional Transportation Authority Mapping and Statistics (RTAMS, 2015-2016) <br> Modeled: CMAP ABM - 2015 Scenario.'
+                  }
+                  var textObj = document.getElementsByClassName("navbar-text navbar-left")[0]
+                  textObj.innerHTML = text;
+                });
               </script>
             </p>
           </div>
@@ -2353,13 +2355,13 @@
 
 <!-- making tables -->
 <script>
-d3.csv("data/csv49_calworkflows_diff.csv", function(d, i, columns) {
-  for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
-  return d;
-}, function(error, data) {
-  if (error) throw error;
-  tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#caldiffcountyflow", "percent"); // 2 column table
-});
+  d3.csv("data/csv49_calworkflows_diff.csv", function(d, i, columns) {
+    for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+    return d;
+  }, function(error, data) {
+    if (error) throw error;
+    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#caldiffcountyflow", "percent"); // 2 column table
+  });
   d3.csv("data/csv47_modelworkflows_cal.csv", function(d, i, columns) {
     for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
     return d;
@@ -2375,13 +2377,13 @@ d3.csv("data/csv49_calworkflows_diff.csv", function(d, i, columns) {
     tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#ctppcountyflow_cal", "nopercent"); // 2 column table
   });
 
-d3.csv("data/csv46_valworkflows_diff.csv", function(d, i, columns) {
-  for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
-  return d;
-}, function(error, data) {
-  if (error) throw error;
-  tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#valdiffcountyflow", "percent"); // 2 column table
-});
+  d3.csv("data/csv46_valworkflows_diff.csv", function(d, i, columns) {
+    for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+    return d;
+  }, function(error, data) {
+    if (error) throw error;
+    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#valdiffcountyflow", "percent"); // 2 column table
+  });
   d3.csv("data/csv44_modelworkflows.csv", function(d, i, columns) {
     for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
     return d;

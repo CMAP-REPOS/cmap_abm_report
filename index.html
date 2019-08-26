@@ -54,11 +54,11 @@
               <ul class="nav navbar-nav">
                 <li class="dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Calibration 
+                    Calibration
                     <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu">
-                    <li>  
+                    <li>
                     <a class="calibration" href="#2" role="tab" data-toggle="tab">
                           Population Synthesis
                         </a>
@@ -68,31 +68,31 @@
                             Auto Ownership
                           </a>
                         </li>
-          
+
                         <li>
                           <a class="calibration" href="#10" role="tab" data-toggle="tab">
                             Tours
                           </a>
                         </li>
-          
+
                         <li>
                           <a class="calibration" href="#5" role="tab" data-toggle="tab">
                             Trip Mode
                           </a>
                         </li>
-          
+
                         <li>
                           <a class="calibration" href="#6" role="tab" data-toggle="tab">
                             Trip Activities
                           </a>
                         </li>
-          
+
                         <li>
                           <a class="calibration" href="#4" role="tab" data-toggle="tab">
                             Work Flows
                           </a>
                         </li>
-          
+
                         <li>
                           <a class="calibration" href="#7" role="tab" data-toggle="tab">
                             Transit Trips
@@ -100,15 +100,15 @@
                         </li>
                   </ul>
                   </li>
-                  
-                  
+
+
               <li class="dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     Validation
                     <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu">
-    
+
                   <li>
                     <a class="validation" href="#11" role="tab" data-toggle="tab">
                       Household Attributes
@@ -124,7 +124,7 @@
                       Highway Assignment
                     </a>
                   </li>
-    
+
                   <li>
                     <a class="validation" href="#9" role="tab" data-toggle="tab">
                       Transit Assignment
@@ -137,7 +137,7 @@
               <!-- <ul class="nav navbar-nav navbar-right" id="abouttoggle">
               <li>
                     <a role="button" data-toggle="collapse" data-target="#collapseIntro" aria-expanded="true" aria-controls="collapseIntro" class="collapsed">About</a>
-                  </li> 
+                  </li>
                 </ul> -->
             </div>
           </nav>
@@ -219,7 +219,7 @@
       <div class="tab-content">
           <div class="alert alert-info alert-dismissible" role="alert">
               <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                           
+
         <p style="margin-bottom:10px">
             <strong>About:</strong> This report represents the results of model calibration and validation activities completed over the last several years by CMAP staff and their consultants.
           <strong>Model calibration</strong> is defined as the adjustment of model parameters and constants so that the models better replicate observed data for a base year. CMAP's ABM is calibrated to a base year of 2010.
@@ -461,7 +461,7 @@
                   <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven">
                     <div class="panel-body">
                       Following development of the complete set of tours and trips, that information is assigned to the travel networks
-                      and network equilibrium based on route choice creates congested travel times. Highway and transit trips are
+                      and <dfn data-info= "Definition goes here">network equilibrium</dfn> based on route choice creates congested travel times. Highway and transit trips are
                       assigned through separate procedures. See <a href="#8" role="tab" data-toggle="tab">Highway Assignment</a> tab and
                       <a href="#9" role="tab" data-toggle="tab">Transit Assignment</a> tab.
                     </div>
@@ -496,7 +496,7 @@
                 <li>Part-time worker: Age 16+ and a non-student employed less than full time.</li>
                 <li>Non-working adult: Age 16-64, non-working and a non-student.</li>
                 <li>Non-working senior: Age 65+, non-working and a non-student.</li>
-                <li>Driving age student: Age 16-19, not a full time worker or college student.</li>
+                <li>Driving age student: Age 16-19, not a full-time worker or college student.</li>
                 <li>Non-driving student: Age 6-15.</li>
                 <li>Pre-school: Age under 6.</li>
               </ul>
@@ -638,7 +638,7 @@
             <div class="col-md-7">
               <h2>Auto Ownership</h2>
               <p>
-                Auto ownership plays an important role in individuals’ travel behavior decisions and helps define the set of travel mode options available to them. “Auto sufficiency” is a concept often applied to understand constraints a household
+                <dfn data-info= "Definition goes here">Auto ownership</dfn> plays an important role in individuals’ travel behavior decisions and helps define the set of travel mode options available to them. “Auto sufficiency” is a concept often applied to understand constraints a household
                 may
                 have on travel choices -- generally categorizing household as having zero autos, having more workers in the household than autos, or having at least as many auto as workers in the household. This is a key measure in determining which
                 households may be transit-dependent.
@@ -875,7 +875,7 @@
               <br>
               <p>
                   <span id="worktripsmodedistance_p"></span>
-                  of all work trips</p>       
+                  of all work trips</p>
 
               <select id="catModeDist">
                 <option value="all">All Modes</option>
@@ -915,7 +915,7 @@
               <br>
               <p>
                   <span id="workbtripsmodedistance_p"></span>
-                  of all work-based trips</p>       
+                  of all work-based trips</p>
 
               <select id="wbcatModeDist">
                 <option value="all">All Modes</option>
@@ -953,7 +953,7 @@
                 The CT-RAMP model includes eleven options for travel modes.
                 These include the non-motorized options of walking or cycling, as well as transit,
                 taxis and school bus. There are six options for auto trips, which are categorized by
-                the number of vehicle occupants and whether or not the trip includes a toll. Vehicle
+                the number of vehicle occupants and whether or not the trip includes a <dfn data-info= "Definition goes here">toll</dfn>. Vehicle
                 occupancy categories include single occupants, two people sharing a vehicle or more than
                 two people sharing a vehicle.
               </p>
@@ -1035,7 +1035,7 @@
                       </p> -->
               <p>
                   <span id="tripspersonmode_p"></span>
-                  of all trips</p>       
+                  of all trips</p>
               <select id="catModePer">
                 <option value="All">All</option>
                 <option value="Full-time worker">Full-time Worker</option>
@@ -1097,7 +1097,7 @@
                     </p> -->
                     <p>
                         <span id="tripsincomemode_p"></span>
-                        of all trips</p>       
+                        of all trips</p>
               <select id="catModeInc">
                 <option value="All">All</option>
                 <option value="Less than $35k">Less than $35k</option>
@@ -1151,7 +1151,7 @@
                     </p> -->
               <p>
                   <span id="tripspurposemode_p"></span>
-                  of all trips</p>       
+                  of all trips</p>
               <select id="catModePurp">
                 <option value="All">All</option>
                 <option value="Discretionary">Discretionary</option>
@@ -1243,8 +1243,8 @@
               <div id="dapLegend"></div>
               <div class="small" style="margin-top: 80px;">
                 Bars show number of individual tours in the selected activity type
-                (mandatory, nonmandatory) that will be scheduled for each person type.  
-                Activities that occur at home make up the remaining 16.3% of all tours, and these are not assigned a travel mode.  
+                (mandatory, nonmandatory) that will be scheduled for each person type.
+                Activities that occur at home make up the remaining 16.3% of all tours, and these are not assigned a travel mode.
                 <!-- <br><br><b>Sources</b><br>
                 Observed -Travel Tracker Survey, 2007-2008. <br>
                 Modeled- CMAP ABM - 2010 Scenario. <br> -->
@@ -1330,7 +1330,7 @@
               <div id="tourtod_legend"></div>
 
               <div class="small">
-                Tour arrival and depature times are grouped into 40 time slices of the day.
+                Tour arrival and departure times are grouped into 40 time slices of the day.
                 <br><br>
                 <!-- <b>Sources</b><br>
                 Observed -Travel Tracker Survey, 2007-2008. <br>
@@ -1355,7 +1355,7 @@
                 The CMAP ABM classifies trips into ten activity types.
                 Activities can be grouped into general categories according to their
                 priority in determining an individual’s schedule: mandatory and nonmandatory.
-                Mandatory activities include work, university, and school trips. The remaining activities
+                Mandatory activities include work and school trips. The remaining activities
                 are all considered nonmandatory. While some of these activities (like shopping, eating out
                 and visiting) are self explanatory, the remaining ones require definitions to ensure clarity
                 of what is being measured. Work-based activities are a subset of activities (such as going to
@@ -1424,7 +1424,7 @@
               <br>
               <p>
                   <span id="tripspersonpurpose_p"></span>
-                  of all trips</p>       
+                  of all trips</p>
               <select id="catPurpType">
                 <option value="All">All</option>
                 <option value="Full-time Worker">Full-time Worker</option>
@@ -1479,7 +1479,7 @@
               <br>
               <p>
                   <span id="tripspurposedistance_p"></span>
-                  of all trips</p>       
+                  of all trips</p>
               <select id="catDistPurp">
                 <option value="Discretionary">Discretionary</option>
                 <option value="Eating Out">Eating Out</option>
@@ -1512,7 +1512,7 @@
                   <div class="overlay">
                     <p>
                       The model is capable of capturing trip purposes for most trip distances, but tends to overestimate short trips and underestimate long trips. This behavior mostly applies to work trips. </p>
-  
+
                     </p>
                   </div>
                 </div>
@@ -1537,7 +1537,7 @@
               <p>Transit is a vital part of the transportation system in
                 northeastern Illinois and more than 600 million transit trips are made annually.
                 It is important to properly calibrate such a key travel mode to ensure that the modeled
-                transit trips reflect the travel sheds actually served by transit.
+                transit trips reflect the <dfn data-info= "Definition goes here">travel sheds</dfn> actually served by transit.
               </p>
               <br>
             </div>
@@ -1652,7 +1652,7 @@
               </select>
               <div id="transitaccessLegend"></div>
               <div class="small" style="margin-top:80px;">
-                Distance is the distance of the transit trip that occurred. 
+                Distance is the distance of the transit trip that occurred.
                 Survey has fewer total transit trips when viewed by income since not all respondents reported an income value.  <br><br>
               </div><br>
               <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
@@ -1760,8 +1760,8 @@
             <div class="col-md-6">
               <h2>Highway Assignment</h2>
               <p>
-                During Highway Assignment, the individual trips developed by CT-RAMP are routed along the model network from origin to destination in order to estimate traffic flows and network conditions. When equilibrium is reached within the
-                highway assignment (meaning that vehicles cannot change paths without negatively impacting travel times), vehicle class volumes for each link are retained to determine the demand on each link. These vehicle class volumes are then used
+                During Highway Assignment, the individual trips developed by <dfn data-info= "Definition goes here">CT-RAMP</dfn> are routed along the model network from origin to destination in order to estimate traffic flows and network conditions. When equilibrium is reached within the
+                highway assignment (meaning that vehicles cannot change paths without negatively impacting travel times), <dfn data-info= "Definition goes here">vehicle class</dfn> volumes for each <dfn data-info= "Definition goes here">link</dfn> are retained to determine the demand on each link. These vehicle class volumes are then used
                 to calculate standard measures such as vehicle miles of travel (VMT). The summaries below include volumes for links within the CMAP seven county region.
               </p>
               <br>

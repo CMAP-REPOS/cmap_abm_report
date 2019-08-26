@@ -234,9 +234,28 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
           })
           }})
         cta1.eachLayer(function(layer) {
+          if (selectedline == "RedLine"){
+            linecolor = "#FF0000"
+          } else if (selectedline == "BlueLine"){
+            linecolor = "#0000FF"
+          } else if (selectedline == "BrownLine"){
+            linecolor = "#8B4513"
+          } else if (selectedline == "GreenLine"){
+            linecolor = "#008000"
+          } else if (selectedline == "OrangeLine"){
+            linecolor = "#FF8C00"
+          } else if (selectedline == "PinkLine"){
+            linecolor = "#ea4797"
+          } else if (selectedline == "PurpleLine"){
+            linecolor = "#800080"
+          } else if (selectedline == "YellowLine"){
+            linecolor = "#999900"
+          } else{
+            linecolor = "#cf4446"
+          }
           if(layer.LINE.includes(selectedline)){
             layer.setStyle({
-              color:"#cf4446",
+              color: linecolor,
               weight: 3
           })
           }})

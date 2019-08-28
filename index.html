@@ -133,6 +133,13 @@
               </ul>
               </li>
             </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a id="recall" style="display:none">
+                About
+                </a>
+              </li>
+            </ul>
 
               <!-- <ul class="nav navbar-nav navbar-right" id="abouttoggle">
               <li>
@@ -217,8 +224,8 @@
       </div>
 
       <div class="tab-content">
-          <div class="alert alert-info alert-dismissible" role="alert">
-              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div class="alert alert-info alert" role="alert" id="about">
+              <button type="button" class="close" id="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
         <p style="margin-bottom:10px">
           <strong>Model calibration</strong> is defined as the adjustment of model parameters and constants so that the models better replicate observed data for a base year. CMAP's ABM is calibrated to a base year of 2010.
@@ -2208,7 +2215,7 @@
 <script type="text/javascript" src="scripts/modepies.js"></script>
 <script type="text/javascript" src="scripts/multiline.js"></script>
 <script type="text/javascript" src="scripts/multiline_dd.js"></script>
-<script type="text/javascript" src="scripts/portion.js"></script>
+<script type="text/javascript" src="scripts/alert_dismiss.js"></script>
 <!-- calling functions -->
 <script>
   makeGroupVBar("data/csv1_pop_syn.csv", "#PurposeChartpums", "#catPopSyn", 2, "popsynDesc", "hhtitle", "pumsLegend");

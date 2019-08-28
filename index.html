@@ -2321,21 +2321,21 @@
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#caldiffcountyflow", "percent"); // 2 column table
+    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External Area', 'Total'], "#caldiffcountyflow", "percent"); // 2 column table
   });
   d3.csv("data/csv47_modelworkflows_cal.csv", function(d, i, columns) {
     for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#modelcountyflow_cal", "nopercent"); // 2 column table
+    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External Area', 'Total'], "#modelcountyflow_cal", "nopercent"); // 2 column table
   });
   d3.csv("data/csv48_ctpplworkflows_cal.csv", function(d, i, columns) {
     for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#ctppcountyflow_cal", "nopercent"); // 2 column table
+    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External Area', 'Total'], "#ctppcountyflow_cal", "nopercent"); // 2 column table
   });
 
   d3.csv("data/csv46_valworkflows_diff.csv", function(d, i, columns) {
@@ -2343,21 +2343,21 @@
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#valdiffcountyflow", "percent"); // 2 column table
+    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External Area', 'Total'], "#valdiffcountyflow", "percent"); // 2 column table
   });
   d3.csv("data/csv44_modelworkflows.csv", function(d, i, columns) {
     for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#modelcountyflow", "nopercent"); // 2 column table
+    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External Area', 'Total'], "#modelcountyflow", "nopercent"); // 2 column table
   });
   d3.csv("data/csv45_ctpp2012workflows.csv", function(d, i, columns) {
     for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#ctpp2012countyflow", "nopercent"); // 2 column table
+    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External Area', 'Total'], "#ctpp2012countyflow", "nopercent"); // 2 column table
   });
 
   d3.csv("data/csv42_busboardings.csv", function(d, i, columns) {

@@ -664,13 +664,8 @@
             <div class="col-md-1"></div>
             <div class="col-md-2">
               <h3>Number of Households by Vehicles Owned</h3>
+              Total Households: <span class="modtotal"></span> Model, <span class="surveytotal"></span> Survey 
               <div id="autoLegend"></div>
-              <div id="auto_counts" style="width : 86%"></div>
-              <!-- <div class="small">
-                <b>Sources</b><br>
-                Observed - PUMS 2007-11 <br>
-                Modeled- PopSynIII <br>
-              </div> -->
             </div>
             <div class="col-md-6">
               <br>
@@ -691,7 +686,8 @@
               <h3>Auto Sufficiency</h3>
               <h5>Distribution of Auto Ownership by <div id="dtitle"></div>
               </h5>
-              <br>
+              Total Households: <span class="modtotal"></span> Model, <span class="surveytotal"></span> Survey 
+              <br><br>
               <select id="aoCat">
                 <option value="size">Household Size</option>
                 <option value="income">Household Income</option>
@@ -2443,7 +2439,10 @@
   }, function(error, data) {
     if (error) throw error;
     BarChart(data, "#aoCountBar", "")
-  });
+    $('.modtotal').text(d3.formatPrefix(".2s",1e6)(d3.sum(data.map(function(d){return d.Model}))))
+    $('.surveytotal').text(d3.formatPrefix(".2s",1e6)(d3.sum(data.map(function(d){return d.Observed}))))
+    }
+  );
 </script>
 
 </html>

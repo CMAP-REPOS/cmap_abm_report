@@ -490,7 +490,7 @@
                 those households that are required by the ABM. While this population is statistically representative of the Census data, the actual households and individuals are “synthetic” in that they do not represent identifiable people and an
                 individual household in the Census data may be replicated numerous times in order to generate a complete distribution of households in the modeling inputs.</p>
               <p>
-                The current population synthesis software used by CMAP is PopSynIII. The socioeconomic data developed from CMAP’s regional forecasting and Local Area Allocation procedures provide the subzone-level control values for all ON TO 2050
+                The current population synthesis software used by CMAP is PopSynIII. The socioeconomic data developed from CMAP’s regional forecasting and Local Area Allocation procedures provide the subzone-level control values for all <dfn data-info= "ON TO 2050 is the region's long-range comprehensive plan, adopted by CMAP in 2018">ON TO 2050</dfn>
                 model scenarios. CMAP has greatly enhanced the functionality of PopSyn to enforce these controls and generate a distribution of enumerated households that account for the distribution of adults, workers and children within the
                 agency’s
                 forecasting procedures.
@@ -1567,8 +1567,10 @@
               <p>Transit is a vital part of the transportation system in
                 northeastern Illinois and more than 600 million transit trips are made annually.
                 It is important to properly calibrate such a key travel mode to ensure that the modeled
-                transit trips reflect the <dfn data-info= "Definition goes here">travel sheds</dfn> actually served by transit.
+                transit trips reflect the <dfn data-info= "The set of all destinations that can be reached from a location by transit">travel sheds</dfn> actually served by transit.
               </p>
+              <br>
+              <br>
               <br>
             </div>
           </div>
@@ -1581,7 +1583,7 @@
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-3">
-              <h3>Transit Boardings by Mode and Ring Sector</h3>
+              <h3>Transit Boardings by Mode and <dfn data-info= "Ring sectors are geographic divisions of the CMAP modeling area used for calibrating the ABM. Each ring sector is intended to represent relatively homogenous transit markets. Sectors are clustered around key CTA rail or Metra lines, while the rings are defined by urban form/density.">Ring Sector</dfn></h3>
 
               <div class="btn-group" role="group">
                 <div class="btn-group" id="modelsurveygroup" role="group" style="margin-left: 20px">
@@ -1791,9 +1793,9 @@
             <div class="col-md-6">
               <h2>Highway Assignment</h2>
               <p>
-                During Highway Assignment, the individual trips developed by <dfn data-info= "Definition goes here">CT-RAMP</dfn> are routed along the model network from origin to destination in order to estimate traffic flows and network conditions. When equilibrium is reached within the
-                highway assignment (meaning that vehicles cannot change paths without negatively impacting travel times), <dfn data-info= "Definition goes here">vehicle class</dfn> volumes for each <dfn data-info= "Definition goes here">link</dfn> are retained to determine the demand on each link. These vehicle class volumes are then used
-                to calculate standard measures such as vehicle miles of travel (VMT). The summaries below include volumes for links within the CMAP seven county region.
+                During Highway Assignment, the individual trips developed by <dfn data-info= "CT-RAMP models include a full simulation of travel decisions for discrete households and persons; explicit tracking of time in half-hourly
+                increments and use of time constraints on the generation of travel, as well as explicitly modelled intra-household interactions across a range of activity and travel dimensions">CT-RAMP</dfn> are routed along the model network from origin to destination in order to estimate traffic flows and network conditions. When equilibrium is reached within the
+                highway assignment (meaning that vehicles cannot change paths without negatively impacting travel times), <dfn data-info= "The ABM generates a multiclass assignment that includes 17 vehicle classes representing autos segmented by occupancy and value of time (VOT) and trucks segmented by unit size and VOT.">vehicle class</dfn> volumes for each <dfn data-info= "Definition goes here">link</dfn> are retained to determine the demand on each link. These vehicle class volumes are then used to calculate standard measures such as vehicle miles of travel (VMT). The summaries below include volumes for links within the CMAP seven county region.
               </p>
               <br>
             </div>
@@ -1842,11 +1844,6 @@
             <div class="col-md-3">
               <h3>Modeled vs. Observed Average Daily Link Volumes</h3>
               <br>
-              <select id="catLinkVol">
-                <option value="all">All</option>
-                <option value="arterials">Arterials</option>
-                <option value="interstate">Interstate</option>
-              </select>
               <div id="scatterLegend"></div>
               <p><b>r<sup>2</sup></b> = <text_div id="r2"></text_div>
               </p>
@@ -2068,10 +2065,7 @@
             <div class="col-md-1"></div>
             <div class="col-md-3">
               <h3>Comparison of Observed and Modeled Journey to Work Flows</h3>
-              <p class="small">R-squared is calculated to determine the peformance of the model predicability.
-                It is used to compare the regionwide observed and modeled journey to work trips between ring sectors.
-                A value closer to 1.0 indicates a better model.</p>
-              <p><b>r<sup>2</sup></b> = <text_div id="jtwr2"></text_div>
+              <p><dfn data-info= "R-squared is calculated to determine the peformance of the model predicability. It is used to compare the regionwide observed and modeled journey to work trips between ring sectors. A value closer to 1.0 indicates a better model."><b>r<sup>2</sup></b></dfn> = <text_div id="jtwr2"></text_div>
               </p>
               <br>
             </div>

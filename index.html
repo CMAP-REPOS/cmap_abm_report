@@ -54,11 +54,11 @@
               <ul class="nav navbar-nav">
                 <li class="dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Calibration 
+                    Calibration
                     <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu">
-                    <li>  
+                    <li>
                     <a class="calibration" href="#2" role="tab" data-toggle="tab">
                           Population Synthesis
                         </a>
@@ -68,31 +68,31 @@
                             Auto Ownership
                           </a>
                         </li>
-          
+
                         <li>
                           <a class="calibration" href="#10" role="tab" data-toggle="tab">
                             Tours
                           </a>
                         </li>
-          
+
                         <li>
                           <a class="calibration" href="#5" role="tab" data-toggle="tab">
                             Trip Mode
                           </a>
                         </li>
-          
+
                         <li>
                           <a class="calibration" href="#6" role="tab" data-toggle="tab">
                             Trip Activities
                           </a>
                         </li>
-          
+
                         <li>
                           <a class="calibration" href="#4" role="tab" data-toggle="tab">
                             Work Flows
                           </a>
                         </li>
-          
+
                         <li>
                           <a class="calibration" href="#7" role="tab" data-toggle="tab">
                             Transit Trips
@@ -100,15 +100,15 @@
                         </li>
                   </ul>
                   </li>
-                  
-                  
+
+
               <li class="dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     Validation
                     <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu">
-    
+
                   <li>
                     <a class="validation" href="#11" role="tab" data-toggle="tab">
                       Household Attributes
@@ -124,7 +124,7 @@
                       Highway Assignment
                     </a>
                   </li>
-    
+
                   <li>
                     <a class="validation" href="#9" role="tab" data-toggle="tab">
                       Transit Assignment
@@ -137,7 +137,7 @@
               <!-- <ul class="nav navbar-nav navbar-right" id="abouttoggle">
               <li>
                     <a role="button" data-toggle="collapse" data-target="#collapseIntro" aria-expanded="true" aria-controls="collapseIntro" class="collapsed">About</a>
-                  </li> 
+                  </li>
                 </ul> -->
             </div>
           </nav>
@@ -219,7 +219,7 @@
       <div class="tab-content">
           <div class="alert alert-info alert-dismissible" role="alert">
               <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                           
+
         <p style="margin-bottom:10px">
             <strong>About:</strong> This report represents the results of model calibration and validation activities completed over the last several years by CMAP staff and their consultants.
           <strong>Model calibration</strong> is defined as the adjustment of model parameters and constants so that the models better replicate observed data for a base year. CMAP's ABM is calibrated to a base year of 2010.
@@ -875,7 +875,7 @@
               <br>
               <p>
                   <span id="worktripsmodedistance_p"></span>
-                  of all work trips</p>       
+                  of all work trips</p>
 
               <select id="catModeDist">
                 <option value="all">All Modes</option>
@@ -915,7 +915,7 @@
               <br>
               <p>
                   <span id="workbtripsmodedistance_p"></span>
-                  of all work-based trips</p>       
+                  of all work-based trips</p>
 
               <select id="wbcatModeDist">
                 <option value="all">All Modes</option>
@@ -1035,7 +1035,7 @@
                       </p> -->
               <p>
                   <span id="tripspersonmode_p"></span>
-                  of all trips</p>       
+                  of all trips</p>
               <select id="catModePer">
                 <option value="All">All</option>
                 <option value="Full-time worker">Full-time Worker</option>
@@ -1048,9 +1048,9 @@
                 <option value="University student">University Student</option>
               </select>
               <div id="tripspersonLegend"></div>
-              <div class="small" style="margin-top: 20px;">
+              <!-- <div class="small" style="margin-top: 20px;">
                 Single person trips only. <br>
-              </div><br>
+              </div><br> -->
             </div>
             <div class="col col-md-6">
               <!-- <div class="colborder"></div>end -->
@@ -1097,7 +1097,7 @@
                     </p> -->
                     <p>
                         <span id="tripsincomemode_p"></span>
-                        of all trips</p>       
+                        of all trips</p>
               <select id="catModeInc">
                 <option value="All">All</option>
                 <option value="Less than $35k">Less than $35k</option>
@@ -1151,7 +1151,7 @@
                     </p> -->
               <p>
                   <span id="tripspurposemode_p"></span>
-                  of all trips</p>       
+                  of all trips</p>
               <select id="catModePurp">
                 <option value="All">All</option>
                 <option value="Discretionary">Discretionary</option>
@@ -1243,8 +1243,8 @@
               <div id="dapLegend"></div>
               <div class="small" style="margin-top: 80px;">
                 Bars show number of individual tours in the selected activity type
-                (mandatory, nonmandatory) that will be scheduled for each person type.  
-                Activities that occur at home make up the remaining 16.3% of all tours, and these are not assigned a travel mode.  
+                (mandatory, nonmandatory) that will be scheduled for each person type.
+                Activities that occur at home make up the remaining 16.3% of all tours, and these are not assigned a travel mode.
                 <!-- <br><br><b>Sources</b><br>
                 Observed -Travel Tracker Survey, 2007-2008. <br>
                 Modeled- CMAP ABM - 2010 Scenario. <br> -->
@@ -1355,16 +1355,43 @@
                 The CMAP ABM classifies trips into ten activity types.
                 Activities can be grouped into general categories according to their
                 priority in determining an individual’s schedule: mandatory and nonmandatory.
-                Mandatory activities include work, university, and school trips. The remaining activities
-                are all considered nonmandatory. While some of these activities (like shopping, eating out
-                and visiting) are self explanatory, the remaining ones require definitions to ensure clarity
-                of what is being measured. Work-based activities are a subset of activities (such as going to
-                lunch or traveling to meet a client) that occur with the place of work as the anchor location.
-                Escort activities are picking up or dropping off passengers. Maintenance activities include
-                medical appointments and other personal business or services that people engage in, excluding
-                shopping and escorting activities. Finally, discretionary activities cover the remaining activities,
-                which include engaging in social or recreational activities; attending sporting or cultural events;
-                and attending religious activities or performing volunteer activities.</p>
+                Mandatory activities include:</p>
+                <ul>
+                  <li>
+                    Work - Working at regular workplace.
+                  </li>
+                  <li>
+                    University - Attending college.
+                  </li>
+                  <li>
+                    School - Attending school grades k-12.
+                  </li>
+                </ul>
+                <p>
+                The remaining activities are all considered nonmandatory:</p>
+                <ul>
+                  <li>
+                    Shopping - Shopping away from home.
+                  </li>
+                  <li>
+                    Escort - Picking up/droping off passengers (auto trips only).
+                  </li>
+                  <li>
+                    Eating out - Eating outside of home.
+                  </li>
+                  <li>
+                    Work-based - A Subset of activies (such as going to
+                    lunch or traveling to meet a client) that occur with the place of work as the anchor location.
+                  </li>
+                  <li>
+                    Maintenance - Activies that include medical appointments and other personal business or services that people engage in, excluding
+                    shopping and escorting activities.
+                  </li>
+                  <li>
+                    Discretionary - Engaging in social or recreational activities; attending sporting or cultural events;
+                    and attending religious activities or performing volunteer activities
+                  </li>
+                </ul>
               <br>
             </div>
           </div>
@@ -1424,7 +1451,7 @@
               <br>
               <p>
                   <span id="tripspersonpurpose_p"></span>
-                  of all trips</p>       
+                  of all trips</p>
               <select id="catPurpType">
                 <option value="All">All</option>
                 <option value="Full-time Worker">Full-time Worker</option>
@@ -1437,12 +1464,12 @@
                 <option value="University Student">University Student</option>
               </select>
               <div id="tripsptypepurposeLegend"></div>
-              <div class="small" style="margin-top: 80px;">
-                Single-person trips only.<br>
+              <!-- <div class="small" style="margin-top: 80px;">
+                Single-person trips only.<br> -->
                 <!-- <b>Sources</b><br>
                 Observed -Travel Tracker Survey, 2007-2008. <br>
                 Modeled- CMAP ABM - 2010 Scenario. <br> -->
-              </div><br>
+              <!-- </div><br> -->
               <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Select person type from dropdown to view observed and model comparison</p>
             </div>
@@ -1479,7 +1506,7 @@
               <br>
               <p>
                   <span id="tripspurposedistance_p"></span>
-                  of all trips</p>       
+                  of all trips</p>
               <select id="catDistPurp">
                 <option value="Discretionary">Discretionary</option>
                 <option value="Eating Out">Eating Out</option>
@@ -1512,7 +1539,7 @@
                   <div class="overlay">
                     <p>
                       The model is capable of capturing trip purposes for most trip distances, but tends to overestimate short trips and underestimate long trips. This behavior mostly applies to work trips. </p>
-  
+
                     </p>
                   </div>
                 </div>
@@ -1652,7 +1679,7 @@
               </select>
               <div id="transitaccessLegend"></div>
               <div class="small" style="margin-top:80px;">
-                Distance is the distance of the transit trip that occurred. 
+                Distance is the distance of the transit trip that occurred.
                 Survey has fewer total transit trips when viewed by income since not all respondents reported an income value.  <br><br>
               </div><br>
               <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
@@ -1868,18 +1895,20 @@
               <br />
             </div>
             <div class="col-md-6" style="margin:auto;width:auto">
-              <h4>Interstate</h4>
+              <!-- <h4>Interstate</h4> -->
               <center>
-                <table id="vrange_int"></table>
+                <br />
+                <br />
+                <table id="vrange_consolidated"></table>
               </center>
-              <h4>Arterial</h4>
+              <!-- <h4>Arterial</h4>
               <center>
                 <table id="vrange_art"></table>
               </center>
               <h4>Total</h4>
               <center>
                 <table id="vrange_total"></table>
-              </center>
+              </center> -->
             </div>
           </div>
           <div class="row">
@@ -2388,6 +2417,14 @@
   }, function(error, data) {
     if (error) throw error;
     tabulate(data, ['County', 'Observed Share', 'Modeled Share', 'Observed', 'Model'], "#vmt_county_tbl", "percent"); // 2 column table
+  });
+
+  d3.csv("data/csv30_vrange_consolidated.csv", function(d, i, columns) {
+    for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+    return d;
+  }, function(error, data) {
+    if (error) throw error;
+    tabulate(data, ['Vrange', 'Number of Links', 'Observed VMT', 'Model VMT', 'Percent Diff'], "#vrange_consolidated", "percent"); // 2 column table
   });
 
   d3.csv("data/csv30_rmse.csv", function(d, i, columns) {

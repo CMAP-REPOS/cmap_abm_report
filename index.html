@@ -233,7 +233,7 @@
           Modeling best practice dictates that different data sets be used to conduct calibration and
           validation activities; in the absence of other observed data, the sources used for model
           calibration may be used for validation as long as they examine different aspects of the
-          data or rely on alternate geographic scopes. 
+          data or rely on alternate geographic scopes.
           Model validation results in this report reflect 2015 conditions.
         </p>
       </div>
@@ -664,7 +664,7 @@
             <div class="col-md-1"></div>
             <div class="col-md-2">
               <h3>Number of Households by Vehicles Owned</h3>
-              Total Households: <span class="modtotal"></span> Model, <span class="surveytotal"></span> Survey 
+              Total Households: <span class="modtotal"></span> Model, <span class="surveytotal"></span> Survey
               <div id="autoLegend"></div>
             </div>
             <div class="col-md-6">
@@ -686,7 +686,7 @@
               <h3>Auto Sufficiency</h3>
               <h5>Distribution of Auto Ownership by <div id="dtitle"></div>
               </h5>
-              Total Households: <span class="modtotal"></span> Model, <span class="surveytotal"></span> Survey 
+              Total Households: <span class="modtotal"></span> Model, <span class="surveytotal"></span> Survey
               <br><br>
               <select id="aoCat">
                 <option value="size">Household Size</option>
@@ -1742,11 +1742,12 @@
               <div class="btn-group" role="group">
                 <div class="btn-group" role="group">
                   <button type="button" id="hhval4" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Auto Sufficiency
+                    Household Vehicles
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="hhval4">
-                    <li><a class="dropdown-item">Households with 0 vehicles</a></li>
-                    <li><a class="dropdown-item">Households where # vehicles < # workers</a> </li> <li><a class="dropdown-item">Households where # vehicles >= # workers</a></li>
+                    <li><a class="dropdown-item">0-vehicle households</a></li>
+                    <li><a class="dropdown-item">1-vehicle households</a>
+                    </li> <li><a class="dropdown-item">2+ vehicle households</a></li>
                   </ul>
                 </div>
               </div>
@@ -1796,7 +1797,7 @@
             <div class="col-md-3">
               <h3>Comparison of Daily VMT Shares by County and Facility Type</h3>
               <br />
-              <div id="vmtfacilityLegend"></div>
+              <div id="vmtfacilityLegendNew"></div>
               <br />
             </div>
             <div class="col-md-6">
@@ -1814,6 +1815,11 @@
             <div class="col-md-3">
               <h3>Modeled vs. Observed Average Daily Link Volumes</h3>
               <br>
+              <select id="catLinkVol">
+                <option value="all">All</option>
+                <option value="arterials">Arterials</option>
+                <option value="interstate">Interstate</option>
+              </select>
               <div id="scatterLegend"></div>
               <p><b>r<sup>2</sup></b> = <text_div id="r2"></text_div>
               </p>

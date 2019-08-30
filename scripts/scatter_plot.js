@@ -58,13 +58,13 @@ function makeScatter(csv_file, chart_id, modelvalue,obsvalue,category_value,rsqu
       var max = d3.max(data, function (d) { return d[obsvalue]; });
 
         svg.append("g")
-          .style("font", "10px sans-serif")
+          .style("font", "14px sans-serif")
           .attr("class", "x axis")
           .attr("transform", "translate(0," + (height-padding) + ")")
           .call(xAxis);
 
         svg.append("text")
-        .style("font", "10px sans-serif")
+        .style("font", "14px sans-serif")
         .attr("transform",
               "translate(" + (width/2) + " ," +
                               (height + margin.top + 20) + ")")
@@ -72,13 +72,13 @@ function makeScatter(csv_file, chart_id, modelvalue,obsvalue,category_value,rsqu
         .text("Observed: " + obsvalue);
 
       svg.append("g")
-          .style("font", "10px sans-serif")
+          .style("font", "14px sans-serif")
           .attr("class", "y axis")
           .attr("transform", "translate(" + padding + ",0)")
           .call(yAxis);
 
       svg.append("text")
-      .style("font", "10px sans-serif")
+      .style("font", "14px sans-serif")
       .attr("transform",
             "translate(-50," +
                             (height/2) + ") rotate(-90)")

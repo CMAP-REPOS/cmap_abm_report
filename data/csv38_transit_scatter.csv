@@ -1,564 +1,181 @@
-orig_ring_sector,dest_ring_sector,trip_mode,Model,Observed
-1,1,Drive to transit,10540.00,1361.83
-1,1,Walk to transit,292065.00,104018.44
-1,2N,Drive to transit,9045.00,446.01
-1,2N,Walk to transit,100390.00,81537.62
-1,2NW,Drive to transit,6010.00,0.00
-1,2NW,Walk to transit,38370.00,29539.78
-1,2S,Drive to transit,7780.00,1428.90
-1,2S,Walk to transit,55230.00,79847.14
-1,2SW,Drive to transit,6825.00,161.25
-1,2SW,Walk to transit,27630.00,24136.58
-1,2W,Drive to transit,4835.00,0.00
-1,2W,Walk to transit,26540.00,31494.73
-1,2WNW,Drive to transit,3010.00,114.79
-1,2WNW,Walk to transit,21155.00,7062.21
-1,2WSW,Drive to transit,4350.00,96.24
-1,2WSW,Walk to transit,26180.00,19323.78
-1,3IN,Drive to transit,635.00,79.18
-1,3IN,Walk to transit,55.00,5596.17
-1,3N,Drive to transit,715.00,45.92
-1,3N,Walk to transit,915.00,7306.10
-1,3NW,Drive to transit,660.00,951.62
-1,3NW,Walk to transit,440.00,8402.79
-1,3S,Drive to transit,925.00,0.00
-1,3S,Walk to transit,735.00,9371.82
-1,3SW,Drive to transit,2055.00,982.16
-1,3SW,Walk to transit,1210.00,10690.30
-1,3W,Drive to transit,2625.00,1425.55
-1,3W,Walk to transit,1845.00,6854.06
-1,3WNW,Drive to transit,830.00,86.91
-1,3WNW,Walk to transit,550.00,5770.56
-1,3WSW,Drive to transit,5880.00,1630.35
-1,3WSW,Walk to transit,2390.00,26686.73
-1,4N,Drive to transit,910.00,1271.96
-1,4N,Walk to transit,850.00,6705.11
-1,4NW,Drive to transit,780.00,719.66
-1,4NW,Walk to transit,200.00,13393.80
-1,4SW,Drive to transit,1200.00,181.93
-1,4SW,Walk to transit,335.00,6910.78
-1,4W,Drive to transit,715.00,0.00
-1,4W,Walk to transit,140.00,1211.75
-1,4WNW,Drive to transit,175.00,117.45
-1,4WNW,Walk to transit,80.00,1848.12
-1,4WSW,Drive to transit,1055.00,0.00
-1,4WSW,Walk to transit,435.00,1744.39
-1,XIL,Drive to transit,5.00,0.00
-1,XIN,Drive to transit,30.00,163.21
-1,XWI,Drive to transit,200.00,0.00
-1,XWI,Walk to transit,25.00,0.00
-2N,1,Drive to transit,9045.00,9890.18
-2N,1,Walk to transit,98535.00,75630.49
-2N,2N,Drive to transit,3480.00,163.67
-2N,2N,Walk to transit,128365.00,68975.49
-2N,2NW,Drive to transit,355.00,0.00
-2N,2NW,Walk to transit,19155.00,9655.95
-2N,2S,Drive to transit,15.00,0.00
-2N,2S,Walk to transit,4395.00,4574.22
-2N,2SW,Drive to transit,20.00,0.00
-2N,2SW,Walk to transit,1730.00,3407.86
-2N,2W,Drive to transit,15.00,882.73
-2N,2W,Walk to transit,3080.00,4401.05
-2N,2WNW,Drive to transit,40.00,0.00
-2N,2WNW,Walk to transit,5505.00,1077.46
-2N,2WSW,Drive to transit,15.00,0.00
-2N,2WSW,Walk to transit,1780.00,3182.43
-2N,3N,Drive to transit,210.00,46.51
-2N,3N,Walk to transit,2910.00,4571.49
-2N,3NW,Drive to transit,15.00,0.00
-2N,3NW,Walk to transit,95.00,0.00
-2N,3S,Walk to transit,10.00,0.00
-2N,3SW,Walk to transit,25.00,0.00
-2N,3W,Walk to transit,100.00,1988.84
-2N,3WNW,Drive to transit,5.00,0.00
-2N,3WNW,Walk to transit,65.00,325.00
-2N,3WSW,Drive to transit,5.00,0.00
-2N,3WSW,Walk to transit,105.00,528.54
-2N,4N,Drive to transit,165.00,63.03
-2N,4N,Walk to transit,555.00,596.15
-2N,4NW,Drive to transit,120.00,0.00
-2N,4NW,Walk to transit,75.00,260.52
-2N,4SW,Walk to transit,25.00,0.00
-2N,4W,Walk to transit,10.00,0.00
-2N,4WSW,Walk to transit,30.00,0.00
-2N,XWI,Drive to transit,55.00,0.00
-2N,XWI,Walk to transit,20.00,0.00
-2NW,1,Drive to transit,6010.00,9508.98
-2NW,1,Walk to transit,36465.00,20117.81
-2NW,2N,Drive to transit,355.00,202.04
-2NW,2N,Walk to transit,19810.00,9966.47
-2NW,2NW,Drive to transit,1440.00,207.53
-2NW,2NW,Walk to transit,41155.00,10522.96
-2NW,2S,Drive to transit,10.00,1859.06
-2NW,2S,Walk to transit,1470.00,1003.86
-2NW,2SW,Drive to transit,20.00,0.00
-2NW,2SW,Walk to transit,1020.00,2634.52
-2NW,2W,Drive to transit,35.00,0.00
-2NW,2W,Walk to transit,3840.00,2734.41
-2NW,2WNW,Drive to transit,295.00,0.00
-2NW,2WNW,Walk to transit,8625.00,12022.22
-2NW,2WSW,Drive to transit,5.00,0.00
-2NW,2WSW,Walk to transit,1810.00,397.30
-2NW,3N,Drive to transit,45.00,0.00
-2NW,3N,Walk to transit,375.00,296.20
-2NW,3NW,Drive to transit,135.00,0.00
-2NW,3NW,Walk to transit,915.00,471.83
-2NW,3S,Walk to transit,20.00,0.00
-2NW,3SW,Walk to transit,10.00,0.00
-2NW,3W,Walk to transit,105.00,737.09
-2NW,3WNW,Drive to transit,50.00,139.36
-2NW,3WNW,Walk to transit,170.00,283.60
-2NW,3WSW,Drive to transit,5.00,0.00
-2NW,3WSW,Walk to transit,120.00,0.00
-2NW,4N,Walk to transit,115.00,0.00
-2NW,4NW,Drive to transit,155.00,139.43
-2NW,4NW,Walk to transit,160.00,204.27
-2NW,4WNW,Drive to transit,5.00,0.00
-2NW,4WSW,Walk to transit,20.00,0.00
-2NW,XWI,Walk to transit,5.00,0.00
-2S,1,Drive to transit,7780.00,18037.62
-2S,1,Walk to transit,57000.00,62209.20
-2S,2N,Drive to transit,15.00,475.55
-2S,2N,Walk to transit,3570.00,3280.11
-2S,2NW,Drive to transit,10.00,1281.17
-2S,2NW,Walk to transit,1115.00,1813.66
-2S,2S,Drive to transit,2580.00,2005.64
-2S,2S,Walk to transit,61395.00,145088.04
-2S,2SW,Drive to transit,275.00,0.00
-2S,2SW,Walk to transit,10080.00,9213.46
-2S,2W,Drive to transit,10.00,0.00
-2S,2W,Walk to transit,970.00,4823.43
-2S,2WNW,Drive to transit,5.00,0.00
-2S,2WNW,Walk to transit,550.00,999.19
-2S,2WSW,Drive to transit,15.00,138.28
-2S,2WSW,Walk to transit,1405.00,957.44
-2S,3IN,Drive to transit,75.00,0.00
-2S,3IN,Walk to transit,155.00,369.05
-2S,3N,Walk to transit,35.00,408.46
-2S,3S,Drive to transit,90.00,0.00
-2S,3S,Walk to transit,635.00,1119.99
-2S,3SW,Drive to transit,60.00,296.13
-2S,3SW,Walk to transit,475.00,2748.34
-2S,3W,Walk to transit,50.00,406.91
-2S,3WNW,Walk to transit,10.00,434.77
-2S,3WSW,Walk to transit,80.00,103.19
-2S,4N,Walk to transit,5.00,0.00
-2S,4NW,Walk to transit,5.00,0.00
-2S,4SW,Drive to transit,10.00,0.00
-2S,4SW,Walk to transit,125.00,0.00
-2S,4W,Walk to transit,10.00,0.00
-2S,4WNW,Walk to transit,5.00,0.00
-2S,4WSW,Walk to transit,10.00,581.52
-2S,XIN,Walk to transit,5.00,113.59
-2SW,1,Drive to transit,6825.00,6747.59
-2SW,1,Walk to transit,26660.00,19016.92
-2SW,2N,Drive to transit,20.00,0.00
-2SW,2N,Walk to transit,1350.00,3647.36
-2SW,2NW,Drive to transit,20.00,0.00
-2SW,2NW,Walk to transit,835.00,2646.31
-2SW,2S,Drive to transit,275.00,0.00
-2SW,2S,Walk to transit,10345.00,9586.77
-2SW,2SW,Drive to transit,1550.00,86.41
-2SW,2SW,Walk to transit,34355.00,20231.45
-2SW,2W,Drive to transit,30.00,0.00
-2SW,2W,Walk to transit,1600.00,1024.71
-2SW,2WNW,Drive to transit,5.00,0.00
-2SW,2WNW,Walk to transit,795.00,0.00
-2SW,2WSW,Drive to transit,65.00,0.00
-2SW,2WSW,Walk to transit,4080.00,2952.91
-2SW,3N,Walk to transit,10.00,241.42
-2SW,3NW,Walk to transit,10.00,0.00
-2SW,3S,Walk to transit,40.00,0.00
-2SW,3SW,Drive to transit,90.00,0.00
-2SW,3SW,Walk to transit,1370.00,380.63
-2SW,3W,Walk to transit,35.00,0.00
-2SW,3WNW,Walk to transit,10.00,0.00
-2SW,3WSW,Drive to transit,10.00,0.00
-2SW,3WSW,Walk to transit,115.00,0.00
-2SW,4N,Walk to transit,5.00,0.00
-2SW,4SW,Drive to transit,15.00,0.00
-2SW,4SW,Walk to transit,15.00,0.00
-2SW,4W,Walk to transit,5.00,0.00
-2SW,4WNW,Walk to transit,5.00,0.00
-2SW,4WSW,Walk to transit,20.00,0.00
-2W,1,Drive to transit,4835.00,3097.82
-2W,1,Walk to transit,25930.00,26695.78
-2W,2N,Drive to transit,15.00,1364.18
-2W,2N,Walk to transit,2925.00,3257.82
-2W,2NW,Drive to transit,35.00,0.00
-2W,2NW,Walk to transit,3660.00,3029.62
-2W,2S,Drive to transit,10.00,135.82
-2W,2S,Walk to transit,1345.00,3349.71
-2W,2SW,Drive to transit,30.00,0.00
-2W,2SW,Walk to transit,1680.00,1775.07
-2W,2W,Drive to transit,750.00,228.21
-2W,2W,Walk to transit,18055.00,30093.09
-2W,2WNW,Drive to transit,155.00,0.00
-2W,2WNW,Walk to transit,4920.00,14194.12
-2W,2WSW,Drive to transit,190.00,0.00
-2W,2WSW,Walk to transit,4685.00,4836.03
-2W,3N,Drive to transit,5.00,0.00
-2W,3N,Walk to transit,35.00,0.00
-2W,3NW,Drive to transit,5.00,0.00
-2W,3NW,Walk to transit,25.00,0.00
-2W,3S,Walk to transit,5.00,0.00
-2W,3SW,Walk to transit,40.00,0.00
-2W,3W,Drive to transit,100.00,0.00
-2W,3W,Walk to transit,785.00,567.12
-2W,3WNW,Drive to transit,15.00,0.00
-2W,3WNW,Walk to transit,50.00,0.00
-2W,3WSW,Drive to transit,15.00,0.00
-2W,3WSW,Walk to transit,85.00,345.04
-2W,4N,Walk to transit,25.00,0.00
-2W,4NW,Drive to transit,5.00,0.00
-2W,4W,Drive to transit,30.00,0.00
-2W,4W,Walk to transit,5.00,0.00
-2W,4WNW,Drive to transit,5.00,0.00
-2W,4WNW,Walk to transit,15.00,0.00
-2W,4WSW,Drive to transit,10.00,0.00
-2W,4WSW,Walk to transit,15.00,0.00
-2WNW,1,Drive to transit,3010.00,3031.58
-2WNW,1,Walk to transit,19730.00,5307.12
-2WNW,2N,Drive to transit,40.00,0.00
-2WNW,2N,Walk to transit,5505.00,1958.09
-2WNW,2NW,Drive to transit,295.00,0.00
-2WNW,2NW,Walk to transit,8860.00,11725.04
-2WNW,2S,Drive to transit,5.00,0.00
-2WNW,2S,Walk to transit,730.00,1061.80
-2WNW,2SW,Drive to transit,5.00,0.00
-2WNW,2SW,Walk to transit,860.00,0.00
-2WNW,2W,Drive to transit,155.00,0.00
-2WNW,2W,Walk to transit,5185.00,13653.79
-2WNW,2WNW,Drive to transit,550.00,0.00
-2WNW,2WNW,Walk to transit,13445.00,13012.16
-2WNW,2WSW,Drive to transit,5.00,0.00
-2WNW,2WSW,Walk to transit,1420.00,0.00
-2WNW,3N,Walk to transit,80.00,0.00
-2WNW,3NW,Walk to transit,30.00,0.00
-2WNW,3S,Walk to transit,10.00,0.00
-2WNW,3SW,Walk to transit,5.00,567.30
-2WNW,3W,Drive to transit,20.00,573.08
-2WNW,3W,Walk to transit,170.00,0.00
-2WNW,3WNW,Drive to transit,70.00,0.00
-2WNW,3WNW,Walk to transit,300.00,0.00
-2WNW,3WSW,Walk to transit,35.00,0.00
-2WNW,4N,Walk to transit,20.00,0.00
-2WNW,4NW,Walk to transit,10.00,248.95
-2WNW,4W,Walk to transit,5.00,0.00
-2WNW,4WNW,Drive to transit,15.00,0.00
-2WNW,4WNW,Walk to transit,25.00,0.00
-2WNW,4WSW,Walk to transit,5.00,0.00
-2WSW,1,Drive to transit,4350.00,2553.09
-2WSW,1,Walk to transit,27165.00,16904.81
-2WSW,2N,Drive to transit,15.00,116.11
-2WSW,2N,Walk to transit,1280.00,3307.41
-2WSW,2NW,Drive to transit,5.00,0.00
-2WSW,2NW,Walk to transit,1510.00,397.30
-2WSW,2S,Drive to transit,15.00,0.00
-2WSW,2S,Walk to transit,1435.00,1095.72
-2WSW,2SW,Drive to transit,65.00,0.00
-2WSW,2SW,Walk to transit,3835.00,3963.40
-2WSW,2W,Drive to transit,190.00,0.00
-2WSW,2W,Walk to transit,4570.00,4401.96
-2WSW,2WNW,Drive to transit,5.00,0.00
-2WSW,2WNW,Walk to transit,1295.00,0.00
-2WSW,2WSW,Drive to transit,820.00,114.79
-2WSW,2WSW,Walk to transit,16680.00,34488.66
-2WSW,3IN,Walk to transit,5.00,0.00
-2WSW,3N,Walk to transit,10.00,0.00
-2WSW,3NW,Walk to transit,5.00,0.00
-2WSW,3S,Walk to transit,20.00,0.00
-2WSW,3SW,Drive to transit,15.00,0.00
-2WSW,3SW,Walk to transit,65.00,0.00
-2WSW,3W,Drive to transit,35.00,0.00
-2WSW,3W,Walk to transit,70.00,0.00
-2WSW,3WNW,Walk to transit,15.00,0.00
-2WSW,3WSW,Drive to transit,100.00,0.00
-2WSW,3WSW,Walk to transit,675.00,0.00
-2WSW,4N,Walk to transit,10.00,0.00
-2WSW,4NW,Walk to transit,5.00,0.00
-2WSW,4SW,Drive to transit,5.00,0.00
-2WSW,4SW,Walk to transit,5.00,0.00
-2WSW,4WNW,Walk to transit,5.00,0.00
-2WSW,4WSW,Drive to transit,20.00,0.00
-2WSW,4WSW,Walk to transit,105.00,0.00
-3IN,1,Drive to transit,635.00,4855.78
-3IN,1,Walk to transit,75.00,1280.66
-3IN,2S,Drive to transit,75.00,21.30
-3IN,2S,Walk to transit,170.00,347.75
-3IN,3IN,Drive to transit,210.00,192.23
-3IN,3IN,Walk to transit,250.00,3757.74
-3IN,3S,Drive to transit,15.00,0.00
-3IN,3S,Walk to transit,5.00,0.00
-3IN,XIN,Drive to transit,35.00,0.00
-3IN,XIN,Walk to transit,20.00,75.23
-3N,1,Drive to transit,715.00,2291.58
-3N,1,Walk to transit,955.00,5219.92
-3N,2N,Drive to transit,210.00,0.00
-3N,2N,Walk to transit,2760.00,4361.45
-3N,2NW,Drive to transit,45.00,0.00
-3N,2NW,Walk to transit,415.00,296.20
-3N,2S,Walk to transit,20.00,184.37
-3N,2SW,Walk to transit,5.00,0.00
-3N,2W,Drive to transit,5.00,157.27
-3N,2W,Walk to transit,15.00,0.00
-3N,2WNW,Walk to transit,60.00,0.00
-3N,2WSW,Walk to transit,5.00,0.00
-3N,3N,Drive to transit,360.00,0.00
-3N,3N,Walk to transit,2740.00,1775.74
-3N,3NW,Drive to transit,30.00,0.00
-3N,3NW,Walk to transit,150.00,672.83
-3N,4N,Drive to transit,135.00,0.00
-3N,4N,Walk to transit,600.00,0.00
-3N,4NW,Drive to transit,105.00,0.00
-3N,4NW,Walk to transit,150.00,167.15
-3N,4WNW,Drive to transit,5.00,0.00
-3N,XWI,Drive to transit,35.00,0.00
-3N,XWI,Walk to transit,25.00,0.00
-3NW,1,Drive to transit,660.00,5687.98
-3NW,1,Walk to transit,535.00,2266.60
-3NW,2N,Drive to transit,15.00,0.00
-3NW,2N,Walk to transit,95.00,212.63
-3NW,2NW,Drive to transit,135.00,0.00
-3NW,2NW,Walk to transit,870.00,471.83
-3NW,2SW,Walk to transit,5.00,383.64
-3NW,2W,Drive to transit,5.00,0.00
-3NW,2WNW,Walk to transit,15.00,1575.41
-3NW,3N,Drive to transit,30.00,0.00
-3NW,3N,Walk to transit,135.00,672.83
-3NW,3NW,Drive to transit,940.00,0.00
-3NW,3NW,Walk to transit,3480.00,166.70
-3NW,3W,Drive to transit,5.00,0.00
-3NW,3WNW,Drive to transit,85.00,0.00
-3NW,3WNW,Walk to transit,455.00,0.00
-3NW,4N,Walk to transit,35.00,0.00
-3NW,4NW,Drive to transit,195.00,139.23
-3NW,4NW,Walk to transit,365.00,158.57
-3NW,4WNW,Drive to transit,10.00,0.00
-3NW,XWI,Drive to transit,5.00,0.00
-3NW,XWI,Walk to transit,5.00,0.00
-3S,1,Drive to transit,925.00,6757.72
-3S,1,Walk to transit,905.00,3268.21
-3S,2NW,Walk to transit,5.00,0.00
-3S,2S,Drive to transit,90.00,444.31
-3S,2S,Walk to transit,610.00,1967.23
-3S,2SW,Walk to transit,10.00,0.00
-3S,2W,Walk to transit,5.00,0.00
-3S,3IN,Drive to transit,15.00,0.00
-3S,3IN,Walk to transit,20.00,0.00
-3S,3S,Drive to transit,570.00,0.00
-3S,3S,Walk to transit,3045.00,1392.63
-3S,3SW,Drive to transit,10.00,0.00
-3S,3SW,Walk to transit,115.00,0.00
-3S,4SW,Drive to transit,10.00,0.00
-3S,4SW,Walk to transit,10.00,0.00
-3SW,1,Drive to transit,2055.00,9159.07
-3SW,1,Walk to transit,1290.00,371.59
-3SW,2N,Walk to transit,5.00,0.00
-3SW,2NW,Walk to transit,5.00,0.00
-3SW,2S,Drive to transit,60.00,0.00
-3SW,2S,Walk to transit,525.00,2791.42
-3SW,2SW,Drive to transit,90.00,0.00
-3SW,2SW,Walk to transit,1325.00,1918.23
-3SW,2W,Walk to transit,10.00,358.90
-3SW,2WSW,Drive to transit,15.00,0.00
-3SW,2WSW,Walk to transit,65.00,0.00
-3SW,3S,Drive to transit,10.00,0.00
-3SW,3S,Walk to transit,100.00,0.00
-3SW,3SW,Drive to transit,830.00,0.00
-3SW,3SW,Walk to transit,4480.00,0.00
-3SW,3WSW,Drive to transit,35.00,0.00
-3SW,3WSW,Walk to transit,150.00,0.00
-3SW,4SW,Drive to transit,105.00,0.00
-3SW,4SW,Walk to transit,165.00,283.78
-3W,1,Drive to transit,2625.00,4827.27
-3W,1,Walk to transit,2325.00,3272.31
-3W,2N,Walk to transit,10.00,1988.84
-3W,2NW,Walk to transit,15.00,737.09
-3W,2S,Walk to transit,5.00,406.91
-3W,2W,Drive to transit,100.00,0.00
-3W,2W,Walk to transit,730.00,0.00
-3W,2WNW,Drive to transit,20.00,314.50
-3W,2WNW,Walk to transit,95.00,258.58
-3W,2WSW,Drive to transit,35.00,0.00
-3W,2WSW,Walk to transit,65.00,0.00
-3W,3N,Walk to transit,5.00,0.00
-3W,3NW,Drive to transit,5.00,0.00
-3W,3SW,Walk to transit,5.00,0.00
-3W,3W,Drive to transit,1060.00,0.00
-3W,3W,Walk to transit,4475.00,518.10
-3W,3WNW,Drive to transit,125.00,0.00
-3W,3WNW,Walk to transit,240.00,0.00
-3W,3WSW,Drive to transit,50.00,0.00
-3W,3WSW,Walk to transit,350.00,1233.73
-3W,4W,Drive to transit,115.00,0.00
-3W,4W,Walk to transit,75.00,518.10
-3W,4WNW,Walk to transit,5.00,0.00
-3W,4WSW,Drive to transit,10.00,0.00
-3W,4WSW,Walk to transit,5.00,0.00
-3W,XIL,Drive to transit,5.00,0.00
-3WNW,1,Drive to transit,830.00,7924.25
-3WNW,1,Walk to transit,610.00,0.00
-3WNW,2N,Drive to transit,5.00,0.00
-3WNW,2N,Walk to transit,5.00,325.00
-3WNW,2NW,Drive to transit,50.00,0.00
-3WNW,2NW,Walk to transit,190.00,422.96
-3WNW,2W,Drive to transit,15.00,0.00
-3WNW,2W,Walk to transit,25.00,0.00
-3WNW,2WNW,Drive to transit,70.00,0.00
-3WNW,2WNW,Walk to transit,310.00,0.00
-3WNW,3NW,Drive to transit,85.00,0.00
-3WNW,3NW,Walk to transit,435.00,0.00
-3WNW,3W,Drive to transit,125.00,0.00
-3WNW,3W,Walk to transit,285.00,0.00
-3WNW,3WNW,Drive to transit,980.00,0.00
-3WNW,3WNW,Walk to transit,3455.00,0.00
-3WNW,4NW,Drive to transit,5.00,0.00
-3WNW,4NW,Walk to transit,5.00,0.00
-3WNW,4SW,Walk to transit,5.00,0.00
-3WNW,4W,Drive to transit,15.00,0.00
-3WNW,4WNW,Drive to transit,90.00,0.00
-3WNW,4WNW,Walk to transit,425.00,0.00
-3WNW,4WSW,Walk to transit,5.00,0.00
-3WSW,1,Drive to transit,5880.00,19619.73
-3WSW,1,Walk to transit,3215.00,6529.49
-3WSW,2N,Drive to transit,5.00,198.80
-3WSW,2N,Walk to transit,10.00,206.38
-3WSW,2NW,Drive to transit,5.00,0.00
-3WSW,2NW,Walk to transit,20.00,0.00
-3WSW,2S,Walk to transit,5.00,322.16
-3WSW,2SW,Drive to transit,10.00,316.63
-3WSW,2SW,Walk to transit,25.00,0.00
-3WSW,2W,Drive to transit,15.00,0.00
-3WSW,2W,Walk to transit,5.00,0.00
-3WSW,2WNW,Walk to transit,10.00,98.15
-3WSW,2WSW,Drive to transit,100.00,0.00
-3WSW,2WSW,Walk to transit,545.00,0.00
-3WSW,3SW,Drive to transit,35.00,0.00
-3WSW,3SW,Walk to transit,95.00,369.84
-3WSW,3W,Drive to transit,50.00,0.00
-3WSW,3W,Walk to transit,315.00,369.84
-3WSW,3WNW,Walk to transit,5.00,0.00
-3WSW,3WSW,Drive to transit,1060.00,0.00
-3WSW,3WSW,Walk to transit,6395.00,1386.48
-3WSW,4SW,Drive to transit,10.00,0.00
-3WSW,4SW,Walk to transit,50.00,0.00
-3WSW,4WSW,Drive to transit,145.00,1423.30
-3WSW,4WSW,Walk to transit,740.00,0.00
-4N,1,Drive to transit,910.00,3150.40
-4N,1,Walk to transit,1050.00,4511.68
-4N,2N,Drive to transit,165.00,0.00
-4N,2N,Walk to transit,650.00,831.87
-4N,2NW,Walk to transit,55.00,0.00
-4N,2W,Walk to transit,5.00,0.00
-4N,2WNW,Walk to transit,15.00,0.00
-4N,3N,Drive to transit,135.00,0.00
-4N,3N,Walk to transit,625.00,0.00
-4N,3NW,Walk to transit,15.00,0.00
-4N,4N,Drive to transit,1130.00,0.00
-4N,4N,Walk to transit,6655.00,5853.27
-4N,4NW,Drive to transit,115.00,0.00
-4N,4NW,Walk to transit,500.00,1524.68
-4N,XWI,Drive to transit,140.00,0.00
-4N,XWI,Walk to transit,170.00,0.00
-4NW,1,Drive to transit,780.00,12142.26
-4NW,1,Walk to transit,295.00,2299.16
-4NW,2N,Drive to transit,120.00,0.00
-4NW,2N,Walk to transit,60.00,122.57
-4NW,2NW,Drive to transit,155.00,139.43
-4NW,2NW,Walk to transit,155.00,204.27
-4NW,2W,Drive to transit,5.00,0.00
-4NW,2W,Walk to transit,5.00,506.39
-4NW,2WNW,Walk to transit,5.00,0.00
-4NW,2WSW,Walk to transit,5.00,0.00
-4NW,3N,Drive to transit,105.00,0.00
-4NW,3N,Walk to transit,170.00,108.29
-4NW,3NW,Drive to transit,195.00,214.10
-4NW,3NW,Walk to transit,395.00,139.23
-4NW,3WNW,Drive to transit,5.00,0.00
-4NW,4N,Drive to transit,115.00,0.00
-4NW,4N,Walk to transit,510.00,1524.68
-4NW,4NW,Drive to transit,1160.00,0.00
-4NW,4NW,Walk to transit,3605.00,1247.31
-4NW,4WNW,Drive to transit,10.00,0.00
-4NW,4WNW,Walk to transit,15.00,0.00
-4NW,XWI,Walk to transit,10.00,0.00
-4SW,1,Drive to transit,1200.00,5578.27
-4SW,1,Walk to transit,495.00,485.51
-4SW,2S,Drive to transit,10.00,0.00
-4SW,2S,Walk to transit,85.00,0.00
-4SW,2SW,Drive to transit,15.00,0.00
-4SW,2SW,Walk to transit,10.00,0.00
-4SW,2W,Walk to transit,10.00,0.00
-4SW,2WSW,Drive to transit,5.00,0.00
-4SW,3S,Drive to transit,10.00,0.00
-4SW,3SW,Drive to transit,105.00,283.78
-4SW,3SW,Walk to transit,180.00,0.00
-4SW,3WSW,Drive to transit,10.00,0.00
-4SW,3WSW,Walk to transit,35.00,0.00
-4SW,4SW,Drive to transit,460.00,181.93
-4SW,4SW,Walk to transit,3305.00,1535.41
-4W,1,Drive to transit,715.00,1729.85
-4W,1,Walk to transit,240.00,0.00
-4W,2W,Drive to transit,30.00,0.00
-4W,2W,Walk to transit,10.00,0.00
-4W,3W,Drive to transit,115.00,0.00
-4W,3W,Walk to transit,70.00,0.00
-4W,3WNW,Drive to transit,15.00,0.00
-4W,3WSW,Walk to transit,5.00,0.00
-4W,4W,Drive to transit,170.00,0.00
-4W,4W,Walk to transit,735.00,304.77
-4W,4WNW,Drive to transit,5.00,0.00
-4W,4WNW,Walk to transit,25.00,0.00
-4W,4WSW,Drive to transit,10.00,0.00
-4W,4WSW,Walk to transit,80.00,0.00
-4WNW,1,Drive to transit,175.00,1608.05
-4WNW,1,Walk to transit,120.00,0.00
-4WNW,2NW,Drive to transit,5.00,0.00
-4WNW,2NW,Walk to transit,5.00,0.00
-4WNW,2W,Drive to transit,5.00,0.00
-4WNW,2W,Walk to transit,15.00,0.00
-4WNW,2WNW,Drive to transit,15.00,0.00
-4WNW,2WNW,Walk to transit,25.00,163.06
-4WNW,3N,Drive to transit,5.00,0.00
-4WNW,3NW,Drive to transit,10.00,0.00
-4WNW,3WNW,Drive to transit,90.00,0.00
-4WNW,3WNW,Walk to transit,430.00,0.00
-4WNW,4NW,Drive to transit,10.00,0.00
-4WNW,4NW,Walk to transit,40.00,0.00
-4WNW,4W,Drive to transit,5.00,0.00
-4WNW,4W,Walk to transit,40.00,0.00
-4WNW,4WNW,Drive to transit,450.00,0.00
-4WNW,4WNW,Walk to transit,2595.00,3378.46
-4WSW,1,Drive to transit,1055.00,2862.63
-4WSW,1,Walk to transit,740.00,333.55
-4WSW,2N,Walk to transit,5.00,0.00
-4WSW,2NW,Walk to transit,5.00,0.00
-4WSW,2W,Drive to transit,10.00,0.00
-4WSW,2WNW,Walk to transit,10.00,0.00
-4WSW,2WSW,Drive to transit,20.00,0.00
-4WSW,2WSW,Walk to transit,105.00,0.00
-4WSW,3W,Drive to transit,10.00,0.00
-4WSW,3WSW,Drive to transit,145.00,579.33
-4WSW,3WSW,Walk to transit,740.00,0.00
-4WSW,4W,Drive to transit,10.00,0.00
-4WSW,4W,Walk to transit,70.00,0.00
-4WSW,4WSW,Drive to transit,420.00,0.00
-4WSW,4WSW,Walk to transit,4245.00,704.83
-XIL,1,Drive to transit,5.00,0.00
-XIL,3W,Drive to transit,5.00,0.00
-XIN,1,Drive to transit,30.00,2234.72
-XIN,2S,Walk to transit,5.00,14.92
-XIN,3IN,Drive to transit,35.00,65.34
-XIN,3IN,Walk to transit,5.00,75.23
-XIN,XIN,Drive to transit,120.00,18.02
-XIN,XIN,Walk to transit,80.00,63.01
-XWI,1,Drive to transit,200.00,0.00
-XWI,1,Walk to transit,55.00,0.00
-XWI,2N,Drive to transit,55.00,0.00
-XWI,2N,Walk to transit,25.00,0.00
-XWI,3N,Drive to transit,35.00,0.00
-XWI,3N,Walk to transit,45.00,0.00
-XWI,3NW,Drive to transit,5.00,0.00
-XWI,4N,Drive to transit,140.00,0.00
-XWI,4N,Walk to transit,240.00,0.00
+orig_ring_sector,dest_ring_sector,Model,Observed
+3IN,3IN,460,3949.97143
+3IN,3S,20,0
+3IN,Central Chicago,710,6136.442185
+3IN,South Chicago,245,769.6721133
+3IN,XIN,55,75.22857
+3N,3N,3100,1775.741421
+3N,3NW,180,672.8260017
+3N,4N,735,0
+3N,4NW,255,167.146405
+3N,4WNW,5,0
+3N,Central Chicago,1755,7668.782704
+3N,North Chicago,3430,4657.647019
+3N,South Chicago,25,351.5152787
+3N,XWI,60,0
+3NW,3N,165,672.8260017
+3NW,3NW,4420,166.6959885
+3NW,3W,5,0
+3NW,3WNW,540,0
+3NW,4N,35,0
+3NW,4NW,560,297.7974704
+3NW,4WNW,10,0
+3NW,Central Chicago,1215,9669.219911
+3NW,North Chicago,1115,684.4523134
+3NW,South Chicago,5,1385.79314
+3NW,XWI,10,0
+3S,3IN,35,0
+3S,3S,3615,1392.63332
+3S,3SW,125,0
+3S,4SW,20,0
+3S,Central Chicago,1835,10025.92214
+3S,North Chicago,5,0
+3S,South Chicago,710,2411.543792
+3SW,3S,110,0
+3SW,3SW,5310,0
+3SW,3WSW,185,0
+3SW,4SW,270,283.775853
+3SW,Central Chicago,3435,10134.35255
+3SW,North Chicago,10,0
+3SW,South Chicago,2000,4709.649565
+3W,3N,5,0
+3W,3NW,5,0
+3W,3SW,5,0
+3W,3W,5535,518.0970617
+3W,3WNW,365,0
+3W,3WSW,400,1233.726788
+3W,4W,190,518.0970617
+3W,4WNW,5,0
+3W,4WSW,15,0
+3W,Central Chicago,5995,8672.660296
+3W,North Chicago,25,2812.273699
+3W,South Chicago,5,406.9054681
+3W,XIL,5,0
+3WNW,3NW,520,0
+3WNW,3W,410,0
+3WNW,3WNW,4435,0
+3WNW,4NW,10,0
+3WNW,4SW,5,0
+3WNW,4W,15,0
+3WNW,4WNW,515,0
+3WNW,4WSW,5,0
+3WNW,Central Chicago,1860,7924.24555
+3WNW,North Chicago,250,747.9606292
+3WSW,3SW,130,369.8439963
+3WSW,3W,365,369.8439963
+3WSW,3WNW,5,548.1989733
+3WSW,3WSW,7455,1386.477537
+3WSW,4SW,60,0
+3WSW,4WSW,885,1423.296535
+3WSW,Central Chicago,9770,26345.52477
+3WSW,North Chicago,40,405.1778803
+3WSW,South Chicago,40,638.7958938
+4N,3N,760,0
+4N,3NW,15,0
+4N,4N,7785,5853.268675
+4N,4NW,615,1524.683666
+4N,Central Chicago,1980,7662.077161
+4N,North Chicago,870,831.8707828
+4N,XWI,310,0
+4NW,3N,275,108.2926137
+4NW,3NW,590,353.3315747
+4NW,3WNW,5,0
+4NW,4N,625,1524.683666
+4NW,4NW,4765,1247.305812
+4NW,4WNW,25,0
+4NW,Central Chicago,1095,15196.76026
+4NW,North Chicago,490,466.2726823
+4NW,XWI,10,0
+4SW,3S,10,0
+4SW,3SW,285,283.775853
+4SW,3WSW,45,0
+4SW,4SW,3765,1717.344581
+4SW,Central Chicago,1710,6063.784107
+4SW,South Chicago,120,0
+4W,3W,185,0
+4W,3WNW,15,0
+4W,3WSW,5,0
+4W,4W,905,304.7708362
+4W,4WNW,30,0
+4W,4WSW,90,0
+4W,Central Chicago,995,1729.845385
+4WNW,3N,5,0
+4WNW,3NW,10,0
+4WNW,3WNW,520,0
+4WNW,4NW,50,0
+4WNW,4W,45,0
+4WNW,4WNW,3045,3378.463482
+4WNW,Central Chicago,355,1771.111813
+4WNW,North Chicago,10,0
+4WSW,3W,10,0
+4WSW,3WSW,885,579.3259623
+4WSW,4W,80,0
+4WSW,4WSW,4665,704.8287297
+4WSW,Central Chicago,1940,3196.181988
+4WSW,North Chicago,10,0
+Central Chicago,3IN,695,5675.345575
+Central Chicago,3N,1760,7352.024645
+Central Chicago,3NW,1165,10929.82099
+Central Chicago,3S,1695,9371.819597
+Central Chicago,3SW,3390,12239.75734
+Central Chicago,3W,5650,9419.818159
+Central Chicago,3WNW,1830,5857.474304
+Central Chicago,3WSW,9180,28858.41427
+Central Chicago,4N,1815,7977.078319
+Central Chicago,4NW,1000,14868.79877
+Central Chicago,4SW,1545,7092.714644
+Central Chicago,4W,895,1211.748323
+Central Chicago,4WNW,320,1965.563159
+Central Chicago,4WSW,1645,1744.390198
+Central Chicago,Central Chicago,546770,336085.026
+Central Chicago,North Chicago,177960,136678.9934
+Central Chicago,South Chicago,107480,116955.3967
+Central Chicago,XIL,5,0
+Central Chicago,XIN,30,2705.75102
+Central Chicago,XWI,225,0
+North Chicago,3N,3540,4914.197987
+North Chicago,3NW,1160,471.8268656
+North Chicago,3S,30,0
+North Chicago,3SW,35,0
+North Chicago,3W,205,2812.273699
+North Chicago,3WNW,290,747.9606292
+North Chicago,3WSW,235,528.5404453
+North Chicago,4N,835,659.183256
+North Chicago,4NW,510,604.2184142
+North Chicago,4SW,25,0
+North Chicago,4W,10,0
+North Chicago,4WNW,5,0
+North Chicago,4WSW,50,0
+North Chicago,Central Chicago,175100,139845.0583
+North Chicago,North Chicago,214115,99694.11828
+North Chicago,South Chicago,8680,13479.51063
+North Chicago,XWI,80,0
+South Chicago,3IN,230,769.6721133
+South Chicago,3N,45,834.2457199
+South Chicago,3NW,10,2481.74448
+South Chicago,3S,765,1119.992979
+South Chicago,3SW,1995,3425.108165
+South Chicago,3W,85,406.9054681
+South Chicago,3WNW,20,434.767185
+South Chicago,3WSW,205,103.1892874
+South Chicago,4N,10,0
+South Chicago,4NW,5,317.1417833
+South Chicago,4SW,165,0
+South Chicago,4W,15,0
+South Chicago,4WNW,10,0
+South Chicago,4WSW,30,581.52247
+South Chicago,Central Chicago,107795,116907.2898
+South Chicago,North Chicago,6935,13144.14919
+South Chicago,South Chicago,120855,186211.7733
+South Chicago,XIN,5,113.5881
+XIL,3W,5,0
+XIL,Central Chicago,5,0
+XIN,3IN,40,140.56452
+XIN,Central Chicago,30,2333.58839
+XIN,South Chicago,5,141.96157
+XIN,XIN,200,81.03682
+XWI,3N,80,0
+XWI,3NW,5,0
+XWI,4N,380,0
+XWI,Central Chicago,255,0
+XWI,North Chicago,80,0

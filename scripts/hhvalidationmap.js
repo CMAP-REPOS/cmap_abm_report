@@ -1,4 +1,9 @@
 // basic map
+var workertext = 'ADD TEXT HERE'
+var hhsizetext = 'Single person households are underestimated in many of the lower income areas of the region, especially the south side of Chicago, the suburbs of South Cook and along the Fox River Valley.  However, households with four or more members are well estimated regionwide.'
+var incometext = 'Households earning <$35k annually are overestimated in the rural areas of Kane, Kendall, Grundy and most of Lake County, along with the near north and near west sides of Chicago and near north suburbs, while households in the highest category of >$100k are underestimated in some of the same areas. It may be because the model underestimates the number of two-worker households in many of these areas.  Households in the upper middle range of $60k-$100k are well estimated regionwide.  '
+var vehtext = 'In the west and northwest areas of the City of Chicago and the western Cook suburbs, the model overestimates the number of 0 vehicle households.  The number of zero vehicle households is accurate over the rest of the region. Outside the City of Chicago, the number of one vehicle households are overestimated and households with two or more vehicles are underestimated. This may be related to the underestimate of two-worker households in some of the same areas. '
+
 var mapboxAccessToken = 'pk.eyJ1Ijoic2FyYWhjbWFwIiwiYSI6ImNqc3VzMDl0YzJocm80OXBnZjc2MGk4cGgifQ.S_UmPA1jm5pQPrCCLDs41Q';
 var lat = 41.8781;
 var long = -87.8298;
@@ -101,90 +106,105 @@ function updateview1(buttonarg) {
         model_count_var1 = 'HHSZ_1m'
         census_count_var1 = 'HHSZ_1p'
         whichone_name1 = '1-person households'
+        d3.select("#overlaytext").text(hhsizetext);
     }
     else if (buttonarg == '2-person households') {
         whichone1 = 'difSZ_2'
         model_count_var1 = 'HHSZ_2m'
         census_count_var1 = 'HHSZ_2p'
         whichone_name1 = '2-person households'
+        d3.select("#overlaytext").text(hhsizetext);
     }
     else if (buttonarg == '3-person households') {
         whichone1 = 'difSZ_3'
         model_count_var1 = 'HHSZ_3m'
         census_count_var1 = 'HHSZ_3p'
         whichone_name1 = '3-person households'
+        d3.select("#overlaytext").text(hhsizetext);
     }
     else if (buttonarg == '4+ person households') {
         whichone1 = 'difSZ_4'
         model_count_var1 = 'HHSZ_4m'
         census_count_var1 = 'HHSZ_4p'
         whichone_name1 = '4+ person households'
+        d3.select("#overlaytext").text(hhsizetext);
     }
     else if (buttonarg == 'Household income <35k') {
         whichone1 = 'difINC_1'
         model_count_var1 = 'HHINC_1m'
         census_count_var1 = 'HHINC_1p'
         whichone_name1 = 'Household income <35k'
+        d3.select("#overlaytext").text(incometext);
     }
     else if (buttonarg == 'Household income 35k - 60k') {
         whichone1 = 'difINC_2'
         model_count_var1 = 'HHINC_2m'
         census_count_var1 = 'HHINC_2p'
         whichone_name1 = 'Household income 35k - 60k'
+        d3.select("#overlaytext").text(incometext);
     }
     else if (buttonarg == 'Household income 60k - 100k') {
         whichone1 = 'difINC_3'
         model_count_var1 = 'HHINC_3m'
         census_count_var1 = 'HHINC_3p'
         whichone_name1 = 'Household income 60k - 100k'
+        d3.select("#overlaytext").text(incometext);
     }
     else if (buttonarg == 'Household income > 100k') {
         whichone1 = 'difINC_4'
         model_count_var1 = 'HHINC_4m'
         census_count_var1 = 'HHINC_4p'
         whichone_name1 = 'Household income > 100k'
+        d3.select("#overlaytext").text(incometext);
     }
     else if (buttonarg == '0-worker households') {
         whichone1 = 'difWK_0'
         model_count_var1 = 'HHWK_0m'
         census_count_var1 = 'HHWK_0p'
         whichone_name1 = '0-worker households'
+        d3.select("#overlaytext").text(workertext);
     }
     else if (buttonarg == '1-worker households') {
         whichone1 = 'difWK_1'
         model_count_var1 = 'HHWK_1m'
         census_count_var1 = 'HHWK_1p'
         whichone_name1 = '1-worker households'
+        d3.select("#overlaytext").text(workertext);
     }
     else if (buttonarg == '2-worker households') {
         whichone1 = 'difWK_2'
         model_count_var1 = 'HHWK_2m'
         census_count_var1 = 'HHWK_2p'
         whichone_name1 = '2-worker households'
+        d3.select("#overlaytext").text(workertext);
     }
     else if (buttonarg == '3+ worker households') {
         whichone1 = 'difWK_3'
         model_count_var1 = 'HHWK_3m'
         census_count_var1 = 'HHWK_3p'
         whichone_name1 = '3+ worker households'
+        d3.select("#overlaytext").text(workertext);
     }
     else if (buttonarg == '0-vehicle households') {
         whichone1 = 'difAU_0'
         model_count_var1 = 'HHAU_0m'
         census_count_var1 = 'HHAU_0p'
         whichone_name1 = '0-vehicle households'
+        d3.select("#overlaytext").text(vehtext);
     }
     else if (buttonarg == '1-vehicle households') {
         whichone1 = 'difAU_1'
         model_count_var1 = 'HHAU_1m'
         census_count_var1 = 'HHAU_1p'
         whichone_name1 = '1-vehicle households'
+        d3.select("#overlaytext").text(vehtext);
     }
     else if (buttonarg == '2+ vehicle households') {
         whichone1 = 'difAU_2'
         model_count_var1 = 'HHAU_2m'
         census_count_var1 = 'HHAU_2p'
         whichone_name1 = '2+ vehicle households'
+        d3.select("#overlaytext").text(vehtext);
     }
     return whichone1,
     updatemap1();

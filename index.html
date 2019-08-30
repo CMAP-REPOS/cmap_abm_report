@@ -683,9 +683,9 @@
             <br>
             <div class="col-md-1"></div>
             <div class="col-md-2">
-              <h3>Auto Sufficiency</h3>
-              <h5>Distribution of Auto Ownership by <div id="dtitle"></div>
-              </h5>
+              <!-- <h3>Auto Sufficiency</h3> -->
+              <h3>Distribution of Auto Ownership by <div id="dtitle"></div>
+              </h3>
               Total Households: <span class="modtotal"></span> Model, <span class="surveytotal"></span> Survey
               <br><br>
               <select id="aoCat">
@@ -882,12 +882,11 @@
 
               <select id="catModeDist">
                 <option value="all">All Modes</option>
-                <option value="sovfree">Drive Alone Free</option>
-                <option value="sovpay">Drive Alone Pay</option>
-                <option value="hov2free">Shared ride 2 free</option>
-                <option value="hov2pay">Shared ride 2 pay</option>
-                <option value="hov3free">Shared ride 3+ free</option>
-                <option value="hov3pay">Shared ride 3+ pay</option>
+                <option value="sovfree">Drive Alone (non-toll)</option>
+                <option value="sovpay">Drive Alone (toll)</option>
+                <option value="hov2free">Shared ride 2 (non-toll)</option>
+                <option value="hov2pay">Shared ride 2 (toll)</option>
+                <option value="hov3">Shared ride 3+</option>
                 <option value="transit">Transit</option>
                 <option value="walk">Walk</option>
                 <option value="bike">Bike</option>
@@ -910,11 +909,10 @@
             <div class="col-md-1"></div>
             <div class="col-md-8 colborder"> </div>
           </div>
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-md-1"></div>
             <div class="col col-md-3">
               <h3>Work-Based Trips by Mode and Distance</h3>
-              <!--HOLD FOR Work-Based Trips by Mode & Distance-->
               <br>
               <p>
                   <span id="workbtripsmodedistance_p"></span>
@@ -922,10 +920,10 @@
 
               <select id="wbcatModeDist">
                 <option value="all">All Modes</option>
-                <option value="sovfree">Drive Alone Free</option>
-                <option value="sovpay">Drive Alone Pay</option>
-                <option value="hov2free">Shared ride 2 free</option>
-                <option value="hov2pay">Shared ride 2 pay</option>
+                <option value="sovfree">Drive Alone (non-toll)</option>
+                <option value="sovpay">Drive Alone (toll)</option>
+                <option value="hov2free">Drive Alone (non-toll)</option>
+                <option value="hov2pay">Drive Alone (toll)</option>
                 <option value="hov3free">Shared ride 3+ free</option>
                 <option value="hov3pay">Shared ride 3+ pay</option>
                 <option value="transit">Transit</option>
@@ -945,7 +943,7 @@
             <div class="col col-md-6">
               <div id="wbModeByDistance"></div>
             </div>
-          </div>
+          </div> -->
         </div>
         <div id="5" class="tab-pane container-fluid">
           <div class="row">
@@ -981,7 +979,8 @@
                       While the model tends to overestimate walk trips,
                       all other modes match observed trips fairly well. The model maintains relative shares among mode categories.
                     </p> -->
-              <svg id="modelegend"></svg>
+              <svg id="modelegend" style="height:300px"></svg>
+              <br />
               <div class="small">
                 See more about transit in the <a href="#7" role="tab" data-toggle="tab">Transit</a> tab. <br>
                 <br><br>
@@ -1642,6 +1641,19 @@
               <br />
             </div>
           </div>
+          <!-- <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+              <h3>Modeled vs. Observed Transit Trips</h3>
+              <br>
+              <div id="scatterLegend"></div>
+              <p><b>r<sup>2</sup></b> = <text_div id="transitrs"></text_div>
+              </p>
+            </div>
+            <div class="col-md-8">
+              <div id="scatter_transit"></div>
+            </div>
+          </div> -->
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-8">
@@ -2295,6 +2307,9 @@
 </script>
 <script>
   makeScatter("data/csv36_jtw.csv", "#scatter_jtw", "Model", "CTPP", "rs", "jtwr2");
+</script>
+<script>
+  makeScatter("data/csv38_transit_scatter.csv", "#scatter_transit", "Model", "Observed", "trip_mode", "transitrs");
 </script>
 <script>
   makeStackedChart_nodd2("data/csv23_vmt_county_facility.csv", "cftitle", "cfstack");

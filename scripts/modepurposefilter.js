@@ -1,7 +1,7 @@
 function make_h_stacked_tripsbymode(csv_file,divID, legendID){
-    var margin = {top: 80, right: 10, bottom: 0, left: 75},
+    var margin = {top: 80, right: 10, bottom: 30, left: 75},
       width = 800 - margin.left - margin.right,
-      height = 300 - margin.top - margin.bottom;
+      height = 400 - margin.top - margin.bottom;
 
 
 
@@ -189,7 +189,7 @@ function make_h_stacked_tripsbymode(csv_file,divID, legendID){
 
       // select the svg area
       var legend = d3.select("#"+legendID).append("svg")
-      .attr("height", 300)
+      .attr("height", 600)
       .attr("width", 250)
 
       // create a list of keys

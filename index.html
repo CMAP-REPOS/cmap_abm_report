@@ -149,78 +149,6 @@
           </div>
         </nav>
 
-
-        <!-- <ul class="nav nav-tabs">
-          <li class="active">
-            <a href="#1" role="tab" data-toggle="tab">
-              Introduction
-            </a>
-          </li>
-
-          <li>
-            <a class="calibration" href="#2" role="tab" data-toggle="tab">
-              Population Synthesis
-            </a>
-          </li>
-
-          <li>
-            <a class="calibration" href="#3" role="tab" data-toggle="tab">
-              Auto Ownership
-            </a>
-          </li>
-
-          <li>
-            <a class="calibration" href="#10" role="tab" data-toggle="tab">
-              Tours
-            </a>
-          </li>
-
-          <li>
-            <a class="calibration" href="#5" role="tab" data-toggle="tab">
-              Trip Mode
-            </a>
-          </li>
-
-          <li>
-            <a class="calibration" href="#6" role="tab" data-toggle="tab">
-              Trip Activities
-            </a>
-          </li>
-
-          <li>
-            <a class="calibration" href="#4" role="tab" data-toggle="tab">
-              Work Flows
-            </a>
-          </li>
-
-          <li>
-            <a class="calibration" href="#7" role="tab" data-toggle="tab">
-              Transit Trips
-            </a>
-          </li>
-
-          <li>
-            <a class="validation" href="#11" role="tab" data-toggle="tab">
-              Household Attributes
-            </a>
-          </li>
-          <li>
-            <a class="validation" href="#12" role="tab" data-toggle="tab">
-              Commute Trips
-            </a>
-          </li>
-          <li>
-            <a class="validation" href="#8" role="tab" data-toggle="tab">
-              Highway Assignment
-            </a>
-          </li>
-
-          <li>
-            <a class="validation" href="#9" role="tab" data-toggle="tab">
-              Transit Assignment
-            </a>
-          </li>
-        </ul> -->
       </div>
 
       <div class="tab-content">
@@ -237,23 +165,6 @@
             Model validation results in this report reflect 2015 conditions.
           </p>
         </div>
-
-
-        <!-- <div class="row" >
-              <div class="col-md-10">
-                <div class="panel-group" id="accordionintro" role="tablist" aria-multiselectable="true">
-                  <div class="panel panel-default">
-                    <div id="collapseIntro" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                      <div class="panel-body">
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-
-
 
         <div id="1" class="tab-pane active container-fluid">
           <div class="row">
@@ -945,19 +856,21 @@
                   trips.</span>
               </div>
             </div>
-            <div class="col col-md-3" align="center">
+            <div class="col col-md-6">
+            <div class="col col-md-6" align="center">
               <br />
               <h3>Modeled</h3>
               <br />
               <br />
               <div id="modelChord"></div>
             </div>
-            <div class="col col-md-3" align="center">
+            <div class="col col-md-6" align="center">
               <br />
               <h3>Observed</h3>
               <br />
               <br />
               <div id="obsChord"></div>
+            </div>
             </div>
           </div>
           <!--- Row End -->
@@ -993,7 +906,7 @@
               </select>
               <br><br>
               <div id="worktripsdistanceLegend"></div>
-              <div class="small" style="margin-top: 100px;">
+              <div class="small" style="margin-top: 20px;">
                 Bins include the starting value and go up to the ending value (e.g. 2.5-5 Mile contains trips starting at 2.5 miles and up to but not including 5 miles.)
                 Shared ride 3+ toll and non-toll trips are not shown separately due to extremely small sample of these trips captured by the Travel Tracker Survey.
                 <br><br>
@@ -1672,79 +1585,15 @@
               <div class="colborder"></div><!-- end -->
             </div>
           </div>
-          <!-- <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-3">
-              <h3>Transit Boardings by Mode and <dfn
-                  data-info="Ring sectors are geographic divisions of the CMAP modeling area used for calibrating the ABM. Each ring sector is intended to represent relatively homogenous transit markets. Sectors are clustered around key CTA rail or Metra lines, while the rings are defined by urban form/density.">Ring
-                  Sector</dfn></h3>
-
-              <div class="btn-group" role="group">
-                <div class="btn-group" id="modelsurveygroup" role="group" style="margin-left: 20px">
-                  <button type="button" id="ModelSurvey" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Model
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="ModelSurvey">
-                    <li><a class="dropdown-item">Model</a></li>
-                    <li><a class="dropdown-item">Survey</a></li>
-                    <li><a class="dropdown-item">Diff</a></li>
-                  </ul>
-                  <button type="button" id="metra" class="btn btn-info">Metra</button>
-                  <button type="button" id="cta" class="btn btn-light">CTA Rail</button>
-                  <button type="button" id="pace" class="btn btn-light">Bus</button>
-                </div>
-              </div>
-              <div id='transitsidebar'></div>
-              <br>
-
-              <div class="small">
-
-
-                Ring sectors sum to 100% for each transit mode. Express and local bus combined.<br><br>
-                <b>Example:</b> In the model, 6.5% of all Metra boardings occured in ring sector 2S. In the survey, 7.8% of Metra boardings occured in ring sector 2S. This is a difference of 1.3 percentage points.
-              </div><br>
-              <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
-              <p class="small">Choose the data source using the first dropdown button. Hover over map to display data, and use the layer icon in the bottom left to activate CTA Rail and Metra line layers. </p>
-              <button type="button" class="btn btn-default btn-xs" id="transitcenter" value="Re-center map" onClick="zoomTo(transitcenter, map)">Recenter Map</button>
-            </div>
-            <div class="col-md-6" style="margin:auto; width:40%">
-              <div id="map"></div>
-            </div>
-            <div class="col-md-3">
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <div class="container">
-                <img src="data/images/icons8-add-50.png" class="image">
-                <div class="overlay">
-                  <p>
-                    Ring sectors are geographic divisions of the CMAP
-                    modeling area used for calibrating the ABM. Each ring sector is
-                    intended to represent relatively homogenous transit markets.
-                    Sectors are clustered around key CTA rail or Metra lines, while
-                    the rings are defined by urban form/density.
-                  </p>
-                </div>
-              </div>
-              <br />
-            </div>
-          </div> -->
           <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-3">
+            <div class="col-md-2">
               <h3>Modeled vs. Observed Transit Trips Origin and Destination</h3>
               <br>
               <p><b>r<sup>2</sup></b> = <text_div id="transitrs"></text_div>
               </p>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-6">
               <div id="scatter_transit"></div>
             </div>
           </div>
@@ -1757,15 +1606,16 @@
           </div>
           <div class="row">
             <div class="col-md-1"></div>
-            <div class="col col-md-3">
+            <div class="col col-md-2">
               <h3>Transit Trips by <span id="transitname"></span></h3>
               <p>Total transit trips: 1.626M (model), <span id="surveytransit"></span> (survey)</p>
               <select id="catTranDist">
                 <option value="Distance">Distance</option>
                 <option value="Income">Income</option>
               </select>
+              <br>
               <div id="transitaccessLegend"></div>
-              <div class="small" style="margin-top:80px;">
+              <div class="small" style="margin-top:20px;">
                 Distance is the distance of the transit trip that occurred.
                 Survey has fewer total transit trips when viewed by income since not all respondents reported an income value. <br><br>
               </div><br>
@@ -1802,21 +1652,23 @@
           </div>
           <div class="row">
             <div class="col-md-1"></div>
-            <div class="col col-md-3">
+            <div class="col col-md-2">
               <h3>Transit Access</h3>
               <br><br>
               <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Hover over pie chart to compare transit access.</p>
             </div>
-            <div class="col col-md-2" align="center">
+            <div class="col col-md-6">
+            <div class="col col-md-6" align="center">
               <h5><b>Modeled Transit Access</b></h5>
               <p style="font-size:small;">CMAP ABM - 2010 Scenario</p>
               <div id="pieTransitModelMode"></div>
             </div>
-            <div class="col col-md-3" align="center">
+            <div class="col col-md-6" align="center">
               <h5><b>Observed Transit Access</b></h5>
               <p style="font-size:small;">Travel Tracker Survey, 2007-2008</p>
               <div id="pieTransitSurveyMode"></div>
+            </div>
             </div>
             <div class="col col-md-2">
               <div class="container">
@@ -1958,10 +1810,10 @@
             <div class="col-md-1"></div>
             <div class="col-md-3">
               <!-- end -->
-              <h3>Comparison of Daily VMT Shares by County</h3>
+              <h3>Daily VMT Shares by County</h3>
               <!-- <div id="highwayvmtLegend"></div> -->
             </div>
-            <div class="col-md-6" style="margin:auto;width:auto">
+            <div class="col-md-5">
               <br>
               <table id="vmt_county_tbl"></table>
               <!-- <div id="vmtcounty" ></div> -->
@@ -1987,12 +1839,12 @@
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-3">
-              <h3>Comparison of Daily VMT Shares by County and Facility Type</h3>
+              <h3>Daily VMT Shares by County and Facility Type</h3>
               <br />
               <div id="vmtfacilityLegendNew"></div>
               <br />
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
               <center>
                 <div id="cfstack"></div>
               </center>
@@ -2025,7 +1877,7 @@
               <p><b>r<sup>2</sup></b> = <text_div id="r2"></text_div>
               </p>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-5">
               <div id="scatter_vmt"></div>
             </div>
           </div>
@@ -2036,9 +1888,9 @@
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-3">
-              <h3>Comparison of Interstate Daily VMT By Auto and Truck</h3>
+              <h3>Daily VMT By Interstate</h3>
               <br>
-              <div id="vmtLegend"></div>
+              <div id="hwyvmtLegend"></div>
               <br>
               <div id="interstate_map"></div><br>
               <br>
@@ -2046,25 +1898,19 @@
               <img src="data/images/Cursor-Click-2-icon.png" width="12px"><br>
               <p class="small">Hover over bars to display values and highlight segment on map. Click on a highway segment on the map to show the name.</p>
             </div>
-            <div class="col-md-4" style="width: 29.16666666666667%;text-align:center">
+            <div class="col-md-5">
+            <div class="col-md-6" style="text-align:center">
               <br>
               <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <h4>Model</h4>
-              <div id="interstateVMTbar_model"></div>
+              <h4>Auto</h4>
+              <div id="autohwyassignment"></div>
             </div>
-            <div class="col-md-4" style="width: 29.16666666666667%">
+            <div class="col-md-6" style="text-align:center">
               <br>
               <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <h4>Observed</h4>
-              <div id="interstateVMTbar_obs"></div>
+              <h4>Truck</h4>
+              <div id="truckhwyassignment"></div>
+            </div>
             </div>
           </div>
           <div class="row">
@@ -2074,10 +1920,10 @@
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-3">
-              <h3>Daily VMT Comparison by Volume Range</h3>
+              <h3>Daily VMT by Volume Range</h3>
               <br />
             </div>
-            <div class="col-md-6" style="margin:auto;width:auto">
+            <div class="col-md-5" style="margin:auto;width:auto">
               <!-- <h4>Interstate</h4> -->
               <center>
                 <br />
@@ -2104,7 +1950,7 @@
               <h3>Root Mean Squared Error Analysis</h3>
               <br />
             </div>
-            <div class="col-md-6" style="margin:auto;width:auto">
+            <div class="col-md-5">
               <br />
               <table id="rmse_7"></table>
               <!-- <div id="rmse_line"></div> -->
@@ -2160,11 +2006,14 @@
             </div>
           </div>
           <div class="row">
+              <div class="col-md-1"></div>
+              <!-- <div class="col-md-2"></div> end -->
+              <div class="col-md-8">
+                <div class="colborder"></div>
+                </div>
+                </div>
+          <div class="row">
             <div class="col-md-1"></div>
-            <!-- <div class="col-md-2"></div> end -->
-            <div class="col-md-8">
-              <div class="colborder"></div>
-              <br />
               <div class="col-md-3">
                 <h3>Transit Boardings by Mode</h3>
                 <p class="small">
@@ -2174,20 +2023,22 @@
                   or ADA paratransit services are not included.
                 </p>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-5">
                 <br />
                 <br />
-                <!-- <table id="busboardings" style="width:100%"></table> -->
-                <table id="railboardings" style="width:100%"></table>
+                <table id="railboardings"></table>
               </div>
-            </div>
           </div>
-
           <div class="row">
             <div class="col-md-1"></div>
             <!-- <div class="col-md-2"></div> end -->
             <div class="col-md-8">
               <div class="colborder"></div>
+              </div>
+              </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <!-- <div class="col-md-2"></div> end -->
               <div class="col-md-3">
                 <h3>Transit Boardings by Line</h3>
                 <section class="container" style="display: -webkit-box">
@@ -2197,24 +2048,23 @@
                 <div id="transit_map"></div><br>
                 <button type="button" class="btn btn-default btn-xs" id="wrecenter" value="Re-center map" onClick="zoomTo(center,transit_map)">Recenter Map</button><br />
                 <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
-                <p class="small">Hover over bars to display values and highlight segment on map. CTA segments are highlighted in red, and Metra segments are highlighted in green.
+                <p class="small">Hover over bars to display values and highlight segment on map. 
                   Click on a transit segment on the map to show the name.</p>
               </div>
-              <div class="col-md-9">
-                <div class="col-md-4" style="width: 45%; text-align:center">
+              <div class="col-md-5">
+                <div class="col-md-6" style="text-align:center">
                   <br>
                   <h4>CTA</h4>
                   <div id="transitassignment"></div>
                 </div>
                 <!-- <div id="transitBoardingsBar_model"></div> -->
-                <div class="col-md-4" style="width: 45%; text-align:center">
+                <div class="col-md-6" style="text-align:center">
                   <br>
                   <h4>Metra</h4>
                   <!-- <div id="transitBoardingsBar_obs"></div> -->
                   <div id="transitassignmentmetra"></div>
                 </div>
-              </div>
-            </div>
+                </div>
           </div>
         </div>
         <!-- Work FLow Validation -->
@@ -2240,7 +2090,7 @@
           </div>
           <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-3">
+            <div class="col-md-2">
               <h3>Comparison of Observed and Modeled Journey to Work Flows</h3>
               <p><dfn
                   data-info="R-squared is calculated to determine the peformance of the model predicability. It is used to compare the regionwide observed and modeled journey to work trips between ring sectors. A value closer to 1.0 indicates a better model."><b>r<sup>2</sup></b></dfn>
@@ -2277,7 +2127,7 @@
           </div>
           <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-3">
+            <div class="col-md-2">
               <h3>Modeled Journey to Work Flows</h3>
               <br>
             </div>
@@ -2292,7 +2142,7 @@
           </div>
           <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-3">
+            <div class="col-md-2">
               <h3>Observed Journey to Work Flows</h3>
               <br>
             </div>
@@ -2307,7 +2157,7 @@
           </div>
           <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-3">
+            <div class="col-md-2">
               <h3>Difference Model and Observed Journey to Work Flows</h3>
               <br>
             </div>
@@ -2410,7 +2260,6 @@
 <script src="scripts/chord2.js" type="text/javascript"></script>
 <script src="scripts/barchart_stack.js" type="text/javascript"></script>
 <script src="scripts/barchart_stack2.js" type="text/javascript"></script>
-<script src="scripts/barchart_stack_h_v2.js" type="text/javascript"></script>
 <script src="scripts/h_stacked.js" type="text/javascript"></script>
 <script src="scripts/modepurposefilter.js" type="text/javascript"></script>
 <script src="scripts/lollipop_dual.js" type="text/javascript"></script>
@@ -2448,10 +2297,10 @@
   makeGroupVBar("data/csv22_dap.csv", "#dap", "#catdap", 2, "dapDesc", "dapTitle", "", portionID = "dap_p");
 </script>
 <script>
-  makeGroupHBar("data/csv34.csv", "#transitassignment", 2, "vmtDesc", "vmtTitle", 600, 'boardings');
+  makeGroupHBar("data/csv34.csv", "#transitassignment", 2, "vmtDesc", "vmtTitle", 600, 'boardings', 1e5);
 </script>
 <script>
-  makeGroupHBar("data/csv35.csv", "#transitassignmentmetra", 2, "vmtDesc", "vmtTitle", 600, 'boardings');
+  makeGroupHBar("data/csv35.csv", "#transitassignmentmetra", 2, "vmtDesc", "vmtTitle", 600, 'boardings', 1e5);
 </script>
 <script>
   makeScatter("data/raw/link_counts.csv", "#scatter_vmt", "vadt", "AADT", "FacilityType", "r2");
@@ -2478,7 +2327,10 @@
   makeChords('data/csv4_chord.csv', "modelChord", "obsChord");
 </script>
 <script>
-  hStackedBar("data/csv26_interstate_vmt_obs.csv", "data/csv25_interstate_vmt_model.csv", "interstateVMTbar_obs", "interstateVMTbar_model", 230, 300);
+  makeGroupHBar("data/csv50_autovmt.csv", "#autohwyassignment", 2, "vmtDesc", "vmtTitle", 600, 'VMT', 1e6);
+</script>
+<script>
+  makeGroupHBar("data/csv51_truckvmt.csv", "#truckhwyassignment", 2, "vmtDesc", "vmtTitle", 600, 'VMT', 1e6);
 </script>
 <script>
   make_h_stacked("data/csv38_popsyn_person.csv", "PopPersonType", "hlegend")

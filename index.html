@@ -1009,41 +1009,6 @@
             <div class="col-md-1"></div>
             <div class="col-md-8 colborder"> </div>
           </div>
-          <!-- <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col col-md-3">
-              <h3>Work-Based Trips by Mode and Distance</h3>
-              <br>
-              <p>
-                  <span id="workbtripsmodedistance_p"></span>
-                  of all work-based trips</p>
-
-              <select id="wbcatModeDist">
-                <option value="all">All Modes</option>
-                <option value="sovfree">Drive Alone (non-toll)</option>
-                <option value="sovpay">Drive Alone (toll)</option>
-                <option value="hov2free">Drive Alone (non-toll)</option>
-                <option value="hov2pay">Drive Alone (toll)</option>
-                <option value="hov3free">Shared ride 3+ free</option>
-                <option value="hov3pay">Shared ride 3+ pay</option>
-                <option value="transit">Transit</option>
-                <option value="walk">Walk</option>
-                <option value="bike">Bike</option>
-                <option value="taxi">Taxi</option>
-              </select>
-              <br><br>
-              <div id="workbasedwalktripsLegend"></div>
-              <div class="small" style="margin-top: 100px;">
-                Bins include the starting value and go up to the ending value (e.g. 2.5-5 Mile contains trips starting at 2.5 miles and up to but not including 5 miles.)
-                <br><br>
-              </div>
-              <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
-              <p class="small">Select trip mode from dropdown to view observed and model comparison.</p>
-            </div>
-            <div class="col col-md-6">
-              <div id="wbModeByDistance"></div>
-            </div>
-          </div> -->
         </div>
         <div id="5" class="tab-pane container-fluid">
           <div class="row">
@@ -2434,9 +2399,9 @@
 <script type="text/javascript" src="data/json/cmaparea.js"></script>
 
 <!-- chart etc scripts -->
+<script src="scripts/scatter_plot.js" type="text/javascript"></script>
 <script src="scripts/internallinks_legends.js"></script>
 <script src="scripts/workflowdropdown.js"></script>
-<script src="scripts/h_barchart_dropdown.js" type="text/javascript"></script>
 <script src="scripts/h_barchart.js" type="text/javascript"></script>
 <script src="scripts/h_barchart_hover.js" type="text/javascript"></script>
 <script src="scripts/v_barchart_dropdown.js" type="text/javascript"></script>
@@ -2446,7 +2411,6 @@
 <script src="scripts/barchart_stack.js" type="text/javascript"></script>
 <script src="scripts/barchart_stack2.js" type="text/javascript"></script>
 <script src="scripts/barchart_stack_h_v2.js" type="text/javascript"></script>
-<script src="scripts/scatter_plot.js" type="text/javascript"></script>
 <script src="scripts/h_stacked.js" type="text/javascript"></script>
 <script src="scripts/modepurposefilter.js" type="text/javascript"></script>
 <script src="scripts/lollipop_dual.js" type="text/javascript"></script>
@@ -2463,13 +2427,7 @@
   makeGroupVBar("data/csv5_mode_purpose.csv", "#ModeByPurpose", "#catModePurp", 2, "modePurpDesc", "modeTitle", "", "tripspurposemode_p");
 </script>
 <script>
-  makeGroupHBar_dd("data/csv6_work_trips.csv", "#VChart", "#workFlowCat", 2, "pDesc", "pTitle", "worktrips_p");
-</script>
-<script>
   makeGroupVBar("data/csv7_work_mode_distance.csv", "#ModeByDistance", "#catModeDist", 2, "modeDistDesc", "modeDTitle", "", "worktripsmodedistance_p");
-</script>
-<script>
-  makeGroupVBar("data/csv8_wbmode_distance.csv", "#wbModeByDistance", "#wbcatModeDist", 2, "wbmodeDistDesc", "wbmodeDTitle", "", "workbtripsmodedistance_p");
 </script>
 <script>
   makeGroupVBar("data/csv9_mode_person.csv", "#ModebyPerson", "#catModePer", 2, "modePerDesc", "modePTitle", "", "tripspersonmode_p");
@@ -2481,19 +2439,10 @@
   makeGroupVBar("data/csv11_purpose_type.csv", "#PurposebyType", "#catPurpType", 2, "purpTypeDesc", "purpTypeTitle", "", "tripspersonpurpose_p");
 </script>
 <script>
-  makeGroupVBar("data/csv12_purpose_distance.csv", "#PurposebyDist", "#catPurpDist", 2, "purpDistDesc", "purpDistTitle", "", "tripsdistancepurpose_p");
-</script>
-<script>
   makeGroupVBar("data/csv12b_purpose_distance.csv", "#DistbyPurpose", "#catDistPurp", 2, "DistpurpDesc", "DistpurpTitle", "", "tripspurposedistance_p");
 </script>
 <script>
   makeGroupVBar("data/csv19_transit_distance.csv", "#TranDist", "#catTranDist", 2, "TranDistDesc", "TranDistTitle", "", "transitmodedistance_p");
-</script>
-<script>
-  makeGroupVBar("data/csv20_transit_income.csv", "#TranIncome", "#catIncomeDist", 2, "TranIncomeDesc", "TranIncomeTitle", "", "transitmodeincome_p");
-</script>
-<script>
-  makeGroupVBar("data/csv21_transit_auto.csv", "#TranAutoAdult", "#catAutoAdult", 2, "TranAutoAdultDesc", "TranAutoAdultTitle");
 </script>
 <script>
   makeGroupVBar("data/csv22_dap.csv", "#dap", "#catdap", 2, "dapDesc", "dapTitle", "", portionID = "dap_p");
@@ -2554,7 +2503,6 @@
 </script>
 
 <script type="text/javascript" src="data/json/Combined_WGS_Updated.js"></script>
-<script type="text/javascript" src="scripts/transitboardings.js"></script>
 <script type="text/javascript" src="scripts/hhvalidationmap.js"></script>
 <script type="text/javascript" src="scripts/intromap.js"></script>
 <script type="text/javascript" src="scripts/transit_assignment_map.js"></script>

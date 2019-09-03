@@ -1,4 +1,4 @@
-function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height, word){
+function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height, word, scale){
 
   var formatValue = d3.format(".2s");
   var barChartConfig = {
@@ -17,13 +17,13 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
   var divTitle = document.getElementById(dtitle);
   var ngroups= nogroups+1
   var formatValue = d3.format(".2s");
-  var margin = {top: 35, right: 80, bottom: 100, left: 100},
+  var margin = {top: 35, right: 80, bottom: 100, left: 150},
     width = 400 - margin.left - margin.right,
     height = height - margin.top - margin.bottom;
 
   var g = d3.select(chartID).append("svg")
   .attr("preserveAspectRatio", "xMinYMin meet")
-  .attr("viewBox", "0 -10 350 960")
+  .attr("viewBox", "0 -10 350 600")
   .attr("align","center")
   .append("g")
   .attr("transform","translate(" + margin.left + "," + margin.top + ")");
@@ -192,7 +192,7 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
         .data(function(d) {
           return copy.map(function(key) {
             return {
-              key: key, value: d[key], lines: d.Index
+              key: key, value: d[key], lines: d.Index, order: d.order
             };
           });
         });
@@ -215,7 +215,7 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
             .duration(200)
             .style("opacity", .9);
             div.html(
-              "<p style='color:#8a89a6; font-size: 20px; margin-bottom: 0px;'>" + d3.formatPrefix(".2s",1e5)(d.value) +
+              "<p style='color:#8a89a6; font-size: 20px; margin-bottom: 0px;'>" + d3.formatPrefix(".2s",scale)(d.value) +
               "</p><p style='color:grey; font-size: 10px;'>" + word + "</p>"
               )
               .style("left", (d3.event.pageX) + "px")
@@ -225,6 +225,8 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
           d3.selectAll("." + d.lines.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, ""))
           .attr("fill", "#cf4446");
         selectedline = d.lines.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "")
+        selectednumber = d.order;
+
         // this highlights the line on the map!
         metra1.eachLayer(function(layer) {
           if (selectedline == "BNSF"){
@@ -284,7 +286,13 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
               weight: 3
           })
           }})
-
+          hwy_lyr.eachLayer(function(layer) {
+            if(layer.feature.properties.abmnum == selectednumber){
+              layer.setStyle({
+                color:"#cf4446"
+              })
+            }
+          })
             })
 
         .on("mouseout", function(d) {
@@ -295,6 +303,8 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
             .attr("fill", function(d) {
             return z[1]; });
           selectedline = d.lines.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "")
+          selectednumber = d.order;
+
           // this highlights the line on the map!
           metra1.eachLayer(function(layer) {
             if(layer.LINE.includes(selectedline)){
@@ -310,83 +320,22 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
                 weight: 2
             })
             }})
-            });
+
+          hwy_lyr.eachLayer(function(layer) {
+              if(layer.feature.properties.abmnum == selectednumber){
+                layer.setStyle({
+                  color:"grey"
+                })
+              }
+            })
+          });
+
 
           bars.transition().duration(durations)
             .attr("x", 0)
             .attr("width", function(d) {
               return x(d["value"]);
             });
-
-      // ======== Grouped bar text ========
-
-      // let textOnBar = g.selectAll(".layer").selectAll("text")
-      //   .data(function(d) {
-      //     return copy.map(function(key) {
-      //       return {key: key, value: d[key]};
-      //     });
-      //   });
-      //
-      // textOnBar = textOnBar
-      //   .enter()
-      // .append("text")
-      //   .attr("fill","#fff")
-      //   .attr("font-size",11)
-      //   .merge(textOnBar);
-      //
-      // textOnBar.transition().duration(durations)
-      //   .attr("transform", function(d, i) {
-      //     let y0 = y1.bandwidth() * i + 7,
-      //         x0 = x(d.value) + 8;
-      //     return "translate(" + y0 + "," + x0 + ") rotate(90)";
-      //   })
-      //   .text(function(d) {return formatValue(d.value)})
-
-      // ======== Legend rects ========
-
-      // var legend = g.selectAll(".legend")
-      //   .data(keysLegend);
-
-      // legend = legend
-      //   .enter()
-      // .append("rect")
-      //   .attr("class","barlegend")
-      //   .attr("transform", function(d, i) {
-      //     return "translate(0," + i * 40 + ")";
-      //   })
-      //   .attr("x", width + 17) //location of legend
-      //   .attr("width", 15)
-      //   .attr("height", 15)
-      //   .attr("stroke-width",2)
-      //   .merge(legend)
-
-      // legend.transition().duration(durations)
-      //   .attr("fill", z)
-      //   .attr("stroke", z);
-
-      // // ======== Legend text ========
-
-      // var legendText = g.selectAll(".legendText")
-      //   .data(keysLegend);
-
-      // legendText = legendText
-      //   .enter()
-      //   .append("text")
-      //   .attr("class","legendText")
-      //   .attr("transform", function(d, i) {
-      //     return "translate(0," + i * 40 + ")";
-      //   })
-      //   .attr("x", width + 40)
-      //   .attr("font-size",12)
-      //   .attr("y", 8)
-      //   .attr("dy", "0.32em")
-      //   .merge(legendText);
-
-      // legendText.transition().duration(durations)
-      //   .text(function(d) {
-      //     var sliceLegend = d.slice(0, -1)
-      //     return sliceLegend;
-      //   });
 
     } // End of update function
 

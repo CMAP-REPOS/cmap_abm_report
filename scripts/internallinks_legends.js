@@ -104,6 +104,8 @@ modelsurveylegend("#transitincomeLegend")
 modelsurveylegend("#transittripsratioLegend")
 modelsurveylegend("#highwayvmtLegend")
 modelsurveylegend("#transitboardingLegend")
+modelsurveylegend("#hwyvmtLegend")
+
 
 
 

@@ -17,14 +17,7 @@ function baseStyle(feature) {
     };
 }
 
-
-//   var div = d3.select("#chordinfodiv").append("div")
-//   .attr("class", "chordtooltip")
-//   .style("opacity", 0);
-
 // basic map
-
-
 
 var baselayer1 = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
     id: 'mapbox.light',
@@ -152,19 +145,6 @@ function makeChords(csv_file, modelDiv, obsDiv){
             var activeDistrict = i;
             var newCurrentDistrict = d.name;
 
-            // div.transition()
-            //     .duration(200)
-            //     .style("opacity", .9);
-            //     div.html(
-            //         "<br><b><p style='font-size: 12px'; color: grey'>" + newCurrentDistrict +
-            //         "</p></b><p style='color:rgb(28, 78, 128); font-size: 20px; margin-bottom: 0px;'>" + d.value +
-            //         "</p><p style='color:grey; font-size: 10px;'> modeled" +
-            //         "</p><p style='color:rgb(166, 186, 206); font-size: 20px; margin-bottom: 0px;'>" + 'hi' +
-            //         "</p><p style='color:grey; font-size: 10px;'> observed </p>"
-            //         )
-            //         .style("left", 200 + "px")
-            //         .style("top",  100 + "px");
-
             svg1.selectAll("path.chord")
                 .filter(function(d) {
                   return d.source.index != activeDistrict && d.target.index != activeDistrict; })
@@ -261,7 +241,7 @@ function makeChords(csv_file, modelDiv, obsDiv){
           }
 
         function drawChords(matrix, mmap, obsMatrix, obs_mmap, odpairs) {
-            var w = 400,
+            var w = 350,
                 h = 400,
                 r1 = (h - 30) / 2,
                 r0 = r1 - 80;
@@ -279,12 +259,14 @@ function makeChords(csv_file, modelDiv, obsDiv){
                 .radius(r0);
 
             svg1 = d3.select("#" + obsDiv).append("svg:svg")
-                .attr("width", w)
-                .attr("height", h)
-                .append("svg:g")
-                .attr("id", "circle")
-                .attr("transform", "translate(" + w / 2 + "," + h / 2 + ")")
-                .datum(chord(obsMatrix));
+            .attr("preserveAspectRatio", "xMinYMin meet")
+            .attr("viewBox", "-10 -200 350 600")
+            .attr("align","center")
+            .append("g")
+            .attr("transform","translate(" + margin.left + "," + margin.top + ")")
+            .append("svg:g")
+            .attr("id", "circle")
+            .datum(chord(obsMatrix));
 
             svg1.append("circle")
                 .attr("r", r0 + 20);
@@ -403,12 +385,14 @@ function makeChords(csv_file, modelDiv, obsDiv){
                 //Chord 2
 
                 svg2 = d3.select("#" + modelDiv).append("svg:svg")
-                    .attr("width", w)
-                    .attr("height", h)
-                    .append("svg:g")
-                    .attr("id", "circle")
-                    .attr("transform", "translate(" + w / 2 + "," + h / 2 + ")")
-                    .datum(chord(matrix));
+                  .attr("preserveAspectRatio", "xMinYMin meet")
+                  .attr("viewBox", "-10 -200 350 600")
+                  .attr("align","center")
+                  .append("g")
+                  .attr("transform","translate(" + margin.left + "," + margin.top + ")")
+                  .append("svg:g")
+                  .attr("id", "circle")
+                  .datum(chord(matrix));
 
                 svg2.append("circle")
                     .attr("r", r0 + 20);

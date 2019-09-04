@@ -1,4 +1,4 @@
-function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height, word, scale){
+function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height, word, scale, xaxis){
 
   var formatValue = d3.format(".2s");
   var barChartConfig = {
@@ -121,8 +121,6 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
         keysLegend.push(s)
       })
 
-      //console.log(keysLegend)
-
       data.forEach(function(d, i, columns) {
         for (var i = 0, test = 0, n = keysLegend.length; i < n; ++i)
           test += d[keysLegend[i]];
@@ -135,14 +133,18 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
       d3.select("#" + dtitle).text(divTitle);
       // ======== Domain, Axis & Sort ========
 
-      //console.log(newdata);
-
+      if (xaxis != 0){
+        x.domain([0, xaxis]).nice();
+      }
+      
+      if (xaxis == 0){
       x.domain([0, d3.max(data, function(d) {
         return d3.max(copy, function(key) {
           return +d[key];
           });
         })
       ]).nice();
+    }
 
       g.selectAll(".axis.axis--x").transition()
         .duration(durations)

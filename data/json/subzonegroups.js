@@ -19561,7 +19561,7 @@ var workflow_geo = {
       },
       "properties" : {
         "OBJECTID" : 7,
-        "AREANAME" : "CBD",
+        "AREANAME" : "Chicago (CBD)",
         "Shape_Length" : 0.15881194578327304,
         "Shape_Area" : 0.0010287792629075571
       }
@@ -22381,7 +22381,7 @@ var workflow_geo = {
       },
       "properties" : {
         "OBJECTID" : 9,
-        "AREANAME" : "North Chicago",
+        "AREANAME" : "Chicago (N)",
         "Shape_Length" : 1.2240745463281439,
         "Shape_Area" : 0.020941961636926607
       }
@@ -23764,7 +23764,7 @@ var workflow_geo = {
       },
       "properties" : {
         "OBJECTID" : 10,
-        "AREANAME" : "North Cook",
+        "AREANAME" : "Cook (N)",
         "Shape_Length" : 1.7793651874867895,
         "Shape_Area" : 0.067001287945693905
       }
@@ -24751,7 +24751,7 @@ var workflow_geo = {
       },
       "properties" : {
         "OBJECTID" : 11,
-        "AREANAME" : "South Chicago",
+        "AREANAME" : "Chicago (S)",
         "Shape_Length" : 1.0868711342497019,
         "Shape_Area" : 0.028669649560217725
       }
@@ -25952,7 +25952,7 @@ var workflow_geo = {
       },
       "properties" : {
         "OBJECTID" : 12,
-        "AREANAME" : "South Cook",
+        "AREANAME" : "Cook (S)",
         "Shape_Length" : 1.5487962200850474,
         "Shape_Area" : 0.075206864119498937
       }
@@ -26625,7 +26625,7 @@ var workflow_geo = {
       },
       "properties" : {
         "OBJECTID" : 13,
-        "AREANAME" : "West Chicago",
+        "AREANAME" : "Chicago (W)",
         "Shape_Length" : 0.80641417652700775,
         "Shape_Area" : 0.015414266379850067
       }
@@ -28576,7 +28576,7 @@ var workflow_geo = {
       },
       "properties" : {
         "OBJECTID" : 14,
-        "AREANAME" : "West Cook",
+        "AREANAME" : "Cook (W)",
         "Shape_Length" : 2.2426822003609903,
         "Shape_Area" : 0.060946849952176085
       }

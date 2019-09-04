@@ -2406,7 +2406,6 @@
 <script src="scripts/internallinks_legends.js"></script>
 <script src="scripts/workflowdropdown.js"></script>
 <script src="scripts/h_barchart.js" type="text/javascript"></script>
-<script src="scripts/h_barchart_hover.js" type="text/javascript"></script>
 <script src="scripts/v_barchart_dropdown.js" type="text/javascript"></script>
 <script src="scripts/barchart_dropdown_stack_4.js" type="text/javascript"></script>
 <script src="scripts/barchart.js" type="text/javascript"></script>
@@ -2450,10 +2449,10 @@
   makeGroupVBar("data/csv22_dap.csv", "#dap", "#catdap", 2, "dapDesc", "dapTitle", "", portionID = "dap_p");
 </script>
 <script>
-  makeGroupHBar("data/csv34.csv", "#transitassignment", 2, "vmtDesc", "vmtTitle", 600, 'boardings', 1e5);
+  makeGroupHBar("data/csv34.csv", "#transitassignment", 2, "vmtDesc", "vmtTitle", 600, 'boardings', 1e5, 0);
 </script>
 <script>
-  makeGroupHBar("data/csv35.csv", "#transitassignmentmetra", 2, "vmtDesc", "vmtTitle", 600, 'boardings', 1e5);
+  makeGroupHBar("data/csv35.csv", "#transitassignmentmetra", 2, "vmtDesc", "vmtTitle", 600, 'boardings', 1e5, 300000);
 </script>
 <script>
   makeScatter("data/raw/link_counts.csv", "#scatter_vmt", "vadt", "AADT", "FacilityType", "r2");
@@ -2480,10 +2479,10 @@
   makeChords('data/csv4_chord.csv', "modelChord", "obsChord");
 </script>
 <script>
-  makeGroupHBar("data/csv50_autovmt.csv", "#autohwyassignment", 2, "vmtDesc", "vmtTitle", 600, 'VMT', 1e6);
+  makeGroupHBar("data/csv50_autovmt.csv", "#autohwyassignment", 2, "vmtDesc", "vmtTitle", 600, 'VMT', 1e6, 0);
 </script>
 <script>
-  makeGroupHBar("data/csv51_truckvmt.csv", "#truckhwyassignment", 2, "vmtDesc", "vmtTitle", 600, 'VMT', 1e6);
+  makeGroupHBar("data/csv51_truckvmt.csv", "#truckhwyassignment", 2, "vmtDesc", "vmtTitle", 600, 'VMT', 1e6, 4000000);
 </script>
 <script>
   make_h_stacked("data/csv38_popsyn_person.csv", "PopPersonType", "hlegend")

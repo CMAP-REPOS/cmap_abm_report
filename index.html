@@ -65,7 +65,7 @@
                   </li>
                   <li>
                     <a class="calibration" href="#3" role="tab" data-toggle="tab">
-                      Auto Ownership
+                      Vehicle Ownership
                     </a>
                   </li>
 
@@ -419,12 +419,17 @@
                 <li>Non-driving student: Age 6-15.</li>
                 <li>Pre-school: Age under 6.</li>
               </ul>
+              Data note: The observed data used Public Use Microdata Areas (PUMAs).  PUMAs are statistical geographic areas defined by the U.S. 
+              Census Bureau for the dissemination of Public Use Microdata Sample (PUMS) data.  Two of the PUMAs used to gather observed 
+              data include counties outside the CMAP modeling area (Stephenson County in Illinois, and Jefferson County in Wisconsin).  
+              Data for these PUMAs is weighted by the percentage of population or households – depending on the analysis – for counties 
+              within the CMAP modeling area.  As a result, the total number of observed persons or households is not always identical for 
+              each summary analysis.
             </div><!-- end -->
           </div><!-- row end -->
           <br>
           <div class="row">
             <div class="col-md-1"></div>
-            <!-- <div class="col-md-2"></div> end -->
             <div class="col-md-8">
               <div class="colborder"></div>
             </div>
@@ -434,12 +439,10 @@
             <div class="col col-md-2">
               <h3>Population by Person Type</h3>
               <div id="hlegend"></div><!-- end -->
-              <br>
-              <!-- <p class="small">
-                <b>Sources</b><br>
-                Observed- PUMS 2007-2011 <br>
-                Modeled- PopSynIII <br>
-              </p> -->
+              <p class="small">
+              Note on "Full-time workers": The model defines full-time workers as persons working 30+ weeks in the year and 
+              35+ hours per week.  Full-time workers in the observed data are persons working 27+ weeks in the year and 35+ hours per week. 
+              </p><br>
               <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Hover over population categories to reveal details.</p>
             </div> <!-- end -->
@@ -455,11 +458,10 @@
                 <img src="data/images/icons8-add-50.png" class="image">
                 <div class="overlay">
                   <p>
-                    The model closely represents the number of full-time workers in the region
-                    (the largest person type by percentage). The model slightly overestimates the number
-                    of part-time workers and non-working adults. The largest disparities
-                    between the modeled and observed populations in terms of percentage points are for
-                    the university student and non-working seniors. In both instances, the model is underrepresenting the population of these person types.
+                      The model closely represents the number of full-time workers in the region (the largest person type by percentage).  
+                      The model slightly overestimates the number of part-time workers and non-working adults.  The largest disparities 
+                      between the modeled and observed populations in terms of percentage points are for the university student and 
+                      non-working seniors.  In both instances, the model is underrepresenting the population of these person types. 
                   </p>
                 </div>
               </div>
@@ -500,7 +502,7 @@
                 <div class="overlay">
                   <p>
                     In terms of the percentage of total households, the model slightly underrepresents
-                    one-person households in the region. The model also underrepresents the number of tow-person households.
+                    one-person households in the region. The model also underrepresents the number of two-person households.
                     However, three- and four-person households
                     are considerably overrepresented in the model. The largest disparity between modeled and observed
                     households in terms of percentage is for large households (5+ person). </p>
@@ -556,7 +558,7 @@
                 <div class="overlay">
                   <p>
                     The model does a reasonably well job of representing the various household characteristics.
-                    For instance, the number of 0-worker households is almost identical in the modeled in observed data,
+                    For instance, the number of 0-worker households is almost identical in the modeled and observed data,
                     and the number of vehicles by household are very similar for modeled and observed households.
                     The model slightly overestimates the number of lower income households and underestimates the number of high income households. </p>
                 </div>
@@ -623,13 +625,12 @@
             <div class="col-md-1"></div>
             <!--end-->
             <div class="col-md-7">
-              <h2>Auto Ownership</h2>
+              <h2>Vehicle Ownership</h2>
               <p>
-                <dfn data-info="Definition goes here">Auto ownership</dfn> plays an important role in individuals’ travel behavior decisions and helps define the set of travel mode options available to them. “Auto sufficiency” is a concept often
-                applied to understand constraints a household
-                may
-                have on travel choices -- generally categorizing household as having zero autos, having more workers in the household than autos, or having at least as many auto as workers in the household. This is a key measure in determining which
-                households may be transit-dependent.
+                Vehicle ownership plays an important role in individuals’ travel behavior 
+                decisions and helps define the set of travel mode options available to them.  For example, households that own no 
+                vehicles may be dependent on transit to make their trips.  Vehicle ownership refers to motor vehicles owned or leased 
+                by a household, including autos, pickup trucks, SUVs and motorcycles.   
               </p>
               <br>
             </div>
@@ -680,7 +681,7 @@
             <div class="col-md-1"></div>
             <div class="col-md-2">
               <!-- <h3>Auto Sufficiency</h3> -->
-              <h3>Distribution of Auto Ownership by <div id="dtitle"></div>
+              <h3>Distribution of Vehicle Ownership by <div id="dtitle"></div>
               </h3>
               Total Households: <span class="modtotal"></span> Model, <span class="surveytotal"></span> Survey
               <br><br>
@@ -691,12 +692,6 @@
               </select>
               <br>
               <div id="stackedAutoLegend"></div>
-
-              <!-- <div class="small" style="margin-top: 0px;">
-                <b>Sources</b><br>
-                Observed - PUMS 2007-11 <br>
-                Modeled- PopSynIII <br>
-              </div> -->
               <br>
             </div>
             <div class="col col-md-6">
@@ -711,7 +706,7 @@
                 <img src="data/images/icons8-add-50.png" class="image">
                 <div class="overlay">
                   <p>
-                    The model accurately predicts the distribution of auto ownership by household size, household income, and household workers.
+                    The model accurately predicts the distribution of vehicle ownership by household size, household income, and household workers.
                     However, the model tends to under estimate the number of households with 4+ vehicles for larger households and high income households. </p>
                 </div>
               </div>
@@ -725,12 +720,14 @@
             <div class="col-md-6">
               <h2>Work Flows</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non igitur de
-                improbo, sed de callido improbo quaerimus, qualis Q. Ampulla enim sit necne
-                sit, quis non iure irrideatur, si laboret? formarum quam civis excellens ad
-                factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-                qualis Q. Ampulla enim sit necne sit, quis non iure irrideatur, si laboret?
-                formarum quam civis excellen
+                  Commute trips are an important part of a region’s overall travel pattern and are a key component of 
+                  congestion experienced on the transportation system especially during the morning and evening hours.  
+                  Ensuring that commuters are traveling between the appropriate home and work locations is one important way 
+                  to verify that travel demand models reflect actual travel patterns.  Journey-to-work flows from the Census 
+                  Transportation Planning Package (CTPP) are generally used to estimate models that address work flows due to the 
+                  large sample of data included. Data from household travel surveys can be used to supplement the 
+                  journey-to-work information from the CTPP, as travel surveys offer more detailed information about the 
+                  trips than the Census provides. 
               </p>
               <br>
             </div>
@@ -856,7 +853,7 @@
                   trips.</span>
               </div>
             </div>
-            <div class="col col-md-6">
+            <div class="col col-md-5">
             <div class="col col-md-6" align="center">
               <br />
               <h3>Modeled</h3>
@@ -871,6 +868,26 @@
               <br />
               <div id="obsChord"></div>
             </div>
+            </div>
+            <div class="col col-md-2">
+                <div class="container">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <img src="data/images/icons8-add-50.png" class="image">
+                    <div class="overlay">
+                      <p>
+                          The model does a good job of replicating the number of commute trips being made within and between the 
+                          counties in the CMAP region.  For instance the model matches the Census data in showing that the top three 
+                          work locations in northeastern Illinois are Cook, DuPage and Lake counties, in that order.  Both the modeled 
+                          and observed data show that close to 45% of the total work trips made in the extended modeling area occur 
+                          entirely within Cook County.  The model is underestimating the number of Cook and DuPage residents that live 
+                          in one county and work in the other.  It is also underestimating the number of Cook residents that work in 
+                          Lake and Will counties.
+                      </p>
+                    </div>
+                  </div>
             </div>
           </div>
           <!--- Row End -->
@@ -914,9 +931,28 @@
               <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Select trip mode from dropdown to view observed and model comparison.</p>
             </div>
-            <div class="col col-md-6">
+            <div class="col col-md-5">
               <div id="ModeByDistance"></div>
             </div>
+            <div class="col col-md-2">
+                <div class="container">
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <img src="data/images/icons8-add-50.png" class="image">
+                  <div class="overlay">
+                    <p>
+                        Driving is the most frequently used mode getting to work in the region and the model does a 
+                        reasonable job replicating the number of people driving different distances to work.  Nearly 
+                        two-thirds of the commute trips in the region are people driving alone on trips that do not involve 
+                        paying a toll and the modeled trips match the distance pattern for this group well, somewhat overestimating 
+                        the extremely short trips (under 2.5 miles) and underestimating the trips longer than 30 miles.  A similar 
+                        pattern is seen in the transit trips – the longer trips are under-represented in the model and the shorter 
+                        trips are over-represented. </p>
+                  </div>
+                </div>
+              </div>
           </div>
           <div class="row">
             <div class="col-md-1"></div>
@@ -1283,7 +1319,11 @@
                 <br />
                 <img src="data/images/icons8-add-50.png" class="image">
                 <div class="overlay">
-                  <p></p>
+                  <p>
+                      The largest proportion of tours is for full-time workers, and the model slightly underrepresents these 
+                      (3.89 million modeled tours vs. 4.05 million observed tours).  Tours for part-time workers, non-working 
+                      adults and non-working seniors are all noticeably overestimated by the model.
+                  </p>
                 </div>
               </div>
             </div>
@@ -1510,7 +1550,7 @@
             <div class="col-md-1"></div> <!-- end -->
             <div class="col col-md-2">
 
-              <h3>Trips by Purpose and Distance (Miles)</h3>
+              <h3>Trips by Purpose and Distance</h3>
               <br>
               <p>
                 <span id="tripspurposedistance_p"></span>
@@ -1528,11 +1568,6 @@
                 <option value="Work-based">Work-based</option>
               </select>
               <div id="tripspurposedistLegend"></div>
-              <!-- <div class="small" style="margin-top: 100px;">
-                <b>Sources</b><br>
-                Observed -Travel Tracker Survey, 2007-2008. <br>
-                Modeled- CMAP ABM - 2010 Scenario. <br>
-              </div><br> -->
             </div>
             <div class="col col-md-6">
               <div id="DistbyPurpose"></div>
@@ -1654,6 +1689,10 @@
             <div class="col-md-1"></div>
             <div class="col col-md-2">
               <h3>Transit Access</h3>
+              <p>
+              The Drive to Transit access mode includes individuals parking at transit stations (Park and Ride) and those who are dropped 
+              off at the station (Kiss and Ride).  The Walk to Transit access mode includes people walking or cycling to get to transit.
+              </p>
               <br><br>
               <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Hover over pie chart to compare transit access.</p>
@@ -1693,8 +1732,11 @@
               <h2>Synthetic Household Validation</h2>
 
               <p>
-                This map displays the difference between selected household attributes for modeled and observed data by U.S. Census Public Use Microdata Areas (PUMAs). <p>
-            </div>
+                  This map displays the difference between selected household attributes for modeled and observed data summarized by U.S. 
+                  Census Public Use Microdata Areas (PUMAs).  PUMAs are geographic areas defined by the U.S. Census Bureau that contain a 
+                  minimum of 100,000 people.      
+                </p>
+                    </div>
           </div>
           <div class="row">
             <div class="col-md-1"></div>
@@ -1707,8 +1749,10 @@
             <div class="col-md-1"></div>
             <div class="col-md-3">
               <br>
-              Choose from auto sufficiency, household size, household income and workers in household by clicking the category button and selecting the specific household type from the
-              dropdown. Hover over each PUMA to display the values for modeled and observed data. </p>
+              <p>
+              Choose from household size, household income, number of workers and number of vehicles in households by clicking the 
+              category button and selecting the specific household type from the dropdown. Hover over each PUMA to display the values 
+              for modeled and observed data.  </p>
               <p>
                 <b>Example:</b> In the model, 22.7% of households in northeast Lake County are 1-person households. According to PUMS, 27.2% of households in northeast Lake County are 1-person households.
                 This is a difference of -4.5 percentage points. </p>
@@ -1880,6 +1924,25 @@
             <div class="col-md-5">
               <div id="scatter_vmt"></div>
             </div>
+            <div class="col col-md-2 ">
+                <div class="container">
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <img src="data/images/icons8-add-50.png" class="img-fluid image">
+                  <div class="overlay">
+                    <p>
+                        The scatterplot shows a strong correlation in between the observed average daily link volume 
+                        and the modeled daily link volume, which is verified with an r-squared value of 0.86. A value 
+                        of 0.86 means that the regression line shown is a good fit of the observed data and accounts 
+                        for 86% of the variation in the data. 
+                        The correlation between the observed and modeled average daily link volumes is stronger for 
+                        interstates than for arterials/collectors. 
+                    </p>
+                  </div>
+                </div>
+              </div>
           </div>
           <div class="row">
             <div class="col-md-1"></div>
@@ -1889,9 +1952,11 @@
             <div class="col-md-1"></div>
             <div class="col-md-3">
               <h3>Daily VMT By Interstate</h3>
-              <br>
+              <p>This comparison examines vehicles separated into two categories: auto 
+                (which includes cars, SUVs, pickup trucks, etc. that people drive for their 
+                personal use) and commercial vehicles (which include package delivery trucks 
+                all of the way up to tractor-trailers) used to conduct business activities.</p>
               <div id="hwyvmtLegend"></div>
-              <br>
               <div id="interstate_map"></div><br>
               <br>
               <button type="button" class="btn btn-default btn-xs" id="wrecenter" value="Re-center map" onClick="zoomTo(center,interstate_map)">Recenter Map</button><br />
@@ -1912,6 +1977,29 @@
               <div id="truckhwyassignment"></div>
             </div>
             </div>
+            <div class="col col-md-2 ">
+                <div class="container">
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <img src="data/images/icons8-add-50.png" class="img-fluid image">
+                  <div class="overlay">
+                    <p>
+                        The model does a good job reflecting the amount of weekday traffic on the 
+                        interstate system, both on the freeways and tollways.  The overall number 
+                        of Vehicle Miles Traveled on each interstate section estimated by the model 
+                        is very close to the values measured in the observed data.  Separating the VMT 
+                        into auto and commercial vehicle components shows that these values are well 
+                        represented in the ABM. For instance, on I-290 the auto VMT is only around 5.5% 
+                        too high and the commercial vehicle VMT is just 1% high.  I-80 has the highest 
+                        share of commercial vehicle VMT; the model not only shows this same relationship 
+                        but the auto and commercial vehicle VMT values are less than 1% different that 
+                        the observed data.
+                    </p>
+                  </div>
+                </div>
+              </div>
           </div>
           <div class="row">
             <div class="col-md-1"></div>
@@ -1923,22 +2011,33 @@
               <h3>Daily VMT by Volume Range</h3>
               <br />
             </div>
-            <div class="col-md-5" style="margin:auto;width:auto">
-              <!-- <h4>Interstate</h4> -->
-              <center>
+            <div class="col-md-5">
+              <!-- <center> -->
                 <br />
                 <br />
                 <table id="vrange_consolidated"></table>
-              </center>
-              <!-- <h4>Arterial</h4>
-              <center>
-                <table id="vrange_art"></table>
-              </center>
-              <h4>Total</h4>
-              <center>
-                <table id="vrange_total"></table>
-              </center> -->
+              <!-- </center> -->
             </div>
+            <div class="col col-md-2 ">
+                <div class="container">
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <img src="data/images/icons8-add-50.png" class="img-fluid image">
+                  <div class="overlay">
+                    <p>
+                        This analysis compares modeled volumes to links that have observed traffic 
+                        counts on them.  Overall the model is overestimating traffic on these links 
+                        by less than 2%, an extremely close margin.  VMT on the lowest volume roads 
+                        are being overestimated, while VMT is underestimated by the model on the highest 
+                        volume road segments.  For the five categories from 5,000 up to 59,999 the model 
+                        is overestimating VMT by less than 9%, and for two categories the VMT difference 
+                        is less than 2%.
+                    </p>
+                  </div>
+                </div>
+              </div>
           </div>
           <div class="row">
             <div class="col-md-1"></div>
@@ -1949,6 +2048,12 @@
             <div class="col-md-3">
               <h3>Root Mean Squared Error Analysis</h3>
               <br />
+              <p> Links were grouped into volume bins based on the observed traffic counts (AADT) and linear regression analyses 
+                were completed for each group. The root mean squared error (RMSE) is a measure commonly-used for model validation 
+                analyses and compares the average difference between the observed values and the modeled volume predicted by the 
+                linear regression. The percent RMSE standardizes the value by dividing it by the average of the AADT.  The Florida 
+                Department of Transportation has developed a set of percent RMSE values that are often cited as validation targets, 
+                with a goal of achieving that value or lower for each of the volume categories.</p>
             </div>
             <div class="col-md-5">
               <br />
@@ -1964,14 +2069,11 @@
                 <img src="data/images/icons8-add-50.png" class="img-fluid image">
                 <div class="overlay">
                   <p>
-                    Links were stratified into volume bins
-                    based on AADT and linear regression analyses
-                    (weighted by link length) were completed for
-                    each stratum. The root mean squared error (RMSE)
-                    measures the average difference between the observed
-                    values and the modeled volume predicted by the linear
-                    regression. The percent RMSE standardizes the RMSE
-                    by dividing it by the mean of the AADT (observed value).
+                      For the lowest volume categories, which contain about 87% of the links measured, the percent RMSE is below the 
+                      Florida target value.  There is a spike in the 15,000-19,999 category, where the percent RMSE is 8 percentage 
+                      points higher than the target value.  The higher volume categories also exceed the target value but by smaller 
+                      amounts.  Overall this analysis shows that the ABM is dong a reasonable job of replicating the observed traffic 
+                      counts.
                   </p>
                 </div>
               </div>
@@ -2028,6 +2130,23 @@
                 <br />
                 <table id="railboardings"></table>
               </div>
+              <div class="col col-md-2">
+                  <div class="container">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <img src="data/images/icons8-add-50.png" class="image">
+                    <div class="overlay">
+                      <p>
+                          The model does a good job predicting the average number of weekday boardings for each transit mode. 
+                          The predicted number of average weekday boardings for heavy rail, buses, and the total are very close 
+                          to the observed data (all within 4%). The model is slightly underpredicting the number of transit boardings 
+                          for commuter rail, by about 7%.  
+                      </p>
+                    </div>
+                  </div>
+                </div>
           </div>
           <div class="row">
             <div class="col-md-1"></div>
@@ -2065,6 +2184,24 @@
                   <div id="transitassignmentmetra"></div>
                 </div>
                 </div>
+                <div class="col col-md-2">
+                    <div class="container">
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      <img src="data/images/icons8-add-50.png" class="image">
+                      <div class="overlay">
+                        <p>
+                            Overall, the model accurately estimates transit boardings by line for both CTA and Metra. The model 
+                            overpredicts some of the transit boardings (such as the Green Line on the CTA and the BNSF line on Metra), 
+                            while the model also underpredicts transit boardings on other lines (such as the Brown Line on the CTA and the 
+                            MD-N line on Metra). However, for the most part, the model does a good job predicting the transit boardings on 
+                            each CTA and Metra line.  
+                        </p>
+                      </div>
+                    </div>
+                  </div>
           </div>
         </div>
         <!-- Work FLow Validation -->
@@ -2074,12 +2211,8 @@
             <div class="col-md-6">
               <h2>Commute Trips Validation</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non igitur de
-                improbo, sed de callido improbo quaerimus, qualis Q. Ampulla enim sit necne
-                sit, quis non iure irrideatur, si laboret? formarum quam civis excellens ad
-                factorum pulchritudinem. r de improbo, sed de callido improbo quaerimus,
-                qualis Q. Ampulla enim sit necne sit, quis non iure irrideatur, si laboret?
-                formarum quam civis excellen
+                  The analysis of commute trips focus on comparing the patterns of travel from home (place of residence) to work 
+                  (primary place of work). 
               </p>
               <br>
             </div>
@@ -2165,6 +2298,26 @@
               <br />
               <table id="valdiffcountyflow"> </table>
             </div>
+            <div class="col col-md-2 ">
+                <div class="container">
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <img src="data/images/icons8-add-50.png" class="img-fluid image">
+                  <div class="overlay">
+                    <p>
+                        Almost half of the commute trips in the region originate from Cook County.  
+                        Whereas the model does a good job of capturing the total commute trips 
+                        originating from Cook County, it is overestimating the number of these 
+                        trips that end in Cook County, and underestimating the number of commute 
+                        trips from Cook to all other counties.  
+                        Another observation is that the model is underrepresenting the total number 
+                        of work trips originating from Lake County by 6.6%. 
+                    </p>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
       </div>
@@ -2444,7 +2597,7 @@
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Vrange', 'Number of Links', 'Observed VMT', 'Model VMT', 'Percent Diff'], "#vrange_consolidated", "percent"); // 2 column table
+    tabulate(data, ['Volume Range', 'Number of Links', 'Observed VMT', 'Model VMT', 'Percent Diff'], "#vrange_consolidated", "percent"); // 2 column table
   });
 
   d3.csv("data/csv30_rmse.csv", function(d, i, columns) {
@@ -2452,7 +2605,7 @@
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Vrange', 'Weight (Miles)', 'Links', 'AADT', 'Model Volumes', 'rmse', '%rmse', 'Florida DOT'], "#rmse_7", "percent"); // 2 column table
+    tabulate(data, ['Volume Range', 'Links', 'AADT', 'Model Volumes', 'RMSE', '%RMSE', 'Florida DOT Targets'], "#rmse_7", "percent"); // 2 column table
   });
 
   d3.csv("data/csv30_vrange_total.csv", function(d, i, columns) {

@@ -1626,9 +1626,11 @@
             <div class="col-md-1"></div>
             <div class="col-md-2">
               <h3>Modeled vs. Observed Transit Trips Origin and Destination</h3>
-              <br>
-              <p><b>r<sup>2</sup></b> = <text_div id="transitrs"></text_div>
+              <p>
+                  The scatterplot includes a point for each origin/destination pair. A map of origin/destination areas is shown below, with the standard CMAP modeling area shaded for reference.  
+                <br><b>r<sup>2</sup></b> = <text_div id="transitrs"></text_div>
               </p>
+              <div id="transitodmap"></div>
             </div>
             <div class="col-md-6">
               <div id="scatter_transit"></div>
@@ -2227,12 +2229,15 @@
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-2">
-              <h3>Comparison of Observed and Modeled Journey to Work Flows</h3>
-              <p><dfn
+              <h3>Modeled vs. Observed Journey to Work Flows</h3>
+              <p>
+                The scatterplot includes a point for each home/work county pair.  All 21 counties in the extended modeling area are included.  A county map is shown below, with the standard CMAP modeling area shaded for reference.  
+                <br><br><dfn
                   data-info="R-squared is calculated to determine the peformance of the model predicability. It is used to compare the regionwide observed and modeled journey to work trips between ring sectors. A value closer to 1.0 indicates a better model."><b>r<sup>2</sup></b></dfn>
                 = <text_div id="jtwr2"></text_div>
               </p>
               <br>
+              <div id="commutemap"></div>
             </div>
             <div class="col-md-6">
               <div id="scatter_jtw"></div>
@@ -2510,8 +2515,11 @@
 </script>
 
 <script type="text/javascript" src="data/json/Combined_WGS_Updated.js"></script>
+<script type="text/javascript" src="data/json/transitod.js"></script>
 <script type="text/javascript" src="scripts/hhvalidationmap.js"></script>
 <script type="text/javascript" src="scripts/intromap.js"></script>
+<script type="text/javascript" src="scripts/transitodmap.js"></script>
+<script type="text/javascript" src="scripts/commutemap.js"></script>
 <script type="text/javascript" src="scripts/transit_assignment_map.js"></script>
 <script type="text/javascript" src="scripts/highway_assignment_map.js"></script>
 

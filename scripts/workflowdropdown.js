@@ -27,8 +27,8 @@ function updateworkdata(origin, destination) {
     });
 }
 
-var setorigin = 'CBD'
-var setdestination = 'CBD'
+var setorigin = 'Chicago (CBD)'
+var setdestination = 'Chicago (CBD)'
 updateworkdata(setorigin, setdestination);
 
 

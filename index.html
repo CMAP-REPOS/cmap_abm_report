@@ -783,77 +783,76 @@
           </div>
           <div class="row">
             <div class="col-md-1"></div> <!-- end -->
-            <div class="col-md-3" style="text-align:center">
+            <div class="col-md-2" style="text-align:center">
               <br />
-              <div id="chordinfodiv"></div>
               <h3>Origin and Destination Work Flows</h3>
               From
               <!-- Split button -->
               <div class="btn-group" id="workfrom" style="margin:auto;width:auto">
-                <button type="button" id="WorkFrom" class="btn btn-danger" style="color: rgb(171, 171, 171); font-size: 18px;">CBD</button>
+                <button type="button" id="WorkFrom" class="btn btn-danger" style="color: rgb(171, 171, 171); font-size: 18px;">Chicago (CBD)</button>
                 <button type="button" class="btn btn-info dropdown-toggle" style="background-color: rgb(207, 207, 207) !important; border-color: rgb(207, 207, 207) !important" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <span class="caret"></span>
                   <span class="sr-only">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
                   <li><a>All</a></li>
-                  <li><a>CBD</a></li>
+                  <li><a>Chicago (CBD)</a></li>
+                  <li><a>Chicago (North)</a></li>
+                  <li><a>Chicago (South)</a></li>
+                  <li><a>Chicago (West)</a></li>
+                  <li><a>Cook (North)</a></li>
+                  <li><a>Cook (South)</a></li>
+                  <li><a>Cook (West)</a></li>
                   <li><a>DuPage</a></li>
                   <li><a>Kane</a></li>
                   <li><a>Kendall</a></li>
                   <li><a>Lake</a></li>
                   <li><a>McHenry</a></li>
-                  <li><a>North Chicago</a></li>
-                  <li><a>North Cook</a></li>
-                  <li><a>South Chicago</a></li>
-                  <li><a>South Cook</a></li>
-                  <li><a>West Chicago</a></li>
-                  <li><a>West Cook</a></li>
                   <li><a>Will</a></li>
                 </ul>
               </div>
-              To
+              <br>
+              To &nbsp;&nbsp;&nbsp;
               <!-- Split button -->
               <div class="btn-group" id="workto">
-                <button type="button" id="WorkTo" class="btn btn-danger" style="color: rgb(171, 171, 171); font-size: 18px;">CBD</button>
+                <button type="button" id="WorkTo" class="btn btn-danger" style="color: rgb(171, 171, 171); font-size: 18px;">Chicago (CBD)</button>
                 <button type="button" class="btn btn-info dropdown-toggle" style="background-color: rgb(207, 207, 207) !important; border-color: rgb(207, 207, 207) !important" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <span class="caret"></span>
                   <span class="sr-only">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a>All</a></li>
-                  <li><a>CBD</a></li>
-                  <li><a>DuPage</a></li>
-                  <li><a>Kane</a></li>
-                  <li><a>Kendall</a></li>
-                  <li><a>Lake</a></li>
-                  <li><a>McHenry</a></li>
-                  <li><a>North Chicago</a></li>
-                  <li><a>North Cook</a></li>
-                  <li><a>South Chicago</a></li>
-                  <li><a>South Cook</a></li>
-                  <li><a>West Chicago</a></li>
-                  <li><a>West Cook</a></li>
-                  <li><a>Will</a></li>
+                    <li><a>All</a></li>
+                    <li><a>Chicago (CBD)</a></li>
+                    <li><a>Chicago (North)</a></li>
+                    <li><a>Chicago (South)</a></li>
+                    <li><a>Chicago (West)</a></li>
+                    <li><a>Cook (North)</a></li>
+                    <li><a>Cook (South)</a></li>
+                    <li><a>Cook (West)</a></li>
+                    <li><a>DuPage</a></li>
+                    <li><a>Kane</a></li>
+                    <li><a>Kendall</a></li>
+                    <li><a>Lake</a></li>
+                    <li><a>McHenry</a></li>
+                    <li><a>Will</a></li>
                 </ul>
               </div>
 
               <br>
               <div id="wflowinfocontainer" style="display:inline-block">
-                <div id="wflowinfo" style="margin-left:30px;"></div>
-                <div id="wflowinfo2" style="margin-left:70px;"></div>
+                <div id="wflowinfo" style="margin-left:20px;"></div>
+                <div id="wflowinfo2" style="margin-left:20px;"></div>
               </div><br><br>
               <div id="wflowmap"></div>
+              <br>
               <div style="text-align:left">
                 <button type="button" class="btn btn-default btn-xs" id="wrecenter" value="Re-center map" onClick="zoomTo(center,wflowmap)">Recenter Map</button>
-                <br>
-                <br />
                 <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br />
                 <span class="small" style="text-align:left">Hover over the chord diagram to see area boundaries on the map. Click on the map to see area name. Choose work flow geographies in the drop down menu to view numerical values for work
                   trips.</span>
               </div>
             </div>
-            <div class="col col-md-5">
+            <div class="col col-md-6">
             <div class="col col-md-6" align="center">
               <br />
               <h3>Modeled</h3>
@@ -1835,8 +1834,7 @@
             <div class="col-md-6">
               <h2>Highway Assignment</h2>
               <p>
-                During Highway Assignment, the individual trips developed by <dfn data-info="CT-RAMP models include a full simulation of travel decisions for discrete households and persons; explicit tracking of time in half-hourly
-                increments and use of time constraints on the generation of travel, as well as explicitly modelled intra-household interactions across a range of activity and travel dimensions">CT-RAMP</dfn> are routed along the model network from
+                During Highway Assignment, the individual trips developed by CT-RAMP are routed along the model network from
                 origin to destination in order to estimate traffic flows and network conditions. When equilibrium is reached within the
                 highway assignment (meaning that vehicles cannot change paths without negatively impacting travel times), <dfn
                   data-info="The ABM generates a multiclass assignment that includes 17 vehicle classes representing autos segmented by occupancy and value of time (VOT) and trucks segmented by unit size and VOT.">vehicle class</dfn> volumes for each

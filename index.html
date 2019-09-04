@@ -723,8 +723,11 @@
                   Commute trips are an important part of a region’s overall travel pattern and are a key component of 
                   congestion experienced on the transportation system especially during the morning and evening hours.  
                   Ensuring that commuters are traveling between the appropriate home and work locations is one important way 
-                  to verify that travel demand models reflect actual travel patterns.  Journey-to-work flows from the Census 
-                  Transportation Planning Package (CTPP) are generally used to estimate models that address work flows due to the 
+                  to verify that travel demand models reflect actual travel patterns.  <br><br>
+                  Note there are two sources for observed data on this page.  The first three tables use data from 
+                  Journey-to-work flows from the Census Transportation Planning Package (CTPP).  The remaining two charts
+                  use data from household travel surveys.  
+                  CTPP data is generally used to estimate models that address work flows due to the 
                   large sample of data included. Data from household travel surveys can be used to supplement the 
                   journey-to-work information from the CTPP, as travel surveys offer more detailed information about the 
                   trips than the Census provides. 
@@ -1834,13 +1837,15 @@
             <div class="col-md-6">
               <h2>Highway Assignment</h2>
               <p>
-                During Highway Assignment, the individual trips developed by CT-RAMP are routed along the model network from
-                origin to destination in order to estimate traffic flows and network conditions. When equilibrium is reached within the
-                highway assignment (meaning that vehicles cannot change paths without negatively impacting travel times), <dfn
-                  data-info="The ABM generates a multiclass assignment that includes 17 vehicle classes representing autos segmented by occupancy and value of time (VOT) and trucks segmented by unit size and VOT.">vehicle class</dfn> volumes for each
-                <dfn data-info="Definition goes here">link</dfn> are retained to determine the demand on each link. These vehicle class volumes are then used to calculate standard measures such as vehicle miles of travel (VMT). The summaries below
-                include volumes for links within the CMAP seven county region.
-              </p>
+                During Highway Assignment, the individual motor vehicle trips developed by the ABM are routed along the model 
+                transportation network from origin to destination in order to estimate traffic flows and network conditions.  
+                As additional vehicles attempt to use the same roadway segments during the assignment, travel becomes more congested 
+                and travel times increase.  The assignment procedures implement a series of steps moving various portions of traffic 
+                onto alternative routes in an attempt to reduce congestion and minimize travel costs.  Equilibrium is reached within 
+                the highway assignment when vehicles cannot change paths without negatively impacting travel times.  Once equilibrium 
+                is reached, the volume of vehicles on each <dfn data-info="Definition goes here">link</dfn> is retained and can be used to calculate standard measures such as vehicle 
+                miles of travel (VMT).
+            </p>
               <br>
             </div>
           </div>

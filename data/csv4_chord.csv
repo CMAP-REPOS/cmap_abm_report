@@ -1,336 +1,336 @@
 root,node,count,Category,color,
-CBD,CBD,124295,Model,#c26ac21,CBDCBDModel
-CBD,CBD,115816.5885,Survey,#c26ac21,CBDCBDSurvey
-DuPage,CBD,16680,Model,#9aaf3e,DuPageCBDModel
-DuPage,CBD,39057.01481,Survey,#9aaf3e,DuPageCBDSurvey
-Kane,CBD,2400,Model,#573702,KaneCBDModel
-Kane,CBD,5730.294701,Survey,#573702,KaneCBDSurvey
-Kendall,CBD,440,Model,#c99048,KendallCBDModel
-Kendall,CBD,1163.790899,Survey,#c99048,KendallCBDSurvey
-Lake,CBD,2985,Model,#5083de,LakeCBDModel
-Lake,CBD,19771.82652,Survey,#5083de,LakeCBDSurvey
-McHenry,CBD,310,Model,#698d3c,McHenryCBDModel
-McHenry,CBD,3534.214085,Survey,#698d3c,McHenryCBDSurvey
-North Chicago,CBD,117360,Model,#d971b15,North ChicagoCBDModel
-North Chicago,CBD,108010.3003,Survey,#d971b15,North ChicagoCBDSurvey
-North Cook,CBD,13000,Model,#43c8ac,North CookCBDModel
-North Cook,CBD,35777.40079,Survey,#43c8ac,North CookCBDSurvey
-South Chicago,CBD,64520,Model,#8c2b83,South ChicagoCBDModel
-South Chicago,CBD,59201.12688,Survey,#8c2b83,South ChicagoCBDSurvey
-South Cook,CBD,17310,Model,#b98064,South CookCBDModel
-South Cook,CBD,31393.46879,Survey,#b98064,South CookCBDSurvey
-West Chicago,CBD,60310,Model,#848bd16,West ChicagoCBDModel
-West Chicago,CBD,40452.25539,Survey,#848bd16,West ChicagoCBDSurvey
-West Cook,CBD,28425,Model,#b44946,West CookCBDModel
-West Cook,CBD,33100.49907,Survey,#b44946,West CookCBDSurvey
-Will,CBD,5790,Model,#bc4865,WillCBDModel
-Will,CBD,16119.1125,Survey,#bc4865,WillCBDSurvey
-CBD,DuPage,13870,Model,#c26ac21,CBDDuPageModel
-CBD,DuPage,33447.77967,Survey,#c26ac21,CBDDuPageSurvey
+Chicago (CBD),Chicago (CBD),124295,Model,#c26ac21,Chicago (CBD)Chicago (CBD)Model
+Chicago (CBD),Chicago (CBD),115816.5885,Survey,#c26ac21,Chicago (CBD)Chicago (CBD)Survey
+Chicago (CBD),Chicago (N),89420,Model,#c26ac21,Chicago (CBD)Chicago (N)Model
+Chicago (CBD),Chicago (N),87627.86554,Survey,#c26ac21,Chicago (CBD)Chicago (N)Survey
+Chicago (CBD),Chicago (S),45305,Model,#c26ac21,Chicago (CBD)Chicago (S)Model
+Chicago (CBD),Chicago (S),47664.25337,Survey,#c26ac21,Chicago (CBD)Chicago (S)Survey
+Chicago (CBD),Chicago (W),43440,Model,#c26ac21,Chicago (CBD)Chicago (W)Model
+Chicago (CBD),Chicago (W),34802.62475,Survey,#c26ac21,Chicago (CBD)Chicago (W)Survey
+Chicago (CBD),Cook (N),9965,Model,#c26ac21,Chicago (CBD)Cook (N)Model
+Chicago (CBD),Cook (N),31608.54956,Survey,#c26ac21,Chicago (CBD)Cook (N)Survey
+Chicago (CBD),Cook (S),12825,Model,#c26ac21,Chicago (CBD)Cook (S)Model
+Chicago (CBD),Cook (S),28258.28908,Survey,#c26ac21,Chicago (CBD)Cook (S)Survey
+Chicago (CBD),Cook (W),22225,Model,#c26ac21,Chicago (CBD)Cook (W)Model
+Chicago (CBD),Cook (W),25907.50319,Survey,#c26ac21,Chicago (CBD)Cook (W)Survey
+Chicago (CBD),DuPage,13870,Model,#c26ac21,Chicago (CBD)DuPageModel
+Chicago (CBD),DuPage,33447.77967,Survey,#c26ac21,Chicago (CBD)DuPageSurvey
+Chicago (CBD),Kane,2130,Model,#c26ac21,Chicago (CBD)KaneModel
+Chicago (CBD),Kane,6821.448192,Survey,#c26ac21,Chicago (CBD)KaneSurvey
+Chicago (CBD),Kendall,390,Model,#c26ac21,Chicago (CBD)KendallModel
+Chicago (CBD),Kendall,1686.885699,Survey,#c26ac21,Chicago (CBD)KendallSurvey
+Chicago (CBD),Lake,2520,Model,#c26ac21,Chicago (CBD)LakeModel
+Chicago (CBD),Lake,17146.89905,Survey,#c26ac21,Chicago (CBD)LakeSurvey
+Chicago (CBD),McHenry,250,Model,#c26ac21,Chicago (CBD)McHenryModel
+Chicago (CBD),McHenry,3658.822113,Survey,#c26ac21,Chicago (CBD)McHenrySurvey
+Chicago (CBD),Will,4750,Model,#c26ac21,Chicago (CBD)WillModel
+Chicago (CBD),Will,12850.90457,Survey,#c26ac21,Chicago (CBD)WillSurvey
+Chicago (N),Chicago (CBD),117360,Model,#d971b15,Chicago (N)Chicago (CBD)Model
+Chicago (N),Chicago (CBD),108010.3003,Survey,#d971b15,Chicago (N)Chicago (CBD)Survey
+Chicago (N),Chicago (N),345430,Model,#d971b15,Chicago (N)Chicago (N)Model
+Chicago (N),Chicago (N),201480.2985,Survey,#d971b15,Chicago (N)Chicago (N)Survey
+Chicago (N),Chicago (S),8840,Model,#d971b15,Chicago (N)Chicago (S)Model
+Chicago (N),Chicago (S),19181.83769,Survey,#d971b15,Chicago (N)Chicago (S)Survey
+Chicago (N),Chicago (W),48810,Model,#d971b15,Chicago (N)Chicago (W)Model
+Chicago (N),Chicago (W),57684.32671,Survey,#d971b15,Chicago (N)Chicago (W)Survey
+Chicago (N),Cook (N),76815,Model,#d971b15,Chicago (N)Cook (N)Model
+Chicago (N),Cook (N),71365.92105,Survey,#d971b15,Chicago (N)Cook (N)Survey
+Chicago (N),Cook (S),2240,Model,#d971b15,Chicago (N)Cook (S)Model
+Chicago (N),Cook (S),7623.236523,Survey,#d971b15,Chicago (N)Cook (S)Survey
+Chicago (N),Cook (W),26075,Model,#d971b15,Chicago (N)Cook (W)Model
+Chicago (N),Cook (W),26849.64752,Survey,#d971b15,Chicago (N)Cook (W)Survey
+Chicago (N),DuPage,10835,Model,#d971b15,Chicago (N)DuPageModel
+Chicago (N),DuPage,14372.90813,Survey,#d971b15,Chicago (N)DuPageSurvey
+Chicago (N),Kane,1085,Model,#d971b15,Chicago (N)KaneModel
+Chicago (N),Kane,3806.000632,Survey,#d971b15,Chicago (N)KaneSurvey
+Chicago (N),Kendall,75,Model,#d971b15,Chicago (N)KendallModel
+Chicago (N),Kendall,0,Survey,#d971b15,Chicago (N)KendallSurvey
+Chicago (N),Lake,3655,Model,#d971b15,Chicago (N)LakeModel
+Chicago (N),Lake,14330.79526,Survey,#d971b15,Chicago (N)LakeSurvey
+Chicago (N),McHenry,445,Model,#d971b15,Chicago (N)McHenryModel
+Chicago (N),McHenry,2948.188399,Survey,#d971b15,Chicago (N)McHenrySurvey
+Chicago (N),Will,745,Model,#d971b15,Chicago (N)WillModel
+Chicago (N),Will,4538.010709,Survey,#d971b15,Chicago (N)WillSurvey
+Chicago (S),Chicago (CBD),64520,Model,#8c2b83,Chicago (S)Chicago (CBD)Model
+Chicago (S),Chicago (CBD),59201.12688,Survey,#8c2b83,Chicago (S)Chicago (CBD)Survey
+Chicago (S),Chicago (N),10105,Model,#8c2b83,Chicago (S)Chicago (N)Model
+Chicago (S),Chicago (N),18943.37777,Survey,#8c2b83,Chicago (S)Chicago (N)Survey
+Chicago (S),Chicago (S),129740,Model,#8c2b83,Chicago (S)Chicago (S)Model
+Chicago (S),Chicago (S),126696.5464,Survey,#8c2b83,Chicago (S)Chicago (S)Survey
+Chicago (S),Chicago (W),38265,Model,#8c2b83,Chicago (S)Chicago (W)Model
+Chicago (S),Chicago (W),43146.00727,Survey,#8c2b83,Chicago (S)Chicago (W)Survey
+Chicago (S),Cook (N),1745,Model,#8c2b83,Chicago (S)Cook (N)Model
+Chicago (S),Cook (N),10053.25476,Survey,#8c2b83,Chicago (S)Cook (N)Survey
+Chicago (S),Cook (S),31040,Model,#8c2b83,Chicago (S)Cook (S)Model
+Chicago (S),Cook (S),29479.70237,Survey,#8c2b83,Chicago (S)Cook (S)Survey
+Chicago (S),Cook (W),8620,Model,#8c2b83,Chicago (S)Cook (W)Model
+Chicago (S),Cook (W),13836.73942,Survey,#8c2b83,Chicago (S)Cook (W)Survey
+Chicago (S),DuPage,2190,Model,#8c2b83,Chicago (S)DuPageModel
+Chicago (S),DuPage,5607.378966,Survey,#8c2b83,Chicago (S)DuPageSurvey
+Chicago (S),Kane,25,Model,#8c2b83,Chicago (S)KaneModel
+Chicago (S),Kane,566.5817523,Survey,#8c2b83,Chicago (S)KaneSurvey
+Chicago (S),Kendall,10,Model,#8c2b83,Chicago (S)KendallModel
+Chicago (S),Kendall,579.11302,Survey,#8c2b83,Chicago (S)KendallSurvey
+Chicago (S),Lake,75,Model,#8c2b83,Chicago (S)LakeModel
+Chicago (S),Lake,1453.638435,Survey,#8c2b83,Chicago (S)LakeSurvey
+Chicago (S),McHenry,0,Model,#8c2b83,Chicago (S)McHenryModel
+Chicago (S),McHenry,130.2602923,Survey,#8c2b83,Chicago (S)McHenrySurvey
+Chicago (S),Will,1620,Model,#8c2b83,Chicago (S)WillModel
+Chicago (S),Will,5766.150773,Survey,#8c2b83,Chicago (S)WillSurvey
+Chicago (W),Chicago (CBD),60310,Model,#848bd16,Chicago (W)Chicago (CBD)Model
+Chicago (W),Chicago (CBD),40452.25539,Survey,#848bd16,Chicago (W)Chicago (CBD)Survey
+Chicago (W),Chicago (N),45260,Model,#848bd16,Chicago (W)Chicago (N)Model
+Chicago (W),Chicago (N),57152.71811,Survey,#848bd16,Chicago (W)Chicago (N)Survey
+Chicago (W),Chicago (S),31135,Model,#848bd16,Chicago (W)Chicago (S)Model
+Chicago (W),Chicago (S),41854.00374,Survey,#848bd16,Chicago (W)Chicago (S)Survey
+Chicago (W),Chicago (W),154885,Model,#848bd16,Chicago (W)Chicago (W)Model
+Chicago (W),Chicago (W),136105.2336,Survey,#848bd16,Chicago (W)Chicago (W)Survey
+Chicago (W),Cook (N),4885,Model,#848bd16,Chicago (W)Cook (N)Model
+Chicago (W),Cook (N),16447.13944,Survey,#848bd16,Chicago (W)Cook (N)Survey
+Chicago (W),Cook (S),8860,Model,#848bd16,Chicago (W)Cook (S)Model
+Chicago (W),Cook (S),16900.39047,Survey,#848bd16,Chicago (W)Cook (S)Survey
+Chicago (W),Cook (W),28840,Model,#848bd16,Chicago (W)Cook (W)Model
+Chicago (W),Cook (W),26920.12383,Survey,#848bd16,Chicago (W)Cook (W)Survey
+Chicago (W),DuPage,5770,Model,#848bd16,Chicago (W)DuPageModel
+Chicago (W),DuPage,17378.14725,Survey,#848bd16,Chicago (W)DuPageSurvey
+Chicago (W),Kane,350,Model,#848bd16,Chicago (W)KaneModel
+Chicago (W),Kane,542.4180728,Survey,#848bd16,Chicago (W)KaneSurvey
+Chicago (W),Kendall,95,Model,#848bd16,Chicago (W)KendallModel
+Chicago (W),Lake,465,Model,#848bd16,Chicago (W)LakeModel
+Chicago (W),Lake,1456.138327,Survey,#848bd16,Chicago (W)LakeSurvey
+Chicago (W),McHenry,20,Model,#848bd16,Chicago (W)McHenryModel
+Chicago (W),McHenry,735.2060778,Survey,#848bd16,Chicago (W)McHenrySurvey
+Chicago (W),Will,1695,Model,#848bd16,Chicago (W)WillModel
+Chicago (W),Will,4400.174876,Survey,#848bd16,Chicago (W)WillSurvey
+Cook (N),Chicago (CBD),13000,Model,#43c8ac,Cook (N)Chicago (CBD)Model
+Cook (N),Chicago (CBD),35777.40079,Survey,#43c8ac,Cook (N)Chicago (CBD)Survey
+Cook (N),Chicago (N),67460,Model,#43c8ac,Cook (N)Chicago (N)Model
+Cook (N),Chicago (N),64038.75442,Survey,#43c8ac,Cook (N)Chicago (N)Survey
+Cook (N),Chicago (S),1150,Model,#43c8ac,Cook (N)Chicago (S)Model
+Cook (N),Chicago (S),11509.04069,Survey,#43c8ac,Cook (N)Chicago (S)Survey
+Cook (N),Chicago (W),3990,Model,#43c8ac,Cook (N)Chicago (W)Model
+Cook (N),Chicago (W),14888.60622,Survey,#43c8ac,Cook (N)Chicago (W)Survey
+Cook (N),Cook (N),436545,Model,#43c8ac,Cook (N)Cook (N)Model
+Cook (N),Cook (N),367812.8841,Survey,#43c8ac,Cook (N)Cook (N)Survey
+Cook (N),Cook (S),540,Model,#43c8ac,Cook (N)Cook (S)Model
+Cook (N),Cook (S),7085.967488,Survey,#43c8ac,Cook (N)Cook (S)Survey
+Cook (N),Cook (W),35925,Model,#43c8ac,Cook (N)Cook (W)Model
+Cook (N),Cook (W),36835.13008,Survey,#43c8ac,Cook (N)Cook (W)Survey
+Cook (N),DuPage,23685,Model,#43c8ac,Cook (N)DuPageModel
+Cook (N),DuPage,39279.67628,Survey,#43c8ac,Cook (N)DuPageSurvey
+Cook (N),Kane,9480,Model,#43c8ac,Cook (N)KaneModel
+Cook (N),Kane,7317.166067,Survey,#43c8ac,Cook (N)KaneSurvey
+Cook (N),Kendall,80,Model,#43c8ac,Cook (N)KendallModel
+Cook (N),Lake,57495,Model,#43c8ac,Cook (N)LakeModel
+Cook (N),Lake,57642.94966,Survey,#43c8ac,Cook (N)LakeSurvey
+Cook (N),McHenry,9660,Model,#43c8ac,Cook (N)McHenryModel
+Cook (N),McHenry,14713.98642,Survey,#43c8ac,Cook (N)McHenrySurvey
+Cook (N),Will,615,Model,#43c8ac,Cook (N)WillModel
+Cook (N),Will,7724.711758,Survey,#43c8ac,Cook (N)WillSurvey
+Cook (S),Chicago (CBD),17310,Model,#b98064,Cook (S)Chicago (CBD)Model
+Cook (S),Chicago (CBD),31393.46879,Survey,#b98064,Cook (S)Chicago (CBD)Survey
+Cook (S),Chicago (N),3010,Model,#b98064,Cook (S)Chicago (N)Model
+Cook (S),Chicago (N),8723.306752,Survey,#b98064,Cook (S)Chicago (N)Survey
+Cook (S),Chicago (S),28920,Model,#b98064,Cook (S)Chicago (S)Model
+Cook (S),Chicago (S),32531.56748,Survey,#b98064,Cook (S)Chicago (S)Survey
+Cook (S),Chicago (W),10935,Model,#b98064,Cook (S)Chicago (W)Model
+Cook (S),Chicago (W),19213.62578,Survey,#b98064,Cook (S)Chicago (W)Survey
+Cook (S),Cook (N),865,Model,#b98064,Cook (S)Cook (N)Model
+Cook (S),Cook (N),8158.110583,Survey,#b98064,Cook (S)Cook (N)Survey
+Cook (S),Cook (S),241770,Model,#b98064,Cook (S)Cook (S)Model
+Cook (S),Cook (S),190738.0367,Survey,#b98064,Cook (S)Cook (S)Survey
+Cook (S),Cook (W),19290,Model,#b98064,Cook (S)Cook (W)Model
+Cook (S),Cook (W),22607.55653,Survey,#b98064,Cook (S)Cook (W)Survey
+Cook (S),DuPage,8395,Model,#b98064,Cook (S)DuPageModel
+Cook (S),DuPage,12186.56457,Survey,#b98064,Cook (S)DuPageSurvey
+Cook (S),Kane,35,Model,#b98064,Cook (S)KaneModel
+Cook (S),Kane,395.5397629,Survey,#b98064,Cook (S)KaneSurvey
+Cook (S),Kendall,70,Model,#b98064,Cook (S)KendallModel
+Cook (S),Kendall,818.1559653,Survey,#b98064,Cook (S)KendallSurvey
+Cook (S),Lake,5,Model,#b98064,Cook (S)LakeModel
+Cook (S),Lake,1232.840622,Survey,#b98064,Cook (S)LakeSurvey
+Cook (S),McHenry,0,Model,#b98064,Cook (S)McHenryModel
+Cook (S),McHenry,317.1417833,Survey,#b98064,Cook (S)McHenrySurvey
+Cook (S),Will,26570,Model,#b98064,Cook (S)WillModel
+Cook (S),Will,30438.10057,Survey,#b98064,Cook (S)WillSurvey
+Cook (W),Chicago (CBD),28425,Model,#b44946,Cook (W)Chicago (CBD)Model
+Cook (W),Chicago (CBD),33100.49907,Survey,#b44946,Cook (W)Chicago (CBD)Survey
+Cook (W),Chicago (N),26720,Model,#b44946,Cook (W)Chicago (N)Model
+Cook (W),Chicago (N),27566.05673,Survey,#b44946,Cook (W)Chicago (N)Survey
+Cook (W),Chicago (S),6585,Model,#b44946,Cook (W)Chicago (S)Model
+Cook (W),Chicago (S),13201.59032,Survey,#b44946,Cook (W)Chicago (S)Survey
+Cook (W),Chicago (W),29755,Model,#b44946,Cook (W)Chicago (W)Model
+Cook (W),Chicago (W),29548.22514,Survey,#b44946,Cook (W)Chicago (W)Survey
+Cook (W),Cook (N),42785,Model,#b44946,Cook (W)Cook (N)Model
+Cook (W),Cook (N),37379.99396,Survey,#b44946,Cook (W)Cook (N)Survey
+Cook (W),Cook (S),16345,Model,#b44946,Cook (W)Cook (S)Model
+Cook (W),Cook (S),23082.97215,Survey,#b44946,Cook (W)Cook (S)Survey
+Cook (W),Cook (W),196400,Model,#b44946,Cook (W)Cook (W)Model
+Cook (W),Cook (W),161996.3825,Survey,#b44946,Cook (W)Cook (W)Survey
+Cook (W),DuPage,68285,Model,#b44946,Cook (W)DuPageModel
+Cook (W),DuPage,55873.40675,Survey,#b44946,Cook (W)DuPageSurvey
+Cook (W),Kane,11435,Model,#b44946,Cook (W)KaneModel
+Cook (W),Kane,8120.905082,Survey,#b44946,Cook (W)KaneSurvey
+Cook (W),Kendall,495,Model,#b44946,Cook (W)KendallModel
+Cook (W),Kendall,264.0479752,Survey,#b44946,Cook (W)KendallSurvey
+Cook (W),Lake,2765,Model,#b44946,Cook (W)LakeModel
+Cook (W),Lake,6038.018268,Survey,#b44946,Cook (W)LakeSurvey
+Cook (W),McHenry,2145,Model,#b44946,Cook (W)McHenryModel
+Cook (W),McHenry,4698.26641,Survey,#b44946,Cook (W)McHenrySurvey
+Cook (W),Will,9105,Model,#b44946,Cook (W)WillModel
+Cook (W),Will,5638.514973,Survey,#b44946,Cook (W)WillSurvey
+DuPage,Chicago (CBD),16680,Model,#9aaf3e,DuPageChicago (CBD)Model
+DuPage,Chicago (CBD),39057.01481,Survey,#9aaf3e,DuPageChicago (CBD)Survey
+DuPage,Chicago (N),11375,Model,#9aaf3e,DuPageChicago (N)Model
+DuPage,Chicago (N),14688.05973,Survey,#9aaf3e,DuPageChicago (N)Survey
+DuPage,Chicago (S),1615,Model,#9aaf3e,DuPageChicago (S)Model
+DuPage,Chicago (S),5081.288454,Survey,#9aaf3e,DuPageChicago (S)Survey
+DuPage,Chicago (W),5460,Model,#9aaf3e,DuPageChicago (W)Model
+DuPage,Chicago (W),14552.17875,Survey,#9aaf3e,DuPageChicago (W)Survey
+DuPage,Cook (N),24625,Model,#9aaf3e,DuPageCook (N)Model
+DuPage,Cook (N),40647.22813,Survey,#9aaf3e,DuPageCook (N)Survey
+DuPage,Cook (S),6305,Model,#9aaf3e,DuPageCook (S)Model
+DuPage,Cook (S),10091.84251,Survey,#9aaf3e,DuPageCook (S)Survey
+DuPage,Cook (W),61050,Model,#9aaf3e,DuPageCook (W)Model
+DuPage,Cook (W),56197.11252,Survey,#9aaf3e,DuPageCook (W)Survey
 DuPage,DuPage,463960,Model,#9aaf3e,DuPageDuPageModel
 DuPage,DuPage,310646.1774,Survey,#9aaf3e,DuPageDuPageSurvey
-Kane,DuPage,39855,Model,#573702,KaneDuPageModel
-Kane,DuPage,49791.88887,Survey,#573702,KaneDuPageSurvey
-Kendall,DuPage,9895,Model,#c99048,KendallDuPageModel
-Kendall,DuPage,6698.939047,Survey,#c99048,KendallDuPageSurvey
-Lake,DuPage,1850,Model,#5083de,LakeDuPageModel
-Lake,DuPage,12304.22099,Survey,#5083de,LakeDuPageSurvey
-McHenry,DuPage,1910,Model,#698d3c,McHenryDuPageModel
-McHenry,DuPage,1721.128988,Survey,#698d3c,McHenryDuPageSurvey
-North Chicago,DuPage,10835,Model,#d971b15,North ChicagoDuPageModel
-North Chicago,DuPage,14372.90813,Survey,#d971b15,North ChicagoDuPageSurvey
-North Cook,DuPage,23685,Model,#43c8ac,North CookDuPageModel
-North Cook,DuPage,39279.67628,Survey,#43c8ac,North CookDuPageSurvey
-South Chicago,DuPage,2190,Model,#8c2b83,South ChicagoDuPageModel
-South Chicago,DuPage,5607.378966,Survey,#8c2b83,South ChicagoDuPageSurvey
-South Cook,DuPage,8395,Model,#b98064,South CookDuPageModel
-South Cook,DuPage,12186.56457,Survey,#b98064,South CookDuPageSurvey
-West Chicago,DuPage,5770,Model,#848bd16,West ChicagoDuPageModel
-West Chicago,DuPage,17378.14725,Survey,#848bd16,West ChicagoDuPageSurvey
-West Cook,DuPage,68285,Model,#b44946,West CookDuPageModel
-West Cook,DuPage,55873.40675,Survey,#b44946,West CookDuPageSurvey
-Will,DuPage,48550,Model,#bc4865,WillDuPageModel
-Will,DuPage,44473.50629,Survey,#bc4865,WillDuPageSurvey
-CBD,Kane,2130,Model,#c26ac21,CBDKaneModel
-CBD,Kane,6821.448192,Survey,#c26ac21,CBDKaneSurvey
 DuPage,Kane,34910,Model,#9aaf3e,DuPageKaneModel
 DuPage,Kane,41302.61943,Survey,#9aaf3e,DuPageKaneSurvey
-Kane,Kane,168885,Model,#573702,KaneKaneModel
-Kane,Kane,129257.8687,Survey,#573702,KaneKaneSurvey
-Kendall,Kane,8305,Model,#c99048,KendallKaneModel
-Kendall,Kane,1317.354917,Survey,#c99048,KendallKaneSurvey
-Lake,Kane,1635,Model,#5083de,LakeKaneModel
-Lake,Kane,4868.654379,Survey,#5083de,LakeKaneSurvey
-McHenry,Kane,10790,Model,#698d3c,McHenryKaneModel
-McHenry,Kane,11528.65174,Survey,#698d3c,McHenryKaneSurvey
-North Chicago,Kane,1085,Model,#d971b15,North ChicagoKaneModel
-North Chicago,Kane,3806.000632,Survey,#d971b15,North ChicagoKaneSurvey
-North Cook,Kane,9480,Model,#43c8ac,North CookKaneModel
-North Cook,Kane,7317.166067,Survey,#43c8ac,North CookKaneSurvey
-South Chicago,Kane,25,Model,#8c2b83,South ChicagoKaneModel
-South Chicago,Kane,566.5817523,Survey,#8c2b83,South ChicagoKaneSurvey
-South Cook,Kane,35,Model,#b98064,South CookKaneModel
-South Cook,Kane,395.5397629,Survey,#b98064,South CookKaneSurvey
-West Chicago,Kane,350,Model,#848bd16,West ChicagoKaneModel
-West Chicago,Kane,542.4180728,Survey,#848bd16,West ChicagoKaneSurvey
-West Cook,Kane,11435,Model,#b44946,West CookKaneModel
-West Cook,Kane,8120.905082,Survey,#b44946,West CookKaneSurvey
-Will,Kane,4450,Model,#bc4865,WillKaneModel
-Will,Kane,6513.343161,Survey,#bc4865,WillKaneSurvey
-CBD,Kendall,390,Model,#c26ac21,CBDKendallModel
-CBD,Kendall,1686.885699,Survey,#c26ac21,CBDKendallSurvey
 DuPage,Kendall,7925,Model,#9aaf3e,DuPageKendallModel
 DuPage,Kendall,6638.309258,Survey,#9aaf3e,DuPageKendallSurvey
-Kane,Kendall,7545,Model,#573702,KaneKendallModel
-Kane,Kendall,2690.404513,Survey,#573702,KaneKendallSurvey
-Kendall,Kendall,19525,Model,#c99048,KendallKendallModel
-Kendall,Kendall,4170.722014,Survey,#c99048,KendallKendallSurvey
-Lake,Kendall,5,Model,#5083de,LakeKendallModel
-Lake,Kendall,103.1892874,Survey,#5083de,LakeKendallSurvey
-McHenry,Kendall,10,Model,#698d3c,McHenryKendallModel
-McHenry,Kendall,0,Survey,#698d3c,McHenryKendallSurvey
-North Chicago,Kendall,75,Model,#d971b15,North ChicagoKendallModel
-North Chicago,Kendall,0,Survey,#d971b15,North ChicagoKendallSurvey
-North Cook,Kendall,80,Model,#43c8ac,North CookKendallModel
-South Chicago,Kendall,10,Model,#8c2b83,South ChicagoKendallModel
-South Chicago,Kendall,579.11302,Survey,#8c2b83,South ChicagoKendallSurvey
-South Cook,Kendall,70,Model,#b98064,South CookKendallModel
-South Cook,Kendall,818.1559653,Survey,#b98064,South CookKendallSurvey
-West Chicago,Kendall,95,Model,#848bd16,West ChicagoKendallModel
-West Cook,Kendall,495,Model,#b44946,West CookKendallModel
-West Cook,Kendall,264.0479752,Survey,#b44946,West CookKendallSurvey
-Will,Kendall,3985,Model,#bc4865,WillKendallModel
-Will,Kendall,1498.113082,Survey,#bc4865,WillKendallSurvey
-CBD,Lake,2520,Model,#c26ac21,CBDLakeModel
-CBD,Lake,17146.89905,Survey,#c26ac21,CBDLakeSurvey
 DuPage,Lake,1900,Model,#9aaf3e,DuPageLakeModel
 DuPage,Lake,11234.357,Survey,#9aaf3e,DuPageLakeSurvey
-Kane,Lake,2155,Model,#573702,KaneLakeModel
-Kane,Lake,5457.404767,Survey,#573702,KaneLakeSurvey
-Kendall,Lake,15,Model,#c99049,KendallLakeModel
-Lake,Lake,292880,Model,#5083de,LakeLakeModel
-Lake,Lake,288142.0191,Survey,#5083de,LakeLakeSurvey
-McHenry,Lake,17290,Model,#698d3c,McHenryLakeModel
-McHenry,Lake,17546.85288,Survey,#698d3c,McHenryLakeSurvey
-North Chicago,Lake,3655,Model,#d971b15,North ChicagoLakeModel
-North Chicago,Lake,14330.79526,Survey,#d971b15,North ChicagoLakeSurvey
-North Cook,Lake,57495,Model,#43c8ac,North CookLakeModel
-North Cook,Lake,57642.94966,Survey,#43c8ac,North CookLakeSurvey
-South Chicago,Lake,75,Model,#8c2b83,South ChicagoLakeModel
-South Chicago,Lake,1453.638435,Survey,#8c2b83,South ChicagoLakeSurvey
-South Cook,Lake,5,Model,#b98064,South CookLakeModel
-South Cook,Lake,1232.840622,Survey,#b98064,South CookLakeSurvey
-West Chicago,Lake,465,Model,#848bd16,West ChicagoLakeModel
-West Chicago,Lake,1456.138327,Survey,#848bd16,West ChicagoLakeSurvey
-West Cook,Lake,2765,Model,#b44946,West CookLakeModel
-West Cook,Lake,6038.018268,Survey,#b44946,West CookLakeSurvey
-Will,Lake,35,Model,#bc4865,WillLakeModel
-Will,Lake,697.146477,Survey,#bc4865,WillLakeSurvey
-CBD,McHenry,250,Model,#c26ac21,CBDMcHenryModel
-CBD,McHenry,3658.822113,Survey,#c26ac21,CBDMcHenrySurvey
 DuPage,McHenry,1360,Model,#9aaf3e,DuPageMcHenryModel
 DuPage,McHenry,2077.427926,Survey,#9aaf3e,DuPageMcHenrySurvey
-Kane,McHenry,9600,Model,#573702,KaneMcHenryModel
-Kane,McHenry,10995.29565,Survey,#573702,KaneMcHenrySurvey
-Kendall,McHenry,5,Model,#c99048,KendallMcHenryModel
-Kendall,McHenry,0,Survey,#c99048,KendallMcHenrySurvey
-Lake,McHenry,14195,Model,#5083de,LakeMcHenryModel
-Lake,McHenry,15556.11399,Survey,#5083de,LakeMcHenrySurvey
-McHenry,McHenry,86290,Model,#698d3c,McHenryMcHenryModel
-McHenry,McHenry,116197.8526,Survey,#698d3c,McHenryMcHenrySurvey
-North Chicago,McHenry,445,Model,#d971b15,North ChicagoMcHenryModel
-North Chicago,McHenry,2948.188399,Survey,#d971b15,North ChicagoMcHenrySurvey
-North Cook,McHenry,9660,Model,#43c8ac,North CookMcHenryModel
-North Cook,McHenry,14713.98642,Survey,#43c8ac,North CookMcHenrySurvey
-South Chicago,McHenry,0,Model,#8c2b83,South ChicagoMcHenryModel
-South Chicago,McHenry,130.2602923,Survey,#8c2b83,South ChicagoMcHenrySurvey
-South Cook,McHenry,0,Model,#b98064,South CookMcHenryModel
-South Cook,McHenry,317.1417833,Survey,#b98064,South CookMcHenrySurvey
-West Chicago,McHenry,20,Model,#848bd16,West ChicagoMcHenryModel
-West Chicago,McHenry,735.2060778,Survey,#848bd16,West ChicagoMcHenrySurvey
-West Cook,McHenry,2145,Model,#b44946,West CookMcHenryModel
-West Cook,McHenry,4698.26641,Survey,#b44946,West CookMcHenrySurvey
-Will,McHenry,0,Model,#bc4865,WillMcHenryModel
-Will,McHenry,317.1417833,Survey,#bc4865,WillMcHenrySurvey
-CBD,North Chicago,89420,Model,#c26ac21,CBDNorth ChicagoModel
-CBD,North Chicago,87627.86554,Survey,#c26ac21,CBDNorth ChicagoSurvey
-DuPage,North Chicago,11375,Model,#9aaf3e,DuPageNorth ChicagoModel
-DuPage,North Chicago,14688.05973,Survey,#9aaf3e,DuPageNorth ChicagoSurvey
-Kane,North Chicago,1515,Model,#573702,KaneNorth ChicagoModel
-Kane,North Chicago,3494.137415,Survey,#573702,KaneNorth ChicagoSurvey
-Kendall,North Chicago,80,Model,#c99048,KendallNorth ChicagoModel
-Kendall,North Chicago,173.094136,Survey,#c99048,KendallNorth ChicagoSurvey
-Lake,North Chicago,3590,Model,#5083de,LakeNorth ChicagoModel
-Lake,North Chicago,10598.3491,Survey,#5083de,LakeNorth ChicagoSurvey
-McHenry,North Chicago,665,Model,#698d3c,McHenryNorth ChicagoModel
-McHenry,North Chicago,3296.912474,Survey,#698d3c,McHenryNorth ChicagoSurvey
-North Chicago,North Chicago,345430,Model,#d971b15,North ChicagoNorth ChicagoModel
-North Chicago,North Chicago,201480.2985,Survey,#d971b15,North ChicagoNorth ChicagoSurvey
-North Cook,North Chicago,67460,Model,#43c8ac,North CookNorth ChicagoModel
-North Cook,North Chicago,64038.75442,Survey,#43c8ac,North CookNorth ChicagoSurvey
-South Chicago,North Chicago,10105,Model,#8c2b83,South ChicagoNorth ChicagoModel
-South Chicago,North Chicago,18943.37777,Survey,#8c2b83,South ChicagoNorth ChicagoSurvey
-South Cook,North Chicago,3010,Model,#b98064,South CookNorth ChicagoModel
-South Cook,North Chicago,8723.306752,Survey,#b98064,South CookNorth ChicagoSurvey
-West Chicago,North Chicago,45260,Model,#848bd16,West ChicagoNorth ChicagoModel
-West Chicago,North Chicago,57152.71811,Survey,#848bd16,West ChicagoNorth ChicagoSurvey
-West Cook,North Chicago,26720,Model,#b44946,West CookNorth ChicagoModel
-West Cook,North Chicago,27566.05673,Survey,#b44946,West CookNorth ChicagoSurvey
-Will,North Chicago,870,Model,#bc4865,WillNorth ChicagoModel
-Will,North Chicago,3148.288519,Survey,#bc4865,WillNorth ChicagoSurvey
-CBD,North Cook,9965,Model,#c26ac21,CBDNorth CookModel
-CBD,North Cook,31608.54956,Survey,#c26ac21,CBDNorth CookSurvey
-DuPage,North Cook,24625,Model,#9aaf3e,DuPageNorth CookModel
-DuPage,North Cook,40647.22813,Survey,#9aaf3e,DuPageNorth CookSurvey
-Kane,North Cook,12300,Model,#573702,KaneNorth CookModel
-Kane,North Cook,14756.90703,Survey,#573702,KaneNorth CookSurvey
-Kendall,North Cook,105,Model,#c99048,KendallNorth CookModel
-Kendall,North Cook,248.950875,Survey,#c99048,KendallNorth CookSurvey
-Lake,North Cook,57200,Model,#5083de,LakeNorth CookModel
-Lake,North Cook,62022.56915,Survey,#5083de,LakeNorth CookSurvey
-McHenry,North Cook,12895,Model,#698d3c,McHenryNorth CookModel
-McHenry,North Cook,16503.30952,Survey,#698d3c,McHenryNorth CookSurvey
-North Chicago,North Cook,76815,Model,#d971b15,North ChicagoNorth CookModel
-North Chicago,North Cook,71365.92105,Survey,#d971b15,North ChicagoNorth CookSurvey
-North Cook,North Cook,436545,Model,#43c8ac,North CookNorth CookModel
-North Cook,North Cook,367812.8841,Survey,#43c8ac,North CookNorth CookSurvey
-South Chicago,North Cook,1745,Model,#8c2b83,South ChicagoNorth CookModel
-South Chicago,North Cook,10053.25476,Survey,#8c2b83,South ChicagoNorth CookSurvey
-South Cook,North Cook,865,Model,#b98064,South CookNorth CookModel
-South Cook,North Cook,8158.110583,Survey,#b98064,South CookNorth CookSurvey
-West Chicago,North Cook,4885,Model,#848bd16,West ChicagoNorth CookModel
-West Chicago,North Cook,16447.13944,Survey,#848bd16,West ChicagoNorth CookSurvey
-West Cook,North Cook,42785,Model,#b44946,West CookNorth CookModel
-West Cook,North Cook,37379.99396,Survey,#b44946,West CookNorth CookSurvey
-Will,North Cook,800,Model,#bc4865,WillNorth CookModel
-Will,North Cook,6682.679022,Survey,#bc4865,WillNorth CookSurvey
-CBD,South Chicago,45305,Model,#c26ac21,CBDSouth ChicagoModel
-CBD,South Chicago,47664.25337,Survey,#c26ac21,CBDSouth ChicagoSurvey
-DuPage,South Chicago,1615,Model,#9aaf3e,DuPageSouth ChicagoModel
-DuPage,South Chicago,5081.288454,Survey,#9aaf3e,DuPageSouth ChicagoSurvey
-Kane,South Chicago,45,Model,#573702,KaneSouth ChicagoModel
-Kane,South Chicago,0,Survey,#573702,KaneSouth ChicagoSurvey
-Kendall,South Chicago,10,Model,#c99048,KendallSouth ChicagoModel
-Kendall,South Chicago,579.11302,Survey,#c99048,KendallSouth ChicagoSurvey
-Lake,South Chicago,55,Model,#5083de,LakeSouth ChicagoModel
-Lake,South Chicago,1555.592863,Survey,#5083de,LakeSouth ChicagoSurvey
-McHenry,South Chicago,0,Model,#698d3c,McHenrySouth ChicagoModel
-McHenry,South Chicago,130.2602923,Survey,#698d3c,McHenrySouth ChicagoSurvey
-North Chicago,South Chicago,8840,Model,#d971b15,North ChicagoSouth ChicagoModel
-North Chicago,South Chicago,19181.83769,Survey,#d971b15,North ChicagoSouth ChicagoSurvey
-North Cook,South Chicago,1150,Model,#43c8ac,North CookSouth ChicagoModel
-North Cook,South Chicago,11509.04069,Survey,#43c8ac,North CookSouth ChicagoSurvey
-South Chicago,South Chicago,129740,Model,#8c2b83,South ChicagoSouth ChicagoModel
-South Chicago,South Chicago,126696.5464,Survey,#8c2b83,South ChicagoSouth ChicagoSurvey
-South Cook,South Chicago,28920,Model,#b98064,South CookSouth ChicagoModel
-South Cook,South Chicago,32531.56748,Survey,#b98064,South CookSouth ChicagoSurvey
-West Chicago,South Chicago,31135,Model,#848bd16,West ChicagoSouth ChicagoModel
-West Chicago,South Chicago,41854.00374,Survey,#848bd16,West ChicagoSouth ChicagoSurvey
-West Cook,South Chicago,6585,Model,#b44946,West CookSouth ChicagoModel
-West Cook,South Chicago,13201.59032,Survey,#b44946,West CookSouth ChicagoSurvey
-Will,South Chicago,1855,Model,#bc4865,WillSouth ChicagoModel
-Will,South Chicago,7524.551443,Survey,#bc4865,WillSouth ChicagoSurvey
-CBD,South Cook,12825,Model,#c26ac21,CBDSouth CookModel
-CBD,South Cook,28258.28908,Survey,#c26ac21,CBDSouth CookSurvey
-DuPage,South Cook,6305,Model,#9aaf3e,DuPageSouth CookModel
-DuPage,South Cook,10091.84251,Survey,#9aaf3e,DuPageSouth CookSurvey
-Kane,South Cook,50,Model,#573702,KaneSouth CookModel
-Kane,South Cook,2151.841395,Survey,#573702,KaneSouth CookSurvey
-Kendall,South Cook,110,Model,#c99048,KendallSouth CookModel
-Kendall,South Cook,307.8369462,Survey,#c99048,KendallSouth CookSurvey
-Lake,South Cook,5,Model,#5083de,LakeSouth CookModel
-Lake,South Cook,1170.036635,Survey,#5083de,LakeSouth CookSurvey
-McHenry,South Cook,0,Model,#698d3c,McHenrySouth CookModel
-McHenry,South Cook,317.1417833,Survey,#698d3c,McHenrySouth CookSurvey
-North Chicago,South Cook,2240,Model,#d971b15,North ChicagoSouth CookModel
-North Chicago,South Cook,7623.236523,Survey,#d971b15,North ChicagoSouth CookSurvey
-North Cook,South Cook,540,Model,#43c8ac,North CookSouth CookModel
-North Cook,South Cook,7085.967488,Survey,#43c8ac,North CookSouth CookSurvey
-South Chicago,South Cook,31040,Model,#8c2b83,South ChicagoSouth CookModel
-South Chicago,South Cook,29479.70237,Survey,#8c2b83,South ChicagoSouth CookSurvey
-South Cook,South Cook,241770,Model,#b98064,South CookSouth CookModel
-South Cook,South Cook,190738.0367,Survey,#b98064,South CookSouth CookSurvey
-West Chicago,South Cook,8860,Model,#848bd16,West ChicagoSouth CookModel
-West Chicago,South Cook,16900.39047,Survey,#848bd16,West ChicagoSouth CookSurvey
-West Cook,South Cook,16345,Model,#b44946,West CookSouth CookModel
-West Cook,South Cook,23082.97215,Survey,#b44946,West CookSouth CookSurvey
-Will,South Cook,25715,Model,#bc4865,WillSouth CookModel
-Will,South Cook,31347.81804,Survey,#bc4865,WillSouth CookSurvey
-CBD,West Chicago,43440,Model,#c26ac21,CBDWest ChicagoModel
-CBD,West Chicago,34802.62475,Survey,#c26ac21,CBDWest ChicagoSurvey
-DuPage,West Chicago,5460,Model,#9aaf3e,DuPageWest ChicagoModel
-DuPage,West Chicago,14552.17875,Survey,#9aaf3e,DuPageWest ChicagoSurvey
-Kane,West Chicago,465,Model,#573702,KaneWest ChicagoModel
-Kane,West Chicago,791.3689478,Survey,#573702,KaneWest ChicagoSurvey
-Kendall,West Chicago,130,Model,#c99048,KendallWest ChicagoModel
-Kendall,West Chicago,989.5861702,Survey,#c99048,KendallWest ChicagoSurvey
-Lake,West Chicago,515,Model,#5083de,LakeWest ChicagoModel
-Lake,West Chicago,1346.221678,Survey,#5083de,LakeWest ChicagoSurvey
-McHenry,West Chicago,30,Model,#698d3c,McHenryWest ChicagoModel
-McHenry,West Chicago,843.4528537,Survey,#698d3c,McHenryWest ChicagoSurvey
-North Chicago,West Chicago,48810,Model,#d971b15,North ChicagoWest ChicagoModel
-North Chicago,West Chicago,57684.32671,Survey,#d971b15,North ChicagoWest ChicagoSurvey
-North Cook,West Chicago,3990,Model,#43c8ac,North CookWest ChicagoModel
-North Cook,West Chicago,14888.60622,Survey,#43c8ac,North CookWest ChicagoSurvey
-South Chicago,West Chicago,38265,Model,#8c2b83,South ChicagoWest ChicagoModel
-South Chicago,West Chicago,43146.00727,Survey,#8c2b83,South ChicagoWest ChicagoSurvey
-South Cook,West Chicago,10935,Model,#b98064,South CookWest ChicagoModel
-South Cook,West Chicago,19213.62578,Survey,#b98064,South CookWest ChicagoSurvey
-West Chicago,West Chicago,154885,Model,#848bd16,West ChicagoWest ChicagoModel
-West Chicago,West Chicago,136105.2336,Survey,#848bd16,West ChicagoWest ChicagoSurvey
-West Cook,West Chicago,29755,Model,#b44946,West CookWest ChicagoModel
-West Cook,West Chicago,29548.22514,Survey,#b44946,West CookWest ChicagoSurvey
-Will,West Chicago,2085,Model,#bc4865,WillWest ChicagoModel
-Will,West Chicago,6192.288748,Survey,#bc4865,WillWest ChicagoSurvey
-CBD,West Cook,22225,Model,#c26ac21,CBDWest CookModel
-CBD,West Cook,25907.50319,Survey,#c26ac21,CBDWest CookSurvey
-DuPage,West Cook,61050,Model,#9aaf3e,DuPageWest CookModel
-DuPage,West Cook,56197.11252,Survey,#9aaf3e,DuPageWest CookSurvey
-Kane,West Cook,12215,Model,#573702,KaneWest CookModel
-Kane,West Cook,8855.681527,Survey,#573702,KaneWest CookSurvey
-Kendall,West Cook,690,Model,#c99048,KendallWest CookModel
-Kendall,West Cook,264.0479752,Survey,#c99048,KendallWest CookSurvey
-Lake,West Cook,2365,Model,#5083de,LakeWest CookModel
-Lake,West Cook,5048.64678,Survey,#5083de,LakeWest CookSurvey
-McHenry,West Cook,2870,Model,#698d3c,McHenryWest CookModel
-McHenry,West Cook,5611.504893,Survey,#698d3c,McHenryWest CookSurvey
-North Chicago,West Cook,26075,Model,#d971b15,North ChicagoWest CookModel
-North Chicago,West Cook,26849.64752,Survey,#d971b15,North ChicagoWest CookSurvey
-North Cook,West Cook,35925,Model,#43c8ac,North CookWest CookModel
-North Cook,West Cook,36835.13008,Survey,#43c8ac,North CookWest CookSurvey
-South Chicago,West Cook,8620,Model,#8c2b83,South ChicagoWest CookModel
-South Chicago,West Cook,13836.73942,Survey,#8c2b83,South ChicagoWest CookSurvey
-South Cook,West Cook,19290,Model,#b98064,South CookWest CookModel
-South Cook,West Cook,22607.55653,Survey,#b98064,South CookWest CookSurvey
-West Chicago,West Cook,28840,Model,#848bd16,West ChicagoWest CookModel
-West Chicago,West Cook,26920.12383,Survey,#848bd16,West ChicagoWest CookSurvey
-West Cook,West Cook,196400,Model,#b44946,West CookWest CookModel
-West Cook,West Cook,161996.3825,Survey,#b44946,West CookWest CookSurvey
-Will,West Cook,11070,Model,#bc4865,WillWest CookModel
-Will,West Cook,9667.091072,Survey,#bc4865,WillWest CookSurvey
-CBD,Will,4750,Model,#c26ac21,CBDWillModel
-CBD,Will,12850.90457,Survey,#c26ac21,CBDWillSurvey
 DuPage,Will,39150,Model,#9aaf3e,DuPageWillModel
 DuPage,Will,39406.704,Survey,#9aaf3e,DuPageWillSurvey
+Kane,Chicago (CBD),2400,Model,#573702,KaneChicago (CBD)Model
+Kane,Chicago (CBD),5730.294701,Survey,#573702,KaneChicago (CBD)Survey
+Kane,Chicago (N),1515,Model,#573702,KaneChicago (N)Model
+Kane,Chicago (N),3494.137415,Survey,#573702,KaneChicago (N)Survey
+Kane,Chicago (S),45,Model,#573702,KaneChicago (S)Model
+Kane,Chicago (S),0,Survey,#573702,KaneChicago (S)Survey
+Kane,Chicago (W),465,Model,#573702,KaneChicago (W)Model
+Kane,Chicago (W),791.3689478,Survey,#573702,KaneChicago (W)Survey
+Kane,Cook (N),12300,Model,#573702,KaneCook (N)Model
+Kane,Cook (N),14756.90703,Survey,#573702,KaneCook (N)Survey
+Kane,Cook (S),50,Model,#573702,KaneCook (S)Model
+Kane,Cook (S),2151.841395,Survey,#573702,KaneCook (S)Survey
+Kane,Cook (W),12215,Model,#573702,KaneCook (W)Model
+Kane,Cook (W),8855.681527,Survey,#573702,KaneCook (W)Survey
+Kane,DuPage,39855,Model,#573702,KaneDuPageModel
+Kane,DuPage,49791.88887,Survey,#573702,KaneDuPageSurvey
+Kane,Kane,168885,Model,#573702,KaneKaneModel
+Kane,Kane,129257.8687,Survey,#573702,KaneKaneSurvey
+Kane,Kendall,7545,Model,#573702,KaneKendallModel
+Kane,Kendall,2690.404513,Survey,#573702,KaneKendallSurvey
+Kane,Lake,2155,Model,#573702,KaneLakeModel
+Kane,Lake,5457.404767,Survey,#573702,KaneLakeSurvey
+Kane,McHenry,9600,Model,#573702,KaneMcHenryModel
+Kane,McHenry,10995.29565,Survey,#573702,KaneMcHenrySurvey
 Kane,Will,3800,Model,#573702,KaneWillModel
 Kane,Will,6708.037787,Survey,#573702,KaneWillSurvey
+Kendall,Chicago (CBD),440,Model,#c99048,KendallChicago (CBD)Model
+Kendall,Chicago (CBD),1163.790899,Survey,#c99048,KendallChicago (CBD)Survey
+Kendall,Chicago (N),80,Model,#c99048,KendallChicago (N)Model
+Kendall,Chicago (N),173.094136,Survey,#c99048,KendallChicago (N)Survey
+Kendall,Chicago (S),10,Model,#c99048,KendallChicago (S)Model
+Kendall,Chicago (S),579.11302,Survey,#c99048,KendallChicago (S)Survey
+Kendall,Chicago (W),130,Model,#c99048,KendallChicago (W)Model
+Kendall,Chicago (W),989.5861702,Survey,#c99048,KendallChicago (W)Survey
+Kendall,Cook (N),105,Model,#c99048,KendallCook (N)Model
+Kendall,Cook (N),248.950875,Survey,#c99048,KendallCook (N)Survey
+Kendall,Cook (S),110,Model,#c99048,KendallCook (S)Model
+Kendall,Cook (S),307.8369462,Survey,#c99048,KendallCook (S)Survey
+Kendall,Cook (W),690,Model,#c99048,KendallCook (W)Model
+Kendall,Cook (W),264.0479752,Survey,#c99048,KendallCook (W)Survey
+Kendall,DuPage,9895,Model,#c99048,KendallDuPageModel
+Kendall,DuPage,6698.939047,Survey,#c99048,KendallDuPageSurvey
+Kendall,Kane,8305,Model,#c99048,KendallKaneModel
+Kendall,Kane,1317.354917,Survey,#c99048,KendallKaneSurvey
+Kendall,Kendall,19525,Model,#c99048,KendallKendallModel
+Kendall,Kendall,4170.722014,Survey,#c99048,KendallKendallSurvey
+Kendall,Lake,15,Model,#c99049,KendallLakeModel
+Kendall,McHenry,5,Model,#c99048,KendallMcHenryModel
+Kendall,McHenry,0,Survey,#c99048,KendallMcHenrySurvey
 Kendall,Will,4310,Model,#c99048,KendallWillModel
 Kendall,Will,1490.096236,Survey,#c99048,KendallWillSurvey
+Lake,Chicago (CBD),2985,Model,#5083de,LakeChicago (CBD)Model
+Lake,Chicago (CBD),19771.82652,Survey,#5083de,LakeChicago (CBD)Survey
+Lake,Chicago (N),3590,Model,#5083de,LakeChicago (N)Model
+Lake,Chicago (N),10598.3491,Survey,#5083de,LakeChicago (N)Survey
+Lake,Chicago (S),55,Model,#5083de,LakeChicago (S)Model
+Lake,Chicago (S),1555.592863,Survey,#5083de,LakeChicago (S)Survey
+Lake,Chicago (W),515,Model,#5083de,LakeChicago (W)Model
+Lake,Chicago (W),1346.221678,Survey,#5083de,LakeChicago (W)Survey
+Lake,Cook (N),57200,Model,#5083de,LakeCook (N)Model
+Lake,Cook (N),62022.56915,Survey,#5083de,LakeCook (N)Survey
+Lake,Cook (S),5,Model,#5083de,LakeCook (S)Model
+Lake,Cook (S),1170.036635,Survey,#5083de,LakeCook (S)Survey
+Lake,Cook (W),2365,Model,#5083de,LakeCook (W)Model
+Lake,Cook (W),5048.64678,Survey,#5083de,LakeCook (W)Survey
+Lake,DuPage,1850,Model,#5083de,LakeDuPageModel
+Lake,DuPage,12304.22099,Survey,#5083de,LakeDuPageSurvey
+Lake,Kane,1635,Model,#5083de,LakeKaneModel
+Lake,Kane,4868.654379,Survey,#5083de,LakeKaneSurvey
+Lake,Kendall,5,Model,#5083de,LakeKendallModel
+Lake,Kendall,103.1892874,Survey,#5083de,LakeKendallSurvey
+Lake,Lake,292880,Model,#5083de,LakeLakeModel
+Lake,Lake,288142.0191,Survey,#5083de,LakeLakeSurvey
+Lake,McHenry,14195,Model,#5083de,LakeMcHenryModel
+Lake,McHenry,15556.11399,Survey,#5083de,LakeMcHenrySurvey
 Lake,Will,30,Model,#5083de,LakeWillModel
 Lake,Will,1003.605684,Survey,#5083de,LakeWillSurvey
+McHenry,Chicago (CBD),310,Model,#698d3c,McHenryChicago (CBD)Model
+McHenry,Chicago (CBD),3534.214085,Survey,#698d3c,McHenryChicago (CBD)Survey
+McHenry,Chicago (N),665,Model,#698d3c,McHenryChicago (N)Model
+McHenry,Chicago (N),3296.912474,Survey,#698d3c,McHenryChicago (N)Survey
+McHenry,Chicago (S),0,Model,#698d3c,McHenryChicago (S)Model
+McHenry,Chicago (S),130.2602923,Survey,#698d3c,McHenryChicago (S)Survey
+McHenry,Chicago (W),30,Model,#698d3c,McHenryChicago (W)Model
+McHenry,Chicago (W),843.4528537,Survey,#698d3c,McHenryChicago (W)Survey
+McHenry,Cook (N),12895,Model,#698d3c,McHenryCook (N)Model
+McHenry,Cook (N),16503.30952,Survey,#698d3c,McHenryCook (N)Survey
+McHenry,Cook (S),0,Model,#698d3c,McHenryCook (S)Model
+McHenry,Cook (S),317.1417833,Survey,#698d3c,McHenryCook (S)Survey
+McHenry,Cook (W),2870,Model,#698d3c,McHenryCook (W)Model
+McHenry,Cook (W),5611.504893,Survey,#698d3c,McHenryCook (W)Survey
+McHenry,DuPage,1910,Model,#698d3c,McHenryDuPageModel
+McHenry,DuPage,1721.128988,Survey,#698d3c,McHenryDuPageSurvey
+McHenry,Kane,10790,Model,#698d3c,McHenryKaneModel
+McHenry,Kane,11528.65174,Survey,#698d3c,McHenryKaneSurvey
+McHenry,Kendall,10,Model,#698d3c,McHenryKendallModel
+McHenry,Kendall,0,Survey,#698d3c,McHenryKendallSurvey
+McHenry,Lake,17290,Model,#698d3c,McHenryLakeModel
+McHenry,Lake,17546.85288,Survey,#698d3c,McHenryLakeSurvey
+McHenry,McHenry,86290,Model,#698d3c,McHenryMcHenryModel
+McHenry,McHenry,116197.8526,Survey,#698d3c,McHenryMcHenrySurvey
 McHenry,Will,0,Model,#698d3c,McHenryWillModel
 McHenry,Will,0,Survey,#698d3c,McHenryWillSurvey
-North Chicago,Will,745,Model,#d971b15,North ChicagoWillModel
-North Chicago,Will,4538.010709,Survey,#d971b15,North ChicagoWillSurvey
-North Cook,Will,615,Model,#43c8ac,North CookWillModel
-North Cook,Will,7724.711758,Survey,#43c8ac,North CookWillSurvey
-South Chicago,Will,1620,Model,#8c2b83,South ChicagoWillModel
-South Chicago,Will,5766.150773,Survey,#8c2b83,South ChicagoWillSurvey
-South Cook,Will,26570,Model,#b98064,South CookWillModel
-South Cook,Will,30438.10057,Survey,#b98064,South CookWillSurvey
-West Chicago,Will,1695,Model,#848bd16,West ChicagoWillModel
-West Chicago,Will,4400.174876,Survey,#848bd16,West ChicagoWillSurvey
-West Cook,Will,9105,Model,#b44946,West CookWillModel
-West Cook,Will,5638.514973,Survey,#b44946,West CookWillSurvey
+Will,Chicago (CBD),5790,Model,#bc4865,WillChicago (CBD)Model
+Will,Chicago (CBD),16119.1125,Survey,#bc4865,WillChicago (CBD)Survey
+Will,Chicago (N),870,Model,#bc4865,WillChicago (N)Model
+Will,Chicago (N),3148.288519,Survey,#bc4865,WillChicago (N)Survey
+Will,Chicago (S),1855,Model,#bc4865,WillChicago (S)Model
+Will,Chicago (S),7524.551443,Survey,#bc4865,WillChicago (S)Survey
+Will,Chicago (W),2085,Model,#bc4865,WillChicago (W)Model
+Will,Chicago (W),6192.288748,Survey,#bc4865,WillChicago (W)Survey
+Will,Cook (N),800,Model,#bc4865,WillCook (N)Model
+Will,Cook (N),6682.679022,Survey,#bc4865,WillCook (N)Survey
+Will,Cook (S),25715,Model,#bc4865,WillCook (S)Model
+Will,Cook (S),31347.81804,Survey,#bc4865,WillCook (S)Survey
+Will,Cook (W),11070,Model,#bc4865,WillCook (W)Model
+Will,Cook (W),9667.091072,Survey,#bc4865,WillCook (W)Survey
+Will,DuPage,48550,Model,#bc4865,WillDuPageModel
+Will,DuPage,44473.50629,Survey,#bc4865,WillDuPageSurvey
+Will,Kane,4450,Model,#bc4865,WillKaneModel
+Will,Kane,6513.343161,Survey,#bc4865,WillKaneSurvey
+Will,Kendall,3985,Model,#bc4865,WillKendallModel
+Will,Kendall,1498.113082,Survey,#bc4865,WillKendallSurvey
+Will,Lake,35,Model,#bc4865,WillLakeModel
+Will,Lake,697.146477,Survey,#bc4865,WillLakeSurvey
+Will,McHenry,0,Model,#bc4865,WillMcHenryModel
+Will,McHenry,317.1417833,Survey,#bc4865,WillMcHenrySurvey
 Will,Will,184695,Model,#bc4865,WillWillModel
 Will,Will,172658.4331,Survey,#bc4865,WillWillSurvey

@@ -7,6 +7,7 @@ d3.csv("data/csv17_model_transit_access.csv", function(data) {
   for (var i = 0; i < data.length; i++) {
   data5.push({selectorid: data[i].selectorid,
                 count: parseInt(data[i].QUANTITY, 10),
+                percent: data[i].percent,
               label: data[i].trip_mode})
 }
   drawPieChartFunction(data5, "#pieTransitModelMode", 'tooltip5','colorscale2');
@@ -18,6 +19,7 @@ d3.csv("data/csv18_survey_transit_access.csv", function(data) {
   for (var i = 0; i < data.length; i++) {
   data6.push({selectorid: data[i].selectorid,
               count: parseInt(data[i].QUANTITY, 10),
+              percent: data[i].percent,
               label: data[i].trip_mode})
 }
   drawPieChartFunction(data6, "#pieTransitSurveyMode", 'tooltip6', 'colorscale2');
@@ -142,16 +144,12 @@ d3.csv("data/csv18_survey_transit_access.csv", function(data) {
           .duration(500)
           .attr("d", arcHover)
           .each(function(d1) {
-            var total = d3.sum(data, function(d2) {
-              return d2.count;
-            });
-            var percent = (100 * d1.value / total).toPrecision(3);
 
             // find correct tooltip
             var tooltip = d3.select(this.ownerSVGElement.parentNode.childNodes[1]);
             tooltip.select('.label').html("<font color = 'black'>" + d1.data.label + "</font>");
             tooltip.select('.count').html(formatComma(d1.data.count));
-            tooltip.select('.percent').html(percent + '%');
+            tooltip.select('.percent').html(d3.format(".1f")(d1.data.percent * 100) + '%');
             tooltip
             .style('display', 'block')
 

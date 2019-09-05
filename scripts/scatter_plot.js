@@ -1,7 +1,13 @@
 function makeScatter(csv_file, chart_id, modelvalue,obsvalue,category_value,rsquared){
+  if (chart_id == '#scatter_vmt'){
   var margin = {top: 5, right: 5, bottom: 50, left: 80},
-	    width = 500 - margin.left - margin.right,
-	    height = 450 - margin.top - margin.bottom;
+	    width = 650 - margin.left - margin.right,
+	    height = 500 - margin.top - margin.bottom;
+    } else {
+      var margin = {top: 5, right: 5, bottom: 50, left: 80},
+          width = 500 - margin.left - margin.right,
+          height = 450 - margin.top - margin.bottom;
+    }
 
   var formatValue = d3.format(".2s");
     var padding = 10;
@@ -56,12 +62,21 @@ function makeScatter(csv_file, chart_id, modelvalue,obsvalue,category_value,rsqu
 	    var lr = linearRegression(yval,xval);
       d3.select("#"+rsquared).text(parseFloat(lr.r2).toPrecision(3));
       var max = d3.max(data, function (d) { return d[obsvalue]; });
-
+if (chart_id == '#scatter_vmt'){
         svg.append("g")
-          .style("font", "14px sans-serif")
+          .style("font", "15px sans-serif")
           .attr("class", "x axis")
           .attr("transform", "translate(0," + (height-padding) + ")")
           .call(xAxis);
+        } else {
+          svg.append("g")
+            .style("font", "14px sans-serif")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + (height-padding) + ")")
+            .call(xAxis);
+        }
+
+
 
         svg.append("text")
         .style("font", "14px sans-serif")
@@ -71,11 +86,19 @@ function makeScatter(csv_file, chart_id, modelvalue,obsvalue,category_value,rsqu
         .style("text-anchor", "middle")
         .text("Observed: " + obsvalue);
 
+if (chart_id == '#scatter_vmt'){
       svg.append("g")
-          .style("font", "14px sans-serif")
+          .style("font", "15px sans-serif")
           .attr("class", "y axis")
           .attr("transform", "translate(" + padding + ",0)")
           .call(yAxis);
+        } else {
+          svg.append("g")
+              .style("font", "14px sans-serif")
+              .attr("class", "y axis")
+              .attr("transform", "translate(" + padding + ",0)")
+              .call(yAxis);
+        }
 
       svg.append("text")
       .style("font", "14px sans-serif")

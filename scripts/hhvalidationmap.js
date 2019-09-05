@@ -92,9 +92,10 @@ var overlays1 = {
 
 // settings for initial page load
 var whichone1 = 'difAU_0'
-var whichone_name1 = 'Households with 0 vehicles'
+var whichone_name1 = '0-vehicle households'
 var model_count_var1 = 'HHAU_0m'
 var census_count_var1 = 'HHAU_0p'
+d3.select("#overlaytext").text(vehtext);
 var firsttime1 = true
 drawmap1()
 

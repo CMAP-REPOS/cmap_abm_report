@@ -77,7 +77,7 @@ function make_h_stacked_tripsbymode(csv_file,divID, legendID){
             var x = coordinates[0];
             var y = coordinates[1];
             // what subgroup are we hovering?
-            var subgroupName = d3.select(this.parentNode).datum().key; // This was the tricky part
+            var subgroupName = d3.select(this.parentNode).datum().key; // This was the tricky parTour Arrival and Departure Time of Day
             var subgroupValue = d.data[subgroupName];
             var obsvalue;
             var modelvalue;
@@ -92,10 +92,7 @@ function make_h_stacked_tripsbymode(csv_file,divID, legendID){
                 }
                 return d
               })
-
-            //console.log(obsvalue)
             div.transition()
-              //.attr("class","popuptext")
               .duration(200)
               .style("opacity", .9);
             div.html(
@@ -116,6 +113,19 @@ function make_h_stacked_tripsbymode(csv_file,divID, legendID){
 
 
             // Highlight all rects of this subgroup with opacity 0.8. It is possible to select them since they have a specific class = their name.
+            if (subgroupName == "Shared_ride_3+_(non-toll)"){
+              subgroupName = "Shared\\_ride\\_3\\+\\_\\(non-toll\\)"
+            } else if (subgroupName == "Drive_alone_(non-toll)"){
+              subgroupName = "Drive\\_alone\\_\\(non-toll\\)"
+            } else if (subgroupName == "Shared_ride_2_(non-toll)"){
+              subgroupName = "Shared\\_ride\\_2\\_\\(non-toll\\)"
+            } else if (subgroupName == "Drive_alone_(toll)"){
+              subgroupName = "Drive\\_alone\\_\\(toll\\)"
+            } else if (subgroupName == "Shared_ride_3+_(toll)"){
+              subgroupName = "Shared\\_ride\\_3\\+\\_\\(toll\\)"
+            } else if (subgroupName == "Shared_ride_2_(toll)"){
+              subgroupName = "Shared\\_ride\\_2\\_\\(toll\\)"
+            }
             d3.selectAll("." + subgroupName)
               .style("opacity", 1)
           }

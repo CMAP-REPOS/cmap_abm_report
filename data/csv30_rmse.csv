@@ -1,4 +1,4 @@
-Volume Range,Links,AADT,Model Volumes,rmse,%rmse,Florida DOT,Weight (Miles)
+Volume Range,Links,AADT,Model Volumes,RMSE,%RMSE,Florida DOT Targets,Weight (Miles)
 0 - 4999,10003,2609.8,3642.26,2343.01,0.9,1,5744.01
 5000 - 9999,7497,7140.24,7580.53,2927.32,0.41,0.45,2648.54
 10000 - 14999,3643,12180,12394,4094.27,0.34,0.35,1167.86

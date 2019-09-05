@@ -38,7 +38,7 @@
               <img src='data/images/cmap_shortid_margins_RGB-01-01.png' height="30px">
             </a>
             <h3 class="navbar-text">Activity Based Model (ABM) Calibration and Validation Report</h3>
-            <p class="navbar-text navbar-right">August 2019 Release </p>
+            <p class="navbar-text navbar-right">September 2019 Release </p>
           </div>
         </nav>
 
@@ -70,12 +70,6 @@
                   </li>
 
                   <li>
-                    <a class="calibration" href="#10" role="tab" data-toggle="tab">
-                      Tours
-                    </a>
-                  </li>
-
-                  <li>
                     <a class="calibration" href="#5" role="tab" data-toggle="tab">
                       Trip Mode
                     </a>
@@ -86,6 +80,12 @@
                       Trip Activities
                     </a>
                   </li>
+
+                  <li>
+                      <a class="calibration" href="#10" role="tab" data-toggle="tab">
+                        Tours
+                      </a>
+                    </li>
 
                   <li>
                     <a class="calibration" href="#4" role="tab" data-toggle="tab">
@@ -251,7 +251,7 @@
                   <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
                       A synthetic population provides the foundation for modeling individuals’ travel behavior within an activity based model.
-                      Using Census data and other socioeconomic information, a complete set of households for a modeling area is developed
+                      Using Census data and other socioeconomic information, a complete set of households for the CMAP modeling area is developed.
                       (see <a href="#2" role="tab" data-toggle="tab">Population Synthesis</a> tab). This dataset contains all of the relevant attributes about each household and individual that are required by the
                       ABM.
                       Since the Census Bureau does not release detailed information about every household and individual, household and person records are replicated in order to generate a complete set of households for the modeling area. Target
@@ -397,9 +397,8 @@
             <div class="col-md-7">
               <h2>Population Synthesis</h2>
               <p>
-                Using Census data and other socioeconomic information, a complete set of households for the CMAP modeling area is developed. This dataset contains all of the relevant attributes about each household and for each individual living in
-                those households that are required by the ABM. While this population is statistically representative of the Census data, the actual households and individuals are “synthetic” in that they do not represent identifiable people and an
-                individual household in the Census data may be replicated numerous times in order to generate a complete distribution of households in the modeling inputs.</p>
+                Using Census data and other socioeconomic information, a complete set of households for the CMAP modeling area is developed. This dataset contains all of the relevant attributes about each household and for each individual living in those households, which is required to run the ABM. While this population is statistically representative of the Census data, the actual households and individuals are “synthetic” in that they do not represent identifiable people and an individual household in the Census data may be replicated numerous times in order to generate a complete distribution of households in the modeling inputs. 
+              </p>
               <p>
                 The current population synthesis software used by CMAP is PopSynIII. The socioeconomic data developed from CMAP’s regional forecasting and Local Area Allocation procedures provide the subzone-level control values for all <dfn
                   data-info="ON TO 2050 is the region's long-range comprehensive plan, adopted by CMAP in 2018">ON TO 2050</dfn>
@@ -411,13 +410,14 @@
               <p> Individuals are classified into one of eight mutually exclusive categories:</p>
               <ul>
                 <li>Full-time worker: Age 16+ working at least 35 hours per week for more than 30 weeks out of the year.</li>
-                <li>University student: Age 18+ and school enrollment is college undergraduate or graduate school.</li>
                 <li>Part-time worker: Age 16+ and a non-student employed less than full time.</li>
                 <li>Non-working adult: Age 16-64, non-working and a non-student.</li>
                 <li>Non-working senior: Age 65+, non-working and a non-student.</li>
-                <li>Driving age student: Age 16-19, not a full-time worker or college student.</li>
-                <li>Non-driving student: Age 6-15.</li>
                 <li>Pre-school: Age under 6.</li>
+                <li>Non-driving student: Age 6-15.</li>
+                <li>Driving age student: Age 16-19, not a full-time worker or college student.</li>
+                <li>University student: Age 18+ and school enrollment is college undergraduate or graduate school.</li>
+
               </ul>
               Data note: The observed data used Public Use Microdata Areas (PUMAs).  PUMAs are statistical geographic areas defined by the U.S. 
               Census Bureau for the dissemination of Public Use Microdata Sample (PUMS) data.  Two of the PUMAs used to gather observed 
@@ -720,17 +720,8 @@
             <div class="col-md-6">
               <h2>Work Flows</h2>
               <p>
-                  Commute trips are an important part of a region’s overall travel pattern and are a key component of 
-                  congestion experienced on the transportation system especially during the morning and evening hours.  
-                  Ensuring that commuters are traveling between the appropriate home and work locations is one important way 
-                  to verify that travel demand models reflect actual travel patterns.  <br><br>
-                  Note there are two sources for observed data on this page.  The first three tables use data from 
-                  Journey-to-work flows from the Census Transportation Planning Package (CTPP).  The remaining two charts
-                  use data from household travel surveys.  
-                  CTPP data is generally used to estimate models that address work flows due to the 
-                  large sample of data included. Data from household travel surveys can be used to supplement the 
-                  journey-to-work information from the CTPP, as travel surveys offer more detailed information about the 
-                  trips than the Census provides. 
+                Commute trips are an important part of a region’s overall travel pattern and are a key component of congestion experienced on the transportation system, especially during the morning and evening hours.  Ensuring that commuters are traveling between the appropriate home and work locations is one important way to verify that travel demand models reflect actual travel patterns.   <br><br>
+                Note there are two sources for observed data on this page. The first three tables use data from journey-to-work flows from the Census Transportation Planning Package (CTPP). The remaining two charts use data from household travel surveys. CTPP data is generally used to estimate models that address work flows due to the large sample of data included. Data from household travel surveys can be used to supplement the journey-to-work information from the CTPP, as travel surveys offer more detailed information about the trips than the Census provides. 
               </p>
               <br>
             </div>
@@ -775,10 +766,24 @@
               <h3>Difference Model and Observed Journey to Work Flows</h3>
               <br>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
               <br />
               <table id="caldiffcountyflow"> </table>
             </div>
+            <div class="col col-md-2">
+              <div class="container">
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <img src="data/images/icons8-add-50.png" class="image">
+                  <div class="overlay">
+                    <p>
+                      The model does a good job of replicating the number of commute trips being made within and between the counties in the CMAP region.  For instance, the model matches the Census data in showing that the top three work locations in northeastern Illinois are Cook, DuPage and Lake counties, in that order.  Both the modeled and observed data show that close to 45% of the total work trips made in the extended modeling area occur entirely within Cook County.  The model is underestimating the number of Cook and DuPage residents that live in one county and work in the other.  It is also underestimating the number of Cook residents that work in Lake and Will counties.
+                    </p>
+                  </div>
+                </div>
+          </div>
           </div>
           <div class="row">
             <div class="col-md-1"></div>
@@ -871,26 +876,7 @@
               <div id="obsChord"></div>
             </div>
             </div>
-            <div class="col col-md-2">
-                <div class="container">
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <img src="data/images/icons8-add-50.png" class="image">
-                    <div class="overlay">
-                      <p>
-                          The model does a good job of replicating the number of commute trips being made within and between the 
-                          counties in the CMAP region.  For instance the model matches the Census data in showing that the top three 
-                          work locations in northeastern Illinois are Cook, DuPage and Lake counties, in that order.  Both the modeled 
-                          and observed data show that close to 45% of the total work trips made in the extended modeling area occur 
-                          entirely within Cook County.  The model is underestimating the number of Cook and DuPage residents that live 
-                          in one county and work in the other.  It is also underestimating the number of Cook residents that work in 
-                          Lake and Will counties.
-                      </p>
-                    </div>
-                  </div>
-            </div>
+
           </div>
           <!--- Row End -->
           <div class="row">
@@ -967,12 +953,7 @@
             <div class="col-md-7">
               <h2>Trips by Mode</h2>
               <p>
-                The CT-RAMP model includes eleven options for travel modes.
-                These include the non-motorized options of walking or cycling, as well as transit,
-                taxis and school bus. There are six options for auto trips, which are categorized by
-                the number of vehicle occupants and whether or not the trip includes a <dfn data-info="Definition goes here">toll</dfn>. Vehicle
-                occupancy categories include single occupants, two people sharing a vehicle or more than
-                two people sharing a vehicle.
+                The CT-RAMP model includes eleven options for travel modes. These include the non-motorized options of walking or cycling, as well as transit, taxis and school bus. There are six options for auto trips, which are categorized by the number of vehicle occupants and whether or not the trip includes a toll. Vehicle occupancy categories include single occupants, two people sharing a vehicle, or more than two people sharing a vehicle.
               </p>
               <br>
             </div>
@@ -999,6 +980,8 @@
               <br />
               <div class="small">
                 See more about transit in the <a href="#7" role="tab" data-toggle="tab">Transit</a> tab. <br>
+                  <img src="data/images/Cursor-Click-2-icon.png" width="20px">
+                  Hover over bars to compare trips by mode.
                 <br><br>
               </div>
             </div>
@@ -1044,13 +1027,6 @@
               <!-- <div class="colborder"></div>end -->
               <h3>Trips by Person Type and Mode</h3>
               <br>
-              <!-- <p>
-                        Modeled trip modes for non-student person types appear to be
-                        very close to observed trips modes. Though student trips do not
-                        seem to be reflected as accurately, they make up a small fraction
-                        of all trips. In many cases, modeled student trips are closer to the
-                        observed trips, in terms of number of trips, than other person types.
-                      </p> -->
               <p>
                 <span id="tripspersonmode_p"></span>
                 of all trips</p>
@@ -1228,13 +1204,7 @@
                 Tours may be completed by an individual or can include multiple people traveling together.
               </p>
               <p>
-                Daily activities are categorized into three types: mandatory, nonmandatory or home.
-                Activities are placed within these three categories based on the relative importance
-                of the role they play in defining one’s day. Mandatory activities
-                (which include work and school) are the most inflexible in terms of
-                when they occur and where they are located. nonmandatory activities
-                have greater flexibility in when they occur and where their locations are.
-                Home tours are stationary and are not assigned a travel mode.
+                Daily activities are categorized into three types: mandatory, nonmandatory or home. Activities are placed within these three categories based on the relative importance of the role they play in defining one’s day. Mandatory activities (which include work and school) are the most inflexible in terms of when they occur and where they are located. Nonmandatory activities have greater flexibility in when they occur and where their locations are. Home tours are stationary and are not assigned a travel mode.
               </p>
               <br>
             </div>
@@ -1280,9 +1250,7 @@
                 <img src="data/images/icons8-add-50.png" class="image">
                 <div class="overlay">
                   <p>
-                    The model does a good job of matching the number of mandatory tours especially for Full-Time Workers and Non-Driving students,
-                    which account for nearly 80% of these kinds of tours. The modeled data also closely match the pattern of nonmandatory and home
-                    activities, with the notable exception being that the model is overestimating of the number of these kinds of tours for Non-working Adults.
+                    The model does a good job of matching the number of mandatory tours especially for full-time workers and non-driving students, which account for nearly 80% of mandatory tours. The modeled data also closely match the pattern of nonmandatory and home activities, with the notable exception being that the model is overestimating of the number of nonmandatory tours for non-working adults.
                   </p>
                 </div>
               </div>
@@ -1402,44 +1370,38 @@
             <div class="col-md-7">
               <h2>Trip Activities</h2>
               <p>
-                The CMAP ABM classifies trips into ten activity types.
-                Activities can be grouped into general categories according to their
-                priority in determining an individual’s schedule: mandatory and nonmandatory.
-                Mandatory activities include:</p>
+                The CMAP ABM classifies trips into ten activity types. Activities can be grouped into two categories according to their priority in determining an individual’s schedule: mandatory and nonmandatory. Mandatory activities include: </p>
               <ul>
                 <li>
-                  Work - Working at regular workplace.
+                  Work - Working at regular workplace. 
                 </li>
                 <li>
-                  University - Attending college.
+                  University - Attending college. 
                 </li>
                 <li>
-                  School - Attending school grades k-12.
+                  School - Attending school grades K-12. 
                 </li>
               </ul>
               <p>
-                The remaining activities are all considered nonmandatory:</p>
+                The remaining activities are all considered nonmandatory: </p>
               <ul>
                 <li>
-                  Shopping - Shopping away from home.
+                  Shopping - Shopping away from home. 
                 </li>
                 <li>
-                  Escort - Picking up/droping off passengers (auto trips only).
+                  Escort - Picking up/dropping off passengers (auto trips only). 
                 </li>
                 <li>
-                  Eating out - Eating outside of home.
+                  Eating out - Eating outside of home. 
                 </li>
                 <li>
-                  Work-based - A Subset of activies (such as going to
-                  lunch or traveling to meet a client) that occur with the place of work as the anchor location.
+                  Work-based - A subset of activities (such as going to lunch or traveling to meet a client) that occur with the place of work as the anchor location. 
                 </li>
                 <li>
-                  Maintenance - Activies that include medical appointments and other personal business or services that people engage in, excluding
-                  shopping and escorting activities.
+                  Maintenance - Activities that include medical appointments and other personal business or services that people engage in, excluding shopping and escorting activities. 
                 </li>
                 <li>
-                  Discretionary - Engaging in social or recreational activities; attending sporting or cultural events;
-                  and attending religious activities or performing volunteer activities
+                  Discretionary - Engaging in social or recreational activities; attending sporting or cultural events; and attending religious activities or performing volunteer activities. 
                 </li>
               </ul>
               <br>
@@ -1635,6 +1597,20 @@
             <div class="col-md-6">
               <div id="scatter_transit"></div>
             </div>
+            <div class="col col-md-2">
+              <div class="container">
+                <br />
+                <br />
+                <br />
+                <br />
+                <img src="data/images/icons8-add-50.png" class="image">
+                <div class="overlay">
+                  <p>
+                    The graph shows a strong correlation between the modeled and survey data.  The coefficient of determination (0.905) indicates the regression line is a good fit and accounts for more than 90% of the variation between the data sets.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="row">
@@ -1722,7 +1698,7 @@
                 <img src="data/images/icons8-add-50.png" class="image">
                 <div class="overlay">
                   <p>
-                    A slightly lower percentage modeled of transit trips (10.1%) are accessed by walking than observed transit trips (11.6%).   </p>
+                    A slightly higher percentage of modeled transit trips (89.9%) are accessed by walking than observed transit trips (88.4%).   </p>
                 </div>
               </div>
             </div>
@@ -1839,14 +1815,7 @@
             <div class="col-md-6">
               <h2>Highway Assignment</h2>
               <p>
-                During Highway Assignment, the individual motor vehicle trips developed by the ABM are routed along the model 
-                transportation network from origin to destination in order to estimate traffic flows and network conditions.  
-                As additional vehicles attempt to use the same roadway segments during the assignment, travel becomes more congested 
-                and travel times increase.  The assignment procedures implement a series of steps moving various portions of traffic 
-                onto alternative routes in an attempt to reduce congestion and minimize travel costs.  Equilibrium is reached within 
-                the highway assignment when vehicles cannot change paths without negatively impacting travel times.  Once equilibrium 
-                is reached, the volume of vehicles on each <dfn data-info="Definition goes here">link</dfn> is retained and can be used to calculate standard measures such as vehicle 
-                miles of travel (VMT).
+                During Highway Assignment, the individual motor vehicle trips developed by the ABM are routed along the model transportation network from origin to destination in order to estimate traffic flows and network conditions.  As additional vehicles attempt to use the same roadway segments during the assignment, travel becomes more congested and travel times increase.  The assignment procedures implement a series of steps moving various portions of traffic onto alternative routes in an attempt to reduce congestion and minimize travel costs.  Equilibrium is reached within the highway assignment when vehicles cannot change paths without negatively impacting travel times.  Once equilibrium is reached, the volume of vehicles on each roadway segment is retained and can be used to calculate standard measures such as vehicle miles of travel (VMT).
             </p>
               <br>
             </div>
@@ -1876,7 +1845,7 @@
                 <img src="data/images/icons8-add-50.png" class="image">
                 <div class="overlay">
                   <p>
-                    In general, the model underestimates the total VMT for the 7-county region (160 million VMT vs. 167 million VMT).  However, the VMT shares by county are very similar between the modeled and observed data.  Counties with less VMT – like Kendall and McHenry – have very similar modeled vs. Observed VMT shares, while Cook County accounts for 53.3% of modeled VMT and 50% of observed VMT.  </p>
+                    In general, the model underestimates the total VMT for the 7-county region (160 million VMT vs. 167 million VMT). However, the VMT shares by county are very similar between the modeled and observed data. Counties with less VMT – like Kendall and McHenry – have very similar modeled vs. observed VMT shares, while Cook County accounts for 53.3% of modeled VMT and 50% of observed VMT.  </p>
                 </div>
               </div>
             </div>
@@ -1938,12 +1907,7 @@
                   <img src="data/images/icons8-add-50.png" class="img-fluid image">
                   <div class="overlay">
                     <p>
-                        The scatterplot shows a strong correlation in between the observed average daily link volume 
-                        and the modeled daily link volume, which is verified with an r-squared value of 0.86. A value 
-                        of 0.86 means that the regression line shown is a good fit of the observed data and accounts 
-                        for 86% of the variation in the data. 
-                        The correlation between the observed and modeled average daily link volumes is stronger for 
-                        interstates than for arterials/collectors. 
+                      The scatterplot shows a strong correlation between the observed average daily link volume and the modeled daily link volume, which is verified with an r-squared value of 0.86. A value of 0.86 means that the regression line shown is a good fit of the observed data and accounts for 86% of the variation in the data. The correlation between the observed and modeled average daily link volumes is stronger for interstates than for arterials/collectors.
                     </p>
                   </div>
                 </div>
@@ -1991,16 +1955,7 @@
                   <img src="data/images/icons8-add-50.png" class="img-fluid image">
                   <div class="overlay">
                     <p>
-                        The model does a good job reflecting the amount of weekday traffic on the 
-                        interstate system, both on the freeways and tollways.  The overall number 
-                        of Vehicle Miles Traveled on each interstate section estimated by the model 
-                        is very close to the values measured in the observed data.  Separating the VMT 
-                        into auto and commercial vehicle components shows that these values are well 
-                        represented in the ABM. For instance, on I-290 the auto VMT is only around 5.5% 
-                        too high and the commercial vehicle VMT is just 1% high.  I-80 has the highest 
-                        share of commercial vehicle VMT; the model not only shows this same relationship 
-                        but the auto and commercial vehicle VMT values are less than 1% different that 
-                        the observed data.
+                      The model does a good job reflecting the amount of weekday traffic on the interstate system, both on the freeways and tollways.  The overall number of Vehicle Miles Traveled on each interstate section estimated by the model is very close to the values measured in the observed data.  Separating the VMT into auto and commercial vehicle components shows that these values are well represented in the ABM. For instance, on I-290 the auto VMT is only around 5.5% too high and the commercial vehicle VMT is just 1% high.  I-80 has the highest share of commercial vehicle VMT; the model not only shows this same relationship but the auto and commercial vehicle VMT values are less than 1% different than the observed data.
                     </p>
                   </div>
                 </div>

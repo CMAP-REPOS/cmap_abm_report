@@ -292,6 +292,10 @@ h3 {
     box-shadow: 0px 1px 3px grey
 }
 
+#commutemap .leaflet-pane {
+  z-index:0
+}
+
 div.vmttooltip {
   position: absolute;
   text-align: center;
@@ -369,8 +373,8 @@ dfn {
   cursor: help;
   font-style: normal;
   position: relative;
-
 }
+
 dfn::after {
   content: attr(data-info);
   display: inline;
@@ -386,7 +390,9 @@ dfn::after {
   color: #fff;
   pointer-events: none; /* This prevents the box from apearing when hovered. */
   transition: opacity 250ms, top 250ms;
+  z-index: 1000;
 }
+
 dfn::before {
   content: '';
   display: block;
@@ -398,6 +404,7 @@ dfn::before {
   border-bottom-color: rgba(0,0,0,0.8);
   transition: opacity 250ms, top 250ms;
 }
+
 dfn:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
 dfn:hover::after,
 dfn:hover::before {opacity: 1;}

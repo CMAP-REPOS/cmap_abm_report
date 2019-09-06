@@ -210,9 +210,6 @@
               <h3>CMAP Modeling Area and Network</h3>
               <div id="intromaplegend"></div><br>
               <p class="small">Only portions of Lee, Ogle, and LaSalle counties are included in the modeling area.</p>
-              <!-- <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
-              <p>Click within modeling area to view county name</p> -->
-              <!-- <input name="introrecenter" type="button" value="Re-center map" onClick="zoomTo(center);" /> -->
               <button type="button" class="btn btn-default btn-xs" id="introrecenter" value="Re-center map" onClick="zoomTo(center,regionmap)">Recenter Map</button>
             </div><!-- end -->
             <div class="col-md-6">
@@ -234,8 +231,6 @@
               <p>The following provides a brief outline of the major steps involved in running CMAP’s ABM. An initial set of procedures determines zonal accessibility measures and identifies network connectivity for transit trips. Preliminary sets of
                 highway and transit trip assignments are run to generate realistic congested travel times that are used by CT-RAMP when daily activities are scheduled.</p>
               <br>
-              <!-- <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
-              <p>Click on modeling step panel to reveal description</p> -->
             </div> <!-- end -->
             <div class="col-md-6">
               <br>
@@ -915,9 +910,8 @@
           </div>
           <div class="row">
             <div class="col-md-1"></div>
-            <div class="col col-md-3">
+            <div class="col col-md-2">
               <h3>Work Trips by Mode and Distance</h3>
-              <!--HOLD FOR Work Trips by Mode & Distance-->
               <br>
               <p>
                 <span id="worktripsmodedistance_p"></span>
@@ -938,14 +932,13 @@
               <br><br>
               <div id="worktripsdistanceLegend"></div>
               <div class="small" style="margin-top: 20px;">
-                Bins include the starting value and go up to the ending value (e.g. 2.5-5 Mile contains trips starting at 2.5 miles and up to but not including 5 miles.)
                 Shared ride 3+ toll and non-toll trips are not shown separately due to extremely small sample of these trips captured by the Travel Tracker Survey.
                 <br><br>
               </div><br>
               <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
               <p class="small">Select trip mode from dropdown to view observed and model comparison.</p>
             </div>
-            <div class="col col-md-5">
+            <div class="col col-md-6">
               <div id="ModeByDistance"></div>
             </div>
             <div class="col col-md-2">
@@ -957,13 +950,7 @@
                   <img src="data/images/icons8-add-50.png" class="image">
                   <div class="overlay">
                     <p>
-                        Driving is the most frequently used mode getting to work in the region and the model does a
-                        reasonable job replicating the number of people driving different distances to work.  Nearly
-                        two-thirds of the commute trips in the region are people driving alone on trips that do not involve
-                        paying a toll and the modeled trips match the distance pattern for this group well, somewhat overestimating
-                        the extremely short trips (under 2.5 miles) and underestimating the trips longer than 30 miles.  A similar
-                        pattern is seen in the transit trips – the longer trips are under-represented in the model and the shorter
-                        trips are over-represented. </p>
+                      Driving is the most frequently used mode for traveling to work in the region and the model does a reasonable job replicating the number of people driving different distances to work.  Nearly two-thirds of the commute trips in the region are people driving alone on trips that do not involve paying a toll and the modeled trips match the distance pattern for this group well, somewhat overestimating the extremely short trips (under 2.5 miles) and underestimating the trips longer than 30 miles.  A similar pattern is seen in the transit trips – the longer trips are underrepresented in the model and the shorter trips are overrepresented. </p>
                   </div>
                 </div>
               </div>
@@ -1625,6 +1612,8 @@
                 <br><b>r<sup>2</sup></b> = <text_div id="transitrs"></text_div>
               </p>
               <div id="transitodmap"></div>
+              <br>
+              <button type="button" class="btn btn-default btn-xs" id="transitrecenter" value="Re-center map" onClick="zoomTo(center,transitmap)">Recenter Map</button>
             </div>
             <div class="col-md-6">
               <div id="scatter_transit"></div>
@@ -2217,8 +2206,7 @@
             <div class="col-md-6">
               <h2>Commute Trips Validation</h2>
               <p>
-                  The analysis of commute trips focus on comparing the patterns of travel from home (place of residence) to work
-                  (primary place of work). 
+                The analysis of commute trips focuses on comparing the patterns of travel from home (place of residence) to work (primary place of work).
               </p>
               <br>
             </div>
@@ -2238,7 +2226,8 @@
                 = <text_div id="jtwr2"></text_div>
               </p>
               <br>
-              <div id="commutemap"></div>
+              <div id="commutemap"></div><br>
+              <button type="button" class="btn btn-default btn-xs" id="introrecenter" value="Re-center map" onClick="zoomTo(center,commutemap)">Recenter Map</button>
             </div>
             <div class="col-md-6">
               <div id="scatter_jtw"></div>
@@ -2252,17 +2241,13 @@
                 <img src="data/images/icons8-add-50.png" class="img-fluid image">
                 <div class="overlay">
                   <p>
-                    The graph shows an extremely strong relationship between
-                    the data sets, which is verified by the value of 0.998.
-                    This coefficient of determination indicates that the
-                    regression line is a nearly perfect fit with the
-                    observed data and accounts for more than 90% of
-                    the variation in the data.
+                    The graph shows an extremely strong relationship between the data sets, which is verified by the value of 0.998. This coefficient of determination indicates that the regression line is a nearly perfect fit with the observed data and accounts for more than 99% of the variation in the data.
                   </p>
                 </div>
               </div>
             </div>
           </div>
+          <br>
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-8 colborder"> </div>

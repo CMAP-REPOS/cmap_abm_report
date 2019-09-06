@@ -37,7 +37,7 @@
             <a class="navbar-brand" href="https://www.cmap.illinois.gov/" target="_blank">
               <img src='data/images/cmap_shortid_margins_RGB-01-01.png' height="30px">
             </a>
-            <h3 class="navbar-text">Activity Based Model (ABM) Calibration and Validation Report</h3>
+            <h3 class="navbar-text">Activity-Based Model (ABM) Calibration and Validation Report</h3>
             <p class="navbar-text navbar-right">September 2019 Release </p>
           </div>
         </nav>
@@ -152,6 +152,7 @@
           <p style="margin-bottom:10px">
             <strong>Model calibration</strong> ensures that the various components of the overall model replicate observed data for a base year.  Calibration requires adjusting parameters for individual sub-models to ensure that they each produce realistic results.  Calibration is complete once model results match the observed patterns found in the Census, regional household travel surveys and transit origin-destination surveys.  CMAP's ABM is calibrated to a base year of 2010 because the regional household travel survey data available were collected in 2007-08. 
             <strong>Model validation</strong> is focused on comparing the final results of a calibrated model to other data sources such as daily traffic counts, daily transit boardings, and more recent Census data.  A best practice within travel demand modeling is to use different datasets for model calibration and validation activities to double-check that the results replicate observed travel patterns.  The CMAP ABM is run to reflect travel conditions for the year 2015.  Validation demonstrates that the sub-models calibrated to 2010 conditions are able to represent the conditions in 2015. 
+            <em>Data source information for each page can be found in the footer. </em>
           </p>
         </div>
 
@@ -210,8 +211,7 @@
             <div class="col-md-1"></div>
             <div class="col-md-2">
               <h3>Model Steps</h3>
-              <p>The following provides a brief outline of the major steps involved in running CMAP’s ABM. An initial set of procedures determines zonal accessibility measures and identifies network connectivity for transit trips. Preliminary sets of
-                highway and transit trip assignments are run to generate realistic congested travel times that are used by CT-RAMP when daily activities are scheduled.</p>
+              <p>The following provides a brief outline of the major steps involved in running CMAP’s ABM. Preliminary sets of highway and transit trip assignments are run to generate realistic congested travel times that are used by CT-RAMP when daily activities are scheduled. The model also accounts the relative ease or difficulty involved in reaching destinations using various modes of transportation, including driving, walking and using transit.</p>
               <br>
             </div> <!-- end -->
             <div class="col-md-6">
@@ -320,7 +320,7 @@
                   <div id="collapseSix" class="collapse" aria-labelledby="headingSix">
                     <div class="panel-body">
                       These sub-models add details about the trips occurring within the tours including the mode of travel, the departure time from each location and the parking location for auto trips. See <a href="#5" role="tab" data-toggle="tab">Trip Mode</a> tab and
-                      <a href="#6" role="tab" data-toggle="tab">Trip Purpose</a> tab.
+                      <a href="#6" role="tab" data-toggle="tab">Trip Activities</a> tab.
                       <center><img src="data/images/triplevel.JPG"></center>
                     </div>
                   </div>
@@ -335,9 +335,8 @@
                   </div>
                   <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven">
                     <div class="panel-body">
-                      Following development of the complete set of tours and trips, that information is assigned to the travel networks
-                      and <dfn data-info="Definition goes here">network equilibrium</dfn> based on route choice creates congested travel times. Highway and transit trips are
-                      assigned through separate procedures. See <a href="#8" role="tab" data-toggle="tab">Highway Assignment</a> tab and
+                      Following development of the complete set of daily activities, trips are assigned to the travel networks. Motor vehicle trips developed by the ABM are routed along the model transportation network from origin to destination in order to estimate traffic flows and network conditions.  Transit trips are assigned to a network that includes all available bus and rail options between their origins and destinations.
+                      See <a href="#8" role="tab" data-toggle="tab">Highway Assignment</a> tab and
                       <a href="#9" role="tab" data-toggle="tab">Transit Assignment</a> tab.
                     </div>
                   </div>
@@ -358,7 +357,7 @@
               </p>
               <p>
                 The current population synthesis software used by CMAP is PopSynIII. The socioeconomic data developed from CMAP’s regional forecasting and Local Area Allocation procedures provide the subzone-level control values for all <dfn
-                  data-info="ON TO 2050 is the region's long-range comprehensive plan, adopted by CMAP in 2018">ON TO 2050</dfn>
+                  data-info="ON TO 2050 is the region's long-range comprehensive plan, adopted in October 2018">ON TO 2050</dfn>
                 model scenarios. CMAP has greatly enhanced the functionality of PopSyn to enforce these controls and generate a distribution of enumerated households that account for the distribution of adults, workers and children within the
                 agency’s
                 forecasting procedures.
@@ -400,8 +399,8 @@
               Note on "Full-time workers": The model defines full-time workers as persons working 30+ weeks in the year and
               35+ hours per week.  Full-time workers in the observed data are persons working 27+ weeks in the year and 35+ hours per week.
               </p><br>
-              <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
-              <p class="small">Hover over population categories to reveal details.</p>
+              <img src="data/images/Cursor-Click-2-icon.png" width="20px">
+              <span class="small">Hover over population categories to reveal details.</span>
             </div> <!-- end -->
             <div class="col-md-6">
               <div id="PopPersonType"></div><!-- end -->
@@ -417,7 +416,7 @@
                   <p>
                       The model closely represents the number of full-time workers in the region (the largest person type by percentage).
                       The model slightly overestimates the number of part-time workers and non-working adults.  The largest disparities
-                      between the modeled and observed populations in terms of percentage points are for the university student and
+                      between the modeled and observed populations in terms of percentage points are for university students and
                       non-working seniors.  In both instances, the model is underrepresenting the population of these person types.
                   </p>
                 </div>
@@ -438,13 +437,8 @@
               <h3>Households by Size</h3>
               <br>
               <div id="hhlegend"></div><!-- end -->
-              <!-- <p class="small">
-                <b>Sources</b><br>
-                Observed- PUMS 2007-2011 <br>
-                Modeled- PopSynIII <br>
-              </p> -->
-              <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
-              <p class="small">Hover over household size categories to reveal details.</p>
+              <img src="data/images/Cursor-Click-2-icon.png" width="20px">
+              <span class="small">Hover over household size categories to reveal details.</span>
             </div> <!-- end -->
             <div class="col-md-6">
               <div id="HouseholdSize" width="100%"></div><!-- end -->
@@ -460,9 +454,9 @@
                   <p>
                     In terms of the percentage of total households, the model slightly underrepresents
                     one-person households in the region. The model also underrepresents the number of two-person households.
-                    However, three- and four-person households
+                    However, three and four-person households
                     are considerably overrepresented in the model. The largest disparity between modeled and observed
-                    households in terms of percentage is for large households (5+ person). </p>
+                    households in terms of percentage is for large households (5+ people). </p>
                 </div>
               </div>
             </div>
@@ -480,9 +474,9 @@
             </div>
             <div class="col-md-2">
               <h3>Household Characteristics</h3>
-              <h5>Households by <div id="hhtitle"></div>
+              <h5>Households by <span id="hhtitle"></span>
               </h5>
-              <br>
+              <br><br>
               <select id="catPopSyn">
                 <option value="age">Head of Household Age</option>
                 <option value="workers">Household Workers</option>
@@ -494,12 +488,10 @@
               <div id="pumsLegend"></div>
               <br>
               <br>
-              <br>
-              <!-- <p class="small">
-                <b>Sources</b><br>
-                Observed- PUMS 2007-2011 <br>
-                Modeled- PopSynIII <br>
-              </p> -->
+              <p class="small">
+                 Income is in 2010 dollars. 
+
+              </p>
             </div><!-- end -->
             <div class="col-md-6">
               </h4><!-- end -->
@@ -584,10 +576,7 @@
             <div class="col-md-7">
               <h2>Vehicle Ownership</h2>
               <p>
-                Vehicle ownership plays an important role in individuals’ travel behavior
-                decisions and helps define the set of travel mode options available to them.  For example, households that own no
-                vehicles may be dependent on transit to make their trips.  Vehicle ownership refers to motor vehicles owned or leased
-                by a household, including autos, pickup trucks, SUVs and motorcycles.
+                  Vehicle ownership plays an important role in individuals’ travel behavior decisions and helps define the set of travel mode options available to them. For example, households that own no vehicles may be dependent on transit to make their trips. Note that vehicle ownership refers to motor vehicles owned or leased by a household, including autos, pickup trucks, SUVs and motorcycles.
               </p>
               <br>
             </div>
@@ -619,9 +608,7 @@
                 <img src="data/images/icons8-add-50.png" class="image">
                 <div class="overlay">
                   <p>
-                    The model does a very good job predicting the number of households
-                    by the number of vehicles owned. The model only slightly under predicts
-                    the number of households for nearly every number of vehicles owned. </p>
+                    The model does a good job predicting the number of vehicles owned by households. It is just slightly under-estimating the number of households with zero or 1 vehicle, and is just slightly over-estimating that number of households that own at least 2 vehicles. </p>
                 </div>
               </div>
             </div>
@@ -650,6 +637,11 @@
               <br>
               <div id="stackedAutoLegend"></div>
               <br>
+              <br>
+              <p class="small">
+                Income is in 2010 dollars. 
+
+             </p>
             </div>
             <div class="col col-md-6">
               <div id="stackedbar"></div>
@@ -663,8 +655,7 @@
                 <img src="data/images/icons8-add-50.png" class="image">
                 <div class="overlay">
                   <p>
-                    The model accurately predicts the distribution of vehicle ownership by household size, household income, and household workers.
-                    However, the model tends to under estimate the number of households with 4+ vehicles for larger households and high income households. </p>
+                      The model accurately predicts the distribution of vehicle ownership by household size, household income, and household workers. However, the model tends to under-estimate the number of households with at least 3 vehicles for larger households and high income households. It is also over-estimating the number of zero-worker households that own at least 2 vehicles. </p>
                 </div>
               </div>
             </div>
@@ -819,7 +810,7 @@
               <br>
               <div style="text-align:left">
                 <button type="button" class="btn btn-default btn-xs" id="wrecenter" value="Re-center map" onClick="zoomTo(center,wflowmap)">Recenter Map</button>
-                <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br />
+                <img src="data/images/Cursor-Click-2-icon.png" width="20px">
                 <span class="small" style="text-align:left">Hover over the chord diagram to see area boundaries on the map. Click on the map to see area name. Choose work flow geographies in the drop down menu to view numerical values for work
                   trips.</span>
               </div>
@@ -841,24 +832,6 @@
             </div>
             </div>
             <div class="col col-md-2">
-                <div class="container">
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <img src="data/images/icons8-add-50.png" class="image">
-                    <div class="overlay">
-                      <p>
-                          The model does a good job of replicating the number of commute trips being made within and between the
-                          counties in the CMAP region.  For instance the model matches the Census data in showing that the top three
-                          work locations in northeastern Illinois are Cook, DuPage and Lake counties, in that order.  Both the modeled
-                          and observed data show that close to 45% of the total work trips made in the extended modeling area occur
-                          entirely within Cook County.  The model is underestimating the number of Cook and DuPage residents that live
-                          in one county and work in the other.  It is also underestimating the number of Cook residents that work in
-                          Lake and Will counties.
-                      </p>
-                    </div>
-                  </div>
             </div>
           </div>
           <!--- Row End -->
@@ -894,11 +867,9 @@
               <br><br>
               <div id="worktripsdistanceLegend"></div>
               <div class="small" style="margin-top: 20px;">
-                Shared ride 3+ toll and non-toll trips are not shown separately due to extremely small sample of these trips captured by the Travel Tracker Survey.
+                Shared ride 3+ toll and non-toll trips are combined due to the small sample of these trips captured by the Travel Tracker Survey.
                 <br><br>
-              </div><br>
-              <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
-              <p class="small">Select trip mode from dropdown to view observed and model comparison.</p>
+              </div>
             </div>
             <div class="col col-md-6">
               <div id="ModeByDistance"></div>
@@ -945,24 +916,17 @@
             <div class="col-md-1"></div>
             <div class="col col-md-2">
               <h3>Trips by Mode</h3>
-
-              <!-- <div class="colborder"></div>end -->
-              <!-- <p>
-                      While the model tends to overestimate walk trips,
-                      all other modes match observed trips fairly well. The model maintains relative shares among mode categories.
-                    </p> -->
               <svg id="modelegend" style="height:300px"></svg>
               <br />
               <div class="small">
                 See more about transit in the <a href="#7" role="tab" data-toggle="tab">Transit</a> tab. <br>
                   <img src="data/images/Cursor-Click-2-icon.png" width="20px">
-                  Hover over bars to compare trips by mode.
+                  <span>Hover over bars to compare trips by mode.</span>
                 <br><br>
               </div>
             </div>
             <div class="col col-md-6">
 
-              <!-- <div class="colborder"></div>end -->
               <div id="stackedmode"></div>
             </div>
 
@@ -1035,9 +999,8 @@
                 <img src="data/images/icons8-add-50.png" class="image">
                 <div class="overlay">
                   <p>
-                    Modeled trip modes for non-student person types appear to be
-                    very close to observed trips modes. Though student trips do not
-                    seem to be reflected as accurately, they make up a small fraction
+                    Modeled trip modes for non-student person types are close to observed trips modes. Though student trips are not reflected as accurately, 
+                    they make up a small fraction
                     of all trips. In many cases, modeled student trips are closer to the
                     observed trips, in terms of number of trips, than other person types.
                   </p>
@@ -1057,13 +1020,8 @@
             <div class="col col-md-1">
             </div>
             <div class="col col-md-2">
-              <!-- <div class="colborder"></div>end -->
               <h3>Trips by Household Income and Mode</h3>
               <br>
-              <!-- <p>
-                      The model does overestimate lower income trips and underestimate higher income trips, but middle income trips compare well to the observed trips. For all household income categories, the mode trends are in agreement with the
-                      observed data.
-                    </p> -->
               <p>
                 <span id="tripsincomemode_p"></span>
                 of all trips</p>
@@ -1075,12 +1033,12 @@
                 <option value="$75k to $100K">$75k to $100K</option>
                 <option value="More than $100k">More than $100k</option>
               </select>
-              <div id="tripsbyincomeLegend"></div>
-              <div class="small" style="margin-top: 80px;">
-              </div><br>
+              <div id="tripsbyincomeLegend"></div><br><br>
+              <div class="small">
+                  Income is in 2010 dollars. 
+              </div>
             </div>
             <div class="col col-md-6">
-              <!-- <div class="colborder"></div>end -->
 
               <div id="ModebyIncome"></div>
             </div>
@@ -1093,7 +1051,7 @@
                 <img src="data/images/icons8-add-50.png" class="image">
                 <div class="overlay">
                   <p>
-                    The model does overestimate lower income trips and underestimate higher income trips, but middle income trips compare well to the observed trips. For all household income categories, the mode trends are in agreement with the
+                    The model overestimates lower income trips and underestimates higher income trips, but middle income trips compare well to the observed trips. For all household income categories, the mode trends are in agreement with the
                     observed data.
                   </p>
                 </div>
@@ -1114,10 +1072,6 @@
               <!-- <div class="colborder"></div>end -->
               <h3>Trips by Purpose and Mode</h3>
               <br>
-              <!-- <p>
-                      Aside from a few, less impactful outliers such as transit and taxi trips for university activities, the model produces generally reasonable results for each trip purpose. The mode distributions of work and shop trips – the most
-                      common trip purposes and nearly half of all trips – have strong correlations to the observed trips.
-                    </p> -->
               <p>
                 <span id="tripspurposemode_p"></span>
                 of all trips</p>
@@ -1134,12 +1088,11 @@
                 <option value="Work">Work</option>
                 <option value="Work-based">Work-based</option>
               </select>
-              <p>
-                See more about trip purpose in the <a href="#6" role="tab" data-toggle="tab">Trip Activities</a> tab.
-              </p>
 
               <div id="tripspurposemodeLegend"></div>
-              <div class="small" style="margin-top: 80px;">
+              <br><br>
+              <div class="small">
+                See more about trip purpose in the <a href="#6" role="tab" data-toggle="tab">Trip Activities</a> tab.
               </div><br>
             </div>
             <div class="col col-md-6">
@@ -1174,7 +1127,7 @@
                 Tours are chains of trips that start at one location and return
                 to that same location. A common example is a trip made from home to work,
                 followed by another commute trip returning home later in the day.
-                Tours are composed of a minimum of two trips. Tours may also contain subtours,
+                Tours are composed of a minimum of two trips. Tours may also contain sub-tours,
                 for example traveling from work to an external meeting and then returning to work.
                 Tours may be completed by an individual or can include multiple people traveling together.
               </p>
@@ -1239,7 +1192,6 @@
           </div>
           <div class="row">
             <div class="col-md-1"></div>
-            <!-- <div class="col-md-2"></div> end -->
             <div class="col-md-8">
               <div class="colborder"></div>
             </div>
@@ -1251,12 +1203,8 @@
               <br>
               <div id="tourlegend"></div>
               <div class="small">
-                <!-- <b>Sources</b><br>
-                Observed -Travel Tracker Survey, 2007-2008. <br>
-                Modeled- CMAP ABM - 2010 Scenario.
-                </p> -->
-                <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
-                <p>Hover over bars to compare tours by person type.</p>
+                <img src="data/images/Cursor-Click-2-icon.png" width="20px">
+                <span>Hover over bars to compare tours by person type.</span>
               </div>
             </div>
             <div class="col col-md-6">
@@ -1311,7 +1259,7 @@
               </select><!-- end -->
               <br>
               <div id="tourtod_legend"></div>
-
+              <br><br>
               <div class="small">
                 Tour arrival and departure times are grouped into 40 time slices of the day.
                 <br><br>
@@ -1333,7 +1281,7 @@
                 <img src="data/images/icons8-add-50.png" class="image">
                 <div class="overlay">
                   <p>
-                    Overall the model accurately predicts tour arrivals and departures by time of day, particularly for all trips.  Modeled work trips very closely resemble observed work trips with noticeable peaks during the morning and
+                    Overall the model accurately predicts tour arrivals and departures by time of day, particularly for all trips.  Modeled work trips closely resemble observed work trips with noticeable peaks during the morning and
                     afternoon/evening rush periods.  Modeled escort tours also resemble the observed data, though to a slightly lesser extent than more predictable work or school tours.  One tour type where the model differs from observed tours is
                     university tours.  Whereas morning departure times are closely related, there is greater variability in the observed arrival times throughout the afternoon that the model does not necessarily capture.
                   </p>
@@ -1403,13 +1351,9 @@
               <svg id="activitieslegend"></svg><!-- end -->
 
               <div class="small">
-                <!-- <br>
-                <b>Sources</b><br>
-                Observed -Travel Tracker Survey, 2007-2008. <br>
-                Modeled- CMAP ABM - 2010 Scenario.
-                </p> -->
-                <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
-                <p>Hover over bars to compare trips by activity</p>
+                <img src="data/images/Cursor-Click-2-icon.png" width="20px">
+                <span>Hover over bars to compare trips by activity</span>
+                <br><br>
               </div>
             </div>
             <div class="col col-md-6">
@@ -1457,14 +1401,6 @@
                 <option value="University Student">University Student</option>
               </select>
               <div id="tripsptypepurposeLegend"></div>
-              <!-- <div class="small" style="margin-top: 80px;">
-                Single-person trips only.<br> -->
-              <!-- <b>Sources</b><br>
-                Observed -Travel Tracker Survey, 2007-2008. <br>
-                Modeled- CMAP ABM - 2010 Scenario. <br> -->
-              <!-- </div><br> -->
-              <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
-              <p class="small">Select person type from dropdown to view observed and model comparison</p>
             </div>
             <div class="col col-md-6">
               <div id="PurposebyType"></div>
@@ -1570,12 +1506,14 @@
             <div class="col-md-2">
               <h3>Modeled vs. Observed Transit Trips Origin and Destination</h3>
               <p>
-                  The scatterplot includes a point for each origin/destination pair. A map of origin/destination areas is shown below, with the standard CMAP modeling area shaded for reference.  
-                <br><b>r<sup>2</sup></b> = <text_div id="transitrs"></text_div>
+                  <p class="small"> The scatterplot includes a point for each origin/destination pair. A map of origin/destination areas is shown below, with the CMAP region shaded for reference.  
+                    </p>
+                <b>r<sup>2</sup></b> = <text_div id="transitrs"></text_div>
               </p>
               <div id="transitodmap"></div>
               <br>
               <button type="button" class="btn btn-default btn-xs" id="transitrecenter" value="Re-center map" onClick="zoomTo(center,transitmap)">Recenter Map</button>
+
             </div>
             <div class="col-md-6">
               <div id="scatter_transit"></div>
@@ -1606,7 +1544,7 @@
             <div class="col-md-1"></div>
             <div class="col col-md-2">
               <h3>Transit Trips by <span id="transitname"></span></h3>
-              <p>Total transit trips: 1.626M (model), <span id="surveytransit"></span> (survey)</p>
+              <p>Total transit trips: 1.63M Model, <span id="surveytransit"></span> Survey</p>
               <select id="catTranDist">
                 <option value="Distance">Distance</option>
                 <option value="Income">Income</option>
@@ -1614,11 +1552,9 @@
               <br>
               <div id="transitaccessLegend"></div>
               <div class="small" style="margin-top:20px;">
-                Distance is the distance of the transit trip that occurred.
-                Survey has fewer total transit trips when viewed by income since not all respondents reported an income value. <br><br>
-              </div><br>
-              <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
-              <p class="small">Select transit access mode from dropdown to view observed and model comparison</p>
+                Distance is the distance of the transit trip that occurred.  Income is in 2010 dollars.  
+                They survey has fewer total transit trips when viewed by income since not all respondents reported an income value. <br><br>
+              </div>
             </div>
             <div class="col col-md-6">
               <div id="TranDist"></div>
@@ -1652,13 +1588,13 @@
             <div class="col-md-1"></div>
             <div class="col col-md-2">
               <h3>Transit Access</h3>
-              <p>
+              <p class="small">
               The Drive to Transit access mode includes individuals parking at transit stations (Park and Ride) and those who are dropped
               off at the station (Kiss and Ride).  The Walk to Transit access mode includes people walking or cycling to get to transit.
               </p>
               <br><br>
-              <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
-              <p class="small">Hover over pie chart to compare transit access.</p>
+              <img src="data/images/Cursor-Click-2-icon.png" width="20px">
+              <span class="small">Hover over pie chart to compare transit access.</span>
             </div>
             <div class="col col-md-6">
             <div class="col col-md-6" align="center">
@@ -1855,7 +1791,7 @@
                 <img src="data/images/icons8-add-50.png" class="image">
                 <div class="overlay">
                   <p>
-                    The model does a very good job of predicting the VMT shares by facility type for a few areas, including Suburban Cook and DuPage Counties.  The share of modeled vs observed VMT on the interstates is almost identical for these two areas.  In Lake County, the model is overestimating the amount of VMT on arterials and underestimating the VMT on local streets.  In the City of Chicago, the model is slightly underestimating the VMT on local streets.  In general, the share of modeled and observed VMT on local streets is lower in the City of Chicago Suburban Cook County, DuPage County and Will County. 
+                    The model does a good job of predicting the VMT shares by facility type for a few areas, including Suburban Cook and DuPage Counties.  The share of modeled vs observed VMT on the interstates is almost identical for these two areas.  In Lake County, the model is overestimating the amount of VMT on arterials and underestimating the VMT on local streets.  In the City of Chicago, the model is slightly underestimating the VMT on local streets.  In general, the share of modeled and observed VMT on local streets is lower in the City of Chicago Suburban Cook County, DuPage County and Will County. 
                   </p>
                 </div>
               </div>
@@ -1913,8 +1849,8 @@
               <div id="interstate_map"></div><br>
               <br>
               <button type="button" class="btn btn-default btn-xs" id="wrecenter" value="Re-center map" onClick="zoomTo(center,interstate_map)">Recenter Map</button><br />
-              <img src="data/images/Cursor-Click-2-icon.png" width="12px"><br>
-              <p class="small">Hover over bars to display values and highlight segment on map. Click on a highway segment on the map to show the name.</p>
+              <img src="data/images/Cursor-Click-2-icon.png" width="12px">
+              <span class="small">Hover over bars to display values and highlight segment on map. Click on a highway segment on the map to show the name.</span>
             </div>
             <div class="col-md-5">
             <div class="col-md-6" style="text-align:center">
@@ -2119,9 +2055,9 @@
                 </section>
                 <div id="transit_map"></div><br>
                 <button type="button" class="btn btn-default btn-xs" id="wrecenter" value="Re-center map" onClick="zoomTo(center,transit_map)">Recenter Map</button><br />
-                <img src="data/images/Cursor-Click-2-icon.png" width="20px"><br>
-                <p class="small">Hover over bars to display values and highlight segment on map.
-                  Click on a transit segment on the map to show the name.</p>
+                <img src="data/images/Cursor-Click-2-icon.png" width="20px">
+                <span class="small">Hover over bars to display values and highlight segment on map.
+                  Click on a transit segment on the map to show the name.</span>
               </div>
               <div class="col-md-5">
                 <div class="col-md-6" style="text-align:center">

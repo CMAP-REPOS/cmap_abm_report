@@ -1629,7 +1629,6 @@
             <div class="col-md-1"></div>
             <div class="col-md-6">
               <h2>Synthetic Household Validation</h2>
-
               <p>
                 This map displays the difference between modeled and observed data for selected household attributes summarized by U.S. Census Public Use Microdata Areas (PUMAs).  PUMAs are geographic areas defined by the U.S. Census Bureau that contain a minimum of 100,000 people.
                 </p>
@@ -1645,6 +1644,7 @@
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-3">
+                <h3>Attribute: <span id="hhmaptitle"></span></h3>
               <br>
               <p>
                 Choose from household size, household income, number of workers, and number of vehicles in households by clicking the category button and selecting the specific household type from the dropdown. Hover over each PUMA to display the values for modeled and observed data.  </p>
@@ -1791,7 +1791,7 @@
                 <img src="data/images/icons8-add-50.png" class="image">
                 <div class="overlay">
                   <p>
-                    The model does a good job of predicting the VMT shares by facility type for a few areas, including Suburban Cook and DuPage Counties.  The share of modeled vs observed VMT on the interstates is almost identical for these two areas.  In Lake County, the model is overestimating the amount of VMT on arterials and underestimating the VMT on local streets.  In the City of Chicago, the model is slightly underestimating the VMT on local streets.  In general, the share of modeled and observed VMT on local streets is lower in the City of Chicago Suburban Cook County, DuPage County and Will County. 
+                    The model does a good job of predicting the VMT shares by facility type for a few areas, including Suburban Cook and DuPage Counties.  The share of modeled vs observed VMT on local roads is almost identical for these two areas.  In Lake County, the model is overestimating the amount of VMT on interstates and underestimating the VMT on arterial streets.  In Chicago, the model is slightly underestimating the VMT on arterial streets.  In general, the share of modeled and observed VMT on arterials is lower in the City of Chicago, Suburban Cook County, DuPage County and Will County. 
                   </p>
                 </div>
               </div>
@@ -1937,7 +1937,7 @@
             <div class="col-md-3">
               <h3>Root Mean Squared Error Analysis</h3>
               <br />
-              <p> Links were grouped into volume bins based on the observed traffic counts (AADT) and linear regression analyses
+              <p class="small"> Links were grouped into volume bins based on the observed traffic counts (AADT) and linear regression analyses
                 were completed for each group. The root mean squared error (RMSE) is a measure commonly-used for model validation
                 analyses and compares the average difference between the observed values and the modeled volume predicted by the
                 linear regression. The percent RMSE standardizes the value by dividing it by the average of the AADT.  The Florida
@@ -2200,7 +2200,7 @@
                         originating from Cook County, it is overestimating the number of these
                         trips that end in Cook County, and underestimating the number of commute
                         trips from Cook to all other counties.
-                        Another observation is that the model is underrepresenting the total number
+                        The model is underrepresenting the total number
                         of work trips originating from Lake County by 6.6%.
                     </p>
                   </div>

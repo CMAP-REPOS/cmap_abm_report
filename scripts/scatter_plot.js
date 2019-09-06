@@ -49,7 +49,7 @@ function makeScatter(csv_file, chart_id, modelvalue,obsvalue,category_value,rsqu
           // colors for foo
       var color = d3.scaleOrdinal()
       .domain(["Arterial/Collector", "Interstate" ])
-      .range(["#0E84AC","#548E3F"])
+      .range(["#9675b4","#5f7b88"])
 
       //x = survey
       //Y = Model
@@ -135,7 +135,7 @@ if (chart_id == '#scatter_vmt'){
 
       var color = d3.scaleOrdinal()
         .domain(keys)
-        .range(["#0E84AC", "#548E3F"])
+        .range(["#9675b4","#5f7b88"])
 
       legend.selectAll("mydots")
         .data(keys)

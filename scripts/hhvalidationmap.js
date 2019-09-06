@@ -97,7 +97,7 @@ var model_count_var1 = 'HHAU_0m'
 var census_count_var1 = 'HHAU_0p'
 d3.select("#overlaytext").text(vehtext);
 var firsttime1 = true
-d3.select('#hhmaptitle').text(whichone_name1)
+d3.select('#hhmaptitle').text('0-vehicle households')
 drawmap1()
 
 

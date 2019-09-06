@@ -37,7 +37,7 @@ function makeStackedChart_nodd2(csv_file,dataTitle,divID){
 
 
     var z = d3.scaleOrdinal()
-        .range(["#9675b4", "#D8BA37", "#5f7b88"]);
+        .range(["#D8BA37", "#9675b4", "#5f7b88"])
 
         var stack = d3.stack()
         .offset(d3.stackOffsetExpand);
@@ -152,7 +152,7 @@ function makeStackedChart_nodd2(csv_file,dataTitle,divID){
 
         var color = d3.scaleOrdinal()
           .domain(keys)
-          .range(["#9675b4", "#D8BA37", "#5f7b88"])
+          .range(["#D8BA37", "#9675b4", "#5f7b88"])
 
         legend.selectAll("mydots")
           .data(keys)

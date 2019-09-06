@@ -29,9 +29,6 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle, 
   .attr("class","axis axis--x")
   .attr("transform", "translate(0," + height + ")");
 
-  // g.append("g")
-  // .attr("class", "axis axis--y");
-
   var z = d3.scaleOrdinal()
   .range(["#0E84AC","#548E3F"]);
 
@@ -44,7 +41,6 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle, 
   var keysLegend = [];
 
   catInt = d3.select(catID).property('value');
-  //console.log(catInt);
 
   //makeChart();
   d3.queue()
@@ -150,13 +146,6 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle, 
 
       barGroups.exit().remove();
 
-      // newdata.sort( d3.select(checkBoxID).property("checked")
-      //   ? function(a, b) {
-      //     return b.totalSlice - a.totalSlice;
-      //   }
-      //   : function(a, b) {
-      //     return sortIndex.indexOf(a.Index) - sortIndex.indexOf(b.Index);
-      //   });
       x0.domain(newdata.map(function(d) {
         return d.Index;
       }));
@@ -170,7 +159,9 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle, 
             .style("text-anchor", "end")
             .attr("dx", "-.8em")
             .attr("dy", ".15em")
+            .attr("font-size", 16)
             .attr("transform", "rotate(-65)");
+
       // ======== Grouped bars ========
 
       g.selectAll(".layer").transition().duration(durations)
@@ -226,7 +217,7 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle, 
         .enter()
       .append("text")
         .attr("fill","black")
-        .attr("font-size",11)
+        .attr("font-size",13)
         .merge(textOnBar);
 
       textOnBar.transition().duration(durations)
@@ -237,47 +228,7 @@ function makeGroupVBar(csv_file,chartID,catID, nogroups,dataDescription,dtitle, 
         })
         .text(function(d) {return formatValue(d.value)})
 
-      // ======== Legend rects ========
-
-
-
-
-
-      // legendText.transition().duration(durations)
-      //   .text(function(d) {
-      //     var sliceLegend = d.slice(0, -2)
-      //     return sliceLegend;
-      //   });
-
-    } // End of update function
-
-    // var legend = d3.select("#"+legendID).append("svg")
-    // .attr("height", 75)
-    // .attr("width", 250)
-
-
-    // legend.selectAll("legendrecs")
-    //   .data(keysLegend)
-    //   .enter()
-    // .append("rect")
-    //   .attr("x", 17)
-    //   .attr("y", 8)
-    //   .attr("width", 15)
-    //   .attr("height", 15)
-    //   .attr("stroke-width",2)
-    //   .merge(legend)
-    //
-    // // ======== Legend text ========
-    //
-    // legend.selectAll("textonlegend")
-    //   .data(keysLegend)
-    //   .enter()
-    // .append("text")
-    //   .attr("x", 30)
-    //   .attr("font-size",12)
-    //   .attr("y", 8)
-    //   .attr("dy", "0.32em");
-
+    } 
 
     legend.selectAll("mydots")
       .data(keys)

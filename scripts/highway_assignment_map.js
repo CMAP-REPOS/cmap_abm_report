@@ -3,17 +3,19 @@
   var mapboxAccessToken = 'pk.eyJ1Ijoic2FyYWhjbWFwIiwiYSI6ImNqc3VzMDl0YzJocm80OXBnZjc2MGk4cGgifQ.S_UmPA1jm5pQPrCCLDs41Q';
   var lat= 41.8781;
   var long = -87.9298;
+
+  var interstate_map = new L.Map("interstate_map", {
+    zoomControl: false,
+    center: new L.LatLng(lat, long),
+    zoom: 8
+});
+
   var center = new L.LatLng(lat, long);
+
   function zoomTo(location, map) {
     map.setView(location, 8);
     }
 
-
-  var interstate_map = new L.Map("interstate_map", {
-      zoomControl: false,
-      center: new L.LatLng(41.8781, -87.9298),
-      zoom: 8
-  });
 
   var baselayer2 = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
       id: 'mapbox.light',

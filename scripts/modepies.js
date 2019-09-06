@@ -72,19 +72,8 @@ d3.csv("data/csv18_survey_transit_access.csv", function(data) {
       var color = d3.
       scaleOrdinal().
       range(['#ABABAB',
-      "#0E84AC","#548E3F",
-
-      '#CFCFCF',
-      '#ABABAB',
-      '#595959',
-
-      '#821E20',
-      '#CF4446',
-
-      '#D7D55C',
-      '#8A882D',
-
-      '#081D58'
+      '#9675b4',
+      '#5F7B88'
       ]).
       domain(d3.keys(data[0]).filter(function(key) {
         return key === 'selectorid';

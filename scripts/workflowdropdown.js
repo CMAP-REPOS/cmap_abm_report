@@ -46,14 +46,14 @@ $("#workto ul.dropdown-menu a").click(function () {
 
 
 $('#transitname').text('Distance')
-$('#surveytransit').text('1.491M')
+$('#surveytransit').text('1.49M')
 $("#catTranDist").click(function () {
     $('#transitname').text($(this).val())
     if ($(this).val() == 'Distance'){
-        $('#surveytransit').text('1.491M')
+        $('#surveytransit').text('1.49M')
     }
     if ($(this).val() == 'Income'){
-        $('#surveytransit').text('1.411M')
+        $('#surveytransit').text('1.41M')
     }
     }
 )

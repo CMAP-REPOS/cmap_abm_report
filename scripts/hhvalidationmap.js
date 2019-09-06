@@ -103,7 +103,8 @@ drawmap1()
 
 // dropdown button events
 function updateview1(buttonarg) {
-    d3.select('#hhmaptitle').text(buttonarg)
+    if (buttonarg.includes('Household Attributes') == false){
+    d3.select('#hhmaptitle').text(buttonarg)}
 
     if (buttonarg == '1-person households') {
         whichone1 = 'difSZ_1'

@@ -140,12 +140,6 @@
                 </a>
               </li>
             </ul>
-
-            <!-- <ul class="nav navbar-nav navbar-right" id="abouttoggle">
-              <li>
-                    <a role="button" data-toggle="collapse" data-target="#collapseIntro" aria-expanded="true" aria-controls="collapseIntro" class="collapsed">About</a>
-                  </li>
-                </ul> -->
           </div>
         </nav>
 
@@ -156,13 +150,8 @@
           <button type="button" class="close" id="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
           <p style="margin-bottom:10px">
-            <strong>Model calibration</strong> is defined as the adjustment of model parameters and constants so that the models better replicate observed data for a base year. CMAP's ABM is calibrated to a base year of 2010.
-            <strong>Model validation</strong> is defined as comparing the results of the calibrated models to observed data.
-            Modeling best practice dictates that different data sets be used to conduct calibration and
-            validation activities; in the absence of other observed data, the sources used for model
-            calibration may be used for validation as long as they examine different aspects of the
-            data or rely on alternate geographic scopes.
-            Model validation results in this report reflect 2015 conditions.
+            <strong>Model calibration</strong> ensures that the various components of the overall model replicate observed data for a base year.  Calibration requires adjusting parameters for individual sub-models to ensure that they each produce realistic results.  Calibration is complete once model results match the observed patterns found in the Census, regional household travel surveys and transit origin-destination surveys.  CMAP's ABM is calibrated to a base year of 2010 because the regional household travel survey data available were collected in 2007-08. 
+            <strong>Model validation</strong> is focused on comparing the final results of a calibrated model to other data sources such as daily traffic counts, daily transit boardings, and more recent Census data.  A best practice within travel demand modeling is to use different datasets for model calibration and validation activities to double-check that the results replicate observed travel patterns.  The CMAP ABM is run to reflect travel conditions for the year 2015.  Validation demonstrates that the sub-models calibrated to 2010 conditions are able to represent the conditions in 2015. 
           </p>
         </div>
 
@@ -178,21 +167,14 @@
                 household in the
                 region, and then transform that information into sequences of trips that occur throughout the day. To accomplish this, ABMs use detailed information about the factors that affect travel decisions, including:</p>
               <ul>
-                <li>Households – the number of adults, children and workers; household income; the number of vehicles available</li>
-                <li>People – age; work or school status; occupation</li>
+                <li>Households – the number of adults, children, and workers; household income; the number of vehicles available</li>
+                <li>People – age; work and school status; occupation</li>
                 <li>Trips – purpose; destination; who is taking the trip; is it part of a sequence of trips that must be completed in a specific order</li>
               </ul>
-              Having all of this data available for individual travelers allows for more-detailed analyses of travelers’ choices than is possible with standard travel demand models.
-              ABMs were developed as a way to better analyze the impacts
-              of policy decisions like managed lanes, congestion pricing and alternative transit fare structures.
-              For more information visit <a href="https://www.cmap.illinois.gov/data/transportation/modeling#CMAPs_Activity_Based_Models">CMAP's Activity Based Models.</a> </p>
+              Having all of this data available for individual travelers allows for a finer level of analysis than standard travel demand models. ABMs were developed as a way to better analyze the impacts of policy decisions like managed lanes, congestion pricing and alternative transit fare structures. For more information, visit 
+              <a href="https://www.cmap.illinois.gov/data/transportation/modeling#CMAPs_Activity_Based_Models" target="_blank">CMAP's Activity-Based Models.</a> </p>
 
-              CMAP's ABM platform is CT-RAMP (Coordinated Travel and Regional activity based Modeling Platform), which was developed open source by a consultant under contract to CMAP. Activity-based modeling is increasingly
-              viewed as a superior method to better understand the socioeconomic determinants of travel choice and for evaluating modern transportation solutions. CMAP's ABM has been developed to demonstrate sensitivity to highway pricing scenarios
-              based on each traveler's individual value of time and to improve model sensitivity to a wider range of nontraditional transit attributes, i.e., attributes such as service reliability, personal safety, station and vehicle cleanliness,
-              and
-              crowding that do not typically inform transit Level of Service calculations. Subsequent work on the ABM has focused on the calibration of selected submodels and the overall validation of the model results.
-              This report represents the results of model calibration and validation activities completed over the last several years by CMAP staff and their consultants.
+              CMAP's ABM platform is CT-RAMP (Coordinated Travel and Regional Activity-Based Modeling Platform), which was developed open source by a consultant under contract to CMAP. Activity-based modeling is increasingly viewed as a superior method to better understand the socioeconomic determinants of travel choice and for evaluating modern transportation solutions. CMAP's ABM has been developed to demonstrate sensitivity to highway pricing scenarios based on each traveler's individual value of time and to improve model sensitivity to a wider range of nontraditional transit attributes, i.e., attributes such as service reliability, personal safety, station and vehicle cleanliness, and crowding that do not typically inform transit Level of Service calculations. Subsequent work on the ABM has focused on the calibration of selected sub-models and the overall validation of the model results. This report represents the results of model calibration and validation activities completed over the last several years by CMAP staff and their consultants. 
               </p>
             </div><!-- end -->
 
@@ -209,7 +191,7 @@
             <div class="col-md-2">
               <h3>CMAP Modeling Area and Network</h3>
               <div id="intromaplegend"></div><br>
-              <p class="small">Only portions of Lee, Ogle, and LaSalle counties are included in the modeling area.</p>
+              <p class="small">Only portions of Lee, Ogle, and LaSalle counties are included in the modeling area.  The modeling area extends beyond the 7-county CMAP region. </p>
               <button type="button" class="btn btn-default btn-xs" id="introrecenter" value="Re-center map" onClick="zoomTo(center,regionmap)">Recenter Map</button>
             </div><!-- end -->
             <div class="col-md-6">
@@ -245,14 +227,9 @@
                   </div>
                   <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
-                      A synthetic population provides the foundation for modeling individuals’ travel behavior within an activity based model.
-                      Using Census data and other socioeconomic information, a complete set of households for the CMAP modeling area is developed.
-                      (see <a href="#2" role="tab" data-toggle="tab">Population Synthesis</a> tab). This dataset contains all of the relevant attributes about each household and individual that are required by the
-                      ABM.
-                      Since the Census Bureau does not release detailed information about every household and individual, household and person records are replicated in order to generate a complete set of households for the modeling area. Target
-                      totals for various household
-                      and population attributes guide this process so the final population is representative of the region.
-                      All of the subsequent steps in the ABM rely on the data provided in the synthetic population.
+                      A synthetic population provides the foundation for modeling individuals’ travel behavior within an activity-based model. Using Census data and other socioeconomic information, a complete set of households for the CMAP modeling area is developed.
+                      (see <a href="#2" role="tab" data-toggle="tab">Population Synthesis</a> tab). 
+                      This dataset contains all of the relevant attributes about each household and individual that are required by the ABM. Since the Census Bureau does not release detailed information about every household and individual, household and person records are replicated in order to generate a complete set of households for the modeling area. Target totals for various household and population attributes guide this process so the final population is representative of the region. All of the subsequent steps in the ABM rely on the data provided in the synthetic population. 
                     </div>
                   </div>
                 </div>
@@ -266,11 +243,7 @@
                   </div>
                   <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div class="panel-body">
-                      Two submodels are included in this step: one that models the usual workplace locations for workers and one that models the usual school location for students. The workplace location model accounts for the worker’s occupation,
-                      as
-                      identified by the industry category they are employed in within the synthetic person file. This information is paired with jobs within the employment categories summarized at a fine geographic level to ensure that workers are
-                      sent
-                      to locations where they could be employed in their field. Similarly, enrollment figures are provided for elementary schools, high schools and colleges to ensure students are sent to realistic school locations.
+                      Two sub-models are included in this step: one that models the usual workplace locations for workers and one that models the usual school location for students. The workplace location model accounts for the worker’s occupation, as identified by the industry category they are employed in within the synthetic person file. This information is paired with jobs within the employment categories summarized at a fine geographic level to ensure that workers are sent to locations where they could be employed in their field. Similarly, enrollment figures are provided for elementary schools, high schools and colleges to ensure students are sent to realistic school locations. 
                     </div>
                   </div>
                 </div>
@@ -284,9 +257,7 @@
                   </div>
                   <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                     <div class="panel-body">
-                      These models simulate four mobility attributes that affect individual transport mode decisions: 1) free parking eligibility for workers in the Central Business District, i.e., a determination of whether workers will pay to park;
-                      2)
-                      household auto ownership; 3) whether or not individuals hold transit passes; and 4) whether or not individuals have toll transponders.
+                      These models simulate four mobility attributes that affect individual transport mode decisions: 1) free parking eligibility for workers in the Central Business District, i.e., a determination of whether workers will pay to park; 2) household vehicle ownership; 3) whether or not individuals hold transit passes; and 4) whether or not individuals have toll transponders.
                     </div>
                   </div>
                 </div>
@@ -300,31 +271,25 @@
                   </div>
                   <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                     <div class="panel-body">
-                      These models schedule activities and travel tours for all household members (see <a href="#10" role="tab" data-toggle="tab">Tours</a> tab). The first submodel classifies daily travel patterns into three types: </li>
+                      These models schedule activities and travel tours for all household members (see <a href="#10" role="tab" data-toggle="tab">Tours</a> tab). The first sub-model classifies daily travel patterns into three types:  </li>
                       <ul>
-                        <li>Mandatory (work and school) – includes at least one out of home mandatory activity;</li>
-                        <li>nonmandatory (other purposes) – includes at least one out of home nonmandatory activity but no out of home mandatory activities;</li>
-                        <li>Home – in home activities only.</li>
+                        <li>Mandatory (work and school) – includes at least one out of home mandatory activity; </li>
+                        <li>Non-mandatory (other purposes) – includes at least one out of home non-mandatory activity but no out of home mandatory activities; </li>
+                        <li>Home – in home activities only, so no travel is involved. </li>
                       </ul>
 
-                      <p>These activities are modeled as joint choices so that decisions made by household members affect the decisions of other members of the household. The next submodels estimate the frequency and time of day for mandatory
-                        activities. These are given a higher priority for scheduling than nonmandatory and home activities. Following the scheduling of mandatory activities, individuals have “residual time windows” which can be used to schedule
-                        other
-                        activities including joint travel with other household members.
+                      <p>These activities are modeled as joint choices so that decisions made by household members affect the decisions of other members of the household. The next sub-models estimate the frequency and time of day for mandatory activities. These are given a higher priority for scheduling than non-mandatory and home activities. Following the scheduling of mandatory activities, individuals have “residual time windows” which can be used to schedule other activities including joint travel with other household members. 
                       </p>
-                      <p>The next submodel estimates joint travel for household members. All characteristics of joint travel (travel purpose, individual household members traveling, destination and time of day) are simulated. Joint travel is
-                        conditional
-                        upon the available time window for each household member following the scheduling of mandatory activities.
+                      <p>The next sub-model estimates joint travel for household members. All characteristics of joint travel (travel purpose, individual household members traveling, destination and time of day) are simulated. Joint travel is conditional upon the available time window for each household member following the scheduling of mandatory activities. 
                       </p>
                       <p>
-                        The next submodel generates maintenance tours, which cover shopping and other household errands. These tasks are allocated to a single household member to carry out, and the destinations and times of day are generated. These
-                        tours are developed sequentially for individuals to ensure consistency in their personal schedule.
+                        The next sub-model generates maintenance tours, which cover shopping and other household errands. These tasks are allocated to a single household member to carry out, and the destinations and times of day are generated. These tours are developed sequentially for individuals to ensure consistency in their personal schedule. 
                       </p>
                       <p>
-                        The next submodel simulates discretionary tours which are modeled for individual, not joint, travel. These are also modeled sequentially so that they could all realistically occur during an individual’s day.
+                        The next sub-model simulates discretionary tours which are modeled for individual, not joint, travel. These are also modeled sequentially so that they could all realistically occur during an individual’s day. 
                       </p>
                       <p>
-                        The final submodel simulates at-work tours – those tours that occur during the day with the workplace as the starting and ending location.
+                        The final sub-model simulates at-work tours – those tours that occur during the day with the workplace as the starting and ending location. 
                       </p>
                       <center><img src="data/images/daily.JPG"></center>
                     </div>
@@ -340,8 +305,7 @@
                   </div>
                   <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                     <div class="panel-body">
-                      These submodels determine the transport mode used on tours, the locations of intermediate stops made on the tours and the purpose
-                      of each stop.
+                      These sub-models determine the transport mode used on tours, the locations of intermediate stops made on the tours and the purpose of each stop.
                     </div>
                   </div>
                 </div>
@@ -355,9 +319,7 @@
                   </div>
                   <div id="collapseSix" class="collapse" aria-labelledby="headingSix">
                     <div class="panel-body">
-                      These submodels add details about the trips occurring within the tours including the mode of travel,
-                      the departure time form each location and the parking location for auto trips.
-                      See <a href="#5" role="tab" data-toggle="tab">Trip Mode</a> tab and
+                      These sub-models add details about the trips occurring within the tours including the mode of travel, the departure time from each location and the parking location for auto trips. See <a href="#5" role="tab" data-toggle="tab">Trip Mode</a> tab and
                       <a href="#6" role="tab" data-toggle="tab">Trip Purpose</a> tab.
                       <center><img src="data/images/triplevel.JPG"></center>
                     </div>
@@ -1733,9 +1695,7 @@
               <h2>Synthetic Household Validation</h2>
 
               <p>
-                  This map displays the difference between selected household attributes for modeled and observed data summarized by U.S.
-                  Census Public Use Microdata Areas (PUMAs).  PUMAs are geographic areas defined by the U.S. Census Bureau that contain a
-                  minimum of 100,000 people.
+                This map displays the difference between modeled and observed data for selected household attributes summarized by U.S. Census Public Use Microdata Areas (PUMAs).  PUMAs are geographic areas defined by the U.S. Census Bureau that contain a minimum of 100,000 people.
                 </p>
                     </div>
           </div>
@@ -1751,9 +1711,7 @@
             <div class="col-md-3">
               <br>
               <p>
-              Choose from household size, household income, number of workers and number of vehicles in households by clicking the
-              category button and selecting the specific household type from the dropdown. Hover over each PUMA to display the values
-              for modeled and observed data.  </p>
+                Choose from household size, household income, number of workers, and number of vehicles in households by clicking the category button and selecting the specific household type from the dropdown. Hover over each PUMA to display the values for modeled and observed data.  </p>
               <p>
                 <b>Example:</b> In the model, 22.7% of households in northeast Lake County are 1-person households. According to PUMS, 27.2% of households in northeast Lake County are 1-person households.
                 This is a difference of -4.5 percentage points. </p>
@@ -2367,7 +2325,7 @@
               </script>
             </p>
           </div>
-          <a class="navbar-text navbar-right" style="margin-right:0px !important" href="https://github.com/brittaneyross/abm_viz_report" target="_blank">
+          <a class="navbar-text navbar-right" style="margin-right:0px !important" href="https://github.com/CMAP-REPOS/cmap_abm_report" target="_blank">
             <img src="data/images/GitHub-Mark-Light-32px.png">
           </a>
         </div>

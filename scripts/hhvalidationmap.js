@@ -103,8 +103,7 @@ drawmap1()
 
 // dropdown button events
 function updateview1(buttonarg) {
-    if (buttonarg.includes('Household Attributes') == false){
-    d3.select('#hhmaptitle').text(buttonarg)}
+    d3.select('#hhmaptitle').text(buttonarg)
 
     if (buttonarg == '1-person households') {
         whichone1 = 'difSZ_1'
@@ -215,7 +214,7 @@ function updateview1(buttonarg) {
     updatemap1();
 }
 
-$('.dropdown-menu a').click(function () {
+$('#hhvalbuttons .dropdown-menu a').click(function () {
     updateview1(($(this).text()));
 });
 

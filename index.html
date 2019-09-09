@@ -150,8 +150,8 @@
           <button type="button" class="close" id="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
           <p style="margin-bottom:10px">
-            <strong>Model calibration</strong> ensures that the various components of the overall model replicate observed data for a base year.  Calibration requires adjusting parameters for individual sub-models to ensure that they each produce realistic results.  Calibration is complete once model results match the observed patterns found in the Census, regional household travel surveys and transit origin-destination surveys.  CMAP's ABM is calibrated to a base year of 2010 because the regional household travel survey data available were collected in 2007-08. 
-            <strong>Model validation</strong> is focused on comparing the final results of a calibrated model to other data sources such as daily traffic counts, daily transit boardings, and more recent Census data.  A best practice within travel demand modeling is to use different datasets for model calibration and validation activities to double-check that the results replicate observed travel patterns.  The CMAP ABM is run to reflect travel conditions for the year 2015.  Validation demonstrates that the sub-models calibrated to 2010 conditions are able to represent the conditions in 2015. 
+            <strong>Model calibration</strong> ensures that the various components of the overall model replicate observed data for a base year.  Calibration requires adjusting parameters for individual sub-models to ensure that they each produce realistic results.  Calibration is complete once model results match the observed patterns found in the Census, regional household travel surveys and transit origin-destination surveys.  CMAP's ABM is calibrated to a base year of 2010 because the regional household travel survey data available were collected in 2007-08.
+            <strong>Model validation</strong> is focused on comparing the final results of a calibrated model to other data sources such as daily traffic counts, daily transit boardings, and more recent Census data.  A best practice within travel demand modeling is to use different datasets for model calibration and validation activities to double-check that the results replicate observed travel patterns.  The CMAP ABM is run to reflect travel conditions for the year 2015.  Validation demonstrates that the sub-models calibrated to 2010 conditions are able to represent the conditions in 2015.
             <em>Data source information for each page can be found in the footer. </em>
           </p>
         </div>
@@ -172,10 +172,10 @@
                 <li>People – age; work and school status; occupation</li>
                 <li>Trips – purpose; destination; who is taking the trip; is it part of a sequence of trips that must be completed in a specific order</li>
               </ul>
-              Having all of this data available for individual travelers allows for a finer level of analysis than standard travel demand models. ABMs were developed as a way to better analyze the impacts of policy decisions like managed lanes, congestion pricing and alternative transit fare structures. For more information, visit 
+              Having all of this data available for individual travelers allows for a finer level of analysis than standard travel demand models. ABMs were developed as a way to better analyze the impacts of policy decisions like managed lanes, congestion pricing and alternative transit fare structures. For more information, visit
               <a href="https://www.cmap.illinois.gov/data/transportation/modeling#CMAPs_Activity_Based_Models" target="_blank">CMAP's Activity-Based Models.</a> </p>
 
-              CMAP's ABM platform is CT-RAMP (Coordinated Travel and Regional Activity-Based Modeling Platform), which was developed open source by a consultant under contract to CMAP. Activity-based modeling is increasingly viewed as a superior method to better understand the socioeconomic determinants of travel choice and for evaluating modern transportation solutions. CMAP's ABM has been developed to demonstrate sensitivity to highway pricing scenarios based on each traveler's individual value of time and to improve model sensitivity to a wider range of nontraditional transit attributes, i.e., attributes such as service reliability, personal safety, station and vehicle cleanliness, and crowding that do not typically inform transit Level of Service calculations. Subsequent work on the ABM has focused on the calibration of selected sub-models and the overall validation of the model results. This report represents the results of model calibration and validation activities completed over the last several years by CMAP staff and their consultants. 
+              CMAP's ABM platform is CT-RAMP (Coordinated Travel and Regional Activity-Based Modeling Platform), which was developed open source by a consultant under contract to CMAP. Activity-based modeling is increasingly viewed as a superior method to better understand the socioeconomic determinants of travel choice and for evaluating modern transportation solutions. CMAP's ABM has been developed to demonstrate sensitivity to highway pricing scenarios based on each traveler's individual value of time and to improve model sensitivity to a wider range of nontraditional transit attributes, i.e., attributes such as service reliability, personal safety, station and vehicle cleanliness, and crowding that do not typically inform transit Level of Service calculations. Subsequent work on the ABM has focused on the calibration of selected sub-models and the overall validation of the model results. This report represents the results of model calibration and validation activities completed over the last several years by CMAP staff and their consultants.
               </p>
             </div><!-- end -->
 
@@ -228,8 +228,8 @@
                   <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
                       A synthetic population provides the foundation for modeling individuals’ travel behavior within an activity-based model. Using Census data and other socioeconomic information, a complete set of households for the CMAP modeling area is developed.
-                      (see <a href="#2" role="tab" data-toggle="tab">Population Synthesis</a> tab). 
-                      This dataset contains all of the relevant attributes about each household and individual that are required by the ABM. Since the Census Bureau does not release detailed information about every household and individual, household and person records are replicated in order to generate a complete set of households for the modeling area. Target totals for various household and population attributes guide this process so the final population is representative of the region. All of the subsequent steps in the ABM rely on the data provided in the synthetic population. 
+                      (see <a href="#2" role="tab" data-toggle="tab">Population Synthesis</a> tab).
+                      This dataset contains all of the relevant attributes about each household and individual that are required by the ABM. Since the Census Bureau does not release detailed information about every household and individual, household and person records are replicated in order to generate a complete set of households for the modeling area. Target totals for various household and population attributes guide this process so the final population is representative of the region. All of the subsequent steps in the ABM rely on the data provided in the synthetic population.
                     </div>
                   </div>
                 </div>
@@ -243,7 +243,7 @@
                   </div>
                   <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div class="panel-body">
-                      Two sub-models are included in this step: one that models the usual workplace locations for workers and one that models the usual school location for students. The workplace location model accounts for the worker’s occupation, as identified by the industry category they are employed in within the synthetic person file. This information is paired with jobs within the employment categories summarized at a fine geographic level to ensure that workers are sent to locations where they could be employed in their field. Similarly, enrollment figures are provided for elementary schools, high schools and colleges to ensure students are sent to realistic school locations. 
+                      Two sub-models are included in this step: one that models the usual workplace locations for workers and one that models the usual school location for students. The workplace location model accounts for the worker’s occupation, as identified by the industry category they are employed in within the synthetic person file. This information is paired with jobs within the employment categories summarized at a fine geographic level to ensure that workers are sent to locations where they could be employed in their field. Similarly, enrollment figures are provided for elementary schools, high schools and colleges to ensure students are sent to realistic school locations.
                     </div>
                   </div>
                 </div>
@@ -278,18 +278,18 @@
                         <li>Home – in home activities only, so no travel is involved. </li>
                       </ul>
 
-                      <p>These activities are modeled as joint choices so that decisions made by household members affect the decisions of other members of the household. The next sub-models estimate the frequency and time of day for mandatory activities. These are given a higher priority for scheduling than non-mandatory and home activities. Following the scheduling of mandatory activities, individuals have “residual time windows” which can be used to schedule other activities including joint travel with other household members. 
+                      <p>These activities are modeled as joint choices so that decisions made by household members affect the decisions of other members of the household. The next sub-models estimate the frequency and time of day for mandatory activities. These are given a higher priority for scheduling than non-mandatory and home activities. Following the scheduling of mandatory activities, individuals have “residual time windows” which can be used to schedule other activities including joint travel with other household members.
                       </p>
-                      <p>The next sub-model estimates joint travel for household members. All characteristics of joint travel (travel purpose, individual household members traveling, destination and time of day) are simulated. Joint travel is conditional upon the available time window for each household member following the scheduling of mandatory activities. 
-                      </p>
-                      <p>
-                        The next sub-model generates maintenance tours, which cover shopping and other household errands. These tasks are allocated to a single household member to carry out, and the destinations and times of day are generated. These tours are developed sequentially for individuals to ensure consistency in their personal schedule. 
+                      <p>The next sub-model estimates joint travel for household members. All characteristics of joint travel (travel purpose, individual household members traveling, destination and time of day) are simulated. Joint travel is conditional upon the available time window for each household member following the scheduling of mandatory activities.
                       </p>
                       <p>
-                        The next sub-model simulates discretionary tours which are modeled for individual, not joint, travel. These are also modeled sequentially so that they could all realistically occur during an individual’s day. 
+                        The next sub-model generates maintenance tours, which cover shopping and other household errands. These tasks are allocated to a single household member to carry out, and the destinations and times of day are generated. These tours are developed sequentially for individuals to ensure consistency in their personal schedule.
                       </p>
                       <p>
-                        The final sub-model simulates at-work tours – those tours that occur during the day with the workplace as the starting and ending location. 
+                        The next sub-model simulates discretionary tours which are modeled for individual, not joint, travel. These are also modeled sequentially so that they could all realistically occur during an individual’s day.
+                      </p>
+                      <p>
+                        The final sub-model simulates at-work tours – those tours that occur during the day with the workplace as the starting and ending location.
                       </p>
                       <center><img src="data/images/daily.JPG"></center>
                     </div>
@@ -353,7 +353,7 @@
             <div class="col-md-7">
               <h2>Population Synthesis</h2>
               <p>
-                Using Census data and other socioeconomic information, a complete set of households for the CMAP modeling area is developed. This dataset contains all of the relevant attributes about each household and for each individual living in those households, which is required to run the ABM. While this population is statistically representative of the Census data, the actual households and individuals are “synthetic” in that they do not represent identifiable people and an individual household in the Census data may be replicated numerous times in order to generate a complete distribution of households in the modeling inputs. 
+                Using Census data and other socioeconomic information, a complete set of households for the CMAP modeling area is developed. This dataset contains all of the relevant attributes about each household and for each individual living in those households, which is required to run the ABM. While this population is statistically representative of the Census data, the actual households and individuals are “synthetic” in that they do not represent identifiable people and an individual household in the Census data may be replicated numerous times in order to generate a complete distribution of households in the modeling inputs.
               </p>
               <p>
                 The current population synthesis software used by CMAP is PopSynIII. The socioeconomic data developed from CMAP’s regional forecasting and Local Area Allocation procedures provide the subzone-level control values for all <dfn
@@ -489,7 +489,7 @@
               <br>
               <br>
               <p class="small">
-                 Income is in 2010 dollars. 
+                 Income is in 2010 dollars.
 
               </p>
             </div><!-- end -->
@@ -639,7 +639,7 @@
               <br>
               <br>
               <p class="small">
-                Income is in 2010 dollars. 
+                Income is in 2010 dollars.
 
              </p>
             </div>
@@ -668,15 +668,15 @@
             <div class="col-md-6">
               <h2>Work Flows</h2>
               <p>
-                Commute trips are an important part of a region’s overall travel pattern and are a key component of 
-             congestion experienced on the transportation system, especially during the morning and evening hours.  
-             Ensuring that commuters are traveling between the appropriate home and work locations is one important way 
+                Commute trips are an important part of a region’s overall travel pattern and are a key component of
+             congestion experienced on the transportation system, especially during the morning and evening hours. 
+             Ensuring that commuters are traveling between the appropriate home and work locations is one important way
              to verify that travel demand models reflect actual travel patterns.   <br><br>
-                
-                Note there are two sources for observed data on this page. The first three tables use data from journey-to-work flows from the Census 
-                Transportation Planning Package (CTPP). The remaining two charts use data from household travel surveys. CTPP data is generally used to 
-                estimate models that address work flows due to the large sample of data included. Data from household travel surveys can be used to supplement 
-                the journey-to-work information from the CTPP, as travel surveys offer more detailed information about the trips than the Census provides. 
+
+                Note there are two sources for observed data on this page. The first three tables use data from journey-to-work flows from the Census
+                Transportation Planning Package (CTPP). The remaining two charts use data from household travel surveys. CTPP data is generally used to
+                estimate models that address work flows due to the large sample of data included. Data from household travel surveys can be used to supplement
+                the journey-to-work information from the CTPP, as travel surveys offer more detailed information about the trips than the Census provides.
               </p>
               <br>
             </div>
@@ -999,7 +999,7 @@
                 <img src="data/images/icons8-add-50.png" class="image">
                 <div class="overlay">
                   <p>
-                    Modeled trip modes for non-student person types are close to observed trips modes. Though student trips are not reflected as accurately, 
+                    Modeled trip modes for non-student person types are close to observed trips modes. Though student trips are not reflected as accurately,
                     they make up a small fraction
                     of all trips. In many cases, modeled student trips are closer to the
                     observed trips, in terms of number of trips, than other person types.
@@ -1035,7 +1035,7 @@
               </select>
               <div id="tripsbyincomeLegend"></div><br><br>
               <div class="small">
-                  Income is in 2010 dollars. 
+                  Income is in 2010 dollars.
               </div>
             </div>
             <div class="col col-md-6">
@@ -1132,12 +1132,12 @@
                 Tours may be completed by an individual or can include multiple people traveling together.
               </p>
               <p>
-                Daily activities are categorized into three types: mandatory, nonmandatory or home. 
-             Activities are placed within these three categories based on the relative importance 
-             of the role they play in defining one’s day. Mandatory activities 
-             (which include work and school) are the most inflexible in terms of 
-             when they occur and where they are located. Nonmandatory activities 
-             have greater flexibility in when they occur and where their locations are. 
+                Daily activities are categorized into three types: mandatory, nonmandatory, or home.
+             Activities are placed within these three categories based on the relative importance
+             of the role they play in defining one’s day. Mandatory activities
+             (which include work and school) are the most inflexible in terms of
+             when they occur and where they are located. Nonmandatory activities
+             have greater flexibility in when they occur and where their locations are.
              Home tours are stationary and are not assigned a travel mode.
               </p>
               <br>
@@ -1302,35 +1302,35 @@
                 The CMAP ABM classifies trips into ten activity types. Activities can be grouped into two categories according to their priority in determining an individual’s schedule: mandatory and nonmandatory. Mandatory activities include: </p>
               <ul>
                 <li>
-                  Work - Working at regular workplace. 
+                  Work - Working at regular workplace.
                 </li>
                 <li>
-                  University - Attending college. 
+                  University - Attending college.
                 </li>
                 <li>
-                  School - Attending school grades K-12. 
+                  School - Attending school grades K-12.
                 </li>
               </ul>
               <p>
                 The remaining activities are all considered nonmandatory: </p>
               <ul>
                 <li>
-                  Shopping - Shopping away from home. 
+                  Shopping - Shopping away from home.
                 </li>
                 <li>
-                  Escort - Picking up/dropping off passengers (auto trips only). 
+                  Escort - Picking up/dropping off passengers (auto trips only).
                 </li>
                 <li>
-                  Eating out - Eating outside of home. 
+                  Eating out - Eating outside of home.
                 </li>
                 <li>
-                  Work-based - A subset of activities (such as going to lunch or traveling to meet a client) that occur with the place of work as the anchor location. 
+                  Work-based - A subset of activities (such as going to lunch or traveling to meet a client) that occur with the place of work as the anchor location.
                 </li>
                 <li>
-                  Maintenance - Activities that include medical appointments and other personal business or services that people engage in, excluding shopping and escorting activities. 
+                  Maintenance - Activities that include medical appointments and other personal business or services that people engage in, excluding shopping and escorting activities.
                 </li>
                 <li>
-                  Discretionary - Engaging in social or recreational activities; attending sporting or cultural events; and attending religious activities or performing volunteer activities. 
+                  Discretionary - Engaging in social or recreational activities; attending sporting or cultural events; and attending religious activities or performing volunteer activities.
                 </li>
               </ul>
               <br>
@@ -1506,7 +1506,7 @@
             <div class="col-md-2">
               <h3>Modeled vs. Observed Transit Trips Origin and Destination</h3>
               <p>
-                  <p class="small"> The scatterplot includes a point for each origin/destination pair. A map of origin/destination areas is shown below, with the CMAP region shaded for reference.  
+                  <p class="small"> The scatterplot includes a point for each origin/destination pair. A map of origin/destination areas is shown below, with the CMAP region shaded for reference.
                     </p>
                 <b>r<sup>2</sup></b> = <text_div id="transitrs"></text_div>
               </p>
@@ -1552,7 +1552,7 @@
               <br>
               <div id="transitaccessLegend"></div>
               <div class="small" style="margin-top:20px;">
-                Distance is the distance of the transit trip that occurred.  Income is in 2010 dollars.  
+                Distance is the distance of the transit trip that occurred.  Income is in 2010 dollars.
                 They survey has fewer total transit trips when viewed by income since not all respondents reported an income value. <br><br>
               </div>
             </div>
@@ -1822,11 +1822,11 @@
                   <img src="data/images/icons8-add-50.png" class="img-fluid image">
                   <div class="overlay">
                     <p>
-                      The scatterplot shows a strong correlation between the observed average daily link volume 
-                      and the modeled daily link volume, which is verified with an r-squared value of 0.86. A value 
-                      of 0.86 means that the regression line shown is a good fit of the observed data and accounts 
-                      for 86% of the variation in the data. 
-                      The correlation between the observed and modeled average daily link volumes is stronger for 
+                      The scatterplot shows a strong correlation between the observed average daily link volume
+                      and the modeled daily link volume, which is verified with an r-squared value of 0.86. A value
+                      of 0.86 means that the regression line shown is a good fit of the observed data and accounts
+                      for 86% of the variation in the data.
+                      The correlation between the observed and modeled average daily link volumes is stronger for
                       interstates than for arterials/collectors.
                     </p>
                   </div>
@@ -1875,15 +1875,15 @@
                   <img src="data/images/icons8-add-50.png" class="img-fluid image">
                   <div class="overlay">
                     <p>
-                      The model does a good job reflecting the amount of weekday traffic on the 
-             interstate system, both on the freeways and tollways.  The overall number 
-             of Vehicle Miles Traveled on each interstate section estimated by the model 
-             is very close to the values measured in the observed data.  Separating the VMT 
-             into auto and commercial vehicle components shows that these values are well 
-             represented in the ABM. For instance, on I-290 the auto VMT is only around 5.5% 
-             too high and the commercial vehicle VMT is just 1% high.  I-80 has the highest 
-             share of commercial vehicle VMT; the model not only shows this same relationship 
-             but the auto and commercial vehicle VMT values are less than 1% different than 
+                      The model does a good job reflecting the amount of weekday traffic on the
+             interstate system, both on the freeways and tollways.  The overall number
+             of Vehicle Miles Traveled on each interstate section estimated by the model
+             is very close to the values measured in the observed data.  Separating the VMT
+             into auto and commercial vehicle components shows that these values are well
+             represented in the ABM. For instance, on I-290 the auto VMT is only around 5.5%
+             too high and the commercial vehicle VMT is just 1% high.  I-80 has the highest
+             share of commercial vehicle VMT; the model not only shows this same relationship
+             but the auto and commercial vehicle VMT values are less than 1% different than
              the observed data.
                     </p>
                   </div>
@@ -2008,7 +2008,7 @@
               <div class="col-md-3">
                 <h3>Transit Boardings by Mode</h3>
                 <p class="small">
-                  Transit boardings include average weekeday
+                  Transit boardings include average weekday
                   boardings for fixed-route service. Demand
                   responsive dial-a-ride, call and ride,
                   or ADA paratransit services are not included.
@@ -2114,7 +2114,7 @@
             <div class="col-md-2">
               <h3>Modeled vs. Observed Journey to Work Flows</h3>
               <p>
-                The scatterplot includes a point for each home/work county pair.  All 21 counties in the extended modeling area are included.  A county map is shown below, with the standard CMAP modeling area shaded for reference.  
+                The scatterplot includes a point for each home/work county pair.  All 21 counties in the extended modeling area are included.  A county map is shown below, with the standard CMAP modeling area shaded for reference.
                 <br><br><dfn
                   data-info="R-squared is calculated to determine the peformance of the model predicability. It is used to compare the regionwide observed and modeled journey to work trips between ring sectors. A value closer to 1.0 indicates a better model."><b>r<sup>2</sup></b></dfn>
                 = <text_div id="jtwr2"></text_div>

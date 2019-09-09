@@ -145,8 +145,8 @@ function makeStackedChart_nodd2(csv_file,dataTitle,divID){
 
       if (divID  == 'cfstack'){
         var legend = d3.select("#vmtfacilityLegendNew").append("svg")
-        .attr("height", 75)
-        .attr("width", 250)
+        .attr("height", 100)
+        .attr("width", 100)
 
         var keys = ["Local", "Arterial", "Interstate"]
 

@@ -159,7 +159,6 @@ function make_multi_line_dd(csv, divID, catID, legendID) {
       .style("font-size", "14px")
       .style("font-family", "sans-serif")
       .attr("alignment-baseline", "middle")
-console.log(sumstat)
     // Draw the line
     svg.selectAll(".line")
       .data(sumstat)

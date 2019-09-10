@@ -204,6 +204,136 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
           });
         });
 
+        bars2 = bars
+          .enter()
+          .append("rect")
+          .attr("x", 0)
+          .attr("y", function (d) {return y1(d.key)})
+          .attr("width",100)
+          .attr("height", y1.bandwidth())
+          .style("opacity", 0)
+          .on("mouseover", function(d) {
+            var div = d3.select("body").append("div")
+            .attr("class", "vmttooltip2")
+            .style("opacity", 0);
+            div.transition()
+            .duration(200)
+            .style("opacity", .9);
+            div.html(
+              "<p style='color:#8a89a6; font-size: 20px; margin-bottom: 0px;'>" + d3.formatPrefix(".2s",scale)(d.value) +
+              "</p><p style='color:grey; font-size: 10px;'>" + word + "</p>"
+              )
+              .style("left", (d3.event.pageX) + "px")
+              .style("top",  (d3.event.pageY - 28) + "px")
+
+
+          d3.selectAll("." + d.lines.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, ""))
+          .attr("fill", "#cf4446");
+        selectedline = d.lines.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "")
+        selectednumber = d.order;
+
+        // this highlights the line on the map!
+        metra1.eachLayer(function(layer) {
+          if (selectedline == "BNSF"){
+            linecolormetra = "#32CD32"
+          } else if (selectedline == "UPNorth"){
+            linecolormetra = "#006400"
+          } else if (selectedline == "UP-W"){
+            linecolormetra = "#DB7093"
+          } else if (selectedline == "UP-NW"){
+            linecolormetra = "#cccc00"
+          } else if (selectedline == "ME"){
+            linecolormetra = "#FF4500"
+          } else if (selectedline == "RI"){
+            linecolormetra = "#FF0000"
+          } else if (selectedline == "MD-W"){
+            linecolormetra = "#ffc04c"
+          } else if (selectedline == "MD-N"){
+            linecolormetra = "#FF8C00"
+          } else if (selectedline == "SWS"){
+            linecolormetra = "#0000FF"
+          } else if (selectedline == "HC"){
+            linecolormetra = "#570632"
+          } else if (selectedline == "NCS"){
+            linecolormetra = "#5d198e"
+          } else {
+            linecolormetra = "#0052a7"
+          }
+          if(layer.LINE.includes(selectedline)){
+            layer.setStyle({
+              color: linecolormetra,
+              weight: 3
+          })
+          }})
+        cta1.eachLayer(function(layer) {
+          if (selectedline == "RedLine"){
+            linecolor = "#FF0000"
+          } else if (selectedline == "BlueLine"){
+            linecolor = "#0000FF"
+          } else if (selectedline == "BrownLine"){
+            linecolor = "#8B4513"
+          } else if (selectedline == "GreenLine"){
+            linecolor = "#008000"
+          } else if (selectedline == "OrangeLine"){
+            linecolor = "#FF8C00"
+          } else if (selectedline == "PinkLine"){
+            linecolor = "#ea4797"
+          } else if (selectedline == "PurpleLine"){
+            linecolor = "#800080"
+          } else if (selectedline == "YellowLine"){
+            linecolor = "#999900"
+          } else{
+            linecolor = "#cf4446"
+          }
+          if(layer.LINE.includes(selectedline)){
+            layer.setStyle({
+              color: linecolor,
+              weight: 3
+          })
+          }})
+          hwy_lyr.eachLayer(function(layer) {
+            if(layer.feature.properties.abmnum == selectednumber){
+              layer.setStyle({
+                color:"#cf4446"
+              })
+            }
+          })
+            })
+            .on("mouseout", function(d) {
+              d3.selectAll(".vmttooltip2")
+              .remove();
+
+              d3.selectAll("." + d.lines.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, ""))
+                .attr("fill", function(d) {
+                return z[1]; });
+              selectedline = d.lines.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "")
+              selectednumber = d.order;
+
+              // this highlights the line on the map!
+              metra1.eachLayer(function(layer) {
+                if(layer.LINE.includes(selectedline)){
+                  layer.setStyle({
+                    color:'#696969',
+                    weight: 2
+                })
+                }})
+              cta1.eachLayer(function(layer) {
+                if(layer.LINE.includes(selectedline)){
+                  layer.setStyle({
+                    color:"black",
+                    weight: 2
+                })
+                }})
+
+              hwy_lyr.eachLayer(function(layer) {
+                  if(layer.feature.properties.abmnum == selectednumber){
+                    layer.setStyle({
+                      color:"grey"
+                    })
+                  }
+                })
+              });
+
         bars = bars
           .enter()
           .append("rect")

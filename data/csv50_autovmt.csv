@@ -1,17 +1,18 @@
 Index, Model , Survey ,Category,Description,Title,order
-I-190,240623.8281,218962.2096,I-190,I-190,I-190 auto,16
-I-90 Skyway,1363731.262,1316154.83,I-90 Skyway,I-90 Skyway,I-90 Skyway auto,15
-I-90 E of IL-31 (toll),1856550.196,1766560.581,I-90 E of IL-31 (toll),I-90 E of IL-31 (toll),I-90 E of IL-31 (toll) auto,14
-I-55 W of I-355,1868640.784,1795260.461,I-55 W of I-355,I-55 W of I-355,I-55 W of I-355 auto,13
-I-57,1731310.336,1650548.469,I-57,I-57,I-57 auto,12
-I-355 (toll),2157928.897,2091266.711,I-355 (toll),I-355 (toll),I-355 (toll) auto,11
-I-294 N of I-290 (toll),2023651.083,1950747.403,I-294 N of I-290 (toll),I-294 N of I-290 (toll),I-294 N of I-290 (toll) auto,10
-I-55 E of I-355,2501087.401,2326450.364,I-55 E of I-355,I-55 E of I-355,I-55 E of I-355 auto,9
-I-90 W of IL-31 (toll),1148771.751,1146613.671,I-90 W of IL-31 (toll),I-90 W of IL-31 (toll),I-90 W of IL-31 (toll) auto,8
-I-80 & I-80/I-94,1910182.77,1897171.533,I-80 & I-80/I-94,I-80 & I-80/I-94,I-80 & I-80/I-94 auto,7
-I-294 S of I-290 (toll),2088486.738,2065505.073,I-294 S of I-290 & I-80/294 (toll),I-294 S of I-290 & I-80/294 (toll),I-294 S of I-290 & I-80/294 (toll) auto,6
-I-88 & I-88/294 (toll),2494155.262,2375588.088,I-88 & I-88/294 (toll),I-88 & I-88/294 (toll),I-88 & I-88/294 (toll) auto,5
-I-90/94,3126414.444,2952648.756,I-90/94,I-90/94,I-90/94 auto,4
-I-94,3197754.51,3029996.494,I-94,I-94,I-94 auto,3
-I-94 (toll),2855817.403,2720887.723,I-94 (toll),I-94 (toll),I-94 (toll) auto,2
-I-290,4360205.82,4125122.41,I-290,I-290,I-290 auto,1
+I-190,182291.78,225577.05,I-190,I-190,I-190 auto,16
+I-290,5038028.39,4360205.82,I-290,I-290,I-290 auto,1
+I-294 N of I-290 (toll),2836037.31,1999336.12,I-294 N of I-290 (toll),I-294 N of I-290 (toll),I-294 N of I-290 (toll) auto,10
+I-294 S of I-290 (toll),2745226.73,2011843.81,I-294 S of I-290 & I-80/294 (toll),I-294 S of I-290 & I-80/294 (toll),I-294 S of I-290 & I-80/294 (toll) auto,6
+I-355 (toll),2692381.21,2129851.54,I-355 (toll),I-355 (toll),I-355 (toll) auto,11
+I-55 E of I-355,3050100.46,2501087.40,I-55 E of I-355,I-55 E of I-355,I-55 E of I-355 auto,9
+I-55 W of I-355,1770449.80,1865123.80,I-55 W of I-355,I-55 W of I-355,I-55 W of I-355 auto,13
+I-57,1480268.02,1195373.69,I-57,I-57,I-57 auto,12
+I-80 & I-80/I-94,2460104.15,1882229.27,I-80 & I-80/I-94,I-80 & I-80/I-94,I-80 & I-80/I-94 auto,7
+I-88 & I-88/294 (toll),3260683.91,2484960.38,I-88 & I-88/294 (toll),I-88 & I-88/294 (toll),I-88 & I-88/294 (toll) auto,5
+I-90 E of IL-31 (toll),2263070.55,1849874.15,I-90 E of IL-31 (toll),I-90 E of IL-31 (toll),I-90 E of IL-31 (toll) auto,14
+I-90 Skyway,1129225.49,1329100.43,I-90 Skyway,I-90 Skyway,I-90 Skyway auto,15
+I-90 W of IL-31 (toll),946596.06,1138923.47,I-90 W of IL-31 (toll),I-90 W of IL-31 (toll),I-90 W of IL-31 (toll) auto,8
+I-90/94,3836443.03,3120159.35,I-90/94,I-90/94,I-90/94 auto,4
+I-94 North,1815569.67,1266891.36,I-94 North,I-94 North,I-94 north auto,17
+I-94 South,2555281.03,1930863.15,I-94 South,I-94 South,I-94 South auto,3
+I-94 (toll),2448800.92,2815582.50,I-94 (toll),I-94 (toll),I-94 (toll) auto,2

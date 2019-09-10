@@ -1875,16 +1875,7 @@
                   <img src="data/images/icons8-add-50.png" class="img-fluid image">
                   <div class="overlay">
                     <p>
-                      The model does a good job reflecting the amount of weekday traffic on the
-             interstate system, both on the freeways and tollways.  The overall number
-             of Vehicle Miles Traveled on each interstate section estimated by the model
-             is very close to the values measured in the observed data.  Separating the VMT
-             into auto and commercial vehicle components shows that these values are well
-             represented in the ABM. For instance, on I-290 the auto VMT is only around 5.5%
-             too high and the commercial vehicle VMT is just 1% high.  I-80 has the highest
-             share of commercial vehicle VMT; the model not only shows this same relationship
-             but the auto and commercial vehicle VMT values are less than 1% different than
-             the observed data.
+                      The model over predicts the amount of weekday traffic on the interstate system. Separating the VMT into auto and commercial vehicle components shows that truck tollway freeway volumes are over estimated in the compared to the observed data. Overall, modeled auto volumes show a closer relationship to the observed data for both freeways and tollways.
                     </p>
                   </div>
                 </div>
@@ -1943,6 +1934,10 @@
                 linear regression. The percent RMSE standardizes the value by dividing it by the average of the AADT.  The Florida
                 Department of Transportation has developed a set of percent RMSE values that are often cited as validation targets,
                 with a goal of achieving that value or lower for each of the volume categories.</p>
+
+                <p class="small">
+                  Target values represent the standard acceptable root mean squared error from the Florida Department of Transportation.
+                </p>
             </div>
             <div class="col-md-5">
               <br />
@@ -2495,7 +2490,7 @@
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Volume Range', 'Links', 'AADT', 'Model Volumes', 'RMSE', '%RMSE', 'Florida DOT Targets'], "#rmse_7", "percent"); // 2 column table
+    tabulate(data, ['Volume Range', 'Links', 'AADT', 'Model Volumes', 'RMSE', '%RMSE', 'Target'], "#rmse_7", "percent"); // 2 column table
   });
 
   d3.csv("data/csv30_vrange_total.csv", function(d, i, columns) {

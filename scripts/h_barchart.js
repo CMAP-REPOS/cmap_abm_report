@@ -41,7 +41,7 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
             .rangeRound([0, width]);
 
   //Review axis labels
-  let xAxis = d3.axisBottom(x).ticks(5).tickFormat(d3.format(".2s")),
+  let xAxis = d3.axisBottom(x).ticks(6).tickFormat(d3.format(".2s")),
     yAxis = d3.axisLeft(y0).ticks(null, "s");
 
   g.append("g")
@@ -134,9 +134,13 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
       // ======== Domain, Axis & Sort ========
 
       if (xaxis != 0){
-        x.domain([0, xaxis]).nice();
+        x.domain([0, d3.max(data, function(d) {
+          return d3.max(copy, function(key) {
+            return +d[key];
+            });
+          })]).nice();
       }
-      
+
       if (xaxis == 0){
       x.domain([0, d3.max(data, function(d) {
         return d3.max(copy, function(key) {
@@ -145,6 +149,7 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
         })
       ]).nice();
     }
+
 
       g.selectAll(".axis.axis--x").transition()
         .duration(durations)

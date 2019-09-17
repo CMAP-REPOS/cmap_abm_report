@@ -194,7 +194,7 @@
             <div class="col-md-2">
               <h3>CMAP Modeling Area and Network</h3>
               <div id="intromaplegend"></div><br>
-              <p class="small">Only portions of Lee, Ogle, and LaSalle counties are included in the modeling area.  The modeling area extends beyond the 7-county CMAP region. </p>
+              <p class="small">The modeling area extends beyond the 7-county CMAP region to include 21 counties. Only portions of Lee, Ogle, and LaSalle counties are included in the modeling area.  </p>
               <button type="button" class="btn btn-default btn-xs" id="introrecenter" value="Re-center map" onClick="zoomTo(center,regionmap)">Recenter Map</button>
             </div><!-- end -->
             <div class="col-md-6">
@@ -538,12 +538,6 @@
               <br>
               <br>
               <div id="stackedAdultLegend"></div>
-
-              <!-- <div class="small" style="margin-top: 0px;">
-                <b>Sources</b><br>
-                Observed - PUMS 2007-11 <br>
-                Modeled- PopSynIII <br>
-              </div> -->
               <br>
             </div>
             <div class="col col-md-6">
@@ -1169,9 +1163,6 @@
                 Bars show number of individual tours in the selected activity type
                 (mandatory, nonmandatory) that will be scheduled for each person type.
                 Activities that occur at home make up the remaining 16.3% of all tours, and these are not assigned a travel mode.
-                <!-- <br><br><b>Sources</b><br>
-                Observed -Travel Tracker Survey, 2007-2008. <br>
-                Modeled- CMAP ABM - 2010 Scenario. <br> -->
               </div><br>
             </div>
             <div class="col col-md-6">
@@ -1265,10 +1256,6 @@
               <div class="small">
                 Tour arrival and departure times are grouped into 40 time slices of the day.
                 <br><br>
-                <!-- <b>Sources</b><br>
-                Observed -Travel Tracker Survey, 2007-2008. <br>
-                Modeled- CMAP ABM - 2010 Scenario.
-                </p> -->
               </div>
             </div>
             <div class="col col-md-6">
@@ -2116,8 +2103,8 @@
             <div class="col-md-1"></div>
             <div class="col-md-2">
               <h3>Modeled vs. Observed Journey to Work Flows</h3>
-              <p>
-                The scatterplot includes a point for each home/work county pair.  All 21 counties in the extended modeling area are included.  A county map is shown below, with the standard CMAP modeling area shaded for reference.
+              <p class="small">
+                The scatterplot includes a point for each home/work county pair.  All 21 counties in the extended modeling area are included.  Only a portion of Lee, Ogle, and LaSalle counties are included in the model data (refer to map in <a href="#1" role="tab" data-toggle="tab">Introduction</a>).  A county map is shown below, with the standard CMAP modeling area shaded for reference.
                 <br><br><dfn
                   data-info="R-squared is calculated to determine the peformance of the model predicability. It is used to compare the regionwide observed and modeled journey to work trips between ring sectors. A value closer to 1.0 indicates a better model."><b>r<sup>2</sup></b></dfn>
                 = <text_div id="jtwr2"></text_div>

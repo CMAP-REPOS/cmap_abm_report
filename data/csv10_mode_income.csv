@@ -1,67 +1,67 @@
 Index,Model 01,Survey 01,Category,Description,Title,Portion
-Drive Alone (non-toll),13271835,12213204.96,All,Drive Alone (non-toll) All,All,100.00%
-Shared ride 2 (non-toll),5680670,6000064.402,All,Shared ride 2 (non-toll) All,All,100.00%
-Shared ride 3+ (non-toll),5146245,5114517.57,All,Shared ride 3+ (non-toll) All,All,100.00%
-Walk,4420785,2986980,All,Walk All,All,100.00%
-Drive Alone (non-toll),3847285,1776066.823,Less than $35k,Drive Alone (non-toll) lt36,Less than $35k,35.60%
-Drive Alone (non-toll),2959455,1644235.591,$35k to $50k,Drive Alone (non-toll) $35k to $50k,$35k to $50k,20.60%
-Drive Alone (non-toll),2553645,2550371.191,$50k to $75k,Drive Alone (non-toll) $50k to $75k,$50k to $75k,17.90%
-Drive Alone (non-toll),2271375,3828946.673,More than $100k,Drive Alone (non-toll) More than $100k,More than $100k,15.20%
-Walk,2250275,1019728,Less than $35k,Walk lt45,Less than $35k,35.60%
-Shared ride 2 (non-toll),1904920,925402,Less than $35k,Shared ride 2 (non-toll) lt40,Less than $35k,35.60%
-Shared ride 3+ (non-toll),1862610,839190,Less than $35k,Shared ride 3+ (non-toll) lt42,Less than $35k,35.60%
-Drive Alone (non-toll),1640075,2413584.681,$75k to $100K,Drive Alone (non-toll) $75k to $100K,$75k to $100K,10.80%
-Transit,1626340,1411502,All,Transit,All,100.00%
-Shared ride 2 (non-toll),1209845,779994.3733,$35k to $50k,Shared ride 2 (non-toll) $35k to $50k,$35k to $50k,20.60%
-Shared ride 2 (non-toll),1111990,1170948.322,$50k to $75k,Shared ride 2 (non-toll) $50k to $75k,$50k to $75k,17.90%
-Shared ride 3+ (non-toll),1024895,618170,$35k to $50k,Shared ride 3+ (non-toll) $35k to $50k,$35k to $50k,20.60%
-Shared ride 3+ (non-toll),948295,952093,$50k to $75k,Shared ride 3+ (non-toll) $50k to $75k,$50k to $75k,17.90%
-School bus,878250,693743.6024,All,School bus All,All,100.00%
-Shared ride 2 (non-toll),841870,1900995.345,More than $100k,Shared ride 2 (non-toll) More than $100k,More than $100k,15.20%
-Transit,834250,514518,Less than $35k,Walk to transit lt46,Less than $35k,35.60%
-Shared ride 3+ (non-toll),781210,1657765.052,More than $100k,Shared ride 3+ (non-toll) More than $100k,More than $100k,15.20%
-Walk,755220,380596,$35k to $50k,Walk $35k to $50k,$35k to $50k,20.60%
-Shared ride 2 (non-toll),612045,1222724.361,$75k to $100K,Shared ride 2 (non-toll) $75k to $100K,$75k to $100K,10.80%
-Walk,599105,436040,$50k to $75k,Walk $50k to $75k,$50k to $75k,17.90%
-Shared ride 3+ (non-toll),529235,1047299.518,$75k to $100K,Shared ride 3+ (non-toll) $75k to $100K,$75k to $100K,10.80%
-Walk,482955,758642,More than $100k,Walk More than $100k,More than $100k,15.20%
-School bus,389670,127589,Less than $35k,School bus lt39,Less than $35k,35.60%
-Walk,333230,391974,$75k to $100K,Walk $75k to $100K,$75k to $100K,10.80%
-Bike,329390,253072,All,Bike All,All,100.00%
-Transit,285455,194248,$35k to $50k,Walk to transit $35k to $50k,$35k to $50k,20.60%
-Drive Alone (toll),256355,369637,All,Drive Alone (toll) All,All,100.00%
-Transit,205855,299990,More than $100k,Walk to transit More than $100k,More than $100k,15.20%
-Transit,180960,233846,$50k to $75k,Walk to transit $50k to $75k,$50k to $75k,17.90%
-School bus,158030,99023,$35k to $50k,School bus $35k to $50k,$35k to $50k,20.60%
-Bike,152715,46706,Less than $35k,Bike lt35,Less than $35k,35.60%
-School bus,151040,117456.5297,$50k to $75k,School bus $50k to $75k,$50k to $75k,17.90%
-Transit,119820,168900,$75k to $100K,Walk to transit $75k to $100K,$75k to $100K,10.80%
-Taxi,99770,64726,All,Taxi All,All,100.00%
-School bus,92180,202777.6086,More than $100k,School bus More than $100k,More than $100k,15.20%
-School bus,87330,146897.4641,$75k to $100K,School bus $75k to $100K,$75k to $100K,10.80%
-Drive Alone (toll),66340,173976,More than $100k,Drive Alone (toll) More than $100k,More than $100k,15.20%
-Bike,64125,31013,$35k to $50k,Bike $35k to $50k,$35k to $50k,20.60%
-Shared ride 3+ (toll),62510,20611,All,Shared ride 3+ (toll) All,All,100.00%
-Drive Alone (toll),56950,66233,$50k to $75k,Drive Alone (toll) $50k to $75k,$50k to $75k,17.90%
-Drive Alone (toll),53295,30759,$35k to $50k,Drive Alone (toll) $35k to $50k,$35k to $50k,20.60%
-Bike,45185,60658,$50k to $75k,Bike $50k to $75k,$50k to $75k,17.90%
-Drive Alone (toll),43780,81512,$75k to $100K,Drive Alone (toll) $75k to $100K,$75k to $100K,10.80%
-Shared ride 2 (toll),40440,40826.84786,All,Shared ride 2 (toll) All,All,100.00%
-Bike,39785,70557,More than $100k,Bike More than $100k,More than $100k,15.20%
-Drive Alone (toll),35990,17157,Less than $35k,Drive Alone (toll) lt37,Less than $35k,35.60%
-Bike,27580,44138,$75k to $100K,Bike $75k to $100K,$75k to $100K,10.80%
-Taxi,25400,6921,$35k to $50k,Taxi $35k to $50k,$35k to $50k,20.60%
-Taxi,21880,17381,Less than $35k,Taxi lt44,Less than $35k,35.60%
-Taxi,20760,8514,$50k to $75k,Taxi $50k to $75k,$50k to $75k,17.90%
-Taxi,18500,27879,More than $100k,Taxi More than $100k,More than $100k,15.20%
-Shared ride 3+ (toll),14285,7349,More than $100k,Shared ride 3+ (toll) More than $100k,More than $100k,15.20%
-Shared ride 3+ (toll),14080,3402,Less than $35k,Shared ride 3+ (toll) lt43,Less than $35k,35.60%
-Shared ride 3+ (toll),13875,3943,$50k to $75k,Shared ride 3+ (toll) $50k to $75k,$50k to $75k,17.90%
-Taxi,13230,4031,$75k to $100K,Taxi $75k to $100K,$75k to $100K,10.80%
-Shared ride 3+ (toll),11970,973,$35k to $50k,Shared ride 3+ (toll) $35k to $50k,$35k to $50k,20.60%
-Shared ride 2 (toll),9975,11846,Less than $35k,Shared ride 2 (toll) lt41,Less than $35k,35.60%
-Shared ride 2 (toll),8685,7851,$50k to $75k,Shared ride 2 (toll) $50k to $75k,$50k to $75k,17.90%
-Shared ride 3+ (toll),8300,4944,$75k to $100K,Shared ride 3+ (toll) $75k to $100K,$75k to $100K,10.80%
-Shared ride 2 (toll),8040,9188,More than $100k,Shared ride 2 (toll) More than $100k,More than $100k,15.20%
-Shared ride 2 (toll),7880,4647,$35k to $50k,Shared ride 2 (toll) $35k to $50k,$35k to $50k,20.60%
-Shared ride 2 (toll),5860,7294.847864,$75k to $100K,Shared ride 2 (toll) $75k to $100K,$75k to $100K,10.80%
+Drive Alone (non-toll),13271835,12213204.96,All,Drive Alone (non-toll) All,All,100.0%
+Shared ride 2 (non-toll),5680670,6000064.402,All,Shared ride 2 (non-toll) All,All,100.0%
+Shared ride 3+ (non-toll),5146245,5114517.57,All,Shared ride 3+ (non-toll) All,All,100.0%
+Walk,4420785,2986980,All,Walk All,All,100.0%
+Drive Alone (non-toll),3847285,1776066.823,Less than $35k,Drive Alone (non-toll) lt36,Less than $35k,35.6%
+Drive Alone (non-toll),2959455,1644235.591,$35k to $50k,Drive Alone (non-toll) $35k to $50k,$35k to $50k,20.6%
+Drive Alone (non-toll),2553645,2550371.191,$50k to $75k,Drive Alone (non-toll) $50k to $75k,$50k to $75k,17.9%
+Drive Alone (non-toll),2271375,3828946.673,More than $100k,Drive Alone (non-toll) More than $100k,More than $100k,15.2%
+Walk,2250275,1019728,Less than $35k,Walk lt45,Less than $35k,35.6%
+Shared ride 2 (non-toll),1904920,925402,Less than $35k,Shared ride 2 (non-toll) lt40,Less than $35k,35.6%
+Shared ride 3+ (non-toll),1862610,839190,Less than $35k,Shared ride 3+ (non-toll) lt42,Less than $35k,35.6%
+Drive Alone (non-toll),1640075,2413584.681,$75k to $100K,Drive Alone (non-toll) $75k to $100K,$75k to $100K,10.8%
+Transit,1626340,1411502,All,Transit,All,100.0%
+Shared ride 2 (non-toll),1209845,779994.3733,$35k to $50k,Shared ride 2 (non-toll) $35k to $50k,$35k to $50k,20.6%
+Shared ride 2 (non-toll),1111990,1170948.322,$50k to $75k,Shared ride 2 (non-toll) $50k to $75k,$50k to $75k,17.9%
+Shared ride 3+ (non-toll),1024895,618170,$35k to $50k,Shared ride 3+ (non-toll) $35k to $50k,$35k to $50k,20.6%
+Shared ride 3+ (non-toll),948295,952093,$50k to $75k,Shared ride 3+ (non-toll) $50k to $75k,$50k to $75k,17.9%
+School bus,878250,693743.6024,All,School bus All,All,100.0%
+Shared ride 2 (non-toll),841870,1900995.345,More than $100k,Shared ride 2 (non-toll) More than $100k,More than $100k,15.2%
+Transit,834250,514518,Less than $35k,Walk to transit lt46,Less than $35k,35.6%
+Shared ride 3+ (non-toll),781210,1657765.052,More than $100k,Shared ride 3+ (non-toll) More than $100k,More than $100k,15.2%
+Walk,755220,380596,$35k to $50k,Walk $35k to $50k,$35k to $50k,20.6%
+Shared ride 2 (non-toll),612045,1222724.361,$75k to $100K,Shared ride 2 (non-toll) $75k to $100K,$75k to $100K,10.8%
+Walk,599105,436040,$50k to $75k,Walk $50k to $75k,$50k to $75k,17.9%
+Shared ride 3+ (non-toll),529235,1047299.518,$75k to $100K,Shared ride 3+ (non-toll) $75k to $100K,$75k to $100K,10.8%
+Walk,482955,758642,More than $100k,Walk More than $100k,More than $100k,15.2%
+School bus,389670,127589,Less than $35k,School bus lt39,Less than $35k,35.6%
+Walk,333230,391974,$75k to $100K,Walk $75k to $100K,$75k to $100K,10.8%
+Bike,329390,253072,All,Bike All,All,100.0%
+Transit,285455,194248,$35k to $50k,Walk to transit $35k to $50k,$35k to $50k,20.6%
+Drive Alone (toll),256355,369637,All,Drive Alone (toll) All,All,100.0%
+Transit,205855,299990,More than $100k,Walk to transit More than $100k,More than $100k,15.2%
+Transit,180960,233846,$50k to $75k,Walk to transit $50k to $75k,$50k to $75k,17.9%
+School bus,158030,99023,$35k to $50k,School bus $35k to $50k,$35k to $50k,20.6%
+Bike,152715,46706,Less than $35k,Bike lt35,Less than $35k,35.6%
+School bus,151040,117456.5297,$50k to $75k,School bus $50k to $75k,$50k to $75k,17.9%
+Transit,119820,168900,$75k to $100K,Walk to transit $75k to $100K,$75k to $100K,10.8%
+Taxi,99770,64726,All,Taxi All,All,100.0%
+School bus,92180,202777.6086,More than $100k,School bus More than $100k,More than $100k,15.2%
+School bus,87330,146897.4641,$75k to $100K,School bus $75k to $100K,$75k to $100K,10.8%
+Drive Alone (toll),66340,173976,More than $100k,Drive Alone (toll) More than $100k,More than $100k,15.2%
+Bike,64125,31013,$35k to $50k,Bike $35k to $50k,$35k to $50k,20.6%
+Shared ride 3+ (toll),62510,20611,All,Shared ride 3+ (toll) All,All,100.0%
+Drive Alone (toll),56950,66233,$50k to $75k,Drive Alone (toll) $50k to $75k,$50k to $75k,17.9%
+Drive Alone (toll),53295,30759,$35k to $50k,Drive Alone (toll) $35k to $50k,$35k to $50k,20.6%
+Bike,45185,60658,$50k to $75k,Bike $50k to $75k,$50k to $75k,17.9%
+Drive Alone (toll),43780,81512,$75k to $100K,Drive Alone (toll) $75k to $100K,$75k to $100K,10.8%
+Shared ride 2 (toll),40440,40826.84786,All,Shared ride 2 (toll) All,All,100.0%
+Bike,39785,70557,More than $100k,Bike More than $100k,More than $100k,15.2%
+Drive Alone (toll),35990,17157,Less than $35k,Drive Alone (toll) lt37,Less than $35k,35.6%
+Bike,27580,44138,$75k to $100K,Bike $75k to $100K,$75k to $100K,10.8%
+Taxi,25400,6921,$35k to $50k,Taxi $35k to $50k,$35k to $50k,20.6%
+Taxi,21880,17381,Less than $35k,Taxi lt44,Less than $35k,35.6%
+Taxi,20760,8514,$50k to $75k,Taxi $50k to $75k,$50k to $75k,17.9%
+Taxi,18500,27879,More than $100k,Taxi More than $100k,More than $100k,15.2%
+Shared ride 3+ (toll),14285,7349,More than $100k,Shared ride 3+ (toll) More than $100k,More than $100k,15.2%
+Shared ride 3+ (toll),14080,3402,Less than $35k,Shared ride 3+ (toll) lt43,Less than $35k,35.6%
+Shared ride 3+ (toll),13875,3943,$50k to $75k,Shared ride 3+ (toll) $50k to $75k,$50k to $75k,17.9%
+Taxi,13230,4031,$75k to $100K,Taxi $75k to $100K,$75k to $100K,10.8%
+Shared ride 3+ (toll),11970,973,$35k to $50k,Shared ride 3+ (toll) $35k to $50k,$35k to $50k,20.6%
+Shared ride 2 (toll),9975,11846,Less than $35k,Shared ride 2 (toll) lt41,Less than $35k,35.6%
+Shared ride 2 (toll),8685,7851,$50k to $75k,Shared ride 2 (toll) $50k to $75k,$50k to $75k,17.9%
+Shared ride 3+ (toll),8300,4944,$75k to $100K,Shared ride 3+ (toll) $75k to $100K,$75k to $100K,10.8%
+Shared ride 2 (toll),8040,9188,More than $100k,Shared ride 2 (toll) More than $100k,More than $100k,15.2%
+Shared ride 2 (toll),7880,4647,$35k to $50k,Shared ride 2 (toll) $35k to $50k,$35k to $50k,20.6%
+Shared ride 2 (toll),5860,7294.847864,$75k to $100K,Shared ride 2 (toll) $75k to $100K,$75k to $100K,10.8%

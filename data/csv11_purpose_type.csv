@@ -1,91 +1,91 @@
 Index,Model 01,Survey 01,Category,Description,Title,Portion
-Work,5940075,5584090,All,temp1,All,100.00%
-Work,4785185,4800481,Full-time Worker,temp1,Full-time Worker,44.00%
-Shop,3947315,3626331,All,temp1,All,100.00%
-Escort,3767495,3828356,All,temp1,All,100.00%
-Maintenance,2987325,3404628,All,temp1,All,100.00%
-School,2672310,2490702,All,temp1,All,100.00%
-Discretionary,2266170,2163556,All,temp1,All,100.00%
-School,1853300,1733704,Student under 16 years,temp1,Student under 16 years,13.10%
-Escort,1631880,1409577,Full-time Worker,temp1,Full-time Worker,44.00%
-Eating Out,1549380,1574491,All,temp1,All,100.00%
-Shop,1489955,1349377,Full-time Worker,temp1,Full-time Worker,44.00%
-Visiting,1308115,1402134,All,temp1,All,100.00%
-Work-based,1158190,956229,All,temp1,All,100.00%
-Maintenance,986585,1260043,Full-time Worker,temp1,Full-time Worker,44.00%
-Work-based,939770,829188,Full-time Worker,temp1,Full-time Worker,44.00%
-Shop,931990,869350,Non worker,temp1,Non worker,13.30%
-Work,928130,620723,Part-time Worker,temp1,Part-time Worker,10.00%
-Escort,901380,914298,Non worker,temp1,Non worker,13.30%
-Maintenance,750415,772641,Non worker,temp1,Non worker,13.30%
-Discretionary,714115,628272,Full-time Worker,temp1,Full-time Worker,44.00%
-Shop,570235,603409,Non-working senior,temp1,Non-working senior,7.90%
-Eating Out,549905,781093,Full-time Worker,temp1,Full-time Worker,44.00%
-Maintenance,516125,540782,Non-working senior,temp1,Non-working senior,7.90%
-School,501610,399626,Student 16+,temp1,Student 16+,3.30%
-Discretionary,498995,416146,Student under 16 years,temp1,Student under 16 years,13.10%
-Escort,419405,434679,Part-time Worker,temp1,Part-time Worker,10.00%
-University,394485,331385,All,temp1,All,100.00%
-Shop,386985,425986,Part-time Worker,temp1,Part-time Worker,10.00%
-Discretionary,385505,292959,Non-working senior,temp1,Non-working senior,7.90%
-University,362060,251666,University Student,temp1,University Student,3.60%
-Visiting,354810,255616,Non worker,temp1,Non worker,13.30%
-School,317400,357372,Preschool,temp1,Preschool,4.70%
-Visiting,310325,380009,Full-time Worker,temp1,Full-time Worker,44.00%
-Escort,290045,375348,Preschool,temp1,Preschool,4.70%
-Shop,280875,128153,Student under 16 years,temp1,Student under 16 years,13.10%
-Discretionary,277090,322042,Non worker,temp1,Non worker,13.30%
-Maintenance,273500,352098,Part-time Worker,temp1,Part-time Worker,10.00%
-Eating Out,251735,220828,Non worker,temp1,Non worker,13.30%
-Eating Out,250865,184260,Non-working senior,temp1,Non-working senior,7.90%
-Maintenance,237535,181022,Student under 16 years,temp1,Student under 16 years,13.10%
-Visiting,188765,227356,Student under 16 years,temp1,Student under 16 years,13.10%
-Work,188215,121538,University Student,temp1,University Student,3.60%
-Work-based,183705,107644,Part-time Worker,temp1,Part-time Worker,10.00%
-Eating Out,182295,87964,Student under 16 years,temp1,Student under 16 years,13.10%
-Visiting,178735,169848,Non-working senior,temp1,Non-working senior,7.90%
-Shop,171165,63202,Preschool,temp1,Preschool,4.70%
-Escort,168490,243647,Student under 16 years,temp1,Student under 16 years,13.10%
-Discretionary,162895,161909,Part-time Worker,temp1,Part-time Worker,10.00%
-Escort,160000,210490,Non-working senior,temp1,Non-working senior,7.90%
-Eating Out,149375,134439,Part-time Worker,temp1,Part-time Worker,10.00%
-Discretionary,136265,127849,Preschool,temp1,Preschool,4.70%
-Maintenance,132505,109865,Preschool,temp1,Preschool,4.70%
-Escort,118300,162544,University Student,temp1,University Student,3.60%
-Visiting,99385,112216,Part-time Worker,temp1,Part-time Worker,10.00%
-Visiting,92150,76561,Preschool,temp1,Preschool,4.70%
-Escort,77995,77772,Student 16+,temp1,Student 16+,3.30%
-Eating Out,76010,48466,Preschool,temp1,Preschool,4.70%
-Shop,72405,122441,University Student,temp1,University Student,3.60%
-Maintenance,52245,134052,University Student,temp1,University Student,3.60%
-Visiting,51940,87074,Student 16+,temp1,Student 16+,3.30%
-Discretionary,50235,131903,Student 16+,temp1,Student 16+,3.30%
-Eating Out,47915,51506,Student 16+,temp1,Student 16+,3.30%
-Shop,43705,64412,Student 16+,temp1,Student 16+,3.30%
-Eating Out,41280,65935,University Student,temp1,University Student,3.60%
-Discretionary,41070,82476,University Student,temp1,University Student,3.60%
-Work,38545,41348,Student 16+,temp1,Student 16+,3.30%
-Maintenance,38415,54124,Student 16+,temp1,Student 16+,3.30%
-University,32425,79719,Full-time Worker,temp1,Full-time Worker,44.00%
-Visiting,32005,93454,University Student,temp1,University Student,3.60%
-Work-based,31405,17038,University Student,temp1,University Student,3.60%
-Work-based,3310,2359,Student 16+,temp1,Student 16+,3.30%
-School,0,0,Full-time Worker,temp1,Full-time Worker,44.00%
-School,0,0,Non worker,temp1,Non worker,13.30%
-University,0,0,Non worker,temp1,Non worker,13.30%
-Work,0,0,Non worker,temp1,Non worker,13.30%
-Work-based,0,0,Non worker,temp2,Non worker,13.30%
-School,0,0,Non-working senior,temp1,Non-working senior,7.90%
-University,0,0,Non-working senior,temp1,Non-working senior,7.90%
-Work,0,0,Non-working senior,temp1,Non-working senior,7.90%
-Work-based,0,0,Non-working senior,temp1,Non-working senior,7.90%
-School,0,0,Part-time Worker,temp1,Part-time Worker,10.00%
-University,0,0,Part-time Worker,temp1,Part-time Worker,10.00%
-University,0,0,Preschool,temp1,Preschool,4.70%
-Work,0,0,Preschool,temp1,Preschool,4.70%
-Work-based,0,0,Preschool,temp1,Preschool,4.70%
-University,0,0,Student 16+,temp1,Student 16+,3.30%
-University,0,0,Student under 16 years,temp1,Student under 16 years,13.10%
-Work,0,0,Student under 16 years,temp1,Student under 16 years,13.10%
-Work-based,0,0,Student under 16 years,temp1,Student under 16 years,13.10%
-School,0,0,University Student,temp1,University Student,3.60%
+Work,5940075,5584090,All,temp1,All,100.0%
+Work,4785185,4800481,Full-time Worker,temp1,Full-time Worker,44.0%
+Shop,3947315,3626331,All,temp1,All,100.0%
+Escort,3767495,3828356,All,temp1,All,100.0%
+Maintenance,2987325,3404628,All,temp1,All,100.0%
+School,2672310,2490702,All,temp1,All,100.0%
+Discretionary,2266170,2163556,All,temp1,All,100.0%
+School,1853300,1733704,Student under 16 years,temp1,Student under 16 years,13.1%
+Escort,1631880,1409577,Full-time Worker,temp1,Full-time Worker,44.0%
+Eating Out,1549380,1574491,All,temp1,All,100.0%
+Shop,1489955,1349377,Full-time Worker,temp1,Full-time Worker,44.0%
+Visiting,1308115,1402134,All,temp1,All,100.0%
+Work-based,1158190,956229,All,temp1,All,100.0%
+Maintenance,986585,1260043,Full-time Worker,temp1,Full-time Worker,44.0%
+Work-based,939770,829188,Full-time Worker,temp1,Full-time Worker,44.0%
+Shop,931990,869350,Non worker,temp1,Non worker,13.3%
+Work,928130,620723,Part-time Worker,temp1,Part-time Worker,10.0%
+Escort,901380,914298,Non worker,temp1,Non worker,13.3%
+Maintenance,750415,772641,Non worker,temp1,Non worker,13.3%
+Discretionary,714115,628272,Full-time Worker,temp1,Full-time Worker,44.0%
+Shop,570235,603409,Non-working senior,temp1,Non-working senior,7.9%
+Eating Out,549905,781093,Full-time Worker,temp1,Full-time Worker,44.0%
+Maintenance,516125,540782,Non-working senior,temp1,Non-working senior,7.9%
+School,501610,399626,Student 16+,temp1,Student 16+,3.3%
+Discretionary,498995,416146,Student under 16 years,temp1,Student under 16 years,13.1%
+Escort,419405,434679,Part-time Worker,temp1,Part-time Worker,10.0%
+University,394485,331385,All,temp1,All,100.0%
+Shop,386985,425986,Part-time Worker,temp1,Part-time Worker,10.0%
+Discretionary,385505,292959,Non-working senior,temp1,Non-working senior,7.9%
+University,362060,251666,University Student,temp1,University Student,3.6%
+Visiting,354810,255616,Non worker,temp1,Non worker,13.3%
+School,317400,357372,Preschool,temp1,Preschool,4.7%
+Visiting,310325,380009,Full-time Worker,temp1,Full-time Worker,44.0%
+Escort,290045,375348,Preschool,temp1,Preschool,4.7%
+Shop,280875,128153,Student under 16 years,temp1,Student under 16 years,13.1%
+Discretionary,277090,322042,Non worker,temp1,Non worker,13.3%
+Maintenance,273500,352098,Part-time Worker,temp1,Part-time Worker,10.0%
+Eating Out,251735,220828,Non worker,temp1,Non worker,13.3%
+Eating Out,250865,184260,Non-working senior,temp1,Non-working senior,7.9%
+Maintenance,237535,181022,Student under 16 years,temp1,Student under 16 years,13.1%
+Visiting,188765,227356,Student under 16 years,temp1,Student under 16 years,13.1%
+Work,188215,121538,University Student,temp1,University Student,3.6%
+Work-based,183705,107644,Part-time Worker,temp1,Part-time Worker,10.0%
+Eating Out,182295,87964,Student under 16 years,temp1,Student under 16 years,13.1%
+Visiting,178735,169848,Non-working senior,temp1,Non-working senior,7.9%
+Shop,171165,63202,Preschool,temp1,Preschool,4.7%
+Escort,168490,243647,Student under 16 years,temp1,Student under 16 years,13.1%
+Discretionary,162895,161909,Part-time Worker,temp1,Part-time Worker,10.0%
+Escort,160000,210490,Non-working senior,temp1,Non-working senior,7.9%
+Eating Out,149375,134439,Part-time Worker,temp1,Part-time Worker,10.0%
+Discretionary,136265,127849,Preschool,temp1,Preschool,4.7%
+Maintenance,132505,109865,Preschool,temp1,Preschool,4.7%
+Escort,118300,162544,University Student,temp1,University Student,3.6%
+Visiting,99385,112216,Part-time Worker,temp1,Part-time Worker,10.0%
+Visiting,92150,76561,Preschool,temp1,Preschool,4.7%
+Escort,77995,77772,Student 16+,temp1,Student 16+,3.3%
+Eating Out,76010,48466,Preschool,temp1,Preschool,4.7%
+Shop,72405,122441,University Student,temp1,University Student,3.6%
+Maintenance,52245,134052,University Student,temp1,University Student,3.6%
+Visiting,51940,87074,Student 16+,temp1,Student 16+,3.3%
+Discretionary,50235,131903,Student 16+,temp1,Student 16+,3.3%
+Eating Out,47915,51506,Student 16+,temp1,Student 16+,3.3%
+Shop,43705,64412,Student 16+,temp1,Student 16+,3.3%
+Eating Out,41280,65935,University Student,temp1,University Student,3.6%
+Discretionary,41070,82476,University Student,temp1,University Student,3.6%
+Work,38545,41348,Student 16+,temp1,Student 16+,3.3%
+Maintenance,38415,54124,Student 16+,temp1,Student 16+,3.3%
+University,32425,79719,Full-time Worker,temp1,Full-time Worker,44.0%
+Visiting,32005,93454,University Student,temp1,University Student,3.6%
+Work-based,31405,17038,University Student,temp1,University Student,3.6%
+Work-based,3310,2359,Student 16+,temp1,Student 16+,3.3%
+School,0,0,Full-time Worker,temp1,Full-time Worker,44.0%
+School,0,0,Non worker,temp1,Non worker,13.3%
+University,0,0,Non worker,temp1,Non worker,13.3%
+Work,0,0,Non worker,temp1,Non worker,13.3%
+Work-based,0,0,Non worker,temp2,Non worker,13.3%
+School,0,0,Non-working senior,temp1,Non-working senior,7.9%
+University,0,0,Non-working senior,temp1,Non-working senior,7.9%
+Work,0,0,Non-working senior,temp1,Non-working senior,7.9%
+Work-based,0,0,Non-working senior,temp1,Non-working senior,7.9%
+School,0,0,Part-time Worker,temp1,Part-time Worker,10.0%
+University,0,0,Part-time Worker,temp1,Part-time Worker,10.0%
+University,0,0,Preschool,temp1,Preschool,4.7%
+Work,0,0,Preschool,temp1,Preschool,4.7%
+Work-based,0,0,Preschool,temp1,Preschool,4.7%
+University,0,0,Student 16+,temp1,Student 16+,3.3%
+University,0,0,Student under 16 years,temp1,Student under 16 years,13.1%
+Work,0,0,Student under 16 years,temp1,Student under 16 years,13.1%
+Work-based,0,0,Student under 16 years,temp1,Student under 16 years,13.1%
+School,0,0,University Student,temp1,University Student,3.6%

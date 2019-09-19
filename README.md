@@ -1,4 +1,4 @@
-# CMAP Activity-Based Model Validation Report 
+# CMAP Activity-Based Model (ABM) Calibration and Validation Report 
 
 September 2019
 

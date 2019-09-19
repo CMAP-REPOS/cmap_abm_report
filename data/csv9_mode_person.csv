@@ -53,13 +53,13 @@ Taxi,36760,32379.97521,Full-time worker,Full-time worker,44.00%,45.40%
 School bus,35490,36162.56639,Child too young for school,Child too young for school,4.60%,4.60%
 Bike,34405,26230.85318,Part-time worker,Part-time worker,10.00%,9.40%
 Taxi,34000,5966.57591,University student,University student,3.60%,4.10%
-Shared ride 3+ (toll),33070,6817.462447,All,All,100.00%,100.00%
 Bike,32155,21145.34937,University student,University student,3.60%,4.10%
-Shared ride 2 (toll),31970,29145.81541,All,All,100.00%,100.00%
 Bike,28615,20288.39791,Non-worker,Non-worker,13.30%,13.80%
+Shared ride 2 (toll),28565,29145.81541,All,All,100.00%,100.00%
 Drive Alone (toll),22755,22452.84252,Part-time worker,Part-time worker,10.00%,9.40%
 Drive Alone (toll),20840,15758.58302,Non-worker,Non-worker,13.30%,13.80%
 Drive Alone (toll),19280,7704.84716,Retired,Retired,7.90%,7.30%
+Shared ride 3+ (toll),17800,6817.462447,All,All,100.00%,100.00%
 Bike,14585,4978.354652,Child too young for school,Child too young for school,4.60%,4.60%
 Bike,13945,9395.145395,Retired,Retired,7.90%,7.30%
 Shared ride 2 (toll),11235,20874.96088,Full-time worker,Full-time worker,44.00%,45.40%
@@ -86,15 +86,15 @@ Shared ride 3+ (toll),1480,6.72572,Retired,Retired,7.90%,7.30%
 Shared ride 3+ (toll),1355,1988.614975,University student,University student,3.60%,4.10%
 Taxi,650,1385.245438,Student of driving age,Student of driving age,3.30%,3.50%
 Drive Alone (non-toll),0,0,Child too young for school,Child too young for school,4.60%,4.60%
-Drive Alone (non-toll),0,0,Student of non-driving age,Student of non-driving age,13.10%,11.90%
 Drive Alone (toll),0,0,Child too young for school,Child too young for school,4.60%,4.60%
-Drive Alone (toll),0,0,Student of non-driving age,Student of non-driving age,13.10%,11.90%
+Shared ride 2 (toll),0,0,Child too young for school,Child too young for school,4.60%,4.60%
+Shared ride 3+ (toll),0,0,Child too young for school,Child too young for school,4.60%,4.60%
 School bus,0,8621.768071,Full-time worker,Full-time worker,44.00%,45.40%
 School bus,0,1343.183707,Non-worker,Non-worker,13.30%,13.80%
 School bus,0,708.6865517,Part-time worker,Part-time worker,10.00%,9.40%
 School bus,0,233.4839381,Retired,Retired,7.90%,7.30%
-School bus,0,32.31468,University student,University student,3.60%,4.10%
-Shared ride 2 (toll),0,0,Child too young for school,Child too young for school,4.60%,4.60%
-Shared ride 3+ (toll),0,0,Child too young for school,Child too young for school,4.60%,4.60%
 Shared ride 3+ (toll),0,0,Student of driving age,Student of driving age,3.30%,3.50%
+Drive Alone (non-toll),0,0,Student of non-driving age,Student of non-driving age,13.10%,11.90%
+Drive Alone (toll),0,0,Student of non-driving age,Student of non-driving age,13.10%,11.90%
 Shared ride 3+ (toll),0,0,Student of non-driving age,Student of non-driving age,13.10%,11.90%
+School bus,0,32.31468,University student,University student,3.60%,4.10%

@@ -1,7 +1,7 @@
 // basic map
 var workertext = 'The model only slightly overestimates zero and 1-worker households.  However, 2-worker households are underestimated both in portions of Cook County as well as outlying areas in Lake, McHenry, Kane and Kendall Counties.'
 var hhsizetext = 'Single person households are underestimated in many of the lower income areas of the region, especially the south side of Chicago, the suburbs of South Cook and along the Fox River Valley.  However, households with four or more members are well estimated regionwide.'
-var incometext = 'Households earning <$35k annually are overestimated in the rural areas of Kane, Kendall, Grundy and most of Lake County, along with the near north and near west sides of Chicago and near north suburbs, while households in the highest category of >$100k are underestimated in some of the same areas. It may be because the model underestimates the number of two-worker households in many of these areas.  Households in the upper middle range of $60k-$100k are well estimated regionwide.  '
+var incometext = 'Households earning <$35k annually are overestimated in the rural areas of Kane, Kendall, Grundy and most of Lake County, along with the near north and near west sides of Chicago and near north suburbs, while households in the highest category of >$100k are underestimated in some of the same areas. It may be because the model underestimates the number of two-worker households in many of these areas.  Households in the upper middle range of $65k-$100k are well estimated regionwide.  '
 var vehtext = 'In the west and northwest areas of Chicago and the western Cook suburbs, the model overestimates the number of households with no vehicles.  The number of households with no vehicles is accurate over the rest of the region. Outside Chicago, the number of one-vehicle households are overestimated and households with two or more vehicles are underestimated. This may be related to the underestimate of two-worker households in some of the same areas. '
 
 var mapboxAccessToken = 'pk.eyJ1Ijoic2FyYWhjbWFwIiwiYSI6ImNqc3VzMDl0YzJocm80OXBnZjc2MGk4cGgifQ.S_UmPA1jm5pQPrCCLDs41Q';
@@ -140,18 +140,18 @@ function updateview1(buttonarg) {
         whichone_name1 = 'Household income <35k'
         d3.select("#overlaytext").text(incometext);
     }
-    else if (buttonarg == 'Household income 35k - 60k') {
+    else if (buttonarg == 'Household income 35k - 65k') {
         whichone1 = 'difINC_2'
         model_count_var1 = 'HHINC_2m'
         census_count_var1 = 'HHINC_2p'
-        whichone_name1 = 'Household income 35k - 60k'
+        whichone_name1 = 'Household income 35k - 65k'
         d3.select("#overlaytext").text(incometext);
     }
-    else if (buttonarg == 'Household income 60k - 100k') {
+    else if (buttonarg == 'Household income 65k - 100k') {
         whichone1 = 'difINC_3'
         model_count_var1 = 'HHINC_3m'
         census_count_var1 = 'HHINC_3p'
-        whichone_name1 = 'Household income 60k - 100k'
+        whichone_name1 = 'Household income 65k - 100k'
         d3.select("#overlaytext").text(incometext);
     }
     else if (buttonarg == 'Household income > 100k') {
